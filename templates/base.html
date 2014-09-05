@@ -13,16 +13,16 @@
 	{% endblock header %}
 
 </head>
-<body>
+<body {% block isindex %}class="home"{% endblock %}>
 	<nav class="top">
 		<ul>
 			<li class="framer">Framer</li>
 			<section class="right">
-				<li>Features</li>
-				<li>Examples</li>
-				<li>Learn</li>
-				<li>Docs</li>
-				<li>Buy $79.99</li>
+				<li><a href="#">Features</a></li>
+				<li><a href="#">Examples</a></li>
+				<li><a href="#">Learn</a></li>
+				<li><a href="#">Docs</a></li>
+				<li><a href="#">Buy $79.99</a></li>
 			</section>
 		</ul>
 	</nav>
