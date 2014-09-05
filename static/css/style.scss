@@ -1,0 +1,18 @@
+// Includes ---------------------
+@import "includes/reset.css";
+@import "includes/fonts.css";
+@import "includes/variables.scss";
+@import "includes/mixins.scss";
+@import "includes/color.scss";
+
+// Layout ----------------------
+@import "layout/nav.scss";
+@import "layout/type.scss";
+@import "layout/base.scss";
+
+// Pages -----------------------
+body.home {
+	@import "pages/home.scss";
+}
+
+//

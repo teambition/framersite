@@ -1,0 +1,133 @@
+{% extends "base.html" %}
+{% block sidebarclass %}more{% endblock %}
+
+{% block content %}
+{% filter markdown %}
+
+<!-- More -->
+<a name="more"></a>
+### More
+
+We'd love to see what you're creating with Framer. <br> Please send a tweet to <a href="http://www.twitter.com/framerjs">@framerjs</a> if you have a prototype to share!
+
+<hr>
+
+<!-- Compatibility -->
+<a name="compatibility"></a>
+### Compatibility
+
+Since Framer is a prototyping toolkit, extensive browser compability is not a priority. Our main goal is achieving optimal performance, to get high framerates and smooth animations. 
+
+<table border="0" cellspacing="0" cellpadding="0" class="compatibility">
+	<tbody>
+	<tr>
+		<th>Framer</th>
+		<th>Compatibility</th>
+	</tr>
+	<tr>
+		<td colspan="3" class="group">Framer.js</td>
+	</tr>
+	<tr>
+		<td>Browsers </td>
+		<td>Webkit (Chrome, Safari)</td>
+	</tr>
+	<tr>
+		<td>Platforms</td>
+		<td>Mac OS X, Windows, Linux</td>
+	</tr>
+	<tr>
+		<td>Mobile Platforms</td>
+		<td>iOS, Android, Windows Phone</td>
+	</tr>
+	<tr>
+		<td colspan="3" class="group">Generator.app</td>
+	</tr>
+	<tr>
+		<td>Imports from</td>
+		<td>Photoshop (13.0.0+), Sketch (3.0.3+)</td>
+	</tr>
+	<tr>
+		<td>Platforms</td>
+		<td>Mac OS X, Windows (coming soon)</td>
+	</tr>
+	<tr>
+		<td colspan="3" class="group">Framer Studio.app</td>
+	</tr>
+	<tr>
+		<td>Imports from</td>
+		<td>Photoshop (13.0.0+), Sketch (3.0.3+)</td>
+	</tr>
+	<tr>
+		<td>Platforms</td>
+		<td>Mac OS X 10.8+</td>
+	</tr>
+
+</tbody>
+</table>
+
+<hr>
+
+<!-- Debugging -->
+<a name="debugging"></a>
+
+### Debugging
+
+Because Framer runs in the browser you can use all the <a href="https://developers.google.com/chrome-developer-tools/" target="_blank">debugging tools</a>, like the console, timeline, profiler and debugger. Framer will alert you when a Javascript error occurred.
+
+<table class="last">
+		<tbody><tr>
+			<th width="60px">Key</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td><strong>Escape</strong> (toggle)</td>
+			<td>Switch between normal &amp; debug view of all layers. Useful to inspect structure and positions.</td>
+		</tr>
+<!-- 		<tr>
+			<td><strong>Shift</strong> (hold)</td>
+			<td>While shift is pressed, Framer will delay the time by 25x. This will slow down animations and timers like utils.delay and utils.interval. Useful to inspect animations carefully.</td>
+		</tr> -->
+	</tbody>
+</table>
+
+<hr>
+
+<!-- Questions -->
+
+<a name="questions"></a>
+### Questions
+
+There is an active and helpful <a href="https://www.facebook.com/groups/framerjs/" target="_blank">Framer Community</a> on Facebook.
+
+<ul>
+	<li><strong>Framer on Windows</strong>
+		<ul>
+			<li>Yes. The core of Framer is a Javascript library that works on all platforms. We're working on Photoshop compatibility.</li>
+		</ul>
+	</li>
+	<li><strong>Framer Studio Volume Licensing</strong>
+		<ul>
+			<li>For 50 licenses or less you can go directly through our online store. If you need more than 50 copies and have special requests please <a href="mailto:koen+framervolume@madebysofa.com">contact us</a>. You can find the Framer end user license agreement <a href="/static/downloads/eula.pdf">here</a>.</li>
+		</ul>
+	</li>
+	<li><strong>Framer Studio Support</strong>
+		<ul>
+			<li>Framer comes with personal support for technical application issues (crashes, etc.). If you need help learning Framer you can ask questions in our <a href="https://www.facebook.com/groups/framerjs/">group</a>, where we and other users try to help each other out.</li>
+		</ul>
+	</li>
+</ul>
+
+<hr>
+
+<a name="credits"></a>
+### Credits
+
+Framer was built by <a href="http://twitter.com/koenbok" target="_blank">Koen Bok</a>, <a href="http://twitter.com/jornvandijk" target="_blank">Jorn van Dijk</a> and <a href="http://twitter.com/benjaminnathan" target="_blank">Benjamin den Boer</a>.
+
+Special thanks goes out to <a href="https://twitter.com/joshpuckett" target="_blank">Josh Puckett</a>, <a href="https://twitter.com/gem_ray" target="_blank">Cemre Güngör</a>, <a href="https://twitter.com/nlevin" target="_blank">Noah Levin</a>, <a href="https://twitter.com/tisho" target="_blank">Tisho Georgiev</a>, <a href="https://twitter.com/SubtleGradient" target="_blank">Thomas Aylott</a>, <a href="https://twitter.com/frischmilch" target="_blank">Johannes Eckert</a>, <a href="https://twitter.com/carambula" target="_blank">Aaron Carámbula</a>, <a href="https://twitter.com/pasql" target="_blank">Pasquale D'Silva</a>, <a href="https://twitter.com/bomberstudios" target="_blank">Ale Muñoz</a>, <a href="https://twitter.com/pieteromvlee" target="_blank">Pieter Omvlee</a>, <a href="https://twitter.com/rsms" target="_blank">Rasmus Andersson</a>, <a href="https://twitter.com/robertgaal" target="_blank">Robert Gaal</a> and <a href="https://twitter.com/dipersia" target="_blank">Blaise DiPersia</a>.
+
+If we missed you on this list, we thank you nevertheless.
+
+
+{% endfilter %}	
+{% endblock content%}
