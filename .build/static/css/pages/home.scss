@@ -7,13 +7,24 @@
 	z-index: -1;
 }
 
-.header h1 {
-	margin-top: $space-64;
+// Spacing
+.header h1,
+.footer h1 {
+	margin-top: $space64;
 }
 .header,
-.header h2 {
-	margin-bottom: $space-64;
+.header h2,
+.footer h2 {
+	margin-bottom: $space64;
 }
+// Block Spacing
+.framerjs {
+	margin-bottom: $space64;
+}
+.screenshot-copy {
+	margin-top: $space48;
+}
+// ---------------------
 .screenshot {
 	overflow: visible;
 	position: relative;
@@ -31,49 +42,79 @@
 }
 // Studio Screenshot Section
 .screenshot img.studio {
-	max-width: 708px; width: 100%;
+	max-width: 708px; 
+	width: 100%;
 }
 .screenshot img.studio-600 {
 	display: none;
 }
-#framer section.iphone-bg {
-	position: relative; z-index: 0;
-}
 .screenshot .video-wrapper {
 	width: 354px;
-	position: absolute; top: 0; left: 50%; 
+	position: absolute; 
+	top: 0; left: 50%; 
 	height: 100%;
 }
 .screenshot video {
-	position: absolute; max-width: 111px;
+	position: absolute; 
+	max-width: 111px;
 	top: 159px; left: 114px;
 }
-.screenshot-copy {
-	text-align: center;
+
+// FramerJS Section
+.framerjs p a {
+	color: #333;
+	font-weight: 400;
+	border-bottom: 1px solid #eee;
 }
-.screenshot-copy h2 {
-	font-weight: 300;
-	font-size: 32px;
+.framerjs ul li+li {
 	margin: 0;
-	color: $blue;
 }
-.screenshot-copy li p {
-	display: block; color: $text;
-	margin-top: 10px; margin-bottom: 0;
-	font-size: 23px; line-height: 1.3;
-	letter-spacing: 0; font-weight: 200;
+.framerjs ul li {
+	color: $graphite60; line-height: 1.9;
+	padding-left: 0;
+	font-size: 16px;
+	font-weight: 400;
+	list-style: none; left: 0; 
 }
-.screenshot-copy li {
-	max-width:280px;
-	list-style: none;
-	float:left; 
+.framerjs ul li:before {
+	content: url("/static/images/icon-check.png");
+	display: inline-block; margin-right: 10px; position: relative; top: 1px;
 }
-section.mobile {
-	display: none;
+.framerjs section a.examples {
+	box-shadow: inset 0 0 0 2px $blue;
+	padding: 12px 20px 10px;
+	border-radius: 50px;
+	font-size: 16px;
+	display: inline-block;
 }
 
-.screenshot-copy li:first-child { margin-right: 40px; }
+// Used-By Block
+.used-by {
+	text-align: center;
+	color: #D3D8E1;
+}
+.used-by img {
+	position: relative;
+	vertical-align: middle;
+	height: auto;
+}
+.used-by img+img {
+	margin-left: 21px;
+}
+.used-by img.facebook, #used-by img.apple { top: -2px; }
+.used-by img.google, #used-by img.twitter { top: 2px; }
+.used-by img.facebook { width: 99px; }
+.used-by img.dropbox { width: 32px; }
+.used-by img.google { width: 88px; }
+.used-by img.apple { width: 26px; }
+.used-by img.groupon { width: 111px; }
+.used-by img.twitter { width: 35px; }
+.used-by img.stripe { width: 60px; }
+.used-by img.spotify { width: 96px; }
+.used-by img.adobe { width: 101px; }
+.used-by img.instagram { width: 106px; top: 4px; }
 
+// Examples Block
 .block.examples {
 	@include gradient-left-right(#71c3f0, #b8e1f8);
 	height: 500px;
@@ -91,10 +132,6 @@ section.mobile {
 	cursor: pointer;
 }
 
-
-.block.examples .inner {
-	padding: 0; max-width: 600px; margin: 0 auto;
-}
 
 .block.examples section {
 	position: absolute; 
@@ -143,5 +180,5 @@ section.mobile {
 
 li.feature img {
 	float:left;
-	margin-right: $space-8;
+	margin-right: $space8;
 }

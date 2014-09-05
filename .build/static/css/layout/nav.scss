@@ -11,22 +11,24 @@ nav.top {
 nav.top ul {
 	max-width:100%;
 	margin: 0 auto;
-	padding: 0 20px;
+	padding: 0 $space16;
 }
-nav.top ul li {
+nav.top li {
 	float: left;
 	font-size:14px;
 	font-weight:500;
 	line-height: inherit;
 
 }
-nav.top ul li+li {
+nav.top li+li {
 	padding-left: 30px;
 }
 
-nav.top ul li a {
-	color:#fff;
+nav.top li a {
+	color:$nav-links;
 }
-.framer {
+
+nav.top .framer {
 	font-weight:600;
+	font-size:16px;
 }

@@ -52,12 +52,12 @@ hr {
 }
 // Feature list spacing
 li.feature + li.feature {
-	margin-top:$space-56;
+	margin-top:$space56;
 }
 .block {
 	background: #222;
-	padding: $space-80 0;
-	margin: $space-80 0;
+	padding: $space80 0;
+	margin: $space80 0;
 }
 @media screen and (max-width: 800px) {
 	.col-2 {
@@ -73,7 +73,7 @@ li.feature + li.feature {
 		padding:20px;
 	}
 	hr {
-		margin: $space-32 auto;
+		margin: $space32 auto;
 	}
 	.col-2,
 	.col-3,
