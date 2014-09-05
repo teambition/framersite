@@ -1,0 +1,184 @@
+#bg {
+	position: absolute; top: 40px; left:0;
+	background: url("/static/images/bg-icon.jpg") no-repeat 50%;	
+	background-size: contain; 
+	width: 1240px; height: 1380px;
+	left: 50%; margin-left: -620px;
+	z-index: -1;
+}
+
+// Spacing
+.header h1,
+.footer h1 {
+	margin-top: $space64;
+}
+.header,
+.header h2,
+.footer h2 {
+	margin-bottom: $space64;
+}
+// Block Spacing
+.framerjs {
+	margin-bottom: $space64;
+}
+.screenshot-copy {
+	margin-top: $space48;
+}
+// ---------------------
+.screenshot {
+	overflow: visible;
+	position: relative;
+	text-align: center;
+}
+.studio-ss {
+	position: relative;
+	max-width: 708px; 
+	margin: 0 auto;
+}
+.studio-ss-600 {
+	position: relative;
+	max-width: 628px;
+	margin: 0 auto;
+}
+// Studio Screenshot Section
+.screenshot img.studio {
+	max-width: 708px; 
+	width: 100%;
+}
+.screenshot img.studio-600 {
+	display: none;
+}
+.screenshot .video-wrapper {
+	width: 354px;
+	position: absolute; 
+	top: 0; left: 50%; 
+	height: 100%;
+}
+.screenshot video {
+	position: absolute; 
+	max-width: 111px;
+	top: 159px; left: 114px;
+}
+
+// FramerJS Section
+.framerjs p a {
+	color: #333;
+	font-weight: 400;
+	border-bottom: 1px solid #eee;
+}
+.framerjs ul li+li {
+	margin: 0;
+}
+.framerjs ul li {
+	color: $graphite60; line-height: 1.9;
+	padding-left: 0;
+	font-size: 16px;
+	font-weight: 400;
+	list-style: none; left: 0; 
+}
+.framerjs ul li:before {
+	content: url("/static/images/icon-check.png");
+	display: inline-block; margin-right: 10px; position: relative; top: 1px;
+}
+.framerjs section a.examples {
+	box-shadow: inset 0 0 0 2px $blue;
+	padding: 12px 20px 10px;
+	border-radius: 50px;
+	font-size: 16px;
+	display: inline-block;
+}
+
+// Used-By Block
+.used-by {
+	text-align: center;
+	color: #D3D8E1;
+}
+.used-by img {
+	position: relative;
+	vertical-align: middle;
+	height: auto;
+}
+.used-by img+img {
+	margin-left: 21px;
+}
+.used-by img.facebook, #used-by img.apple { top: -2px; }
+.used-by img.google, #used-by img.twitter { top: 2px; }
+.used-by img.facebook { width: 99px; }
+.used-by img.dropbox { width: 32px; }
+.used-by img.google { width: 88px; }
+.used-by img.apple { width: 26px; }
+.used-by img.groupon { width: 111px; }
+.used-by img.twitter { width: 35px; }
+.used-by img.stripe { width: 60px; }
+.used-by img.spotify { width: 96px; }
+.used-by img.adobe { width: 101px; }
+.used-by img.instagram { width: 106px; top: 4px; }
+
+// Examples Block
+.block.examples {
+	@include gradient-left-right(#71c3f0, #b8e1f8);
+	height: 500px;
+	position:relative;
+}
+.block.examples .screen {
+	position: absolute; top:152px;
+	max-width: 206px; left: 50%; margin-left: -102px;
+	z-index: 100; overflow: hidden;
+}
+
+.block.examples video {
+	width: 100%; 
+	border: none;
+	cursor: pointer;
+}
+
+
+.block.examples section {
+	position: absolute; 
+	top: 40px; left: 0; width: 100%; 
+}
+
+#wrapper .block.examples h4 {
+	color: #fff; float: left; text-align: left;
+	font-weight: 300;
+}
+
+.block.examples a.more {
+	color: #fff; float: right; font-size: 12px; padding: 11px 16px 8px 16px; border-radius: 55px;
+	box-shadow: inset 0 0 0 2px #fff; text-transform: uppercase; letter-spacing: 1px;
+	font-weight: 600;
+}
+
+.block.examples a.more:hover {
+	opacity: 1; background: #fff;
+	color: #92CEE1;
+}
+
+/* ------------- */
+
+.block.examples a.iphone {
+	position: absolute; bottom: -70px; 
+
+}
+
+.block.examples a:hover {
+	opacity: 1;
+}
+
+.block.examples a.left img { width: 216px; }
+.block.examples a.mid img { width: 247px; }
+.block.examples a.right img { width: 222px; }
+
+.block.examples a.left { left: -4px; }
+
+.block.examples a.mid {
+	left: 50%; margin-left: -123px;
+	z-index: 50; bottom: -100px;
+}
+
+.block.examples a.right { right: 0px; }
+
+li.feature img {
+	float:left;
+	margin-right: $space8;
+}
