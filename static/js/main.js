@@ -101,8 +101,6 @@ $(document).ready(function() {
 /* ========================= */
 	 
 $(document).ready(function() {
-	
-
 
 	var carouselNode = document.getElementById('carousel');
 
@@ -139,62 +137,6 @@ $(document).ready(function() {
 });
 		
 
-	
-/*SVG*/
-
-
-function pathAnimate(path, duration) {
-
-	var initial_ts = new Date().getTime();
-	var length = path.getTotalLength();
-	var handle = 0;
-	length = length + 30;
-	 
-	path.style.strokeDasharray = length + ' ' + length; 
-	path.style.strokeDashoffset = length;
-	
-	var draw = function() {
-	   var progress = (Date.now() - initial_ts)/duration;
-	   if (progress >= 1) {
-	     window.cancelAnimationFrame(handle);
-	   } else {
-	     path.style.strokeDashoffset = Math.floor(length * (1 - progress));
-	     handle = window.requestAnimationFrame(draw);
-	   }
-	};
-	
-	draw();
-}
-
-
-var generatorPath = document.querySelector('#line-block svg path#cog');
-var generatorCircle = document.querySelector('#line-block svg path#cog-circle');
-var generatorCircleInner = document.querySelector('#line-block svg path#cog-circle-inner');
-
-//var prototypesPath = document.querySelector('#line-block .right svg path');
-//var prototypesPathiPhone = document.querySelector('#line-block .right svg path#iphone');
-//var prototypesPathLines = document.querySelector('#line-block .right svg path#iphone-lines');
-//var prototypesPathHome = document.querySelector('#line-block .right svg path#iphone-home');
-
-var framerLineMid = document.querySelector('#line-block .right svg path#line-mid');
-var framerHandleCircle = document.querySelector('#line-block .right svg path#handles');
-var framerCircleCurve = document.querySelector('#line-block .right svg path#circle-curve');
-var framerCircleMid = document.querySelector('#line-block .right svg path#circle-mid');
-var framerCurve = document.querySelector('#line-block .right svg path#curve');
-
-pathAnimate(generatorPath, 2000);
-pathAnimate(generatorCircle, 3000);
-pathAnimate(generatorCircleInner, 1000);
-
-//pathAnimate(prototypesPath, 2000);
-//pathAnimate(prototypesPathiPhone, 2000);
-//pathAnimate(prototypesPathLines, 4000);
-
-pathAnimate(framerLineMid, 1000);
-pathAnimate(framerHandleCircle, 2000);
-pathAnimate(framerCircleMid, 2000);
-pathAnimate(framerCurve, 2400);
-pathAnimate(framerCircleCurve, 1000);
 
 
 

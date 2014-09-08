@@ -517,6 +517,14 @@ p {
 .small {
   font-size: 0.8125em; }
 
+a.small.right {
+  float: right;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 2px;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
 .uppercase {
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -1081,7 +1089,7 @@ footer.global p, footer.global a {
     max-width: 960px; } }
 
 .learn .content-inner {
-  max-width: 720px;
+  max-width: 660px;
   margin: 0 auto; }
 .learn .content-inner ul {
   margin-bottom: 32px; }
