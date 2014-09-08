@@ -7,6 +7,7 @@ table {
 	border-radius: 6px;
 	overflow: hidden;
 	font-weight: 400;
+	vertical-align: bottom;
 	position: relative;
 }
 table td, td {
@@ -14,6 +15,7 @@ table td, td {
 	border-style:solid;
 	padding:$space8 $space16; 
 	color: $text;
+	position: relative;
 }
 tr>td {
 	border-top:1px solid #eee;
@@ -21,8 +23,9 @@ tr>td {
 // Faking borders on all elements - hacky
 td:after {
 	content: ""; display: inline-block;
-	width: 130%; height: 1px; 
+	width: 300%; height: 1px; 
 	background: #eee; position: absolute; top: -1px; 
+	right: -200px; z-index: 300;
 }
 thead th, th {
 	text-align:left;
@@ -61,6 +64,7 @@ th.examples {
 	position: absolute; right: 0; 
 }
 td.examples {
+	width: auto; 
 	text-align: right;
 	white-space: nowrap;
 }

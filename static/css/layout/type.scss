@@ -90,9 +90,12 @@ p {
 body {
 	font-size:14px;
 }
+.footer-features li {
+	font-size:1em;
+}
 }
 @media screen and (max-width: 440px) {
 body {
-	font-size:12px;
+	//font-size:12px;
 }
 }
