@@ -46,9 +46,12 @@ $(document).ready(function() {
 	var docsSidebar = document.querySelector('.docs .sidebar');
 
 	$(window).scroll(function() {
-		if ($(window).scrollTop() > 1400){
-			 document.getElementById('carousel').play();
+		if ($(window).scrollTop() > 300){
+			 $(docsSidebar).addClass('sticky');
 		}	 
+		else {
+			$(docsSidebar).removeClass('sticky');
+		}
 	});
 	
 });

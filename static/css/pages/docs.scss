@@ -14,9 +14,23 @@ p {
 }
 .sidebar {
 	float:left;
-	position: fixed;
+	position: absolute;
 }
-
+.sidebar.sticky {
+	position: fixed;
+	top:$space64;
+}
 .sidebar ul li+li {
 	margin-top: $space8;
+}
+
+@media screen and (max-width:1040px) {
+	.align-right {
+		max-width: 100%;
+		float:none;
+		clear:auto;
+	}
+	.sidebar {
+		display: none;
+	}
 }
