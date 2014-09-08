@@ -2,6 +2,7 @@ nav.top {
 	width: 100%;
 	height: 60px;
 	line-height:66px;
+	padding: 0 $space8;
 	vertical-align:middle;
 	position: relative;
 	background-color: $dark;
@@ -21,14 +22,22 @@ nav.top li {
 
 }
 nav.top li+li {
-	padding-left: 30px;
+	padding-left: $space24;
 }
-
 nav.top li a {
 	color:$nav-links;
 }
-
+nav.top li.active a {
+	color: #fff;
+	padding-bottom: 18px;
+	border-bottom: 2px solid $blue;
+}
 nav.top .framer {
 	font-weight:600;
-	font-size:16px;
+	font-size:14px;
+	text-transform: uppercase;
+}
+
+nav.top .framer a {
+	color:#fff
 }

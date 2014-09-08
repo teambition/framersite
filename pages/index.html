@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block isindex %}class="home"{% endblock isindex %}
+{% block currentpage %}class="home"{% endblock currentpage %}
 {% block hide %}hide{% endblock hide %}
 
 {% block content %}
@@ -41,18 +41,17 @@
 		<section class="screenshot-copy clearfix">
 			<li class="col-2">
 				<h3>Create</h3>
-				<p>Define animations and interactions in code.</p>
+				<h6>Define animations and interactions in code.</h6>
 			</li>
 			<li class="col-2">
 				<h3>Preview</h3>
-				<p>Instant visual feedback while you're working.</p>
+				<h6>Instant visual feedback while you're working.</h6>
 			</li>		
 		</section> <!--screenshot-copy-->
 			
 		<hr>
 			
 		<section class="framerjs clearfix">
-		
 			<section class="col-2">
 				<p><strong>Framer Studio</strong> is built on <a href="/framerjs">Framer.js</a>, an open source framework for rapid prototyping. Framer allows you to define animations and interactions. It runs on mobile devices, too.</p>
 			</section>
@@ -82,7 +81,7 @@
 	</div> <!--content-inner-->
 	
 	<section class="block examples">
-		<div class="content-inner">
+		<div class="content-inner narrow">
 			<section>
 				<h4>Examples</h4>
 				<a class="more" href="http://examples.framerjs.com" target="new">More</a>
@@ -140,12 +139,12 @@
 
 		<hr>
 		
-		<section class="start">
-			<section class="right">
+		<section class="start clearfix">
+			<section class="col-2">
 				<img class="2x" src="/static/images/generate.png">
 			</section>
 
-			<section>
+			<section class="col-2">
 				<h3>Integrated Workflow</h3>
 				<p>Framer Studio has Photoshop & Sketch integration, allowing you to import layers directly from your static designs and turn them into interactive prototypes.</p>
 			</section>
@@ -153,67 +152,59 @@
 			
 	</div> <!--inner-->
 	
-	<section class="block">
-		
-		<div class="content-inner">
+	<section class="block interaction">
+		<div class="content-inner clearfix">
 			<h1>Invent Interactions</h1>
-			<h2>Embrace code for flexibility with an editor that makes coding efficient and enjoyable.</h2>
+			
+			<div class="module-600">
+				<h2>Embrace code for flexibility with an editor that makes coding efficient and enjoyable.</h2>
+			</div>
 
-			<div class="feature-list clearfix">
-				<figure class="ss-half"></figure>
-				<section class="right">
-				<li><img class="2x" src="/static/images/icon-cs.png" width="14px">
+			<figure class="ss-half col-2"></figure>
+			<section class="col-2">
+				<li class="feature"><img class="2x" src="/static/images/icon-cs.png" width="14px">
 				<h5>CoffeeScript</h5>
 				<p>Framer Studio uses CoffeeScript, a much more legible and minimal way to write JavaScript.</p></li>
 				
-				<li><img class="2x" src="/static/images/icon-snippets.png" width="20">
+				<li class="feature"><img class="2x" src="/static/images/icon-snippets.png" width="20">
 				<h5>Snippets</h5>
 				<p>Framer Studio comes with a built-in snippet library. Add layers and interactions with a single click.</p></li>
 				
-				<li><img class="2x" src="/static/images/icon-autocomplete.png" width="16px">
+				<li class="feature"><img class="2x" src="/static/images/icon-autocomplete.png" width="16px">
 				<h5>Auto-Complete</h5>
 				<p>Optimized for Framer. Includes all functions, properties, variables and layer names you have set.</p></li>
 				
-				<li><img class="2x" src="/static/images/icon-errors.png" width="16px">
+				<li class="feature"><img class="2x" src="/static/images/icon-errors.png" width="16px">
 				<h5>Inline Errors</h5>
 				<p>Quickly find out what is going wrong. Dive deep with the built-in JavaScript console.</p></li>
-			</section>
-			</div> <!--feature-list-->
-		
-	
+			</section> <!--col-2-->
 		</div> <!--inner-->
 	</section> <!--interaction-block -->
 	
-	<section id="viewer" class="feature-block half clearfix">
-		
-		<div class="content-inner">
+	<section class="viewer">
+		<div class="content-inner clearfix">
 			<h1>Create Anything</h1>
 			<h2>Instant interactive visual feedback, multiple devices and a full-screen presentation mode.</h2>
-			<hr class="small hidden">
-			
-			<div class="feature-list">
-				<figure class="ss-half"></figure>
-				<section class="col-2">
-					<li><img class="2x" src="/static/images/icon-present.png" width="16px">
-					<h5>Present</h5>
-					<p>Use the full screen presentation mode for an immersive demo of your prototype.</p></li>
-					
-					<li><img class="2x" src="/static/images/icon-preview.png" width="20px">
-					<h5>Preview</h5>
-					<p>Get instant pixel perfect previews while you are building. Customize view modes per project.</p></li>
-					
-					<li><img class="2x" src="/static/images/icon-devices.png" width="12px">
-					<h5>Devices</h5>
-					<p>Preview your prototypes on iPhone, iPad, Android or full-screen.</p></li>
-					
-					<li><img class="2x" src="/static/images/icon-share.png" width="14px">
-					<h5>Share</h5>
-					<p>Quickly export your project to upload anywhere. Share Framer projects for easy collaboration.</p></li>
-				</section><!--right-->
-			
-			</div> <!--feature-list-->
-			
+		
+			<figure class="ss-half col-2"></figure>
+			<section class="col-2">
+				<li class="feature"><img class="2x" src="/static/images/icon-present.png" width="16px">
+				<h5>Present</h5>
+				<p>Use the full screen presentation mode for an immersive demo of your prototype.</p></li>
 				
+				<li class="feature"><img class="2x" src="/static/images/icon-preview.png" width="20px">
+				<h5>Preview</h5>
+				<p>Get instant pixel perfect previews while you are building. Customize view modes per project.</p></li>
+				
+				<li class="feature"><img class="2x" src="/static/images/icon-devices.png" width="12px">
+				<h5>Devices</h5>
+				<p>Preview your prototypes on iPhone, iPad, Android or full-screen.</p></li>
+				
+				<li class="feature"><img class="2x" src="/static/images/icon-share.png" width="14px">
+				<h5>Share</h5>
+				<p>Quickly export your project to upload anywhere. Share Framer projects for easy collaboration.</p></li>
+			</section><!--right-->
+			
 		</div> <!--inner-->
 		</section> <!--viewer-block -->
 	
@@ -224,7 +215,7 @@
 	<hr>
 	
 
-	<section id="footer-features" class="one-third clearfix">
+	<section class="footer-features clearfix">
 		<section class="col-3">
 			<ul>
 				<li>Visual feedback</li>
@@ -271,11 +262,6 @@
 			<section>
 				<a href="/framerjs" class="small">Framer.js is open source</a>
 			</section>
-		</footer>
-		
-		
-	<footer class="global">
-		<p class="small">Site built with <a href="http://www.cactusformac.com" target="_blank">Cactus</a><br>Copyright &copy; 2014 Podium BV</p>
 	</footer>
 	</div> <!--inner-->
 

@@ -1,16 +1,12 @@
 {% extends "base.html" %}
-{% block sidebarclass %}more{% endblock %}
+{% block ismore %}active{% endblock %}
 
-{% block content %}
+{% block pages %}
 {% filter markdown %}
 
 <!-- More -->
 <a name="more"></a>
-### More
-
-We'd love to see what you're creating with Framer. <br> Please send a tweet to <a href="http://www.twitter.com/framerjs">@framerjs</a> if you have a prototype to share!
-
-<hr>
+# More
 
 <!-- Compatibility -->
 <a name="compatibility"></a>
@@ -130,4 +126,4 @@ If we missed you on this list, we thank you nevertheless.
 
 
 {% endfilter %}	
-{% endblock content%}
+{% endblock %}

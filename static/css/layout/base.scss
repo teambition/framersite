@@ -7,6 +7,18 @@ html {
 body {
 	font-family: "Fakt", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: $dark;
+	overflow-x:hidden;
+}
+a {
+	color: $blue;
+	font-weight: 500; 
+}
+strong {
+	font-weight: 500;
+	color: $dark;
+}
+img {
+	max-width: 100%;
 }
 // Clearfix
 .clearfix:after {
@@ -22,6 +34,13 @@ body {
 	max-width: 1080px;
 	margin: 0 auto;
 	padding: 0 60px;
+}
+.content-inner.narrow {
+	max-width: 600px;
+	position: relative;
+}
+.module-600 {
+	max-width: 600px;
 }
 [class*='col-'] { // Select all col- elements
   float: left;
@@ -52,12 +71,40 @@ hr {
 }
 // Feature list spacing
 li.feature + li.feature {
-	margin-top:$space56;
+	margin-top:$space48;
+}
+li.feature img {
+	float:left;
+	margin-right: $space8;
 }
 .block {
 	background: #222;
 	padding: $space80 0;
 	margin: $space80 0;
+}
+
+
+// Media Queries
+@media only screen and (min-width: 1024px) {
+	.code-draw {
+		position: absolute; bottom: 104px; left: 15px; height: 16px; width: 240px; 
+		-webkit-animation: write-code 3s 2s linear forwards;
+		-moz-animation: write-code 3s 2s linear forwards;
+		-ms-animation: write-code 3s 2s linear forwards;
+		-o-animation: write-code 3s 2s linear forwards;
+		animation: write-code 3s 2s linear forwards;
+		background: #1D2026;  
+	}
+
+	.code-draw-two {
+		position: absolute; bottom: 90px; left: 20px; height: 16px; width: 240px; 
+		-webkit-animation: write-code-two 2s 6s linear forwards;
+		-moz-animation: write-code-two 2s 6s linear forwards;
+		-ms-animation: write-code-two 2s 6s linear forwards;
+		-o-animation: write-code-two 2s 6s linear forwards;
+		animation: write-code-two 2s 6s linear forwards;
+		background: #1D2026;
+	}
 }
 @media screen and (max-width: 800px) {
 	.col-2 {

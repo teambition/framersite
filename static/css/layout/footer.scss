@@ -1,0 +1,17 @@
+// Footer
+footer.global {
+	margin: 0 auto;
+	text-align: center;
+	margin-top: $space64;
+	margin-bottom: $space56;
+}
+footer.global div {
+	padding-top: $space64;
+	border-top: 1px solid #eee;
+}
+footer.global p, footer.global a{
+	display: inline-block; font-weight: 400;
+	box-shadow: none; letter-spacing: 1px; text-transform: uppercase;
+	color: #BEC5D0; font-size: 12px;
+	margin: 0;
+}

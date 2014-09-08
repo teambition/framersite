@@ -1,0 +1,22 @@
+p {
+
+}
+.align-right {
+	max-width: 768px;
+	float: right;
+	clear:both;
+}
+// Clearfix wrapper
+.content-inner:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.sidebar {
+	float:left;
+	position: fixed;
+}
+
+.sidebar ul li+li {
+	margin-top: $space8;
+}

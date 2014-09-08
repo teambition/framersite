@@ -1,0 +1,46 @@
+pre {
+    background: #1d2026; 
+    word-wrap: break-word;
+    color: #fff; 
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.5;
+    border-radius: 4px;
+    -webkit-font-smoothing: subpixel-antialiased;
+    // Spacing
+    padding: $space16;
+    margin-bottom: $space32;
+    display:block;
+}
+pre, code {
+    font-family: 'Menlo', 'Monaco', Courier, monospace; 
+}
+code.inline {
+	font-size: 14px;
+	color: #333;
+    font-family: 'Menlo', 'Monaco', Courier, monospace;
+	border-bottom: 1px dotted #ddd;
+	padding-bottom: 2px;
+}
+pre .comment {
+    color: #616D85; // Comments
+}
+pre .keyword, pre .selector {
+    color: #FF9740; // "new" in new Layer
+}
+pre .constant.numeric { 
+	color: #5BC1F0; // Blue
+}
+pre .constant.language {
+    color: #91fcf3; // ".on" in imageLayer.on 
+}
+pre .string, pre .comment.docstring {
+    color: #7DDC16; // Green 
+}
+// Lines
+pre code.rainbow .line:before {
+	font-size: 10px;
+	color: #616D85;
+	padding-top:1px;
+	margin-right: 4px;
+}

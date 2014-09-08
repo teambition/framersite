@@ -1,16 +1,28 @@
 {% extends "base.html" %}
-{% block sidebarclass %}docs{% endblock %}
+{% block isdocs %}active{% endblock %}
+{% block currentpage %}class="docs"{% endblock currentpage %}
 
-{% block content %}
+{% block pages %}
+
 {% filter markdown %}
-
-<!-- Docs -->
-<a name="docs"></a>
-### Docs
-
-Below you'll find documentation for much of Framer. We've tried to be as complete as possible, but if you're looking for more you should always check the <a href="https://github.com/koenbok/Framer" target="_blank">Framer source</a> on Github.
+# Docs
+## A complete reference for Framer
 
 ---
+{% endfilter %}
+
+<div class="sidebar">
+	<ul>	
+		<li><a href="#">Layers</a></li>
+		<li><a href="#">Animations</a></li>
+		<li><a href="#">Events</a></li>
+		<li><a href="#">Utilities</a></li>
+		<li><a href="#">Defaults</a></li>
+	</ul>
+</div> <!--sidebar-->
+
+<div class="align-right">
+{% filter markdown %}
 
 <a name="layers"></a>
 <!-- Layers -->
@@ -47,7 +59,7 @@ Below you'll find documentation for much of Framer. We've tried to be as complet
 	</tr>
 
 	<tr>
-		<td colspan="3" class="group">Geometry</td>
+		<td colspan=" " class="group">Geometry</td>
 	</tr>
 	
 	<tr>
@@ -680,4 +692,5 @@ The Framer.Defaults object contains all defaults for Layers and Animations.
 	</tbody></table>
 
 {% endfilter %}	
-{% endblock content%}
+</div> <!--align-right-->
+{% endblock %}

@@ -5,35 +5,64 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
+	{% include 'social.html' %}
+	<link rel="shortcut icon" href="/static/images/favicon.ico?v=4">
+
 	<link rel="shortcut icon" href="{% static '/images/favicon.ico' %}">
 	<link rel="stylesheet" href="{% static '/css/style.css' %}">
 
-	{% block header %}
-	<title>{% block title %}Framer Style Guide{% endblock %}</title>
-	{% endblock header %}
+	<title>{% block title %}Framer – Innovative Prototyping{% endblock %}</title>
 
+	<script type="text/javascript">
+	window.heap=window.heap||[],heap.load=function(t,e){window.heap.appid=t,window.heap.config=e;var a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=("https:"===document.location.protocol?"https:":"http:")+"//cdn.heapanalytics.com/js/heap.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(t){return function(){heap.push([t].concat(Array.prototype.slice.call(arguments,0)))}},p=["identify","track"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
+	heap.load("1699555609");
+	</script>
 </head>
-<body {% block isindex %}class="home"{% endblock %}>
+
+<body {% block currentpage %}{% endblock %}>
 	<nav class="top">
 		<ul>
-			<li class="framer">Framer</li>
+			<li class="framer"><a href="/">Framer</a></li>
+			<li class="{% block islearn %}{% endblock %}"><a href="/learn.html">Learn</a></li>
+			<li class="{% block isdocs %}{% endblock %}"><a href="/docs.html">Docs</a></li>
+			<li><a href="http://examples.framerjs.com" target="_blank">Examples</a></li>
+			<li class="{% block ismore %}{% endblock %}"><a href="/more.html">More</a></li>
+
 			<section class="right">
-				<li><a href="#">Examples</a></li>
-				<li><a href="#">Learn</a></li>
-				<li><a href="#">Docs</a></li>
-				<li><a href="#">Buy $79.99</a></li>
+				<li><a href="http://framerjs.tumblr.com" target="_blank">Blog</a></li>
+				<li><a href="https://www.facebook.com/groups/framerjs/" target="_blank">Community</a></li>
 			</section>
 		</ul>
 	</nav>
 
 	<section class="container">
-	{% block content %}
-	{% endblock content %}
+		{% block content %}
+		{% endblock content %}
+
+		<div class="content-inner">
+			{% block pages %}
+			{% endblock pages %}
+		</div>
 	</section>
 
+	<footer class="global">
+		<div class="content-inner">
+			<p class="small">Framer.js is <a href="https://github.com/koenbok/Framer">open source</a> – Site built with <a href="http://www.cactusformac.com" target="_blank">Cactus</a><br>Copyright &copy; 2014 Podium BV</p>
+		</div>
+	</footer>
+
 	{% block scripts %}
-	<script src="//code.jquery.com/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="{% static '/js/main.js' %}"></script>
-	{% endblock scripts%}
+	<script src="{% static '/js/rainbow.min.js' %}"></script>
+	<script src="{% static '/js/rainbow.linenumbers.min.js' %}"></script>
+	<script src="{% static '/js/language/javascript.js' %}"></script>
+	<script src="{% static '/js/language/coffeescript.js' %}"></script>
+	<script src="{% static '/js/jquery.cookie.js' %}"></script>
+	<script src="{% static '/js/analytics.js' %}"></script>
+	
+	
+	<script src="{% static '/js/scroller.js' %}"></script>
+	{% endblock scripts %}
 </body>
 </html>

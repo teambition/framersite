@@ -16,9 +16,12 @@ h3,
 h4,
 h5,
 h6,
-p,
 li {
 	line-height: 1.5;
+}
+
+p {
+	line-height: 1.6;
 }
 
 h1 {
@@ -36,12 +39,15 @@ h2 {
 h3 {
 	font-size: 1.875em; //30px
 	font-weight:300;
+	margin-bottom: $space16;
 }
 h4 {
 	font-size: 1.625em; //26px
 }
 h5 {
 	font-size: 1.375em; //22px
+	font-weight: 400;
+	margin-bottom: $space8;
 }
 h6 {
 	font-size: 1.25em; //20px
@@ -50,9 +56,25 @@ p {
 	font-size: 1.125em; //18px
 	color:$text;
 }
+.footer-features li {
+	font-size:0.8888em; //16px
+	font-weight: 400;
+}
 .small {
 	font-size:0.8125em; //13px
 }
+
+// Vertical spacing
+.pages h3 {
+	margin-bottom: $space24;
+}
+.pages h4 {
+	margin-bottom: $space16;
+}
+.pages p {
+	margin-bottom: $space24;
+}
+
 // Helpers -------------------
 .uppercase {
 	text-transform: uppercase;
@@ -67,6 +89,12 @@ p {
 }
 .right {
 	float:right;
+}
+// Media Queries
+@media screen and (max-width: 800px) {
+	h1 {
+		font-size: 3em;
+	}
 }
 @media screen and (max-width: 600px) {
 body {

@@ -1,14 +1,14 @@
 {% extends "base.html" %}
-{% block sidebarclass %}learn{% endblock %}
+{% block islearn %}active{% endblock %}
+{% block currentpage %}class="learn"{% endblock currentpage %}
 
-{% block content %}
+{% block pages %}
 {% filter markdown %}
 
 <!-- Learn -->
 <a name="learn"></a>
-### Learn
-
-This section covers the basic principles of Framer. It's a good overview of the core principles on which Framer was built. These examples are in CoffeeScript, but most of them will work in JavaScript too.
+# Learn
+## The basic principles of Framer.
 
 ---
 
@@ -20,8 +20,8 @@ This section covers the basic principles of Framer. It's a good overview of the 
 #### Layers <a href="docs.html#layers" class="small right">More</a>
 A layer is just a rectangle that draws stuff in the browser. It has a set of basic properties like x, y, width and height. It also has other properties like opacity, scale, and blur. Layers can display images, text, or both.
 
-	# This creates a new layer, and sets its x property to 100
-	myLayer = new Layer({x:0, y:0, width:128, height:128})
+	# Create a new layer, and set its x property to 100
+	myLayer = new Layer width:128, height:128
 	myLayer.x = 100
 
 <hr>
@@ -575,4 +575,4 @@ Optimize your prototyping workflow with these tools.
 
 
 {% endfilter %}	
-{% endblock content%}
+{% endblock %}

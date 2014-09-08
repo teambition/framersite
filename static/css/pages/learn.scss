@@ -1,0 +1,22 @@
+.pages ul {
+	margin-bottom: $space32;
+}
+// Lists on Pages
+.pages ul li {
+	line-height: 1.6;
+	font-size: 1em;
+	color: #888;
+	list-style-type: circle; 
+	position: relative; 
+	left: $space16;
+	padding-left: $space8; 
+}
+.pages ul li+li {
+	margin-top: $space8;
+}
+.pages li ul li {
+	list-style-type: none;
+	padding: 0; left: 0; 
+	margin-top: $space8;
+}
+
