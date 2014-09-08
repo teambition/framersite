@@ -11,13 +11,13 @@
     if (className === "examples" || className === "community") {
       return;
     }
-    $("#sidebar a").removeClass("active");
-    return $("#sidebar a." + className).addClass("active");
+    $(".sidebar a").removeClass("active");
+    return $(".sidebar a." + className).addClass("active");
   };
 
   calculateElements = function() {
     _calculatedElements = [];
-    return $("#wrapper a[name]").map(function(index, anchor) {
+    return $("a[name]").map(function(index, anchor) {
       return _calculatedElements.push({
         offset: $(anchor).offset().top + 60,
         name: $(anchor).attr("name")
@@ -51,6 +51,7 @@
     } else {
       if (itemsInsideViewPort.length > 0) {
         bestItem = itemsInsideViewPort[0];
+        console.log(bestItem);
       } else if (itemsAboveViewPort.length > 0) {
         bestItem = itemsAboveViewPort[itemsAboveViewPort.length - 1];
       } else {
@@ -87,7 +88,7 @@
     return highlightNavigation();
   });
 
-  $("#sidebar a").click(function() {
+  $(".sidebar a").click(function() {
     var clickedClass;
     clickedClass = $(this).attr("class");
     return selectItemNamed(clickedClass);

@@ -21,10 +21,15 @@ p {
 	position: fixed;
 	top:$space64;
 }
-.sidebar ul li+li {
+.sidebar li+li {
 	margin-top: $space8;
 }
-
+.sidebar a {
+	color: #999;
+}
+.sidebar a.active {
+	color: $blue;
+}
 @media screen and (max-width:1020px) {
 	.align-right {
 		max-width: 100%;

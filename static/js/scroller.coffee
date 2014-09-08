@@ -9,8 +9,8 @@ selectItemNamed = (className) ->
 	if className in ["examples", "community"]
 		return
 
-	$("#sidebar a").removeClass "active"
-	$("#sidebar a.#{className}").addClass "active"	
+	$(".sidebar a").removeClass "active"
+	$(".sidebar a.#{className}").addClass "active"	
 	
 
 calculateElements = ->
@@ -19,7 +19,7 @@ calculateElements = ->
 
 	_calculatedElements = []
 	
-	$("#wrapper a[name]").map (index, anchor) ->
+	$("a[name]").map (index, anchor) ->
 		_calculatedElements.push
 			offset:  $(anchor).offset().top + 60
 			name: $(anchor).attr("name")
@@ -57,6 +57,7 @@ highlightNavigation = ->
 		# Ideally we select the first visible item
 		if itemsInsideViewPort.length > 0
 			bestItem = itemsInsideViewPort[0]
+			console.log(bestItem);
 	
 		# If there are no item visible we select the last visible one
 		else if itemsAboveViewPort.length > 0
@@ -102,7 +103,7 @@ $(window).resize ->
 	calculateElements()
 	highlightNavigation()
 
-$("#sidebar a").click ->
+$(".sidebar a").click ->
 
 	clickedClass = $(this).attr("class")
 
