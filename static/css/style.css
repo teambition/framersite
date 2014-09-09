@@ -467,9 +467,6 @@ nav.top {
   z-index: 1000;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1); }
 
-nav.top ul {
-  padding: 0 16px; }
-
 nav.top li {
   float: left;
   font-size: 12px;
@@ -1031,7 +1028,7 @@ footer.global p, footer.global a {
   width: 274px; }
 .home a.device-left {
   left: 0;
-  top: -10px; }
+  top: -40px; }
 .home a.device-mid {
   left: 50%;
   margin-left: -151px;
@@ -1039,7 +1036,7 @@ footer.global p, footer.global a {
   top: -60px; }
 .home a.device-right {
   right: 0;
-  top: -10px; }
+  top: -40px; }
 .home .interaction {
   background: #22252C;
   padding: 100px 0 140px 0;
