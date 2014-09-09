@@ -23,21 +23,23 @@
 
 
 // Rules
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+
+// 1. Structure: Layout elements in /layout, Styles of specific pages in /pages and are prefixed with SASS. 
+// Other generic elements (fonts, colors) used site-wide are in /includes.
+
+// 2. CSS 
+// - Comment with // instead of /**/
+// - Use 8px grid and $space variables for vertical spacing
+// - Use col-2, col-4 for responsive grid elements
+
+// - No spaces between CSS rules unless it can be defined as a new section. (Alternatively seperate with a comment/title)
+// - No complex, nested selectors that cause dom-walking: .nav ul li a span [vs] .nav span 
+// - 2x images with srcset polyfill
+// - Always define height/width of image either HTML or CSS (CSS is preferred)
+// - No SASS Nesting
+
+// - Class names are seperated by a dash: .top-nav [vs] .topNav
+// - Image names are seperated by a dash: icon-home.png [vs] iconHome.png
+
+// - Try to use classes for everything, no IDs
+// - Helper classes: clearfix
