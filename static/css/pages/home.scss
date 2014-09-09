@@ -17,7 +17,7 @@
 	width:100%;
 }
 
-// Spacing
+// Vertical Spacing ------------------------------------
 .footer h1 {
 	margin-top: $space64;
 }
@@ -37,7 +37,8 @@
 }
 
 .examples {
-	margin-bottom: $space80;
+	margin-bottom: calc(#{$space80} * 2);
+	margin-top: calc(#{$space80} + #{$space16});
 }
 // ---------------------
 // Studio Screenshot Section
@@ -124,7 +125,7 @@
 	opacity: 1;
 }
 .examples .devices {
-	width:755px;
+	max-width:755px; width:100%; 
 	height:480px;
 	margin: 0 auto;
 	position: relative;
