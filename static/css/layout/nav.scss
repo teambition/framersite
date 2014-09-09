@@ -1,31 +1,34 @@
 nav.top {
 	width: 100%;
-	height: 60px;
-	line-height:66px;
-	padding: 0 $space8;
+	height: 72px;
+	line-height:80px;
+	padding: 0 $space16;
 	vertical-align:middle;
-	position: relative;
-	background-color: $black;
-	color: $white;
+	position: fixed;
+	background-color: #fff;
+	background-color: rgba(255,255,255,0.980);
 	z-index: 100;
+	box-shadow: 
+	0 1px 0 rgba(0,0,0,0.05),
+	0 1px 3px rgba(0,0,0,0.1);
+
 }
 nav.top ul {
-	max-width:100%;
-	margin: 0 auto;
 	padding: 0 $space16;
 }
 nav.top li {
 	float: left;
-	font-size:14px;
+	font-size:13px;
 	font-weight:500;
 	line-height: inherit;
-
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
 }
 nav.top li+li {
-	padding-left: $space24;
+	padding-left: $space32;
 }
 nav.top li a {
-	color:$nav-links;
+	color:$graphite80;
 }
 nav.top li.active a {
 	color: #fff;
@@ -37,7 +40,26 @@ nav.top .framer {
 	font-size:14px;
 	text-transform: uppercase;
 }
-
+// Title
 nav.top .framer a {
-	color:#fff
+	color:#222;
+	-webkit-font-smoothing: subpixel-antialiased;
+	font-weight: 600;
+	letter-spacing: 0;
+	font-size:16px;
+}
+// Buy Button Form
+nav.top form {
+	display: inline-block;
+	position: relative;
+	top: -3px;
+}
+nav.top input {
+	font:inherit;
+	font-weight:600;
+	border: none; background: none;
+	color: $green;
+	cursor: pointer; cursor: hand;
+	-webkit-font-smoothing: antialiased;
+	text-transform: uppercase;
 }

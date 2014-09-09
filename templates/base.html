@@ -21,17 +21,19 @@
 
 <body {% block currentpage %}{% endblock %}>
 	<nav class="top">
-		<ul>
+		<ul class="content-inner">
 			<li class="framer"><a href="/">Framer</a></li>
-			<li class="{% block islearn %}{% endblock %}"><a href="/learn.html">Learn</a></li>
-			<li class="{% block isdocs %}{% endblock %}"><a href="/docs.html">Docs</a></li>
-			<li><a href="http://examples.framerjs.com" target="_blank">Examples</a></li>
-			<li class="{% block ismore %}{% endblock %}"><a href="/more.html">More</a></li>
-
 			<section class="right">
-				<li><a href="http://framerjs.tumblr.com" target="_blank">Blog</a></li>
+				<li class="{% block islearn %}{% endblock %}"><a href="/learn.html">Learn</a></li>
+				<li class="{% block isdocs %}{% endblock %}"><a href="/docs.html">Docs</a></li>
+				<li><a href="http://examples.framerjs.com" target="_blank">Examples</a></li>
 				<li><a href="https://www.facebook.com/groups/framerjs/" target="_blank">Community</a></li>
-			</section>
+				<li><a href="https://github.com/koenbok/Framer" target="_blank">Github</a></li>
+				<li><form method="POST" action="http://sites.fastspring.com/podium/product/framerstudio?action=order" target="_top"><input type="submit" value="Buy $79" /></form></li>
+			</section> <!--right-->
+			
+<!-- <li><a href="http://framerjs.tumblr.com" target="_blank">Blog</a></li>
+					<li class="{% block ismore %}{% endblock %}"><a href="/more.html">More</a></li>-->			
 		</ul>
 	</nav>
 

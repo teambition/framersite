@@ -420,31 +420,32 @@ td a + a:before {
 
 nav.top {
   width: 100%;
-  height: 60px;
-  line-height: 66px;
-  padding: 0 8px;
+  height: 72px;
+  line-height: 80px;
+  padding: 0 16px;
   vertical-align: middle;
-  position: relative;
-  background-color: #15181d;
-  color: white;
-  z-index: 100; }
+  position: fixed;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.98);
+  z-index: 100;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1); }
 
 nav.top ul {
-  max-width: 100%;
-  margin: 0 auto;
   padding: 0 16px; }
 
 nav.top li {
   float: left;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
-  line-height: inherit; }
+  line-height: inherit;
+  text-transform: uppercase;
+  letter-spacing: 0.5px; }
 
 nav.top li + li {
-  padding-left: 24px; }
+  padding-left: 32px; }
 
 nav.top li a {
-  color: #9ea7b2; }
+  color: #818b9e; }
 
 nav.top li.active a {
   color: #fff;
@@ -457,7 +458,27 @@ nav.top .framer {
   text-transform: uppercase; }
 
 nav.top .framer a {
-  color: white; }
+  color: #222;
+  -webkit-font-smoothing: subpixel-antialiased;
+  font-weight: 600;
+  letter-spacing: 0;
+  font-size: 16px; }
+
+nav.top form {
+  display: inline-block;
+  position: relative;
+  top: -3px; }
+
+nav.top input {
+  font: inherit;
+  font-weight: 600;
+  border: none;
+  background: none;
+  color: #7ddc16;
+  cursor: pointer;
+  cursor: hand;
+  -webkit-font-smoothing: antialiased;
+  text-transform: uppercase; }
 
 body {
   -webkit-font-smoothing: antialiased;
@@ -747,6 +768,11 @@ input:focus {
   line-height: 1.2;
   color: #a1a8b6; }
 
+input {
+  padding: 0;
+  -webkit-appearance: none;
+  border: none; }
+
 .header form,
 .footer form {
   display: inline-block; }
@@ -761,7 +787,6 @@ input:focus {
   cursor: pointer;
   cursor: hand;
   -webkit-font-smoothing: antialiased;
-  -webkit-appearance: none;
   padding: 12px 30px 9px 20px;
   border-radius: 50px;
   width: 120px; }
