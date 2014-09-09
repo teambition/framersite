@@ -23,13 +23,6 @@ code.inline {
 	padding-bottom: 2px;
 }
 
-// Lines
-pre code.rainbow .line:before {
-	font-size: 10px;
-	color: #616D85;
-	padding-top:1px;
-	margin-right: 4px;
-}
 .o { color: #fff; } 
 .nf { color: #fff; } // Name.Function 
 
@@ -45,9 +38,19 @@ pre code.rainbow .line:before {
 
 .s { color: #8DDE19 } // Green
 
-
-
-
-
+// Custom Line Numbers
+pre ol {
+    counter-reset: linenumbers;
+}
+pre ol li:before {
+    content: counter(linenumbers);
+    counter-increment: linenumbers;
+    float:left;
+    margin-right: $space16;
+    font-size: 10px;
+    color: #576172;
+    position: relative;
+    top:1px;
+}
 
 

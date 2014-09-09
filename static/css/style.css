@@ -38,12 +38,6 @@ code.inline {
   border-bottom: 1px dotted #ddd;
   padding-bottom: 2px; }
 
-pre code.rainbow .line:before {
-  font-size: 10px;
-  color: #616D85;
-  padding-top: 1px;
-  margin-right: 4px; }
-
 .o {
   color: #fff; }
 
@@ -73,6 +67,19 @@ pre code.rainbow .line:before {
 
 .s {
   color: #8dde19; }
+
+pre ol {
+  counter-reset: linenumbers; }
+
+pre ol li:before {
+  content: counter(linenumbers);
+  counter-increment: linenumbers;
+  float: left;
+  margin-right: 16px;
+  font-size: 10px;
+  color: #576172;
+  position: relative;
+  top: 1px; }
 
 table {
   width: 100%;
