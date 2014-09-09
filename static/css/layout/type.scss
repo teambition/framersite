@@ -5,11 +5,6 @@ body {
 	font-weight: 300;
 }
 
-// Type Scale - Base:16px
-// Small:  12(0.75em), 14(0.875em), 16(1em), 18(1.125em), 20(1.25em), 22(1.375em)
-// Medium: 26(1.625em, 30(1.875em), 34(2.125em), 38(2.375em)
-// Large: 64(4em)
-
 h1,
 h2,
 h3,
@@ -31,8 +26,8 @@ h1 {
 	letter-spacing: -1px;
 }
 .header h1 {
-	font-size: 2.6em;
-	max-width: 60%;
+	font-size: 2.5em;
+	max-width: 800px;
 	margin: 0 auto;
 	text-shadow: 0 1px 3px rgba(0,0,0,0.1)
 }
@@ -106,6 +101,9 @@ a.small.right {
 @media screen and (max-width: 800px) {
 	h1 {
 		font-size: 3em;
+	}
+	.header h1 {
+		max-width: 100%;
 	}
 }
 @media screen and (max-width: 600px) {
