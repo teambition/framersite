@@ -56,6 +56,11 @@ h5 {
 	font-weight: 400;
 	margin-bottom: $space8;
 }
+.subtitle {
+	font-size: 1.375em; //22px - Home
+	line-height: 1.5;
+	color: $black60;
+}
 h6 {
 	font-size: 1.25em; //20px
 }
@@ -68,6 +73,7 @@ p {
 	font-size:0.8888em; //16px
 	font-weight: 400;
 }
+
 .small {
 	font-size:0.8125em; //13px
 }

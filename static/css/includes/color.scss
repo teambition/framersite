@@ -2,10 +2,10 @@ $text: #666;
 $nav-links: #9EA7B2;
 
 $black: #15181D;
-	$dark80: #4B4D52;
-	$dark60: #787A7D;
-	$dark40: #A5A6A9;
-	$dark20: #D2D3D4;
+	$black80: #4B4D52;
+	$black60: #787A7D;
+	$black40: #A5A6A9;
+	$black20: #D2D3D4;
 
 $graphite: #616D85; 
 	$graphite80: #818B9E;
@@ -42,6 +42,14 @@ $white: #fff;
 	$white60: rgba( $white, 0.6 );
 	$white40: rgba( $white, 0.4 );
 	$white20: rgba( $white, 0.2 );
+
+// Color helper classes
+.graphite { color: $graphite; }
+.blue { color: $blue; }
+.green { color: $green; }
+.purple { color: $purple; }
+.cyan { color: $cyan; }
+
 
 //  $orange: #F68426;
 // 	$orange80: rgba( $orange, 0.8 );

@@ -39,7 +39,7 @@
 	margin-bottom: $space24;
 }
 // Block Spacing
-.framerjs {
+.framer-overview {
 	margin-bottom: $space64;
 }
 .screenshot-copy {
@@ -74,32 +74,23 @@
 	color: $text;
 }
 
-// FramerJS Section
-.framerjs p a {
-	color: #333;
-	font-weight: 400;
-	border-bottom: 1px solid #eee;
+// Framer Overview
+.framer-overview h5:before {
+	content:""; display:inline-block;
+	background: url("/static/images/home/sprite-icons-home.png") no-repeat;
+	height:16px; width:16px; overflow: hidden;
+	position:relative;
+	margin-right:$space16;
 }
-.framerjs ul li+li {
-	margin: 0;
+
+.framer-overview h5.green:before {
+	background-position: -16px 0;
 }
-.framerjs ul li {
-	color: $graphite60; line-height: 1.9;
-	padding-left: 0;
-	font-size: 16px;
-	font-weight: 400;
-	list-style: none; left: 0; 
+.framer-overview h5.purple:before {
+	background-position: -32px 0;
 }
-.framerjs ul li:before {
-	content: url("/static/images/icon-check.png");
-	display: inline-block; margin-right: 10px; position: relative; top: 1px;
-}
-.framerjs section a.examples {
-	box-shadow: inset 0 0 0 2px $blue;
-	padding: 12px 20px 10px;
-	border-radius: 50px;
-	font-size: 16px;
-	display: inline-block;
+.framer-overview h5.cyan:before {
+	background-position: -48px 0;
 }
 
 // Used-By Block
