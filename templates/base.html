@@ -4,18 +4,16 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
 	{% include 'social.html' %}
 	<link rel="shortcut icon" href="/static/images/favicon.ico?v=4">
-
 	<link rel="shortcut icon" href="{% static '/images/favicon.ico' %}">
 	<link rel="stylesheet" href="{% static '/css/style.css' %}">
 
 	<title>{% block title %}Framer – Innovative Prototyping{% endblock %}</title>
 
 	<script type="text/javascript">
-	window.heap=window.heap||[],heap.load=function(t,e){window.heap.appid=t,window.heap.config=e;var a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=("https:"===document.location.protocol?"https:":"http:")+"//cdn.heapanalytics.com/js/heap.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(t){return function(){heap.push([t].concat(Array.prototype.slice.call(arguments,0)))}},p=["identify","track"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
-	heap.load("1699555609");
+		window.heap=window.heap||[],heap.load=function(t,e){window.heap.appid=t,window.heap.config=e;var a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=("https:"===document.location.protocol?"https:":"http:")+"//cdn.heapanalytics.com/js/heap.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(t){return function(){heap.push([t].concat(Array.prototype.slice.call(arguments,0)))}},p=["identify","track"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
+		heap.load("1699555609");
 	</script>
 </head>
 
@@ -29,18 +27,16 @@
 				<li><a href="http://examples.framerjs.com" target="_blank">Examples</a></li>
 				<li><a href="https://www.facebook.com/groups/framerjs/" target="_blank">Community</a></li>
 				<li><a href="https://github.com/koenbok/Framer" target="_blank">Github</a></li>
-				<li><form method="POST" action="http://sites.fastspring.com/podium/product/framerstudio?action=order" target="_top"><input type="submit" value="Buy $79" /></form></li>
+				<li><form method="POST" action="http://sites.fastspring.com/podium/product/framerstudio?action=order" target="_top"><input type="submit" value="Buy $79.99" /></form></li>
 			</section> <!--right-->
-			
-<!-- <li><a href="http://framerjs.tumblr.com" target="_blank">Blog</a></li>
-					<li class="{% block ismore %}{% endblock %}"><a href="/more.html">More</a></li>-->			
+			<!-- <li><a href="http://framerjs.tumblr.com" target="_blank">Blog</a></li>
+				<li class="{% block ismore %}{% endblock %}"><a href="/more.html">More</a></li>-->			
 		</ul>
 	</nav>
 
 	<section class="container">
 		{% block content %}
 		{% endblock content %}
-
 		<div class="content-inner">
 			{% block pages %}
 			{% endblock pages %}
@@ -62,7 +58,6 @@
 	<script src="{% static '/js/language/coffeescript.js' %}"></script>
 	<script src="{% static '/js/jquery.cookie.js' %}"></script>
 	<script src="{% static '/js/analytics.js' %}"></script>
-
 	<script src="{% static '/js/srcset.min.js' %}"></script>
 	<script src="{% static '/js/scroller.js' %}"></script>
 	{% endblock scripts %}

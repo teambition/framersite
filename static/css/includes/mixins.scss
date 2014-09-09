@@ -13,3 +13,10 @@
   background-image:         linear-gradient(left, $fromColor, $toColor);
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
 }
+
+@mixin framer-gradient {
+  background-image: -o-linear-gradient(-44deg, #EFF9FE 0%, #5CBEF4 22%, #0A59AE 65%, #0E2955 100%);
+  background-image: -moz-linear-gradient(-44deg, #EFF9FE 0%, #5CBEF4 22%, #0A59AE 65%, #0E2955 100%);
+  background-image: -ms-linear-gradient(-44deg, #EFF9FE 0%, #5CBEF4 22%, #0A59AE 65%, #0E2955 100%);
+  background-image: linear-gradient(-44deg, #EFF9FE 0%, #5CBEF4 22%, #0A59AE 65%, #0E2955 100%);
+}

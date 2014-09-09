@@ -27,7 +27,12 @@ img {
   clear: both;
 }
 .container {
-	padding: 60px 0;
+	padding: 0 0 $space64 0;
+}
+
+.learn .container,
+.docs .container {
+	padding: calc(72px + 64px) 0 $space64 0;
 }
 .content-inner {
 	width: 100%;

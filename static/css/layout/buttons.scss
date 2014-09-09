@@ -15,14 +15,25 @@ input:focus{
 // Header Buttons
 .btn {
 	border: none;
-	padding:12px 26px 9px; 
+	padding:$space8 $space16;
+	padding-top:12px;
 	position: relative; 
-	border-radius: 50px; 
 	background: $blue; 
 	color: #fff;
-	font-size: 16px; line-height: 1;
+	font-size: 12px; 
+	text-transform: uppercase;
 	font-weight: 600;
+	letter-spacing: 1px;
+	text-shadow: 0 1px 1px rgba(0,0,0,0.1);
 }
+
+.btn-pill {
+	border-radius: 50px; 
+}
+.btn-rc {
+	border-radius: 4px; 
+}
+
 // Buy next-to Download
 .btn + form {
 	margin-left: $space8;
@@ -32,6 +43,12 @@ input:focus{
 }
 .btn.green:hover { 
 	color: #fff; box-shadow: none; 
+}
+.btn.cyan {
+	background: $cyan; 
+}
+.btn.purple {
+	background: $purple; 
 }
 // Github link
 .header a.small,
@@ -54,23 +71,28 @@ input {
 .footer form  {
 	display: inline-block;
 }
+.header input {
+	background: transparent;
+	box-shadow: inset 0 0 0 2px rgba(255,255,255,0.2);
+}
+
 .header input, 
 .footer input {
-	font:16px/1 "Fakt", "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family: "Fakt", "Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-weight:600;
-	border: none; background: $blue;  color:#fff;
+	font-size: 12px; 
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-shadow: 0 1px 1px rgba(0,0,0,0.1);
+	border: none; color:#fff;
 	cursor: pointer; cursor: hand;
 	-webkit-font-smoothing: antialiased;
-	padding:12px 30px 9px 20px; 
-	border-radius: 50px; 
-	width: 120px;
+	padding:$space8 $space16;
+	padding-top:12px;
+	line-height: 1;
+	border-radius: 4px; 
 }
-.header form:after, 
-.footer form:after{
-	content: "99"; display: inline-block; position: relative;
-	font-size: 12px; font-weight: 500; color: #fff;
-	left: -38px; top: -3px;
-}
+
 .header input:hover, 
 .footer input:hover {
 	background: $blue; color: #fff; box-shadow: none;
