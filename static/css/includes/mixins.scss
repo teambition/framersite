@@ -20,3 +20,10 @@
   background-image: -ms-linear-gradient(-44deg, #EFF9FE 0%, #5CBEF4 22%, #0A59AE 65%, #0E2955 100%);
   background-image: linear-gradient(-44deg, #EFF9FE 0%, #5CBEF4 22%, #0A59AE 65%, #0E2955 100%);
 }
+
+@mixin purple-gradient {
+  background-image: -o-linear-gradient(-44deg, #D8CCFF 0%, #7E65CE 49%, #3A247F 100%);
+  background-image: -moz-linear-gradient(-44deg, #D8CCFF 0%, #7E65CE 49%, #3A247F 100%);
+  background-image: -ms-linear-gradient(-44deg, #D8CCFF 0%, #7E65CE 49%, #3A247F 100%);
+  background-image: linear-gradient(-44deg, #D8CCFF 0%, #7E65CE 49%, #3A247F 100%);
+}
