@@ -976,7 +976,7 @@ footer.global p, footer.global a {
   vertical-align: middle;
   height: auto; }
 .home .used-by img + img {
-  margin-left: 21px; }
+  margin-left: 32px; }
 .home .used-by img.facebook, .home #used-by img.apple {
   top: -2px; }
 .home .used-by img.google, .home #used-by img.twitter {
@@ -984,23 +984,23 @@ footer.global p, footer.global a {
 .home .used-by img.facebook {
   width: 99px; }
 .home .used-by img.dropbox {
-  width: 32px; }
+  width: 34px; }
 .home .used-by img.google {
-  width: 88px; }
+  width: 90px; }
 .home .used-by img.apple {
-  width: 26px; }
+  width: 27px; }
 .home .used-by img.groupon {
-  width: 111px; }
+  width: 108px; }
 .home .used-by img.twitter {
-  width: 35px; }
+  width: 37px; }
 .home .used-by img.stripe {
-  width: 60px; }
+  width: 66px; }
 .home .used-by img.spotify {
-  width: 96px; }
+  width: 30px; }
 .home .used-by img.adobe {
-  width: 101px; }
+  width: 32px; }
 .home .used-by img.instagram {
-  width: 106px;
+  width: 114px;
   top: 4px; }
 .home .examples {
   background-image: -o-linear-gradient(-44deg, #d8ccff 0%, #7e65ce 49%, #3a247f 100%);
@@ -1033,7 +1033,7 @@ footer.global p, footer.global a {
   left: 50%;
   margin-left: -151px;
   z-index: 50;
-  top: -60px; }
+  top: -80px; }
 .home a.device-right {
   right: 0;
   top: -40px; }

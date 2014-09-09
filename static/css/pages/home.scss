@@ -98,20 +98,20 @@
 	height: auto;
 }
 .used-by img+img {
-	margin-left: 21px;
+	margin-left: $space32;
 }
 .used-by img.facebook, #used-by img.apple { top: -2px; }
 .used-by img.google, #used-by img.twitter { top: 2px; }
 .used-by img.facebook { width: 99px; }
-.used-by img.dropbox { width: 32px; }
-.used-by img.google { width: 88px; }
-.used-by img.apple { width: 26px; }
-.used-by img.groupon { width: 111px; }
-.used-by img.twitter { width: 35px; }
-.used-by img.stripe { width: 60px; }
-.used-by img.spotify { width: 96px; }
-.used-by img.adobe { width: 101px; }
-.used-by img.instagram { width: 106px; top: 4px; }
+.used-by img.dropbox { width: 34px; }
+.used-by img.google { width: 90px; }
+.used-by img.apple { width: 27px; }
+.used-by img.groupon { width: 108px; }
+.used-by img.twitter { width: 37px; }
+.used-by img.stripe { width: 66px; }
+.used-by img.spotify { width: 30px; }
+.used-by img.adobe { width: 32px; }
+.used-by img.instagram { width: 114px; top: 4px; }
 
 // Examples Block
 .examples {
@@ -149,7 +149,7 @@ a.device-left{
 a.device-mid {
 	left: 50%; margin-left: -151px;
 	z-index: 50; 
-	top:-60px;
+	top:-80px;
 }
 a.device-right { 
 	right: 0;
