@@ -3,7 +3,10 @@
 {% block currentpage %}class="learn"{% endblock currentpage %}
 
 {% block pages %}
+{% filter pygmentify %}
 {% filter markdown %}
+
+
 
 <!-- Learn -->
 <a name="learn"></a>
@@ -20,9 +23,11 @@
 #### Layers <a href="docs.html#layers" class="small right">More</a>
 A layer is just a rectangle that draws stuff in the browser. It has a set of basic properties like x, y, width and height. It also has other properties like opacity, scale, and blur. Layers can display images, text, or both.
 
-	# Create a new layer, and set its x property to 100
-	myLayer = new Layer width:128, height:128
-	myLayer.x = 100
+<pre lang="coffeescript">
+# Create a new layer, and set its x property to 100
+myLayer = new Layer width:128, height:128
+myLayer.x = 100
+</pre>
 
 <hr>
 
@@ -573,6 +578,6 @@ Optimize your prototyping workflow with these tools.
 		</tr>
 </tbody></table>
 
-
+{% endfilter %}	
 {% endfilter %}	
 {% endblock %}
