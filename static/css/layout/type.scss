@@ -35,6 +35,9 @@ h2 {
 	margin-bottom: $space16;
 	color: $black;
 }
+h1+h2 {
+	color: $graphite80;
+}
 h3 {
 	font-size: 1.875em; //30px
 	font-weight:300;
@@ -48,6 +51,7 @@ h5 {
 	font-weight: 400;
 	margin-bottom: $space8;
 }
+// Larger Text
 .subtitle {
 	font-size: 1.375em; //22px - Home
 	line-height: 1.5;
@@ -60,6 +64,13 @@ p {
 	font-size: 1.125em; //18px
 	color:$text;
 	margin-bottom: $space24;
+}
+.footnote {
+	color: $graphite40;
+	font-size:12px;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 0.5px;
 }
 .footer-features li {
 	font-size:0.8888em; //16px
