@@ -3,6 +3,9 @@
 {% for image in images %}.{{ image.label }}{{ image.pseudo }}{%- if not image.last %}, {%- endif %}{%- endfor %}{
     background-image:url('{{ sprite_path }}');
     background-repeat:no-repeat;
+    -webkit-background-size: {{ width }}px {{ height }}px;
+    -moz-background-size: {{ width }}px {{ height }}px;
+    background-size: {{ width }}px {{ height }}px;
 }
 {% for image in images %}
 .{{ image.label }}{{ image.pseudo }}{
@@ -12,13 +15,4 @@
 }
 {% endfor %}
 {% for ratio in ratios %}
-@media screen and (-webkit-min-device-pixel-ratio: {{ ratio.ratio }}), screen and (min--moz-device-pixel-ratio: {{ ratio.ratio }}),screen and (-o-min-device-piratio: {{ ratio.fraction }}),screen and (min-device-pixel-ratio: {{ ratio.ratio }}){
-    {% for image in images %}.{{ image.label }}{{ image.pseudo }}{% if not image.last %}, {% endif %}
-    {% endfor %}{
-        background-image:url('{{ ratio.sprite_path }}');
-        -webkit-background-size: {{ width }}px {{ height }}px;
-        -moz-background-size: {{ width }}px {{ height }}px;
-        background-size: {{ width }}px {{ height }}px;
-    }
-}
 {% endfor %}
