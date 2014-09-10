@@ -474,37 +474,37 @@ nav.top.sticky {
 
 @-webkit-keyframes fade-in {
   0% {
-    top: -20px; }
+    top: -16px; }
 
   100% {
-    top: 0px; } }
+    top: 0; } }
 
 @-moz-keyframes fade-in {
   0% {
-    top: -20px; }
+    top: -16px; }
 
   100% {
-    top: 0px; } }
+    top: 0; } }
 
 @-o-keyframes fade-in {
   0% {
-    top: -20px; }
+    top: -16px; }
 
   100% {
-    top: 0px; } }
+    top: 0; } }
 
 @keyframes fade-in {
   0% {
-    top: -20px; }
+    top: -16px; }
 
   100% {
-    top: 0px; } }
+    top: 0; } }
 
 nav.top.sticky {
-  -webkit-animation: fade-in .4s 1;
-  -moz-animation: fade-in .4s 1;
-  -o-animation: fade-in .4s 1;
-  animation: fade-in .4s 1; }
+  -webkit-animation: fade-in .3s 1;
+  -moz-animation: fade-in .3s 1;
+  -o-animation: fade-in .3s 1;
+  animation: fade-in .3s 1; }
 
 nav.top li {
   float: left;
@@ -955,7 +955,6 @@ footer.global p, footer.global a {
   font-size: 12px;
   margin: 0; }
 
-/* glue: 0.9.4 hash: 134801e78b */
 .logo-instagram,
 .logo-facebook,
 .logo-groupon,
@@ -965,9 +964,16 @@ footer.global p, footer.global a {
 .logo-dropbox,
 .logo-apple,
 .logo-adobe,
-.logo-spotify {
-  background-image: url("/static/images/sprites/logos-1x.png?134801e78b");
-  background-repeat: no-repeat; }
+.logo-spotify,
+.icon-preview,
+.icon-interaction,
+.icon-code,
+.icon-animation {
+  background-image: url("/static/images/sprites/sprite1x.png?b61e1a85ad");
+  background-repeat: no-repeat;
+  -webkit-background-size: 180px 164px;
+  -moz-background-size: 180px 164px;
+  background-size: 180px 164px; }
 
 .logo-instagram {
   background-position: 0 0;
@@ -1019,6 +1025,26 @@ footer.global p, footer.global a {
   width: 30px;
   height: 30px; }
 
+.icon-preview {
+  background-position: -151px -27px;
+  width: 16px;
+  height: 16px; }
+
+.icon-interaction {
+  background-position: -114px -89px;
+  width: 16px;
+  height: 16px; }
+
+.icon-code {
+  background-position: -130px -89px;
+  width: 16px;
+  height: 16px; }
+
+.icon-animation {
+  background-position: -146px -89px;
+  width: 16px;
+  height: 16px; }
+
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .logo-instagram,
   .logo-facebook,
@@ -1029,8 +1055,12 @@ footer.global p, footer.global a {
   .logo-dropbox,
   .logo-apple,
   .logo-adobe,
-  .logo-spotify {
-    background-image: url("/static/images/sprites/logos-2x.png?24013bcb29");
+  .logo-spotify,
+  .icon-preview,
+  .icon-interaction,
+  .icon-code,
+  .icon-animation {
+    background-image: url("/static/images/sprites/sprite2x.png?d3b6e9ba29");
     background-repeat: no-repeat;
     -webkit-background-size: 180px 164px;
     -moz-background-size: 180px 164px;
@@ -1085,21 +1115,9 @@ footer.global p, footer.global a {
   margin-bottom: 0; }
 .home .screenshot-copy h6 {
   color: #666666; }
-.home .framer-overview h5:before {
-  content: "";
+.home .framer-overview h5 figure {
   display: inline-block;
-  background: url("/static/images/home/sprite-icons-home.png") no-repeat;
-  height: 16px;
-  width: 16px;
-  overflow: hidden;
-  position: relative;
   margin-right: 16px; }
-.home .framer-overview h5.green:before {
-  background-position: -16px 0; }
-.home .framer-overview h5.purple:before {
-  background-position: -32px 0; }
-.home .framer-overview h5.cyan:before {
-  background-position: -48px 0; }
 .home .used-by {
   text-align: center;
   color: #D3D8E1; }

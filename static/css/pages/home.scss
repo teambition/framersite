@@ -70,21 +70,9 @@
 }
 
 // Framer Overview
-.framer-overview h5:before {
-	content:""; display:inline-block;
-	background: url("/static/images/home/sprite-icons-home.png") no-repeat;
-	height:16px; width:16px; overflow: hidden;
-	position:relative;
-	margin-right:$space16;
-}
-.framer-overview h5.green:before {
-	background-position: -16px 0;
-}
-.framer-overview h5.purple:before {
-	background-position: -32px 0;
-}
-.framer-overview h5.cyan:before {
-	background-position: -48px 0;
+.framer-overview h5 figure {
+	display: inline-block;
+	margin-right: $space16;
 }
 
 // Used-By Block
