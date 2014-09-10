@@ -1168,6 +1168,8 @@ footer.global p, footer.global a {
   background: #e0e2e7;
   opacity: 0.5;
   margin-top: -35px; }
+.home .used-by .footnote.top {
+  display: none; }
 .home .examples {
   background: #28affa;
   height: 480px;
@@ -1283,7 +1285,11 @@ footer.global p, footer.global a {
     margin-left: 0; } }
 @media screen and (max-width: 960px) {
   .home .header {
-    height: 620px; } }
+    height: 620px; }
+  .home .used-by .footnote {
+    display: none; }
+  .home .used-by .footnote.top {
+    display: block; } }
 @media screen and (max-width: 720px) {
   .home .examples {
     height: calc(480px * 0.8); }
