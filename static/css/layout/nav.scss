@@ -11,8 +11,15 @@ nav.top {
 }
 nav.top.sticky {
 	position: fixed;
-	@include transition(all, 1s, ease-in);
 }
+@include keyframes(fade-in) {
+  0%   { top: #{-$space16}; }
+  100% { top: 0; }
+}
+nav.top.sticky {
+  @include animation('fade-in .3s 1');
+} 
+
 nav.top li {
 	float: left;
 	font-size:12px;
@@ -20,6 +27,7 @@ nav.top li {
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
 	line-height: inherit;
+	
 }
 nav.top li+li {
 	padding-left: $space32;

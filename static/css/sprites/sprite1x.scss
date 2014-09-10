@@ -1,0 +1,90 @@
+﻿.logo-instagram,
+.logo-facebook,
+.logo-groupon,
+.logo-google,
+.logo-stripe,
+.logo-twitter,
+.logo-dropbox,
+.logo-apple,
+.logo-adobe,
+.logo-spotify,
+.icon-preview,
+.icon-interaction,
+.icon-code,
+.icon-animation {
+    background-image: url('/static/images/sprites/sprite1x.png?b61e1a85ad');
+    background-repeat: no-repeat;
+    -webkit-background-size: 180px 164px;
+    -moz-background-size: 180px 164px;
+    background-size: 180px 164px;
+}
+.logo-instagram {
+    background-position: 0 0;
+    width: 114px;
+    height: 32px;
+}
+.logo-facebook {
+    background-position: 0 -32px;
+    width: 114px;
+    height: 23px;
+}
+.logo-groupon {
+    background-position: 0 -55px;
+    width: 108px;
+    height: 18px;
+}
+.logo-google {
+    background-position: 0 -73px;
+    width: 90px;
+    height: 32px;
+}
+.logo-stripe {
+    background-position: -114px 0;
+    width: 66px;
+    height: 27px;
+}
+.logo-twitter {
+    background-position: -114px -27px;
+    width: 37px;
+    height: 30px;
+}
+.logo-dropbox {
+    background-position: -114px -57px;
+    width: 34px;
+    height: 32px;
+}
+.logo-apple {
+    background-position: -148px -57px;
+    width: 27px;
+    height: 32px;
+}
+.logo-adobe {
+    background-position: 0 -105px;
+    width: 32px;
+    height: 29px;
+}
+.logo-spotify {
+    background-position: 0 -134px;
+    width: 30px;
+    height: 30px;
+}
+.icon-preview {
+    background-position: -151px -27px;
+    width: 16px;
+    height: 16px;
+}
+.icon-interaction {
+    background-position: -114px -89px;
+    width: 16px;
+    height: 16px;
+}
+.icon-code {
+    background-position: -130px -89px;
+    width: 16px;
+    height: 16px;
+}
+.icon-animation {
+    background-position: -146px -89px;
+    width: 16px;
+    height: 16px;
+}
