@@ -464,19 +464,18 @@ nav.top {
   line-height: 70px;
   padding: 0 16px;
   vertical-align: middle;
-  position: static;
-  top: -20px;
+  position: absolute;
+  top: 0;
   background: #15181d;
   z-index: 1000; }
 
 nav.top.sticky {
   position: fixed;
-  top: 0;
-  -webkit-transition: all 0.1s ease;
-  -moz-transition: all 0.1s ease;
-  -ms-transition: all 0.1s ease;
-  -o-transition: all 0.1s ease;
-  transition: all 0.1s ease; }
+  -webkit-transition: all 1s ease-in;
+  -moz-transition: all 1s ease-in;
+  -ms-transition: all 1s ease-in;
+  -o-transition: all 1s ease-in;
+  transition: all 1s ease-in; }
 
 nav.top li {
   float: left;
@@ -926,6 +925,135 @@ footer.global p, footer.global a {
   font-size: 12px;
   margin: 0; }
 
+/* glue: 0.9.4 hash: 134801e78b */
+.logo-instagram,
+.logo-facebook,
+.logo-groupon,
+.logo-google,
+.logo-stripe,
+.logo-twitter,
+.logo-dropbox,
+.logo-apple,
+.logo-adobe,
+.logo-spotify {
+  background-image: url("/static/images/sprites/logos-1x.png?134801e78b");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.logo-instagram {
+  background-position: 0 0;
+  width: 114px;
+  height: 32px; }
+
+.logo-facebook {
+  background-position: 0 -32px;
+  width: 114px;
+  height: 23px; }
+
+.logo-groupon {
+  background-position: 0 -55px;
+  width: 108px;
+  height: 18px; }
+
+.logo-google {
+  background-position: 0 -73px;
+  width: 90px;
+  height: 32px; }
+
+.logo-stripe {
+  background-position: -114px 0;
+  width: 66px;
+  height: 27px; }
+
+.logo-twitter {
+  background-position: -114px -27px;
+  width: 37px;
+  height: 30px; }
+
+.logo-dropbox {
+  background-position: -114px -57px;
+  width: 34px;
+  height: 32px; }
+
+.logo-apple {
+  background-position: -148px -57px;
+  width: 27px;
+  height: 32px; }
+
+.logo-adobe {
+  background-position: 0 -105px;
+  width: 32px;
+  height: 29px; }
+
+.logo-spotify {
+  background-position: 0 -134px;
+  width: 30px;
+  height: 30px; }
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* glue: 0.9.4 hash: 24013bcb29 */
+  .logo-instagram,
+  .logo-facebook,
+  .logo-groupon,
+  .logo-google,
+  .logo-stripe,
+  .logo-twitter,
+  .logo-dropbox,
+  .logo-apple,
+  .logo-adobe,
+  .logo-spotify {
+    background-image: url("/static/images/sprites/logos-2x.png?24013bcb29");
+    background-repeat: no-repeat; }
+
+  .logo-instagram {
+    background-position: 0 0;
+    width: 228px;
+    height: 64px; }
+
+  .logo-facebook {
+    background-position: 0 -64px;
+    width: 228px;
+    height: 46px; }
+
+  .logo-groupon {
+    background-position: 0 -110px;
+    width: 216px;
+    height: 36px; }
+
+  .logo-google {
+    background-position: 0 -146px;
+    width: 180px;
+    height: 64px; }
+
+  .logo-stripe {
+    background-position: -228px 0;
+    width: 132px;
+    height: 54px; }
+
+  .logo-twitter {
+    background-position: -228px -54px;
+    width: 74px;
+    height: 60px; }
+
+  .logo-dropbox {
+    background-position: -228px -114px;
+    width: 68px;
+    height: 64px; }
+
+  .logo-apple {
+    background-position: -296px -114px;
+    width: 54px;
+    height: 64px; }
+
+  .logo-adobe {
+    background-position: 0 -210px;
+    width: 64px;
+    height: 58px; }
+
+  .logo-spotify {
+    background-position: 0 -268px;
+    width: 60px;
+    height: 60px; } }
 .home .header {
   background: #15181d;
   color: #fff;

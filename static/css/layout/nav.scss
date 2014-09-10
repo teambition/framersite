@@ -4,14 +4,14 @@ nav.top {
 	line-height:70px;
 	padding: 0 $space16;
 	vertical-align:middle;
-	position: static;
-	top:-20px;
+	position: absolute;
+	top:0;
 	background: $black;
 	z-index: 1000;
 }
 nav.top.sticky {
-	position: fixed; top:0;
-	@include transition(all, 0.1s, ease);
+	position: fixed;
+	@include transition(all, 1s, ease-in);
 }
 nav.top li {
 	float: left;

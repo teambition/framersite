@@ -15,6 +15,11 @@
 @import "layout/buttons.scss";
 @import "layout/footer.scss";
 
+// Sprites
+@import "sprites/logos-1x.scss";
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {  @import "sprites/logos-2x.scss"; }
+
+
 // Pages -----------------------
 .home { @import "pages/home.scss"; }
 .docs { @import "pages/docs.scss"; }
