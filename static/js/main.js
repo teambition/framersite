@@ -14,8 +14,12 @@ $(document).ready(function() {
 		else {
 			$(docsSidebar).removeClass('sticky');
 		}
-		if ($(window).scrollTop() > 600){
+		if ($(window).scrollTop() > 664){
 			 $(topNav).addClass('sticky');
+		}
+		else {
+			$(topNav).removeClass('sticky');
+			$(topNav).addClass('fade-out');
 		}
 
 	});

@@ -11,8 +11,16 @@ nav.top {
 }
 nav.top.sticky {
 	position: fixed;
-	@include transition(all, 1s, ease-in);
 }
+
+@include keyframes(fade-in) {
+  0%   { top: -20px; }
+  100% { top: 0px; }
+}
+nav.top.sticky {
+  @include animation('fade-in .4s 1');
+} 
+
 nav.top li {
 	float: left;
 	font-size:12px;
