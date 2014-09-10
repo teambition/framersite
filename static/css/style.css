@@ -1269,6 +1269,9 @@ footer.global p, footer.global a {
   top: 1px; }
 .home .footer-features li + li {
   margin-top: 8px; }
+@media screen and (max-width: 1080px) {
+  .home .used-by figure + figure {
+    margin-left: 24px; } }
 @media screen and (max-width: 1060px) {
   .home .ss-framer img {
     left: 0;
@@ -1276,6 +1279,18 @@ footer.global p, footer.global a {
 @media screen and (max-width: 960px) {
   .home .header {
     height: 620px; } }
+@media screen and (max-width: 720px) {
+  .home .used-by figure {
+    margin-bottom: 16px; } }
+@media screen and (max-width: 440px) {
+  .home .used-by figure {
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8); }
+  .home .used-by figure + figure {
+    margin-left: 0; } }
 
 .docs .align-right {
   max-width: 750px;

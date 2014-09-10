@@ -247,6 +247,11 @@ a.device-right {
 }
 
 // Media Queries
+@media screen and (max-width:1080px) {
+	.used-by figure+figure {
+		margin-left: $space24;
+	}
+}
 @media screen and (max-width:1060px) {
 	.header {
 	}
@@ -260,5 +265,17 @@ a.device-right {
 		height:620px;
 	}
 }
-
+@media screen and (max-width: 720px) {
+	.used-by figure {
+		margin-bottom: $space16;
+	}
+}
+@media screen and (max-width: 440px) {
+	.used-by figure {
+		 @include scale(0.8);
+	}
+	.used-by figure+figure {
+		margin-left: 0;
+	}
+}
 
