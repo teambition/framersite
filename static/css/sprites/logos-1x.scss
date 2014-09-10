@@ -1,77 +1,93 @@
-﻿/* glue: 0.9.4 hash: 134801e78b */
-        .logo-instagram,
-.logo-facebook,
-.logo-groupon,
-.logo-google,
-.logo-stripe,
-.logo-twitter,
-.logo-dropbox,
-.logo-apple,
-.logo-adobe,
-.logo-spotify {
-            background-image: url('/static/images/sprites/logos-1x.png?134801e78b');
+﻿/* glue: 0.9.4 hash: 2259ab9fb4 */
+        .sprite-logos-1x-logo-instagram,
+.sprite-logos-1x-logo-facebook,
+.sprite-logos-1x-logo-groupon,
+.sprite-logos-1x-logo-google,
+.sprite-logos-1x-logo-stripe,
+.sprite-logos-1x-logo-twitter,
+.sprite-logos-1x-logo-dropbox,
+.sprite-logos-1x-logo-apple,
+.sprite-logos-1x-logo-adobe,
+.sprite-logos-1x-logo-spotify {
+            background-image: url('logos-1x.png?2259ab9fb4');
             background-repeat: no-repeat;
-            background-size: cover;
         }
         
-        .logo-instagram {
+        .sprite-logos-1x-logo-instagram {
             background-position: 0 0;
             width: 114px;
             height: 32px;
         }
         
-        .logo-facebook {
+        .sprite-logos-1x-logo-facebook {
             background-position: 0 -32px;
             width: 114px;
             height: 23px;
         }
         
-        .logo-groupon {
+        .sprite-logos-1x-logo-groupon {
             background-position: 0 -55px;
             width: 108px;
             height: 18px;
         }
         
-        .logo-google {
+        .sprite-logos-1x-logo-google {
             background-position: 0 -73px;
             width: 90px;
             height: 32px;
         }
         
-        .logo-stripe {
+        .sprite-logos-1x-logo-stripe {
             background-position: -114px 0;
             width: 66px;
             height: 27px;
         }
         
-        .logo-twitter {
+        .sprite-logos-1x-logo-twitter {
             background-position: -114px -27px;
             width: 37px;
             height: 30px;
         }
         
-        .logo-dropbox {
+        .sprite-logos-1x-logo-dropbox {
             background-position: -114px -57px;
             width: 34px;
             height: 32px;
         }
         
-        .logo-apple {
+        .sprite-logos-1x-logo-apple {
             background-position: -148px -57px;
             width: 27px;
             height: 32px;
         }
         
-        .logo-adobe {
+        .sprite-logos-1x-logo-adobe {
             background-position: 0 -105px;
             width: 32px;
             height: 29px;
         }
         
-        .logo-spotify {
+        .sprite-logos-1x-logo-spotify {
             background-position: 0 -134px;
             width: 30px;
             height: 30px;
         }
         
-    
+        @media screen and (-webkit-min-device-pixel-ratio: 1.0), screen and (min--moz-device-pixel-ratio: 1.0), screen and (-o-min-device-pixel-ratio: 100/100), screen and (min-device-pixel-ratio: 1.0), screen and (min-resolution: 1.0dppx) {
+            .sprite-logos-1x-logo-instagram,
+    .sprite-logos-1x-logo-facebook,
+    .sprite-logos-1x-logo-groupon,
+    .sprite-logos-1x-logo-google,
+    .sprite-logos-1x-logo-stripe,
+    .sprite-logos-1x-logo-twitter,
+    .sprite-logos-1x-logo-dropbox,
+    .sprite-logos-1x-logo-apple,
+    .sprite-logos-1x-logo-adobe,
+    .sprite-logos-1x-logo-spotify {
+                background-image: url('logos-1x.png?2259ab9fb4');
+                -webkit-background-size: 180px 164px;
+                -moz-background-size: 180px 164px;
+                background-size: 180px 164px;
+            }
+        }
+        

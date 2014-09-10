@@ -925,135 +925,164 @@ footer.global p, footer.global a {
   font-size: 12px;
   margin: 0; }
 
-/* glue: 0.9.4 hash: 134801e78b */
-.logo-instagram,
-.logo-facebook,
-.logo-groupon,
-.logo-google,
-.logo-stripe,
-.logo-twitter,
-.logo-dropbox,
-.logo-apple,
-.logo-adobe,
-.logo-spotify {
-  background-image: url("/static/images/sprites/logos-1x.png?134801e78b");
-  background-repeat: no-repeat;
-  background-size: cover; }
+/* glue: 0.9.4 hash: 2259ab9fb4 */
+.sprite-logos-1x-logo-instagram,
+.sprite-logos-1x-logo-facebook,
+.sprite-logos-1x-logo-groupon,
+.sprite-logos-1x-logo-google,
+.sprite-logos-1x-logo-stripe,
+.sprite-logos-1x-logo-twitter,
+.sprite-logos-1x-logo-dropbox,
+.sprite-logos-1x-logo-apple,
+.sprite-logos-1x-logo-adobe,
+.sprite-logos-1x-logo-spotify {
+  background-image: url("logos-1x.png?2259ab9fb4");
+  background-repeat: no-repeat; }
 
-.logo-instagram {
+.sprite-logos-1x-logo-instagram {
   background-position: 0 0;
   width: 114px;
   height: 32px; }
 
-.logo-facebook {
+.sprite-logos-1x-logo-facebook {
   background-position: 0 -32px;
   width: 114px;
   height: 23px; }
 
-.logo-groupon {
+.sprite-logos-1x-logo-groupon {
   background-position: 0 -55px;
   width: 108px;
   height: 18px; }
 
-.logo-google {
+.sprite-logos-1x-logo-google {
   background-position: 0 -73px;
   width: 90px;
   height: 32px; }
 
-.logo-stripe {
+.sprite-logos-1x-logo-stripe {
   background-position: -114px 0;
   width: 66px;
   height: 27px; }
 
-.logo-twitter {
+.sprite-logos-1x-logo-twitter {
   background-position: -114px -27px;
   width: 37px;
   height: 30px; }
 
-.logo-dropbox {
+.sprite-logos-1x-logo-dropbox {
   background-position: -114px -57px;
   width: 34px;
   height: 32px; }
 
-.logo-apple {
+.sprite-logos-1x-logo-apple {
   background-position: -148px -57px;
   width: 27px;
   height: 32px; }
 
-.logo-adobe {
+.sprite-logos-1x-logo-adobe {
   background-position: 0 -105px;
   width: 32px;
   height: 29px; }
 
-.logo-spotify {
+.sprite-logos-1x-logo-spotify {
   background-position: 0 -134px;
   width: 30px;
   height: 30px; }
 
+@media screen and (-webkit-min-device-pixel-ratio: 1), screen and (min--moz-device-pixel-ratio: 1), screen and (-o-min-device-pixel-ratio: 100 / 100), screen and (min-device-pixel-ratio: 1), screen and (min-resolution: 1dppx) {
+  .sprite-logos-1x-logo-instagram,
+  .sprite-logos-1x-logo-facebook,
+  .sprite-logos-1x-logo-groupon,
+  .sprite-logos-1x-logo-google,
+  .sprite-logos-1x-logo-stripe,
+  .sprite-logos-1x-logo-twitter,
+  .sprite-logos-1x-logo-dropbox,
+  .sprite-logos-1x-logo-apple,
+  .sprite-logos-1x-logo-adobe,
+  .sprite-logos-1x-logo-spotify {
+    background-image: url("logos-1x.png?2259ab9fb4");
+    -webkit-background-size: 180px 164px;
+    -moz-background-size: 180px 164px;
+    background-size: 180px 164px; } }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  /* glue: 0.9.4 hash: 24013bcb29 */
-  .logo-instagram,
-  .logo-facebook,
-  .logo-groupon,
-  .logo-google,
-  .logo-stripe,
-  .logo-twitter,
-  .logo-dropbox,
-  .logo-apple,
-  .logo-adobe,
-  .logo-spotify {
-    background-image: url("/static/images/sprites/logos-2x.png?24013bcb29");
+  /* glue: 0.9.4 hash: 06b09560d9 */
+  .sprite-logos-2x-logo-instagram,
+  .sprite-logos-2x-logo-facebook,
+  .sprite-logos-2x-logo-groupon,
+  .sprite-logos-2x-logo-google,
+  .sprite-logos-2x-logo-stripe,
+  .sprite-logos-2x-logo-twitter,
+  .sprite-logos-2x-logo-dropbox,
+  .sprite-logos-2x-logo-apple,
+  .sprite-logos-2x-logo-adobe,
+  .sprite-logos-2x-logo-spotify {
+    background-image: url("logos-2x.png?06b09560d9");
     background-repeat: no-repeat; }
 
-  .logo-instagram {
+  .sprite-logos-2x-logo-instagram {
     background-position: 0 0;
     width: 228px;
     height: 64px; }
 
-  .logo-facebook {
+  .sprite-logos-2x-logo-facebook {
     background-position: 0 -64px;
     width: 228px;
     height: 46px; }
 
-  .logo-groupon {
+  .sprite-logos-2x-logo-groupon {
     background-position: 0 -110px;
     width: 216px;
     height: 36px; }
 
-  .logo-google {
+  .sprite-logos-2x-logo-google {
     background-position: 0 -146px;
     width: 180px;
     height: 64px; }
 
-  .logo-stripe {
+  .sprite-logos-2x-logo-stripe {
     background-position: -228px 0;
     width: 132px;
     height: 54px; }
 
-  .logo-twitter {
+  .sprite-logos-2x-logo-twitter {
     background-position: -228px -54px;
     width: 74px;
     height: 60px; }
 
-  .logo-dropbox {
+  .sprite-logos-2x-logo-dropbox {
     background-position: -228px -114px;
     width: 68px;
     height: 64px; }
 
-  .logo-apple {
+  .sprite-logos-2x-logo-apple {
     background-position: -296px -114px;
     width: 54px;
     height: 64px; }
 
-  .logo-adobe {
+  .sprite-logos-2x-logo-adobe {
     background-position: 0 -210px;
     width: 64px;
     height: 58px; }
 
-  .logo-spotify {
+  .sprite-logos-2x-logo-spotify {
     background-position: 0 -268px;
     width: 60px;
     height: 60px; } }
+@media screen and (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 1), screen and (min-resolution: 192dpi) and (-webkit-min-device-pixel-ratio: 1), screen and (-webkit-min-device-pixel-ratio: 2) and (min--moz-device-pixel-ratio: 1), screen and (min-resolution: 192dpi) and (min--moz-device-pixel-ratio: 1), screen and (-webkit-min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 100 / 100), screen and (min-resolution: 192dpi) and (-o-min-device-pixel-ratio: 100 / 100), screen and (-webkit-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 1), screen and (min-resolution: 192dpi) and (min-device-pixel-ratio: 1), screen and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 1dppx), screen and (min-resolution: 192dpi) and (min-resolution: 1dppx) {
+  .sprite-logos-2x-logo-instagram,
+  .sprite-logos-2x-logo-facebook,
+  .sprite-logos-2x-logo-groupon,
+  .sprite-logos-2x-logo-google,
+  .sprite-logos-2x-logo-stripe,
+  .sprite-logos-2x-logo-twitter,
+  .sprite-logos-2x-logo-dropbox,
+  .sprite-logos-2x-logo-apple,
+  .sprite-logos-2x-logo-adobe,
+  .sprite-logos-2x-logo-spotify {
+    background-image: url("logos-2x.png?06b09560d9");
+    -webkit-background-size: 360px 328px;
+    -moz-background-size: 360px 328px;
+    background-size: 360px 328px; } }
 .home .header {
   background: #15181d;
   color: #fff;

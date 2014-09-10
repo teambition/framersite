@@ -1,3 +1,4 @@
+*.pyc
 .build
 .deploy
-static/css/*/*.css
+static/css/*.css
