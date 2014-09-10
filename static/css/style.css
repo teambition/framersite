@@ -937,8 +937,7 @@ footer.global p, footer.global a {
 .logo-adobe,
 .logo-spotify {
   background-image: url("/static/images/sprites/logos-1x.png?134801e78b");
-  background-repeat: no-repeat;
-  background-size: cover; }
+  background-repeat: no-repeat; }
 
 .logo-instagram {
   background-position: 0 0;
@@ -991,7 +990,6 @@ footer.global p, footer.global a {
   height: 30px; }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  /* glue: 0.9.4 hash: 24013bcb29 */
   .logo-instagram,
   .logo-facebook,
   .logo-groupon,
@@ -1003,57 +1001,10 @@ footer.global p, footer.global a {
   .logo-adobe,
   .logo-spotify {
     background-image: url("/static/images/sprites/logos-2x.png?24013bcb29");
-    background-repeat: no-repeat; }
-
-  .logo-instagram {
-    background-position: 0 0;
-    width: 228px;
-    height: 64px; }
-
-  .logo-facebook {
-    background-position: 0 -64px;
-    width: 228px;
-    height: 46px; }
-
-  .logo-groupon {
-    background-position: 0 -110px;
-    width: 216px;
-    height: 36px; }
-
-  .logo-google {
-    background-position: 0 -146px;
-    width: 180px;
-    height: 64px; }
-
-  .logo-stripe {
-    background-position: -228px 0;
-    width: 132px;
-    height: 54px; }
-
-  .logo-twitter {
-    background-position: -228px -54px;
-    width: 74px;
-    height: 60px; }
-
-  .logo-dropbox {
-    background-position: -228px -114px;
-    width: 68px;
-    height: 64px; }
-
-  .logo-apple {
-    background-position: -296px -114px;
-    width: 54px;
-    height: 64px; }
-
-  .logo-adobe {
-    background-position: 0 -210px;
-    width: 64px;
-    height: 58px; }
-
-  .logo-spotify {
-    background-position: 0 -268px;
-    width: 60px;
-    height: 60px; } }
+    background-repeat: no-repeat;
+    -webkit-background-size: 180px 164px;
+    -moz-background-size: 180px 164px;
+    background-size: 180px 164px; } }
 .home .header {
   background: #15181d;
   color: #fff;
@@ -1122,37 +1073,27 @@ footer.global p, footer.global a {
 .home .used-by {
   text-align: center;
   color: #D3D8E1; }
-.home .used-by img {
-  position: relative;
-  vertical-align: middle;
-  height: auto; }
-.home .used-by img + img {
+.home .used-by figure {
+  display: inline-block;
+  position: relative; }
+.home .used-by figure + figure {
   margin-left: 32px; }
-.home .used-by img.facebook, .home #used-by img.apple {
-  top: -2px; }
-.home .used-by img.google, .home #used-by img.twitter {
-  top: 3px; }
-.home .used-by img.dropbox {
-  width: 34px; }
-.home .used-by img.google {
-  width: 90px; }
-.home .used-by img.twitter {
-  width: 37px; }
-.home .used-by img.facebook {
-  width: 114px; }
-.home .used-by img.apple {
-  width: 27px; }
-.home .used-by img.instagram {
-  width: 114px;
+.home .logo-google {
   top: 4px; }
-.home .used-by img.spotify {
-  width: 30px; }
-.home .used-by img.stripe {
-  width: 66px; }
-.home .used-by img.adobe {
-  width: 32px; }
-.home .used-by img.groupon {
-  width: 108px; }
+.home .logo-twitter {
+  top: 2px; }
+.home .logo-facebook {
+  top: -2px; }
+.home .logo-apple {
+  top: 2px; }
+.home .logo-instagram {
+  top: 7px; }
+.home .logo-spotify {
+  top: 4px; }
+.home .logo-adobe {
+  top: 2px; }
+.home .logo-groupon {
+  top: -2px; }
 .home .examples {
   background: #28affa;
   height: 480px;

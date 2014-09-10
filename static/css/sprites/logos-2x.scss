@@ -1,5 +1,4 @@
-﻿/* glue: 0.9.4 hash: 24013bcb29 */
-        .logo-instagram,
+﻿.logo-instagram,
 .logo-facebook,
 .logo-groupon,
 .logo-google,
@@ -9,69 +8,10 @@
 .logo-apple,
 .logo-adobe,
 .logo-spotify {
-            background-image: url('/static/images/sprites/logos-2x.png?24013bcb29');
-            background-repeat: no-repeat;
-        }
-        
-        .logo-instagram {
-            background-position: 0 0;
-            width: 228px;
-            height: 64px;
-        }
-        
-        .logo-facebook {
-            background-position: 0 -64px;
-            width: 228px;
-            height: 46px;
-        }
-        
-        .logo-groupon {
-            background-position: 0 -110px;
-            width: 216px;
-            height: 36px;
-        }
-        
-        .logo-google {
-            background-position: 0 -146px;
-            width: 180px;
-            height: 64px;
-        }
-        
-        .logo-stripe {
-            background-position: -228px 0;
-            width: 132px;
-            height: 54px;
-        }
-        
-        .logo-twitter {
-            background-position: -228px -54px;
-            width: 74px;
-            height: 60px;
-        }
-        
-        .logo-dropbox {
-            background-position: -228px -114px;
-            width: 68px;
-            height: 64px;
-        }
-        
-        .logo-apple {
-            background-position: -296px -114px;
-            width: 54px;
-            height: 64px;
-        }
-        
-        .logo-adobe {
-            background-position: 0 -210px;
-            width: 64px;
-            height: 58px;
-        }
-        
-        .logo-spotify {
-            background-position: 0 -268px;
-            width: 60px;
-            height: 60px;
-        }
-        
-
-        
+    background-image: url('/static/images/sprites/logos-2x.png?24013bcb29');
+    background-repeat: no-repeat;
+    -webkit-background-size: 180px 164px;
+    -moz-background-size: 180px 164px;
+    background-size: 180px 164px;
+}
+       

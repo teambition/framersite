@@ -92,27 +92,22 @@
 	text-align: center;
 	color: #D3D8E1;
 }
-.used-by img {
+.used-by figure {
+	display: inline-block;
 	position: relative;
-	vertical-align: middle;
-	height: auto;
 }
-.used-by img+img {
+.used-by figure+figure {
 	margin-left: $space32;
 }
-.used-by img.facebook, #used-by img.apple { top: -2px; }
-.used-by img.google, #used-by img.twitter { top: 3px; }
-
-.used-by img.dropbox { width: 34px; }
-.used-by img.google { width: 90px; }
-.used-by img.twitter { width: 37px; }
-.used-by img.facebook { width: 114px; }
-.used-by img.apple { width: 27px; }
-.used-by img.instagram { width: 114px; top: 4px; }
-.used-by img.spotify { width: 30px; }
-.used-by img.stripe { width: 66px; }
-.used-by img.adobe { width: 32px; }
-.used-by img.groupon { width: 108px; }
+// Vertical centering
+.logo-google {      top:4px; }
+.logo-twitter {     top:2px; }
+.logo-facebook {   top:-2px; }
+.logo-apple {       top:2px; }
+.logo-instagram {   top:7px; }
+.logo-spotify {     top:4px; }
+.logo-adobe {       top:2px; }
+.logo-groupon {    top:-2px; }
 
 // Examples Block
 .examples {
