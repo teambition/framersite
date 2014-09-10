@@ -1,8 +1,8 @@
 .header {
-	@include framer-gradient; 
+	background: $black; // not 14171C
 	color: #fff;
 	height: 680px;
-	margin-top:72px;
+	margin-top:64px;
 	overflow: hidden;
 	position: relative;
 	padding-top:$space48;
@@ -101,21 +101,22 @@
 	margin-left: $space32;
 }
 .used-by img.facebook, #used-by img.apple { top: -2px; }
-.used-by img.google, #used-by img.twitter { top: 2px; }
-.used-by img.facebook { width: 99px; }
+.used-by img.google, #used-by img.twitter { top: 3px; }
+
 .used-by img.dropbox { width: 34px; }
 .used-by img.google { width: 90px; }
-.used-by img.apple { width: 27px; }
-.used-by img.groupon { width: 108px; }
 .used-by img.twitter { width: 37px; }
-.used-by img.stripe { width: 66px; }
-.used-by img.spotify { width: 30px; }
-.used-by img.adobe { width: 32px; }
+.used-by img.facebook { width: 114px; }
+.used-by img.apple { width: 27px; }
 .used-by img.instagram { width: 114px; top: 4px; }
+.used-by img.spotify { width: 30px; }
+.used-by img.stripe { width: 66px; }
+.used-by img.adobe { width: 32px; }
+.used-by img.groupon { width: 108px; }
 
 // Examples Block
 .examples {
-	@include purple-gradient;
+	background: $blue;
 	height: 480px;
 	position:relative;
 	padding: 0;

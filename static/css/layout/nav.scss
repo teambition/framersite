@@ -1,31 +1,27 @@
 nav.top {
 	width: 100%;
-	height: 72px;
-	line-height:80px;
+	height: 64px;
+	line-height:70px;
 	padding: 0 $space16;
 	vertical-align:middle;
 	position: fixed;
 	top:0;
-	background: #fff;
+	background: $black;;
 	z-index: 1000;
-	box-shadow: 
-	0 1px 0 rgba(0,0,0,0.05),
-	0 1px 3px rgba(0,0,0,0.1);
-
 }
 nav.top li {
 	float: left;
 	font-size:12px;
 	font-weight:600;
-	line-height: inherit;
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
+	line-height: inherit;
 }
 nav.top li+li {
 	padding-left: $space32;
 }
 nav.top li a {
-	color:$graphite;
+	color:$graphite80;
 	font-weight: 600;
 }
 nav.top li.active a {
@@ -40,8 +36,7 @@ nav.top .framer {
 }
 // Title
 nav.top .framer a {
-	color:#222;
-	-webkit-font-smoothing: subpixel-antialiased;
+	color:#fff;
 	font-weight: 600;
 	letter-spacing: 0;
 	font-size:16px;
@@ -60,4 +55,41 @@ nav.top input {
 	cursor: pointer; cursor: hand;
 	-webkit-font-smoothing: antialiased;
 	text-transform: uppercase;
+}
+
+@media screen and (max-width: 1000px) {
+	nav.top .content-inner {
+		max-width: 900px;
+	}
+}
+
+@media screen and (max-width:440px) {
+	nav.top {
+		line-height: 1;
+		position: absolute;
+	}
+
+	nav.top .framer {
+		text-align: center;
+		width:100%;
+		height: $space32;
+		margin-bottom:$space24;
+		box-shadow: 0 1px 0 rgba(255,255,255,0.1);
+	}
+
+	nav.top .right {
+		float:none;
+		height: $space64;
+		text-align: center;
+	}
+	nav.top li {
+		display:inline-block;
+		float:none;
+	}
+	nav.top .download,
+	nav.top .github,
+	nav.top .community,
+	nav.top .buy {
+		display: none;
+	}
 }

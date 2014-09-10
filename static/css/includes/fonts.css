@@ -1,5 +1,14 @@
 @font-face {
 	font-family: 'Fakt';
+	src: url('fonts/FaktPro-Thin.eot');
+	src: url('fonts/FaktPro-Thin.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/FaktPro-Thin.woff') format('woff'),
+	     url('fonts/FaktPro-Thin.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 100;
+}
+@font-face {
+	font-family: 'Fakt';
 	src: url('fonts/FaktPro-Light.eot');
 	src: url('fonts/FaktPro-Light.eot?#iefix') format('embedded-opentype'),
 	     url('fonts/FaktPro-Light.woff') format('woff'),
@@ -42,4 +51,13 @@
 	     url('fonts/FaktPro-SemiBold.ttf') format('truetype');
 	font-style: normal;
 	font-weight: 600;
+}
+@font-face {
+	font-family: 'Fakt';
+	src: url('fonts/FaktPro-Bold.eot');
+	src: url('fonts/FaktPro-Bold.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/FaktPro-Bold.woff') format('woff'),
+	     url('fonts/FaktPro-Bold.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 700;
 }
