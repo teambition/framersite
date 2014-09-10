@@ -464,10 +464,19 @@ nav.top {
   line-height: 70px;
   padding: 0 16px;
   vertical-align: middle;
-  position: fixed;
-  top: 0;
+  position: static;
+  top: -20px;
   background: #15181d;
   z-index: 1000; }
+
+nav.top.sticky {
+  position: fixed;
+  top: 0;
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  -ms-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  transition: all 0.1s ease; }
 
 nav.top li {
   float: left;

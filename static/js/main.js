@@ -5,6 +5,7 @@ $('#topbar img').click( function(){
 $(document).ready(function() {
 	
 	var docsSidebar = document.querySelector('.docs .sidebar');
+	var topNav = document.querySelector('.home nav.top');
 
 	$(window).scroll(function() {
 		if ($(window).scrollTop() > 296){
@@ -13,6 +14,10 @@ $(document).ready(function() {
 		else {
 			$(docsSidebar).removeClass('sticky');
 		}
+		if ($(window).scrollTop() > 600){
+			 $(topNav).addClass('sticky');
+		}
+
 	});
 	
 });
