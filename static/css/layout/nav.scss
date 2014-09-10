@@ -76,11 +76,11 @@ nav.top input {
 }
 
 @media screen and (max-width:440px) {
-	nav.top {
+	nav.top, 
+	nav.top.sticky {
 		line-height: 1;
 		position: absolute;
 	}
-
 	nav.top .framer {
 		text-align: center;
 		width:100%;
@@ -88,7 +88,6 @@ nav.top input {
 		margin-bottom:$space24;
 		box-shadow: 0 1px 0 rgba(255,255,255,0.1);
 	}
-
 	nav.top .right {
 		float:none;
 		height: $space64;

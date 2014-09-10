@@ -107,9 +107,12 @@
 }
 
 .used-by .footnote-line {
-	width:100%; height:1px; 
-	background: $graphite20;
-	opacity:0.5; margin-top:-35px;
+	width:100%; 
+	height:1px; 
+	background: 
+	$graphite20;
+	opacity:0.5; 
+	margin-top: -35px;
 }
 // Examples Block
 .examples {
@@ -122,7 +125,8 @@
 	opacity: 1;
 }
 .examples .devices {
-	max-width:755px; width:100%; 
+	max-width:755px; 
+	width:100%; 
 	height:480px;
 	margin: 0 auto;
 	position: relative;
@@ -130,11 +134,16 @@
 .examples .devices a {
 	position: absolute; 
 }
+a.device-left,
+a.device-mid,
+a.device-right {
+	height: auto;
+}
 a.device-left img { 
 	width: 266px; 
 }
 a.device-mid img  { 
-	width: 326px; 
+	width: 326px;
 }
 a.device-right img  { 
 	width: 274px; 
@@ -266,11 +275,64 @@ a.device-right {
 	}
 }
 @media screen and (max-width: 720px) {
+	.examples {
+		height: calc(480px * 0.8);
+	}
+	.devices {
+		top: -49px;
+	}
+	a.device-left,
+	a.device-mid,
+	a.device-right { 
+		@include scale(0.8)
+	}
+	a.device-left {
+		left:-64px;
+	}
+	a.device-right {
+		right:-64px;
+	}
+	// Logos block
 	.used-by figure {
 		margin-bottom: $space16;
 	}
 }
-@media screen and (max-width: 440px) {
+@media screen and (max-width:660px) {
+	.examples {
+		height: calc(480px * 0.6);
+	}
+	.devices {
+		top: -99px;
+	}
+	a.device-left,
+	a.device-mid,
+	a.device-right { 
+		@include scale(0.6);
+	}
+	a.device-left {
+		left:-$space32;
+	}
+	a.device-right {
+		right:-$space32;
+	}
+}
+@media screen and (max-width: 480px) {
+	a.device-left,
+	a.device-right {
+		@include scale(0.4);
+	}
+	a.device-mid {
+		top:-50px; 
+		min-width: 180px; 
+	}
+	a.device-left {
+		left: -80px;
+	}
+	a.device-right {
+		right: -80px;
+	}
+
+	// Logos block
 	.used-by figure {
 		 @include scale(0.8);
 	}

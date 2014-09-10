@@ -140,22 +140,22 @@ li.feature img {
 }
 @media screen and (max-width: 720px) {
 	.content-inner {
-		max-width: 500px;
+		max-width: 560px;
 	}
 	.col-2 {
 		max-width:100%;
 	}
 	.col-4 {
-		max-width:180px;
+		max-width:220px;
 		margin-right:0;
 	}
 	.col-4:nth-child(2n) {
 		margin-left:60px;
 	}
 }
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 500px) {
 	.content-inner {
-		padding:20px;
+		padding:0 20px;
 	}
 	hr {
 		margin: $space32 auto;
