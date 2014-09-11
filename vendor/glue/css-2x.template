@@ -3,7 +3,7 @@
 {% for image in images %}.{{ image.filename|replace(".png", "") }}{%- if not image.last %}, {%- endif %}{%- endfor %}{
     background-image:url('/static/images/sprites/{{ sprite_path }}');
     background-repeat:no-repeat;
-    -webkit-background-size: {{ width }}px {{ height }}px;
-    -moz-background-size: {{ width }}px {{ height }}px;
-    background-size: {{ width }}px {{ height }}px;
+    -webkit-background-size: {{ width / 2 }}px {{ height / 2 }}px;
+    -moz-background-size: {{ width / 2 }}px {{ height / 2 }}px;
+    background-size: {{ width / 2 }}px {{ height / 2 }}px;
 }
