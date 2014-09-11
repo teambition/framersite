@@ -1,0 +1,9 @@
+/* glue: {{ version }} hash: {{ hash }} */
+/* 2x */
+{% for image in images %}.{{ image.filename }}{%- if not image.last %}, {%- endif %}{%- endfor %}{
+    background-image:url('/static/images/sprites/{{ sprite_path }}');
+    background-repeat:no-repeat;
+    -webkit-background-size: {{ width }}px {{ height }}px;
+    -moz-background-size: {{ width }}px {{ height }}px;
+    background-size: {{ width }}px {{ height }}px;
+}
