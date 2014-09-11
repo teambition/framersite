@@ -1194,7 +1194,7 @@ footer.global p, footer.global a {
   top: -40px; }
 .home a.device-mid {
   left: 50%;
-  margin-left: -151px;
+  margin-left: -163px;
   z-index: 50;
   top: -80px; }
 .home a.device-right {
@@ -1319,18 +1319,21 @@ footer.global p, footer.global a {
 @media screen and (max-width: 480px) {
   .home a.device-left,
   .home a.device-right {
-    -moz-transform: scale(0.4);
-    -o-transform: scale(0.4);
-    -ms-transform: scale(0.4);
-    -webkit-transform: scale(0.4);
-    transform: scale(0.4); }
+    -moz-transform: scale(0.44);
+    -o-transform: scale(0.44);
+    -ms-transform: scale(0.44);
+    -webkit-transform: scale(0.44);
+    transform: scale(0.44); }
   .home a.device-mid {
-    top: -50px;
-    min-width: 180px; }
+    top: -60px;
+    margin-left: -150px; }
+  .home a.device-mid img {
+    max-width: initial;
+    width: 300px; }
   .home a.device-left {
-    left: -80px; }
+    left: -72px; }
   .home a.device-right {
-    right: -80px; }
+    right: -72px; }
   .home .used-by figure {
     -moz-transform: scale(0.8);
     -o-transform: scale(0.8);
@@ -1338,7 +1341,10 @@ footer.global p, footer.global a {
     -webkit-transform: scale(0.8);
     transform: scale(0.8); }
   .home .used-by figure + figure {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .home .examples {
+    margin-top: 16px;
+    margin-bottom: 72px; } }
 
 .docs .align-right {
   max-width: 750px;

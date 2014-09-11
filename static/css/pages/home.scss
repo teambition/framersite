@@ -154,7 +154,7 @@ a.device-left{
 	top:-40px;
 }
 a.device-mid {
-	left: 50%; margin-left: -151px;
+	left: 50%; margin-left: -163px;
 	z-index: 50; 
 	top:-80px;
 }
@@ -320,25 +320,34 @@ a.device-right {
 @media screen and (max-width: 480px) {
 	a.device-left,
 	a.device-right {
-		@include scale(0.4);
+		@include scale(0.44);
 	}
-	a.device-mid {
-		top:-50px; 
-		min-width: 180px; 
+	a.device-mid  {
+		top:-60px; 
+		margin-left:-150px;
+	}
+	a.device-mid img {
+		max-width: initial;
+		width: 300px;
 	}
 	a.device-left {
-		left: -80px;
+		left: -72px;
 	}
 	a.device-right {
-		right: -80px;
+		right: -72px;
 	}
-
 	// Logos block
 	.used-by figure {
 		 @include scale(0.8);
 	}
 	.used-by figure+figure {
 		margin-left: 0;
+	}
+
+	// Examples block
+	.examples {
+		margin-top: $space16;
+		margin-bottom: $space72;
 	}
 }
 
