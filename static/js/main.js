@@ -8,7 +8,7 @@ $(document).ready(function() {
 	var topNav = document.querySelector('.home nav.top');
 
 	$(window).scroll(function() {
-		if ($(window).scrollTop() > 296){
+		if ($(window).scrollTop() > 330){
 			 $(docsSidebar).addClass('sticky');
 		}	 
 		else {

@@ -1364,9 +1364,10 @@ footer.global p, footer.global a {
 .docs .sidebar li + li {
   margin-top: 8px; }
 .docs .sidebar a {
-  color: #999; }
-.docs .sidebar a.active {
   color: #28affa; }
+.docs .sidebar .title {
+  font-weight: 500;
+  color: #15181d; }
 @media screen and (max-width: 1020px) {
   .docs .align-right {
     max-width: 100%;
