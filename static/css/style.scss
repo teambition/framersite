@@ -27,7 +27,7 @@
 
 
 
-// Rules
+// R U L E S 
 
 // 1. Structure: Layout elements in /layout, Styles of specific pages in /pages and are prefixed with SASS. 
 // Other generic elements (fonts, colors) used site-wide are in /includes.
@@ -48,3 +48,22 @@
 
 // - Try to use classes for everything, no IDs
 // - Helper classes: clearfix
+
+
+// 3. Images:
+// - Add small images (icons, logos, etc) to sprite. Place larger images (bg) within <img> tags 
+// with srcset for 2x images.
+// - To add images to sprite: Export 1x and 2x from Sketch or PS and add to /sprites/sprite1x and /sprites/sprite2x folder.
+// Type "make sprites" in Terminal. This will output to /static/images/sprites. Adjust 2x SCSS file to not override the 1x file,
+// but make sure the background-size values of 1x are also placed within 2x to inherit the proper width and height.
+
+
+// 4. Usage:
+// - Use 8px spacing variables for spacing elements.
+// - Use color variables to color elements. Or, use a .blue/.green class for specific elements.
+// - Use .btn class to create a button.
+// - Use .col-2/.col-4 to layout elements.
+// - Use mixins for transforms/gradients/keyframes/transitions
+// - Use type.scss when creating and sizing typography
+
+

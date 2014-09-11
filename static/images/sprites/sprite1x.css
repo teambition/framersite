@@ -1,0 +1,94 @@
+﻿/* glue: 0.9.4 hash: 5aa7956f61 */
+.sprite-sprite1x-logo-instagram,.sprite-sprite1x-logo-facebook,.sprite-sprite1x-logo-groupon,.sprite-sprite1x-logo-google,.sprite-sprite1x-logo-stripe,.sprite-sprite1x-logo-twitter,.sprite-sprite1x-logo-dropbox,.sprite-sprite1x-logo-apple,.sprite-sprite1x-logo-adobe,.sprite-sprite1x-logo-spotify,.sprite-sprite1x-icon-preview,.sprite-sprite1x-icon-interaction,.sprite-sprite1x-icon-code,.sprite-sprite1x-icon-animation{
+    background-image:url('sprite1x.png?5aa7956f61');
+    background-repeat:no-repeat;
+    -webkit-background-size: 180px 164px;
+    -moz-background-size: 180px 164px;
+    background-size: 180px 164px;
+}
+
+.sprite-sprite1x-logo-instagram{
+    background-position:0 0;
+    width:114px;
+    height:32px;
+}
+
+.sprite-sprite1x-logo-facebook{
+    background-position:0 -32px;
+    width:114px;
+    height:23px;
+}
+
+.sprite-sprite1x-logo-groupon{
+    background-position:0 -55px;
+    width:108px;
+    height:18px;
+}
+
+.sprite-sprite1x-logo-google{
+    background-position:0 -73px;
+    width:90px;
+    height:32px;
+}
+
+.sprite-sprite1x-logo-stripe{
+    background-position:-114px 0;
+    width:66px;
+    height:27px;
+}
+
+.sprite-sprite1x-logo-twitter{
+    background-position:-114px -27px;
+    width:37px;
+    height:30px;
+}
+
+.sprite-sprite1x-logo-dropbox{
+    background-position:-114px -57px;
+    width:34px;
+    height:32px;
+}
+
+.sprite-sprite1x-logo-apple{
+    background-position:-148px -57px;
+    width:27px;
+    height:32px;
+}
+
+.sprite-sprite1x-logo-adobe{
+    background-position:0 -105px;
+    width:32px;
+    height:29px;
+}
+
+.sprite-sprite1x-logo-spotify{
+    background-position:0 -134px;
+    width:30px;
+    height:30px;
+}
+
+.sprite-sprite1x-icon-preview{
+    background-position:-151px -27px;
+    width:16px;
+    height:16px;
+}
+
+.sprite-sprite1x-icon-interaction{
+    background-position:-114px -89px;
+    width:16px;
+    height:16px;
+}
+
+.sprite-sprite1x-icon-code{
+    background-position:-130px -89px;
+    width:16px;
+    height:16px;
+}
+
+.sprite-sprite1x-icon-animation{
+    background-position:-146px -89px;
+    width:16px;
+    height:16px;
+}
+
+

@@ -153,12 +153,12 @@ li.feature img {
 		margin-left:60px;
 	}
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 560px) {
 	.content-inner {
 		padding:0 20px;
 	}
 	hr {
-		margin: $space32 auto;
+		margin: $space48 auto;
 	}
 	.col-2,
 	.col-4 {
@@ -169,6 +169,9 @@ li.feature img {
 	}
 	.col-4:nth-child(2) {
 		margin-bottom: 0;
+	}
+	.col-2 + .col-2 {
+		margin-top: $space48;
 	}
 	.col-4 + .col-4 {
 		margin-top: $space24;

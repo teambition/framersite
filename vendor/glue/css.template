@@ -1,5 +1,4 @@
 /* glue: {{ version }} hash: {{ hash }} */
-/* hello bennie */
 {% for image in images %}.{{ image.label }}{{ image.pseudo }}{%- if not image.last %}, {%- endif %}{%- endfor %}{
     background-image:url('{{ sprite_path }}');
     background-repeat:no-repeat;
