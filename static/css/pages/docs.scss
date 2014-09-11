@@ -1,6 +1,3 @@
-p {
-
-}
 .align-right {
 	max-width: 750px;
 	float: right;
@@ -35,7 +32,7 @@ p {
 	.align-right {
 		max-width: 100%;
 		float:none;
-		clear:auto;
+		clear:both;
 	}
 	.sidebar {
 		display: none;

@@ -3,9 +3,17 @@ $('#topbar img').click( function(){
 });
 
 $(document).ready(function() {
-	
-	var docsSidebar = document.querySelector('.docs .sidebar');
-	var topNav = document.querySelector('.home nav.top');
+	var docsSidebar, topNav, exampleBlock, exampleDevices;
+	docsSidebar = document.querySelector('.docs .sidebar');
+	topNav = document.querySelector('.home nav.top');
+	exampleBlock = document.querySelector('.examples');
+	exampleDevices = document.querySelectorAll('.device-left, .device-right');
+
+	$(exampleBlock).hover (
+		function() {
+			$(exampleDevices).toggleClass("shrink");
+		}
+	);
 
 	$(window).scroll(function() {
 		if ($(window).scrollTop() > 330){
@@ -23,7 +31,6 @@ $(document).ready(function() {
 		}
 
 	});
-	
 });
 		
 
