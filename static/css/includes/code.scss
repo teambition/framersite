@@ -49,3 +49,8 @@ pre ol li:before {
 }
 
 
+@media screen and (max-width: 660px) {
+    pre ol li:before {
+        content:"";
+    }
+}

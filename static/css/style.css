@@ -84,6 +84,9 @@ pre ol li:before {
   position: relative;
   top: 1px; }
 
+@media screen and (max-width: 660px) {
+  pre ol li:before {
+    content: ""; } }
 table {
   width: 100%;
   border-collapse: separate;
@@ -522,9 +525,9 @@ nav.top li a {
   font-weight: 600; }
 
 nav.top li.active a {
-  color: #28affa;
-  padding-bottom: 24px;
-  border-bottom: 2px solid #28affa; }
+  color: #fff;
+  padding-bottom: 21px;
+  border-bottom: 2px solid #fff; }
 
 nav.top .framer {
   font-weight: 600;
@@ -620,6 +623,10 @@ h2 {
 h1 + h2 {
   color: #818b9e; }
 
+h1 + h4,
+h1 + p {
+  margin-top: 24px; }
+
 h3 {
   font-size: 1.875em;
   font-weight: 300;
@@ -630,6 +637,11 @@ h4 {
 
 h5 {
   font-size: 1.375em;
+  font-weight: 400;
+  margin-bottom: 8px; }
+
+.learn h5 {
+  font-size: 1.1em;
   font-weight: 400;
   margin-bottom: 8px; }
 
@@ -662,9 +674,9 @@ p {
 
 a.small.right {
   float: right;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
-  margin-top: 2px;
+  margin-top: 4px;
   text-transform: uppercase;
   letter-spacing: 1px; }
 
@@ -708,9 +720,6 @@ body {
 a {
   color: #28affa;
   font-weight: 400; }
-
-p a {
-  border-bottom: 1px solid #a9dffd; }
 
 strong {
   font-weight: 500;
@@ -840,7 +849,7 @@ li.feature img {
     margin-left: 60px; } }
 @media screen and (max-width: 560px) {
   .content-inner {
-    padding: 0 20px; }
+    padding: 0 16px; }
 
   hr {
     margin: 48px auto; }
@@ -1385,9 +1394,10 @@ footer.global p, footer.global a {
 .learn .content-inner ul {
   margin-bottom: 32px; }
 .learn .content-inner ul li {
-  line-height: 1.6;
+  line-height: 1.5;
   font-size: 1em;
-  color: #888;
+  font-weight: 400;
+  color: #a5a6a9;
   list-style-type: circle;
   position: relative;
   left: 16px;

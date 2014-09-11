@@ -9,9 +9,10 @@
 }
 // Lists on Pages
 .content-inner ul li {
-	line-height: 1.6;
+	line-height: 1.5;
 	font-size: 1em;
-	color: #888;
+	font-weight: 400;
+	color: $black40;
 	list-style-type: circle; 
 	position: relative; 
 	left: $space16;
