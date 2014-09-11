@@ -18,6 +18,10 @@
 	width:100%;
 }
 
+.col-4 p {
+	margin-bottom: 0;
+}
+
 // Vertical Spacing ------------------------------------
 .footer h1 {
 	margin-top: $space64;
@@ -36,10 +40,9 @@
 .screenshot-copy {
 	margin-top: $space48;
 }
-
 .examples {
 	margin-bottom: calc(#{$space80} * 2);
-	margin-top: calc(#{$space80} + #{$space16});
+	margin-top: calc(#{$space80} + #{$space40});
 }
 // ---------------------
 // Studio Screenshot Section
@@ -299,8 +302,14 @@ a.device-right {
 	}
 }
 @media screen and (max-width:660px) {
+	// ****************
+	// Vertical spacing
 	.examples {
 		height: calc(480px * 0.6);
+		margin-bottom: 100px;
+	}
+	.used-by .footnote {
+		margin-top: $space32;
 	}
 	.devices {
 		top: -99px;
@@ -317,6 +326,7 @@ a.device-right {
 		right:-$space32;
 	}
 }
+
 @media screen and (max-width: 480px) {
 	a.device-left,
 	a.device-right {

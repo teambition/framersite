@@ -783,8 +783,8 @@ li.feature img {
 
 .block {
   background: #222;
-  padding: 80px 0;
-  margin: 80px 0; }
+  padding: 72px 0;
+  margin: 72px 0; }
 
 @media only screen and (min-width: 1024px) {
   .code-draw {
@@ -813,20 +813,18 @@ li.feature img {
     animation: write-code-two 2s 6s linear forwards;
     background: #1D2026; } }
 @media screen and (max-width: 1080px) {
-  .content-inner {
-    max-width: 960px; }
+  .col-4 {
+    margin-right: 50px; }
 
   .col-2 {
-    max-width: 400px; }
-
-  .col-4 {
-    max-width: 180px; } }
+    max-width: 400px; } }
 @media screen and (max-width: 980px) {
   .content-inner {
     max-width: 720px; }
 
   .col-2 {
-    max-width: 300px; }
+    max-width: 300px;
+    margin-right: 60px; }
 
   .col-4 {
     max-width: 300px;
@@ -836,7 +834,10 @@ li.feature img {
     margin-left: 60px; }
 
   .col-4:nth-child(2) {
-    margin-bottom: 32px; } }
+    margin-bottom: 40px; }
+
+  hr {
+    margin: 56px auto; } }
 @media screen and (max-width: 720px) {
   .content-inner {
     max-width: 560px; }
@@ -844,12 +845,18 @@ li.feature img {
   .col-2 {
     max-width: 100%; }
 
+  .col-2 + .col-2 {
+    margin-top: 48px; }
+
   .col-4 {
     max-width: 220px;
     margin-right: 0; }
 
   .col-4:nth-child(2n) {
-    margin-left: 60px; } }
+    margin-left: 60px; }
+
+  hr {
+    margin: 48px auto; } }
 @media screen and (max-width: 560px) {
   .learn .container,
   .docs .container {
@@ -857,9 +864,6 @@ li.feature img {
 
   .content-inner {
     padding: 0 16px; }
-
-  hr {
-    margin: 48px auto; }
 
   .col-2,
   .col-4 {
@@ -872,10 +876,13 @@ li.feature img {
     margin-bottom: 0; }
 
   .col-2 + .col-2 {
-    margin-top: 48px; }
+    margin-top: 40px; }
 
   .col-4 + .col-4 {
-    margin-top: 24px; } }
+    margin-top: 40px; }
+
+  hr {
+    margin: 40px auto; } }
 a {
   text-decoration: none; }
 
@@ -1090,6 +1097,8 @@ footer.global p, footer.global a {
   left: 50%;
   margin-left: -523px;
   width: 100%; }
+.home .col-4 p {
+  margin-bottom: 0; }
 .home .footer h1 {
   margin-top: 64px; }
 .home .header,
@@ -1103,7 +1112,7 @@ footer.global p, footer.global a {
   margin-top: 48px; }
 .home .examples {
   margin-bottom: calc(80px * 2);
-  margin-top: calc(80px + 16px); }
+  margin-top: calc(80px + 40px); }
 .home .screenshot img.studio {
   max-width: 708px;
   width: 100%; }
@@ -1301,7 +1310,10 @@ footer.global p, footer.global a {
     margin-bottom: 16px; } }
 @media screen and (max-width: 660px) {
   .home .examples {
-    height: calc(480px * 0.6); }
+    height: calc(480px * 0.6);
+    margin-bottom: 100px; }
+  .home .used-by .footnote {
+    margin-top: 32px; }
   .home .devices {
     top: -99px; }
   .home a.device-left,
