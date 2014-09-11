@@ -813,18 +813,21 @@ li.feature img {
     animation: write-code-two 2s 6s linear forwards;
     background: #1D2026; } }
 @media screen and (max-width: 1080px) {
-  .col-4 {
-    margin-right: 50px; }
+  .content-inner {
+    max-width: 980px; }
 
   .col-2 {
-    max-width: 400px; } }
+    max-width: 420px; }
+
+  .col-4 {
+    max-width: 200px;
+    margin-right: 40px; } }
 @media screen and (max-width: 980px) {
   .content-inner {
     max-width: 720px; }
 
   .col-2 {
-    max-width: 300px;
-    margin-right: 60px; }
+    max-width: 300px; }
 
   .col-4 {
     max-width: 300px;
@@ -1286,9 +1289,13 @@ footer.global p, footer.global a {
   .home .ss-framer img {
     left: 0;
     margin-left: 0; } }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 980px) {
   .home .header {
-    height: 620px; } }
+    height: 620px; }
+  .home .used-by figure {
+    margin-bottom: 24px; }
+  .home .used-by .footnote {
+    margin-top: 40px; } }
 @media screen and (max-width: 720px) {
   .home .examples {
     height: calc(480px * 0.8); }
@@ -1305,9 +1312,7 @@ footer.global p, footer.global a {
   .home a.device-left {
     left: -64px; }
   .home a.device-right {
-    right: -64px; }
-  .home .used-by figure {
-    margin-bottom: 16px; } }
+    right: -64px; } }
 @media screen and (max-width: 660px) {
   .home .examples {
     height: calc(480px * 0.6);
@@ -1351,7 +1356,8 @@ footer.global p, footer.global a {
     -o-transform: scale(0.8);
     -ms-transform: scale(0.8);
     -webkit-transform: scale(0.8);
-    transform: scale(0.8); }
+    transform: scale(0.8);
+    margin-bottom: 16px; }
   .home .used-by figure + figure {
     margin-left: 0; }
   .home .examples {

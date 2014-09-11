@@ -273,9 +273,17 @@ a.device-right {
 		margin-left: 0;
 	}
 }
-@media screen and (max-width:960px) {
+@media screen and (max-width:980px) {
 	.header {
 		height:620px;
+	}
+	// ****************
+	// Vertical spacing
+	.used-by figure {
+		margin-bottom: $space24;
+	}
+	.used-by .footnote {
+		margin-top: $space40;
 	}
 }
 @media screen and (max-width: 720px) {
@@ -295,10 +303,6 @@ a.device-right {
 	}
 	a.device-right {
 		right:-64px;
-	}
-	// Logos block
-	.used-by figure {
-		margin-bottom: $space16;
 	}
 }
 @media screen and (max-width:660px) {
@@ -349,6 +353,7 @@ a.device-right {
 	// Logos block
 	.used-by figure {
 		 @include scale(0.8);
+		 margin-bottom: $space16;
 	}
 	.used-by figure+figure {
 		margin-left: 0;
