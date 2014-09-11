@@ -75,22 +75,24 @@ nav.top input {
 	}
 }
 
-@media screen and (max-width:580px) {
+@media screen and (max-width:560px) {
 	nav.top, 
 	nav.top.sticky {
 		line-height: 1;
 		position: absolute;
 	}
+	nav.top {
+		height:120px;
+		box-shadow: inset 0 -60px 0 rgba(255,255,255,0.05);
+	}
 	nav.top .framer {
 		text-align: center;
 		width:100%;
-		height: $space32;
+		height: 38px;
 		margin:$space24 0;
-		box-shadow: 0 1px 0 rgba(255,255,255,0.1);
 	}
 	nav.top .right {
 		float:none;
-		height: $space64;
 		text-align: center;
 	}
 	nav.top li {

@@ -154,6 +154,10 @@ li.feature img {
 	}
 }
 @media screen and (max-width: 560px) {
+	.learn .container,
+	.docs .container {
+		padding: calc(64px + 120px) 0 $space64 0;
+	}
 	.content-inner {
 		padding:0 $space16;
 	}
