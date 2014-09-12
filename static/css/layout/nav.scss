@@ -8,6 +8,7 @@ nav.top {
 	top:0;
 	background: $header;
 	z-index: 1000;
+
 }
 nav.top.sticky {
 	position: fixed;
@@ -26,7 +27,7 @@ nav.top.sticky {
 nav.top li {
 	float: left;
 	font-size: 12px;
-	font-weight: 600;
+	font-weight: 00;
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
 	line-height: inherit;
