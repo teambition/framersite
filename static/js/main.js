@@ -22,7 +22,7 @@ $(document).ready(function() {
 		else {
 			$(docsSidebar).removeClass('sticky');
 		}
-		if ($(window).scrollTop() > 664){
+		if ($(window).scrollTop() > 800){
 			 $(topNav).addClass('sticky');
 		}
 		else {

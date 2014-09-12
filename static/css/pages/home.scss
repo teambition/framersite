@@ -135,10 +135,10 @@
 }
 .examples .devices a {
 	position: absolute; 
-	@include transition(all, 0.3s, ease);
+	@include transition(all, 0.2s, ease);
 }
 .shrink {
-	@include scale(0.98);
+	@include scale(0.9);
 }
 a.device-left,
 a.device-mid,
@@ -265,7 +265,7 @@ a.device-right {
 		margin-left: $space24;
 	}
 }
-@media screen and (max-width:1020px) {
+@media screen and (max-width:1030px) {
 	.ss-framer img {
 		left:0;
 		margin-left: 0;

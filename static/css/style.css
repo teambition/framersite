@@ -948,17 +948,17 @@ footer.global p, footer.global a {
   position: relative; }
 .home .examples .devices a {
   position: absolute;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
 .home .shrink {
-  -moz-transform: scale(0.98);
-  -o-transform: scale(0.98);
-  -ms-transform: scale(0.98);
-  -webkit-transform: scale(0.98);
-  transform: scale(0.98); }
+  -moz-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9); }
 .home a.device-left,
 .home a.device-mid,
 .home a.device-right {
@@ -1053,7 +1053,7 @@ footer.global p, footer.global a {
 @media screen and (max-width: 1080px) {
   .home .used-by figure + figure {
     margin-left: 24px; } }
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1030px) {
   .home .ss-framer img {
     left: 0;
     margin-left: 0;
