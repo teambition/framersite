@@ -21,11 +21,15 @@
 .sidebar li+li {
 	margin-top: $space8;
 }
-.sidebar a {
+.sidebar a,
+.sidebar .title {
 	color: $blue;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size:12px;
+	letter-spacing: 0.5px;
 }
 .sidebar .title {
-	font-weight: 500;
 	color: $black;
 }
 @media screen and (max-width:1020px) {
