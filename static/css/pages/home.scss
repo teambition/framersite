@@ -266,13 +266,23 @@ a.device-right {
 	}
 }
 @media screen and (max-width:1030px) {
+	.header {
+		height: 720px;
+	}
 	.ss-framer img {
-		left:0;
-		margin-left: 0;
+		max-width: 980px;
+		margin-left: -490px;
 		padding: 0 $space16;
 	}
 }
 @media screen and (max-width:980px) {
+	.header {
+		height:600px;
+	}
+	.ss-framer img {
+		max-width: 720px;
+		margin-left: -360px;
+	}
 	// ****************
 	// Vertical spacing
 	.used-by figure {
@@ -283,6 +293,10 @@ a.device-right {
 	}
 }
 @media screen and (max-width: 720px) {
+	.ss-framer img {
+		left:0;
+		margin-left:0;
+	}
 	.examples {
 		height: calc(480px * 0.8);
 	}
@@ -329,7 +343,13 @@ a.device-right {
 		display: none;
 	}
 }
-
+@media screen and (max-width: 560px) {
+	.header {
+		margin-top: 0; // Nav is now pos:relative instead of absolute
+		height: 400px;
+		padding-top: $space32;
+	}
+}
 @media screen and (max-width: 480px) {
 	a.device-left,
 	a.device-right {
