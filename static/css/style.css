@@ -236,7 +236,7 @@ nav.top li + li {
   padding-left: 24px; }
 
 nav.top li a {
-  color: #818b9e;
+  color: #788d9e;
   font-weight: 600; }
 
 nav.top li.active a {
@@ -617,7 +617,7 @@ input:focus {
   padding-top: 11px;
   position: relative;
   color: #fff;
-  font-size: 13px;
+  font-size: 12px;
   text-transform: uppercase;
   font-weight: 700;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
@@ -672,6 +672,7 @@ input.btn-line {
 
 input {
   padding: 0;
+  margin: 0;
   -webkit-appearance: none;
   border: none; }
 
@@ -804,7 +805,7 @@ footer.global p, footer.global a {
   margin-top: 64px;
   overflow: hidden;
   position: relative;
-  padding-top: 48px; }
+  padding-top: 64px; }
 .home .ss-framer img {
   max-width: 1024px;
   max-height: 440px;

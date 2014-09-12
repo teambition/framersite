@@ -19,21 +19,19 @@ nav.top.sticky {
 nav.top.sticky {
   @include animation('fade-in .3s 1');
 } 
-
 nav.top li {
 	float: left;
-	font-size:12px;
-	font-weight:600;
+	font-size: 12px;
+	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
 	line-height: inherit;
-	
 }
 nav.top li+li {
 	padding-left: $space24;
 }
 nav.top li a {
-	color:$graphite80;
+	color: $nav-links;
 	font-weight: 600;
 }
 nav.top li.active a {
@@ -43,7 +41,7 @@ nav.top li.active a {
 }
 // Title
 nav.top .framer a {
-	color:#fff;
+	color: #fff;
 }
 // Buy Button Form
 nav.top form {
@@ -52,8 +50,8 @@ nav.top form {
 	top: -3px;
 }
 nav.top input {
-	font:inherit;
-	font-weight:600;
+	font: inherit;
+	font-weight: 600;
 	border: none; background: none;
 	color: $blue;
 	cursor: pointer; cursor: hand;

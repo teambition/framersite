@@ -21,7 +21,7 @@ input:focus{
 	padding-top:11px;
 	position: relative; 
 	color: #fff;
-	font-size: 13px; 
+	font-size: 12px; 
 	text-transform: uppercase;
 	font-weight: 700;
 	text-shadow: 0 1px 1px rgba(0,0,0,0.1);
@@ -39,7 +39,6 @@ input.btn-line {
 	text-shadow: none;
 	font-weight: 600;
 }
-
 // Buy next-to Download
 .btn + form {
 	margin-left: $space8;
@@ -79,7 +78,7 @@ input.btn-line {
 }
 // Special case: needs extra properties because it's a form element
 input {
-	padding:0;
+	padding:0; margin:0;
 	-webkit-appearance: none;
 	border: none;
 }
