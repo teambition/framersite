@@ -870,6 +870,16 @@ footer.global p, footer.global a {
   margin-left: -512px;
   width: 100%;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); }
+.home .ss-framer:after {
+  content: "";
+  background: url("/static/images/home/icon-bounce.gif");
+  position: absolute;
+  top: calc(50% + 90px);
+  left: calc(50% + 190px);
+  height: 200px;
+  width: 140px;
+  overflow: hidden;
+  background-position: 50%; }
 .home .col-4 p {
   margin-bottom: 0; }
 .home .footer h1 {
