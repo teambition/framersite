@@ -4,7 +4,12 @@ body {
 	font-size:16px; // Base
 	font-weight: 300;
 }
-
+p a:hover {
+	opacity:0.75
+}
+p a:active {
+	opacity:1;
+}
 h1,
 h2,
 h3,

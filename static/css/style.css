@@ -230,14 +230,29 @@ nav.top li {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  line-height: inherit; }
+  line-height: inherit;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1); }
 
+.nav-items li:first-child,
 nav.top li + li {
   padding-left: 24px; }
 
-nav.top li a {
+nav.top a {
   color: #788d9e;
   font-weight: 600; }
+
+nav.top a:hover,
+nav.top a:focus {
+  color: #eff1f3; }
+
+nav.top input:hover,
+nav.top input:focus {
+  color: #7ecffc; }
+
+nav.top a.green:hover,
+nav.top a.green:focus {
+  color: #b1ea74;
+  opacity: 1; }
 
 nav.top li.active a {
   color: #fff;
@@ -263,26 +278,34 @@ nav.top input {
 
 @media screen and (max-width: 1000px) {
   nav.top .content-inner {
-    max-width: 900px; } }
+    max-width: 100%;
+    padding: 0 8px; } }
+@media screen and (max-width: 720px) {
+  nav.top .download,
+  nav.top .buy {
+    display: none; }
+
+  .nav-items {
+    float: right; } }
 @media screen and (max-width: 560px) {
   nav.top,
   nav.top.sticky {
     line-height: 1;
-    position: absolute; }
+    position: absolute;
+    text-align: center; }
 
   nav.top {
-    height: 120px;
-    box-shadow: inset 0 -60px 0 rgba(255, 255, 255, 0.05); }
+    height: 120px; }
 
   nav.top .framer {
-    text-align: center;
     width: 100%;
     height: 38px;
-    margin: 24px 0; }
+    margin: 24px 0;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1); }
 
+  .nav-items,
   nav.top .right {
-    float: none;
-    text-align: center; }
+    float: none; }
 
   nav.top li {
     display: inline-block;
@@ -298,6 +321,12 @@ body {
   text-rendering: optimizeLegibility;
   font-size: 16px;
   font-weight: 300; }
+
+p a:hover {
+  opacity: 0.75; }
+
+p a:active {
+  opacity: 1; }
 
 h1,
 h2,
@@ -431,6 +460,9 @@ body {
 a {
   color: #28affa;
   font-weight: 400; }
+
+p a {
+  border-bottom: 1px solid #a9dffd; }
 
 strong {
   font-weight: 500;
@@ -597,12 +629,6 @@ li.feature img {
 a {
   text-decoration: none; }
 
-a:hover {
-  opacity: 0.75; }
-
-a:active {
-  opacity: 1; }
-
 textarea:focus,
 input:focus {
   outline: 0; }
@@ -641,10 +667,6 @@ input.btn-line {
 input.blue {
   background: #28affa; }
 
-.btn.green:hover {
-  color: #fff;
-  box-shadow: none; }
-
 .btn.cyan {
   background: #2dd7aa; }
 
@@ -658,6 +680,27 @@ input.blue {
 .btn-line.blue {
   color: #28affa;
   box-shadow: inset 0 0 0 1px #a9dffd; }
+
+.header .btn.green {
+  background: #6fc90d; }
+
+.btn.blue:hover,
+input.blue:hover,
+.btn.blue:focus,
+input.blue:focus {
+  background: #53bffb;
+  opacity: 1; }
+
+.btn.green:hover,
+.btn.green:focus {
+  background: #97e345;
+  opacity: 1; }
+
+.btn-line.blue:hover,
+.btn-line.blue:focus {
+  box-shadow: none;
+  background: #28affa;
+  color: #fff; }
 
 .header a.small,
 .footer a.small {

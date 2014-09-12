@@ -1,13 +1,6 @@
 a {
     text-decoration: none;
 }
-
-a:hover {
-	opacity:0.75
-}
-a:active {
-	opacity:1;
-}
 textarea:focus, 
 input:focus{
     outline: 0;
@@ -48,9 +41,6 @@ input.btn-line {
 input.blue {
 	background: $blue;
 }
-.btn.green:hover { 
-	color: #fff; box-shadow: none; 
-}
 .btn.cyan {
 	background: $cyan; 
 }
@@ -64,6 +54,29 @@ input.blue {
 .btn-line.blue {
 	color: $blue;
 	box-shadow: inset 0 0 0 1px $blue40;
+}
+.header .btn.green {
+	background: $header-green;
+}
+
+// Hover states
+.btn.blue:hover,
+input.blue:hover,
+.btn.blue:focus,
+input.blue:focus {
+	background: $blue80;
+	opacity: 1;
+}
+.btn.green:hover,
+.btn.green:focus {
+	background: $green80;
+	opacity: 1;
+}
+.btn-line.blue:hover,
+.btn-line.blue:focus {
+	box-shadow: none;
+	background: $blue;
+	color: #fff;
 }
 // Github link
 .header a.small,

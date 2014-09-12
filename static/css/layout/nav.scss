@@ -26,13 +26,29 @@ nav.top li {
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
 	line-height: inherit;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.1);
 }
+.nav-items li:first-child,
 nav.top li+li {
 	padding-left: $space24;
 }
-nav.top li a {
+nav.top a {
 	color: $nav-links;
 	font-weight: 600;
+}
+// Hover States
+nav.top a:hover,
+nav.top a:focus {
+	color: lighten($nav-links, 40%);
+}
+nav.top input:hover,
+nav.top input:focus {
+	color: $blue60;
+}
+nav.top a.green:hover,
+nav.top a.green:focus {
+	color: $green60;
+	opacity: 1;
 }
 nav.top li.active a {
 	color: #fff;
@@ -58,7 +74,17 @@ nav.top input {
 }
 @media screen and (max-width: 1000px) {
 	nav.top .content-inner {
-		max-width: 900px;
+		max-width: 100%;
+		padding: 0 $space8;
+	}
+}
+@media screen and (max-width: 720px) {
+	nav.top .download,
+	nav.top .buy {
+		display: none;
+	}
+	.nav-items {
+		float: right;
 	}
 }
 @media screen and (max-width:560px) {
@@ -66,20 +92,20 @@ nav.top input {
 	nav.top.sticky {
 		line-height: 1;
 		position: absolute;
+		text-align: center;
 	}
 	nav.top {
 		height:120px;
-		box-shadow: inset 0 -60px 0 rgba(255,255,255,0.05);
 	}
 	nav.top .framer {
-		text-align: center;
 		width:100%;
 		height: 38px;
 		margin:$space24 0;
+		box-shadow: 0 1px 0 rgba(255,255,255,0.1);
 	}
+	.nav-items,
 	nav.top .right {
 		float:none;
-		text-align: center;
 	}
 	nav.top li {
 		display:inline-block;
