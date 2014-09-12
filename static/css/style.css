@@ -347,6 +347,7 @@ h1 {
 .header h1 {
   color: #fff;
   font-size: 3.5em;
+  line-height: 1.1;
   max-width: 700px;
   margin: 0 auto; }
 
@@ -649,8 +650,11 @@ input:focus {
   text-transform: uppercase;
   font-weight: 700;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
-  letter-spacing: 0px; }
+  border-radius: 4px; }
+
+.header .btn,
+.header input {
+  letter-spacing: 0.5px; }
 
 .btn-pill {
   border-radius: 50px; }
@@ -850,7 +854,7 @@ footer.global p, footer.global a {
   margin-top: 56px;
   overflow: hidden;
   position: relative;
-  padding-top: 48px; }
+  padding-top: 40px; }
 .home .ss-framer img {
   max-width: 1024px;
   max-height: 440px;
