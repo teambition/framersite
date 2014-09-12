@@ -293,9 +293,13 @@ a.device-right {
 	}
 }
 @media screen and (max-width: 720px) {
+	.header {
+		padding-bottom:50%;
+		height:auto;
+	}
 	.ss-framer img {
-		left:0;
-		margin-left:0;
+		max-width: 100%;
+		margin-left: 0; left:0
 	}
 	.examples {
 		height: calc(480px * 0.8);
@@ -346,11 +350,17 @@ a.device-right {
 @media screen and (max-width: 560px) {
 	.header {
 		margin-top: 0; // Nav is now pos:relative instead of absolute
-		height: 400px;
 		padding-top: $space32;
+	}
+	.ss-framer img {
+		margin-left: 0;
+		left:0;
 	}
 }
 @media screen and (max-width: 480px) {
+	.header {
+		height: 340px;
+	}
 	a.device-left,
 	a.device-right {
 		@include scale(0.44);

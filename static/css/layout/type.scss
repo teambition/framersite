@@ -127,7 +127,6 @@ a.small.right {
 @media screen and (max-width: 800px) {
 	h1 {
 		font-size: 3em;
-		font-weight: 200;
 	}
 	.header h1 {
 		max-width: 100%;
@@ -136,6 +135,7 @@ a.small.right {
 @media screen and (max-width: 720px) {
 	.header h1 {
 		font-size:2.5em;
+		font-weight: 200;
 	}
 }
 @media screen and (max-width: 600px) {
@@ -148,6 +148,6 @@ body {
 }
 @media screen and (max-width: 440px) {
 	.header h1 {
-		font-size:2em;
+		font-size:1.9em;
 	}
 }
