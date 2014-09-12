@@ -1,8 +1,8 @@
 nav.top {
 	width: 100%;
-	height: 64px;
-	line-height:70px;
-	padding: 0 $space16;
+	height: $space56;
+	line-height:63px;
+	padding: 0 $space32;
 	vertical-align:middle;
 	position: absolute;
 	top:0;
@@ -11,6 +11,10 @@ nav.top {
 }
 nav.top.sticky {
 	position: fixed;
+}
+nav.top ul {
+	max-width: 1020px;
+	margin:0 auto;
 }
 @include keyframes(fade-in) {
   0%   { top: #{-$space16}; }
@@ -74,8 +78,7 @@ nav.top input {
 }
 @media screen and (max-width: 1000px) {
 	nav.top .content-inner {
-		max-width: 100%;
-		padding: 0 $space8;
+		padding: 0 $space16;
 	}
 }
 @media screen and (max-width: 720px) {

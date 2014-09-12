@@ -178,9 +178,9 @@ td a + a:before {
 
 nav.top {
   width: 100%;
-  height: 64px;
-  line-height: 70px;
-  padding: 0 16px;
+  height: 56px;
+  line-height: 63px;
+  padding: 0 32px;
   vertical-align: middle;
   position: absolute;
   top: 0;
@@ -189,6 +189,10 @@ nav.top {
 
 nav.top.sticky {
   position: fixed; }
+
+nav.top ul {
+  max-width: 1020px;
+  margin: 0 auto; }
 
 @-webkit-keyframes fade-in {
   0% {
@@ -278,8 +282,7 @@ nav.top input {
 
 @media screen and (max-width: 1000px) {
   nav.top .content-inner {
-    max-width: 100%;
-    padding: 0 8px; } }
+    padding: 0 16px; } }
 @media screen and (max-width: 720px) {
   nav.top .download,
   nav.top .buy {
@@ -842,11 +845,11 @@ footer.global p, footer.global a {
 .home .header {
   background: #232c39;
   color: #fff;
-  height: 800px;
-  margin-top: 64px;
+  height: calc(800px - 56px);
+  margin-top: 56px;
   overflow: hidden;
   position: relative;
-  padding-top: 64px; }
+  padding-top: 56px; }
 .home .ss-framer img {
   max-width: 1024px;
   max-height: 440px;
@@ -871,7 +874,7 @@ footer.global p, footer.global a {
   margin-top: 48px; }
 .home .examples {
   margin-bottom: calc(80px * 2);
-  margin-top: calc(80px + 40px); }
+  margin-top: calc(80px + 80px); }
 .home .screenshot img.studio {
   max-width: 708px;
   width: 100%; }
@@ -1050,10 +1053,11 @@ footer.global p, footer.global a {
 @media screen and (max-width: 1080px) {
   .home .used-by figure + figure {
     margin-left: 24px; } }
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 1020px) {
   .home .ss-framer img {
     left: 0;
-    margin-left: 0; } }
+    margin-left: 0;
+    padding: 0 16px; } }
 @media screen and (max-width: 980px) {
   .home .used-by figure {
     margin-bottom: 24px; }

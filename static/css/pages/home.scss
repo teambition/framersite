@@ -2,11 +2,11 @@
 .header {
 	background: $header;
 	color: #fff;
-	height: 800px;
-	margin-top:64px;
+	height: calc(800px - 56px);
+	margin-top:56px;
 	overflow: hidden;
 	position: relative;
-	padding-top:$space64;
+	padding-top:$space56;
 }
 
 .ss-framer img {
@@ -43,7 +43,7 @@
 }
 .examples {
 	margin-bottom: calc(#{$space80} * 2);
-	margin-top: calc(#{$space80} + #{$space40});
+	margin-top: calc(#{$space80} + #{$space80});
 }
 // ---------------------
 // Studio Screenshot Section
@@ -265,10 +265,11 @@ a.device-right {
 		margin-left: $space24;
 	}
 }
-@media screen and (max-width:1060px) {
+@media screen and (max-width:1020px) {
 	.ss-framer img {
 		left:0;
 		margin-left: 0;
+		padding: 0 $space16;
 	}
 }
 @media screen and (max-width:980px) {
