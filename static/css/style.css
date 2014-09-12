@@ -735,6 +735,15 @@ input {
   cursor: hand;
   line-height: 1; }
 
+@media screen and (max-width: 560px) {
+  .btn,
+  .header input,
+  .footer input {
+    padding: 6px 10px;
+    padding-top: 9px;
+    font-size: 11px;
+    letter-spacing: 0;
+    border-radius: 3px; } }
 footer.global {
   margin: 0 auto;
   text-align: center;
@@ -1116,13 +1125,15 @@ footer.global p, footer.global a {
 @media screen and (max-width: 560px) {
   .home .header {
     margin-top: 0;
-    padding-top: 32px; }
+    padding-top: 32px;
+    margin-bottom: 32px; }
   .home .ss-framer img {
     margin-left: 0;
     left: 0; } }
 @media screen and (max-width: 480px) {
   .home .header {
-    height: 340px; }
+    height: 340px;
+    padding-top: 8px; }
   .home a.device-left,
   .home a.device-right {
     -moz-transform: scale(0.44);

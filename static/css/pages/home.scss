@@ -343,6 +343,7 @@ a.device-right {
 	.header {
 		margin-top: 0; // Nav is now pos:relative instead of absolute
 		padding-top: $space32;
+		margin-bottom: $space32;
 	}
 	.ss-framer img {
 		margin-left: 0;
@@ -352,6 +353,7 @@ a.device-right {
 @media screen and (max-width: 480px) {
 	.header {
 		height: 340px;
+		padding-top: $space8;
 	}
 	a.device-left,
 	a.device-right {
