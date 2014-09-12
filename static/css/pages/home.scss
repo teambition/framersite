@@ -100,7 +100,7 @@
 .logo-groupon    { top:-2px; }
 
 .used-by .footnote {
-	margin-top:$space64;
+	margin-bottom:$space32;
 	padding:0 $space24;
 	background: #fff;
 	display: inline-block;
@@ -114,11 +114,11 @@
 	background: 
 	$graphite20;
 	opacity:0.5; 
-	margin-top: -35px;
+	margin-bottom:-9px;
 }
 // Examples Block
 .examples {
-	background: $blue;
+	background: $examples-block;
 	height: 480px;
 	position:relative;
 	padding: 0;
@@ -242,7 +242,6 @@ a.device-right {
 		background-size: cover;
 	}
 }
-
 // Footer features
 .footer-features li{
 	list-style: none; 
@@ -267,17 +266,12 @@ a.device-right {
 	}
 }
 @media screen and (max-width:1060px) {
-	.header {
-	}
 	.ss-framer img {
 		left:0;
 		margin-left: 0;
 	}
 }
 @media screen and (max-width:980px) {
-	.header {
-		height:620px;
-	}
 	// ****************
 	// Vertical spacing
 	.used-by figure {
@@ -314,7 +308,7 @@ a.device-right {
 		margin-bottom: 100px;
 	}
 	.used-by .footnote {
-		margin-top: $space32;
+		margin-bottom: $space32;
 	}
 	.devices {
 		top: -99px;
@@ -369,7 +363,7 @@ a.device-right {
 	// ****************
 	// Vertical spacing M
 	.used-by .footnote {
-		margin-top: $space16;
+		margin-bottom: $space16;
 		font-size: 10px;
 		padding: 0;
 	}

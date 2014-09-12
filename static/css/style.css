@@ -248,9 +248,7 @@ nav.top .framer a {
   color: #fff; }
 
 nav.top form {
-  display: inline-block;
-  position: relative;
-  top: -3px; }
+  display: inline-block; }
 
 nav.top input {
   font: inherit;
@@ -329,7 +327,7 @@ h2 {
   font-size: 2em;
   line-height: 1.3;
   font-weight: 200;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   color: #15181d; }
 
 h1 + h2 {
@@ -630,7 +628,7 @@ input:focus {
 .btn-line,
 input.btn-line {
   background: transparent;
-  box-shadow: inset 0 0 0 1px #28affa;
+  box-shadow: inset 0 0 0 1px #a9dffd;
   text-shadow: none;
   font-weight: 600; }
 
@@ -640,7 +638,7 @@ input.btn-line {
 .btn.green {
   background: #7ddc16; }
 
-.btn.blue, input.blue {
+input.blue {
   background: #28affa; }
 
 .btn.green:hover {
@@ -655,11 +653,11 @@ input.btn-line {
 
 .btn-line.green {
   color: #7ddc16;
-  box-shadow: inset 0 0 0 1px #7ddc16; }
+  box-shadow: inset 0 0 0 1px #cbf1a2; }
 
 .btn-line.blue {
   color: #28affa;
-  box-shadow: inset 0 0 0 1px #28affa; }
+  box-shadow: inset 0 0 0 1px #a9dffd; }
 
 .header a.small,
 .footer a.small {
@@ -877,7 +875,7 @@ footer.global p, footer.global a {
 .home .logo-groupon {
   top: -2px; }
 .home .used-by .footnote {
-  margin-top: 64px;
+  margin-bottom: 32px;
   padding: 0 24px;
   background: #fff;
   display: inline-block;
@@ -888,9 +886,9 @@ footer.global p, footer.global a {
   height: 1px;
   background: #e0e2e7;
   opacity: 0.5;
-  margin-top: -35px; }
+  margin-bottom: -9px; }
 .home .examples {
-  background: #28affa;
+  background: #d2d9df;
   height: 480px;
   position: relative;
   padding: 0; }
@@ -1014,8 +1012,6 @@ footer.global p, footer.global a {
     left: 0;
     margin-left: 0; } }
 @media screen and (max-width: 980px) {
-  .home .header {
-    height: 620px; }
   .home .used-by figure {
     margin-bottom: 24px; }
   .home .used-by .footnote {
@@ -1042,7 +1038,7 @@ footer.global p, footer.global a {
     height: calc(480px * 0.6);
     margin-bottom: 100px; }
   .home .used-by .footnote {
-    margin-top: 32px; }
+    margin-bottom: 32px; }
   .home .devices {
     top: -99px; }
   .home a.device-left,
@@ -1089,7 +1085,7 @@ footer.global p, footer.global a {
   .home .used-by figure + figure {
     margin-left: 0; }
   .home .used-by .footnote {
-    margin-top: 16px;
+    margin-bottom: 16px;
     font-size: 10px;
     padding: 0; }
   .home .examples {

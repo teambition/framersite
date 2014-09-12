@@ -31,11 +31,10 @@ input:focus{
 .btn-pill {
 	border-radius: 50px; 
 }
-
 .btn-line,
 input.btn-line {
 	background: transparent;
-	box-shadow: inset 0 0 0 1px $blue;
+	box-shadow: inset 0 0 0 1px $blue40;
 	text-shadow: none;
 	font-weight: 600;
 }
@@ -46,7 +45,7 @@ input.btn-line {
 .btn.green {
 	background: $green; 
 }
-.btn.blue, input.blue {
+input.blue {
 	background: $blue;
 }
 .btn.green:hover { 
@@ -60,11 +59,11 @@ input.btn-line {
 }
 .btn-line.green {
 	color: $green;
-	box-shadow: inset 0 0 0 1px $green;
+	box-shadow: inset 0 0 0 1px $green40;
 }
 .btn-line.blue {
 	color: $blue;
-	box-shadow: inset 0 0 0 1px $blue;
+	box-shadow: inset 0 0 0 1px $blue40;
 }
 // Github link
 .header a.small,
