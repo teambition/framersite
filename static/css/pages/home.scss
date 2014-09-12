@@ -288,9 +288,7 @@ a.device-right {
 	.used-by figure {
 		margin-bottom: $space24;
 	}
-	.used-by .footnote {
-		margin-top: $space40;
-	}
+
 }
 @media screen and (max-width: 720px) {
 	.header {
@@ -325,9 +323,6 @@ a.device-right {
 	.examples {
 		height: calc(480px * 0.6);
 		margin-bottom: 100px;
-	}
-	.used-by .footnote {
-		margin-bottom: $space32;
 	}
 	.devices {
 		top: -99px;

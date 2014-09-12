@@ -258,11 +258,6 @@ nav.top a.green:focus {
   color: #b1ea74;
   opacity: 1; }
 
-nav.top li.active a {
-  color: #fff;
-  padding-bottom: 21px;
-  border-bottom: 2px solid #fff; }
-
 nav.top .framer a {
   color: #fff; }
 
@@ -1073,9 +1068,7 @@ footer.global p, footer.global a {
     max-width: 720px;
     margin-left: -360px; }
   .home .used-by figure {
-    margin-bottom: 24px; }
-  .home .used-by .footnote {
-    margin-top: 40px; } }
+    margin-bottom: 24px; } }
 @media screen and (max-width: 720px) {
   .home .header {
     padding-bottom: 50%;
@@ -1104,8 +1097,6 @@ footer.global p, footer.global a {
   .home .examples {
     height: calc(480px * 0.6);
     margin-bottom: 100px; }
-  .home .used-by .footnote {
-    margin-bottom: 32px; }
   .home .devices {
     top: -99px; }
   .home a.device-left,
