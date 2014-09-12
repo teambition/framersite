@@ -1,5 +1,6 @@
 $text: #666;
 $nav-links: #9EA7B2;
+$header: #232C39;
 
 $black: #15181D;
 	$black80: #4B4D52;
@@ -46,11 +47,11 @@ $white: #fff;
 // Color helper classes
 .graphite { color: $graphite; }
 .blue { color: $blue; }
-nav.top a.blue { color: $blue; }
 .green { color: $green; }
 .purple { color: $purple; }
 .cyan { color: $cyan; }
-
+nav.top a.green { color: $green; }
+nav.top a.blue { color: $blue; }
 
 //  $orange: #F68426;
 // 	$orange80: rgba( $orange, 0.8 );

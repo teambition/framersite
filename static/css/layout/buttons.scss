@@ -47,6 +47,9 @@ input.btn-line {
 .btn.green {
 	background: $green; 
 }
+.btn.blue, input.blue {
+	background: $blue;
+}
 .btn.green:hover { 
 	color: #fff; box-shadow: none; 
 }

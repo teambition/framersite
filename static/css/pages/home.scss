@@ -1,8 +1,8 @@
 // All selectors are prefixed with .home
 .header {
-	background: $black; // not 14171C
+	background: $header;
 	color: #fff;
-	height: 680px;
+	height: 800px;
 	margin-top:64px;
 	overflow: hidden;
 	position: relative;
@@ -10,12 +10,13 @@
 }
 
 .ss-framer img {
-	max-width: 1046px;
-	max-height:448px;
+	max-width: 1024px;
+	max-height:440px;
 	position: absolute;
 	bottom: 0; left:50%;
-	margin-left: -523px;
+	margin-left: -512px;
 	width:100%;
+	box-shadow: 0 8px 32px rgba(0,0,0,0.2);
 }
 
 .col-4 p {
@@ -134,10 +135,10 @@
 }
 .examples .devices a {
 	position: absolute; 
-	@include transition(all, 0.2s, ease);
+	@include transition(all, 0.3s, ease);
 }
 .shrink {
-	@include scale(0.975);
+	@include scale(0.98);
 }
 a.device-left,
 a.device-mid,
