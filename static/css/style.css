@@ -594,6 +594,10 @@ h3 {
   font-weight: 300;
   margin-bottom: 16px; }
 
+.caption h3 {
+  line-height: 1;
+  margin-bottom: 24px; }
+
 h4 {
   font-size: 1.625em; }
 
@@ -616,6 +620,9 @@ h5 {
   line-height: 1.5;
   color: #787a7d; }
 
+.caption .subtitle {
+  margin-bottom: 24px; }
+
 h6 {
   font-size: 1.25em; }
 
@@ -629,7 +636,7 @@ p.title {
   color: #15181d; }
 
 .more-features p.title {
-  font-size: 20px; }
+  font-size: 18px; }
 
 .more-features p {
   font-size: 14px; }
@@ -894,7 +901,9 @@ input:focus {
   -moz-transition: all 0.1s ease;
   -ms-transition: all 0.1s ease;
   -o-transition: all 0.1s ease;
-  transition: all 0.1s ease; }
+  transition: all 0.1s ease;
+  display: inline-block;
+  line-height: 1; }
 
 .btn-pill {
   border-radius: 50px; }
@@ -1437,7 +1446,10 @@ footer.global p, footer.global a {
     transform: scale(0.7);
     top: calc(50% + 116px);
     left: calc(50% + 108px); }
-  .home .used-by {
+  .home .examples-caption,
+  .home .used-by,
+  .home .feature-banners,
+  .home .more-features {
     margin-bottom: 40px; }
   .home .used-by figure {
     margin-bottom: 24px; }
@@ -1502,7 +1514,7 @@ footer.global p, footer.global a {
 @media screen and (max-width: 560px) {
   .home .header {
     margin-top: 0;
-    padding-top: 32px;
+    padding-top: 152px;
     margin-bottom: 32px; }
   .home .ss-framer img {
     margin-left: 0;

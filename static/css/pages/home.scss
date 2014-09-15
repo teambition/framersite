@@ -372,9 +372,13 @@ a.device-right {
 	}
 	// ****************
 	// Vertical spacing
-	.used-by {
+	.examples-caption, 
+	.used-by, 
+	.feature-banners,
+	.more-features {
 		margin-bottom: $space40;
 	}
+
 	.used-by figure {
 		margin-bottom: $space24;
 	}
@@ -454,7 +458,7 @@ a.device-right {
 @media screen and (max-width: 560px) {
 	.header {
 		margin-top: 0; // Nav is now pos:relative instead of absolute
-		padding-top: $space32;
+		padding-top: 152px;
 		margin-bottom: $space32;
 	}
 	.ss-framer img {

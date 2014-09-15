@@ -57,6 +57,10 @@ h3 {
 	font-weight:300;
 	margin-bottom: $space16;
 }
+.caption h3 {
+	line-height: 1;
+	margin-bottom: $space24;
+}
 h4 {
 	font-size: 1.625em; //26px
 }
@@ -80,6 +84,9 @@ h5 {
 	line-height: 1.5;
 	color: $black60;
 }
+.caption .subtitle {
+	margin-bottom: $space24;
+}
 h6 {
 	font-size: 1.25em; //20px
 }
@@ -93,7 +100,7 @@ p.title {
 	color: $black;
 }
 .more-features p.title {
-	font-size:20px;
+	font-size:18px;
 }
 .more-features p {
 	font-size:14px;

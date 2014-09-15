@@ -21,6 +21,8 @@ input:focus{
 	border-radius: 4px; // Rounded = Default
 	letter-spacing: 0.5px;
 	@include transition(all, 0.1s, ease);
+	display:inline-block;
+	line-height: 1;
 }
 .btn-pill {
 	border-radius: 50px; 
