@@ -1,7 +1,7 @@
-﻿/* glue: 0.9.4 hash: 2f61f57216 */
+﻿/* glue: 0.9.4 hash: af1097d824 */
 /* 1x */
-.logo-instagram,.logo-facebook,.logo-groupon,.logo-google,.logo-stripe,.logo-twitter,.logo-dropbox,.logo-apple,.logo-adobe,.logo-spotify,.icon-preview,.icon-interaction,.icon-code,.icon-animation{
-    background-image:url('/static/images/sprites/sprite1x.png?2f61f57216');
+.logo-instagram,.logo-facebook,.logo-groupon,.logo-google,.logo-stripe,.logo-twitter,.logo-dropbox,.logo-apple,.logo-adobe,.logo-spotify,.icon-workflow,.icon-preview,.icon-more,.icon-interaction,.icon-general,.icon-features,.icon-code,.icon-animation{
+    background-image:url('/static/images/sprites/sprite1x.png?af1097d824');
     background-repeat:no-repeat;
     -webkit-background-size: 180px 164px;
     -moz-background-size: 180px 164px;
@@ -68,26 +68,50 @@
     height:30px;
 }
 
-.icon-preview{
+.icon-workflow{
     background-position:-151px -27px;
     width:16px;
     height:16px;
 }
 
-.icon-interaction{
+.icon-preview{
     background-position:-114px -89px;
     width:16px;
     height:16px;
 }
 
-.icon-code{
+.icon-more{
     background-position:-130px -89px;
     width:16px;
     height:16px;
 }
 
-.icon-animation{
+.icon-interaction{
     background-position:-146px -89px;
+    width:16px;
+    height:16px;
+}
+
+.icon-general{
+    background-position:-162px -89px;
+    width:16px;
+    height:16px;
+}
+
+.icon-features{
+    background-position:-90px -73px;
+    width:16px;
+    height:16px;
+}
+
+.icon-code{
+    background-position:-90px -89px;
+    width:16px;
+    height:16px;
+}
+
+.icon-animation{
+    background-position:-32px -105px;
     width:16px;
     height:16px;
 }
