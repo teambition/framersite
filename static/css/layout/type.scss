@@ -141,9 +141,9 @@ p.copy {
 	margin-bottom: $space32;
 }
 // Lists on Pages
-.learn ul li,
-.docs ul li,
-.more ul li  {
+.learn .content-inner li,
+.docs .content-inner li,
+.more .content-inner li  {
 	line-height: 1.5;
 	font-size: 1em;
 	font-weight: 400;
@@ -153,22 +153,27 @@ p.copy {
 	left: $space16;
 	padding-left: $space8; 
 }
-.learn li strong,
-.docs li strong,
-.more li strong {
+.learn .content-inner li strong,
+.docs .content-inner li strong,
+.more .content-inner li strong {
 	font-size:18px;
 }
-.learn ul li+li,
-.docs ul li+li,
-.more ul li+li {
+.learn .content-inner ul li+li,
+.docs .content-inner ul li+li,
+.more .content-inner ul li+li {
 	margin-top: $space8;
 }
-.learn li ul li,
-.docs li ul li,
-.more li ul li  {
+.learn .content-inner li ul li,
+.docs .content-inner li ul li,
+.more .content-inner li ul li  {
 	list-style-type: none;
 	padding: 0; left: 0; 
 	margin-top: $space8;
+}
+
+.docs .sidebar li {
+	list-style-type: none;
+	padding-left: 0; left:0;
 }
 // Helpers -------------------
 .uppercase {
