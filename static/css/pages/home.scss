@@ -275,23 +275,35 @@ a.device-right {
 }
 .feature-banners figure {
 	height: 480px;
-	border-radius: 4px;
-	background-size: cover;
+	border-radius: 3px;
 	padding-top: 128px;
 	padding-left: $space40;
 	padding-right: $space40;
 }
 .banner-importing {
-	background: $banner-importing url("/static/images/home/banner-importing.png");
+	background: $banner-importing url("/static/images/home/banner-importing.png") no-repeat;
+	background-size: 512px 224px;
+	background-position: center 320px;
 }
 .banner-mirror {
-	background: #eee url("/static/images/home/banner-mirror.png");
+	background: #eee url("/static/images/home/banner-mirror.png") no-repeat;
+	background-size: cover;
+	background-position: bottom center;
+
 }
 
 // Media Queries
 @media screen and (max-width:1080px) {
 	.used-by figure+figure {
 		margin-left: $space24;
+	}
+	.feature-banners figure {
+		height:420px;
+		padding-top:$space72;
+	}
+	.banner-importing {
+		background-size: 100%;
+		background-position: center 288px;
 	}
 }
 @media screen and (max-width:1030px) {
@@ -328,6 +340,20 @@ a.device-right {
 		margin-bottom: $space24;
 	}
 
+	.feature-banners .col-2 {
+		max-width: 100%;
+	}
+	.feature-banners .col-2 + .col-2 {
+		margin-top: $space16;
+	}
+	.feature-banners figure {
+		height:360px;
+		padding-top:$space72;
+	}
+	.banner-importing {
+		background-size: 512px 224px;
+		background-position: center 200px;
+	}
 }
 @media screen and (max-width: 720px) {
 	.header {

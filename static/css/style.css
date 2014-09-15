@@ -897,20 +897,29 @@ input.btn-line {
   text-shadow: none;
   font-weight: 600; }
 
+.btn-line.white {
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.4); }
+
 .btn + form {
   margin-left: 8px; }
 
+.btn.blue {
+  background: #28affa; }
+
 .btn.green {
   background: #7ddc16; }
-
-input.blue {
-  background: #28affa; }
 
 .btn.cyan {
   background: #2dd7aa; }
 
 .btn.purple {
   background: #9178e2; }
+
+input.blue {
+  background: #28affa; }
+
+.header .btn.green {
+  background: #6fc90d; }
 
 .btn-line.green {
   color: #7ddc16;
@@ -919,9 +928,6 @@ input.blue {
 .btn-line.blue {
   color: #28affa;
   box-shadow: inset 0 0 0 1px #a9dffd; }
-
-.header .btn.green {
-  background: #6fc90d; }
 
 .btn.blue:hover,
 input.blue:hover,
@@ -1311,18 +1317,27 @@ footer.global p, footer.global a {
   text-align: center; }
 .home .feature-banners figure {
   height: 480px;
-  border-radius: 4px;
-  background-size: cover;
+  border-radius: 3px;
   padding-top: 128px;
   padding-left: 40px;
   padding-right: 40px; }
 .home .banner-importing {
-  background: #92b0c8 url("/static/images/home/banner-importing.png"); }
+  background: #92b0c8 url("/static/images/home/banner-importing.png") no-repeat;
+  background-size: 512px 224px;
+  background-position: center 320px; }
 .home .banner-mirror {
-  background: #eeeeee url("/static/images/home/banner-mirror.png"); }
+  background: #eeeeee url("/static/images/home/banner-mirror.png") no-repeat;
+  background-size: cover;
+  background-position: bottom center; }
 @media screen and (max-width: 1080px) {
   .home .used-by figure + figure {
-    margin-left: 24px; } }
+    margin-left: 24px; }
+  .home .feature-banners figure {
+    height: 420px;
+    padding-top: 72px; }
+  .home .banner-importing {
+    background-size: 100%;
+    background-position: center 288px; } }
 @media screen and (max-width: 1030px) {
   .home .header {
     height: 720px; }
@@ -1353,7 +1368,17 @@ footer.global p, footer.global a {
     top: calc(50% + 116px);
     left: calc(50% + 108px); }
   .home .used-by figure {
-    margin-bottom: 24px; } }
+    margin-bottom: 24px; }
+  .home .feature-banners .col-2 {
+    max-width: 100%; }
+  .home .feature-banners .col-2 + .col-2 {
+    margin-top: 16px; }
+  .home .feature-banners figure {
+    height: 360px;
+    padding-top: 72px; }
+  .home .banner-importing {
+    background-size: 512px 224px;
+    background-position: center 200px; } }
 @media screen and (max-width: 720px) {
   .home .header {
     padding-bottom: 50%;
