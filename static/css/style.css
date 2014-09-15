@@ -1016,10 +1016,10 @@ footer.global p, footer.global a {
   margin: 0;
   border: none; }
 
-/* glue: 0.9.4 hash: af1097d824 */
+/* glue: 0.9.4 hash: 0baecef8ed */
 /* 1x */
 .logo-instagram, .logo-facebook, .logo-groupon, .logo-google, .logo-stripe, .logo-twitter, .logo-dropbox, .logo-apple, .logo-adobe, .logo-spotify, .icon-workflow, .icon-preview, .icon-more, .icon-interaction, .icon-general, .icon-features, .icon-code, .icon-animation {
-  background-image: url("/static/images/sprites/sprite1x.png?af1097d824");
+  background-image: url("/static/images/sprites/sprite1x.png?0baecef8ed");
   background-repeat: no-repeat;
   -webkit-background-size: 180px 164px;
   -moz-background-size: 180px 164px;
@@ -1116,10 +1116,10 @@ footer.global p, footer.global a {
   height: 16px; }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  /* glue: 0.9.4 hash: 1f99868f53 */
+  /* glue: 0.9.4 hash: ab3ecd852d */
   /* 2x */
   .logo-instagram, .logo-facebook, .logo-groupon, .logo-google, .logo-stripe, .logo-twitter, .logo-dropbox, .logo-apple, .logo-adobe, .logo-spotify, .icon-preview, .icon-interaction, .icon-general, .icon-code, .icon-animation, .icon-workflow, .icon-more, .icon-features {
-    background-image: url("/static/images/sprites/sprite2x.png?1f99868f53");
+    background-image: url("/static/images/sprites/sprite2x.png?ab3ecd852d");
     background-repeat: no-repeat;
     -webkit-background-size: 180.0px 164.0px;
     -moz-background-size: 180.0px 164.0px;
@@ -1377,7 +1377,7 @@ footer.global p, footer.global a {
   display: inline-block; }
 .home .banner-importing {
   background: #92b0c8 url("/static/images/home/banner-importing.png") no-repeat;
-  background-size: 512px 224px;
+  background-size: 518px 224px;
   background-position: center 340px; }
 .home .banner-mirror {
   background: #92b0c8 url("/static/images/home/banner-mirror.png") no-repeat;
@@ -1450,7 +1450,7 @@ footer.global p, footer.global a {
   .home .feature-banners section {
     margin-top: -64px; }
   .home .banner-importing {
-    background-size: 512px 224px;
+    background-size: 518px 224px;
     background-position: center 200px; }
   .home .banner-mirror {
     background-position: 50% 80%;
