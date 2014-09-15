@@ -1016,10 +1016,10 @@ footer.global p, footer.global a {
   margin: 0;
   border: none; }
 
-/* glue: 0.9.4 hash: 337442238a */
+/* glue: 0.9.4 hash: 2f61f57216 */
 /* 1x */
 .logo-instagram, .logo-facebook, .logo-groupon, .logo-google, .logo-stripe, .logo-twitter, .logo-dropbox, .logo-apple, .logo-adobe, .logo-spotify, .icon-preview, .icon-interaction, .icon-code, .icon-animation {
-  background-image: url("/static/images/sprites/sprite1x.png?337442238a");
+  background-image: url("/static/images/sprites/sprite1x.png?2f61f57216");
   background-repeat: no-repeat;
   -webkit-background-size: 180px 164px;
   -moz-background-size: 180px 164px;
@@ -1096,10 +1096,10 @@ footer.global p, footer.global a {
   height: 16px; }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  /* glue: 0.9.4 hash: e53e89360b */
+  /* glue: 0.9.4 hash: 2eee7960c9 */
   /* 2x */
   .logo-instagram, .logo-facebook, .logo-groupon, .logo-google, .logo-stripe, .logo-twitter, .logo-dropbox, .logo-apple, .logo-adobe, .logo-spotify, .icon-preview, .icon-interaction, .icon-code, .icon-animation {
-    background-image: url("/static/images/sprites/sprite2x.png?e53e89360b");
+    background-image: url("/static/images/sprites/sprite2x.png?2eee7960c9");
     background-repeat: no-repeat;
     -webkit-background-size: 180.0px 164.0px;
     -moz-background-size: 180.0px 164.0px;
@@ -1209,7 +1209,7 @@ footer.global p, footer.global a {
   opacity: 0.5;
   margin-bottom: -9px; }
 .home .examples {
-  background: #d2d9df;
+  background: #e8ecef;
   height: 480px;
   position: relative;
   padding: 0; }
@@ -1344,10 +1344,14 @@ footer.global p, footer.global a {
   transform: translate(-50%, -50%);
   width: 80%;
   z-index: 100; }
+.home .feature-banners h5 {
+  margin-bottom: 24px; }
+.home .feature-banners div {
+  display: inline-block; }
 .home .banner-importing {
   background: #92b0c8 url("/static/images/home/banner-importing.png") no-repeat;
   background-size: 512px 224px;
-  background-position: center 320px; }
+  background-position: center 340px; }
 .home .banner-mirror {
   background: #92b0c8 url("/static/images/home/banner-mirror.png") no-repeat;
   background-size: 100%;
@@ -1368,7 +1372,7 @@ footer.global p, footer.global a {
 .home .feature-banners a:hover:after {
   background: rgba(0, 0, 0, 0.2); }
 .home .more-features li + li {
-  margin-top: 24px; }
+  margin-top: 16px; }
 @media screen and (max-width: 1080px) {
   .home .used-by figure + figure {
     margin-left: 24px; }
