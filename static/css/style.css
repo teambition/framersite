@@ -1149,7 +1149,9 @@ footer.global p, footer.global a {
 .home .examples {
   margin-bottom: calc(80px * 2);
   margin-top: calc(80px + 80px); }
-.home .used-by, .home .feature-banners {
+.home .examples-caption,
+.home .used-by,
+.home .feature-banners {
   margin-bottom: 80px; }
 .home .screenshot img.studio {
   max-width: 708px;
@@ -1171,6 +1173,10 @@ footer.global p, footer.global a {
 .home h5 figure {
   display: inline-block;
   margin-right: 16px; }
+.home .examples-caption {
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto; }
 .home .used-by {
   text-align: center;
   color: #D3D8E1; }
