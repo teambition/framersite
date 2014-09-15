@@ -599,6 +599,7 @@ h4 {
 
 h5 {
   font-size: 1.5em;
+  line-height: 1.4;
   font-weight: 400;
   margin-bottom: 8px; }
 
@@ -606,6 +607,10 @@ h5 {
   font-size: 1.1em;
   font-weight: 400;
   margin-bottom: 8px; }
+
+.feature-banners h5 {
+  margin-bottom: 32px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
 
 .subtitle {
   font-size: 1.375em;
@@ -1301,6 +1306,20 @@ footer.global p, footer.global a {
   top: 1px; }
 .home .footer-features li + li {
   margin-top: 8px; }
+.home .feature-banners {
+  color: #fff;
+  text-align: center; }
+.home .feature-banners figure {
+  height: 480px;
+  border-radius: 4px;
+  background-size: cover;
+  padding-top: 128px;
+  padding-left: 40px;
+  padding-right: 40px; }
+.home .banner-importing {
+  background: #92b0c8 url("/static/images/home/banner-importing.png"); }
+.home .banner-mirror {
+  background: #eeeeee url("/static/images/home/banner-mirror.png"); }
 @media screen and (max-width: 1080px) {
   .home .used-by figure + figure {
     margin-left: 24px; } }
