@@ -58,7 +58,7 @@
 	margin-bottom: calc(#{$space80} * 2);
 	margin-top: calc(#{$space80} + #{$space80});
 }
-.used-by {
+.used-by, .feature-banners {
 	margin-bottom: $space80;
 }
 // ---------------------
@@ -84,8 +84,8 @@
 	line-height: 1.8;
 }
 
-// Framer Overview
-.framer-overview h5 figure {
+// Icons infront of H5 Headlines
+h5 figure {
 	display: inline-block;
 	margin-right: $space16;
 }
@@ -297,7 +297,7 @@ a.device-right {
 }
 .banner-mirror {
 	background: $banner-importing url("/static/images/home/banner-mirror.png") no-repeat;
-	background-size: cover;
+	background-size: 100%;
 	background-position: bottom center;
 }
 // Hover
@@ -309,6 +309,11 @@ a.device-right {
 }
 .feature-banners a:hover:after {
 	background: rgba(0,0,0,0.2);
+}
+
+// More features list
+.more-features li+li {
+	margin-top: $space24;
 }
 // Media Queries
 @media screen and (max-width:1080px) {

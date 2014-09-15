@@ -88,6 +88,16 @@ p {
 	color:$text;
 	margin-bottom: $space24;
 }
+p.title {
+	font-size:1.125em;
+	color: $black;
+}
+.more-features p.title {
+	font-size:20px;
+}
+.more-features p {
+	font-size:14px;
+}
 .footnote {
 	color: $graphite40;
 	font-size:12px;

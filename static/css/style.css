@@ -624,6 +624,16 @@ p {
   color: #666666;
   margin-bottom: 24px; }
 
+p.title {
+  font-size: 1.125em;
+  color: #15181d; }
+
+.more-features p.title {
+  font-size: 20px; }
+
+.more-features p {
+  font-size: 14px; }
+
 .footnote {
   color: #c0c5cf;
   font-size: 12px;
@@ -1139,7 +1149,7 @@ footer.global p, footer.global a {
 .home .examples {
   margin-bottom: calc(80px * 2);
   margin-top: calc(80px + 80px); }
-.home .used-by {
+.home .used-by, .home .feature-banners {
   margin-bottom: 80px; }
 .home .screenshot img.studio {
   max-width: 708px;
@@ -1158,7 +1168,7 @@ footer.global p, footer.global a {
 .home .screenshot-copy h3 {
   margin-bottom: 8px;
   line-height: 1.8; }
-.home .framer-overview h5 figure {
+.home h5 figure {
   display: inline-block;
   margin-right: 16px; }
 .home .used-by {
@@ -1340,7 +1350,7 @@ footer.global p, footer.global a {
   background-position: center 320px; }
 .home .banner-mirror {
   background: #92b0c8 url("/static/images/home/banner-mirror.png") no-repeat;
-  background-size: cover;
+  background-size: 100%;
   background-position: bottom center; }
 .home .feature-banners a:after {
   content: "";
@@ -1357,6 +1367,8 @@ footer.global p, footer.global a {
   transition: background 0.2s ease; }
 .home .feature-banners a:hover:after {
   background: rgba(0, 0, 0, 0.2); }
+.home .more-features li + li {
+  margin-top: 24px; }
 @media screen and (max-width: 1080px) {
   .home .used-by figure + figure {
     margin-left: 24px; }
