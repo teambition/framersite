@@ -147,7 +147,7 @@
 	@include transition(all, 0.2s, ease);
 }
 .shrink {
-	@include scale(0.9);
+	@include scale(0.96);
 }
 a.device-left,
 a.device-mid,

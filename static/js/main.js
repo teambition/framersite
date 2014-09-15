@@ -16,18 +16,20 @@ $(document).ready(function() {
 	);
 
 	$(window).scroll(function() {
+		var scrollPos = $(this).scrollTop();
+
 		if ($(window).scrollTop() > 330){
 			 $(docsSidebar).addClass('sticky');
-		}	 
-		else {
-			$(docsSidebar).removeClass('sticky');
-		}
+		}	else {
+				$(docsSidebar).removeClass('sticky');
+			}
 		if ($(window).scrollTop() > 800){
-			 $(topNav).addClass('sticky');
-		}
-		else {
-			$(topNav).removeClass('sticky');
-			$(topNav).addClass('fade-out');
+			 $(topNav).addClass('sticky').removeClass('fade-out');
+		} 	else if ( $(topNav).hasClass('sticky') && scrollPos <= 800) { 
+				$(topNav).removeClass('sticky').addClass('fade-out');
+			}
+		if (scrollPos < 600) {
+			$(topNav).removeClass('fade-out');
 		}
 
 	});

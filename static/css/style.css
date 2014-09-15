@@ -375,46 +375,79 @@ nav.top {
   background: #232c39;
   z-index: 1000; }
 
-nav.top.sticky {
-  position: fixed; }
-
 nav.top ul {
   max-width: 1020px;
   margin: 0 auto; }
 
 @-webkit-keyframes fade-in {
   0% {
-    top: -16px; }
+    top: -56px; }
 
   100% {
     top: 0; } }
 
 @-moz-keyframes fade-in {
   0% {
-    top: -16px; }
+    top: -56px; }
 
   100% {
     top: 0; } }
 
 @-o-keyframes fade-in {
   0% {
-    top: -16px; }
+    top: -56px; }
 
   100% {
     top: 0; } }
 
 @keyframes fade-in {
   0% {
-    top: -16px; }
+    top: -56px; }
 
   100% {
     top: 0; } }
 
 nav.top.sticky {
-  -webkit-animation: fade-in .3s 1;
-  -moz-animation: fade-in .3s 1;
-  -o-animation: fade-in .3s 1;
-  animation: fade-in .3s 1; }
+  -webkit-animation: fade-in .3s forwards;
+  -moz-animation: fade-in .3s forwards;
+  -o-animation: fade-in .3s forwards;
+  animation: fade-in .3s forwards;
+  position: fixed; }
+
+@-webkit-keyframes fade-out {
+  0% {
+    top: 0; }
+
+  100% {
+    top: -56px; } }
+
+@-moz-keyframes fade-out {
+  0% {
+    top: 0; }
+
+  100% {
+    top: -56px; } }
+
+@-o-keyframes fade-out {
+  0% {
+    top: 0; }
+
+  100% {
+    top: -56px; } }
+
+@keyframes fade-out {
+  0% {
+    top: 0; }
+
+  100% {
+    top: -56px; } }
+
+nav.top.fade-out {
+  -webkit-animation: fade-out .3s forwards;
+  -moz-animation: fade-out .3s forwards;
+  -o-animation: fade-out .3s forwards;
+  animation: fade-out .3s forwards;
+  position: fixed; }
 
 nav.top li {
   float: left;
@@ -839,7 +872,12 @@ input:focus {
   font-weight: 700;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
-  letter-spacing: 0.5px; }
+  letter-spacing: 0.5px;
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  -ms-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  transition: all 0.1s ease; }
 
 .btn-pill {
   border-radius: 50px; }
@@ -886,7 +924,7 @@ input.blue:focus {
 
 .btn.green:hover,
 .btn.green:focus {
-  background: #97e345;
+  background: #7ddc16;
   opacity: 1; }
 
 .btn-line.blue:hover,
@@ -1163,11 +1201,11 @@ footer.global p, footer.global a {
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease; }
 .home .shrink {
-  -moz-transform: scale(0.9);
-  -o-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  -webkit-transform: scale(0.9);
-  transform: scale(0.9); }
+  -moz-transform: scale(0.96);
+  -o-transform: scale(0.96);
+  -ms-transform: scale(0.96);
+  -webkit-transform: scale(0.96);
+  transform: scale(0.96); }
 .home a.device-left,
 .home a.device-mid,
 .home a.device-right {

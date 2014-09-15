@@ -8,22 +8,28 @@ nav.top {
 	top:0;
 	background: $header;
 	z-index: 1000;
+}
 
-}
-nav.top.sticky {
-	position: fixed;
-}
 nav.top ul {
 	max-width: 1020px;
 	margin:0 auto;
 }
 @include keyframes(fade-in) {
-  0%   { top: #{-$space16}; }
-  100% { top: 0; }
+	0%   { top: -56px; }
+	100% { top: 0; }
 }
 nav.top.sticky {
-  @include animation('fade-in .3s 1');
+ 	@include animation('fade-in .3s forwards');
+ 	position: fixed;
 } 
+@include keyframes(fade-out) {
+	0%   { top: 0; }
+ 	100% { top: -56px; }
+}
+nav.top.fade-out {
+	@include animation('fade-out .3s forwards');
+	position: fixed;
+}
 nav.top li {
 	float: left;
 	font-size: 12px;
