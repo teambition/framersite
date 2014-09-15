@@ -19,11 +19,9 @@ h6,
 li {
 	line-height: 1.5;
 }
-
 p {
 	line-height: 1.6;
 }
-
 h1 {
 	font-size: 4em; //64px
 	line-height: 1.2;
@@ -129,6 +127,42 @@ a.small.right {
 	letter-spacing: 1px;
 }
 
+// Lists
+.learn .content-inner ul,
+.docs .content-inner ul,
+.more .content-inner ul {
+	margin-bottom: $space32;
+}
+// Lists on Pages
+.learn ul li,
+.docs ul li,
+.more ul li  {
+	line-height: 1.5;
+	font-size: 1em;
+	font-weight: 400;
+	color: $text;
+	list-style-type: circle; 
+	position: relative; 
+	left: $space16;
+	padding-left: $space8; 
+}
+.learn li strong,
+.docs li strong,
+.more li strong {
+	font-size:18px;
+}
+.learn ul li+li,
+.docs ul li+li,
+.more ul li+li {
+	margin-top: $space8;
+}
+.learn li ul li,
+.docs li ul li,
+.more li ul li  {
+	list-style-type: none;
+	padding: 0; left: 0; 
+	margin-top: $space8;
+}
 // Helpers -------------------
 .uppercase {
 	text-transform: uppercase;
