@@ -732,7 +732,8 @@ img {
   padding: 0 0 64px 0; }
 
 .learn .container,
-.docs .container {
+.docs .container,
+.more .container {
   padding: calc(72px + 64px) 0 64px 0; }
 
 .content-inner {
@@ -745,8 +746,10 @@ img {
   max-width: 600px;
   position: relative; }
 
-.module-600 {
-  max-width: 600px; }
+.learn .content-inner,
+.more .content-inner {
+  max-width: 660px;
+  margin: 0 auto; }
 
 [class*='col-'] {
   float: left;
@@ -854,7 +857,8 @@ li.feature img {
     margin: 48px auto; } }
 @media screen and (max-width: 560px) {
   .learn .container,
-  .docs .container {
+  .docs .container,
+  .more .container {
     padding: calc(64px + 120px) 0 64px 0; }
 
   .content-inner {
@@ -1492,7 +1496,13 @@ footer.global p, footer.global a {
   .home a.device-left {
     left: -64px; }
   .home a.device-right {
-    right: -64px; } }
+    right: -64px; }
+  .home .examples {
+    margin-bottom: calc(80px + 40px);
+    margin-top: calc(80px + 40px); }
+  .home .header,
+  .home .footer h2 {
+    margin-bottom: 48px; } }
 @media screen and (max-width: 660px) {
   .home .examples {
     height: calc(480px * 0.6);
@@ -1611,9 +1621,6 @@ footer.global p, footer.global a {
   .docs .content-inner {
     max-width: 960px; } }
 
-.learn .content-inner {
-  max-width: 660px;
-  margin: 0 auto; }
 .learn .content-inner ul {
   margin-bottom: 32px; }
 .learn .content-inner ul li {

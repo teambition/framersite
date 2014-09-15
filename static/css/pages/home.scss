@@ -426,6 +426,15 @@ a.device-right {
 	a.device-right {
 		right:-64px;
 	}
+	// Vertical spacing
+	.examples {
+		margin-bottom: calc(#{$space80} + #{$space40});
+		margin-top: calc(#{$space80} + #{$space40});
+	}
+	.header,
+	.footer h2 {
+		margin-bottom: $space48;
+	}
 }
 @media screen and (max-width:660px) {
 	// ****************

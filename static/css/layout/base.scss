@@ -35,7 +35,8 @@ img {
 }
 
 .learn .container,
-.docs .container {
+.docs .container,
+.more .container {
 	padding: calc(72px + 64px) 0 $space64 0;
 }
 .content-inner {
@@ -48,8 +49,10 @@ img {
 	max-width: 600px;
 	position: relative;
 }
-.module-600 {
-	max-width: 600px;
+.learn .content-inner,
+.more .content-inner {
+	max-width: 660px;
+	margin: 0 auto;
 }
 // Select all col- elements
 [class*='col-'] { 
@@ -170,7 +173,8 @@ li.feature img {
 }
 @media screen and (max-width: 560px) {
 	.learn .container,
-	.docs .container {
+	.docs .container,
+	.more .container {
 		padding: calc(64px + 120px) 0 $space64 0;
 	}
 	.content-inner {
