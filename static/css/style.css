@@ -1008,6 +1008,10 @@ input.blue:focus {
   background: #7ddc16;
   opacity: 1; }
 
+.footer .btn.green:hover,
+.footer .btn.green:focus {
+  background: #97e345; }
+
 .btn-line.blue:hover,
 .btn-line.blue:focus {
   box-shadow: none;
@@ -1052,7 +1056,6 @@ input {
     letter-spacing: 0;
     border-radius: 3px; } }
 footer.global {
-  margin-top: 64px;
   background: #232c39;
   height: 148px;
   padding-top: 48px; }
@@ -1076,7 +1079,7 @@ footer.global input {
   border-radius: 3px;
   padding: 8px 8px 4px 8px;
   font-family: "Fakt", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   vertical-align: bottom; }
 
@@ -1084,11 +1087,10 @@ footer.global button {
   border: none;
   padding: 8px 16px;
   padding-top: 11px;
-  font-size: 12px;
+  font-size: 10px;
   text-transform: uppercase;
   font-weight: 600;
   border-radius: 3px;
-  letter-spacing: 0.5px;
   display: inline-block;
   line-height: 1;
   background: #28affa;

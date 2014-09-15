@@ -58,7 +58,6 @@ input.blue { background: $blue; }
 	box-shadow: inset 0 0 0 1px $blue40;
 	background: transparent;
 }
-
 // Hover states
 .btn.blue:hover,
 input.blue:hover,
@@ -71,6 +70,10 @@ input.blue:focus {
 .btn.green:focus {
 	background: $green;
 	opacity: 1;
+}
+.footer .btn.green:hover,
+.footer .btn.green:focus {
+	background: $green80;
 }
 .btn-line.blue:hover,
 .btn-line.blue:focus {

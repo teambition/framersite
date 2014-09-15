@@ -1,6 +1,5 @@
 // Footer
 footer.global {
-	margin-top: $space64;
 	background: $header;
 	height: 148px;
 	padding-top: $space48;
@@ -10,39 +9,33 @@ footer.global li {
 	float: left;
 	font-weight: 600;
 }
-
 footer.global nav {
 	border-bottom: 1px solid rgba(255,255,255,0.1);
 	padding-bottom: $space16;
 	display:inline-block;
 }
-
 footer.global p {
 	color: $nav-links;
 	opacity: 0.5;
 	margin-top: $space16;
 }
-
 footer.global input {
 	border: none;
 	border-radius:3px;
 	padding: $space8 $space8 4px $space8;
 	font-family: "Fakt", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size:14px;
+	font-size:16px;
 	line-height: 1.5;
 	vertical-align: bottom;
 }
-
 footer.global button {
 	border: none;
 	padding:$space8 $space16;
 	padding-top:11px;
-
-	font-size: 12px; 
+	font-size: 10px; 
 	text-transform: uppercase;
 	font-weight: 600;
 	border-radius: 3px; 
-	letter-spacing: 0.5px;
 	display:inline-block;
 	line-height: 1;
 	background: $blue;
