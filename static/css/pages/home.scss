@@ -22,12 +22,13 @@
 	content:"";
 	background: url("/static/images/home/icon-bounce.gif");
 	position: absolute;
-	top:calc(50% + 90px);
-	left:calc(50% + 190px);
-	height:200px;
-	width:140px;
+	top:calc(50% + 128px);
+	left:calc(50% + 128px + 64px);
+	height:128px;
+	width:128px;
 	overflow: hidden;
 	background-position: 50%;
+	background-size: cover;
 }
 
 .col-4 p {
