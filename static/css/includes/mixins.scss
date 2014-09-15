@@ -22,6 +22,7 @@
     transition: $transition-property $transition-time $method;
 }
 
+
 @mixin animation($animate...) {
     $max: length($animate);
     $animations: '';
@@ -69,4 +70,11 @@
 } 
 @mixin translate ($x, $y) {
    @include transform(translate($x, $y));
+}
+@mixin transform-origin ($origin) {
+     -moz-transform-origin: $origin;
+       -o-transform-origin: $origin;
+      -ms-transform-origin: $origin;
+  -webkit-transform-origin: $origin;
+          transform-origin: $origin;
 }

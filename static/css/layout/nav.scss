@@ -1,13 +1,17 @@
+
 nav.top {
 	width: 100%;
 	height: $space56;
 	line-height:63px;
 	padding: 0 $space32;
 	vertical-align:middle;
-	position: absolute;
+	position: fixed;
 	top:0;
 	background: $header;
 	z-index: 1000;
+}
+.home nav.top {
+	position: absolute;
 }
 
 nav.top ul {
@@ -19,7 +23,7 @@ nav.top ul {
 	100% { top: 0; }
 }
 nav.top.sticky {
- 	@include animation('fade-in .3s forwards');
+ 	@include animation('fade-in .2s forwards');
  	position: fixed;
 } 
 @include keyframes(fade-out) {
@@ -27,7 +31,7 @@ nav.top.sticky {
  	100% { top: -56px; }
 }
 nav.top.fade-out {
-	@include animation('fade-out .3s forwards');
+	@include animation('fade-out .2s forwards');
 	position: fixed;
 }
 nav.top li {

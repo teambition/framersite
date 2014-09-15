@@ -1,6 +1,3 @@
-$('#topbar img').click( function(){
-	$("#sidebar").toggleClass("appear");
-});
 
 $(document).ready(function() {
 	var docsSidebar, topNav, exampleBlock, exampleDevices;
@@ -9,7 +6,7 @@ $(document).ready(function() {
 	exampleBlock = document.querySelector('.examples');
 	exampleDevices = document.querySelectorAll('.device-left, .device-right');
 
-	$(exampleBlock).hover (
+	$(exampleBlock).hover(
 		function() {
 			$(exampleDevices).toggleClass("shrink");
 		}
@@ -18,16 +15,19 @@ $(document).ready(function() {
 	$(window).scroll(function() {
 		var scrollPos = $(this).scrollTop();
 
-		if ($(window).scrollTop() > 330){
-			 $(docsSidebar).addClass('sticky');
-		}	else {
-				$(docsSidebar).removeClass('sticky');
-			}
-		if ($(window).scrollTop() > 800){
-			 $(topNav).addClass('sticky').removeClass('fade-out');
-		} 	else if ( $(topNav).hasClass('sticky') && scrollPos <= 800) { 
-				$(topNav).removeClass('sticky').addClass('fade-out');
-			}
+		if ($(window).scrollTop() > 330) {
+			$(docsSidebar).addClass('sticky');
+		} else {
+			$(docsSidebar).removeClass('sticky');
+		}
+		
+		if ($(window).scrollTop() > 800) {
+			$(topNav).addClass('sticky').removeClass('fade-out');
+		}
+		else if ($(topNav).hasClass('sticky') && scrollPos <= 800) {
+			$(topNav).removeClass('sticky').addClass('fade-out');
+		}
+
 		if (scrollPos < 600) {
 			$(topNav).removeClass('fade-out');
 		}
@@ -36,84 +36,84 @@ $(document).ready(function() {
 });
 		
 
-/* ========================= */
+// /* ========================= */
 
-function isMobile() {
-	return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
-}
+// function isMobile() {
+// 	return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+// }
 
-function setupDownloadLink() {
+// function setupDownloadLink() {
 
-	if (isMobile()) {
-		var mobileLink = "mailto:?subject=Check Out Framer Studio&body=Don't forget to check out Framer: http://framerjs.com"
-		$("a.downloadfs").attr("href", mobileLink);
+// 	if (isMobile()) {
+// 		var mobileLink = "mailto:?subject=Check Out Framer Studio&body=Don't forget to check out Framer: http://framerjs.com"
+// 		$("a.downloadfs").attr("href", mobileLink);
 
-	} else {
+// 	} else {
 
-		// var sparkleHost = "http://framerstudio-update.s3-website-us-east-1.amazonaws.com"
-		var sparkleHost = "http://studio.update.framerjs.com"
+// 		// var sparkleHost = "http://framerstudio-update.s3-website-us-east-1.amazonaws.com"
+// 		var sparkleHost = "http://studio.update.framerjs.com"
 
-		$.get(sparkleHost + "/latest.txt", function(result) {
+// 		$.get(sparkleHost + "/latest.txt", function(result) {
 			
-			var downloadLink = sparkleHost + "/" + result;
+// 			var downloadLink = sparkleHost + "/" + result;
 
-			$("a.downloadfs").click(function(event) {
+// 			$("a.downloadfs").click(function(event) {
 
-				event.preventDefault()
+// 				event.preventDefault()
 
-				ga('send', 'event', 'Download', 'Framer Studio', downloadLink);
+// 				ga('send', 'event', 'Download', 'Framer Studio', downloadLink);
 
-				setTimeout(function() {
-					window.location.href = downloadLink;
-				}, 500);
+// 				setTimeout(function() {
+// 					window.location.href = downloadLink;
+// 				}, 500);
 
-			});
-		});
+// 			});
+// 		});
 		
-	};
-};
+// 	};
+// };
 
-$(document).ready(function() {
-	setupDownloadLink();
-})
+// $(document).ready(function() {
+// 	setupDownloadLink();
+// })
 
-/* ========================= */
+// /* ========================= */
 	 
-$(document).ready(function() {
+// $(document).ready(function() {
 
-	var carouselNode = document.getElementById('carousel');
+// 	var carouselNode = document.getElementById('carousel');
 
-	if (carouselNode) {
+// 	if (carouselNode) {
 
-		setTimeout(function() {
-			document.getElementById('carousel-inapp').play();
-		}, 1000);
+// 		setTimeout(function() {
+// 			document.getElementById('carousel-inapp').play();
+// 		}, 1000);
 
-		$(window).scroll(function() {
-			if ($(window).scrollTop() > 1400){
-				 document.getElementById('carousel').play();
-			}	 
-		});
+// 		$(window).scroll(function() {
+// 			if ($(window).scrollTop() > 1400){
+// 				 document.getElementById('carousel').play();
+// 			}	 
+// 		});
 		
-		$('.screen').click(function() {
-			document.getElementById('carousel').play();
-		});
+// 		$('.screen').click(function() {
+// 			document.getElementById('carousel').play();
+// 		});
 
-	}
+// 	}
 
-	$("code").each(function(i, node) {
+// 	$("code").each(function(i, node) {
 
-		// Set the default language to coffee script
-		if (!node.getAttribute("data-language")) {
-			node.setAttribute("data-language", "coffeescript");
-		}
+// 		// Set the default language to coffee script
+// 		if (!node.getAttribute("data-language")) {
+// 			node.setAttribute("data-language", "coffeescript");
+// 		}
 
-		// Strip empty lines at the beginning and end
-		node.innerHTML = node.innerHTML.replace(/^\s+|\s+$/g, '');
+// 		// Strip empty lines at the beginning and end
+// 		node.innerHTML = node.innerHTML.replace(/^\s+|\s+$/g, '');
 
-	})
+// 	})
 	
-});
+// });
 		
 
 

@@ -17,18 +17,19 @@
 	width:100%;
 	box-shadow: 0 8px 32px rgba(0,0,0,0.2);
 }
-
-.ss-framer:after {
-	content:"";
-	background: url("/static/images/home/icon-bounce.gif");
-	position: absolute;
-	top:calc(50% + 128px);
-	left:calc(50% + 128px + 64px);
-	height:128px;
-	width:128px;
-	overflow: hidden;
-	background-position: 50%;
-	background-size: cover;
+@media screen and (min-width: 720px) {
+	.ss-framer:after {
+		content:"";
+		background: url("/static/images/home/icon-bounce-lossy.gif");
+		position: absolute;
+		top:calc(50% + 128px);
+		left:calc(50% + 128px + 64px);
+		height:128px;
+		width:128px;
+		overflow: hidden;
+		background-position: 50%;
+		background-size: cover;
+	}
 }
 
 .col-4 p {
@@ -214,7 +215,6 @@ a.device-right {
 	top: 4px;
 	margin-right: $space16; 
 }
-
 // Viewer block
 .viewer {
 	padding: 100px 0 40px 0; /* The extra 20 is to fix the overflow bug */
@@ -279,9 +279,14 @@ a.device-right {
 		height: 720px;
 	}
 	.ss-framer img {
-		max-width: 980px;
+		max-width: 980px; // scale by 0.957
 		margin-left: -490px;
 		padding: 0 $space16;
+	}
+	.ss-framer:after {
+		@include scale(0.96);
+		top:calc(50% + 128px);
+		left:calc(50% + 128px + 44px);
 	}
 }
 @media screen and (max-width:980px) {
@@ -289,8 +294,13 @@ a.device-right {
 		height:600px;
 	}
 	.ss-framer img {
-		max-width: 720px;
+		max-width: 720px; // scale 0.7
 		margin-left: -360px;
+	}
+	.ss-framer:after {
+		@include scale(0.7);
+		top:calc(50% + 116px);
+		left:calc(50% + 108px);
 	}
 	// ****************
 	// Vertical spacing
