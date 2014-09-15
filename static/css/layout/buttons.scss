@@ -49,10 +49,12 @@ input.blue { background: $blue; }
 .btn-line.green {
 	color: $green;
 	box-shadow: inset 0 0 0 1px $green40;
+	background: transparent;
 }
 .btn-line.blue {
 	color: $blue;
 	box-shadow: inset 0 0 0 1px $blue40;
+	background: transparent;
 }
 
 // Hover states
@@ -102,7 +104,7 @@ input {
 	cursor: pointer; cursor: hand;
 	line-height: 1;
 }
-
+// Media queries
 @media screen and (max-width: 560px) {
 	.btn,
 	.header input,

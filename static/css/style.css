@@ -609,7 +609,6 @@ h5 {
   margin-bottom: 8px; }
 
 .feature-banners h5 {
-  margin-bottom: 32px;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
 
 .subtitle {
@@ -923,11 +922,13 @@ input.blue {
 
 .btn-line.green {
   color: #7ddc16;
-  box-shadow: inset 0 0 0 1px #cbf1a2; }
+  box-shadow: inset 0 0 0 1px #cbf1a2;
+  background: transparent; }
 
 .btn-line.blue {
   color: #28affa;
-  box-shadow: inset 0 0 0 1px #a9dffd; }
+  box-shadow: inset 0 0 0 1px #a9dffd;
+  background: transparent; }
 
 .btn.blue:hover,
 input.blue:hover,
@@ -1138,6 +1139,8 @@ footer.global p, footer.global a {
 .home .examples {
   margin-bottom: calc(80px * 2);
   margin-top: calc(80px + 80px); }
+.home .used-by {
+  margin-bottom: 80px; }
 .home .screenshot img.studio {
   max-width: 708px;
   width: 100%; }
@@ -1183,7 +1186,7 @@ footer.global p, footer.global a {
 .home .logo-groupon {
   top: -2px; }
 .home .used-by .footnote {
-  margin-bottom: 32px;
+  margin-bottom: 24px;
   padding: 0 24px;
   background: #fff;
   display: inline-block;
@@ -1313,28 +1316,52 @@ footer.global p, footer.global a {
 .home .footer-features li + li {
   margin-top: 8px; }
 .home .feature-banners {
-  color: #fff;
   text-align: center; }
-.home .feature-banners figure {
+.home .feature-banners a {
+  position: relative;
   height: 480px;
+  color: #fff;
   border-radius: 3px;
-  padding-top: 128px;
-  padding-left: 40px;
-  padding-right: 40px; }
+  overflow: hidden; }
+.home .feature-banners section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 80%;
+  z-index: 100; }
 .home .banner-importing {
   background: #92b0c8 url("/static/images/home/banner-importing.png") no-repeat;
   background-size: 512px 224px;
   background-position: center 320px; }
 .home .banner-mirror {
-  background: #eeeeee url("/static/images/home/banner-mirror.png") no-repeat;
+  background: #92b0c8 url("/static/images/home/banner-mirror.png") no-repeat;
   background-size: cover;
   background-position: bottom center; }
+.home .feature-banners a:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0);
+  width: 100%;
+  height: 100%;
+  -webkit-transition: background 0.2s ease;
+  -moz-transition: background 0.2s ease;
+  -ms-transition: background 0.2s ease;
+  -o-transition: background 0.2s ease;
+  transition: background 0.2s ease; }
+.home .feature-banners a:hover:after {
+  background: rgba(0, 0, 0, 0.2); }
 @media screen and (max-width: 1080px) {
   .home .used-by figure + figure {
     margin-left: 24px; }
-  .home .feature-banners figure {
-    height: 420px;
-    padding-top: 72px; }
+  .home .feature-banners a {
+    height: 420px; }
   .home .banner-importing {
     background-size: 100%;
     background-position: center 288px; } }
@@ -1367,18 +1394,24 @@ footer.global p, footer.global a {
     transform: scale(0.7);
     top: calc(50% + 116px);
     left: calc(50% + 108px); }
+  .home .used-by {
+    margin-bottom: 40px; }
   .home .used-by figure {
     margin-bottom: 24px; }
   .home .feature-banners .col-2 {
     max-width: 100%; }
   .home .feature-banners .col-2 + .col-2 {
     margin-top: 16px; }
-  .home .feature-banners figure {
-    height: 360px;
-    padding-top: 72px; }
+  .home .feature-banners a {
+    height: 360px; }
+  .home .feature-banners section {
+    margin-top: -64px; }
   .home .banner-importing {
     background-size: 512px 224px;
-    background-position: center 200px; } }
+    background-position: center 200px; }
+  .home .banner-mirror {
+    background-position: 50% 80%;
+    background-size: 100%; } }
 @media screen and (max-width: 720px) {
   .home .header {
     padding-bottom: 50%;
@@ -1463,6 +1496,19 @@ footer.global p, footer.global a {
     display: none; }
   .home .used-by figure + figure {
     margin-left: 0; }
+  .home .feature-banners a {
+    height: 256px; }
+  .home .feature-banners section {
+    margin-top: -32px;
+    width: 92%; }
+  .home .feature-banners h5 {
+    font-size: 1.2em; }
+  .home .banner-importing {
+    background-size: 100%;
+    background-position: center 160px; }
+  .home .banner-mirror {
+    background-position: 50% 80%;
+    background-size: 100%; }
   .home .used-by .footnote {
     margin-bottom: 16px;
     font-size: 10px;
