@@ -455,7 +455,7 @@ nav.top.fade-out {
 nav.top li {
   float: left;
   font-size: 12px;
-  font-weight: 00;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   line-height: inherit;
@@ -497,7 +497,9 @@ nav.top input {
   cursor: pointer;
   cursor: hand;
   -webkit-font-smoothing: antialiased;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  border: none;
+  line-height: 1; }
 
 @media screen and (max-width: 1000px) {
   nav.top .content-inner {
