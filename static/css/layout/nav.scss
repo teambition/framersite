@@ -34,7 +34,7 @@ nav.top.fade-out {
 	@include animation('fade-out .2s forwards');
 	position: fixed;
 }
-nav.top li {
+nav li {
 	float: left;
 	font-size: 12px;
 	font-weight: 600;
@@ -44,16 +44,16 @@ nav.top li {
 	text-shadow: 0 1px 0 rgba(0,0,0,0.1);
 }
 .nav-items li:first-child,
-nav.top li+li {
+nav li+li {
 	padding-left: $space24;
 }
-nav.top a {
+nav a {
 	color: $nav-links;
 	font-weight: 600;
 }
 // Hover States
-nav.top a:hover,
-nav.top a:focus {
+nav a:hover,
+nav a:focus {
 	color: lighten($nav-links, 40%);
 }
 nav.top input:hover,
@@ -65,17 +65,10 @@ nav.top a.green:focus {
 	color: $green60;
 	opacity: 1;
 }
-// nav.top li.active a {
-// 	color: #fff;
-// 	padding-bottom: 21px;
-// 	border-bottom: 2px solid #fff;
-// }
+
 // Title
 nav.top .framer a {
 	color: #fff;
-}
-// Buy Button Form
-nav.top li.buy {
 }
 nav.top form {
 	display: inline-block;
@@ -88,7 +81,6 @@ nav.top input {
 	cursor: pointer; cursor: hand;
 	-webkit-font-smoothing: antialiased;
 	text-transform: uppercase;
-
 	border: none;
 	line-height: 1;
 }

@@ -1,17 +1,24 @@
 // Footer
 footer.global {
-	margin: 0 auto;
-	text-align: center;
 	margin-top: $space64;
-	margin-bottom: $space56;
+	background: $header;
+	height: 148px;
+	padding-top: $space48;
+
 }
-footer.global div {
-	padding-top: $space64;
-	border-top: 1px solid #eee;
+footer.global li {
+	float: left;
+	font-weight: 600;
 }
-footer.global p, footer.global a{
-	display: inline-block; font-weight: 400;
-	box-shadow: none; letter-spacing: 1px; text-transform: uppercase;
-	color: #BEC5D0; font-size: 12px;
-	margin: 0; border: none;
+
+footer.global nav {
+	border-bottom: 1px solid rgba(255,255,255,0.1);
+	padding-bottom: $space16;
+	display:inline-block;
+}
+
+footer.global p {
+	color: $nav-links;
+	opacity: 0.5;
+	margin-top: $space16;
 }

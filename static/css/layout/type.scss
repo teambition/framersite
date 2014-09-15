@@ -117,7 +117,7 @@ p.title {
 .small {
 	font-size:0.8125em; //13px
 }
-
+// "More" links
 a.small.right {
 	float: right;
 	font-size: 13px;
@@ -126,7 +126,14 @@ a.small.right {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 }
-
+// Copyright
+p.copy {
+	font-size:11px;
+	line-height: 1;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
 // Lists
 .learn .content-inner ul,
 .docs .content-inner ul,
