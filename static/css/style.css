@@ -1548,6 +1548,8 @@ footer.global :-ms-input-placeholder {
   background: rgba(0, 0, 0, 0.2); }
 .home .more-features li + li {
   margin-top: 16px; }
+.home footer.footer {
+  margin: 80px 0 16px 0; }
 @media screen and (max-width: 1080px) {
   .home .used-by figure + figure {
     margin-left: 24px; }

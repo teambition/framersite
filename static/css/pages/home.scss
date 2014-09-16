@@ -349,6 +349,11 @@ a.device-right {
 .more-features li+li {
 	margin-top: $space16;
 }
+
+// Home footer
+footer.footer {
+	margin: $space80 0 $space16 0;
+}
 // Media Queries
 @media screen and (max-width:1080px) {
 	.used-by figure+figure {
