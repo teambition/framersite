@@ -13,8 +13,13 @@ a {
 	color: $blue;
 	font-weight: 400; 
 }
-.home p a {
-	border-bottom: 1px solid $blue40;
+.home p a { position:relative; z-index: 50; }
+.home p a:after {
+	content:""; display: inline-block;
+	position: absolute; left:0; bottom:2px;
+	width:100%; height:1px;
+	background: $blue40;
+	z-index: -1;
 }
 strong {
 	color: $black;

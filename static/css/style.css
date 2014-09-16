@@ -778,7 +778,19 @@ a {
   font-weight: 400; }
 
 .home p a {
-  border-bottom: 1px solid #a9dffd; }
+  position: relative;
+  z-index: 50; }
+
+.home p a:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  width: 100%;
+  height: 1px;
+  background: #a9dffd;
+  z-index: -1; }
 
 strong {
   color: #15181d; }
