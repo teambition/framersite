@@ -823,6 +823,11 @@ a {
   color: #28affa;
   font-weight: 400; }
 
+a[name] {
+  position: relative;
+  top: -128px;
+  display: block; }
+
 .home p a {
   position: relative;
   z-index: 50; }
