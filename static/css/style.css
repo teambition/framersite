@@ -1492,10 +1492,10 @@ footer.global :-ms-input-placeholder {
   overflow: hidden; }
 .home .feature-banners section {
   position: absolute;
-  top: 35%;
+  top: 30%;
   left: 50%;
-  margin-left: -40%;
   width: 80%;
+  margin-left: -40%;
   z-index: 100; }
 .home .feature-banners h5 {
   margin-bottom: 24px; }
@@ -1549,6 +1549,11 @@ footer.global :-ms-input-placeholder {
     margin-left: 24px; }
   .home .feature-banners a {
     height: 420px; }
+  .home .feature-banners section {
+    top: 30%;
+    left: 50%;
+    width: 90%;
+    margin-left: -45%; }
   .home .banner-importing {
     background-size: 100%;
     background-position: center 320px; } }
@@ -1596,7 +1601,9 @@ footer.global :-ms-input-placeholder {
   .home .feature-banners a {
     height: 360px; }
   .home .feature-banners section {
-    margin-top: -64px; }
+    margin-top: -64px;
+    width: 64%;
+    margin-left: -32%; }
   .home .banner-importing {
     background-size: 518px 184px;
     background-position: center 220px; }
@@ -1627,6 +1634,10 @@ footer.global :-ms-input-placeholder {
     left: -64px; }
   .home a.device-right {
     right: -64px; }
+  .home .feature-banners section {
+    margin-top: -64px;
+    width: 80%;
+    margin-left: -40%; }
   .home .examples {
     margin-bottom: calc(80px + 40px);
     margin-top: calc(80px + 40px); }
@@ -1690,8 +1701,7 @@ footer.global :-ms-input-placeholder {
   .home .feature-banners a {
     height: 256px; }
   .home .feature-banners section {
-    margin-top: -32px;
-    width: 92%; }
+    margin-top: -32px; }
   .home .feature-banners h5 {
     font-size: 1.2em; }
   .home .banner-importing {

@@ -294,10 +294,10 @@ a.device-right {
 }
 .feature-banners section {
 	position: absolute;
-	top: 35%;
+	top: 30%;
 	left: 50%;
-	margin-left: -40%;
 	width: 80%;
+	margin-left: -40%;
 	z-index: 100;
 }
 .feature-banners h5 {
@@ -359,6 +359,12 @@ footer.footer {
 	.feature-banners a {
 		height:420px;
 	}
+	.feature-banners section {
+		top: 30%;
+		left: 50%;
+		width: 90%;
+		margin-left: -45%;
+	}
 	.banner-importing {
 		background-size: 100%;
 		background-position: center 320px;
@@ -401,7 +407,6 @@ footer.footer {
 	.more-features {
 		margin-bottom: $space40;
 	}
-
 	.used-by figure {
 		margin-bottom: $space24;
 	}
@@ -416,6 +421,7 @@ footer.footer {
 	}
 	.feature-banners section {
 		margin-top: -$space64;
+		width: 64%; margin-left: -32%;
 	}
 	.banner-importing {
 		background-size: 518px 184px;
@@ -451,6 +457,10 @@ footer.footer {
 	}
 	a.device-right {
 		right:-64px;
+	}
+	.feature-banners section {
+		margin-top: -$space64;
+		width: 80%; margin-left: -40%;
 	}
 	// ****************
 	// Vertical spacing T ~ 48px
@@ -538,7 +548,6 @@ footer.footer {
 	}
 	.feature-banners section {
 		margin-top: -$space32;
-		width:92%;
 	}
 	.feature-banners h5 {
 		font-size: 1.2em;
