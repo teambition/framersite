@@ -673,7 +673,8 @@ p.copy {
   line-height: 1;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  color: #788d9e; }
 
 .learn .content-inner ul,
 .docs .content-inner ul,
@@ -1134,10 +1135,10 @@ footer.global :-ms-input-placeholder {
 
   footer.global section.right {
     margin-bottom: 48px; } }
-/* glue: 0.9.4 hash: 8480cd5947 */
+/* glue: 0.9.4 hash: 4be00f79d0 */
 /* 1x */
-.logo-instagram, .logo-facebook, .logo-groupon, .logo-google, .logo-stripe, .logo-twitter, .logo-dropbox, .logo-apple, .logo-adobe, .logo-spotify, .icon-workflow, .icon-preview, .icon-more, .icon-interaction, .icon-general, .icon-features, .icon-code, .icon-animation, .icon-arrow {
-  background-image: url("/static/images/sprites/sprite1x.png?8480cd5947");
+.logo-instagram, .logo-facebook, .logo-groupon, .logo-google, .logo-stripe, .logo-twitter, .logo-dropbox, .logo-apple, .logo-adobe, .logo-spotify, .icon-arrow, .icon-workflow, .icon-preview, .icon-more, .icon-interaction, .icon-general, .icon-features, .icon-code, .icon-animation {
+  background-image: url("/static/images/sprites/sprite1x.png?4be00f79d0");
   background-repeat: no-repeat;
   -webkit-background-size: 180px 164px;
   -moz-background-size: 180px 164px;
@@ -1193,8 +1194,13 @@ footer.global :-ms-input-placeholder {
   width: 30px;
   height: 30px; }
 
-.icon-workflow {
+.icon-arrow {
   background-position: -151px -27px;
+  width: 12px;
+  height: 20px; }
+
+.icon-workflow {
+  background-position: -163px -27px;
   width: 16px;
   height: 16px; }
 
@@ -1233,11 +1239,6 @@ footer.global :-ms-input-placeholder {
   width: 16px;
   height: 16px; }
 
-.icon-arrow {
-  background-position: -167px -27px;
-  width: 6px;
-  height: 10px; }
-
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   /* glue: 0.9.4 hash: a308163a98 */
   /* 2x */
@@ -1255,6 +1256,9 @@ footer.global :-ms-input-placeholder {
   overflow: hidden;
   position: relative;
   padding-top: 56px; }
+.home .header p.copy {
+  opacity: .75;
+  font-size: 10px; }
 .home .ss-framer img {
   max-width: 1024px;
   max-height: 440px;
@@ -1284,6 +1288,8 @@ footer.global :-ms-input-placeholder {
   margin-bottom: 72px; }
 .home .header h1 {
   margin-bottom: 24px; }
+.home .header .btn {
+  margin-bottom: 16px; }
 .home .framer-overview {
   margin-bottom: 64px; }
 .home .screenshot-copy {
@@ -1509,9 +1515,18 @@ footer.global :-ms-input-placeholder {
   background-size: 518px 224px;
   background-position: center 340px; }
 .home .banner-mirror {
-  background: #92b0c8 url("/static/images/home/banner-mirror.png") no-repeat;
+  background: #92b0c8 url("/static/images/home/banner-mirror.jpg") no-repeat;
   background-size: 100%;
   background-position: bottom center; }
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .home .banner-importing {
+    background: #92b0c8 url("/static/images/home/banner-importing@2x.png") no-repeat;
+    background-size: 518px 224px;
+    background-position: center 340px; }
+  .home .banner-mirror {
+    background: #92b0c8 url("/static/images/home/banner-mirror@2x.jpg") no-repeat;
+    background-size: 100%;
+    background-position: bottom center; } }
 .home .feature-banners a:after {
   content: "";
   position: absolute;
