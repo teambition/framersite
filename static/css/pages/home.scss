@@ -40,8 +40,7 @@
 .footer h1 {
 	margin-top: $space64;
 }
-.header,
-.footer h2 {
+.header {
 	margin-bottom: $space72;
 }
 .header h1 {
@@ -436,8 +435,7 @@ a.device-right {
 		margin-bottom: calc(#{$space80} + #{$space40});
 		margin-top: calc(#{$space80} + #{$space40});
 	}
-	.header,
-	.footer h2 {
+	.header {
 		margin-bottom: $space48;
 	}
 }
