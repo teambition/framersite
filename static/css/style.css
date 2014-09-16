@@ -1511,8 +1511,8 @@ footer.global :-ms-input-placeholder {
 .home .feature-banners a.is-active div {
   background: rgba(255, 255, 255, 0.25); }
 .home .banner-importing {
-  background: #92b0c8 url("/static/images/home/banner-importing.png") no-repeat;
-  background-size: 518px 224px;
+  background: #92b0c8 url("/static/images/home/banner-importing.jpg") no-repeat;
+  background-size: 518px 184px;
   background-position: center 340px; }
 .home .banner-mirror {
   background: #92b0c8 url("/static/images/home/banner-mirror.jpg") no-repeat;
@@ -1551,7 +1551,7 @@ footer.global :-ms-input-placeholder {
     height: 420px; }
   .home .banner-importing {
     background-size: 100%;
-    background-position: center 288px; } }
+    background-position: center 320px; } }
 @media screen and (max-width: 1030px) {
   .home .header {
     height: 720px; }
@@ -1597,8 +1597,8 @@ footer.global :-ms-input-placeholder {
   .home .feature-banners section {
     margin-top: -64px; }
   .home .banner-importing {
-    background-size: 518px 224px;
-    background-position: center 200px; }
+    background-size: 518px 184px;
+    background-position: center 220px; }
   .home .banner-mirror {
     background-position: 50% 80%;
     background-size: 100%; } }

@@ -312,8 +312,8 @@ a.device-right {
 	background: rgba(255,255,255,0.25);
 }
 .banner-importing {
-	background: $banner-importing url("/static/images/home/banner-importing.png") no-repeat;
-	background-size: 518px 224px;
+	background: $banner-importing url("/static/images/home/banner-importing.jpg") no-repeat;
+	background-size: 518px 184px;
 	background-position: center 340px;
 }
 .banner-mirror {
@@ -359,7 +359,7 @@ a.device-right {
 	}
 	.banner-importing {
 		background-size: 100%;
-		background-position: center 288px;
+		background-position: center 320px;
 	}
 }
 @media screen and (max-width:1030px) {
@@ -415,8 +415,8 @@ a.device-right {
 		margin-top: -$space64;
 	}
 	.banner-importing {
-		background-size: 518px 224px;
-		background-position: center 200px;
+		background-size: 518px 184px;
+		background-position: center 220px;
 	}
 	.banner-mirror {
 		background-position: 50% 80%;
