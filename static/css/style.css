@@ -1133,20 +1133,17 @@ footer.global p {
 footer.global input {
   border: none;
   border-radius: 3px 0 0 3px;
-  padding: 8px 12px 4px 12px;
+  padding: 6px 12px 2px 12px;
   font-family: "Fakt", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
-  line-height: 1.2;
-  vertical-align: bottom;
   height: 40px;
   width: 220px;
   color: #616d85;
-  position: relative; }
+  line-height: 20px; }
 
 footer.global button {
   border: none;
-  padding: 8px 16px;
-  padding-top: 9px;
+  padding: 8px 16px 8px 16px;
   font-size: 10px;
   text-transform: uppercase;
   font-weight: 600;
@@ -1158,13 +1155,16 @@ footer.global button {
   height: 40px;
   cursor: pointer;
   cursor: hand;
-  margin-left: -4px; }
+  margin-left: -4px;
+  position: relative;
+  top: 1px; }
 
 footer.global .right p {
   text-align: right; }
 
 footer.global ::-webkit-input-placeholder {
-  color: #a1a8b6; }
+  color: #a1a8b6;
+  line-height: 22px; }
 
 footer.global :-moz-placeholder {
   color: #a1a8b6; }
