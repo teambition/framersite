@@ -27,7 +27,6 @@ pre {
   color: #fff;
   font-size: 12px;
   font-weight: normal;
-  line-height: 1.5;
   border-radius: 4px;
   -webkit-font-smoothing: subpixel-antialiased;
   padding: 16px;
@@ -76,6 +75,9 @@ pre, code {
 
 pre ol {
   counter-reset: linenumbers; }
+
+pre ol li {
+  line-height: 1.6; }
 
 pre ol li:before {
   content: counter(linenumbers);
@@ -693,7 +695,6 @@ p.copy {
   margin-bottom: 32px; }
 
 .narrow .content-inner ul li,
-.narrow .content-inner ol li,
 .faq .content-inner ul li {
   line-height: 1.5;
   font-size: 1em;
@@ -704,15 +705,11 @@ p.copy {
   left: 16px;
   padding-left: 8px; }
 
-.narrow .content-inner ol li {
-  list-style-type: decimal; }
-
 .narrow .content-inner li strong,
 .faq .content-inner li strong {
   font-size: 18px; }
 
 .narrow .content-inner ul li + li,
-.narrow .content-inner ol li + li,
 .faq .content-inner ul li + li {
   margin-top: 8px; }
 
