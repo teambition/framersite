@@ -1524,8 +1524,8 @@ footer.global :-ms-input-placeholder {
   background-position: bottom center; }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .home .banner-importing {
-    background: #92b0c8 url("/static/images/home/banner-importing@2x.png") no-repeat;
-    background-size: 518px 224px;
+    background: #92b0c8 url("/static/images/home/banner-importing@2x.jpg") no-repeat;
+    background-size: 518px 184px;
     background-position: center 340px; }
   .home .banner-mirror {
     background: #92b0c8 url("/static/images/home/banner-mirror@2x.jpg") no-repeat;
