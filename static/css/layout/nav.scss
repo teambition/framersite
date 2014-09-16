@@ -69,10 +69,6 @@ nav.top a.green:focus {
 	opacity: 1;
 }
 
-// Title
-nav.top .framer a {
-	color: #fff;
-}
 nav.top form {
 	display: inline-block;
 }
@@ -107,6 +103,10 @@ nav.top input {
 		line-height: 1;
 		position: relative;
 		text-align: center;
+	}
+	// Title
+	nav.top .framer a {
+		color: #fff;
 	}
 	nav.top {
 		height:88px;

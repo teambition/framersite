@@ -537,9 +537,6 @@ nav.top a.green:focus {
   color: #b1ea74;
   opacity: 1; }
 
-nav.top .framer a {
-  color: #fff; }
-
 nav.top form {
   display: inline-block; }
 
@@ -572,6 +569,9 @@ nav.top input {
     line-height: 1;
     position: relative;
     text-align: center; }
+
+  nav.top .framer a {
+    color: #fff; }
 
   nav.top {
     height: 88px; }
