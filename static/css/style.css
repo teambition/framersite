@@ -1743,6 +1743,14 @@ footer.global :-ms-input-placeholder {
     margin-bottom: 72px; }
   .home .more-features li + li {
     margin-top: 8px; } }
+@media screen and (max-width: 440px) {
+  .home .banner-importing {
+    background-size: 100%;
+    background-position: center 168px; }
+  .home .feature-banners section {
+    margin-top: -40px; }
+  .home .feature-banners h5 {
+    margin-bottom: 16px; } }
 
 .docs .align-right {
   max-width: 750px;
