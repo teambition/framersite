@@ -19,35 +19,24 @@ $(document).ready(function() {
 		}
 	);
 
-
 	$(window).scroll(function() {
+		var scrollPos = $(this).scrollTop();
 
-		var windowScrollPos = $(window).scrollTop();
-		var shouldShowHeaderSticky = windowScrollPos > 800;
-
-		// Swtich between sticky and not
-		if (shouldShowHeaderSticky) {
-			if (shouldShowHeaderSticky == true) {
-				topNav.addClass("sticky")
-				topNav.removeClass("fade-out")
-			} else {
-				topNav.removeClass("sticky")
-				topNav.addClass("fade-out")
-			}
-		}
-
-		headerSticky = shouldShowHeaderSticky;
-
-		// Hard override for when we reach the top
-		if (windowScrollPos > 100) {
-			topNav.removeClass("fade-out")
-		}
-
-
-		if (windowScrollPos > 330) {
-			docsSidebar.addClass('sticky')
+		if ($(window).scrollTop() > 330) {
+			$(docsSidebar).addClass('sticky');
 		} else {
-			docsSidebar.removeClass('sticky')
+			$(docsSidebar).removeClass('sticky');
+		}
+		
+		if ($(window).scrollTop() > 800) {
+			$(topNav).addClass('sticky').removeClass('fade-out');
+		}
+		else if ($(topNav).hasClass('sticky') && scrollPos <= 800) {
+			$(topNav).removeClass('sticky').addClass('fade-out');
+		}
+
+		if (scrollPos < 600) {
+			$(topNav).removeClass('fade-out');
 		}
 
 	});
