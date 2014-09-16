@@ -19,7 +19,10 @@ $(document).ready(function() {
 		}
 	);
 
+	var playCarouselVideo = false
+
 	$(window).scroll(function() {
+
 		var scrollPos = $(this).scrollTop();
 
 		if ($(window).scrollTop() > 330) {
@@ -37,6 +40,13 @@ $(document).ready(function() {
 
 		if (scrollPos < 600) {
 			$(topNav).removeClass('fade-out');
+		}
+
+		if (playCarouselVideo == false) {
+			if (scrollPos > 1100) {
+				$("#carousel-video-examples").get(0).play()
+				playCarouselVideo = true
+			}
 		}
 
 	});
