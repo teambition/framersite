@@ -725,8 +725,8 @@ p.title {
 a.small.right {
   float: right;
   font-size: 13px;
-  font-weight: 500;
-  margin-top: 4px;
+  font-weight: 600;
+  margin-top: 8px;
   text-transform: uppercase;
   letter-spacing: 1px; }
 
@@ -1094,12 +1094,6 @@ input {
   cursor: hand;
   line-height: 1; }
 
-@media screen and (min-width: 1080px) {
-  .header .btn,
-  .footer .btn,
-  .header input,
-  .footer input {
-    width: 106px; } }
 @media screen and (max-width: 560px) {
   .btn,
   .header input,
@@ -1561,13 +1555,9 @@ footer.global :-ms-input-placeholder {
     padding: 0 16px;
     box-shadow: none; }
   .home .ss-video {
-    top: calc(50% - 96px);
-    left: calc(75% - 78px);
-    -moz-transform: scale(0.96);
-    -o-transform: scale(0.96);
-    -ms-transform: scale(0.96);
-    -webkit-transform: scale(0.96);
-    transform: scale(0.96); }
+    top: calc(50% - 88px);
+    left: calc(75% - 73px);
+    width: 130px; }
   .home .ss-framer img {
     position: relative;
     bottom: -4px; } }
@@ -1578,12 +1568,7 @@ footer.global :-ms-input-placeholder {
     max-width: 720px;
     margin-left: -360px; }
   .home .ss-video {
-    -moz-transform: scale(0.675);
-    -o-transform: scale(0.675);
-    -ms-transform: scale(0.675);
-    -webkit-transform: scale(0.675);
-    transform: scale(0.675);
-    top: calc(50% - 104px); }
+    display: none; }
   .home .examples-caption,
   .home .used-by,
   .home .feature-banners,
