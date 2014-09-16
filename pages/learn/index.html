@@ -65,12 +65,12 @@ Most properties of a layer can be animated: x, y, width, height, scale, opacity,
 Animations optionally take a curve that describes the type of animation. You can use pre-defined curves like 'linear' or 'ease-in', custom ones, or spring animations.
 
 You can create an animation explicitly with <code class="inline">myAnimation = layer.animate({..})</code> or with the shortcut on any layer <code class="inline">layer.animate({..}).</code>
-
-	# Creates an animation using a spring
-	springUp = layer.animate({
-		properties: {y: layer.y + 100},
-		curve: "spring(100,10,0)",
-	})
+<pre lang="coffeescript">
+# Creates an animation using a spring
+springUp = layer.animate
+	properties: {y: layer.y + 100}
+	curve: "spring(100,10,0)"
+</pre>
 
 <hr>
 
