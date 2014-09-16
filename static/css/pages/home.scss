@@ -497,8 +497,8 @@ a.device-right {
 }
 @media screen and (max-width: 480px) {
 	.header {
-		height: 340px;
-		padding-top: $space8;
+		height: 460px;
+		padding-top: 120px;
 	}
 	a.device-left,
 	a.device-right {
@@ -518,16 +518,11 @@ a.device-right {
 	a.device-right {
 		right: -72px;
 	}
-	// Logos block
-	.used-by figure {
-		 @include scale(0.75);
-		 margin-bottom: $space8;
-	}
-	.used-by figure:last-child {
-		display: none;
-	}
-	.used-by figure+figure {
-		margin-left: 0;
+	// Extra padding @ lists on mobile
+	// Framer overview
+	.framer-overview section,
+	.more-features section {
+		padding: 0 $space24;
 	}
 	// Feature Banners (Mirror & Importing)
 	.feature-banners a {
@@ -548,6 +543,21 @@ a.device-right {
 		background-position: 50% 80%;
 		background-size: 100%;
 	}
+	// More features titles
+	.more-features h5 {
+		margin-bottom: $space16;
+	}
+	// Logos block
+	.used-by figure {
+		 @include scale(0.75);
+		 margin-bottom: $space8;
+	}
+	.used-by figure:last-child {
+		display: none;
+	}
+	.used-by figure+figure {
+		margin-left: 0;
+	}
 
 	// ****************
 	// Vertical spacing M
@@ -560,6 +570,10 @@ a.device-right {
 	.examples {
 		margin-top: $space16;
 		margin-bottom: $space72;
+	}
+	// More features list
+	.more-features li+li {
+		margin-top: $space8;
 	}
 }
 

@@ -519,12 +519,12 @@ nav.top input {
     text-align: center; }
 
   nav.top {
-    height: 120px; }
+    height: 80px; }
 
   nav.top .framer {
     width: 100%;
-    height: 30px;
-    margin: 24px 0;
+    height: 24px;
+    margin: 16px 0;
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1); }
 
   .nav-items,
@@ -1113,6 +1113,9 @@ footer.global button {
   cursor: hand;
   margin-left: -4px; }
 
+footer.global .right p {
+  text-align: right; }
+
 footer.global ::-webkit-input-placeholder {
   color: #a1a8b6; }
 
@@ -1129,7 +1132,8 @@ footer.global :-ms-input-placeholder {
   footer.global {
     height: 222px; }
 
-  footer.global section {
+  footer.global section,
+  footer.global .right p {
     float: none;
     text-align: center; }
 
@@ -1661,8 +1665,8 @@ footer.global :-ms-input-placeholder {
     left: 0; } }
 @media screen and (max-width: 480px) {
   .home .header {
-    height: 340px;
-    padding-top: 8px; }
+    height: 460px;
+    padding-top: 120px; }
   .home a.device-left,
   .home a.device-right {
     -moz-transform: scale(0.44);
@@ -1680,17 +1684,9 @@ footer.global :-ms-input-placeholder {
     left: -72px; }
   .home a.device-right {
     right: -72px; }
-  .home .used-by figure {
-    -moz-transform: scale(0.75);
-    -o-transform: scale(0.75);
-    -ms-transform: scale(0.75);
-    -webkit-transform: scale(0.75);
-    transform: scale(0.75);
-    margin-bottom: 8px; }
-  .home .used-by figure:last-child {
-    display: none; }
-  .home .used-by figure + figure {
-    margin-left: 0; }
+  .home .framer-overview section,
+  .home .more-features section {
+    padding: 0 24px; }
   .home .feature-banners a {
     height: 256px; }
   .home .feature-banners section {
@@ -1704,13 +1700,28 @@ footer.global :-ms-input-placeholder {
   .home .banner-mirror {
     background-position: 50% 80%;
     background-size: 100%; }
+  .home .more-features h5 {
+    margin-bottom: 16px; }
+  .home .used-by figure {
+    -moz-transform: scale(0.75);
+    -o-transform: scale(0.75);
+    -ms-transform: scale(0.75);
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75);
+    margin-bottom: 8px; }
+  .home .used-by figure:last-child {
+    display: none; }
+  .home .used-by figure + figure {
+    margin-left: 0; }
   .home .used-by .footnote {
     margin-bottom: 16px;
     font-size: 10px;
     padding: 0; }
   .home .examples {
     margin-top: 16px;
-    margin-bottom: 72px; } }
+    margin-bottom: 72px; }
+  .home .more-features li + li {
+    margin-top: 8px; } }
 
 .docs .align-right {
   max-width: 750px;

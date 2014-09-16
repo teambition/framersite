@@ -49,7 +49,9 @@ footer.global button {
 	cursor: hand;
 	margin-left:-4px;
 }
-
+footer.global .right p {
+	text-align: right;
+}
 footer.global ::-webkit-input-placeholder { color: $graphite60; }
 footer.global :-moz-placeholder { color: $graphite60; }
 footer.global ::-moz-placeholder { color: $graphite60; }
@@ -59,7 +61,8 @@ footer.global :-ms-input-placeholder { color: $graphite60; }
 	footer.global {
 		height: 222px; // 296px - (148/2)
 	}
-	footer.global section {
+	footer.global section,
+	footer.global .right p {
 		float: none;
 		text-align: center;
 	}
