@@ -307,9 +307,9 @@ footer.footer {
 		box-shadow: none;
 	}
 	.ss-video {
-		top:calc(50% - 96px);
-	 	left:calc(75% - 78px);
-		@include scale(0.96);
+		top:calc(50% - 88px);
+	 	left:calc(75% - 73px);
+		width: 130px;	
 	}
 	.ss-framer img {
 		position: relative;
@@ -325,8 +325,7 @@ footer.footer {
 		margin-left: -360px;
 	}
 	.ss-video {
-		@include scale(0.675);
-		top:calc(50% - 104px);
+		display: none;
 	}
 	// ****************
 	// Vertical spacing
