@@ -32,7 +32,7 @@ img {
 .narrow .container,
 .docs .container,
 .faq .container {
-	padding: calc(40px + 64px) 0 $space64 0;
+	padding: calc(64px + 64px) 0 $space64 0;
 }
 .content-inner {
 	width: 100%;
@@ -40,11 +40,6 @@ img {
 	margin: 0 auto;
 	padding: 0 30px;
 }
-.content-inner.narrow {
-	max-width: 600px;
-	position: relative;
-}
-.narrow .content-inner,
 .faq .content-inner {
 	max-width: 660px;
 	margin: 0 auto;
