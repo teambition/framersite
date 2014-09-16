@@ -524,17 +524,18 @@ nav.top input {
     text-align: center; }
 
   nav.top {
-    height: 80px; }
+    height: 88px; }
 
   nav.top .framer {
     width: 100%;
-    height: 24px;
-    margin: 16px 0;
+    height: 44px;
+    padding-top: 18px;
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1); }
 
   .nav-items,
   nav.top .right {
-    float: none; }
+    float: none;
+    margin-top: 16px; }
 
   nav.top li {
     display: inline-block;
@@ -588,7 +589,8 @@ h2 {
   font-size: 2.5em;
   line-height: 1.3;
   font-weight: 200;
-  color: #15181d; }
+  color: #15181d;
+  letter-spacing: -0.5px; }
 
 .footer h2 {
   margin-bottom: 24px;
@@ -747,10 +749,16 @@ p.copy {
     font-size: 14px; }
 
   .footer-features li {
-    font-size: 1em; } }
+    font-size: 1em; }
+
+  h2 {
+    font-size: 2.25em; } }
 @media screen and (max-width: 440px) {
   .header h1 {
-    font-size: 2.375em; } }
+    font-size: 2.375em; }
+
+  h2 {
+    font-size: 2.25em; } }
 html {
   box-sizing: border-box; }
 
@@ -786,7 +794,7 @@ img {
 .learn .container,
 .docs .container,
 .faq .container {
-  padding: calc(72px + 64px) 0 64px 0; }
+  padding: calc(40px + 64px) 0 64px 0; }
 
 .content-inner {
   width: 100%;
@@ -910,8 +918,8 @@ li.feature img {
 @media screen and (max-width: 560px) {
   .learn .container,
   .docs .container,
-  .more .container {
-    padding: calc(64px + 120px) 0 64px 0; }
+  .faq .container {
+    padding: 16px 0 64px 0; }
 
   .content-inner {
     padding: 0 16px; }
@@ -1274,18 +1282,6 @@ footer.global :-ms-input-placeholder {
   margin-left: -512px;
   width: 100%;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); }
-@media screen and (min-width: 720px) {
-  .home .ss-framer:after {
-    content: "";
-    background: url("/static/images/home/");
-    position: absolute;
-    top: calc(50% + 128px);
-    left: calc(50% + 128px + 64px);
-    height: 128px;
-    width: 128px;
-    overflow: hidden;
-    background-position: 50%;
-    background-size: cover; } }
 .home .col-4 p {
   margin-bottom: 0; }
 .home .footer h1 {
@@ -1658,7 +1654,9 @@ footer.global :-ms-input-placeholder {
   .home a.device-right {
     right: -32px; }
   .home .used-by .footnote-line {
-    display: none; } }
+    display: none; }
+  .home footer.footer {
+    margin: 0; } }
 @media screen and (max-width: 560px) {
   .home .header {
     margin-top: 0;
