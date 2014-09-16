@@ -28,7 +28,7 @@ h1 {
 	font-size: 4em; //64px
 	line-height: 1.2;
 	font-weight:100;
-	letter-spacing: -1px;
+	letter-spacing: -1.5px;
 }
 .header h1 {
 	color:#fff;
@@ -68,13 +68,16 @@ h3 {
 h4 {
 	font-size: 1.625em; //26px
 }
+.narrow h4 {
+	margin-bottom: $space24;
+}
 h5 {
 	font-size: 1.5em; //24px
 	line-height: 1.4;
 	font-weight: 400;
 	margin-bottom: $space8;
 }
-.learn h5 {
+.narrow h5 {
 	font-size: 1.1em; 
 	font-weight: 400;
 	margin-bottom: $space8;
@@ -142,12 +145,13 @@ p.copy {
 	color: $nav-links;
 }
 // Lists
-.learn .content-inner ul,
+.narrow .content-inner ul,
 .faq .content-inner ul {
 	margin-bottom: $space32;
 }
 // Lists on Pages
-.learn .content-inner ul li,
+.narrow .content-inner ul li,
+.narrow .content-inner ol li,
 .faq .content-inner ul li  {
 	line-height: 1.5;
 	font-size: 1em;
@@ -158,15 +162,19 @@ p.copy {
 	left: $space16;
 	padding-left: $space8; 
 }
-.learn .content-inner li strong,
+.narrow .content-inner ol li {
+	list-style-type: decimal;
+}
+.narrow .content-inner li strong,
 .faq .content-inner li strong {
 	font-size:18px;
 }
-.learn .content-inner ul li+li,
+.narrow .content-inner ul li+li,
+.narrow .content-inner ol li+li,
 .faq .content-inner ul li+li {
 	margin-top: $space8;
 }
-.learn .content-inner li ul li,
+.narrow .content-inner li ul li,
 .faq .content-inner li ul li  {
 	list-style-type: none;
 	padding: 0; left: 0; 

@@ -5,3 +5,57 @@ h3 {
 h4 {
 	margin-bottom: $space16;
 }
+
+.align-right {
+	max-width: 600px;
+	float: right;
+	clear:both;
+}
+// Clearfix wrapper
+.content-inner:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.sidebar {
+	float:left;
+	position: absolute;
+	max-width: 210px;
+}
+.sidebar.sticky {
+	position: fixed;
+	top:$space64;
+}
+.sidebar ul li {
+	list-style: none;
+	padding: 0; left: 0;
+}
+.sidebar li+li {
+	margin-top: $space8;
+}
+.sidebar a,
+.sidebar .title {
+	color: $blue;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size:12px;
+	letter-spacing: 0.5px;
+}
+.sidebar .title {
+	color: $black;
+}
+@media screen and (max-width:880px) {
+	.content-inner {
+		max-width: 600px;
+		margin: 0 auto;
+		float:none;
+		clear:both;
+	}
+	.align-right {
+		max-width: 100%;
+		float: none;
+	}
+	.sidebar {
+		display: none;
+	}
+}

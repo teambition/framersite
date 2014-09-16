@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+{% block currentpage %}class="narrow"{% endblock currentpage %}
+{% block pages %}
+
+{% filter markdown %}
+# Importing
+
+---
+{% endfilter %}
+
+{% include "learn-sidebar.html" %}
+
+<div class="align-right">
+{% filter pygmentify %}
+{% filter markdown %}
+#### Overview
+
+The importer lets you import Sketch or Photoshop documents directly into Framer. All of your layer groups will be available within Framer. Your layer hierarchy is respected and all flattened layers are exported too. 
+
+Subsequent imports from the same file will work as long as you don't rename layers in Photoshop or Sketch that you've already targeted within Framer. This allows for rapid iteration.
+
+---
+
+#### Principles 
+
+- Every *layer group* in Sketch/Photoshop will become a *layer* in Framer.
+
+<img src="/static/images/target.png">
+
+- Layer hierarchy is respected, eg: a subgroup will become a subLayer.
+- Masked layer groups will become layers with clip enabled.
+
+<img src="/static/images/masking.png">
+
+- Imported layers are accessible by the importedLayers object: “importedLayers.myLayer”.
+- Group names should be unique.
+
+---
+
+#### Gotchas 
+
+- Only active documents will be imported.
+- Before importing a document, it needs to be saved at least once.
+- Layers are imported as a flat list. So, to access a layer named “ChildLayer” you write “importedLayers.ChildLayer” instead of “importedLayers.ParentLayer.ChildLayer”.
+
+<img src="/static/images/nesting.png">
+
+- When a layer group contains both other groups and other layers - the subgroups will be placed on top of the sublayers.
+- To create a scrolling layer, ensure it contains a group that exceeds its size.
+
+<img src="/static/images/scrolling.png">
+
+- In Sketch, all artboards are imported, but only the first one will be visible by default.
+- In Sketch, you can only use one mask per layer group.
+- In Sketch, make sure you have the elements you like to import don't have negative coordinates as they'll be hidden within Framer.
+
+<img src="/static/images/xandy.png">
+
+---
+
+#### Compatibility:
+
+<table border="0" cellspacing="0" cellpadding="0" class="compatibility">
+	<tbody>
+	<tr>
+		<th>Application</th>
+		<th>Compatibility</th>
+	</tr>
+	<tr>
+		<td>Sketch 3 </td>
+		<td>Compatible, not recommended</td>
+	</tr>
+	<tr>
+		<td>Sketch 3.1 Beta</td>
+		<td>Fully compatible</td>
+	</tr>
+
+
+
+	<tr>
+		<td>Photoshop CS6</td>
+		<td>Fully compatible</td>
+	</tr>
+	<tr>
+		<td>Photoshop CC</td>
+		<td>Fully compatible</td>
+	</tr>
+	<tr>
+		<td>Photoshop CC 2014</td>
+		<td>Fully compatible</td>
+	</tr>
+
+
+</tbody>
+</table>
+{% endfilter %}	
+{% endfilter %}	
+</div> <!--align-right-->
+{% endblock %}

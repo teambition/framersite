@@ -13,8 +13,13 @@ a {
 	color: $blue;
 	font-weight: 400; 
 }
-.home p a {
-	border-bottom: 1px solid $blue40;
+.home p a { position:relative; z-index: 50; }
+.home p a:after {
+	content:""; display: inline-block;
+	position: absolute; left:0; bottom:1px;
+	width:100%; height:1px;
+	background: $blue40;
+	z-index: -1;
 }
 strong {
 	color: $black;
@@ -28,14 +33,11 @@ img {
   display: table;
   clear: both;
 }
-.container {
-	padding: 0 0 $space64 0;
-}
-
-.learn .container,
+// Narrow = Learn, Importing and Mirror
+.narrow .container,
 .docs .container,
 .faq .container {
-	padding: calc(40px + 64px) 0 $space64 0;
+	padding: calc(64px + 64px) 0 128px 0;
 }
 .content-inner {
 	width: 100%;
@@ -43,14 +45,11 @@ img {
 	margin: 0 auto;
 	padding: 0 30px;
 }
-.content-inner.narrow {
-	max-width: 600px;
-	position: relative;
+.narrow .content-inner {
+	max-width: 960px;
 }
-.learn .content-inner,
 .faq .content-inner {
 	max-width: 660px;
-	margin: 0 auto;
 }
 // Select all col- elements
 [class*='col-'] { 
@@ -170,7 +169,7 @@ li.feature img {
 	}
 }
 @media screen and (max-width: 560px) {
-	.learn .container,
+	.narrow .container,
 	.docs .container,
 	.faq .container {
 		padding: $space16 0 $space64 0;

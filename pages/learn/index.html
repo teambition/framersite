@@ -1,24 +1,23 @@
 {% extends "base.html" %}
 {% block islearn %}active{% endblock %}
-{% block currentpage %}class="learn"{% endblock currentpage %}
-
+{% block currentpage %}class="narrow"{% endblock currentpage %}
 {% block pages %}
-{% filter pygmentify %}
-{% filter markdown %}
 
-<!-- Learn -->
-<a name="learn"></a>
+{% filter markdown %}
 # Learn
 ## The basic principles of Framer.
 
 ---
+{% endfilter %}
 
-<!-- Layers -->
-<a name="basics"></a> 
+{% include "learn-sidebar.html" %}
 
+<div class="align-right">
+{% filter pygmentify %}
+{% filter markdown %}
 #### Layers <a href="docs.html#layers" class="small right">More</a>
 A layer is just a rectangle that draws stuff in the browser. It has a set of basic properties like x, y, width and height. It also has other properties like opacity, scale, and blur. Layers can display images, text, or both.
-
+<a name="basics"></a> 
 <pre lang="coffeescript">
 # Create a new layer, and set its x property to 100
 myLayer = new Layer width:128, height:128
@@ -27,23 +26,19 @@ myLayer.x = 100
 
 <hr>
 
-<!-- Hierarchy -->
-<a name="basics"></a>
 #### Hierarchy <a href="docs.html#layers&amp;hierarchy" class="small right">More</a>
 Layers can contain other layers. We call these subLayers. The parent of a layer is called a superLayer. Layers inherit from their superLayers. For example, if you change the opacity of a layer to 0.5, all subLayers will have opacity of 0.5.
 
 A layer's coordinates are based on its superLayer. So with an x and y of zero, a layer gets placed in the top left corner of its superLayer.
 
 You can manipulate the layer hierarchy as you need to.
+
 <pre lang="coffeescript">
 # Adds a subLayer to a layer
 parentLayer.addSubLayer(childLayer)
 </pre>
+
 <hr>
-
-<!-- types -->
-
-<a name="basics"></a>
 
 #### Images and Scrolling
 
@@ -63,11 +58,7 @@ It is easy to create components consisting of multiple layers that you can re-us
 
 <hr>
 
-<!-- Animation -->
-<a name="basics"></a>
-
 #### Animation <a href="docs.html#animations" class="small right">More</a>
-
 
 Most properties of a layer can be animated: x, y, width, height, scale, opacity, etc. You can animate multiple properties at the same time.
 
@@ -83,8 +74,6 @@ You can create an animation explicitly with <code class="inline">myAnimation = l
 
 <hr>
 
-<!-- Styling -->
-<a name="basics"></a>
 #### Styling <a href="docs.html#layers&amp;style" class="small right">More</a>
 Because Framer runs in the browser, you can simply use html and css to style any layer. To set the html contents of a layer use <code class="inline">somelayer.html = "hello".</code> You can set either text or html.
 
@@ -102,8 +91,6 @@ Note: if you set a single style on a layer, don't forget to use the javascript s
 
 <hr>
 
-<!-- Events -->
-<a name="basics"></a>
 #### Events <a href="docs.html#events" class="small right">More</a>
 Events are things that can happen to a layer, for example a user click or mouse over, or also a scroll. You can listen to these events and respond to them to build simple (or complex) interactions.
 
@@ -127,8 +114,6 @@ You'll notice the "event" in function. It's an object with additional informatio
 
 <hr>
 
-<!-- State Machine -->
-<a name="basics"></a>
 #### State Machine <a href="docs.html#layers&amp;state" class="small right">More</a>
 
 A new feature in Framer 3, the state machine is incredibly powerful and useful. It allows you to add multiple states to a layer. Think of a state as a set of one or more properties for the layer. A layer can have multiple states, you can add and remove them, and switch or animate between states. All of the states for a layer can have the same animation properties as well, such as the animation curve. You can access any state for a layer at any time. Layers also have a 'default' state as well, which are the properties of the layer at time of creation.
@@ -149,450 +134,8 @@ imageLayer.states.animationOptions =
 imageLayer.on Events.Click, (event) ->
 	imageLayer.states.next()
 </pre>
-<hr>
-
-<!-- Importing -->
-<a name="importing"></a>
-# Importing
- 
-#### Overview
-
-The importer lets you import Sketch or Photoshop documents directly into Framer. All of your layer groups will be available within Framer. Your layer hierarchy is respected and all flattened layers are exported too. 
-
-Subsequent imports from the same file will work as long as you don't rename layers in Photoshop or Sketch that you've already targeted within Framer. This allows for rapid iteration.
-
-
-#### Principles 
-
-- Every *layer group* in Sketch/Photoshop will become a *layer* in Framer.
-
-<img src="/static/images/target.png">
-
-- Layer hierarchy is respected, eg: a subgroup will become a subLayer.
-- Masked layer groups will become layers with clip enabled.
-
-<img src="/static/images/masking.png">
-
-- Imported layers are accessible by the importedLayers object: “importedLayers.myLayer”.
-- Group names should be unique.
-
-
-#### Gotchas 
-
-- Only active documents will be imported.
-- Before importing a document, it needs to be saved at least once.
-- Layers are imported as a flat list. So, to access a layer named “ChildLayer” you write “importedLayers.ChildLayer” instead of “importedLayers.ParentLayer.ChildLayer”.
-
-<img src="/static/images/nesting.png">
-
-- When a layer group contains both other groups and other layers - the subgroups will be placed on top of the sublayers.
-- To create a scrolling layer, ensure it contains a group that exceeds its size.
-
-<img src="/static/images/scrolling.png">
-
-- In Sketch, all artboards are imported, but only the first one will be visible by default.
-- In Sketch, you can only use one mask per layer group.
-- In Sketch, make sure you have the elements you like to import don't have negative coordinates as they'll be hidden within Framer.
-
-<img src="/static/images/xandy.png">
-
-
-#### Compatibility:
-
-<table border="0" cellspacing="0" cellpadding="0" class="compatibility">
-	<tbody>
-	<tr>
-		<th>Application</th>
-		<th>Compatibility</th>
-	</tr>
-	<tr>
-		<td>Sketch 3 </td>
-		<td>Compatible, not recommended</td>
-	</tr>
-	<tr>
-		<td>Sketch 3.1 Beta</td>
-		<td>Fully compatible</td>
-	</tr>
-
-
-
-	<tr>
-		<td>Photoshop CS6</td>
-		<td>Fully compatible</td>
-	</tr>
-	<tr>
-		<td>Photoshop CC</td>
-		<td>Fully compatible</td>
-	</tr>
-	<tr>
-		<td>Photoshop CC 2014</td>
-		<td>Fully compatible</td>
-	</tr>
-
-
-</tbody>
-</table>
-<hr>
-
-<!-- Importing -->
-<a name="mirror"></a>
-# Mirror
- 
-#### Overview
-
-Mirror allows you to preview your prototypes on any mobile device. It works on any device connected to the same (WiFi) network with a WebKit-based browser, including iPhones, iPads, Android and tablets. When you save, Framer Studio refreshes your project on every device, making it easy to live-preview your prototype.
-
-To use Mirror, click the icon in the toolbar and open the URL on the bottom on your mobile device. You can use the share button to quickly send the link in a message or email.
-
-<img src="/static/images/toolbar.png">
-
-Framer Studio now runs a built-in webserver containing all of your open projects. The address will be your Network IP address, in the form of http://10.0.1.123:8000/YourProject.framer. Because it's a standard web server and doesn't rely on Bonjour, it should work on every network, including corporate managed networks.
-
-To see all of your active documents, go to the root of the webserver. Simply remove your project name from the URL to get there.
-
-<img src="/static/images/projects.png">
-
-#### For iOS devices:
-
-- You can add your project to your Homescreen by tapping the Share button and then "Add to Home Screen". We added uniquely colored icons for your project by default.
-
-- To get a true fullscreen experience for your prototype, use something like [FSMirror](https://github.com/joshpuckett/FSMirror). iOS specific tags like minimal-ui and apple-mobile-web-app-capable are disabled by default because they have issues. See gotchas for more info.
-
-#### For all devices
-
-- The **inital-scale** [meta tag](https://developer.mozilla.org/en/docs/Mozilla/Mobile/Viewport_meta_tag) is set to 0.5 by default. This works best when creating prototypes for Retina (@2x) devices. You may want to change this when working in @1x.
-
-- To save your prototype for offline (cached) viewing, add /offline.html to the URL. This uses HTML5 offline caching. Note that his does not work well with auto refreshing.
-
-
-#### Gotchas
-
-- If you switch networks or change your network settings, you may need to restart Framer Studio.
-
-- If your network is really slow you can use this [tethering trick](http://bjango.com/help/skalapreview/connection/) to connect via USB instead of WiFi.
-
-- If Framer Studio can't use Port 8000 it will try to use the next available Port (8001, 8002 etc).
-
-- The minimal-ui viewport tag is deprecated in iOS8 and [throws an error on desktop](http://visuellegedanken.de/2014-03-18/a-follow-up-on-the-minimal-ui-viewport-meta-tag) so it's not enabled by default.
-
-- The apple-mobile-web-app-capable tag has a bug where consequent launches can [freeze your phone](http://stackoverflow.com/questions/12680909/ipad-web-app-freezes-on-startup) so it's not enabled by default. It seems to be fixed in iOS8.
-
-#### Troubleshooting
-
-If your device can't find the server on the network
-
-1. Double check if both devices are on the same network
-2. Try to use you local dns name rather than the IP address. Look it up in System Preferences > Sharing. It should look something like http://my-computer.local:8000/MyProject.framer
-3. Check if you network firewall is blocking traffic on ports 8000-9000
-
-<hr>
-
-<!-- CoffeeScript -->
-<a name="coffeescript"></a>
-# CoffeeScript 
-
-This should help you to learn the basics in an afternoon. Or use it as a cheat sheet. It is mostly meant for designers wanting to work with [Framer Studio](http://framerjs.com/), but it should be useful for anyone learning CoffeeScript.
-
-CoffeeScript is worth learning because: 
-
-* It has a cleaner and more readable syntax, so it's easier to learn
-* It helps you avoid the bad parts of Javascript
-* It helps you work quicker with smart shortcuts
-
----
-
-##### Comments
-
-Comments is text that is not code. You use them to explain what happens in the code around it if it's not self evident from the code. Comments are prefixed with **#**.
-<pre lang="coffeescript">
-# I am a comment
-5 + 6 # I am a comment too
-</pre>
-
-##### Printing Output
-
-Whenever you want to display a value to inspect you can print it to the log like
-<pre lang="coffeescript">
-console.log "Hello" # Output: Hello
-console.log "Hello", "World" # Output: Hello World
-</pre>
-##### Tabs
-
-CoffeeScript uses *significant whitespace*. That means that tabs are used to define the structure of the language, instead of **{** and **}** like in Javascript. So if your tabs are not correct, your script will fail.
-<pre lang="coffeescript">
-if 1 + 1 == 2
-	console.log "hello" # This will work
-
-if 1 + 1 == 2
-console.log "hello" # This will fail (missing tab)
-</pre>
-##### Variables
-
-A variable is a way to store something under a name. It's pretty simple:
-<pre lang="coffeescript">
-myVariable = 1
-</pre>
-From this point on the variable myVariable contains 1. You can change this at any point just by assigning a new value.
-
-If you ask the value of a variable before it has one (defined) it returns a special value 'undefined'. If you get an error with undefined there is a big chance you are trying to use a variable that doesn't exist (yet).
-<pre lang="coffeescript">
-myUnexistingVariable # Output "undefined"
-</pre>
-Variables can store different types of data, see below.
-
----
-
-#### Data types
-
-##### Boolean
-
-A boolean can only have two values: **false** or **true**:
-<pre lang="coffeescript">
-myBoolA = true
-myBoolB = false
-</pre>
-##### Number
-
-Numbers can be small, big, rounded, positive or negative:
-<pre lang="coffeescript">
-myNumberA = 2
-myNumberB = 20.0
-myNumberC = -223894
-</pre>
-
-You can calculate with numbers like this (*operators*):
-<pre lang="coffeescript">
-myNumberA + myNumberB  # Add, output: 22.0
-myNumberA / myNumberB  # Divide, output: 0.10
-myNumberA * myNumberB  # Product, output: 40.0
-myNumberA ** myNumberB # Power, output: 400.0
-</pre>
-
-##### String
-
-A string is a set of characters like words or complete sentences:
-<pre lang="coffeescript">
-myStringA = "Hello there"
-</pre>
-
-You can combine strings like this:
-<pre lang="coffeescript">
-myStringB = "#{myStringA}, I am the dude"
-# Output: "Hello there, I am the dude"
-</pre>
-
-But strings can also hold complex values you cannot describe in just numbers:
-<pre lang="coffeescript">
-myStringC = "rgba(255,0,0,0.1)"
-myStringD = "1px solid #FFFFFF"
-</pre>
-
-##### Array
-
-Arrays contain an ordered set of values. The values can be any type. They can even be nested (for example an array with arrays).
-<pre lang="coffeescript">
-myListA = [1, 2, 3, 4, 5] # Just numbers
-myListB = [1, "test", 22, [1, 2, 3]] # Mixed
-</pre>
-
-You can access any item in an array by it's number (it's called an index) which starts at 0:
-<pre lang="coffeescript">
-myListA[0] # Output: 1
-myListA[4] # Output: 5
-</pre>
-
-You can also count the items in an array:
-<pre lang="coffeescript">
-myListB.length # Output: 4
-</pre>
-
-Or grab a range from the array:
-<pre lang="coffeescript">
-myListB[0..2] # Output: [1, 2, 3]
-</pre>
-
-##### Object
-
-Objects are a bit like lists, but instead of by number, you can access them by a string (word). Much like a dictionary from a phone book (look up a person by last name). We call the 'lookup string' a key.
-<pre lang="coffeescript">
-myObjectA = {name:"Framer", age:12}
-</pre>
-
-You can also write objects like this, it's the exact same thing as above:
-<pre lang="coffeescript">
-myObjectA =
-	name: "Framer"
-	age: 12
-</pre>
-
-To find a value in an object you use the key:
-<pre lang="coffeescript">
-myObjectB["name"] # Output: "Framer"
-</pre>
-
-If you use a key that does not exist, you get the special undefined value:
-<pre lang="coffeescript">
-myObjectB["nothere"] # Output: undefined
-</pre>
-
-Once you have made an object, you can add more stuff in it like this:
-<pre lang="coffeescript">
-myObjectB["platform"] = "Mac"
-</pre>
-
-Or remove something like this:
-<pre lang="coffeescript">
-delete myObjectB["platform"]
-myObjectB["platform"] # Output: undefined
-</pre>
-
----
-
-#### Functions
-
-Functions are bits of executable code. It's pretty much the same thing as a function in mathematics. They take input and generate output. The part in between is just a description how to get from one to the other. When you run a function for a specific set of inputs, programmers say you *call* the function, and the input(s) are *arguments**.
-
-Common examples of what you use functions for are:
-
-* Describe to do something, but use it later (when it gets *called*)
-* Wrap something you do multiple multiple times in a function so you can reuse it easily
-
-This is how you define a function, note it follows the standard way of defining variables. The *return* keyword passes back a value to the caller (by default, CoffeeScript returns the latest used variable).
-<pre lang="coffeescript">
-myFunction = (input) -> 
-	output = input * 2
-	return output
-</pre>
-To now use (or, **call**) the function with the number 42 (**argument**) you do this:
-<pre lang="coffeescript">
-myFunction(42) # Output: 84
-</pre>
-
-You can assign the output of a function directly to a new variable:
-<pre lang="coffeescript">
-myCalculatedNumber = myFunction(42)
-myCalculatedNumber # Output: 84
-</pre>
-
-A function can be defined with as many arguments as you like and they can be any type:
-<pre lang="coffeescript">
-myFunction = (argumentA, argumentB, argumentC) ->
-	return argumentA + argumentB + argumentC
-</pre>
-
----
-
-#### Comparators
-
-Comparators compare things. The most common are equality and greater/smaller than.
-<pre lang="coffeescript">
-4 is 4 # Output: true
-4 isnt 4 # Output: false
-4 < 5 # Output true
-4 > 5 # Output false
-</pre>
-
-You can combine multiple comparators with and and or:
-<pre lang="coffeescript">
-4 is 4 and 5 < 4 # Output false
-4 is 4 or 5 < 4 # Output true
-</pre>
-
----
-
-#### Conditionals
-
-Conditionals define your logic. You use them together with comparators to make decisions. They are all based around the **if**, **else if** and **else** keywords.
-<pre lang="coffeescript">
-	if age > 21
-		console.log "Over 21!"
-</pre>
-
-A little more complicated example that checks for multiple things:
-<pre lang="coffeescript">
-	if age < 21
-		console.log "Young"
-	else if age < 65
-		console.log "Adult"
-	else
-		console.log "Senior"
-</pre>
-
----
-
-#### Loops
-
-Loops are used to iterate over collections, as in do something for each item. Collections can be an Array or Object. They use the **for** keyword.
-
-To loop over an Array you can do this:
-<pre lang="coffeescript">
-myArray = [1, 2, 3, 4, 5]
-
-for number in myArray
-	number + 1
-
-# Output: 2, 3, 4, 5, 6
-</pre>
-
-An Object has a key and value (for example name=Koen) and you'll likely want to use both in your loop. For that, you can use **of** instead of **in** when you loop:
-
-<pre lang="coffeescript">
-myObject =
-	name: "Koen"
-	city: "Amsterdam"
-	age: 31
-
-for key, value of myObject
-	key, "=", value 
-
-# Output: name=Koen, city=Amsterdam, age=31
-</pre>
-
----
-
-#### Common Errors
-
-* **SyntaxError ... unexpected ...**: the interpreter encountered code that it doesn't know what to do with. You likely made a typo.
-* **ReferenceError ... Can't find variable**: ...: you are using a variable that the interpreter doesn't know about. You likely forgot to declare it (at the right time).
-
----
-
-#### More CoffeeScript resources
-
-If you made it this far you should know enough to start playing around. Some good next steps would be:
-
-* [Convert any Javascript to CoffeeScript](http://js2coffee.org/)
-* [The official CoffeeScript Site](http://coffeescript.org/)
-* [The Little Book on CoffeeScript](http://arcturo.github.io/library/coffeescript)
-* [Code School CoffeeScript Course](http://coffeescript.codeschool.com/) (Paid)
-
-<hr>
-
-<!-- Resources -->
-
-<a name="resources"></a>
-
-### Resources
-Optimize your prototyping workflow with these tools.
-<table>
-		<tbody><tr>
-			<th width="170px">Product</th>
-			<th>Description</th>
-		</tr>
-		<tr>
-			<td><a href="http://cactusformac.com" target="_blank">Cactus for Mac</a></td>
-			<td>Auto-refreshes the browser on change. Get immediate feedback on your prototype</td>
-		</tr>
-		<tr>
-			<td><a href="https://github.com/koenbok/CactusTemplatesExtras" target="_blank">Cactus Template</a></td>
-			<td>A template to drop Framer into Cactus</td>
-		</tr>
-		<tr>
-			<td><a href="https://itunes.apple.com/us/app/clear-browser-full-screen/id536117231?mt=8" target="_blank">Clear iOS Browser</a></td>
-			<td>Run your prototype with Cactus and load the local URL into this browser</td>
-		</tr>
-</tbody></table>
 
 {% endfilter %}	
 {% endfilter %}	
+</div> <!--align-right-->
 {% endblock %}

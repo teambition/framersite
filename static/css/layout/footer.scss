@@ -3,7 +3,9 @@ footer.global {
 	background: $header;
 	height: 148px;
 	padding-top: $space48;
-
+}
+.faq footer.global .content-inner {
+	max-width: 1080px;
 }
 footer.global li {
 	float: left;
@@ -25,12 +27,13 @@ footer.global input {
 	padding: 8px 12px 4px 12px;
 	font-family: "Fakt", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size:14px;
-	line-height: 1.5;
+	line-height: 1.2;
 	vertical-align: bottom;
 	height: 40px;
 	width:220px;
-	margin:0;
 	color: $graphite;
+	position: relative;
+
 }
 footer.global button {
 	border: none;
@@ -59,7 +62,7 @@ footer.global :-ms-input-placeholder { color: $graphite60; }
 
 @media screen and (max-width: 720px) {
 	footer.global {
-		height: 222px; // 296px - (148/2)
+		height: 280px;
 	}
 	footer.global section,
 	footer.global .right p {
