@@ -618,7 +618,7 @@ h5 {
   margin-bottom: 8px; }
 
 .feature-banners h5 {
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); }
 
 .subtitle {
   font-size: 1.375em;
@@ -1382,17 +1382,17 @@ footer.global :-ms-input-placeholder {
   position: relative; }
 .home .examples .devices a {
   position: absolute;
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  -ms-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  transition: all 0.2s ease; }
-.home .shrink {
-  -moz-transform: scale(0.96);
-  -o-transform: scale(0.96);
-  -ms-transform: scale(0.96);
-  -webkit-transform: scale(0.96);
-  transform: scale(0.96); }
+  -webkit-transition: all 0.16s ease;
+  -moz-transition: all 0.16s ease;
+  -ms-transition: all 0.16s ease;
+  -o-transition: all 0.16s ease;
+  transition: all 0.16s ease; }
+.home .examples .devices a:hover {
+  -moz-transform: scale(0.975);
+  -o-transform: scale(0.975);
+  -ms-transform: scale(0.975);
+  -webkit-transform: scale(0.975);
+  transform: scale(0.975); }
 .home a.device-left,
 .home a.device-mid,
 .home a.device-right {

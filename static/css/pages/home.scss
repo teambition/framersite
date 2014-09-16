@@ -159,11 +159,12 @@ h5 figure {
 }
 .examples .devices a {
 	position: absolute; 
-	@include transition(all, .2s, ease);
+	@include transition(all, .16s, ease);
 }
-.shrink {
-	@include scale(0.96);
+.examples .devices a:hover {
+	@include scale(0.975);
 }
+
 a.device-left,
 a.device-mid,
 a.device-right {
@@ -344,12 +345,10 @@ a.device-right {
 .feature-banners a:hover:after {
 	background: rgba(0,0,0,0.2);
 }
-
 // More features list
 .more-features li+li {
 	margin-top: $space16;
 }
-
 // Home footer
 footer.footer {
 	margin: $space80 0 $space16 0;
