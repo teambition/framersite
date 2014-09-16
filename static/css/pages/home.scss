@@ -8,6 +8,10 @@
 	position: relative;
 	padding-top:$space56;
 }
+.header p.copy {
+	opacity: .75;
+	font-size: 10px;
+}
 .ss-framer img {
 	max-width: 1024px;
 	max-height:440px;
@@ -45,6 +49,9 @@
 }
 .header h1 {
 	margin-bottom: $space24;
+}
+.header .btn {
+	margin-bottom: $space16;
 }
 // Block Spacing
 .framer-overview {
