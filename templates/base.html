@@ -4,9 +4,14 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	
 	{% include 'social.html' %}
-	<link rel="shortcut icon" href="/static/images/favicon.ico?v=">
+
+	<link rel="shortcut icon" href="/static/images/favicon.ico">
 	<link rel="shortcut icon" href="{% static '/images/favicon.ico' %}">
+	
+	{% include 'fonts.html' %}
+
 	<link rel="stylesheet" href="{% static '/css/style.css' %}">
 
 	<title>{% block title %}Framer – Prototype Interaction and Animation{% endblock %}</title>
