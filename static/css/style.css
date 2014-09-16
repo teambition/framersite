@@ -802,9 +802,11 @@ img {
   margin: 0 auto;
   padding: 0 30px; }
 
+.narrow .content-inner {
+  max-width: 960px; }
+
 .faq .content-inner {
-  max-width: 660px;
-  margin: 0 auto; }
+  max-width: 660px; }
 
 [class*='col-'] {
   float: left;
@@ -1759,7 +1761,7 @@ footer.global :-ms-input-placeholder {
 .narrow h4 {
   margin-bottom: 16px; }
 .narrow .align-right {
-  max-width: 750px;
+  max-width: 600px;
   float: right;
   clear: both; }
 .narrow .content-inner:after {

@@ -1,12 +1,18 @@
 {% extends "base.html" %}
 {% block currentpage %}class="narrow"{% endblock currentpage %}
-
 {% block pages %}
+
+{% filter markdown %}
+# Importing
+
+---
+{% endfilter %}
+
+{% include "learn-sidebar.html" %}
+
+<div class="align-right">
 {% filter pygmentify %}
 {% filter markdown %}
-
-# Importing
- 
 #### Overview
 
 The importer lets you import Sketch or Photoshop documents directly into Framer. All of your layer groups will be available within Framer. Your layer hierarchy is respected and all flattened layers are exported too. 
@@ -86,4 +92,5 @@ Subsequent imports from the same file will work as long as you don't rename laye
 </table>
 {% endfilter %}	
 {% endfilter %}	
+</div> <!--align-right-->
 {% endblock %}

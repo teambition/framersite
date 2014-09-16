@@ -1,14 +1,20 @@
 {% extends "base.html" %}
 {% block islearn %}active{% endblock %}
 {% block currentpage %}class="narrow"{% endblock currentpage %}
-
 {% block pages %}
+
+{% filter markdown %}
+# CoffeeScript
+
+---
+{% endfilter %}
+
+{% include "learn-sidebar.html" %}
+
+<div class="align-right">
 {% filter pygmentify %}
 {% filter markdown %}
-
 <a name="coffeescript"></a>
-# CoffeeScript 
-
 This should help you to learn the basics in an afternoon. Or use it as a cheat sheet. It is mostly meant for designers wanting to work with [Framer Studio](http://framerjs.com/), but it should be useful for anyone learning CoffeeScript.
 
 CoffeeScript is worth learning because: 
@@ -313,4 +319,5 @@ Optimize your prototyping workflow with these tools.
 
 {% endfilter %}	
 {% endfilter %}	
+</div> <!--align-right-->
 {% endblock %}
