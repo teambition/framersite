@@ -1806,8 +1806,26 @@ footer.global :-ms-input-placeholder {
     position: relative;
     max-width: 100%;
     width: 100%;
-    padding-bottom: 0;
-    margin-bottom: 32px;
+    padding-bottom: 24px;
+    margin-bottom: 56px;
     border-bottom: 1px solid #eee; }
+  .narrow .sidebar li {
+    display: inline-block; }
+  .narrow .sidebar li + li {
+    margin-top: 0;
+    margin-left: 24px; } }
+@media screen and (max-width: 720px) {
+  .narrow .sidebar {
+    padding-bottom: 16px;
+    margin-bottom: 56px; } }
+@media screen and (max-width: 560px) {
+  .narrow .sidebar {
+    padding-bottom: 0;
+    margin-bottom: 40px; }
   .narrow .sidebar .title {
-    display: none; } }
+    display: none; }
+  .narrow .sidebar li {
+    display: block; }
+  .narrow .sidebar li + li {
+    margin-top: 0;
+    margin-left: 0; } }

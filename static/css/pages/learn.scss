@@ -58,11 +58,40 @@ h4 {
 	.sidebar {
 		position: relative;
 		max-width: 100%; width:100%;
-		padding-bottom:0;
-		margin-bottom: $space32;
+		padding-bottom:$space24;
+		margin-bottom: $space56;
 		border-bottom: 1px solid #eee;
 	}
+	.sidebar li {
+		display: inline-block;
+	}
+	.sidebar li+li {
+		margin-top: 0;
+		margin-left: $space24;
+	}
+}
+
+@media screen and (max-width: 720px) {
+	.sidebar {
+		padding-bottom:$space16;
+		margin-bottom: $space56;
+	}	
+}
+
+@media screen and (max-width:560px) {
+	.sidebar {
+		padding-bottom:0;
+		margin-bottom: $space40;
+	}
+
 	.sidebar .title {
 		display: none;
+	}
+	.sidebar li {
+		display: block;
+	}
+	.sidebar li+li {
+		margin-top: 0;
+		margin-left: 0;
 	}
 }
