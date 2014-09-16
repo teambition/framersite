@@ -543,6 +543,8 @@ nav.top input {
 body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: "liga", "kern";
   font-size: 16px;
   font-weight: 300; }
 
@@ -1259,7 +1261,7 @@ footer.global :-ms-input-placeholder {
   margin-top: 64px;
   overflow: hidden;
   position: relative;
-  padding-top: 56px; }
+  padding-top: 40px; }
 .home .header p.copy {
   opacity: .75;
   font-size: 10px; }
