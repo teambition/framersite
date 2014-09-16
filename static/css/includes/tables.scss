@@ -30,11 +30,15 @@ td:after {
 thead th, th {
 	text-align:left;
 	padding:12px 15px 9px;
-	font-size:14px; 
-	font-weight:500;
-	color:#bbb; cursor:default; white-space:nowrap;
+	font-size:12px; 
+	font-weight:600;
+	color:#bbb; 
+	cursor:default; 
+	white-space:nowrap;
 	line-height: 1.2; 
 	border-radius: 6px 6px 0 0; 
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
 }
 table .dim {
 	color: #999;
@@ -67,6 +71,9 @@ td.examples {
 	width: auto; 
 	text-align: right;
 	white-space: nowrap;
+}
+td a {
+	font-weight: 600;
 }
 td a+a:before {
 	content: "\b7"; display: inline-block; margin-right: 4px; font-weight: 500; opacity: .5;
