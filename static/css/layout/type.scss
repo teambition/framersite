@@ -151,7 +151,6 @@ p.copy {
 }
 // Lists on Pages
 .narrow .content-inner ul li,
-.narrow .content-inner ol li,
 .faq .content-inner ul li  {
 	line-height: 1.5;
 	font-size: 1em;
@@ -162,15 +161,11 @@ p.copy {
 	left: $space16;
 	padding-left: $space8; 
 }
-.narrow .content-inner ol li {
-	list-style-type: decimal;
-}
 .narrow .content-inner li strong,
 .faq .content-inner li strong {
 	font-size:18px;
 }
 .narrow .content-inner ul li+li,
-.narrow .content-inner ol li+li,
 .faq .content-inner ul li+li {
 	margin-top: $space8;
 }

@@ -4,7 +4,6 @@ pre {
     color: #fff; 
     font-size: 12px;
     font-weight: normal;
-    line-height: 1.5;
     border-radius: 4px;
     -webkit-font-smoothing: subpixel-antialiased;
     // Spacing
@@ -37,6 +36,9 @@ pre, code {
 // Custom Line Numbers
 pre ol {
     counter-reset: linenumbers;
+}
+pre ol li {
+    line-height: 1.6;
 }
 pre ol li:before {
     content: counter(linenumbers);
