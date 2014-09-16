@@ -20,6 +20,7 @@ $(document).ready(function() {
 	);
 
 	var playCarouselVideo = false
+	var videoElement = $("#carousel-video-examples").get(0)
 
 	$(window).scroll(function() {
 
@@ -42,9 +43,9 @@ $(document).ready(function() {
 			$(topNav).removeClass('fade-out');
 		}
 
-		if (playCarouselVideo == false) {
+		if (playCarouselVideo == false && videoElement) {
 			if (scrollPos > 1100) {
-				$("#carousel-video-examples").get(0).play()
+				videoElement.play()
 				playCarouselVideo = true
 			}
 		}
