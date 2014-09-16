@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block currentpage %}class="narrow"{% endblock currentpage %}
+
+{% block pages %}
+{% filter pygmentify %}
+{% filter markdown %}
+
+<!-- Learn -->
+# Mirror
+
+---
+
+# Mirror
+ 
+#### Overview
+
+Mirror allows you to preview your prototypes on any mobile device. It works on any device connected to the same (WiFi) network with a WebKit-based browser, including iPhones, iPads, Android and tablets. When you save, Framer Studio refreshes your project on every device, making it easy to live-preview your prototype.
+
+To use Mirror, click the icon in the toolbar and open the URL on the bottom on your mobile device. You can use the share button to quickly send the link in a message or email.
+
+<img src="/static/images/toolbar.png">
+
+Framer Studio now runs a built-in webserver containing all of your open projects. The address will be your Network IP address, in the form of http://10.0.1.123:8000/YourProject.framer. Because it's a standard web server and doesn't rely on Bonjour, it should work on every network, including corporate managed networks.
+
+To see all of your active documents, go to the root of the webserver. Simply remove your project name from the URL to get there.
+
+<img src="/static/images/projects.png">
+
+#### For iOS devices:
+
+- You can add your project to your Homescreen by tapping the Share button and then "Add to Home Screen". We added uniquely colored icons for your project by default.
+
+- To get a true fullscreen experience for your prototype, use something like [FSMirror](https://github.com/joshpuckett/FSMirror). iOS specific tags like minimal-ui and apple-mobile-web-app-capable are disabled by default because they have issues. See gotchas for more info.
+
+#### For all devices
+
+- The **inital-scale** [meta tag](https://developer.mozilla.org/en/docs/Mozilla/Mobile/Viewport_meta_tag) is set to 0.5 by default. This works best when creating prototypes for Retina (@2x) devices. You may want to change this when working in @1x.
+
+- To save your prototype for offline (cached) viewing, add /offline.html to the URL. This uses HTML5 offline caching. Note that his does not work well with auto refreshing.
+
+
+#### Gotchas
+
+- If you switch networks or change your network settings, you may need to restart Framer Studio.
+
+- If your network is really slow you can use this [tethering trick](http://bjango.com/help/skalapreview/connection/) to connect via USB instead of WiFi.
+
+- If Framer Studio can't use Port 8000 it will try to use the next available Port (8001, 8002 etc).
+
+- The minimal-ui viewport tag is deprecated in iOS8 and [throws an error on desktop](http://visuellegedanken.de/2014-03-18/a-follow-up-on-the-minimal-ui-viewport-meta-tag) so it's not enabled by default.
+
+- The apple-mobile-web-app-capable tag has a bug where consequent launches can [freeze your phone](http://stackoverflow.com/questions/12680909/ipad-web-app-freezes-on-startup) so it's not enabled by default. It seems to be fixed in iOS8.
+
+#### Troubleshooting
+
+If your device can't find the server on the network
+
+1. Double check if both devices are on the same network
+2. Try to use you local dns name rather than the IP address. Look it up in System Preferences > Sharing. It should look something like http://my-computer.local:8000/MyProject.framer
+3. Check if you network firewall is blocking traffic on ports 8000-9000
+
+{% endfilter %}	
+{% endfilter %}	
+{% endblock %}

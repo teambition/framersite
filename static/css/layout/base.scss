@@ -28,8 +28,8 @@ img {
   display: table;
   clear: both;
 }
-
-.learn .container,
+// Narrow = Learn, Importing and Mirror
+.narrow .container,
 .docs .container,
 .faq .container {
 	padding: calc(40px + 64px) 0 $space64 0;
@@ -44,7 +44,7 @@ img {
 	max-width: 600px;
 	position: relative;
 }
-.learn .content-inner,
+.narrow .content-inner,
 .faq .content-inner {
 	max-width: 660px;
 	margin: 0 auto;
@@ -167,7 +167,7 @@ li.feature img {
 	}
 }
 @media screen and (max-width: 560px) {
-	.learn .container,
+	.narrow .container,
 	.docs .container,
 	.faq .container {
 		padding: $space16 0 $space64 0;
