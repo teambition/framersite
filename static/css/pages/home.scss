@@ -21,6 +21,7 @@
 	width:100%;
 	box-shadow: 0 8px 32px rgba(0,0,0,0.2);
 }
+
 // @media screen and (min-width: 720px) {
 // 	.ss-framer:after {
 // 		content:"";
@@ -35,7 +36,6 @@
 // 		background-size: cover;
 // 	}
 // }
-
 .col-4 p {
 	margin-bottom: 0;
 }
@@ -374,6 +374,7 @@ footer.footer {
 		max-width: 980px; // scale by 0.957
 		margin-left: -490px;
 		padding: 0 $space16;
+		box-shadow: none;
 	}
 	.ss-framer:after {
 		@include scale(0.96);

@@ -1555,7 +1555,8 @@ footer.global :-ms-input-placeholder {
   .home .ss-framer img {
     max-width: 980px;
     margin-left: -490px;
-    padding: 0 16px; }
+    padding: 0 16px;
+    box-shadow: none; }
   .home .ss-framer:after {
     -moz-transform: scale(0.96);
     -o-transform: scale(0.96);
