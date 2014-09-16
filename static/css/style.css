@@ -1094,7 +1094,7 @@ input {
   cursor: hand;
   line-height: 1; }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1080px) {
   .header .btn,
   .footer .btn,
   .header input,
@@ -1578,11 +1578,12 @@ footer.global :-ms-input-placeholder {
     max-width: 720px;
     margin-left: -360px; }
   .home .ss-video {
-    -moz-transform: scale(0.7);
-    -o-transform: scale(0.7);
-    -ms-transform: scale(0.7);
-    -webkit-transform: scale(0.7);
-    transform: scale(0.7); }
+    -moz-transform: scale(0.675);
+    -o-transform: scale(0.675);
+    -ms-transform: scale(0.675);
+    -webkit-transform: scale(0.675);
+    transform: scale(0.675);
+    top: calc(50% - 104px); }
   .home .examples-caption,
   .home .used-by,
   .home .feature-banners,
