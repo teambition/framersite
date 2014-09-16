@@ -693,6 +693,7 @@ p.copy {
   margin-bottom: 32px; }
 
 .narrow .content-inner ul li,
+.narrow .content-inner ol li,
 .faq .content-inner ul li {
   line-height: 1.5;
   font-size: 1em;
@@ -703,11 +704,15 @@ p.copy {
   left: 16px;
   padding-left: 8px; }
 
+.narrow .content-inner ol li {
+  list-style-type: decimal; }
+
 .narrow .content-inner li strong,
 .faq .content-inner li strong {
   font-size: 18px; }
 
 .narrow .content-inner ul li + li,
+.narrow .content-inner ol li + li,
 .faq .content-inner ul li + li {
   margin-top: 8px; }
 
@@ -1816,13 +1821,14 @@ footer.global :-ms-input-placeholder {
   letter-spacing: 0.5px; }
 .narrow .sidebar .title {
   color: #15181d; }
-@media screen and (max-width: 1020px) {
-  .narrow .align-right {
-    max-width: 100%;
+@media screen and (max-width: 880px) {
+  .narrow .content-inner {
+    max-width: 600px;
+    margin: 0 auto;
     float: none;
     clear: both; }
+  .narrow .align-right {
+    max-width: 100%;
+    float: none; }
   .narrow .sidebar {
     display: none; } }
-@media screen and (max-width: 980px) {
-  .narrow .content-inner {
-    max-width: 960px; } }

@@ -44,18 +44,18 @@ h4 {
 .sidebar .title {
 	color: $black;
 }
-@media screen and (max-width:1020px) {
-	.align-right {
-		max-width: 100%;
+@media screen and (max-width:880px) {
+	.content-inner {
+		max-width: 600px;
+		margin: 0 auto;
 		float:none;
 		clear:both;
 	}
+	.align-right {
+		max-width: 100%;
+		float: none;
+	}
 	.sidebar {
 		display: none;
-	}
-}
-@media screen and (max-width: 980px) {
-	.content-inner {
-		max-width: 960px;
 	}
 }

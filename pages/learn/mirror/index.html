@@ -27,11 +27,15 @@ To see all of your active documents, go to the root of the webserver. Simply rem
 
 <img src="/static/images/projects.png">
 
+---
+
 #### For iOS devices:
 
 - You can add your project to your Homescreen by tapping the Share button and then "Add to Home Screen". We added uniquely colored icons for your project by default.
 
 - To get a true fullscreen experience for your prototype, use something like [FSMirror](https://github.com/joshpuckett/FSMirror). iOS specific tags like minimal-ui and apple-mobile-web-app-capable are disabled by default because they have issues. See gotchas for more info.
+
+---
 
 #### For all devices
 
@@ -39,6 +43,7 @@ To see all of your active documents, go to the root of the webserver. Simply rem
 
 - To save your prototype for offline (cached) viewing, add /offline.html to the URL. This uses HTML5 offline caching. Note that his does not work well with auto refreshing.
 
+---
 
 #### Gotchas
 
@@ -51,6 +56,8 @@ To see all of your active documents, go to the root of the webserver. Simply rem
 - The minimal-ui viewport tag is deprecated in iOS8 and [throws an error on desktop](http://visuellegedanken.de/2014-03-18/a-follow-up-on-the-minimal-ui-viewport-meta-tag) so it's not enabled by default.
 
 - The apple-mobile-web-app-capable tag has a bug where consequent launches can [freeze your phone](http://stackoverflow.com/questions/12680909/ipad-web-app-freezes-on-startup) so it's not enabled by default. It seems to be fixed in iOS8.
+
+---
 
 #### Troubleshooting
 
