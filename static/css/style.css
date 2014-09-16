@@ -498,10 +498,10 @@ nav.top.sticky {
     top: -64px; } }
 
 nav.top.fade-out {
-  -webkit-animation: fade-out .2s forwards;
-  -moz-animation: fade-out .2s forwards;
-  -o-animation: fade-out .2s forwards;
-  animation: fade-out .2s forwards;
+  -webkit-animation: fade-out .1s forwards;
+  -moz-animation: fade-out .1s forwards;
+  -o-animation: fade-out .1s forwards;
+  animation: fade-out .1s forwards;
   position: fixed; }
 
 nav li {
