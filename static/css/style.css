@@ -521,6 +521,9 @@ nav a {
   color: #788d9e;
   font-weight: 600; }
 
+nav.top li.active a {
+  color: #fff; }
+
 nav a:hover,
 nav a:focus {
   color: #eff1f3; }
@@ -856,9 +859,6 @@ img {
   max-width: 1080px;
   margin: 0 auto;
   padding: 0 30px; }
-
-.narrow .content-inner {
-  max-width: 960px; }
 
 .faq .content-inner {
   max-width: 660px; }
@@ -1764,7 +1764,7 @@ footer.global :-ms-input-placeholder {
 .narrow h4 {
   margin-bottom: 16px; }
 .narrow .align-right {
-  max-width: 600px;
+  max-width: 750px;
   float: right;
   clear: both; }
 .narrow .content-inner:after {
@@ -1793,7 +1793,7 @@ footer.global :-ms-input-placeholder {
   letter-spacing: 0.5px; }
 .narrow .sidebar .title {
   color: #15181d; }
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 1020px) {
   .narrow .content-inner {
     max-width: 600px;
     margin: 0 auto;

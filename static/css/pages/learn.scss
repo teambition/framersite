@@ -7,7 +7,7 @@ h4 {
 }
 
 .align-right {
-	max-width: 600px;
+	max-width: 750px;
 	float: right;
 	clear:both;
 }
@@ -44,7 +44,7 @@ h4 {
 .sidebar .title {
 	color: $black;
 }
-@media screen and (max-width:880px) {
+@media screen and (max-width:1020px) {
 	.content-inner {
 		max-width: 600px;
 		margin: 0 auto;
@@ -70,14 +70,12 @@ h4 {
 		margin-left: $space24;
 	}
 }
-
 @media screen and (max-width: 720px) {
 	.sidebar {
 		padding-bottom:$space16;
 		margin-bottom: $space56;
 	}	
 }
-
 @media screen and (max-width:560px) {
 	.sidebar {
 		padding-bottom:0;

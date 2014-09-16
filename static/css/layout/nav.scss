@@ -51,6 +51,9 @@ nav a {
 	color: $nav-links;
 	font-weight: 600;
 }
+nav.top li.active a {
+	color: #fff;
+}
 // Hover States
 nav a:hover,
 nav a:focus {
