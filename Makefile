@@ -1,5 +1,7 @@
 sprites:
 
+	python sprites/export.py
+
 	PYTHONPATH="${PYTHONPATH}:./vendor/glue/package/lib/python2.7/site-packages/" ./vendor/glue/package/bin/glue \
 		 --algorithm=square --cachebuster --crop --css-template=./vendor/glue/css-1x.template \
 		./sprites/sprite1x ./static/images/sprites/
