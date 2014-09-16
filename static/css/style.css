@@ -893,32 +893,6 @@ li.feature img {
   padding: 72px 0;
   margin: 72px 0; }
 
-@media only screen and (min-width: 1024px) {
-  .code-draw {
-    position: absolute;
-    bottom: 104px;
-    left: 15px;
-    height: 16px;
-    width: 240px;
-    -webkit-animation: write-code 3s 2s linear forwards;
-    -moz-animation: write-code 3s 2s linear forwards;
-    -ms-animation: write-code 3s 2s linear forwards;
-    -o-animation: write-code 3s 2s linear forwards;
-    animation: write-code 3s 2s linear forwards;
-    background: #1D2026; }
-
-  .code-draw-two {
-    position: absolute;
-    bottom: 90px;
-    left: 20px;
-    height: 16px;
-    width: 240px;
-    -webkit-animation: write-code-two 2s 6s linear forwards;
-    -moz-animation: write-code-two 2s 6s linear forwards;
-    -ms-animation: write-code-two 2s 6s linear forwards;
-    -o-animation: write-code-two 2s 6s linear forwards;
-    animation: write-code-two 2s 6s linear forwards;
-    background: #1D2026; } }
 @media screen and (max-width: 1080px) {
   .content-inner {
     max-width: 980px; }
