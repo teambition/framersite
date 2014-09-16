@@ -1623,6 +1623,8 @@ footer.global :-ms-input-placeholder {
     left: -64px; }
   .home a.device-right {
     right: -64px; }
+  .home .device-video {
+    display: none; }
   .home .feature-banners section {
     margin-top: -64px;
     width: 80%;

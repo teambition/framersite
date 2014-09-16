@@ -389,6 +389,9 @@ footer.footer {
 	a.device-right {
 		right:-64px;
 	}
+	.device-video {
+		display: none;
+	}
 	.feature-banners section {
 		margin-top: -$space64;
 		width: 80%; margin-left: -40%;
