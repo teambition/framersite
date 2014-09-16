@@ -12,7 +12,6 @@ table {
 }
 table td, td {
 	border-spacing:none; 
-	border-style:solid;
 	padding:$space8 $space16; 
 	color: $text;
 	position: relative;
@@ -77,4 +76,29 @@ td a {
 }
 td a+a:before {
 	content: "\b7"; display: inline-block; margin-right: 4px; font-weight: 500; opacity: .5;
+}
+
+@media screen and (max-width: 440px) {
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+		border: none;
+		box-shadow: none;
+	}
+	th, th.examples, td.examples { 
+		display:none;
+	}
+
+	table td, td {
+		padding-left:0; 
+	}
+	table.api td.group, table.compatibility td.group {
+		position: static;
+		padding-left: 0;
+	}
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		position: relative;
+		padding-left: 0;
+	}
 }
