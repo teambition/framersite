@@ -16,7 +16,7 @@ a {
 .home p a { position:relative; z-index: 50; }
 .home p a:after {
 	content:""; display: inline-block;
-	position: absolute; left:0; bottom:2px;
+	position: absolute; left:0; bottom:1px;
 	width:100%; height:1px;
 	background: $blue40;
 	z-index: -1;

@@ -372,7 +372,7 @@ td a + a:before {
 nav.top {
   width: 100%;
   height: 64px;
-  line-height: 71px;
+  line-height: 69px;
   padding: 0 32px;
   vertical-align: middle;
   position: fixed;
@@ -786,7 +786,7 @@ a {
   display: inline-block;
   position: absolute;
   left: 0;
-  bottom: 2px;
+  bottom: 1px;
   width: 100%;
   height: 1px;
   background: #a9dffd;
