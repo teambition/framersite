@@ -9,6 +9,7 @@
 		["/learn.html#importing", "/learn/importing"],
 		["/learn.html#mirror", "/learn/mirror"],
 		["/learn.html#coffeescript", "/learn/coffeescript"],
+		["/learn", "/learn/basics"],
 		["/learn.html", "/learn/basics"], // Catch all
 		["/more.html", "/faq"],
 		["/docs.html", "/docs"],
@@ -33,6 +34,8 @@
 	for (var i=0; i < redirects.length; i++) {
 
 		var info = parse(redirects[i][0])
+
+		// console.log(info, path, hash)
 
 		if (info.path == path) {
 			
