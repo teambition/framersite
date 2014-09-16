@@ -149,7 +149,7 @@ li.feature img {
 	.narrow .container,
 	.docs .container,
 	.faq .container {
-		padding: $space40 0 $space64 0;
+		padding: $space48 0 $space64 0;
 	}
 	.content-inner {
 		padding:0 $space16;
@@ -174,5 +174,11 @@ li.feature img {
 	// Vertical spacing M: ~40px
 	hr {
 		margin: $space40 auto;
+	}
+}
+
+@media screen and (max-width: 440px) {
+	.narrow hr {
+		margin: $space32 auto;
 	}
 }

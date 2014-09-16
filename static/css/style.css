@@ -945,7 +945,7 @@ li.feature img {
   .narrow .container,
   .docs .container,
   .faq .container {
-    padding: 40px 0 64px 0; }
+    padding: 48px 0 64px 0; }
 
   .content-inner {
     padding: 0 16px; }
@@ -968,6 +968,9 @@ li.feature img {
 
   hr {
     margin: 40px auto; } }
+@media screen and (max-width: 440px) {
+  .narrow hr {
+    margin: 32px auto; } }
 a {
   text-decoration: none; }
 
@@ -1800,4 +1803,11 @@ footer.global :-ms-input-placeholder {
     max-width: 100%;
     float: none; }
   .narrow .sidebar {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    padding-bottom: 0;
+    margin-bottom: 32px;
+    border-bottom: 1px solid #eee; }
+  .narrow .sidebar .title {
     display: none; } }
