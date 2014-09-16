@@ -321,6 +321,19 @@ a.device-right {
 	background-size: 100%;
 	background-position: bottom center;
 }
+// Retina
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+	.banner-importing {
+		background: $banner-importing url("/static/images/home/banner-importing@2x.png") no-repeat;
+		background-size: 518px 224px;
+		background-position: center 340px;
+	}
+	.banner-mirror {
+		background: $banner-importing url("/static/images/home/banner-mirror@2x.jpg") no-repeat;
+		background-size: 100%;
+		background-position: bottom center;
+	}
+}
 // Hover
 .feature-banners a:after {
 	content:""; position: absolute; top:0; left:0;
