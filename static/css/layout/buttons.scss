@@ -18,7 +18,7 @@ input:focus{
 	text-transform: uppercase;
 	font-weight: 700;
 	text-shadow: 0 1px 1px rgba(0,0,0,0.1);
-	border-radius: 4px; // Rounded = Default
+	border-radius: 3px; // Rounded = Default
 	letter-spacing: 0.5px;
 	@include transition(all, 0.1s, ease);
 	display:inline-block;
@@ -108,6 +108,14 @@ input {
 	border: none; 
 	cursor: pointer; cursor: hand;
 	line-height: 1;
+}
+@media screen and (min-width: 960px) {
+	.header .btn,
+	.footer .btn,
+	.header input,
+	.footer input {
+		width:106px;
+	}
 }
 // Media queries
 @media screen and (max-width: 560px) {
