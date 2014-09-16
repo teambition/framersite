@@ -112,7 +112,7 @@ h5 figure {
 	position: relative;
 }
 .used-by figure+figure {
-	margin-left: $space32;
+	margin-left: 37px;
 }
 // Vertical centering
 .logo-google     { top:4px; }
@@ -132,7 +132,6 @@ h5 figure {
 	position: relative;
 	z-index: 30;
 }
-
 .used-by .footnote-line {
 	width:100%; 
 	height:1px; 
@@ -192,7 +191,6 @@ a.device-right {
 	right: 0;
 	top:-40px;
 }
-
 // Interaction block
 .interaction {
 	background: #22252C;

@@ -1076,6 +1076,9 @@ footer.global {
   height: 148px;
   padding-top: 48px; }
 
+.faq footer.global .content-inner {
+  max-width: 1080px; }
+
 footer.global li {
   float: left;
   font-weight: 600; }
@@ -1096,12 +1099,12 @@ footer.global input {
   padding: 8px 12px 4px 12px;
   font-family: "Fakt", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.2;
   vertical-align: bottom;
   height: 40px;
   width: 220px;
-  margin: 0;
-  color: #616d85; }
+  color: #616d85;
+  position: relative; }
 
 footer.global button {
   border: none;
@@ -1332,7 +1335,7 @@ footer.global :-ms-input-placeholder {
   display: inline-block;
   position: relative; }
 .home .used-by figure + figure {
-  margin-left: 32px; }
+  margin-left: 37px; }
 .home .logo-google {
   top: 4px; }
 .home .logo-twitter {
