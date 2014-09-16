@@ -126,13 +126,15 @@ td:after {
 thead th, th {
   text-align: left;
   padding: 12px 15px 9px;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 12px;
+  font-weight: 600;
   color: #bbb;
   cursor: default;
   white-space: nowrap;
   line-height: 1.2;
-  border-radius: 6px 6px 0 0; }
+  border-radius: 6px 6px 0 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px; }
 
 table .dim {
   color: #999; }
@@ -168,6 +170,9 @@ td.examples {
   width: auto;
   text-align: right;
   white-space: nowrap; }
+
+td a {
+  font-weight: 600; }
 
 td a + a:before {
   content: "\b7";
@@ -679,12 +684,10 @@ p.copy {
   color: #788d9e; }
 
 .learn .content-inner ul,
-.docs .content-inner ul,
 .faq .content-inner ul {
   margin-bottom: 32px; }
 
 .learn .content-inner ul li,
-.docs .content-inner ul li,
 .faq .content-inner ul li {
   line-height: 1.5;
   font-size: 1em;
@@ -696,17 +699,14 @@ p.copy {
   padding-left: 8px; }
 
 .learn .content-inner li strong,
-.docs .content-inner li strong,
 .faq .content-inner li strong {
   font-size: 18px; }
 
 .learn .content-inner ul li + li,
-.docs .content-inner ul li + li,
 .faq .content-inner ul li + li {
   margin-top: 8px; }
 
 .learn .content-inner li ul li,
-.docs .content-inner li ul li,
 .faq .content-inner li ul li {
   list-style-type: none;
   padding: 0;
