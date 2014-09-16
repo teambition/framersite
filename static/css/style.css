@@ -1159,7 +1159,8 @@ footer.global input {
   height: 40px;
   width: 220px;
   color: #616d85;
-  line-height: 20px; }
+  line-height: 20px;
+  float: left; }
 
 footer.global button {
   border: none;
@@ -1175,9 +1176,7 @@ footer.global button {
   height: 40px;
   cursor: pointer;
   cursor: hand;
-  margin-left: -4px;
-  position: relative;
-  top: 1px; }
+  margin-left: -4px; }
 
 footer.global .right p {
   text-align: right; }
@@ -1198,6 +1197,10 @@ footer.global :-ms-input-placeholder {
 @media screen and (max-width: 720px) {
   footer.global {
     height: 280px; }
+
+  footer.global .right {
+    width: 254px;
+    margin: 0 auto; }
 
   footer.global section,
   footer.global .right p {
