@@ -1433,6 +1433,12 @@ footer.global :-ms-input-placeholder {
   margin-left: -163px;
   z-index: 50;
   top: -80px; }
+.home .device-video {
+  position: absolute;
+  top: 110px;
+  left: 50%;
+  width: 253px;
+  margin-left: -125px; }
 .home a.device-right {
   right: 0;
   top: -40px; }
