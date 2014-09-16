@@ -1290,15 +1290,22 @@ footer.global :-ms-input-placeholder {
 .home .header p.copy {
   opacity: .75;
   font-size: 10px; }
-.home .ss-framer img {
+.home .ss-framer {
   max-width: 1024px;
   max-height: 440px;
   position: absolute;
   bottom: 0;
   left: 50%;
   margin-left: -512px;
-  width: 100%;
+  width: 100%; }
+.home .ss-framer img {
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); }
+.home .ss-video {
+  position: absolute;
+  top: calc(50% - 96px);
+  left: calc(75% - 70px);
+  width: 140px;
+  height: auto; }
 .home .col-4 p {
   margin-bottom: 0; }
 .home .footer h1 {
@@ -1429,62 +1436,6 @@ footer.global :-ms-input-placeholder {
 .home a.device-right {
   right: 0;
   top: -40px; }
-.home .interaction {
-  background: #22252C;
-  padding: 100px 0 140px 0;
-  margin: 80px 0 0 0;
-  position: relative; }
-.home .interaction h1 {
-  color: #fff; }
-.home .interaction p {
-  color: #818B9E; }
-.home .interaction h2 {
-  color: #9095A1;
-  margin-bottom: 32px; }
-.home .interaction h5 {
-  color: #fff;
-  font-weight: 400; }
-.home .interaction .ss-half {
-  background: url("/static/images/ss-code.png") no-repeat;
-  width: 100%;
-  height: 657px; }
-@media (-webkit-min-device-pixel-ratio: 1.5) {
-  .home #interaction .ss-half {
-    background: url("/static/images/ss-code@2x.png") no-repeat;
-    background-size: cover; } }
-.home .interaction li img,
-.home .viewer li img {
-  float: left;
-  position: relative;
-  top: 4px;
-  margin-right: 16px; }
-.home .viewer {
-  padding: 100px 0 40px 0;
-  /* The extra 20 is to fix the overflow bug */
-  margin-bottom: 0px;
-  position: relative;
-  overflow: visible; }
-.home .viewer h1 {
-  color: #111; }
-.home .viewer h2 {
-  margin-bottom: 32px; }
-.home .viewer h5 {
-  color: #7DDC16;
-  font-weight: 400; }
-.home .viewer li:nth-child(2) h5 {
-  color: #28affa; }
-.home .viewer li:nth-child(3) h5 {
-  color: #917BDF; }
-.home .viewer li:last-child h5 {
-  color: #616d85; }
-.home .viewer .ss-half {
-  background: url("/static/images/ss-viewer.png") no-repeat;
-  width: 100%;
-  height: 659px; }
-@media (-webkit-min-device-pixel-ratio: 1.5) {
-  .home .viewer .ss-half {
-    background: url("/static/images/ss-viewer@2x.png") no-repeat;
-    background-size: cover; } }
 .home .footer-features li {
   list-style: none;
   color: #a1a8b6;
@@ -1577,33 +1528,34 @@ footer.global :-ms-input-placeholder {
 @media screen and (max-width: 1030px) {
   .home .header {
     height: 720px; }
-  .home .ss-framer img {
+  .home .ss-framer {
     max-width: 980px;
     margin-left: -490px;
     padding: 0 16px;
     box-shadow: none; }
-  .home .ss-framer:after {
+  .home .ss-video {
+    top: calc(50% - 96px);
+    left: calc(75% - 78px);
     -moz-transform: scale(0.96);
     -o-transform: scale(0.96);
     -ms-transform: scale(0.96);
     -webkit-transform: scale(0.96);
-    transform: scale(0.96);
-    top: calc(50% + 128px);
-    left: calc(50% + 128px + 44px); } }
+    transform: scale(0.96); }
+  .home .ss-framer img {
+    position: relative;
+    bottom: -4px; } }
 @media screen and (max-width: 980px) {
   .home .header {
     height: 600px; }
-  .home .ss-framer img {
+  .home .ss-framer {
     max-width: 720px;
     margin-left: -360px; }
-  .home .ss-framer:after {
+  .home .ss-video {
     -moz-transform: scale(0.7);
     -o-transform: scale(0.7);
     -ms-transform: scale(0.7);
     -webkit-transform: scale(0.7);
-    transform: scale(0.7);
-    top: calc(50% + 116px);
-    left: calc(50% + 108px); }
+    transform: scale(0.7); }
   .home .examples-caption,
   .home .used-by,
   .home .feature-banners,
@@ -1631,10 +1583,12 @@ footer.global :-ms-input-placeholder {
   .home .header {
     padding-bottom: 50%;
     height: auto; }
-  .home .ss-framer img {
+  .home .ss-framer {
     max-width: 100%;
     margin-left: 0;
     left: 0; }
+  .home .ss-video {
+    display: none; }
   .home .examples {
     height: calc(480px * 0.8); }
   .home .devices {
@@ -1688,7 +1642,7 @@ footer.global :-ms-input-placeholder {
     margin-top: 0;
     padding-top: 152px;
     margin-bottom: 32px; }
-  .home .ss-framer img {
+  .home .ss-framer {
     margin-left: 0;
     left: 0; } }
 @media screen and (max-width: 480px) {
