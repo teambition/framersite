@@ -2,21 +2,46 @@
 {% block content %}
 
 <script type="text/javascript" charset="utf-8">
-	
-	// Redirect table
-	var redirects = {
-		"/learn.html": "/learn",
-		"/more.html": "/faq",
-		"/docs.html": "/docs",
-		"/framerjs": "/",
-	}
+
+	// Redirect table, matching is by order and no hash means catch all
+	var redirects = [
+		["/learn.html#basics", "/learn/basics"],
+		["/learn.html#importing", "/learn/importing"],
+		["/learn.html#mirror", "/learn/mirror"],
+		["/learn.html#coffeescript", "/learn/coffeescript"],
+		["/learn.html", "/learn/basics"], // Catch all
+		["/more.html", "/faq"],
+		["/docs.html", "/docs"],
+		["/framerjs", "/"],
+	]
 
 	// Location path without trailing slash (eg: "/learn/" -> "/learn")
 	var path = window.location.pathname.replace(/\/$/, "")
-	var hash = window.location.hash
+	var hash = window.location.hash.replace(/\/$/, "")
 
-	if (redirects.hasOwnProperty(path)) {
-		window.location.replace(redirects[path] + hash)
+	function parse(input) {
+		var result = {"path": input, "hash": null}
+
+		if (input.indexOf("#") != -1) {
+			result.path = input.split("#")[0]
+			result.hash = "#" + input.split("#")[1]
+		}
+
+		return result
+	}
+
+	for (var i=0; i < redirects.length; i++) {
+
+		var info = parse(redirects[i][0])
+
+		if (info.path == path) {
+			
+			if (info.hash != null && info.hash != hash) {
+				continue
+			}
+
+			window.location.replace(redirects[i][1])
+		}
 	}
 
 </script>
