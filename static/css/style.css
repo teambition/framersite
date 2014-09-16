@@ -1808,6 +1808,9 @@ footer.global :-ms-input-placeholder {
     padding-bottom: 24px;
     margin-bottom: 56px;
     border-bottom: 1px solid #eee; }
+  .narrow .sidebar.sticky {
+    position: relative;
+    top: 0; }
   .narrow .sidebar li {
     display: inline-block; }
   .narrow .sidebar li + li {
