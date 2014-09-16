@@ -498,10 +498,10 @@ nav.top.sticky {
     top: -64px; } }
 
 nav.top.fade-out {
-  -webkit-animation: fade-out .1s forwards;
-  -moz-animation: fade-out .1s forwards;
-  -o-animation: fade-out .1s forwards;
-  animation: fade-out .1s forwards;
+  -webkit-animation: fade-out .2s forwards;
+  -moz-animation: fade-out .2s forwards;
+  -o-animation: fade-out .2s forwards;
+  animation: fade-out .2s forwards;
   position: fixed; }
 
 nav li {
@@ -786,20 +786,16 @@ p.copy {
 
 @media screen and (max-width: 800px) {
   .header h1 {
-    font-size: 3em; }
-
-  .header h1 {
-    max-width: 100%; } }
-@media screen and (max-width: 720px) {
-  .header h1 {
-    font-size: 2.5em;
-    font-weight: 200; } }
+    font-size: 3.2em; } }
 @media screen and (max-width: 600px) {
   body {
     font-size: 14px; }
 
   .footer-features li {
     font-size: 1em; }
+
+  .header h1 {
+    max-width: 100%; }
 
   h2 {
     font-size: 2.25em; } }
@@ -1629,7 +1625,7 @@ footer.global :-ms-input-placeholder {
     background-size: 100%; } }
 @media screen and (max-width: 720px) {
   .home .header {
-    padding-bottom: 50%;
+    padding-bottom: 45%;
     height: auto; }
   .home .ss-framer {
     max-width: 100%;
@@ -1688,15 +1684,12 @@ footer.global :-ms-input-placeholder {
 @media screen and (max-width: 560px) {
   .home .header {
     margin-top: 0;
-    padding-top: 152px;
-    margin-bottom: 32px; }
+    margin-bottom: 32px;
+    padding-top: 120px; }
   .home .ss-framer {
     margin-left: 0;
     left: 0; } }
 @media screen and (max-width: 480px) {
-  .home .header {
-    height: 460px;
-    padding-top: 120px; }
   .home a.device-left,
   .home a.device-right {
     -moz-transform: scale(0.44);

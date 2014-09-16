@@ -362,7 +362,7 @@ footer.footer {
 }
 @media screen and (max-width: 720px) {
 	.header {
-		padding-bottom:50%;
+		padding-bottom:45%;
 		height:auto;
 	}
 	.ss-framer {
@@ -436,8 +436,8 @@ footer.footer {
 @media screen and (max-width: 560px) {
 	.header {
 		margin-top: 0; // Nav is now pos:relative instead of absolute
-		padding-top: 152px;
 		margin-bottom: $space32;
+		padding-top: 120px;
 	}
 	.ss-framer {
 		margin-left: 0;
@@ -445,10 +445,7 @@ footer.footer {
 	}
 }
 @media screen and (max-width: 480px) {
-	.header {
-		height: 460px;
-		padding-top: 120px;
-	}
+
 	a.device-left,
 	a.device-right {
 		@include scale(0.44);
