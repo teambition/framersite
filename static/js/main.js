@@ -1,10 +1,17 @@
 
 $(document).ready(function() {
+
+	$(".feature-banners a").hover(
+		function() {
+			$(this).toggleClass("is-active");
+		}
+	);
+
 	var docsSidebar, topNav, exampleBlock, exampleDevices;
-	docsSidebar = document.querySelector('.docs .sidebar');
-	topNav = document.querySelector('.home nav.top');
-	exampleBlock = document.querySelector('.examples');
-	exampleDevices = document.querySelectorAll('.device-left, .device-right');
+	docsSidebar = $('.docs .sidebar');
+	topNav = $('.home nav.top');
+	exampleBlock = $('.examples');
+	exampleDevices = $('.device-left, .device-right');
 
 	$(exampleBlock).hover(
 		function() {

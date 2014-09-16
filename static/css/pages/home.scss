@@ -2,8 +2,8 @@
 .header {
 	background: $header;
 	color: #fff;
-	height: calc(800px - 56px);
-	margin-top:56px;
+	height: 740px; // 800 - 60
+	margin-top:64px;
 	overflow: hidden;
 	position: relative;
 	padding-top:$space56;
@@ -300,6 +300,10 @@ a.device-right {
 }
 .feature-banners div {
 	display: inline-block;
+	@include transition(all, 0.2, ease);
+}
+.feature-banners a.is-active div {
+	background: rgba(255,255,255,0.25);
 }
 .banner-importing {
 	background: $banner-importing url("/static/images/home/banner-importing.png") no-repeat;
@@ -426,7 +430,8 @@ a.device-right {
 	a.device-right {
 		right:-64px;
 	}
-	// Vertical spacing
+	// ****************
+	// Vertical spacing T ~ 48px
 	.examples {
 		margin-bottom: calc(#{$space80} + #{$space40});
 		margin-top: calc(#{$space80} + #{$space40});

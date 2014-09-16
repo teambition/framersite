@@ -1,8 +1,8 @@
 
 nav.top {
 	width: 100%;
-	height: $space56;
-	line-height:63px;
+	height: $space64;
+	line-height:71px;
 	padding: 0 $space32;
 	vertical-align:middle;
 	position: fixed;
@@ -19,7 +19,7 @@ nav.top ul {
 	margin:0 auto;
 }
 @include keyframes(fade-in) {
-	0%   { top: -56px; }
+	0%   { top: -64px; }
 	100% { top: 0; }
 }
 nav.top.sticky {
@@ -28,7 +28,7 @@ nav.top.sticky {
 } 
 @include keyframes(fade-out) {
 	0%   { top: 0; }
- 	100% { top: -56px; }
+ 	100% { top: -64px; }
 }
 nav.top.fade-out {
 	@include animation('fade-out .2s forwards');

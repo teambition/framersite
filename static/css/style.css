@@ -366,8 +366,8 @@ td a + a:before {
 
 nav.top {
   width: 100%;
-  height: 56px;
-  line-height: 63px;
+  height: 64px;
+  line-height: 71px;
   padding: 0 32px;
   vertical-align: middle;
   position: fixed;
@@ -384,28 +384,28 @@ nav.top ul {
 
 @-webkit-keyframes fade-in {
   0% {
-    top: -56px; }
+    top: -64px; }
 
   100% {
     top: 0; } }
 
 @-moz-keyframes fade-in {
   0% {
-    top: -56px; }
+    top: -64px; }
 
   100% {
     top: 0; } }
 
 @-o-keyframes fade-in {
   0% {
-    top: -56px; }
+    top: -64px; }
 
   100% {
     top: 0; } }
 
 @keyframes fade-in {
   0% {
-    top: -56px; }
+    top: -64px; }
 
   100% {
     top: 0; } }
@@ -422,28 +422,28 @@ nav.top.sticky {
     top: 0; }
 
   100% {
-    top: -56px; } }
+    top: -64px; } }
 
 @-moz-keyframes fade-out {
   0% {
     top: 0; }
 
   100% {
-    top: -56px; } }
+    top: -64px; } }
 
 @-o-keyframes fade-out {
   0% {
     top: 0; }
 
   100% {
-    top: -56px; } }
+    top: -64px; } }
 
 @keyframes fade-out {
   0% {
     top: 0; }
 
   100% {
-    top: -56px; } }
+    top: -64px; } }
 
 nav.top.fade-out {
   -webkit-animation: fade-out .2s forwards;
@@ -1247,8 +1247,8 @@ footer.global :-ms-input-placeholder {
 .home .header {
   background: #232c39;
   color: #fff;
-  height: calc(800px - 56px);
-  margin-top: 56px;
+  height: 740px;
+  margin-top: 64px;
   overflow: hidden;
   position: relative;
   padding-top: 56px; }
@@ -1494,7 +1494,14 @@ footer.global :-ms-input-placeholder {
 .home .feature-banners h5 {
   margin-bottom: 24px; }
 .home .feature-banners div {
-  display: inline-block; }
+  display: inline-block;
+  -webkit-transition: all 0.2 ease;
+  -moz-transition: all 0.2 ease;
+  -ms-transition: all 0.2 ease;
+  -o-transition: all 0.2 ease;
+  transition: all 0.2 ease; }
+.home .feature-banners a.is-active div {
+  background: rgba(255, 255, 255, 0.25); }
 .home .banner-importing {
   background: #92b0c8 url("/static/images/home/banner-importing.png") no-repeat;
   background-size: 518px 224px;
