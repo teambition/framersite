@@ -8,7 +8,7 @@ $(document).ready(function() {
 	);
 
 	var docsSidebar, topNav, exampleBlock, exampleDevices;
-	docsSidebar = $('.docs .sidebar');
+	docsSidebar = $('.sidebar');
 	topNav = $('.home nav.top');
 	exampleBlock = $('.examples');
 	exampleDevices = $('.device-left, .device-right');

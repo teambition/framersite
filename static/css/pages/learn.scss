@@ -24,8 +24,9 @@ h4 {
 }
 .sidebar.sticky {
 	position: fixed;
-	top:$space64;
+	top: 128px;
 }
+
 .sidebar ul li {
 	list-style: none;
 	padding: 0; left: 0;

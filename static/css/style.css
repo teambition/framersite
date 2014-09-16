@@ -1728,7 +1728,7 @@ footer.global :-ms-input-placeholder {
   max-width: 210px; }
 .docs .sidebar.sticky {
   position: fixed;
-  top: 64px; }
+  top: 128px; }
 .docs .sidebar li + li {
   margin-top: 8px; }
 .docs .sidebar a,
@@ -1769,7 +1769,7 @@ footer.global :-ms-input-placeholder {
   max-width: 210px; }
 .narrow .sidebar.sticky {
   position: fixed;
-  top: 64px; }
+  top: 128px; }
 .narrow .sidebar ul li {
   list-style: none;
   padding: 0;
