@@ -448,7 +448,6 @@ footer.footer {
 	}
 }
 @media screen and (max-width: 480px) {
-
 	a.device-left,
 	a.device-right {
 		@include scale(0.44);
@@ -525,3 +524,15 @@ footer.footer {
 	}
 }
 
+@media screen and (max-width: 440px) {
+	.banner-importing {
+		background-size: 100%;
+		background-position: center 168px;
+	}
+	.feature-banners section {
+		margin-top: -$space40;
+	}
+	.feature-banners h5 {
+		margin-bottom: $space16;
+	}
+}
