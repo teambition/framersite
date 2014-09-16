@@ -34,7 +34,7 @@ img {
 
 .learn .container,
 .docs .container,
-.more .container {
+.faq .container {
 	padding: calc(72px + 64px) 0 $space64 0;
 }
 .content-inner {
@@ -48,7 +48,7 @@ img {
 	position: relative;
 }
 .learn .content-inner,
-.more .content-inner {
+.faq .content-inner {
 	max-width: 660px;
 	margin: 0 auto;
 }

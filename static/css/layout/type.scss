@@ -137,13 +137,13 @@ p.copy {
 // Lists
 .learn .content-inner ul,
 .docs .content-inner ul,
-.more .content-inner ul {
+.faq .content-inner ul {
 	margin-bottom: $space32;
 }
 // Lists on Pages
-.learn .content-inner li,
-.docs .content-inner li,
-.more .content-inner li  {
+.learn .content-inner ul li,
+.docs .content-inner ul li,
+.faq .content-inner ul li  {
 	line-height: 1.5;
 	font-size: 1em;
 	font-weight: 400;
@@ -155,17 +155,17 @@ p.copy {
 }
 .learn .content-inner li strong,
 .docs .content-inner li strong,
-.more .content-inner li strong {
+.faq .content-inner li strong {
 	font-size:18px;
 }
 .learn .content-inner ul li+li,
 .docs .content-inner ul li+li,
-.more .content-inner ul li+li {
+.faq .content-inner ul li+li {
 	margin-top: $space8;
 }
 .learn .content-inner li ul li,
 .docs .content-inner li ul li,
-.more .content-inner li ul li  {
+.faq .content-inner li ul li  {
 	list-style-type: none;
 	padding: 0; left: 0; 
 	margin-top: $space8;

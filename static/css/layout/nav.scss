@@ -1,4 +1,3 @@
-
 nav.top {
 	width: 100%;
 	height: $space64;
@@ -34,6 +33,7 @@ nav.top.fade-out {
 	@include animation('fade-out .2s forwards');
 	position: fixed;
 }
+// Targets all navigation items, not just top nav.
 nav li {
 	float: left;
 	font-size: 12px;
