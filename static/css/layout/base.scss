@@ -35,7 +35,7 @@ img {
 .learn .container,
 .docs .container,
 .faq .container {
-	padding: calc(72px + 64px) 0 $space64 0;
+	padding: calc(40px + 64px) 0 $space64 0;
 }
 .content-inner {
 	width: 100%;
@@ -172,9 +172,10 @@ li.feature img {
 @media screen and (max-width: 560px) {
 	.learn .container,
 	.docs .container,
-	.more .container {
-		padding: calc(64px + 120px) 0 $space64 0;
+	.faq .container {
+		padding: $space16 0 $space64 0;
 	}
+
 	.content-inner {
 		padding:0 $space16;
 	}
