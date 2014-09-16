@@ -45,44 +45,39 @@ $(document).ready(function() {
 
 // /* ========================= */
 
-// function isMobile() {
-// 	return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
-// }
+function isMobile() {
+	return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+}
 
-// function setupDownloadLink() {
+function setupDownloadLink() {
 
-// 	if (isMobile()) {
-// 		var mobileLink = "mailto:?subject=Check Out Framer Studio&body=Don't forget to check out Framer: http://framerjs.com"
-// 		$("a.downloadfs").attr("href", mobileLink);
+	var downloadClass = ".prepare-download"
+	var sparkleHost = "http://studio.update.framerjs.com"
 
-// 	} else {
+	var downloadLink = sparkleHost + "/archive";
 
-// 		// var sparkleHost = "http://framerstudio-update.s3-website-us-east-1.amazonaws.com"
-// 		var sparkleHost = "http://studio.update.framerjs.com"
+	$.get(sparkleHost + "/latest.txt", function(result) {
+		downloadLink = sparkleHost + "/" + result;
+	})
 
-// 		$.get(sparkleHost + "/latest.txt", function(result) {
-			
-// 			var downloadLink = sparkleHost + "/" + result;
+	if (isMobile()) {
 
-// 			$("a.downloadfs").click(function(event) {
+		// If we are on mobile we pop up an email to not forget to check out the download
+		$(downloadClass).attr("href", 
+			"mailto:?subject=Check Out Framer Studio&body=Don't forget to check out Framer: http://framerjs.com");
 
-// 				event.preventDefault()
+	} else {
 
-// 				ga('send', 'event', 'Download', 'Framer Studio', downloadLink);
+		// If we are on desktop we replace the download links with the latest version of framer
+		$(downloadClass).click(function(event) {
+			event.preventDefault()
+			setTimeout(function() { window.location.href = downloadLink; }, 500)
+			ga('send', 'event', 'Download', 'Framer Studio', downloadLink)
+		})
+	}
+}
 
-// 				setTimeout(function() {
-// 					window.location.href = downloadLink;
-// 				}, 500);
-
-// 			});
-// 		});
-		
-// 	};
-// };
-
-// $(document).ready(function() {
-// 	setupDownloadLink();
-// })
+$(document).ready(setupDownloadLink)
 
 // /* ========================= */
 	 
