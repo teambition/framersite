@@ -823,6 +823,11 @@ a {
   color: #28affa;
   font-weight: 400; }
 
+a[name] {
+  position: relative;
+  top: -128px;
+  display: block; }
+
 .home p a {
   position: relative;
   z-index: 50; }
@@ -1618,6 +1623,8 @@ footer.global :-ms-input-placeholder {
     left: -64px; }
   .home a.device-right {
     right: -64px; }
+  .home .device-video {
+    display: none; }
   .home .feature-banners section {
     margin-top: -64px;
     width: 80%;
@@ -1801,6 +1808,9 @@ footer.global :-ms-input-placeholder {
     padding-bottom: 24px;
     margin-bottom: 56px;
     border-bottom: 1px solid #eee; }
+  .narrow .sidebar.sticky {
+    position: relative;
+    top: 0; }
   .narrow .sidebar li {
     display: inline-block; }
   .narrow .sidebar li + li {
