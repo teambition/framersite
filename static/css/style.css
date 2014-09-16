@@ -151,7 +151,6 @@ table {
 
 table td, td {
   border-spacing: none;
-  border-style: solid;
   padding: 8px 16px;
   color: #666666;
   position: relative; }
@@ -228,6 +227,27 @@ td a + a:before {
   font-weight: 500;
   opacity: .5; }
 
+@media screen and (max-width: 440px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+    border: none;
+    box-shadow: none; }
+
+  th, th.examples, td.examples {
+    display: none; }
+
+  table td, td {
+    padding-left: 0; }
+
+  table.api td.group, table.compatibility td.group {
+    position: static;
+    padding-left: 0; }
+
+  td {
+    /* Behave  like a "row" */
+    border: none;
+    position: relative;
+    padding-left: 0; } }
 @-webkit-keyframes bounce {
   1.5625% {
     -webkit-transform: matrix(0.8655, 0, 0, 0.8655, 300, 300); }
