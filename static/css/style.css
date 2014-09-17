@@ -382,7 +382,7 @@ nav a {
   color: #788d9e;
   font-weight: 600; }
 
-li.active a {
+.active a {
   color: #fff; }
 
 nav a:hover,
@@ -404,7 +404,6 @@ nav.top form {
 nav.top input {
   font: inherit;
   font-weight: 600;
-  border: none;
   background: none;
   color: #28affa;
   cursor: pointer;
