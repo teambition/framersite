@@ -449,17 +449,17 @@ body.error {
 
 .error .message {
   text-align: center;
-  height: 100%; }
-
-.error h2 {
-  color: #fff;
-  max-width: 600px;
+  height: 120px;
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   margin: 0 auto; }
+
+.error h2 {
+  color: #fff;
+  margin-bottom: 24px; }
 
 .error footer {
   display: none; }
