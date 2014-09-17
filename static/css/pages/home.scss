@@ -232,6 +232,8 @@ footer.footer {
 }
 footer.footer img {
 	margin-bottom: $space24;
+	height: 128px;
+	width: 128px;
 }
 // Media Queries
 @media screen and (max-width:1080px) {
@@ -458,7 +460,6 @@ footer.footer img {
 	.logo-string figure+figure {
 		margin-left: 0;
 	}
-
 	// ****************
 	// Vertical spacing M
 	// Examples block

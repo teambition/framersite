@@ -1350,7 +1350,9 @@ footer.global input:-ms-input-placeholder {
 .home footer.footer {
   margin-bottom: 80px; }
 .home footer.footer img {
-  margin-bottom: 24px; }
+  margin-bottom: 24px;
+  height: 128px;
+  width: 128px; }
 @media screen and (max-width: 1080px) {
   .home .logo-string figure + figure {
     margin-left: 24px; }
