@@ -1,4 +1,6 @@
 {% extends "base.html" %}
+{% block currentpage %}class="error"{% endblock %}
+{% block height %}class="full-height"{% endblock %}
 {% block content %}
 
 <script type="text/javascript" charset="utf-8">
@@ -49,9 +51,7 @@
 
 </script>
 
-<div class="content-inner">
-<p>
-	Sorry this page could not be found on this server.
-</p>
+<div class="message">
+	<h2>Sorry this page could not be found on this server.</h2>
 </div>
 {% endblock %}
