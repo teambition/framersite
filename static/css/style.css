@@ -232,7 +232,10 @@ td a + a:before {
     border: none;
     box-shadow: none; }
 
-  th, th.examples, td.examples {
+  th,
+  th.examples,
+  td.examples,
+  td:after {
     display: none; }
 
   table td, td {
@@ -245,7 +248,21 @@ td a + a:before {
   td {
     border: none;
     position: relative;
-    padding-left: 0; } }
+    padding-left: 0; }
+
+  table.api td:first-child {
+    color: #15181d;
+    font-size: 12px; }
+
+  tr > td {
+    border-top: none; }
+
+  tr {
+    border-bottom: 1px solid #eee;
+    padding: 8px 16px; }
+
+  table td, td {
+    padding: 0; } }
 .full-height {
   height: 100%; }
 
@@ -1572,6 +1589,9 @@ footer.global input:-ms-input-placeholder {
 @media screen and (max-width: 980px) {
   .docs .content-inner {
     max-width: 960px; } }
+@media screen and (max-width: 440px) {
+  .docs h3 {
+    margin-bottom: -24px; } }
 
 .narrow h3 {
   margin-bottom: 24px; }

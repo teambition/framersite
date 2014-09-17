@@ -83,7 +83,10 @@ td a+a:before {
 		border: none;
 		box-shadow: none;
 	}
-	th, th.examples, td.examples { 
+	th, 
+	th.examples, 
+	td.examples,
+	td:after  { 
 		display:none;
 	}
 
@@ -98,5 +101,18 @@ td a+a:before {
 		border: none;
 		position: relative;
 		padding-left: 0;
+	}
+	table.api td:first-child {
+		color: $black; font-size: 12px; 
+	}
+	tr>td {
+		border-top:none;
+	}
+	tr {
+		border-bottom: 1px solid #eee;
+		padding:$space8 $space16; 
+	}
+	table td, td {
+		padding:0; 
 	}
 }
