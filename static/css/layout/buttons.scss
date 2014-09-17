@@ -93,18 +93,18 @@ input.blue:focus {
 }
 // Special case: needs extra properties because it's a form element
 input {
-	font-family: "Fakt", "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family: "Fakt", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
 	padding:0; margin:0;
+	-moz-appearance: none;
 	-webkit-appearance: none;
 	border: none;
-	-webkit-font-smoothing: antialiased;
 	line-height: 1;
 }
 .header form,
 .footer form  {
 	display: inline-block;
 }
-
 // Media queries
 @media screen and (max-width: 560px) {
 	.btn,

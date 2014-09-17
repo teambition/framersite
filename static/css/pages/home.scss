@@ -63,23 +63,6 @@
 .more-features {
 	margin-bottom: $space80;
 }
-// ---------------------
-// Studio Screenshot Section
-.screenshot img.studio {
-	max-width: 708px; 
-	width: 100%;
-}
-.screenshot .video-wrapper {
-	width: 354px;
-	position: absolute; 
-	top: 0; left: 50%; 
-	height: 100%;
-}
-.screenshot video {
-	position: absolute; 
-	max-width: 111px;
-	top: 159px; left: 114px;
-}
 // Screenshot Copy
 .screenshot-copy h3 {
 	margin-bottom: $space8;
@@ -138,8 +121,10 @@ h5 figure {
 	position: absolute; 
 	@include transition(all, .16s, ease);
 }
-.examples .devices a:hover {
-	@include scale(0.975);
+@media screen and (min-width: 980px) {
+	.examples .devices a:hover {
+		@include scale(0.975);
+	}
 }
 a.device-left,
 a.device-mid,
@@ -217,8 +202,9 @@ a.device-right {
 	display: inline-block;
 	@include transition(all, 0.2, ease);
 }
-.feature-banners a.is-active div {
-	background: rgba(255,255,255,0.25);
+// On hover effect
+.is-active div {
+	background: rgba(255,255,255,0.3);
 }
 .banner-importing {
 	background: $banner-importing url("/static/images/home/banner-importing.jpg") no-repeat;
@@ -438,7 +424,7 @@ footer.footer {
 		margin-left:-150px;
 	}
 	a.device-mid img {
-		max-width: initial;
+		max-width: inherit;
 		width: 300px;
 	}
 	a.device-left {

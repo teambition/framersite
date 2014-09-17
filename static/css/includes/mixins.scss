@@ -13,7 +13,6 @@
   background-image:         linear-gradient(left, $fromColor, $toColor);
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
 }
-
 @mixin transition($transition-property, $transition-time, $method) {
     -webkit-transition: $transition-property $transition-time $method;
     -moz-transition: $transition-property $transition-time $method;
@@ -21,8 +20,6 @@
     -o-transition: $transition-property $transition-time $method;
     transition: $transition-property $transition-time $method;
 }
-
-
 @mixin animation($animate...) {
     $max: length($animate);
     $animations: '';
@@ -39,7 +36,6 @@
     -o-animation:      $animations;
     animation:         $animations;
 }
-
 @mixin keyframes($animationName) {
     @-webkit-keyframes #{$animationName} {
         @content;
@@ -54,7 +50,6 @@
         @content;
     }
 }
-
 @mixin transform($transforms) {
      -moz-transform: $transforms;
        -o-transform: $transforms;

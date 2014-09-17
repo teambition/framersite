@@ -29,7 +29,8 @@ nav.top.sticky {
 	0%   { top: 0; }
  	100% { top: -64px; }
 }
-nav.top.fade-out {
+// Nav fade-out
+.fade-out {
 	@include animation('fade-out .2s forwards');
 	position: fixed;
 }
@@ -51,7 +52,8 @@ nav a {
 	color: $nav-links;
 	font-weight: 600;
 }
-nav.top li.active a {
+// Active nav
+li.active a {
 	color: #fff;
 }
 // Hover States
