@@ -832,10 +832,16 @@ textarea:focus,
 input:focus {
   outline: 0; }
 
+input {
+  font-family: "Fakt", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  padding: 0;
+  margin: 0;
+  border: none; }
+
 .btn,
 .header input,
 .footer input {
-  border: none;
   padding: 8px 16px;
   padding-top: 11px;
   position: relative;
@@ -853,7 +859,9 @@ input:focus {
   transition: all 0.1s ease;
   display: inline-block;
   line-height: 1;
-  cursor: pointer; }
+  cursor: pointer;
+  -moz-appearance: none;
+  -webkit-appearance: none; }
 
 .btn-pill {
   border-radius: 50px; }
@@ -929,16 +937,6 @@ input.blue:focus {
   margin-top: 20px;
   line-height: 1.2;
   color: #a1a8b6; }
-
-input {
-  font-family: "Fakt", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  padding: 0;
-  margin: 0;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  border: none;
-  line-height: 1; }
 
 .header form,
 .footer form {
