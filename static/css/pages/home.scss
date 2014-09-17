@@ -58,9 +58,9 @@
 	margin-top: calc(#{$space80} + #{$space80});
 }
 .examples-caption, 
-.used-by, 
+.logo-string, 
 .feature-banners,
-.more-features {
+.feature-summary {
 	margin-bottom: $space80;
 }
 // Screenshot Copy
@@ -78,16 +78,16 @@ h5 figure {
 	max-width:480px;
 	margin-left: auto; margin-right: auto;
 }
-// Used-By Block
-.used-by {
+// Logo string
+.logo-string {
 	text-align: center;
 	color: #D3D8E1;
 }
-.used-by figure {
+.logo-string figure {
 	display: inline-block;
 	position: relative;
 }
-.used-by figure+figure {
+.logo-string figure+figure {
 	margin-left: 37px;
 }
 // Vertical centering
@@ -159,23 +159,6 @@ a.device-right {
 	right: 0;
 	top:-40px;
 }
-// Footer features
-.footer-features li{
-	list-style: none; 
-	color: $graphite60;
-	white-space: nowrap;
-}
-.footer-features ul {
-	margin-bottom: 0;
-}
-.footer-features section ul li:before {
-	content: url("/static/images/icon-check.png");
-	display: inline-block; margin-right: $space8; position: relative; top: 1px;
-}
-.footer-features li+li {
-	margin-top:$space8;
-}
-
 // Feature Banners
 .feature-banners {
 	text-align: center;
@@ -239,8 +222,8 @@ a.device-right {
 .feature-banners a:hover:after {
 	background: rgba(0,0,0,0.2);
 }
-// More features list
-.more-features li+li {
+// Feature Summary
+.feature-summary li+li {
 	margin-top: $space16;
 }
 // Home footer
@@ -252,7 +235,7 @@ footer.footer img {
 }
 // Media Queries
 @media screen and (max-width:1080px) {
-	.used-by figure+figure {
+	.logo-string figure+figure {
 		margin-left: $space24;
 	}
 	.feature-banners a {
@@ -303,12 +286,12 @@ footer.footer img {
 	// ****************
 	// Vertical spacing
 	.examples-caption, 
-	.used-by, 
+	.logo-string, 
 	.feature-banners,
-	.more-features {
+	.feature-summary {
 		margin-bottom: $space40;
 	}
-	.used-by figure {
+	.logo-string figure {
 		margin-bottom: $space24;
 	}
 	.feature-banners .col-2 {
@@ -439,7 +422,7 @@ footer.footer img {
 	// Extra padding @ lists on mobile
 	// Framer overview
 	.framer-overview section,
-	.more-features section {
+	.feature-summary section {
 		padding: 0 $space24;
 	}
 	// Feature Banners (Mirror & Importing)
@@ -460,19 +443,19 @@ footer.footer img {
 		background-position: 50% 80%;
 		background-size: 100%;
 	}
-	// More features titles
-	.more-features h5 {
+	// Feature summary titles
+	.feature-summary h5 {
 		margin-bottom: $space16;
 	}
-	// Logos block
-	.used-by figure {
+	// Logo string
+	.logo-string figure {
 		 @include scale(0.75);
 		 margin-bottom: $space8;
 	}
-	.used-by figure:last-child {
+	.logo-string figure:last-child {
 		display: none;
 	}
-	.used-by figure+figure {
+	.logo-string figure+figure {
 		margin-left: 0;
 	}
 
@@ -483,8 +466,7 @@ footer.footer img {
 		margin-top: $space16;
 		margin-bottom: $space72;
 	}
-	// More features list
-	.more-features li+li {
+	.feature-summary li+li {
 		margin-top: $space8;
 	}
 }

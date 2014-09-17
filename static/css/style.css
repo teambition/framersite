@@ -562,10 +562,10 @@ p.title {
   font-size: 1.125em;
   color: #15181d; }
 
-.more-features p.title {
+.feature-summary p.title {
   font-size: 18px; }
 
-.more-features p {
+.feature-summary p {
   font-size: 14px; }
 
 .footer-features li {
@@ -1195,9 +1195,9 @@ footer.global input:-ms-input-placeholder {
   margin-bottom: calc(80px * 2);
   margin-top: calc(80px + 80px); }
 .home .examples-caption,
-.home .used-by,
+.home .logo-string,
 .home .feature-banners,
-.home .more-features {
+.home .feature-summary {
   margin-bottom: 80px; }
 .home .screenshot-copy h3 {
   margin-bottom: 8px;
@@ -1209,13 +1209,13 @@ footer.global input:-ms-input-placeholder {
   max-width: 480px;
   margin-left: auto;
   margin-right: auto; }
-.home .used-by {
+.home .logo-string {
   text-align: center;
   color: #D3D8E1; }
-.home .used-by figure {
+.home .logo-string figure {
   display: inline-block;
   position: relative; }
-.home .used-by figure + figure {
+.home .logo-string figure + figure {
   margin-left: 37px; }
 .home .logo-google {
   top: 4px; }
@@ -1287,20 +1287,6 @@ footer.global input:-ms-input-placeholder {
 .home a.device-right {
   right: 0;
   top: -40px; }
-.home .footer-features li {
-  list-style: none;
-  color: #a1a8b6;
-  white-space: nowrap; }
-.home .footer-features ul {
-  margin-bottom: 0; }
-.home .footer-features section ul li:before {
-  content: url("/static/images/icon-check.png");
-  display: inline-block;
-  margin-right: 8px;
-  position: relative;
-  top: 1px; }
-.home .footer-features li + li {
-  margin-top: 8px; }
 .home .feature-banners {
   text-align: center; }
 .home .feature-banners a {
@@ -1359,14 +1345,14 @@ footer.global input:-ms-input-placeholder {
   transition: background 0.2s ease; }
 .home .feature-banners a:hover:after {
   background: rgba(0, 0, 0, 0.2); }
-.home .more-features li + li {
+.home .feature-summary li + li {
   margin-top: 16px; }
 .home footer.footer {
   margin-bottom: 80px; }
 .home footer.footer img {
   margin-bottom: 24px; }
 @media screen and (max-width: 1080px) {
-  .home .used-by figure + figure {
+  .home .logo-string figure + figure {
     margin-left: 24px; }
   .home .feature-banners a {
     height: 420px; }
@@ -1402,11 +1388,11 @@ footer.global input:-ms-input-placeholder {
   .home .ss-video {
     display: none; }
   .home .examples-caption,
-  .home .used-by,
+  .home .logo-string,
   .home .feature-banners,
-  .home .more-features {
+  .home .feature-summary {
     margin-bottom: 40px; }
-  .home .used-by figure {
+  .home .logo-string figure {
     margin-bottom: 24px; }
   .home .feature-banners .col-2 {
     max-width: 100%; }
@@ -1509,7 +1495,7 @@ footer.global input:-ms-input-placeholder {
   .home a.device-right {
     right: -72px; }
   .home .framer-overview section,
-  .home .more-features section {
+  .home .feature-summary section {
     padding: 0 24px; }
   .home .feature-banners a {
     height: 256px; }
@@ -1523,23 +1509,23 @@ footer.global input:-ms-input-placeholder {
   .home .banner-mirror {
     background-position: 50% 80%;
     background-size: 100%; }
-  .home .more-features h5 {
+  .home .feature-summary h5 {
     margin-bottom: 16px; }
-  .home .used-by figure {
+  .home .logo-string figure {
     -moz-transform: scale(0.75);
     -o-transform: scale(0.75);
     -ms-transform: scale(0.75);
     -webkit-transform: scale(0.75);
     transform: scale(0.75);
     margin-bottom: 8px; }
-  .home .used-by figure:last-child {
+  .home .logo-string figure:last-child {
     display: none; }
-  .home .used-by figure + figure {
+  .home .logo-string figure + figure {
     margin-left: 0; }
   .home .examples {
     margin-top: 16px;
     margin-bottom: 72px; }
-  .home .more-features li + li {
+  .home .feature-summary li + li {
     margin-top: 8px; } }
 @media screen and (max-width: 440px) {
   .home .banner-importing {
