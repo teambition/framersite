@@ -27,12 +27,12 @@ Subsequent imports from the same file will work as long as you don't rename laye
 
 - Every *layer group* in Sketch/Photoshop will become a *layer* in Framer.
 
-<img src="/static/images/target.png">
+<img src="/static/images/learn/target.png">
 
 - Layer hierarchy is respected, eg: a subgroup will become a subLayer.
 - Masked layer groups will become layers with clip enabled.
 
-<img src="/static/images/masking.png">
+<img src="/static/images/learn/masking.png">
 
 - Imported layers are accessible by the importedLayers object: “importedLayers.myLayer”.
 - Group names should be unique.
@@ -45,18 +45,18 @@ Subsequent imports from the same file will work as long as you don't rename laye
 - Before importing a document, it needs to be saved at least once.
 - Layers are imported as a flat list. So, to access a layer named “ChildLayer” you write “importedLayers.ChildLayer” instead of “importedLayers.ParentLayer.ChildLayer”.
 
-<img src="/static/images/nesting.png">
+<img src="/static/images/learn/nesting.png">
 
 - When a layer group contains both other groups and other layers - the subgroups will be placed on top of the sublayers.
 - To create a scrolling layer, ensure it contains a group that exceeds its size.
 
-<img src="/static/images/scrolling.png">
+<img src="/static/images/learn/scrolling.png">
 
 - In Sketch, all artboards are imported, but only the first one will be visible by default.
 - In Sketch, you can only use one mask per layer group.
 - In Sketch, make sure you have the elements you like to import don't have negative coordinates as they'll be hidden within Framer.
 
-<img src="/static/images/xandy.png">
+<img src="/static/images/learn/xandy.png">
 
 ---
 
