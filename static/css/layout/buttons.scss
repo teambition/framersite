@@ -23,6 +23,7 @@ input:focus{
 	@include transition(all, 0.1s, ease);
 	display:inline-block;
 	line-height: 1;
+	cursor: pointer;
 }
 .btn-pill {
 	border-radius: 50px; 
