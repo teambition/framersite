@@ -245,7 +245,10 @@ a.device-right {
 }
 // Home footer
 footer.footer {
-	margin: $space80 0 $space80 0;
+	margin-bottom:$space80;
+}
+footer.footer img {
+	margin-bottom: $space24;
 }
 // Media Queries
 @media screen and (max-width:1080px) {

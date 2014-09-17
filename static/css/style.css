@@ -1362,7 +1362,9 @@ footer.global input:-ms-input-placeholder {
 .home .more-features li + li {
   margin-top: 16px; }
 .home footer.footer {
-  margin: 80px 0 80px 0; }
+  margin-bottom: 80px; }
+.home footer.footer img {
+  margin-bottom: 24px; }
 @media screen and (max-width: 1080px) {
   .home .used-by figure + figure {
     margin-left: 24px; }
