@@ -86,6 +86,7 @@ td a+a:before {
 	th, 
 	th.examples, 
 	td.examples,
+	tr:first-child,
 	td:after  { 
 		display:none;
 	}
@@ -93,9 +94,12 @@ td a+a:before {
 	table td, td {
 		padding-left:0; 
 	}
+	table:first-child {
+		margin-top: -$space32;
+	}
 	table.api td.group, table.compatibility td.group {
 		position: static;
-		padding:$space48 0 $space8; 
+		padding:$space8 0; 
 	}
 	td { 
 		border: none;
@@ -109,8 +113,12 @@ td a+a:before {
 		border-top:none;
 	}
 	tr {
+		padding:10px 0; 
 		border-bottom: 1px solid #eee;
-		padding:$space8 $space16; 
+	}
+	tr:last-child {
+		border-bottom: none;
+		padding-bottom: 0;
 	}
 	table td, td {
 		padding:0; 
