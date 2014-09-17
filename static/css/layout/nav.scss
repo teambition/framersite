@@ -72,10 +72,15 @@ nav.top form {
 	display: inline-block;
 }
 nav.top input {
+	font: inherit;
 	font-weight: 600;
-	background: none;
+	border: none; background: none;
 	color: $blue;
+	cursor: pointer; cursor: hand;
+	-webkit-font-smoothing: antialiased;
 	text-transform: uppercase;
+	border: none;
+	line-height: 1;
 }
 @media screen and (max-width: 1000px) {
 	nav.top .content-inner {

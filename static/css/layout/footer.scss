@@ -24,13 +24,14 @@ footer.global p {
 footer.global input {
 	border: none;
 	border-radius:3px 0 0 3px;
-	padding: 6px 12px 2px 12px;
+	padding: 4px 12px 2px 12px;
 	font-family: "Fakt", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size:14px;
 	height: 40px;
 	width:220px;
 	color: $graphite;
 	line-height: 20px;
+	vertical-align: middle;
 	float: left;
 }
 footer.global button {
@@ -52,10 +53,10 @@ footer.global button {
 footer.global .right p {
 	text-align: right;
 }
-footer.global ::-webkit-input-placeholder { color: $graphite60; line-height: 22px; }
-footer.global :-moz-placeholder { color: $graphite60; }
-footer.global ::-moz-placeholder { color: $graphite60; }
-footer.global :-ms-input-placeholder { color: $graphite60; }
+footer.global input::-webkit-input-placeholder { color: $graphite60; padding-top:1px; }
+footer.global input:-moz-placeholder { color: $graphite60; padding-top:1px; }
+footer.global input::-moz-placeholder { color: $graphite60; padding-top:1px; }
+footer.global input:-ms-input-placeholder { color: $graphite60; padding-top:1px; }
 
 @media screen and (max-width: 720px) {
 	footer.global {

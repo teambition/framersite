@@ -589,10 +589,17 @@ nav.top form {
   display: inline-block; }
 
 nav.top input {
+  font: inherit;
   font-weight: 600;
+  border: none;
   background: none;
   color: #28affa;
-  text-transform: uppercase; }
+  cursor: pointer;
+  cursor: hand;
+  -webkit-font-smoothing: antialiased;
+  text-transform: uppercase;
+  border: none;
+  line-height: 1; }
 
 @media screen and (max-width: 1000px) {
   nav.top .content-inner {
@@ -1128,8 +1135,6 @@ input {
   -webkit-appearance: none;
   border: none;
   -webkit-font-smoothing: antialiased;
-  cursor: hand;
-  cursor: pointer;
   line-height: 1; }
 
 .header form,
@@ -1170,13 +1175,14 @@ footer.global p {
 footer.global input {
   border: none;
   border-radius: 3px 0 0 3px;
-  padding: 6px 12px 2px 12px;
+  padding: 4px 12px 2px 12px;
   font-family: "Fakt", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   height: 40px;
   width: 220px;
   color: #616d85;
   line-height: 20px;
+  vertical-align: middle;
   float: left; }
 
 footer.global button {
@@ -1198,18 +1204,21 @@ footer.global button {
 footer.global .right p {
   text-align: right; }
 
-footer.global ::-webkit-input-placeholder {
+footer.global input::-webkit-input-placeholder {
   color: #a1a8b6;
-  line-height: 22px; }
+  padding-top: 1px; }
 
-footer.global :-moz-placeholder {
-  color: #a1a8b6; }
+footer.global input:-moz-placeholder {
+  color: #a1a8b6;
+  padding-top: 1px; }
 
-footer.global ::-moz-placeholder {
-  color: #a1a8b6; }
+footer.global input::-moz-placeholder {
+  color: #a1a8b6;
+  padding-top: 1px; }
 
-footer.global :-ms-input-placeholder {
-  color: #a1a8b6; }
+footer.global input:-ms-input-placeholder {
+  color: #a1a8b6;
+  padding-top: 1px; }
 
 @media screen and (max-width: 720px) {
   footer.global {

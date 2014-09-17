@@ -1,11 +1,9 @@
 
 $(document).ready(function() {
 
-	$(".feature-banners a").hover(
-		function() {
+	$(".feature-banners a").hover(function() {
 			$(this).toggleClass("is-active");
-		}
-	);
+	});
 
 	var docsSidebar, topNav, exampleBlock, exampleDevices;
 	docsSidebar = $('.sidebar');
