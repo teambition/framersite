@@ -76,7 +76,6 @@ td a {
 td a+a:before {
 	content: "\b7"; display: inline-block; margin-right: 4px; font-weight: 500; opacity: .5;
 }
-
 @media screen and (max-width: 440px) {
 	table, thead, tbody, th, td, tr { 
 		display: block; 

@@ -1,15 +1,15 @@
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
   border-radius: $radius;
-  background-clip: padding-box;  /* Stops bg color from leaking outside the border: */
+  background-clip: padding-box;  // Stops bg color from leaking outside the border: 
 }
 @mixin gradient-left-right($fromColor, $toColor) {
   background-color: $toColor; /* Fallback Color */
-  background-image: -webkit-gradient(linear, left top, right top, from($fromColor), to($toColor)); /* Saf4+, Chrome */
-  background-image: -webkit-linear-gradient(left, $fromColor, $toColor); /* Chrome 10+, Saf5.1+, iOS 5+ */
-  background-image:    -moz-linear-gradient(left, $fromColor, $toColor); /* FF3.6 */
-  background-image:     -ms-linear-gradient(left, $fromColor, $toColor); /* IE10 */
-  background-image:      -o-linear-gradient(left, $fromColor, $toColor); /* Opera 11.10+ */
+  background-image: -webkit-gradient(linear, left top, right top, from($fromColor), to($toColor)); 
+  background-image: -webkit-linear-gradient(left, $fromColor, $toColor); 
+  background-image:    -moz-linear-gradient(left, $fromColor, $toColor); 
+  background-image:     -ms-linear-gradient(left, $fromColor, $toColor); 
+  background-image:      -o-linear-gradient(left, $fromColor, $toColor); 
   background-image:         linear-gradient(left, $fromColor, $toColor);
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
 }
