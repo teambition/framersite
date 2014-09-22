@@ -585,7 +585,7 @@ Events are things that happen to objects. They can originate from the user like 
 
 The **DeviceView** class emulates a device like an iPhone, iPad or Android. It allows you to scale the device, scale the content and adjust the orientation. After the device is set up, everything will render within its screen. Device previews match mirrored previews, meaning that if you're previewing on iPhone and then view it on an iPhone it will appear in fullscreen.
 
-Framer Studio creates the device automatically under <code class="inline">Framer.Device</code>. If you want to set it up yourself use <code class="inline">Framer.Device = new Framer.DeviceView()</code>. Scaling and orientation properties are also prefixed with Framer.device: 
+Scaling and orientation properties are also prefixed with Framer.device: 
 
 <pre lang="coffeescript">
 Framer.Device.contentScale = 0.5
@@ -595,34 +595,17 @@ Framer.Device.orientation = 90
 Please note that the scale-to-fit view can render your content off-pixel to retain your screen ratio. Your content will always snap-to-pixel when viewed at 50%, 100% etc. If your browser supports it, device images are compressed with JPEG2000 to reduce image size.
 
 <table border="0" cellspacing="0" cellpadding="0" class="api">
-	<tbody><tr>
+	<tbody>
+	<tr>
 		<th>Name</th>
 		<th>Description</th>
-		<th class="examples">Examples</th>
 	</tr>
-
-	<tr>
-		<td colspan="3" class="group">Setup</td>
-	</tr>
-
-	<tr>
-		<td>new DeviceView({...})</td>
-		<td>Create a device view</td>
-		<td class="examples"></td>
-	</tr>
-
-	<tr>
-		<td>setupContext()</td>
-		<td>Everything drawn after this is called will be rendered into the device screen</td>
-		<td class="examples"></td>
-	</tr>
-
 	<tr>
 		<td colspan="3" class="group">Options</td>
 	</tr>
 
 	<tr>
-		<td>deviceType = "iphone-5s-spacegrey"</td>
+		<td>deviceType = "iphone-5s-silver"</td>
 		<td>The type of device to render. Valid options are: "fullscreen", "iphone-6-spacegray", "iphone-6-spacegray-hand", "iphone-6-silver", "iphone-6-silver-hand", "iphone-6-gold", "iphone-6-gold-hand", "iphone-5s-spacegray", "iphone-5s-spacegray-hand", "iphone-5s-silver", "iphone-5s-silver-hand", "iphone-5s-gold", "iphone-5s-gold-hand", "iphone-5c-green", "iphone-5c-green-hand", "iphone-5c-blue", "iphone-5c-blue-hand", "iphone-5c-red", "iphone-5c-red-hand", "iphone-5c-white", "iphone-5c-white-hand", "iphone-5c-yellow", "iphone-5c-yellow-hand", "ipad-mini-spacegrey", "ipad-mini-spacegrey-hand", "ipad-mini-silver", "ipad-mini-silver-hand", "nexus-5-black", "nexus-5-black-hand".</td>
 		<td class="examples"></td>
 	</tr>
@@ -697,6 +680,25 @@ Please note that the scale-to-fit view can render your content off-pixel to reta
 		<td class="examples"></td>
 	</tr>
 
+</tbody></table>
+
+**Note:** if you're not using Framer Studio, you can set up a DeviceView yourself:
+
+<table border="0" cellspacing="0" cellpadding="0" class="api">
+	<tbody><tr>
+		<th>Name</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>new DeviceView({...})</td>
+		<td>Create a device view</td>
+		<td class="examples"></td>
+	</tr>
+	<tr>
+		<td>setupContext()</td>
+		<td>Everything drawn after this is called will be rendered into the device screen</td>
+		<td class="examples"></td>
+	</tr>
 </tbody></table>
 
 <hr>
