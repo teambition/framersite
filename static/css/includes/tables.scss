@@ -10,6 +10,10 @@ table {
 	vertical-align: bottom;
 	position: relative;
 }
+table + p,
+p + table {
+	margin-top: $space32;
+}
 table td, td {
 	padding:$space8 $space16; 
 	color: $text;

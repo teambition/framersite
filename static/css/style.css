@@ -144,6 +144,10 @@ table {
   vertical-align: bottom;
   position: relative; }
 
+table + p,
+p + table {
+  margin-top: 32px; }
+
 table td, td {
   padding: 8px 16px;
   color: #666666;
