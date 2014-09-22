@@ -18,6 +18,8 @@
 		<li><a class="layers active" href="#layers">Layers</a></li>
 		<li><a class="animations" href="#animations">Animations</a></li>
 		<li><a class="events" href="#events">Events</a></li>
+		<li><a class="device" href="#device">Device</a></li>
+		<li><a class="print" href="#print">Print</a></li>
 		<li><a class="utilities" href="#utilities">Utilities</a></li>
 		<li><a class="defaults" href="#defaults">Defaults</a></li>
 	</ul>
@@ -86,8 +88,8 @@
 		<td>object with x, y, width and height values</td>
 	</tr>
 	<tr>
-		<td>screenFrame()</td>
-		<td>get this layer's absolute frame on the screen</td>
+		<td>screenFrame</td>
+		<td>get or set this layer's absolute frame on the screen</td>
 	</tr>
 	<tr>
 		<td>contentFrame()</td>
@@ -577,6 +579,124 @@ Events are things that happen to objects. They can originate from the user like 
 
 <hr>
 
+<a name="device"></a>
+### DeviceView
+
+The DeviceView class emulates a device like an iPhone, iPad or Android. It allows you to scale the device, scale the content and adjust the orientation. After the deivce is set up, everything will render into the device screen.
+
+Framer Studio creates the device automatically under `Framer.Device`. If you want to set it up yourself use `Framer.Device = new Framer.DeviceView()`.
+
+If the rendered device is the same type as the type you view it on, for example you set it to iPhone and view it on an iPhone it will always render fullscreen.
+
+Please note that the scale to fit option can render your content off pixel because we need to retain your screen ratio. The 50%, 100% etc. will always render pixel perfect. If your browser supports it, device images are compressed with jpeg2000 to reduce image size.
+
+<table border="0" cellspacing="0" cellpadding="0" class="api">
+	<tbody><tr>
+		<th>Name</th>
+		<th>Description</th>
+		<th class="examples">Examples</th>
+	</tr>
+
+	<tr>
+		<td colspan="3" class="group">Setup</td>
+	</tr>
+
+	<tr>
+		<td>new DeviceView({...})</td>
+		<td>Create a device view</td>
+		<td class="examples"></td>
+	</tr>
+
+	<tr>
+		<td>setupContext()</td>
+		<td>Everything drawn after this is called will be rendered into the device screen</td>
+		<td class="examples"></td>
+	</tr>
+
+	<tr>
+		<td colspan="3" class="group">Options</td>
+	</tr>
+
+	<tr>
+		<td>deviceType = "iphone-5s-spacegrey"</td>
+		<td>The type of device to render. Valid options are: "fullscreen", "iphone-6-spacegray", "iphone-6-spacegray-hand", "iphone-6-silver", "iphone-6-silver-hand", "iphone-6-gold", "iphone-6-gold-hand", "iphone-5s-spacegray", "iphone-5s-spacegray-hand", "iphone-5s-silver", "iphone-5s-silver-hand", "iphone-5s-gold", "iphone-5s-gold-hand", "iphone-5c-green", "iphone-5c-green-hand", "iphone-5c-blue", "iphone-5c-blue-hand", "iphone-5c-red", "iphone-5c-red-hand", "iphone-5c-white", "iphone-5c-white-hand", "iphone-5c-yellow", "iphone-5c-yellow-hand", "ipad-mini-spacegrey", "ipad-mini-spacegrey-hand", "ipad-mini-silver", "ipad-mini-silver-hand", "nexus-5-black", "nexus-5-black-hand".</td>
+		<td class="examples"></td>
+	</tr>
+
+	<tr>
+		<td>fullScreen = true|false</td>
+		<td>Set the device to render fullscreen, independent of the deviceType</td>
+		<td class="examples"></td>
+	</tr>
+
+
+	<tr>
+		<td colspan="3" class="group">Scaling</td>
+	</tr>
+
+	<tr>
+		<td>deviceScale = 0.5 | 1</td>
+		<td>Set the device scale immediately</td>
+		<td class="examples"></td>
+	</tr>
+
+	<tr>
+		<td>setDeviceScale(scale, animate)</td>
+		<td>Set the device scale and optionally animate</td>
+		<td class="examples"></td>
+	</tr>
+
+	<tr>
+		<td>contentScale = 0.5 | 1</td>
+		<td>Set the content scale immediately</td>
+		<td class="examples"></td>
+	</tr>
+
+	<tr>
+		<td>setContentScale(scale, animate)</td>
+		<td>Set the content scale and optionally animate</td>
+		<td class="examples"></td>
+	</tr>
+
+
+	<tr>
+		<td colspan="3" class="group">Orientation</td>
+	</tr>
+
+	<tr>
+		<td>orientation = 0 | 90</td>
+		<td>Set the device orientation immediately</td>
+		<td class="examples"></td>
+	</tr>
+
+	<tr>
+		<td>setOrientation(orientation, animate)</td>
+		<td>Set the device orientation and optionally animate </td>
+		<td class="examples"></td>
+	</tr>
+
+	<tr>
+		<td>orientationName = "portrait"</td>
+		<td>Set the device orientation by name. Valid options are "portrait", "landscape"</td>
+		<td class="examples"></td>
+	</tr>
+
+	<tr>
+		<td>rotateLeft()</td>
+		<td>Rotate the device clockwise to the left</td>
+		<td class="examples"></td>
+	</tr>
+
+	<tr>
+		<td>rotateRight()</td>
+		<td>Rotate the device clockwise to the right</td>
+		<td class="examples"></td>
+	</tr>
+
+</tbody></table>
+
+<hr>
+
 <!-- Utilities -->
 <a name="utilities"></a>
 ### Utilities
@@ -648,6 +768,39 @@ Utilities is a collection of functions that make things easier to do. Lots of ha
 		<td>isTouch()</td>
 		<td>Returns wether this is a touch device.</td>
 	</tr>
+	<tr>
+		<td>isPhone()</td>
+		<td>Returns wether this is a phone device.</td>
+	</tr>
+	<tr>
+		<td>isTablet()</td>
+		<td>Returns wether this is a tablet device.</td>
+	</tr>
+	<tr>
+		<td>isDesktop()</td>
+		<td>Returns wether this is a desktop device.</td>
+	</tr>
+
+</tbody></table>
+
+<hr>
+
+<!-- Print -->
+<a name="print"></a>
+### Print
+Printing allows you to inspect variables.
+
+
+<table border="0" cellspacing="0" cellpadding="0" class="api">
+	<tbody><tr>
+		<th>Function</th>
+		<th>Description</th>
+		<th class="examples">Examples</th>
+	</tr>
+	<tr>
+		<td>print("hello")</td>
+		<td>Prints output</td>
+	</tr>
 </tbody></table>
 
 <hr>
@@ -672,6 +825,10 @@ The Framer.Defaults object contains all defaults for Layers and Animations.
 	<tr>
 		<td>Framer.Defaults.Animation</td>
 		<td>Animation defaults</td>
+	</tr>
+	<tr>
+		<td>Framer.Defaults.DeviceView</td>
+		<td>DeviceView defaults</td>
 	</tr>
 	<tr>
 		<td>Framer.resetDefaults()</td>
