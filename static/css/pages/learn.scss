@@ -7,8 +7,14 @@ h4 {
 }
 .align-right {
 	max-width: 750px;
+	width: 100%;
 	float: right;
 	clear:both;
+}
+
+.align-right p {
+	max-width: 480px;
+	text-align: left;
 }
 // Clearfix wrapper
 .content-inner:after {
