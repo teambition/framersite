@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block currentpage %}class="error"{% endblock %}
+{% block height %}class="full-height"{% endblock %}
+{% block content %}
+
+<div class="message">
+	<h2>Thanks for downloading Framer Studio</h2>
+	<p>If nothing happens or you are looking for an older version please visit <a href="http://studio.update.framerjs.com/archive/">the archive</a></p>
+	<a class="btn blue" href="/">Home</a>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="{% static '/js/main.js' %}"></script>
+<script src="{% static '/js/analytics.js' %}"></script>
+<script src="{% static '/js/srcset.min.js' %}"></script>
+
+<script type="text/javascript" charset="utf-8">
+
+$(document).ready(function() {
+
+	var sparkleHost = "http://studio.update.framerjs.com"
+	var downloadLink = sparkleHost + "/archive";
+
+	$.get(sparkleHost + "/latest.txt", function(result) {
+		downloadLink = sparkleHost + "/" + result;
+		setTimeout(function() { window.location = downloadLink; }, 1000)
+		ga('send', 'event', 'Download', 'Framer Studio', downloadLink)
+	})
+})
+
+</script>
+
+{% endblock scripts %}
