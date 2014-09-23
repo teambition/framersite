@@ -1,3 +1,20 @@
+// Page header 
+.page-header {
+	background: $header;
+	color: #fff;
+	height: 304px;
+	padding-top: 100px;
+	margin-top: $space64;
+}
+.page-header h1 {
+	float:left;
+	position: relative;
+	top: -8px;
+}
+.page-header h6 {
+	float:right;
+	color: $graphite-blue;
+}
 // Type - Vertical spacing
 h3 {
 	margin-bottom: $space24;
@@ -22,14 +39,17 @@ h4 {
   display: table;
   clear: both;
 }
+// Sidebar
 .sidebar {
 	float:left;
 	position: absolute;
 	max-width: 210px;
 	width: 100%;
+	margin-top: 182px;
 }
 .sidebar.sticky {
 	position: fixed;
+	margin-top: 0;
 	top: 128px;
 }
 .sidebar ul li {
@@ -39,10 +59,10 @@ h4 {
 .sidebar li+li {
 	margin-top: $space8;
 	padding-top: $space8;
-	border-top: 1px solid #eee;
+	border-top: 1px solid $separator;
 }
 .sidebar a {
-	color: $sidebar-links;
+	color: $blue;
 	text-transform: uppercase;
 	font-weight: 600;
 	font-size:12px;
@@ -50,6 +70,23 @@ h4 {
 }
 .sidebar a.active {
 	color: $black;
+}
+// Learn nav
+.learn-nav {
+	border-bottom: 1px solid #eee;
+	margin-bottom: $space80;
+}
+.learn-nav a.active {
+	border-bottom: 1px solid;
+	padding-bottom: $space32;
+	margin-bottom: -1px;
+}
+.learn-nav a {
+	text-align: center;
+}
+.learn-nav figure {
+	display: inline-block;
+	margin-bottom: $space16;
 }
 @media screen and (max-width:1020px) {
 	.content-inner {

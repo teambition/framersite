@@ -1,0 +1,45 @@
+{% extends "page.html" %}
+{% block title %}Framer - Learn Basics{% endblock %}
+{% block islearn %}active{% endblock %}
+{% block basics %}active{% endblock %}
+
+{% block sidebar %}
+<div class="sidebar">
+	<ul>	
+		<li><a href="/learn/basics">Layers</a></li>
+		<li><a class="active" href="/learn/basics/animation">Animation</a></li>
+		<li><a href="/learn/basics/states">States</a></li>
+		<li><a href="/learn/basics/events">Events</a></li>
+		<li><a href="/learn/basics/dragging">Dragging</a></li>
+		<li><a href="/learn/basics/scrolling">Scrolling</a></li>
+	</ul>
+</div> <!--sidebar-->
+{% endblock sidebar %}
+
+{% block pagetitle %} <!--Header Text-->
+<h1>Learn Framer</h1>
+<h6 class="col-2">Start prototyping with Framer. Learn how easy it is to define animations and interactions in CoffeeScript.</h6>
+{% endblock pagetitle %}
+
+{% block body %}
+{% filter pygmentify %}
+{% filter markdown %}
+
+#### Animation
+
+Most properties of a layer can be animated: x, y, width, height, scale, opacity, etc. You can animate multiple properties at the same time.
+
+Animations optionally take a curve that describes the type of animation. You can use pre-defined curves like 'linear' or 'ease-in', custom ones, or spring animations.
+
+You can create an animation explicitly with <code class="inline">myAnimation = layer.animate({..})</code> or with the shortcut on any layer <code class="inline">layer.animate({..}).</code>
+<pre lang="coffeescript">
+# Creates an animation using a spring
+springUp = layer.animate
+	properties: {y: layer.y + 100}
+	curve: "spring(100,10,0)"
+</pre>
+
+
+{% endfilter %}	
+{% endfilter %}
+{% endblock body %}	

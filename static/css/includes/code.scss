@@ -8,11 +8,10 @@ pre {
     padding: $space16;
     margin-bottom: $space32;
     display:block;
-
     // Default
-    color: #616D85; 
+    color: #788D9E; 
     background: #fff; 
-    box-shadow: inset 0 0 0 1px #E4EBF2, inset 40px 0 0 #FBFCFE, inset 41px 0 0 #E4EBF2;
+    box-shadow: inset 0 0 0 1px #E4EBF2, inset 40px 0 0 #FBFDFE, inset 41px 0 0 #E4EBF2;
 }
 pre, code {
     font-family: 'Menlo', 'Monaco', Courier, monospace; 
@@ -25,20 +24,24 @@ pre, code {
 	border-bottom: 1px dotted #ddd;
 	padding-bottom: 2px;
 }
-.o { color: #616D85; } 
-.nf { color: #616D85; } // Name.Function 
+
+.o,
+.nf { 
+    color: #788D9E; // Default
+} 
+
 .k { color: #FF9740;} // Orange
 
 .c, 
 .cm,
 .cp,
 .c1,
-.cs { color: #B0B6C2; }  // Comment 
+.cs { color: #A4BDD1; }  // Comment 
 
 .mi, .mf { color: #5BC1F0 } // Blue
 .s { 
-    color: #8DDE19; 
-    color: #6ED300; // Green
+    color: #8DDE19; // Original Green
+    color: #6ED300; // Darker Green
 } 
 
 // Custom Line Numbers
@@ -54,7 +57,7 @@ pre ol li:before {
     float:left;
     margin-right: $space40;
     font-size: 10px;
-    color: #B0B6C2;
+    color: #B7CADA;
     position: relative;
     top:1px;
     -webkit-user-select: none; 

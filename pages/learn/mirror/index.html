@@ -1,19 +1,14 @@
-{% extends "base.html" %}
+{% extends "page.html" %}
 {% block title %}Framer - Learn Mirror{% endblock %}
-{% block currentpage %}class="narrow"{% endblock currentpage %}
-{% block mirror %}class="active"{% endblock %}
-{% block pages %}
+{% block islearn %}active{% endblock %}
+{% block mirror %}active{% endblock %}
 
-{% filter markdown %}
-# Mirror
-## Preview your prototypes anywhere
+{% block pagetitle %} <!--Header Text-->
+<h1>Framer Mirror</h1>
+<h6 class="col-2">Preview your prototypes in realtime on any iOS or Android device with a WebKit browser.</h6>
+{% endblock pagetitle %}
 
----
-{% endfilter %}
-
-{% include "learn-sidebar.html" %}
-
-<div class="align-right">
+{% block body %}
 {% filter pygmentify %}
 {% filter markdown %}
 #### Overview
@@ -74,5 +69,4 @@ To see all of your active documents, go to the root of the webserver. Simply rem
 
 {% endfilter %}	
 {% endfilter %}	
-</div> <!--align-right-->
-{% endblock %}
+{% endblock body %}

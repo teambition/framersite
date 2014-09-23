@@ -6,12 +6,12 @@
 {% block sidebar %}
 <div class="sidebar">
 	<ul>	
-		<li><a class="active" href="/learn/basics/layers">Layers</a></li>
+		<li><a href="/learn/basics">Layers</a></li>
 		<li><a href="/learn/basics/animation">Animation</a></li>
 		<li><a href="/learn/basics/states">States</a></li>
 		<li><a href="/learn/basics/events">Events</a></li>
 		<li><a href="/learn/basics/dragging">Dragging</a></li>
-		<li><a href="/learn/basics/scrolling">Scrolling</a></li>
+		<li><a class="active" href="/learn/basics/scrolling">Scrolling</a></li>
 	</ul>
 </div> <!--sidebar-->
 {% endblock sidebar %}
@@ -25,7 +25,7 @@
 {% block body %}
 {% filter pygmentify %}
 {% filter markdown %}
-#### Layers
+#### Scrolling
 A layer is just a rectangle that draws stuff in the browser. It has a set of basic properties like x, y, width and height. It also has other properties like opacity, scale, and blur. Layers can display images, text, or both.
 <a name="basics"></a> 
 <pre lang="coffeescript">

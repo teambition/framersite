@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block currentpage %}class="narrow"{% endblock currentpage %}
+
+{% block pageheader %}
+<header class="page-header">
+	<div class="content-inner">
+	{% block pagetitle %}
+	{% endblock pagetitle %}
+	</div>
+</header>
+{% endblock pageheader %}
+
+{% block content %}
+<div class="content-inner">
+{% block sidebar %}
+{% endblock sidebar %}
+
+<nav class="learn-nav clearfix">
+		<a class="col-4 blue {% block basics %}{% endblock %}" href="/learn/basics"><figure class="icon-learn-basics"></figure><br>Basics</a>
+		<a class="col-4 green {% block importing %}{% endblock %}" href="/learn/importing"><figure class="icon-learn-importing"></figure><br>Importing</a>
+		<a class="col-4 purple {% block mirror %}{% endblock %}" href="/learn/mirror"><figure class="icon-learn-mirror"></figure><br>Mirror</a>
+		<a class="col-4 cyan {% block coffeescript %}{% endblock %}" href="/learn/coffeescript"><figure class="icon-learn-coffeescript"></figure><br>CoffeeScript</a>
+</nav> 
+
+<div class="align-right">
+{% block body %}
+{% endblock body %}
+</div> <!--align-right-->
+</div> <!--content-inner-->
+{% endblock content %}

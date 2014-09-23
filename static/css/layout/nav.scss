@@ -34,13 +34,16 @@ nav.top.sticky {
 	position: fixed;
 }
 // Targets all navigation items, not just top nav.
-nav li {
+nav li, 
+nav a {
 	float: left;
 	font-size: 12px;
 	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
 	line-height: inherit;
+}
+nav.top a {
 	text-shadow: 0 1px 0 rgba(0,0,0,0.1);
 }
 .nav-items li:first-child,
@@ -56,9 +59,10 @@ nav a {
 	color: #fff;
 }
 // Hover States
-nav a:hover,
-nav a:focus {
+nav.top a:hover,
+nav.top a:focus {
 	color: lighten($nav-links, 40%);
+	opacity: 1;
 }
 nav.top input:hover,
 nav.top input:focus {

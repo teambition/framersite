@@ -1,19 +1,14 @@
-{% extends "base.html" %}
+{% extends "page.html" %}
 {% block title %}Framer - Learn Importing{% endblock %}
-{% block currentpage %}class="narrow"{% endblock currentpage %}
-{% block importing %}class="active"{% endblock %}
-{% block pages %}
+{% block islearn %}active{% endblock %}
+{% block importing %}active{% endblock %}
 
-{% filter markdown %}
-# Importing
-## From Sketch or Photoshop
+{% block pagetitle %} <!--Header Text-->
+<h1>Importing</h1>
+<h6 class="col-2">Import files from Sketch, Photoshop or After Effects and turn them into interactive prototypes.</h6>
+{% endblock pagetitle %}
 
----
-{% endfilter %}
-
-{% include "learn-sidebar.html" %}
-
-<div class="align-right">
+{% block body %}
 {% filter pygmentify %}
 {% filter markdown %}
 #### Overview
@@ -98,5 +93,4 @@ Subsequent imports from the same file will work as long as you don't rename laye
 </table>
 {% endfilter %}	
 {% endfilter %}	
-</div> <!--align-right-->
-{% endblock %}
+{% endblock body %}

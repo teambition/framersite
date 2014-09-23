@@ -36,13 +36,12 @@
 		</ul>
 	</nav> <!--nav.top-->
 
+	{% block pageheader %}
+	{% endblock pageheader %}
+	
 	<section class="container">
 		{% block content %}
 		{% endblock content %}
-		<div class="content-inner">
-			{% block pages %}
-			{% endblock pages %}
-		</div>
 	</section>
 
 	<footer class="global">
