@@ -57,9 +57,10 @@ pre ol li:before {
     color: #B0B6C2;
     position: relative;
     top:1px;
+    -webkit-user-select: none; 
+    -moz-user-select: none;  
+    -ms-user-select: none;     
 }
-
-
 @media screen and (max-width: 660px) {
     pre ol li:before {
         content:"";

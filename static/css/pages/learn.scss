@@ -26,6 +26,7 @@ h4 {
 	float:left;
 	position: absolute;
 	max-width: 210px;
+	width: 100%;
 }
 .sidebar.sticky {
 	position: fixed;
@@ -37,16 +38,17 @@ h4 {
 }
 .sidebar li+li {
 	margin-top: $space8;
+	padding-top: $space8;
+	border-top: 1px solid #eee;
 }
-.sidebar a,
-.sidebar .title {
-	color: $blue;
+.sidebar a {
+	color: $sidebar-links;
 	text-transform: uppercase;
 	font-weight: 600;
 	font-size:12px;
 	letter-spacing: 0.5px;
 }
-.sidebar .title {
+.sidebar a.active {
 	color: $black;
 }
 @media screen and (max-width:1020px) {
