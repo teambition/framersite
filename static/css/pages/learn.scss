@@ -2,18 +2,24 @@
 .page-header {
 	background: $header;
 	color: #fff;
-	height: 304px;
+	height: 376px; // 440px if nav is included
 	padding-top: 100px;
 	margin-top: $space64;
 }
-.page-header h1 {
-	float:left;
-	position: relative;
-	top: -8px;
-}
-.page-header h6 {
-	float:right;
+.page-header h2 {
 	color: $graphite-blue;
+}
+.page-header .content-inner {
+	position: relative;
+}
+.page-header img {
+	position: absolute;
+	bottom:-108px;
+	right:176px;
+	max-height: 420px;
+	max-width: 340px;
+	z-index: 400;
+	background:red;
 }
 a[name] {
 	position: relative; top: -228px;

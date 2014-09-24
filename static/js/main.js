@@ -42,18 +42,6 @@ $(document).ready(function() {
 			$(topNav).removeClass('fade-out');
 		}
 
-		// Sticky nav on home
-		if ($(window).scrollTop() > 400) {
-			$(pagesNav).addClass('sticky').removeClass('fade-out');
-			alert("yes");
-		}
-		else if ($(topNav).hasClass('sticky') && scrollPos <= 400) {
-			$(pagesNav).removeClass('sticky').addClass('fade-out');
-		}
-		if (scrollPos < 200) {
-			$(pagesNav).removeClass('fade-out');
-		}
-
 		if (playCarouselVideo == false && videoElement) {
 			if (scrollPos > 1100) {
 				videoElement.play()
