@@ -4,6 +4,8 @@
 body.error {
 	background: $header;
 	height: 100%;
+	min-width: 720px;
+	min-height:500px;
 }
 .error .container {
 	height: 100%;
@@ -21,6 +23,26 @@ body.error {
 	color: #fff;
 	margin-bottom: $space24;
 }
+.error p {
+	color: $graphite80;
+	margin-bottom: $space40;
+	margin-top: -24px;
+}
+.error p a {
+	color: #fff;
+}
 .error footer {
 	display: none;
+}
+.error img {
+	margin-top: -72px;
+	margin-bottom: $space24;
+	height: 128px;
+	width: 128px;
+}
+
+@media screen and (min-height: 1000px) {
+	.error img {
+		margin-top: -100px;
+	}
 }

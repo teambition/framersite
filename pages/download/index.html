@@ -4,8 +4,9 @@
 {% block content %}
 
 <div class="message">
-	<h2>Thanks for downloading Framer Studio</h2>
-	<p>If nothing happens or you are looking for an older version please visit <a href="http://studio.update.framerjs.com/archive/">the archive</a></p>
+	<img src="/static/images/home/app-icon.png" srcset="/static/images/home/app-icon@2x.png 2x">
+	<h2>Thank you for downloading Framer Studio.</h2>
+	<p>If your download doesn't start automatically, please <a href="http://studio.update.framerjs.com/archive/">visit the archive.</a></p>
 	<a class="btn blue" href="/">Home</a>
 </div>
 {% endblock %}
@@ -17,7 +18,6 @@
 <script src="{% static '/js/srcset.min.js' %}"></script>
 
 <script type="text/javascript" charset="utf-8">
-
 $(document).ready(function() {
 
 	var sparkleHost = "http://studio.update.framerjs.com"
@@ -29,7 +29,5 @@ $(document).ready(function() {
 		ga('send', 'event', 'Download', 'Framer Studio', downloadLink)
 	})
 })
-
 </script>
-
 {% endblock scripts %}
