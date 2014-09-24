@@ -27,7 +27,7 @@
 {% filter markdown %}
 #### States
 A layer is just a rectangle that draws stuff in the browser. It has a set of basic properties like x, y, width and height. It also has other properties like opacity, scale, and blur. Layers can display images, text, or both.
-<a name="basics"></a> 
+
 <pre lang="coffeescript">
 # Create a new layer
 myLayer = new Layer width:128, height:128
@@ -35,7 +35,7 @@ myLayer.x = 100
 </pre>
 
 <hr>
-
+<a name="basics"></a> 
 #### Hierarchy
 Layers can contain other layers. We call these subLayers. The parent of a layer is called a superLayer. Layers inherit from their superLayers. For example, if you change the opacity of a layer to 0.5, all subLayers will have opacity of 0.5.
 

@@ -6,12 +6,13 @@ pre {
     -webkit-font-smoothing: subpixel-antialiased;
     // Spacing
     padding: $space16;
+    padding-left: 21px;
     margin-bottom: $space32;
     display:block;
     // Default
     color: #788D9E; 
     background: #fff; 
-    box-shadow: inset 0 0 0 1px #E4EBF2, inset 40px 0 0 #FBFDFE, inset 41px 0 0 #E4EBF2;
+    box-shadow: inset 0 0 0 1px #E4EBF2, inset 46px 0 0 #FBFDFE, inset 47px 0 0 #E4EBF2;
 }
 pre, code {
     font-family: 'Menlo', 'Monaco', Courier, monospace; 

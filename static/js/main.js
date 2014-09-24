@@ -5,9 +5,10 @@ $(document).ready(function() {
 			$(this).toggleClass("is-active");
 	});
 
-	var docsSidebar, topNav, exampleBlock, exampleDevices;
-	docsSidebar = $('.sidebar');
-	topNav = $('.home nav.top');
+	var pageSidebar, homeNav, pagesNav, exampleBlock, exampleDevices;
+	pageSidebar = $('.sidebar');
+	homeNav = $('.home nav.top');
+	pagesNav = $('.narrow nav.top')
 	exampleBlock = $('.examples');
 	exampleDevices = $('.device-left, .device-right');
 
@@ -24,21 +25,33 @@ $(document).ready(function() {
 
 		var scrollPos = $(this).scrollTop();
 
-		if ($(window).scrollTop() > 330) {
-			$(docsSidebar).addClass('sticky');
+		if ($(window).scrollTop() > 420) {
+			$(pageSidebar).addClass('sticky');
 		} else {
-			$(docsSidebar).removeClass('sticky');
+			$(pageSidebar).removeClass('sticky');
 		}
 		
+		// Sticky nav on home
 		if ($(window).scrollTop() > 800) {
 			$(topNav).addClass('sticky').removeClass('fade-out');
 		}
 		else if ($(topNav).hasClass('sticky') && scrollPos <= 800) {
 			$(topNav).removeClass('sticky').addClass('fade-out');
 		}
-
 		if (scrollPos < 600) {
 			$(topNav).removeClass('fade-out');
+		}
+
+		// Sticky nav on home
+		if ($(window).scrollTop() > 400) {
+			$(pagesNav).addClass('sticky').removeClass('fade-out');
+			alert("yes");
+		}
+		else if ($(topNav).hasClass('sticky') && scrollPos <= 400) {
+			$(pagesNav).removeClass('sticky').addClass('fade-out');
+		}
+		if (scrollPos < 200) {
+			$(pagesNav).removeClass('fade-out');
 		}
 
 		if (playCarouselVideo == false && videoElement) {

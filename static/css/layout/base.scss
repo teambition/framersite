@@ -72,7 +72,7 @@ img {
 // Desk ~72px // Tablet ~48-px // Mobile ~16px
 hr {
 	border: none;  width: 100%;
-	border-bottom: 1px solid #eee;
+	border-bottom: 1px solid $separator;
 	display: block; 
 	margin: $space72 auto;
 }
