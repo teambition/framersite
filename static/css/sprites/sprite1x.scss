@@ -1,7 +1,7 @@
-﻿/* glue: 0.9.4 hash: d8eccff438 */
+﻿/* glue: 0.9.4 hash: 12dada65f1 */
 /* 1x */
-.logo-instagram,.logo-facebook,.logo-groupon,.logo-google,.logo-stripe,.icon-learn-basics,.logo-twitter,.logo-dropbox,.icon-learn-importing,.logo-apple,.logo-adobe,.icon-learn-mirror,.icon-learn-coffeescript,.logo-spotify,.icon-workflow,.icon-preview,.icon-more,.icon-interaction,.icon-general,.icon-features,.icon-code,.icon-animation,.icon-arrow{
-    background-image:url('/static/images/sprites/sprite1x.png?d8eccff438');
+.logo-instagram,.logo-facebook,.logo-groupon,.logo-google,.logo-stripe,.logo-twitter,.logo-dropbox,.icon-learn-importing,.icon-learn-importing-active,.logo-apple,.logo-adobe,.icon-learn-mirror,.icon-learn-mirror-active,.icon-learn-basics,.icon-learn-basics-active,.logo-spotify,.icon-learn-coffeescript,.icon-learn-coffeescript-active,.icon-workflow,.icon-preview,.icon-more,.icon-interaction,.icon-general,.icon-features,.icon-code,.icon-animation,.icon-arrow{
+    background-image:url('/static/images/sprites/sprite1x.png?12dada65f1');
     background-repeat:no-repeat;
     -webkit-background-size: 180px 171px;
     -moz-background-size: 180px 171px;
@@ -38,110 +38,134 @@
     height:27px;
 }
 
-.icon-learn-basics{
-    background-position:-114px -27px;
-    width:42px;
-    height:34px;
-}
-
 .logo-twitter{
-    background-position:-114px -61px;
+    background-position:-114px -27px;
     width:37px;
     height:30px;
 }
 
 .logo-dropbox{
-    background-position:0 -105px;
+    background-position:-114px -57px;
     width:34px;
     height:32px;
 }
 
 .icon-learn-importing{
-    background-position:0 -137px;
+    background-position:0 -105px;
+    width:28px;
+    height:34px;
+}
+
+.icon-learn-importing-active{
+    background-position:-28px -105px;
     width:28px;
     height:34px;
 }
 
 .logo-apple{
-    background-position:-34px -105px;
+    background-position:-148px -57px;
     width:27px;
     height:32px;
 }
 
 .logo-adobe{
-    background-position:-61px -105px;
+    background-position:-56px -105px;
     width:32px;
     height:29px;
 }
 
 .icon-learn-mirror{
-    background-position:-28px -137px;
+    background-position:0 -139px;
     width:32px;
     height:32px;
 }
 
-.icon-learn-coffeescript{
-    background-position:-60px -137px;
+.icon-learn-mirror-active{
+    background-position:-32px -139px;
     width:32px;
     height:32px;
+}
+
+.icon-learn-basics{
+    background-position:-64px -139px;
+    width:31px;
+    height:31px;
+}
+
+.icon-learn-basics-active{
+    background-position:-95px -139px;
+    width:31px;
+    height:31px;
 }
 
 .logo-spotify{
-    background-position:-92px -137px;
+    background-position:-126px -139px;
     width:30px;
     height:30px;
 }
 
+.icon-learn-coffeescript{
+    background-position:-151px -27px;
+    width:28px;
+    height:28px;
+}
+
+.icon-learn-coffeescript-active{
+    background-position:-88px -105px;
+    width:28px;
+    height:28px;
+}
+
 .icon-workflow{
-    background-position:-156px -27px;
+    background-position:-114px -89px;
     width:16px;
     height:16px;
 }
 
 .icon-preview{
-    background-position:-156px -43px;
+    background-position:-130px -89px;
     width:16px;
     height:16px;
 }
 
 .icon-more{
-    background-position:-151px -61px;
+    background-position:-146px -89px;
     width:16px;
     height:16px;
 }
 
 .icon-interaction{
-    background-position:-90px -73px;
+    background-position:-162px -89px;
     width:16px;
     height:16px;
 }
 
 .icon-general{
-    background-position:-90px -89px;
+    background-position:-90px -73px;
     width:16px;
     height:16px;
 }
 
 .icon-features{
-    background-position:-93px -105px;
+    background-position:-90px -89px;
     width:16px;
     height:16px;
 }
 
 .icon-code{
-    background-position:-109px -105px;
+    background-position:-116px -105px;
     width:16px;
     height:16px;
 }
 
 .icon-animation{
-    background-position:-125px -105px;
+    background-position:-132px -105px;
     width:16px;
     height:16px;
 }
 
 .icon-arrow{
-    background-position:-172px -27px;
+    background-position:-108px -55px;
     width:6px;
     height:10px;
 }

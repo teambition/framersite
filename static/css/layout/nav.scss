@@ -7,7 +7,6 @@ nav.top {
 	position: absolute;
 	top:0;
 	background: $header;
-	z-index: 400;
 }
 .home nav.top {
 	position: absolute;
@@ -16,12 +15,6 @@ nav.top ul {
 	max-width: 1020px;
 	margin:0 auto;
 }
-.narrow nav.top ul,
-nav.top li,
-nav.top a  {
-	position: relative;
-	z-index: 9000;
-}
 @include keyframes(fade-in) {
 	0%   { top: -64px; }
 	100% { top: 0; }
@@ -29,6 +22,7 @@ nav.top a  {
 nav.top.sticky {
  	@include animation('fade-in .2s forwards');
  	position: fixed;
+ 	z-index: 400;
 } 
 @include keyframes(fade-out) {
 	0%   { top: 0; }

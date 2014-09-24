@@ -3,7 +3,7 @@
 	background: $header;
 	color: #fff;
 	height: 376px; // 440px if nav is included
-	padding-top: 100px;
+	padding-top: 80px;
 	margin-top: $space64;
 }
 .page-header h2 {
@@ -14,12 +14,11 @@
 }
 .page-header img {
 	position: absolute;
-	bottom:-108px;
+	bottom:-128px;
 	right:176px;
 	max-height: 420px;
 	max-width: 340px;
 	z-index: 400;
-	background:red;
 }
 a[name] {
 	position: relative; top: -228px;
@@ -61,7 +60,7 @@ pre {
 	position: absolute;
 	max-width: 105px;
 	width: 100%;
-	margin-top: 182px;
+	margin-top: 242px;
 }
 .sidebar.sticky {
 	position: fixed;
@@ -92,14 +91,32 @@ pre {
 	border-bottom: 1px solid #eee;
 	margin-bottom: $space80;
 }
-.learn-nav a.active {
-	border-bottom: 1px solid;
-	padding-bottom: $space32;
+.learn-nav a {
+	color: $subnav-links;
+}
+.learn-nav .active {
+	border-bottom: 1px solid $blue;
+	padding-bottom: $space48;
 	margin-bottom: -1px;
 }
-.learn-nav a {
-	text-align: center;
+.learn-nav .nav-title {
+	margin: 20px 0 $space16 0;
 }
+.learn-nav .active .nav-title {
+	color: #222;
+}
+.learn-nav span {
+	text-transform: none;
+	font-weight: 400;
+	letter-spacing: 0;
+	line-height: 1.5;
+	font-size: 14px;
+	opacity: 0.8;
+}
+.learn-nav .active span {
+	opacity: 1;
+}
+.learn
 .learn-nav figure {
 	display: inline-block;
 	margin-bottom: $space16;

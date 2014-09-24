@@ -4,8 +4,9 @@
 {% block pageheader %}
 <header class="page-header">
 	<div class="content-inner">
-	{% block pagetitle %}
-	{% endblock pagetitle %}
+		<h1>Start prototyping</h1>
+		<h2 class="col-2">Learn how to create interactive prototypes with Framer</h2>
+		<img class="learn-banner" src="/static/images/learn/learn-banner.png" srcset="/static/images/learn/learn-banner@2x.png 2x" draggable="false">
 	</div>
 </header>
 {% endblock pageheader %}
@@ -15,12 +16,32 @@
 {% block sidebar %}
 {% endblock sidebar %}
 
+
+{% block learnnav %}
 <nav class="learn-nav clearfix">
-		<a class="col-4 blue {% block basics %}{% endblock %}" href="/learn/basics/"><figure class="icon-learn-basics"></figure><br>Basics</a>
-		<a class="col-4 green {% block importing %}{% endblock %}" href="/learn/importing"><figure class="icon-learn-importing"></figure><br>Importing</a>
-		<a class="col-4 purple {% block mirror %}{% endblock %}" href="/learn/mirror"><figure class="icon-learn-mirror"></figure><br>Mirror</a>
-		<a class="col-4 cyan {% block coffeescript %}{% endblock %}" href="/learn/coffeescript/#intro"><figure class="icon-learn-coffeescript"></figure><br>CoffeeScript</a>
+		<a class="col-4 {% block basics %}{% endblock %}" href="/learn/basics/">
+			<figure class="icon-learn-basics{% block basics2 %}{% endblock %}"></figure>
+			<div class="nav-title">Basics</div>
+			<span>Learn how to start creating interactive prototypes with Framer</span>
+		</a>
+
+		<a class="col-4 {% block importing %}{% endblock %}" href="/learn/importing">
+			<figure class="icon-learn-importing{% block importing2 %}{% endblock %}"></figure>
+			<div class="nav-title">Importing</div>
+			<span>Learn how to import layer groups directly from Photoshop or Sketch</span>
+		</a>
+		<a class="col-4 {% block mirror %}{% endblock %}" href="/learn/mirror">
+			<figure class="icon-learn-mirror{% block mirror2 %}{% endblock %}"></figure>
+			<div class="nav-title">Mirror</div>
+			<span>Learn how to preview your prototypes any mobile device</span>
+		</a>
+		<a class="col-4 {% block coffeescript %}{% endblock %}" href="/learn/coffeescript/#intro">
+			<figure class="icon-learn-coffeescript{% block coffeescript2 %}{% endblock %}"></figure>
+			<div class="nav-title">CoffeeScript</div>
+			<span>Learn all you need to know of CoffeeScript for Framer</span>
+		</a>
 </nav> 
+{% endblock learnnav %}
 
 <div class="align-right">
 {% block body %}
