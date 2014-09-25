@@ -4,21 +4,25 @@
 {% block coffeescript %}active{% endblock %}
 {% block coffeescript2 %}-active{% endblock %}
 
-{% block pagetitle %} <!--Header Text-->
-<h1>CoffeeScript</h1>
-<h6 class="col-2">Learn the basics of CoffeeScript, a more legible and minimal way to write JavaScript.</h6>
-{% endblock pagetitle %}
+{% block sidebar %}
+<div class="sidebar">
+	<ul>	
+		<li><a href="/learn/coffeescript">Overview <div class="small">Hierarchy and Properties</div></a></li>
+		<li><a href="/learn/coffeescript/datatypes">Data types <div class="small">Curves and Timing</div></a></li>
+		<li><a href="/learn/coffeescript/functions">Functions <div class="small">Sets of properties</div></a></li>
+		<li><a href="/learn/coffeescript/resources">Resources <div class="small">Layer interactions</div></a></li>
+	</ul>
+</div> <!--sidebar-->
+{% endblock sidebar %}
 
 {% block body %}
 {% filter pygmentify %}
 {% filter markdown %}
-##### Comments <a name="intro"></a>
 
-Comments is text that is not code. You use them to explain what happens in the code around it if it's not self evident from the code. Comments are prefixed with **#**.
-<pre lang="coffeescript">
-# I am a comment
-5 + 6 # I am a comment too
-</pre>
+### CoffeeScript
+Learn the basics of CoffeeScript, a more legible and minimal way to write JavaScript.
+
+---
 
 ##### Printing Output
 

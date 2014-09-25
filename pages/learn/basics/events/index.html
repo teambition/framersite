@@ -18,16 +18,10 @@
 </div> <!--sidebar-->
 {% endblock sidebar %}
 
-{% block pagetitle %} <!--Header Text-->
-<h1>Learn Framer</h1>
-<h6 class="col-2">Start prototyping with Framer. Learn how easy it is to define animations and interactions in CoffeeScript.</h6>
-{% endblock pagetitle %}
-
-
 {% block body %}
 {% filter pygmentify %}
 {% filter markdown %}
-#### Events
+### Events
 Events are things that can happen to a layer, often caused by user interaction. 
 They include a click, mouse over, a scroll and more.
 

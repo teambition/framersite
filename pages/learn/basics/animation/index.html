@@ -18,16 +18,11 @@
 </div> <!--sidebar-->
 {% endblock sidebar %}
 
-{% block pagetitle %} <!--Header Text-->
-<h1>Learn Framer</h1>
-<h6 class="col-2">Start prototyping with Framer. Learn how easy it is to define animations and interactions in CoffeeScript.</h6>
-{% endblock pagetitle %}
-
 {% block body %}
 {% filter pygmentify %}
 {% filter markdown %}
 
-#### Animation
+### Animation
 
 Most properties of a layer can be animated: x, y, width, height, scale, opacity, etc. You can animate multiple properties at the same time.
 

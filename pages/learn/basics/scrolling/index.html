@@ -18,16 +18,10 @@
 </div> <!--sidebar-->
 {% endblock sidebar %}
 
-{% block pagetitle %} <!--Header Text-->
-<h1>Start prototyping</h1>
-<h6 class="col-2">Start prototyping with Framer. Learn how easy it is to define animations and interactions in CoffeeScript.</h6>
-{% endblock pagetitle %}
-
-
 {% block body %}
 {% filter pygmentify %}
 {% filter markdown %}
-#### Scrolling
+### Scrolling
 
 You can scroll a layer contained within a superLayer, as long as its height or width exceeds that of its parent.
 
