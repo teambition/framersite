@@ -16,26 +16,25 @@
 
 The importer lets you import Sketch or Photoshop documents directly into Framer. All of your layer groups will be available. Your layer hierarchy is respected and all flattened layers are exported too. 
 
-Subsequent imports from the same file will work as long as you don't rename layers that you've already targeted in Framer. This allows for rapid iteration. Only active & saved documents will be imported.
+Subsequent imports from the same file will work as long as you don't rename layers that you've already targeted within Framer. This allows for rapid iteration. Only active & saved documents will be imported.
 
 ---
 
-### Principles 
+#### Principles 
 
-##### Layers
+- Every *layer group* in Sketch/Photoshop will become a *layer* in Framer.
+- Layer hierarchy is respected, eg: a subgroup will become a subLayer.
+- Masked layer groups will become layers with clip enabled.
+- Group names should be unique.
 
-- Layer hierarchy is respected, eg: a subgroup will become a subLayer
-- Layers are imported as a flat list. To target **“ChildLayer”** you write **"imported.ChildLayer”** instead of **"imported.ParentLayer.ChildLayer”**
-- Masked layer groups will become layers with clip enabled
+---
 
+#### Gotchas 
 
-##### Photoshop & Sketch
-- Every *layer group* will become a *layer* in Framer
-- Layer group names should be unique
+- Layers are imported as a flat list. So, to access a layer named “ChildLayer” you write “sketchLayers.ChildLayer” instead of “sketchLayers.ParentLayer.ChildLayer”.
 
-##### Sketch
-- All artboards are imported, but only the first one will be visible by default
-- Elements with negative coordinates will not be visible in Framer
+- In Sketch, all artboards are imported, but only the first one will be visible by default.
+- In Sketch, make sure you have the elements you like to import don't have negative coordinates as they'll be hidden within Framer.
 
 ---
 

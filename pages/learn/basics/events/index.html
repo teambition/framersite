@@ -8,12 +8,12 @@
 {% block sidebar %}
 <div class="sidebar">
 	<ul>	
-		<li><a href="/learn/basics">Layers</a></li>
-		<li><a href="/learn/basics/animation">Animation</a></li>
-		<li><a href="/learn/basics/states">States</a></li>
-		<li><a class="active" href="/learn/basics/events">Events</a></li>
-		<li><a href="/learn/basics/dragging">Dragging</a></li>
-		<li><a href="/learn/basics/scrolling">Scrolling</a></li>
+		<li><a href="/learn/basics/layers">Layers <div class="small">Hierarchy and Properties</div></a></li>
+		<li><a href="/learn/basics/animation">Animation <div class="small">Curves and Timing</div></a></li>
+		<li><a href="/learn/basics/states">States <div class="small">Sets of properties</div></a></li>
+		<li class="active"><a href="/learn/basics/events">Events <div class="small">Layer interactions</div></a></li>
+		<li><a href="/learn/basics/dragging">Dragging <div class="small">Draggable layers</div></a></li>
+		<li><a href="/learn/basics/scrolling">Scrolling <div class="small">Scrollable layers</div></a></li>
 	</ul>
 </div> <!--sidebar-->
 {% endblock sidebar %}
@@ -28,26 +28,30 @@
 {% filter pygmentify %}
 {% filter markdown %}
 #### Events
-A layer is just a rectangle that draws stuff in the browser. It has a set of basic properties like x, y, width and height. It also has other properties like opacity, scale, and blur. Layers can display images, text, or both.
-<a name="basics"></a> 
+Events are things that can happen to a layer, often caused by user interaction. 
+They include a click, mouse over, a scroll and more.
+
+To listen to an event, use <code class="inline">layer.on event, → ...</code><br>
+To stop listening you can use <code class="inline">layer.off event, → ...</code>
+
 <pre lang="coffeescript">
-# Create a new layer
-myLayer = new Layer width:128, height:128
-myLayer.x = 100
+# Listen to multiple events
+layerA.on Events.Click, -> 
+    ...
+layerA.on Events.TouchStart, -> 
+    ...
+layerA.on Events.TouchMove, -> 
+    ...
+layerA.on Events.TouchEnd, -> 
+    ...
 </pre>
 
-<hr>
-
-#### Hierarchy
-Layers can contain other layers. We call these subLayers. The parent of a layer is called a superLayer. Layers inherit from their superLayers. For example, if you change the opacity of a layer to 0.5, all subLayers will have opacity of 0.5.
-
-A layer's coordinates are based on its superLayer. So with an x and y of zero, a layer gets placed in the top left corner of its superLayer.
-
-You can manipulate the layer hierarchy as you need to.
+One of the most common uses of Events in Framer is switching between a set of states:
 
 <pre lang="coffeescript">
-# Adds a subLayer to a layer
-parentLayer.addSubLayer(childLayer)
+# Toggle states on click
+layerA.on Events.Click, -> 
+    imageLayer.states.next()
 </pre>
 
 {% endfilter %}	

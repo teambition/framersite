@@ -149,7 +149,7 @@ pre {
 .sidebar.sticky {
 	position: fixed;
 	margin-top: 0;
-	top: 64px;
+	top: 32px;
 }
 .sidebar ul li {
 	list-style: none;
@@ -157,7 +157,7 @@ pre {
 	padding: $space8;
 	padding-left: 16px;
 	border-radius: 3px;
-	margin-bottom: $space16;
+	margin-bottom: $space8;
 }
 .sidebar a {
 	color: $black;
