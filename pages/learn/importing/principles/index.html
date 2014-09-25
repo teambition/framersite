@@ -7,8 +7,8 @@
 {% block sidebar %}
 <div class="sidebar">
 	<ul>	
-		<li class="active"><a href="/learn/importing">Overview <div class="small">Introduction</div></a></li>
-		<li><a href="/learn/importing/principles">Principles <div class="small">How it works</div></a></li>
+		<li><a href="/learn/importing">Overview <div class="small">Introduction</div></a></li>
+		<li class="active"><a href="/learn/importing/principles">Principles <div class="small">How it works</div></a></li>
 		<li><a href="/learn/importing/photoshop-and-sketch">Photoshop & Sketch <div class="small">Import Layers</div></a></li>		
 	</ul>
 </div> <!--sidebar-->
@@ -17,15 +17,8 @@
 {% block body %}
 {% filter pygmentify %}
 {% filter markdown %}
-#### Overview
+### Principles
 
-The importer lets you import Sketch or Photoshop documents directly into Framer. All of your layer groups will be available. Your layer hierarchy is respected and all flattened layers are exported too. 
-
-Subsequent imports from the same file will work as long as you don't rename layers that you've already targeted within Framer. This allows for rapid iteration. Only active & saved documents will be imported.
-
----
-
-#### Principles 
 
 - Every *layer group* in Sketch/Photoshop will become a *layer* in Framer.
 - Layer hierarchy is respected, eg: a subgroup will become a subLayer.
