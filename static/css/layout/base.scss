@@ -51,9 +51,10 @@ img {
 	margin: 0 auto;
 	padding: 0 30px;
 }
-.faq .content-inner {
-	max-width: 660px;
+.faq p {
+	max-width: 750px;
 }
+
 // Select all col- elements
 [class*='col-'] { 
   float: left;

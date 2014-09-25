@@ -63,7 +63,7 @@ pre {
 	margin-bottom: $space80;
 }
 .learn-nav a {
-	color: $subnav-links;
+	color: $sidebar-links;
 }
 .learn-nav .active {
 	border-bottom: 2px solid $blue;
@@ -96,24 +96,20 @@ pre {
 	width: 100%;
 }
 .learn .sidebar {
-	margin-top: 262px;
+	margin-top: 284px;
 }
 .sidebar.sticky {
 	position: fixed;
 	margin-top: 0;
-	top: 128px;
+	top: 64px;
 }
 .sidebar ul li {
 	list-style: none;
-	padding: 0; left: 0;
+	left: 0;
 	padding: $space8;
-	padding-left:14px;
+	padding-left: 16px;
 	border-radius: 3px;
 	margin-bottom: $space16;
-}
-
-.docs .sidebar li {
-	padding-left: 0; left:0;
 }
 .sidebar a {
 	color: $black;
@@ -124,29 +120,29 @@ pre {
 	line-height: 1.25;
 }
 // Custom Numbers
-.sidebar ul {
-    counter-reset: numbers;
-}
-.sidebar li:before {
-    content: counter(numbers);
-    counter-increment: numbers;
-    margin-right: 14px;
-    font-size: 16px;
-    position: relative;
-    margin-top: 12px;
-    float: left;
-    font-weight: 400;
-    -webkit-user-select: none; 
-    -moz-user-select: none;  
-    -ms-user-select: none;     
-    color: $blue;
-    border-radius: 50%;
-    // box-shadow: 0 0 0 1px $blue60;
-    width:18px; height:18px; line-height: 20px;
-  	text-align: center;
-}
+// .sidebar ul {
+//     counter-reset: numbers;
+// }
+// .sidebar li:before {
+//     content: counter(numbers);
+//     counter-increment: numbers;
+//     margin-right: 14px;
+//     font-size: 16px;
+//     position: relative;
+//     margin-top: 12px;
+//     float: left;
+//     font-weight: 400;
+//     -webkit-user-select: none; 
+//     -moz-user-select: none;  
+//     -ms-user-select: none;     
+//     color: $blue;
+//     border-radius: 50%;
+//     // box-shadow: 0 0 0 1px $blue60;
+//     width:18px; height:18px; line-height: 20px;
+//   	text-align: center;
+// }
 .sidebar a div {
-	color: $text;
+	color: $sidebar-links;
 }
 .sidebar .active {
 	background: $blue;

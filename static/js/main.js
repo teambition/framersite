@@ -1,7 +1,8 @@
 $(document).ready(function() {
 
-	var docsSidebar, topNav, exampleBlock, exampleDevices;
-	docsSidebar = $('.sidebar');
+	var sideBar, learnSidebar, topNav, exampleBlock, exampleDevices;
+	sideBar = $('.sidebar');
+	learnSidebar = $('.learn .sidebar');
 	topNav = $('.home nav.top');
 	exampleBlock = $('.examples');
 	exampleDevices = $('.device-left, .device-right');
@@ -19,19 +20,26 @@ $(document).ready(function() {
 
 		var scrollPos = $(this).scrollTop();
 
+		// Sidebar Sticky ----------------
 		if ($(window).scrollTop() > 330) {
-			$(docsSidebar).addClass('sticky');
+			$(sideBar).addClass('sticky');
 		} else {
-			$(docsSidebar).removeClass('sticky');
+			$(sideBar).removeClass('sticky');
 		}
-		
+
+		if ($(window).scrollTop() > 680) {
+			$(learnSidebar).addClass('sticky');
+		} else {
+			$(learnSidebar).removeClass('sticky');
+		}
+
+		// Top Navigation ----------------
 		if ($(window).scrollTop() > 800) {
 			$(topNav).addClass('sticky').removeClass('fade-out');
 		}
 		else if ($(topNav).hasClass('sticky') && scrollPos <= 800) {
 			$(topNav).removeClass('sticky').addClass('fade-out');
 		}
-
 		if (scrollPos < 600) {
 			$(topNav).removeClass('fade-out');
 		}

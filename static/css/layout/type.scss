@@ -152,13 +152,11 @@ p.copy {
 	color: $nav-links;
 }
 // Lists
-.subpage .content-inner ul,
-.faq .content-inner ul {
+.content-inner ul {
 	margin-bottom: $space32;
 }
 // Lists on Pages
-.subpage .content-inner ul li,
-.faq .content-inner ul li  {
+.content-inner ul li  {
 	line-height: 1.5;
 	font-size: 1em;
 	font-weight: 400;
@@ -168,16 +166,13 @@ p.copy {
 	left: $space16;
 	padding-left: $space8; 
 }
-.subpage .content-inner li strong,
-.faq .content-inner li strong {
+.content-inner li strong {
 	font-size:18px;
 }
-.subpage .content-inner ul li+li,
-.faq .content-inner ul li+li {
+.content-inner ul li+li {
 	margin-top: $space8;
 }
-.subpage .content-inner li ul li,
-.faq .content-inner li ul li  {
+.content-inner li ul li  {
 	list-style-type: none;
 	padding: 0; left: 0; 
 	margin-top: $space8;
