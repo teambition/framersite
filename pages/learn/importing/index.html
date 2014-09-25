@@ -14,46 +14,28 @@
 {% filter markdown %}
 #### Overview
 
-The importer lets you import Sketch or Photoshop documents directly into Framer. All of your layer groups will be available within Framer. Your layer hierarchy is respected and all flattened layers are exported too. 
+The importer lets you import Sketch or Photoshop documents directly into Framer. All of your layer groups will be available. Your layer hierarchy is respected and all flattened layers are exported too. 
 
-Subsequent imports from the same file will work as long as you don't rename layers in Photoshop or Sketch that you've already targeted within Framer. This allows for rapid iteration.
-
----
-
-#### Principles 
-
-- Every *layer group* in Sketch/Photoshop will become a *layer* in Framer.
-
-<img src="/static/images/learn/target.png">
-
-- Layer hierarchy is respected, eg: a subgroup will become a subLayer.
-- Masked layer groups will become layers with clip enabled.
-
-<img src="/static/images/learn/masking.png">
-
-- Imported layers are accessible by the importedLayers object: “importedLayers.myLayer”.
-- Group names should be unique.
+Subsequent imports from the same file will work as long as you don't rename layers that you've already targeted in Framer. This allows for rapid iteration. Only active & saved documents will be imported.
 
 ---
 
-#### Gotchas 
+### Principles 
 
-- Only active documents will be imported.
-- Before importing a document, it needs to be saved at least once.
-- Layers are imported as a flat list. So, to access a layer named “ChildLayer” you write “importedLayers.ChildLayer” instead of “importedLayers.ParentLayer.ChildLayer”.
+##### Layers
 
-<img src="/static/images/learn/nesting.png">
+- Layer hierarchy is respected, eg: a subgroup will become a subLayer
+- Layers are imported as a flat list. To target **“ChildLayer”** you write **"imported.ChildLayer”** instead of **"imported.ParentLayer.ChildLayer”**
+- Masked layer groups will become layers with clip enabled
 
-- When a layer group contains both other groups and other layers - the subgroups will be placed on top of the sublayers.
-- To create a scrolling layer, ensure it contains a group that exceeds its size.
 
-<img src="/static/images/learn/scrolling.png">
+##### Photoshop & Sketch
+- Every *layer group* will become a *layer* in Framer
+- Layer group names should be unique
 
-- In Sketch, all artboards are imported, but only the first one will be visible by default.
-- In Sketch, you can only use one mask per layer group.
-- In Sketch, make sure you have the elements you like to import don't have negative coordinates as they'll be hidden within Framer.
-
-<img src="/static/images/learn/xandy.png">
+##### Sketch
+- All artboards are imported, but only the first one will be visible by default
+- Elements with negative coordinates will not be visible in Framer
 
 ---
 

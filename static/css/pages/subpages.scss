@@ -48,7 +48,7 @@ pre {
 	clear:both;
 }
 .align-right p {
-	max-width: 620px;
+	max-width: 580px;
 	text-align: left;
 }
 // Clearfix wrapper
@@ -59,17 +59,25 @@ pre {
 }
 // Learn nav
 .learn-nav {
-	border-bottom: 2px solid $separator;
+	border-bottom: 1px solid $separator;
 	margin-bottom: $space80;
+	position: relative;
+}
+// Extend border-bottom to full-width
+.learn-nav:after {
+	content:""; position: relative; top: 1px;
+	width:300%; height:1px; background: $separator;
+	left: -75%;
 }
 .learn-nav a {
 	color: $sidebar-links;
 	position: relative;
+	padding-bottom: $space48;
 }
 .learn-nav .active {
-	border-bottom: 2px solid $blue;
-	padding-bottom: $space48;
-	margin-bottom: -2px;
+	// border-bottom: 1px solid $blue;
+	// padding-bottom: $space48;
+	// margin-bottom: -1px;
 }
 .learn-nav a * {
 	@include transition(all, 0.2s, ease);
@@ -83,9 +91,18 @@ pre {
 .learn-nav a:hover .nav-title {
 	color: $blue;
 }
+.learn-nav a:hover .nav-title.importing {
+	color: $green;
+}
+.learn-nav a:hover .nav-title.mirror {
+	color: $purple;
+}
+.learn-nav a:hover .nav-title.coffeescript {
+	color: $cyan;
+}
 .learn-nav span {
 	line-height: 1.5;
-	opacity: 0.7;
+	opacity: 0.8;
 }
 .learn-nav a:hover span {
 	opacity: 1;
@@ -96,7 +113,7 @@ pre {
 .learn-nav figure {
 	display: inline-block;
 }
-.hover {
+.learn-nav figure.hover {
 	position: absolute;
 	top:0; left:0;
 	opacity: 0;
