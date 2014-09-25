@@ -13,6 +13,8 @@ $(document).ready(function() {
 		}
 	);
 
+	$('.subpage p img').unwrap();
+
 	var playCarouselVideo = false
 	var videoElement = $("#carousel-video-examples").get(0)
 
