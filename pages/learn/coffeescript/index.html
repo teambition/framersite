@@ -20,26 +20,19 @@
 {% filter markdown %}
 
 ### CoffeeScript
-Learn the basics of CoffeeScript, a more legible and minimal way to write JavaScript.
+Learn the basics of CoffeeScript, a more legible and minimal way to write JavaScript. What is CoffeeScript....
 
 ---
 
-##### Printing Output
-
-Whenever you want to display a value to inspect you can print it to the log like
+CoffeeScript uses *significant whitespace*. That means that tabs are used to define the structure of the language, instead of **{** and **}** like in Javascript. So if you forget to indent, your script won't work.
 <pre lang="coffeescript">
-console.log "Hello" # Output: Hello
-console.log "Hello", "World" # Output: Hello World
-</pre>
-##### Tabs
-
-CoffeeScript uses *significant whitespace*. That means that tabs are used to define the structure of the language, instead of **{** and **}** like in Javascript. So if your tabs are not correct, your script will fail.
-<pre lang="coffeescript">
+# This will work
 if 1 + 1 == 2
-	console.log "hello" # This will work
+	console.log "hello"
 
+# This won't work
 if 1 + 1 == 2
-console.log "hello" # This will fail (missing tab)
+console.log "hello" 
 </pre>
 ##### Variables
 
@@ -49,35 +42,26 @@ myVariable = 1
 </pre>
 From this point on the variable myVariable contains 1. You can change this at any point just by assigning a new value.
 
-If you ask the value of a variable before it has one (defined) it returns a special value 'undefined'. If you get an error with undefined there is a big chance you are trying to use a variable that doesn't exist (yet).
-<pre lang="coffeescript">
-myUnexistingVariable # Output "undefined"
-</pre>
-Variables can store different types of data, see below.
-
 ---
 
 #### Functions
 
-Functions are bits of executable code. It's pretty much the same thing as a function in mathematics. They take input and generate output. The part in between is just a description how to get from one to the other. When you run a function for a specific set of inputs, programmers say you *call* the function, and the input(s) are *arguments**.
+Functions are bits of executable code. It's pretty much the same thing as a function in mathematics. They take input (arguments) and generate output when they're exectured (called).
 
-Common examples of what you use functions for are:
+This is how you define a function. The *return* keyword passes back a value to the caller. 
+By default, CoffeeScript returns the latest used variable.
 
-* Describe to do something, but use it later (when it gets *called*)
-* Wrap something you do multiple multiple times in a function so you can reuse it easily
-
-This is how you define a function, note it follows the standard way of defining variables. The *return* keyword passes back a value to the caller (by default, CoffeeScript returns the latest used variable).
 <pre lang="coffeescript">
 myFunction = (input) -> 
 	output = input * 2
 	return output
 </pre>
-To now use (or, **call**) the function with the number 42 (**argument**) you do this:
+To now execute (call) this function, with the number 42 as its argument, you write:
 <pre lang="coffeescript">
 myFunction(42) # Output: 84
 </pre>
 
-You can assign the output of a function directly to a new variable:
+You can assign the output of a function to a new variable:
 <pre lang="coffeescript">
 myCalculatedNumber = myFunction(42)
 myCalculatedNumber # Output: 84
