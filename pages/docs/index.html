@@ -1,17 +1,9 @@
-{% extends "base.html" %}
+{% extends "docs.html" %}
 {% block title %}Framer - Docs{% endblock %}
-
 {% block isdocs %}active{% endblock %}
 {% block currentpage %}class="docs"{% endblock currentpage %}
-{% block pages %}
 
-{% filter markdown %}
-# Docs
-## A complete reference for Framer
-
----
-{% endfilter %}
-
+{% block sidebar %}
 <div class="sidebar">
 	<ul>	
 		<li class="title">Docs</li>
@@ -24,11 +16,19 @@
 		<li><a class="defaults" href="#defaults">Defaults</a></li>
 	</ul>
 </div> <!--sidebar-->
+{% endblock %}
 
-<div class="align-right">
-<a name="layers"></a>
+{% block pagetitle %} <!--Header Text-->
+<h1>CoffeeScript</h1>
+<h6 class="col-2">Learn the basics of CoffeeScript, a more legible and minimal way to write JavaScript.</h6>
+{% endblock pagetitle %}
+
+{% block body %}
 {% filter pygmentify %}
 {% filter markdown %}
+
+<a name="layers"></a>
+
 ### Layers
 
 <table border="0" cellspacing="0" cellpadding="0" class="api">
@@ -848,5 +848,4 @@ The Framer.Defaults object contains all defaults for Layers and Animations.
 
 {% endfilter %}	
 {% endfilter %}	
-</div> <!--align-right-->
-{% endblock %}
+{% endblock body%}

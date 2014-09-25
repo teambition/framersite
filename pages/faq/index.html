@@ -2,7 +2,7 @@
 {% block title %}Framer - FAQ{% endblock %}
 {% block currentpage %}class="faq"{% endblock currentpage %}
 
-{% block pages %}
+{% block content %}
 {% filter markdown %}
 
 <!-- More -->
@@ -80,10 +80,6 @@ Because Framer runs in the browser you can use all the <a href="https://develope
 			<td><strong>Escape</strong> (toggle)</td>
 			<td>Switch between normal &amp; debug view of all layers. Useful to inspect structure and positions.</td>
 		</tr>
-<!-- 		<tr>
-			<td><strong>Shift</strong> (hold)</td>
-			<td>While shift is pressed, Framer will delay the time by 25x. This will slow down animations and timers like utils.delay and utils.interval. Useful to inspect animations carefully.</td>
-		</tr> -->
 	</tbody>
 </table>
 
@@ -124,7 +120,6 @@ Framer was built by <a href="http://twitter.com/koenbok" target="_blank">Koen Bo
 Special thanks goes out to <a href="https://twitter.com/joshpuckett" target="_blank">Josh Puckett</a>, <a href="https://twitter.com/gem_ray" target="_blank">Cemre Güngör</a>, <a href="https://twitter.com/nlevin" target="_blank">Noah Levin</a>, <a href="https://twitter.com/tisho" target="_blank">Tisho Georgiev</a>, <a href="https://twitter.com/SubtleGradient" target="_blank">Thomas Aylott</a>, <a href="https://twitter.com/frischmilch" target="_blank">Johannes Eckert</a>, <a href="https://twitter.com/carambula" target="_blank">Aaron Carámbula</a>, <a href="https://twitter.com/pasql" target="_blank">Pasquale D'Silva</a>, <a href="https://twitter.com/bomberstudios" target="_blank">Ale Muñoz</a>, <a href="https://twitter.com/pieteromvlee" target="_blank">Pieter Omvlee</a>, <a href="https://twitter.com/rsms" target="_blank">Rasmus Andersson</a>, <a href="https://twitter.com/robertgaal" target="_blank">Robert Gaal</a> and <a href="https://twitter.com/dipersia" target="_blank">Blaise DiPersia</a>.
 
 If we missed you on this list, we thank you nevertheless.
-
 
 {% endfilter %}	
 {% endblock %}

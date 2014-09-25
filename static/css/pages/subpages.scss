@@ -6,6 +6,9 @@
 	padding-top: 80px;
 	margin-top: $space64;
 }
+.page-header h1 {
+	margin-bottom: $space8;
+}
 .page-header h2 {
 	color: $graphite-blue;
 }
@@ -14,7 +17,7 @@
 }
 .page-header img {
 	position: absolute;
-	bottom:-128px;
+	bottom:-120px;
 	right:176px;
 	max-height: 420px;
 	max-width: 340px;
@@ -45,7 +48,7 @@ pre {
 	clear:both;
 }
 .align-right p {
-	max-width: 480px;
+	max-width: 620px;
 	text-align: left;
 }
 // Clearfix wrapper
@@ -54,13 +57,46 @@ pre {
   display: table;
   clear: both;
 }
+// Learn nav
+.learn-nav {
+	border-bottom: 2px solid $separator;
+	margin-bottom: $space80;
+}
+.learn-nav a {
+	color: $subnav-links;
+}
+.learn-nav .active {
+	border-bottom: 2px solid $blue;
+	padding-bottom: $space48;
+	margin-bottom: -2px;
+}
+.learn-nav .nav-title {
+	margin: $space24 0 $space16 0;
+}
+.learn-nav .active .nav-title {
+	color: #222;
+}
+.learn-nav span {
+	line-height: 1.5;
+	opacity: 0.7;
+}
+.learn-nav .active span {
+	opacity: 1;
+}
+.learn
+.learn-nav figure {
+	display: inline-block;
+	margin-bottom: $space16;
+}
 // Sidebar
 .sidebar {
 	float:left;
 	position: absolute;
-	max-width: 105px;
+	max-width: 210px;
 	width: 100%;
-	margin-top: 242px;
+}
+.learn .sidebar {
+	margin-top: 262px;
 }
 .sidebar.sticky {
 	position: fixed;
@@ -70,56 +106,59 @@ pre {
 .sidebar ul li {
 	list-style: none;
 	padding: 0; left: 0;
+	padding: $space8;
+	padding-left:14px;
+	border-radius: 3px;
+	margin-bottom: $space16;
 }
-.sidebar li+li {
-	margin-top: $space8;
-	padding-top: $space8;
-	border-top: 1px solid $separator;
+
+.docs .sidebar li {
+	padding-left: 0; left:0;
 }
 .sidebar a {
-	color: $blue;
+	color: $black;
 	text-transform: uppercase;
 	font-weight: 600;
 	font-size:12px;
 	letter-spacing: 0.5px;
+	line-height: 1.25;
 }
-.sidebar a.active {
-	color: $black;
+// Custom Numbers
+.sidebar ul {
+    counter-reset: numbers;
 }
-// Learn nav
-.learn-nav {
-	border-bottom: 1px solid #eee;
-	margin-bottom: $space80;
+.sidebar li:before {
+    content: counter(numbers);
+    counter-increment: numbers;
+    margin-right: 14px;
+    font-size: 16px;
+    position: relative;
+    margin-top: 12px;
+    float: left;
+    font-weight: 400;
+    -webkit-user-select: none; 
+    -moz-user-select: none;  
+    -ms-user-select: none;     
+    color: $blue;
+    border-radius: 50%;
+    // box-shadow: 0 0 0 1px $blue60;
+    width:18px; height:18px; line-height: 20px;
+  	text-align: center;
 }
-.learn-nav a {
-	color: $subnav-links;
+.sidebar a div {
+	color: $text;
 }
-.learn-nav .active {
-	border-bottom: 1px solid $blue;
-	padding-bottom: $space48;
-	margin-bottom: -1px;
+.sidebar .active {
+	background: $blue;
 }
-.learn-nav .nav-title {
-	margin: 20px 0 $space16 0;
+.sidebar .active a {
+	color: #fff;
 }
-.learn-nav .active .nav-title {
-	color: #222;
+.sidebar ul li.active:before {
+	color: #fff;
 }
-.learn-nav span {
-	text-transform: none;
-	font-weight: 400;
-	letter-spacing: 0;
-	line-height: 1.5;
-	font-size: 14px;
-	opacity: 0.8;
-}
-.learn-nav .active span {
-	opacity: 1;
-}
-.learn
-.learn-nav figure {
-	display: inline-block;
-	margin-bottom: $space16;
+.sidebar .active div {
+	color: #fff;
 }
 @media screen and (max-width:1020px) {
 	.content-inner {

@@ -37,11 +37,13 @@ img {
   display: table;
   clear: both;
 }
-// Narrow = Learn, Importing and Mirror
-.narrow .container,
-.docs .container,
+// Subpages = Learn & Docs
+.subpage .container,
 .faq .container {
 	padding: 40px 0 128px 0;
+}
+.docs .container {
+	padding-top: 128px;
 }
 .content-inner {
 	width: 100%;
@@ -142,7 +144,7 @@ hr {
 	}
 }
 @media screen and (max-width: 560px) {
-	.narrow .container,
+	.subpage .container,
 	.docs .container,
 	.faq .container {
 		padding: $space48 0 $space64 0;
@@ -173,7 +175,7 @@ hr {
 	}
 }
 @media screen and (max-width: 440px) {
-	.narrow hr {
+	.subpage hr {
 		margin: $space32 auto;
 	}
 }

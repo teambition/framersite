@@ -71,7 +71,7 @@ h3 {
 h4 {
 	font-size: 1.625em; //26px
 }
-.narrow h4 {
+.subpage h4 {
 	margin-bottom: $space24;
 }
 h5 { // Feature blocks
@@ -80,7 +80,7 @@ h5 { // Feature blocks
 	font-weight: 400;
 	margin-bottom: $space8;
 }
-.narrow h5 {
+.subpage h5 {
 	font-size: 14px;
 	font-weight: 600;
 	margin-bottom: $space16;
@@ -121,8 +121,17 @@ p.title {
 	font-size:0.8888em; //16px
 	font-weight: 400;
 }
+.small, 
+.extra-small {
+	font-weight: 400;
+	text-transform: none;
+	letter-spacing: 0;
+}
 .small {
-	font-size:0.8125em; //13px
+	font-size: 14px;
+}
+.extra-small {
+	font-size: 12px;
 }
 // "More" links
 a.small.right {
@@ -143,12 +152,12 @@ p.copy {
 	color: $nav-links;
 }
 // Lists
-.narrow .content-inner ul,
+.subpage .content-inner ul,
 .faq .content-inner ul {
 	margin-bottom: $space32;
 }
 // Lists on Pages
-.narrow .content-inner ul li,
+.subpage .content-inner ul li,
 .faq .content-inner ul li  {
 	line-height: 1.5;
 	font-size: 1em;
@@ -159,24 +168,19 @@ p.copy {
 	left: $space16;
 	padding-left: $space8; 
 }
-.narrow .content-inner li strong,
+.subpage .content-inner li strong,
 .faq .content-inner li strong {
 	font-size:18px;
 }
-.narrow .content-inner ul li+li,
+.subpage .content-inner ul li+li,
 .faq .content-inner ul li+li {
 	margin-top: $space8;
 }
-.narrow .content-inner li ul li,
+.subpage .content-inner li ul li,
 .faq .content-inner li ul li  {
 	list-style-type: none;
 	padding: 0; left: 0; 
 	margin-top: $space8;
-}
-
-.docs .sidebar li {
-	list-style-type: none;
-	padding-left: 0; left:0;
 }
 // Helpers -------------------
 .uppercase {
