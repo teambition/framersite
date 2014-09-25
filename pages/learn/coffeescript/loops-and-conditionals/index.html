@@ -19,23 +19,19 @@
 {% filter pygmentify %}
 {% filter markdown %}
 
-#### Comparators
+### Loops
 
-Comparators compare things. The most common are equality and greater/smaller than.
+Loops are used to iterate over collections, as in do something for each item. Collections can be an Array or Object. They use the **for** keyword.
+
+To loop over an Array you can do this:
 <pre lang="coffeescript">
-4 is 4 # Output: true
-4 isnt 4 # Output: false
-4 < 5 # Output true
-4 > 5 # Output false
-</pre>
+myArray = [1, 2, 3, 4, 5]
 
-You can combine multiple comparators with and and or:
-<pre lang="coffeescript">
-4 is 4 and 5 < 4 # Output false
-4 is 4 or 5 < 4 # Output true
-</pre>
+for number in myArray
+	number + 1
 
----
+# Output: 2, 3, 4, 5, 6
+</pre>
 
 #### Conditionals
 
@@ -55,20 +51,14 @@ A little more complicated example that checks for multiple things:
 		console.log "Senior"
 </pre>
 
----
+##### Comparators
 
-#### Loops
-
-Loops are used to iterate over collections, as in do something for each item. Collections can be an Array or Object. They use the **for** keyword.
-
-To loop over an Array you can do this:
+Comparators compare things. The most common are equality and greater/smaller than.
 <pre lang="coffeescript">
-myArray = [1, 2, 3, 4, 5]
-
-for number in myArray
-	number + 1
-
-# Output: 2, 3, 4, 5, 6
+4 is 4 # Output: true
+4 isnt 4 # Output: false
+4 < 5 # Output true
+4 > 5 # Output false
 </pre>
 
 

@@ -1,0 +1,94 @@
+{% extends "learnpage.html" %}
+{% block title %}Framer - Learn CoffeeScript{% endblock %}
+{% block islearn %}active{% endblock %}
+{% block coffeescript %}active{% endblock %}
+{% block coffeescript2 %}-active{% endblock %}
+
+{% block sidebar %}
+<div class="sidebar">
+	<ul>	
+		<li class="active"><a href="/learn/coffeescript">Overview <div class="small">Hierarchy and Properties</div></a></li>
+		<li><a href="/learn/coffeescript/data-types">Data types <div class="small">Booleans, strings..</div></a></li>
+		<li><a href="/learn/coffeescript/functions">Loops & Conditionals <div class="small">Arrays and Logic</div></a></li>
+		<li><a href="/learn/coffeescript/resources">Resources <div class="small">Layer interactions</div></a></li>
+	</ul>
+</div> <!--sidebar-->
+{% endblock sidebar %}
+
+{% block body %}
+{% filter pygmentify %}
+{% filter markdown %}
+
+### CoffeeScript
+Learn the basics of CoffeeScript, a more legible and minimal way to write JavaScript.
+
+---
+
+##### Printing Output
+
+Whenever you want to display a value to inspect you can print it to the log like
+<pre lang="coffeescript">
+console.log "Hello" # Output: Hello
+console.log "Hello", "World" # Output: Hello World
+</pre>
+##### Tabs
+
+CoffeeScript uses *significant whitespace*. That means that tabs are used to define the structure of the language, instead of **{** and **}** like in Javascript. So if your tabs are not correct, your script will fail.
+<pre lang="coffeescript">
+if 1 + 1 == 2
+	console.log "hello" # This will work
+
+if 1 + 1 == 2
+console.log "hello" # This will fail (missing tab)
+</pre>
+##### Variables
+
+A variable is a way to store something under a name. It's pretty simple:
+<pre lang="coffeescript">
+myVariable = 1
+</pre>
+From this point on the variable myVariable contains 1. You can change this at any point just by assigning a new value.
+
+If you ask the value of a variable before it has one (defined) it returns a special value 'undefined'. If you get an error with undefined there is a big chance you are trying to use a variable that doesn't exist (yet).
+<pre lang="coffeescript">
+myUnexistingVariable # Output "undefined"
+</pre>
+Variables can store different types of data, see below.
+
+---
+
+#### Functions
+
+Functions are bits of executable code. It's pretty much the same thing as a function in mathematics. They take input and generate output. The part in between is just a description how to get from one to the other. When you run a function for a specific set of inputs, programmers say you *call* the function, and the input(s) are *arguments**.
+
+Common examples of what you use functions for are:
+
+* Describe to do something, but use it later (when it gets *called*)
+* Wrap something you do multiple multiple times in a function so you can reuse it easily
+
+This is how you define a function, note it follows the standard way of defining variables. The *return* keyword passes back a value to the caller (by default, CoffeeScript returns the latest used variable).
+<pre lang="coffeescript">
+myFunction = (input) -> 
+	output = input * 2
+	return output
+</pre>
+To now use (or, **call**) the function with the number 42 (**argument**) you do this:
+<pre lang="coffeescript">
+myFunction(42) # Output: 84
+</pre>
+
+You can assign the output of a function directly to a new variable:
+<pre lang="coffeescript">
+myCalculatedNumber = myFunction(42)
+myCalculatedNumber # Output: 84
+</pre>
+
+A function can be defined with as many arguments as you like and they can be any type:
+<pre lang="coffeescript">
+myFunction = (argumentA, argumentB, argumentC) ->
+	return argumentA + argumentB + argumentC
+</pre>
+
+{% endfilter %}	
+{% endfilter %}	
+{% endblock body %}
