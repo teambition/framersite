@@ -104,6 +104,7 @@ pre {
 	line-height: 1.5;
 	opacity: 0.8;
 }
+.learn-nav a:hover,
 .learn-nav a:hover span {
 	opacity: 1;
 }
@@ -113,9 +114,13 @@ pre {
 .learn-nav figure {
 	display: inline-block;
 }
-.learn-nav figure.hover {
+.learn-nav .hover {
 	position: absolute;
 	top:0; left:0;
+	opacity: 0;
+}
+// Fade old, bring in new
+.learn-nav a:hover figure {
 	opacity: 0;
 }
 .learn-nav a:hover .hover{
