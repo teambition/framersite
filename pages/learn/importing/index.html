@@ -40,8 +40,12 @@ When you've opened a saved document, the Import button will become active and yo
 
 After importing, you'll see a few new lines of code appear:
 
-**---screenshot / image of code lines**
+<pre lang="coffeescript">
+# This imports all the layers for "Prototype" into prototypeLayers
+prototypeLayers = Framer.Importer.load "imported/Prototype"
+</pre>
 
+##### Re-Importing
 Subsequent imports from the same file will work as long as you don't rename layers that you've already targeted within Framer. This allows for rapid iteration. CMD + Shift + I
 
 {% endfilter %}	
