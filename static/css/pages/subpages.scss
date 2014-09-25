@@ -75,9 +75,19 @@ pre {
 	padding-bottom: $space48;
 }
 .learn-nav .active {
-	// border-bottom: 1px solid $blue;
-	// padding-bottom: $space48;
-	// margin-bottom: -1px;
+	border-bottom: 1px solid $blue;
+	height: 182px;
+	margin-bottom: -2px;
+	z-index: 200;
+}
+.learn-nav .active.importing {
+	border-color: $green;
+}
+.learn-nav .active.mirror {
+	border-color: $purple;
+}
+.learn-nav .active.coffeescript {
+	border-color: $cyan;
 }
 .learn-nav a * {
 	@include transition(all, 0.2s, ease);
@@ -91,13 +101,13 @@ pre {
 .learn-nav a:hover .nav-title {
 	color: $blue;
 }
-.learn-nav a:hover .nav-title.importing {
+.learn-nav .importing:hover .nav-title {
 	color: $green;
 }
-.learn-nav a:hover .nav-title.mirror {
+.learn-nav .mirror:hover .nav-title {
 	color: $purple;
 }
-.learn-nav a:hover .nav-title.coffeescript {
+.learn-nav .coffeescript:hover .nav-title {
 	color: $cyan;
 }
 .learn-nav span {
