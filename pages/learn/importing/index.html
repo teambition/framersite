@@ -21,63 +21,26 @@
 
 The importer lets you import Sketch or Photoshop documents directly into Framer. All of your layer groups will be available. Your layer hierarchy is respected and all flattened layers are exported too. 
 
-Subsequent imports from the same file will work as long as you don't rename layers that you've already targeted within Framer. This allows for rapid iteration. Only active & saved documents will be imported.
-
 ---
 
-#### Principles 
+##### Get Started
+To import layers, click the "Import" icon in the toolbar. 
 
-- Every *layer group* in Sketch/Photoshop will become a *layer* in Framer.
-- Layer hierarchy is respected, eg: a subgroup will become a subLayer.
-- Masked layer groups will become layers with clip enabled.
-- Group names should be unique.
+**---screenshot**
 
----
+You'll be presented with the Import Sheet, where you can import designs directly out of Sketch, Sketch Beta and Photoshop. The import sheet also informs you about the state of the applications:
 
-#### Gotchas 
+- **Not running** <br> The app isn't open.
+- **Open a saved document** <br> Either you have no document open or your opened document hasn't been saved.
 
-- Layers are imported as a flat list. So, to access a layer named “ChildLayer” you write “sketchLayers.ChildLayer” instead of “sketchLayers.ParentLayer.ChildLayer”.
+When you've opened a saved document, the Import button will become active and you'll see the title of your active document appear below the application title.
 
-- In Sketch, all artboards are imported, but only the first one will be visible by default.
-- In Sketch, make sure you have the elements you like to import don't have negative coordinates as they'll be hidden within Framer.
+After importing, you'll see a few new lines of code appear:
 
----
+**---screenshot / image of code lines**
 
-#### Compatibility:
+Subsequent imports from the same file will work as long as you don't rename layers that you've already targeted within Framer. This allows for rapid iteration. CMD + Shift + I
 
-<table border="0" cellspacing="0" cellpadding="0" class="compatibility">
-	<tbody>
-	<tr>
-		<th>Application</th>
-		<th>Compatibility</th>
-	</tr>
-	<tr>
-		<td>Sketch 3 </td>
-		<td>Compatible, not recommended</td>
-	</tr>
-	<tr>
-		<td>Sketch 3.1 Beta</td>
-		<td>Fully compatible</td>
-	</tr>
-
-
-
-	<tr>
-		<td>Photoshop CS6</td>
-		<td>Fully compatible</td>
-	</tr>
-	<tr>
-		<td>Photoshop CC</td>
-		<td>Fully compatible</td>
-	</tr>
-	<tr>
-		<td>Photoshop CC 2014</td>
-		<td>Fully compatible</td>
-	</tr>
-
-
-</tbody>
-</table>
 {% endfilter %}	
 {% endfilter %}	
 {% endblock body %}
