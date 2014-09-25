@@ -64,11 +64,15 @@ pre {
 }
 .learn-nav a {
 	color: $sidebar-links;
+	position: relative;
 }
 .learn-nav .active {
 	border-bottom: 2px solid $blue;
 	padding-bottom: $space48;
 	margin-bottom: -2px;
+}
+.learn-nav a * {
+	@include transition(all, 0.2s, ease);
 }
 .learn-nav .nav-title {
 	margin: $space24 0 $space16 0;
@@ -76,17 +80,29 @@ pre {
 .learn-nav .active .nav-title {
 	color: #222;
 }
+.learn-nav a:hover .nav-title {
+	color: $blue;
+}
 .learn-nav span {
 	line-height: 1.5;
 	opacity: 0.7;
 }
+.learn-nav a:hover span {
+	opacity: 1;
+}
 .learn-nav .active span {
 	opacity: 1;
 }
-.learn
 .learn-nav figure {
 	display: inline-block;
-	margin-bottom: $space16;
+}
+.hover {
+	position: absolute;
+	top:0; left:0;
+	opacity: 0;
+}
+.learn-nav a:hover .hover{
+	opacity: 1;
 }
 // Sidebar
 .sidebar {
@@ -96,7 +112,7 @@ pre {
 	width: 100%;
 }
 .learn .sidebar {
-	margin-top: 284px;
+	margin-top: 264px;
 }
 .sidebar.sticky {
 	position: fixed;

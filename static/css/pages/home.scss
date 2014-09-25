@@ -182,7 +182,7 @@ a.device-right {
 }
 .feature-banners div {
 	display: inline-block;
-	@include transition(all, 0.2, ease);
+	@include transition(all, 0.2s, ease);
 }
 // On hover effect
 .is-active div {
