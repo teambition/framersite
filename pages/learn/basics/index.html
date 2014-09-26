@@ -97,16 +97,38 @@ layerA.style.boxShadow = “inset 0 0 0 2px #28AFFA”
 Layers can contain images, videos and text.
 
 <div class="col-4">
-<img src="/static/images/learn/layer-types-image.png" srcset="/static/images/learn/layer-types-image@2x.png 2x">
+<img src="/static/images/learn/layer-types-image.png" srcset="/static/images/learn/layer-types-image@2x.png 2x" draggable="false">
+<div class="without-linenumbers">
+<pre lang="coffeescript">
+# imageLayer
+layerA = new Layer
+	image: "image.png"
+</pre>
 </div>
+</div> <!--col-4-->
 
 <div class="col-4">
-<img src="/static/images/learn/layer-types-video.png" srcset="/static/images/learn/layer-types-video@2x.png 2x">
+<img src="/static/images/learn/layer-types-video.png" srcset="/static/images/learn/layer-types-video@2x.png 2x" draggable="false">
+<div class="without-linenumbers">
+<pre lang="coffeescript">
+# videoLayer
+layerA = new Layer
+	video: "video.mp4"
+</pre>
 </div>
+</div> <!--col-4-->
+
 
 <div class="col-4">
-<img src="/static/images/learn/layer-types-label.png" srcset="/static/images/learn/layer-types-label@2x.png 2x">
+<img src="/static/images/learn/layer-types-label.png" srcset="/static/images/learn/layer-types-label@2x.png 2x" draggable="false">
+<div class="without-linenumbers">
+<pre lang="coffeescript">
+# Labeled Layer
+layerA = new Layer
+layerA.html = "Label"
+</pre>
 </div>
+</div> <!--col-4-->
 
 {% endfilter %}	
 {% endfilter %}

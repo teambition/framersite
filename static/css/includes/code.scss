@@ -78,6 +78,15 @@ pre ol li:before {
     -moz-user-select: none;  
     -ms-user-select: none;     
 }
+.without-linenumbers pre {
+    box-shadow: inset 0 0 0 1px #E4EBF2;
+    border-radius: 0 0 3px 3px;
+    margin-top: -5px;
+}
+
+.without-linenumbers pre ol li:before {
+    content:""; margin-right: 0;
+}
 @media screen and (max-width: 660px) {
     pre ol li:before {
         content:"";
