@@ -26,8 +26,6 @@
 
 Most properties of a layer can be animated: x, y, width, height, scale, opacity, etc. You can animate multiple properties at the same time.
 
-Animations optionally take a curve that describes the type of animation. You can use pre-defined curves like 'linear' or 'ease-in', custom ones, or spring animations.
-
 <pre lang="coffeescript">
  layerA.animate
         properties:
@@ -48,20 +46,19 @@ Except when using spring curves, you can also define the duration of an animatio
 
 ##### Curves
 
-You can define pre-defined animation curves like 'linear' or 'ease-in', spring animations and more.
+Animations optionally take a curve that describes the type of animation. You can use pre-defined curves like 'linear' or 'ease-in', custom ones, or spring animations. An overview of different curves:
 
+<div class="col-4">
+<img class="curve-animation" src="/static/images/learn/animation-easeinout.gif" srcset="/static/images/learn/animation-easeinout@2x.gif 2x" draggable="false">
+<img class="curve"src="/static/images/learn/animation-curve-easeinout.png" srcset="/static/images/learn/animation-curve-easeinout@2x.png 2x" draggable="false">
+
+<div class="without-linenumbers">
 <pre lang="coffeescript">
-# Default
-curve: "linear"
-
-# Easing curves
-curve: "ease"
+# Easing curve
 curve: "ease-in-out"
-
-# Spring curve
-curve: "spring(600,30,0)"
 </pre>
-
+</div>
+</div> <!--col-4-->
 {% endfilter %}	
 {% endfilter %}
 {% endblock body %}	

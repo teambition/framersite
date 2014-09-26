@@ -88,6 +88,16 @@ pre ol li:before {
 .without-linenumbers pre ol li:before {
     content:""; margin-right: 0;
 }
+
+// Curves
+img.curve-animation {
+    border-radius: 3px 3px 0 0;
+    position: relative;
+    z-index: 10;
+}
+img.curve {
+    margin-top: -5px;
+}
 @media screen and (max-width: 660px) {
     pre ol li:before {
         content:"";
