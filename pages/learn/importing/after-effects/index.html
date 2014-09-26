@@ -19,20 +19,11 @@
 {% filter markdown %}
 ### After Effects
 
+- Maybe some export rules we learned - see quip
+- Show drag and drop a movie creates a videolayer
+- Talk about some unique properties videolayers inherit: oncanplaythrough, play, pause, etc,
+- Maybe link to first videoLayer google example with spinner 
 
-- Every *layer group* in Sketch/Photoshop will become a *layer* in Framer.
-- Layer hierarchy is respected, eg: a subgroup will become a subLayer.
-- Masked layer groups will become layers with clip enabled.
-- Group names should be unique.
-
----
-
-#### Gotchas 
-
-- Layers are imported as a flat list. So, to access a layer named “ChildLayer” you write “sketchLayers.ChildLayer” instead of “sketchLayers.ParentLayer.ChildLayer”.
-
-- In Sketch, all artboards are imported, but only the first one will be visible by default.
-- In Sketch, make sure you have the elements you like to import don't have negative coordinates as they'll be hidden within Framer.
 
 {% endfilter %}	
 {% endfilter %}	

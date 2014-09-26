@@ -1,7 +1,10 @@
-img + p {
+img + p,
+img + ul,
+img + h3,
+img + h4,
+img + h5 {
 	margin-top: $space24;
 }
-
 // Page header 
 .page-header {
 	background: $header;
@@ -56,6 +59,9 @@ pre {
 	max-width: 580px;
 	text-align: left;
 }
+.align-right img {
+	position: relative;
+}
 // Clearfix wrapper
 .content-inner:after {
   content: "";
@@ -95,7 +101,7 @@ pre {
 	border-color: $cyan;
 }
 .learn-nav a * {
-	@include transition(all, 0.2s, ease);
+	@include transition(all, 0.1s, ease);
 }
 .learn-nav .nav-title {
 	margin: $space24 0 $space16 0;
