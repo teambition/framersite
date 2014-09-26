@@ -45,6 +45,8 @@ h4 {
 pre {
 	margin-bottom: $space24;
 }
+.code-illustration + h4,
+.code-illustration + h5,
 .highlight + h4,
 .highlight + h5 {
 	margin-top: $space80;
