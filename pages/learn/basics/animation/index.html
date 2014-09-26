@@ -49,16 +49,41 @@ Except when using spring curves, you can also define the duration of an animatio
 Animations optionally take a curve that describes the type of animation. You can use pre-defined curves like 'linear' or 'ease-in', custom ones, or spring animations. An overview of different curves:
 
 <div class="col-4">
-<img class="curve-animation" src="/static/images/learn/animation-easeinout.gif" srcset="/static/images/learn/animation-easeinout@2x.gif 2x" draggable="false">
-<img class="curve"src="/static/images/learn/animation-curve-easeinout.png" srcset="/static/images/learn/animation-curve-easeinout@2x.png 2x" draggable="false">
+<img class="curve-animation" src="/static/images/learn/animation-linear.gif" draggable="false">
+<img class="curve"src="/static/images/learn/animation-curve-linear.png" srcset="/static/images/learn/animation-curve-linear@2x.png 2x" draggable="false">
 
-<div class="without-linenumbers">
+<div class="without-linenumbers without-border">
 <pre lang="coffeescript">
-# Easing curve
-curve: "ease-in-out"
+# Linear curve
+curve:"linear"
 </pre>
 </div>
 </div> <!--col-4-->
+
+<div class="col-4">
+<img class="curve-animation" src="/static/images/learn/animation-easeinout.gif" draggable="false">
+<img class="curve"src="/static/images/learn/animation-curve-easeinout.png" srcset="/static/images/learn/animation-curve-easeinout@2x.png 2x" draggable="false">
+
+<div class="without-linenumbers without-border">
+<pre lang="coffeescript">
+# Easing curve
+curve:"ease-in-out"
+</pre>
+</div>
+</div> <!--col-4-->
+
+<div class="col-4">
+<img class="curve-animation" src="/static/images/learn/animation-spring.gif" draggable="false">
+<img class="curve"src="/static/images/learn/animation-curve-spring.png" srcset="/static/images/learn/animation-curve-spring@2x.png 2x" draggable="false">
+
+<div class="without-linenumbers without-border">
+<pre lang="coffeescript">
+# Easing curve
+curve:"spring(200,15,0)"
+</pre>
+</div>
+</div> <!--col-4-->
+
 {% endfilter %}	
 {% endfilter %}
 {% endblock body %}	

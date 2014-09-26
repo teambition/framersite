@@ -89,6 +89,11 @@ pre ol li:before {
     content:""; margin-right: 0;
 }
 
+.without-border pre {
+    box-shadow: none;
+    padding-left:0;
+}
+
 // Curves
 img.curve-animation {
     border-radius: 3px 3px 0 0;
