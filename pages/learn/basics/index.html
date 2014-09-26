@@ -30,28 +30,31 @@
 {% filter markdown %}
 ### Layers 
 <a name="basics"></a>
-A layer is a rectangle that draws elements. Layers can display images, videos or text, and contain a set of basic properties.  
+A layer is a rectangle that draws elements. Layers can display images, videos or text, and contain a set of basic properties. Every layer inherits a few default properties: 
 <pre lang="coffeescript">
-# Create a layer & define its properties
+# Create a layer 
 layerA = new Layer 
+	x:0, y:0, width:100, height:100
+</pre>
+
+##### Properties
+Layers can have a range of properties. Besides being able to define an image, background, or video, you can also transform, hide layers, scale layers and much more.
+
+<pre lang="coffeescript">
+layerB = new Layer
 	image: "icon.png", 
 	width:128, height:128,
 	x:64, y:64, opacity:1,
 	scale:1, rotation:90
 </pre>
-
 ##### Hierarchy
 
 Parent layers are called superLayers, and child layers are called subLayers. Layers inherit properties from their superLayers. You can define a layers superLayer as a property, too.
 
 <pre lang="coffeescript">
-# When creating a new layer
-layerB = new Layer
-	x:20, y:20, superLayer:layerA
-
-# After layers have been created
-layerB.superLayer = layerC
-layerC.subLayer = layerB
+# Two ways to define hierarchy
+layerB.superLayer = layerA
+layerA.subLayer = layerB
 </pre>
 
 ##### Dynamic Properties
