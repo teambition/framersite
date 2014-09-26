@@ -12,10 +12,26 @@ pre {
     // Default
     color: #788D9E; 
     background: #fff; 
-    box-shadow: inset 0 0 0 1px #E4EBF2, inset 46px 0 0 #FBFDFE, inset 47px 0 0 #E4EBF2;
+    box-shadow: inset 0 0 0 1px #E4EBF2, inset 46px 0 0 #FBFDFE, inset 47px 0 0 #E4EBF2; // To-do: make this variables
 }
 pre, code {
     font-family: 'Menlo', 'Monaco', Courier, monospace; 
+}
+// Code blocks with illustrations
+.with-illustration {
+    max-width:638px;
+    width:100%;
+    display: inline-block;
+}
+.with-illustration .highlight pre {
+     min-height: 108px;
+     max-height: 108px;
+}
+.code-illustration {
+    float:right;
+    padding: $space24;
+    box-shadow: inset 0 0 0 1px #E4EBF2;
+    border-radius: 3px;
 }
 // Inline code
 .inline {
@@ -25,14 +41,11 @@ pre, code {
 	border-bottom: 1px dotted #ddd;
 	padding-bottom: 2px;
 }
-
 .o,
 .nf { 
     color: #788D9E; // Default
 } 
-
 .k { color: #FF9740;} // Orange
-
 .c, 
 .cm,
 .cp,
