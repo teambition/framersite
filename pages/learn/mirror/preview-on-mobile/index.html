@@ -19,21 +19,19 @@
 {% filter markdown %}
 ### Preview on Mobile
 
+If you've sent yourself the link to your prototype via email or text, opening it on your mobile device should automatically launch a web browser with your prototype. 
+
+**On iOS**, you can add your project to your Homescreen by tapping the Share button and then **"Add to Home Screen"**. This allows you to view your prototypes without the browser chrome of Safari.
+
+
 <img src="/static/images/learn/projects.png">
 
-#### For iOS devices:
 
-- You can add your project to your Homescreen by tapping the Share button and then "Add to Home Screen". We added uniquely colored icons for your project by default.
+##### Notes
 
-- To get a true fullscreen experience for your prototype, use something like <a href="https://github.com/joshpuckett/FSMirror" target="_blank">FSMirror</a>. iOS specific tags like minimal-ui and apple-mobile-web-app-capable are disabled by default because they have issues. See gotchas for more info.
+- The **inital-scale** meta tag is set to 0.5 by default. This works best when creating prototypes for Retina (@2x) devices. You can change this when working in @1x.
 
----
-
-#### For all devices
-
-- The **inital-scale** <a href="https://developer.mozilla.org/en/docs/Mozilla/Mobile/Viewport_meta_tag" target="_blank">meta tag</a> is set to 0.5 by default. This works best when creating prototypes for Retina (@2x) devices. You may want to change this when working in @1x.
-
-- To save your prototype for offline (cached) viewing, add /offline.html to the URL. This uses HTML5 offline caching. Note that his does not work well with auto refreshing.
+- To save your prototype for offline (cached) viewing, add /offline.html to the URL. Note that his doesn't work well with auto refreshing.
 
 
 {% endfilter %}	

@@ -19,29 +19,19 @@
 {% filter markdown %}
 ### Support
 
-#### Gotchas
-
-- If you switch networks or change your network settings, you may need to restart Framer Studio.
-
-- If your network is really slow you can use this <a href="http://bjango.com/help/skalapreview/connection/" target="blank">tethering trick</a> to connect via USB instead of WiFi.
-
-- If Framer Studio can't use Port 8000 it will try to use the next available Port (8001, 8002 etc).
-
-- The minimal-ui viewport tag is deprecated in iOS8 and <a href="http://visuellegedanken.de/2014-03-18/a-follow-up-on-the-minimal-ui-viewport-meta-tag" target="_blank">throws an error on desktop</a> so it's not enabled by default.
-
-- The apple-mobile-web-app-capable tag has a bug where consequent launches can <a href="http://stackoverflow.com/questions/12680909/ipad-web-app-freezes-on-startup" target="_blank">freeze your phone</a> so it's not enabled by default. It seems to be fixed in iOS8.
+If you switch networks or change your network settings while previewing prototypes, you may need to restart Framer Studio. By default, Framer Studio will use Port 8000. If Port 8000 isn't available, the next available port will be used.
 
 ---
 
 #### Troubleshooting
 
-**If your device can't find the server on the network:**
+##### Slow connection
+- If your network is really slow you can use this <a href="http://bjango.com/help/skalapreview/connection/" target="blank">tethering trick</a> to connect via USB instead of WiFi.
 
+##### Server not found
 - Double check if both devices are on the same network
-
-- Try to use you local dns name rather than the IP address. Look it up in System Preferences > Sharing. It should look something like http://my-computer.local:8000/MyProject.framer
-
-- Check if you network firewall is blocking traffic on ports 8000-9000
+- Try to use you local DNS Name rather than the IP address. Look it up in System Preferences > Sharing. 
+- Check if your Network Firewall is blocking Ports 8000-9000
 
 {% endfilter %}	
 {% endfilter %}	
