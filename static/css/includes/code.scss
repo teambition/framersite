@@ -26,6 +26,11 @@ pre, code {
 .with-full-illustration {
     width:100%;
     position: relative;
+    overflow: hidden;
+    border-radius: 3px;
+}
+.dragging pre {
+    min-height: 200px;
 }
 .with-illustration .highlight pre {
      min-height: 108px;
@@ -40,6 +45,11 @@ pre, code {
     position: absolute;
     top:0; right:0;
     max-width: 274px; height: auto;
+}
+.code-illustration-dragging {
+    position: absolute;
+    top:0; right:0;
+    max-width: 300px; height: auto;
 }
 // Inline code
 .inline {

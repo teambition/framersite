@@ -22,20 +22,20 @@
 {% filter pygmentify %}
 {% filter markdown %}
 ### Dragging
-You can create  a draggable layer by enabling it: 
+You can create a draggable layer by setting draggable.enabled to true. You can also specify the dragging resistance. This is especially useful if you'd like an element to be draggable only horizontally or vertically: simply set either the speedX or speedY to 0.
 
+<div class="with-full-illustration dragging">
 <pre lang="coffeescript">
 # Make the layer draggable 
 layerA.draggable.enabled = true
-</pre>
 
-You can also specify the dragging resistance. Setting the resistance to 0 will disable dragging entirely.
-
-<pre lang="coffeescript">
 # Set dragging resistance
 layerA.draggable.speedX = 1
-layerA.draggable.speedY = 0.5
+layerA.draggable.speedY = 0
 </pre>
+
+<img class="code-illustration-dragging" src="/static/images/learn/dragging.gif">
+</div>
 
 There are three dragging events in Framer:
 
