@@ -23,16 +23,23 @@ pre, code {
     width:100%;
     display: inline-block;
 }
+.with-full-illustration {
+    width:100%;
+    position: relative;
+}
 .with-illustration .highlight pre {
      min-height: 108px;
-     max-height: 108px;
 }
 .code-illustration {
     float:right;
     padding: $space24;
-    box-shadow: inset 0 0 0 1px #E4EBF2;
     border-radius: 3px;
     display: inline-block;
+}
+.code-illustration-states {
+    position: absolute;
+    top:0; right:0;
+    max-width: 274px; height: auto;
 }
 // Inline code
 .inline {
@@ -84,16 +91,13 @@ pre ol li:before {
     border-radius: 0 0 3px 3px;
     margin-top: -5px;
 }
-
 .without-linenumbers pre ol li:before {
     content:""; margin-right: 0;
 }
-
 .without-border pre {
     box-shadow: none;
     padding-left:0;
 }
-
 // Curves
 img.curve-animation {
     border-radius: 3px 3px 0 0;

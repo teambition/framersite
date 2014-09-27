@@ -24,11 +24,12 @@
 ### States
 Think of a state as a set of properties. A layer can have multiple states. You can add, remove or override states, as well as animate between them.
 
+<div class="with-full-illustration">
 <pre lang="coffeescript">
 # Add states
 layerA.states.add 
-    second: {scale: 0.5} 
-    third:  {rotation:45} 
+    second: {scale:0.75} 
+    third:  {rotation:90, scale:1} 
     
 # Set the animation options
 layerA.states.animationOptions = 
@@ -36,8 +37,10 @@ layerA.states.animationOptions =
 
 # Toggle states on click
 layerA.on Events.Click, -> 
-    imageLayer.states.next()
+    layerA.states.next()
 </pre>
+<img class="code-illustration-states" src="/static/images/learn/states.gif">
+</div>
 
 {% endfilter %}	
 {% endfilter %}
