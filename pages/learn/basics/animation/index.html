@@ -27,9 +27,9 @@
 Most properties of a layer can be animated: x, y, width, height, scale, opacity, etc. You can animate multiple properties at the same time.
 
 <pre lang="coffeescript">
- layerA.animate
-        properties:
-            opacity: 0.5
+layerA.animate
+	properties:
+		opacity: 0.5
 </pre>
 
 ##### Timing
@@ -37,11 +37,11 @@ Most properties of a layer can be animated: x, y, width, height, scale, opacity,
 Except when using spring curves, you can also define the duration of an animation and how often it repeats. 
 
 <pre lang="coffeescript">
- layerA.animate
-        properties:
-            opacity: 0.5
-        curve: "ease"
-        time: 1
+layerA.animate
+	properties:
+		opacity: 0.5
+	curve: "ease"
+    time: 1
 </pre>
 
 ##### Curves

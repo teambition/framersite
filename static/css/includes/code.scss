@@ -19,7 +19,7 @@ pre, code {
 }
 // Code blocks with illustrations
 .with-illustration {
-    max-width:638px;
+    max-width:642px;
     width:100%;
     display: inline-block;
 }
@@ -34,12 +34,16 @@ pre, code {
 }
 .with-illustration .highlight pre {
      min-height: 108px;
+     border-radius: 3px 0 0 3px;
 }
 .code-illustration {
     float:right;
     padding: $space24;
-    border-radius: 3px;
+    border-radius: 0 3px 3px 0;
     display: inline-block;
+    box-shadow: inset 0 0 0 1px #E4EBF2;
+    position: relative;
+    left:-1px;
 }
 .code-illustration-states {
     position: absolute;
@@ -107,6 +111,7 @@ pre ol li:before {
 .without-border pre {
     box-shadow: none;
     padding-left:0;
+    padding-top: $space32;
 }
 // Curves
 img.curve-animation {

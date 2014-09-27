@@ -30,22 +30,25 @@ You'll be presented with the Import Sheet, where you can import designs directly
 
 <img src="/static/images/learn/ss-import-sheet.png" srcset="/static/images/learn/ss-import-sheet@2x.png 2x" draggable="false">
 
-The import sheet also informs you about the state of the applications:
+The import sheet also informs you about the state of the applications. When inactive, they can be in two different states:
 
 - **Not running** <br> The app isn't open.
 - **Open a saved document** <br> Either you have no document open or your opened document hasn't been saved.
 
 When you've opened a saved document, the Import button will become active and you'll see the title of your active document appear below the application title.
 
-After importing, you'll see a few new lines of code appear:
-
+After importing, the following lines will appear above your code:
 <pre lang="coffeescript">
 # This imports all the layers for "Prototype" into prototypeLayers
 prototypeLayers = Framer.Importer.load "imported/Prototype"
 </pre>
 
+This allows you to target all of the imported layers within Framer. Note that the default variable name can be changed.
+
+----
+
 ##### Re-Importing
-Subsequent imports from the same file will work as long as you don't rename layers that you've already targeted within Framer. This allows for rapid iteration. CMD + Shift + I
+Subsequent imports from the same file will work as long as you don't rename layers that you've already targeted within Framer. This allows for rapid iteration, especially with the keyboard shortcut: **CMD + Shift + I**
 
 {% endfilter %}	
 {% endfilter %}	
