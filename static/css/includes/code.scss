@@ -137,4 +137,7 @@ img.curve {
     pre ol li:before {
         content:"";
     }
+    pre {
+        box-shadow: inset 0 0 0 1px #E4EBF2;
+    }
 }

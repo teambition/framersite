@@ -29,6 +29,7 @@ pre {
 	height: 376px; // 440px if nav is included
 	padding-top: 80px;
 	margin-top: $space64;
+	position: relative;
 }
 .page-header h1 {
 	margin-bottom: $space8;
@@ -38,10 +39,11 @@ pre {
 }
 .page-header .content-inner {
 	position: relative;
+	height: 296px;
 }
 .page-header img {
 	position: absolute;
-	bottom:-120px;
+	bottom:0;
 	right:176px;
 	max-height: 420px;
 	max-width: 340px;
@@ -229,41 +231,39 @@ pre {
 .ss-mirror-iphone {
 	margin-bottom: $space48;
 }
-@media screen and (max-width:1020px) {
-	.content-inner {
-		max-width: 600px;
-		margin: 0 auto;
-		float:none;
-		clear:both;
+@media screen and (max-width:1080px) {
+	.page-header img {
+		right:130px;
 	}
-	.align-right {
-		max-width: 100%;
-		float: none;
+}
+@media screen and (max-width:980px) {
+	.page-header img {
+		right:0px;
 	}
 	.sidebar {
-		position: relative;
-		max-width: 100%; width:100%;
-		padding-bottom:$space24;
-		margin-bottom: $space56;
-		border-bottom: 1px solid #eee;
+		display: none;
 	}
-	.sidebar.sticky {
-		position: relative;
-		top: 0;
-	}
-	.sidebar li {
-		display: inline-block;
-	}
-	.sidebar li+li {
-		margin-top: 0;
-		margin-left: $space24;
+}
+@media screen and (max-width:920px) {
+	.page-header img {
+		max-width: 300px;
+		right: 24px;
 	}
 }
 @media screen and (max-width: 720px) {
-	.sidebar {
-		padding-bottom:$space16;
-		margin-bottom: $space56;
-	}	
+	.page-header {
+		text-align: center;
+		height: 460px;
+		padding-top:24px;
+	}
+	.page-header .content-inner {
+		height: 436px;
+	}
+	.page-header img {
+		max-width: 210px;
+		right: 50%;
+		margin-right:-105px;
+	}
 }
 @media screen and (max-width:560px) {
 	.sidebar {
