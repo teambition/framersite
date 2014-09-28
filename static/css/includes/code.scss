@@ -75,7 +75,8 @@ pre, code {
 	padding-bottom: 2px;
 }
 .o,
-.nf { 
+.nf,
+.content-inner pre ol li { 
     color: #788D9E; // Default
 } 
 .k { color: #FF9740;} // Orange
@@ -92,13 +93,13 @@ pre, code {
 } 
 
 // Custom Line Numbers
-pre ol {
+.content-inner pre ol {
     counter-reset: linenumbers;
 }
-pre ol li {
+.content-inner pre ol li {
     line-height: 1.6;
 }
-pre ol li:before {
+.content-inner pre ol li:before {
     content: counter(linenumbers);
     counter-increment: linenumbers;
     float:left;
