@@ -1,5 +1,8 @@
 $(document).ready(function() {
-
+	$(".feature-banners a").hover(function() {
+			$(this).toggleClass("is-active");
+	});
+	
 	var sideBar, learnSidebar, topNav, exampleBlock, exampleDevices;
 	sideBar = $('.sidebar');
 	learnSidebar = $('.subpage .sidebar');
