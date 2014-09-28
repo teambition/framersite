@@ -19,10 +19,7 @@ pre, code {
 }
 // Code blocks with illustrations
 .with-illustration {
-    max-width:658px;
-    width:100%;
-    float: left;
-    @include clearfix;
+    position: relative;
 }
 .with-full-illustration {
     width:100%;
@@ -43,15 +40,19 @@ pre, code {
     border-radius: 0 3px 3px 0;
     display: inline-block;
     box-shadow: inset 0 0 0 1px #E4EBF2;
-    position: relative;
-    left:-1px; 
+    z-index: 30;
 }
-// Four lines
+.code-illustration.no-border {
+    padding:0; box-shadow: none;
+}
+// Line-specific
 .with-illustration.four-lines {
-    max-width: 630px;
 }
 .with-illustration.four-lines + .code-illustration {
     padding:26px;
+}
+.with-illustration.layer-positioning-minmax pre {
+    min-height: 160px;
 }
 
 // Specifics

@@ -37,8 +37,9 @@ A layer is a rectangle that draws elements. Layers can display images, videos or
 layerA = new Layer 
 	x:0, y:0, width:100, height:100
 </pre>
-</div>
 <img class="code-illustration" src="/static/images/learn/layer-new.png" srcset="/static/images/learn/layer-new@2x.png 2x" draggable="false">
+
+</div>
 
 ##### Hierarchy
 
@@ -49,8 +50,8 @@ Parent layers are called superLayers, and child layers are called subLayers. Lay
 layerB.superLayer = layerA
 layerA.subLayer = layerB
 </pre>
-</div>
 <img class="code-illustration" src="/static/images/learn/layer-hierarchy.png" srcset="/static/images/learn/layer-hierarchy@2x.png 2x" draggable="false">
+</div>
 
 ##### Positioning
 You can **center** a layer within its superLayer by calling the center() function:
@@ -59,14 +60,17 @@ layerA.center()
 </pre>
 
 You can also dynamically retreive values of a layers X and Y position, as well as its **minX** and **maxX** position.
+<div class="with-illustration layer-positioning-minmax">
 <pre lang="coffeescript">
 # Properties of layerA:
-# x:20, y:20, width:40
+# x:40, y:40, width:80, height:80
 
-layerB.x = layerA.X     # x:20
-layerB.x = layerA.minX  # x:20
-layerB.x = layerA.maxX  # x:60
+layerB.x = layerA.X     # x:40
+layerB.x = layerA.minX  # x:40
+layerB.x = layerA.maxX  # x:120
 </pre>
+<img class="code-illustration no-border" src="/static/images/learn/layer-positioning-minmax.png" srcset="/static/images/learn/layer-positioning-minmax@2x.png 2x" draggable="false">
+</div>
 
 ##### Properties
 Layers can have a range of properties. Besides being able to define an image, background, or video, you can also transform, hide layers, scale layers and much more.
@@ -78,8 +82,8 @@ layerB = new Layer
 	width:60, height:60,
 	scale:1, borderRadius:"3px"
 </pre>
-</div>
 <img class="code-illustration" src="/static/images/learn/layer-properties-one.png" srcset="/static/images/learn/layer-properties-one@2x.png 2x" draggable="false">
+</div>
 
 You can also define and override properties after having defined a layer. Note the different notation.
 
@@ -89,8 +93,8 @@ layerA.rotation = 45,
 layerA.opacity = 0.5
 layerA.scale = 0.5
 </pre>
-</div>
 <img class="code-illustration" src="/static/images/learn/layer-properties-two.png" srcset="/static/images/learn/layer-properties-two@2x.png 2x" draggable="false">
+</div>
 
 <!-- Layers can be styled with CSS properties, too.
 
