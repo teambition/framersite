@@ -29,7 +29,7 @@ $(document).ready(function() {
 			$(sideBar).removeClass('sticky');
 		}
 
-		if ($(window).scrollTop() > 680) {
+		if ($(window).scrollTop() > 710) {
 			$(learnSidebar).addClass('sticky');
 		} else {
 			$(learnSidebar).removeClass('sticky');
