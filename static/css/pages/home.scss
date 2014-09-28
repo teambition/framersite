@@ -234,6 +234,12 @@ footer.footer img {
 	height: 128px;
 	width: 128px;
 }
+// List fix
+.content-inner ul li {
+	list-style: none;
+	padding:0;
+	left:0;
+}
 // Media Queries
 @media screen and (max-width:1080px) {
 	.logo-string figure+figure {

@@ -74,11 +74,11 @@ pre {
 	position: relative;
 }
 // Extend border-bottom to full-width
-.learn-nav:after {
-	content:""; position: relative; top: 1px;
-	width:300%; height:1px; background: $separator;
-	left: -75%;
-}
+// .learn-nav:after {
+// 	content:""; position: relative; top: 1px;
+// 	width:300%; height:1px; background: $separator;
+// 	left: -75%;
+// }
 .learn-nav a {
 	color: $sidebar-links;
 	position: relative;
