@@ -214,6 +214,12 @@ pre {
 .sidebar .active div {
 	color: #fff;
 }
+
+// Inline images
+.inline-left {
+	float: left;
+	margin-right: 60px;
+}
 @media screen and (max-width:1020px) {
 	.content-inner {
 		max-width: 600px;
