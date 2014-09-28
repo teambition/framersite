@@ -52,11 +52,20 @@ layerA.subLayer = layerB
 </div>
 <img class="code-illustration" src="/static/images/learn/layer-hierarchy.png" srcset="/static/images/learn/layer-hierarchy@2x.png 2x" draggable="false">
 
-##### Centering
-To center a layer within its superLayer, simply write:
-
+##### Positioning
+You can **center** a layer within its superLayer by calling the center() function:
 <pre lang="coffeescript">
 layerA.center()
+</pre>
+
+You can also dynamically retreive values of a layers X and Y position, as well as its **minX** and **maxX** position.
+<pre lang="coffeescript">
+# Properties of layerA:
+# x:20, y:20, width:40
+
+layerB.x = layerA.X     # x:20
+layerB.x = layerA.minX  # x:20
+layerB.x = layerA.maxX  # x:60
 </pre>
 
 ##### Properties
