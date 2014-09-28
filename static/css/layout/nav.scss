@@ -33,15 +33,16 @@ nav.top.sticky {
 	position: fixed;
 }
 // Targets all navigation items, not just top nav.
-nav li, 
-nav a {
+nav li,
+.learn-nav a {
 	float: left;
 	font-size: 12px;
 	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
 	line-height: inherit;
-	padding:0;
+	position: relative;
+	z-index: 300;
 }
 nav.top a {
 	text-shadow: 0 1px 0 rgba(0,0,0,0.1);
@@ -114,6 +115,7 @@ nav.top input {
 	}
 	nav.top {
 		height:88px;
+		padding-top:0;
 	}
 	nav.top .framer {
 		width:100%;
