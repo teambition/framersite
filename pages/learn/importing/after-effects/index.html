@@ -19,10 +19,26 @@
 {% filter markdown %}
 ### After Effects
 
-- Maybe some export rules we learned - see quip
-- Show drag and drop a movie creates a videolayer
-- Talk about some unique properties videolayers inherit: oncanplaythrough, play, pause, etc,
-- Maybe link to first videoLayer google example with spinner 
+Framer also supports videoLayers. You can drag and drop a video file into the preview pane to automatically create a videoLayer out of it. Animated transparant videos may showcase some jagged edges due to anti-aliasing. If you can, exporting with a background is recommended.   
+
+----
+
+##### Exporting Transparant videos
+
+1. Toggle Transparency grid on your composition
+2. Export by "Add to Render Queue" (Not AME)
+3. Select RGB+Alpha
+4. Use the Animation or Apple ProRes444 Codec
+
+---
+
+#### Notes
+
+##### Chrome doesn't support .MOV
+Framer and Safari support Lossless .MOV straight from AE. 
+
+##### Web-compatible Prototypes 
+To create web-compatible videos, convert them to MP4 or export using AME, and use .H264 as the Codec and .MP4 as file format
 
 
 {% endfilter %}	

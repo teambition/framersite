@@ -164,8 +164,8 @@ p.copy {
 	margin-bottom: $space32;
 }
 // Lists on Pages
-.content-inner ul li  {
-	line-height: 1.5;
+.content-inner ul li,
+.content-inner ol li,  {
 	font-size: 1em;
 	font-weight: 400;
 	color: $text;
@@ -174,10 +174,26 @@ p.copy {
 	left: $space16;
 	padding-left: $space8; 
 }
-.content-inner ul li+li {
+.content-inner ol li {
+	list-style-type: decimal;
+	left: 20px;
+}
+// Reset for code-blocks
+.content-inner .highlight ol li {
+	list-style-type: none;
+	left:0;
+	padding-left:0;
+}
+.content-inner ul li+li,
+.content-inner ol li+li {
 	margin-top: $space8;
 }
-.content-inner li ul li  {
+
+// Reset for code-blocks
+.content-inner .highlight ol li+li {
+	margin-top:0;
+}
+.content-inner li ul li {
 	list-style-type: none;
 	padding: 0; left: 0; 
 	margin-top: $space8;

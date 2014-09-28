@@ -235,6 +235,9 @@ pre {
 	.page-header img {
 		right:130px;
 	}
+	.align-right {
+		max-width: 650px;
+	}
 }
 @media screen and (max-width:980px) {
 	.page-header img {
@@ -244,7 +247,7 @@ pre {
 		display: none;
 	}
 }
-@media screen and (max-width:920px) {
+@media screen and (max-width:960px) {
 	.page-header img {
 		max-width: 300px;
 		right: 24px;
