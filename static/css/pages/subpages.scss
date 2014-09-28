@@ -47,8 +47,10 @@ pre {
 	max-width: 340px;
 	z-index: 400;
 }
-a[name] {
-	position: relative; top: -228px;
+// Link jumps
+.subpage a[name] {
+	position: relative; 
+	top: -346px;
 	display: block;
 }
 .align-right {
@@ -72,14 +74,9 @@ a[name] {
 .learn-nav {
 	border-bottom: 1px solid $separator;
 	margin-bottom: $space80;
+	padding-top: $space40;
 	position: relative;
 }
-// Extend border-bottom to full-width
-// .learn-nav:after {
-// 	content:""; position: relative; top: 1px;
-// 	width:300%; height:1px; background: $separator;
-// 	left: -75%;
-// }
 .learn-nav a {
 	color: $sidebar-links;
 	position: relative;
@@ -87,8 +84,8 @@ a[name] {
 }
 .learn-nav .active {
 	border-bottom: 1px solid $blue;
-	height: 182px;
-	margin-bottom: -2px;
+	height: 180px;
+	margin-bottom: -1px;
 	z-index: 200;
 }
 .learn-nav .active.importing {
@@ -155,7 +152,7 @@ a[name] {
 	width: 100%;
 }
 .subpage .sidebar {
-	margin-top: 264px;
+	margin-top: 310px;
 }
 .sidebar.sticky {
 	position: fixed;

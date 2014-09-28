@@ -1,8 +1,11 @@
+$('body.subpage.learn').scrollTop($('.learn-nav').offset().top);
+$('body.subpage.learn.basics').scrollTop(0);
+
 $(document).ready(function() {
 	$(".feature-banners a").hover(function() {
 			$(this).toggleClass("is-active");
 	});
-	
+
 	var sideBar, learnSidebar, topNav, exampleBlock, exampleDevices;
 	sideBar = $('.sidebar');
 	learnSidebar = $('.subpage .sidebar');
