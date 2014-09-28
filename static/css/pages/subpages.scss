@@ -59,6 +59,7 @@ a[name] {
 }
 .align-right p {
 	max-width: 580px;
+	width: 100%;
 	text-align: left;
 }
 // Clearfix wrapper
@@ -219,6 +220,17 @@ a[name] {
 .inline-left {
 	float: left;
 	margin-right: 60px;
+}
+.icon-mirror {
+	margin-right:$space40;
+	position: relative;
+	top:4px;
+}
+.align-right img + p {
+	max-width: 660px;
+}
+.ss-mirror-iphone {
+	margin-bottom: $space48;
 }
 @media screen and (max-width:1020px) {
 	.content-inner {
