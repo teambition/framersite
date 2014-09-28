@@ -1,24 +1,27 @@
-$('body.subpage.learn').scrollTop($('.learn-nav').offset().top);
-$('body.subpage.learn.basics').scrollTop(0);
-
+if ($('body').hasClass('learn')) {
+	$('body.subpage.learn').scrollTop($('.learn-nav').offset().top);
+	$('body.subpage.learn.basics').scrollTop(0);
+}
 $(document).ready(function() {
 	$(".feature-banners a").hover(function() {
 			$(this).toggleClass("is-active");
 	});
 
-	var sideBar, learnSidebar, topNav, exampleBlock, exampleDevices;
-	sideBar = $('.sidebar');
-	learnSidebar = $('.subpage .sidebar');
+	var docsSidebar, learnSidebar, topNav, exampleBlock, exampleDevices;
+	docsSidebar = $('.subpage.docs .sidebar');
+	learnSidebar = $('.subpage.learn .sidebar');
 	topNav = $('.home nav.top');
 	exampleBlock = $('.examples');
 	exampleDevices = $('.device-left, .device-right');
 
+	/* Hover on devices within Examples Block */
 	$(exampleBlock).hover(
 		function() {
 			$(exampleDevices).toggleClass("shrink");
 		}
 	);
 
+	/* Prevents Markdown from wrapping all images in p tags */
 	$('.subpage p img').unwrap();
 
 	var playCarouselVideo = false
@@ -29,10 +32,10 @@ $(document).ready(function() {
 		var scrollPos = $(this).scrollTop();
 
 		// Sidebar Sticky ----------------
-		if ($(window).scrollTop() > 330) {
-			$(sideBar).addClass('sticky');
+		if ($(window).scrollTop() > 420) {
+			$(docsSidebar).addClass('sticky');
 		} else {
-			$(sideBar).removeClass('sticky');
+			$(docsSidebar).removeClass('sticky');
 		}
 
 		if ($(window).scrollTop() > 710) {
@@ -62,9 +65,6 @@ $(document).ready(function() {
 	});
 });
 		
-
-// /* ========================= */
-
 function isMobile() {
 	return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
 }

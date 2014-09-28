@@ -31,7 +31,10 @@ pre {
 	margin-top: $space64;
 	position: relative;
 }
-.page-header h1 {
+.docs .page-header {
+	height:320px;
+}
+.learn .page-header h1 {
 	margin-bottom: $space8;
 }
 .page-header h2 {
@@ -151,12 +154,14 @@ pre {
 	float:left;
 	position: absolute;
 	max-width: 210px;
+	margin-top: 32px;
 	width: 100%;
 }
-.subpage .sidebar {
+.learn .sidebar {
 	margin-top: 310px;
 }
-.sidebar.sticky {
+.sidebar.sticky,
+.learn .sidebar.sticky {
 	position: fixed;
 	margin-top: 0;
 	top: 32px;
@@ -177,28 +182,6 @@ pre {
 	letter-spacing: 0.5px;
 	line-height: 1.25;
 }
-// Custom Numbers
-// .sidebar ul {
-//     counter-reset: numbers;
-// }
-// .sidebar li:before {
-//     content: counter(numbers);
-//     counter-increment: numbers;
-//     margin-right: 14px;
-//     font-size: 16px;
-//     position: relative;
-//     margin-top: 12px;
-//     float: left;
-//     font-weight: 400;
-//     -webkit-user-select: none; 
-//     -moz-user-select: none;  
-//     -ms-user-select: none;     
-//     color: $blue;
-//     border-radius: 50%;
-//     // box-shadow: 0 0 0 1px $blue60;
-//     width:18px; height:18px; line-height: 20px;
-//   	text-align: center;
-// }
 .sidebar a div {
 	color: $sidebar-links;
 }
@@ -245,6 +228,11 @@ pre {
 	}
 	.sidebar {
 		display: none;
+	}
+	.learn-nav .active {
+		border-bottom: none;
+		height: auto;
+		margin-bottom: 0;
 	}
 }
 @media screen and (max-width:960px) {
