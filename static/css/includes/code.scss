@@ -48,7 +48,7 @@ pre, code {
 // Line-specific
 .with-illustration.four-lines {
 }
-.with-illustration.four-lines + .code-illustration {
+.with-illustration.four-lines div + .code-illustration {
     padding:26px;
 }
 .with-illustration.layer-positioning-minmax pre {
