@@ -1,8 +1,7 @@
 nav.top {
 	width: 100%;
 	height: $space64;
-	line-height:69px;
-	padding: 0 $space32;
+	padding: 28px $space32 0;
 	vertical-align:middle;
 	position: absolute;
 	top:0;
@@ -42,6 +41,7 @@ nav a {
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
 	line-height: inherit;
+	padding:0;
 }
 nav.top a {
 	text-shadow: 0 1px 0 rgba(0,0,0,0.1);
