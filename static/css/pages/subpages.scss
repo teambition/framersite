@@ -208,15 +208,28 @@ pre {
 .page-navigation {
 	margin-top: $space80;
 }
-.page-navigation a h5 {
+.page-navigation .next {
+	float: right;
+}
+.page-navigation .previous {
+	float: left;
+	color: $graphite80;
+}
+.page-navigation h5 {
 	color: $black;
 	margin-bottom: 0;
+}
+.page-navigation h6.last {
+	color: $blue;
 }
 .page-navigation a h6, .page-navigation a figure {
 	display: inline-block;
 }
-.page-navigation a figure {
+.page-navigation .next figure {
 	margin-left: $space8;
+}
+.page-navigation .previous figure {
+	margin-right: $space8;
 }
 // Inline images
 .inline-left {
