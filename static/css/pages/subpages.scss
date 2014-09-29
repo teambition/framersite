@@ -5,6 +5,9 @@ img + h4,
 img + h5 {
 	margin-top: $space24;
 }
+.subpage hr {
+	margin: $space48 auto;
+}
 // Type - Vertical spacing
 h3 {
 	margin-bottom: $space24;
@@ -206,7 +209,7 @@ pre {
 
 // Page summaries
 .summary {
-	margin: $space80 0;
+	margin: $space80 0 0 0;
 }
 .summary ul {
 	margin-bottom: 0;
@@ -228,7 +231,7 @@ pre {
 
 // Page-to-page navigation
 .page-navigation {
-	margin-top: $space80;
+	// margin-top: $space80;
 }
 .page-navigation .next {
 	float: right;
