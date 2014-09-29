@@ -211,13 +211,16 @@ pre {
 .page-navigation .next {
 	float: right;
 }
+.page-navigation .next h5 {
+	text-align: right;
+}
 .page-navigation .previous {
 	float: left;
 	color: $graphite80;
 }
 .page-navigation h5 {
 	color: $black;
-	margin-bottom: 0;
+	margin-bottom: 4px;
 }
 .page-navigation h6.last {
 	color: $blue;
