@@ -36,7 +36,7 @@ layerA.draggable.speedX = 1
 layerA.draggable.speedY = 0
 </pre>
 
-<img class="code-illustration-dragging" src="/static/images/learn/dragging.gif">
+<img class="code-illustration-dragging" src="/static/images/learn/dragging.gif" srcset="/static/images/learn/dragging@2x.gif 2x">
 </div>
 
 Framer has three dragging events: DragStart, DragMove and DragEnd.
@@ -52,7 +52,7 @@ layerA.on Events.DragStart, ->
     	curve: "ease"
     	time: 0.2
 </pre>
-<img class="code-illustration no-border" src="/static/images/learn/dragging-events-start.png">
+<img class="code-illustration no-border" src="/static/images/learn/dragging-events-start.png" srcset="/static/images/learn/dragging-events-start@2x.png 2x">
 </div>
 
 <pre lang="coffeescript">
@@ -72,9 +72,19 @@ layerA.on Events.DragEnd, ->
     	curve: "ease"
     	time: 0.2
 </pre>
-<img class="code-illustration no-border" src="/static/images/learn/dragging-events-end.png">
+<img class="code-illustration no-border" src="/static/images/learn/dragging-events-end.png" srcset="/static/images/learn/dragging-events-end@2x.png 2x">
 </div>
 
+<hr>
+
+<h3>Summary</h3>
+<ul>
+    <li>Setting draggable.enabled to true creates a draggable layer </li>
+    <li>Dragging direction can be defined with speedX and speedY </li>
+    <li>Framer has three dragging events </li>
+</ul>
+
+<hr>
 
 <section class="page-navigation">
     <a class="previous" href="/learn/basics/events">
