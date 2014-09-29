@@ -22,7 +22,7 @@
 {% filter pygmentify %}
 {% filter markdown %}
 ### States
-States are sets of properties. States can be named, and later interacted with. A layer can have multiple states. You can add, remove and override states, as well as animate between them. Every layer inherits a "default" state with its properties. It's always included when switching states.
+States are sets of properties. States can be named, and later interacted with. A layer can have multiple states. You can add, remove and override states, as well as animate between them. Every layer has a "default" state with its current properties, which is included when switching states.
 
 <div class="with-full-illustration">
 <pre lang="coffeescript">
@@ -74,7 +74,8 @@ layerA.states.add
 </pre>
 
 <section class="summary">
-<figure class="icon-learn-summary"></figure><h3>Summary</h3>
+<h3>Summary</h3>
+<p>States in a nutshell</p>
 <ul>
     <li>States are sets of properties </li>
     <li>Every layer has a default state</li>

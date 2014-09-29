@@ -215,9 +215,29 @@ pre {
 	margin-bottom: 0;
 }
 .summary ul li {
-	opacity: .9;
 	font-size: 18px;
 	line-height: 1.4;
+	list-style: none;
+	padding-left: 0;
+	left: 0;
+}
+.summary ul li:before {
+	content: "";
+	background: url("/static/images/learn/icon-learn-summary.png") no-repeat;
+	background-size: contain;
+	height:20px; width:14px;
+	display: inline-block;
+	margin-right: $space16;
+	position: relative;
+	top: 6px;
+	float: left;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+	.summary ul li:before {
+		content: "";
+		background: url("/static/images/learn/icon-learn-summary@2x.png") no-repeat;
+		background-size: 100%;
+	}
 }
 .summary figure,
 .summary h3 {
@@ -229,9 +249,12 @@ pre {
 	margin-right: $space16;
 }
 .summary h3 {
-	margin-bottom: $space16;
+	margin-bottom: -6px;
 }
-
+.summary p {
+	margin-bottom: $space24;
+	color: $graphite60;
+}
 // Page-to-page navigation
 .page-navigation {
 	// margin-top: $space80;
