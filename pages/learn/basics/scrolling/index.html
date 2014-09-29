@@ -25,13 +25,22 @@
 
 You can scroll a layer contained within a superLayer, as long as its height or width exceeds that of its parent.
 
+<div class="with-illustration">
 <pre lang="coffeescript">
-# Enable scrolling
-layerA = new Layer height: 100
-layerB = new Layer height: 200, superLayer: layerA
+# The superLayer
+layerA = new Layer 
+	height: 100
 
+# The subLayer
+layerB = new Layer 
+	height: 200, superLayer: layerA
+
+# Enable scrolling on the superLayer
 layerA.scroll = true
 </pre>
+<img class="code-illustration-scrolling" src="/static/images/learn/scrolling.gif" draggable="false">
+</div>
+
 
 Alternatively, you can enable scrolling for a specific direction only:
 
@@ -40,7 +49,7 @@ layerA.scrollHorizontal = true
 layerA.scrollVertical = true
 </pre>
 
-There is one scrolling event, which you can also use to retreive the scrolling positions:
+There is one scrolling event, which you can also use to retreive the scrolling positions of a layer.
 
 <pre lang="coffeescript">
 # Scroll Event

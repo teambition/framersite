@@ -28,6 +28,7 @@ They include a click, mouse over, a scroll and more.
 To listen to an event, use <code class="inline">layer.on event, → ...</code><br>
 To stop listening you can use <code class="inline">layer.off event, → ...</code>
 
+<div class="with-illustration">
 <pre lang="coffeescript">
 # Listen to multiple events
 layerA.on Events.Click, -> 
@@ -39,6 +40,8 @@ layerA.on Events.TouchMove, ->
 layerA.on Events.TouchEnd, -> 
     ...
 </pre>
+<img class="code-illustration no-border" src="/static/images/learn/events.png" srcset="/static/images/learn/events@2x.png 2x" draggable="false">
+</div>
 
 One of the most common uses of Events in Framer is switching between a set of states:
 
@@ -49,7 +52,7 @@ layerA.on Events.Click, ->
 </pre>
 
 ##### Animation Chaining
-Events can also be used to chain animations, either via states or layer animations. With these events, you can start a new animation after another one ends. Note that the animation events also work if you've only defined states. The animation that occurs after switching states also fires an AnimationEnd event.
+Events can also be used to chain animations. With these events, you can start a new animation after another one ends. Note that the animation events also work if you've only defined states. The animation that occurs after switching states also fires an AnimationEnd event.
 
 <pre lang="coffeescript">
 # Animation Events
@@ -57,13 +60,28 @@ layerA.on Events.AnimationStart, ->
 	...
 layerA.on Events.AnimationEnd, ->
 	...
-
-# States Events
-layerA.on Events.StateWillSwitch, ->
-	...
-layerA.on Events.StateDidSwitch, ->
-	...
 </pre>
+
+Below is a simple example of animation chaining. Every animation gets an AnimationEnd event, so you can nest these events infinitely.
+
+<div class="with-illustration">
+<pre lang="coffeescript">
+layerA.animate 
+	properties:
+		x:200
+	curve: "ease-in-out"
+		
+layerA.on Events.AnimationEnd, ->
+	layerA.animate
+		properties:
+			x:100
+		curve: "ease-in-out"
+</pre>
+<img class="code-illustration no-border" src="/static/images/learn/animation-chaining.gif" srcset="/static/images/learn/animation-chaining@2x.gif 2x" draggable="false">
+</div>
+
+
+
 
 
 
