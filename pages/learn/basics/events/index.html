@@ -22,11 +22,10 @@
 {% filter pygmentify %}
 {% filter markdown %}
 ### Events
-Events are things that can happen to a layer, often caused by user interaction. 
-They include a click, mouse over, a scroll and more.
+Events are things that can happen to a layer, often caused by user interaction. With events, you can animate layers based on these interactions. Framer contains many events: click events, touch events, scroll events, drag events and more.
 
-To listen to an event, use <code class="inline">layer.on event, → ...</code><br>
-To stop listening you can use <code class="inline">layer.off event, → ...</code>
+To start listening to an event, write: <code class="inline">layer.on event, → ...</code><br>
+To stop listening you can write: <code class="inline">layer.off event, → ...</code>
 
 <div class="with-illustration">
 <pre lang="coffeescript">
@@ -43,7 +42,7 @@ layerA.on Events.TouchEnd, ->
 <img class="code-illustration no-border" src="/static/images/learn/events.png" srcset="/static/images/learn/events@2x.png 2x" draggable="false">
 </div>
 
-One of the most common uses of Events in Framer is switching between a set of states:
+One of the most common use cases of events is toggling between a set of states on click.
 
 <pre lang="coffeescript">
 # Toggle states on click
@@ -52,7 +51,7 @@ layerA.on Events.Click, ->
 </pre>
 
 ##### Animation Chaining
-Events can also be used to chain animations. With these events, you can start a new animation after another one ends. Note that the animation events also work if you've only defined states. The animation that occurs after switching states also fires an AnimationEnd event.
+Events can also be used to chain animations. With these events, you can start a new animation after another one ends. The animation that occurs when switching states also fires an AnimationEnd event.
 
 <pre lang="coffeescript">
 # Animation Events
@@ -62,7 +61,7 @@ layerA.on Events.AnimationEnd, ->
 	...
 </pre>
 
-Below is a simple example of animation chaining. Every animation gets an AnimationEnd event, so you can nest these events infinitely.
+Below is a simple example of a chained animation. Every animation gets an AnimationEnd event, so they can be chained infinitely.
 
 <div class="with-illustration">
 <pre lang="coffeescript">
@@ -83,8 +82,8 @@ layerA.on Events.AnimationEnd, ->
 <section class="summary">
 <figure class="icon-learn-summary"></figure><h3>Summary</h3>
 <ul>
-    <li>Events are often caused by user interaction </li>
-    <li>Events are commonly used to toggle states </li>
+    <li>Events are things that can happen to a layer </li>
+    <li>Events are often used to toggle states </li>
     <li>Animations can be chained with the AnimationEnd event </li>
 </ul>
 </section>

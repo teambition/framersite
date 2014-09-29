@@ -24,7 +24,7 @@
 
 ### Animation
 
-Most properties of a layer can be animated: x, y, width, height, scale, opacity, etc. You can animate multiple properties at the same time.
+Most properties of a layer can be animated, including x, y, width, height, scale, opacity, rotation and more. Multiple properties can be animated at once.
 
 <pre lang="coffeescript">
 layerA.animate
@@ -34,19 +34,21 @@ layerA.animate
 
 ##### Timing
 
-Except when using spring curves, you can also define the duration of an animation and how often it repeats. 
+Except when using spring curves, you can define the duration of an animation. Animations can also be delayed and repeated. Animation time and delay are defined in seconds.
 
 <pre lang="coffeescript">
 layerA.animate
 	properties:
 		opacity: 0.5
 	curve: "ease"
+	repeat: 1
+	delay: 2
     time: 1
 </pre>
 
 ##### Curves
 
-Animations optionally take a curve that describes the type of animation. You can use pre-defined curves like 'linear' or 'ease-in', custom ones, or spring animations. An overview of different curves:
+Animations optionally take a curve that describe the type of animation. You can use pre-defined curves like 'linear' or 'ease-in', custom bezier curves and spring animations. Below is an overview of different curves.
 
 <section class="clearfix">
 <div class="col-4">
@@ -90,9 +92,9 @@ curve:"spring(200,15,0)"
 <section class="summary">
 <figure class="icon-learn-summary"></figure><h3>Summary</h3>
 <ul>
-    <li>Most properties of layers can be animated </li>
-    <li>Animations can be timed and repeated </li>
-    <li>Framer contains various animation curves, including spring physics </li>
+    <li>Multiple properties can be animated at once</li>
+    <li>Animations can be timed, delayed and repeated</li>
+    <li>Framer contains various animation curves, including spring curves</li>
 </ul>
 </section>
 

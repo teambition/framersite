@@ -22,7 +22,7 @@
 {% filter pygmentify %}
 {% filter markdown %}
 ### States
-Think of a state as a set of properties. A layer can have multiple states. You can add, remove or override states, as well as animate between them.
+States are sets of properties. States can be named, and later interacted with. A layer can have multiple states. You can add, remove and override states, as well as animate between them. Every layer inherits a "default" state with its set properties. It's always included when switching states.
 
 <div class="with-full-illustration">
 <pre lang="coffeescript">
@@ -42,7 +42,7 @@ layerA.on Events.Click, ->
 <img class="code-illustration-states" src="/static/images/learn/states.gif">
 </div>
 
-Just like layer animations, states also take a set of curves. You can define the animationOptions of all states of a layer.
+Just like layer animations, states also take a set of curves. You can define the animationOptions of all states of a layer at once.
 
 <pre lang="coffeescript">
 # Set the animation options
@@ -51,7 +51,7 @@ layerA.states.animationOptions =
 </pre>
 
 ##### Switching states
-Besides toggling between all states, you can also switch to a specific state, even without an animation.
+Besides toggling between all states, you can also switch to a specific state, optionally without an animation.
 
 <pre lang="coffeescript">
 # Switch to third state
@@ -62,7 +62,7 @@ layerA.states.switchInstant("third")
 </pre>
 
 ##### Editing States
-You can remove and override previously defined states. To override states, simply add new state with the same name.
+You can remove and override previously defined states. To override states, simply add a new state with the same name.
 
 <pre lang="coffeescript">
 # Remove second state
@@ -77,8 +77,9 @@ layerA.states.add
 <figure class="icon-learn-summary"></figure><h3>Summary</h3>
 <ul>
     <li>States are sets of properties </li>
-    <li>Layers can have multiple states </li>
-    <li>States can be added, removed and overriden </li>
+    <li>Every layer has a default state</li>
+    <li>You can animate between states</li>
+    <li>States can be added, removed and overriden</li>
 </ul>
 </section>
 

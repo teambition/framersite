@@ -30,7 +30,7 @@
 {% filter markdown %}
 ### Layers 
 <a name="basics"></a>
-A layer is a rectangle that draws elements. Layers can display images, videos or text, and contain a set of basic properties. Every layer inherits a few default properties: 
+A layer is a rectangle that draws elements. Layers can display images, videos or text. Every layer inherits a set of default properties.
 <div class="with-illustration">
 <pre lang="coffeescript">
 # Create a layer 
@@ -42,8 +42,7 @@ layerA = new Layer
 </div>
 
 ##### Hierarchy
-
-Parent layers are called superLayers, and child layers are called subLayers. Layers inherit properties from their superLayers. You can define a layers superLayer as a property, too.
+Parent layers are called **superLayers**, and child layers are called **subLayers**. Layers inherit properties from their superLayers. You can define a layers superLayer as a property, too.
 <div class="with-illustration">
 <pre lang="coffeescript">
 # Two ways to define hierarchy
@@ -54,12 +53,20 @@ layerA.subLayer = layerB
 </div>
 
 ##### Positioning
-You can **center** a layer within its superLayer by calling the center() function:
+You can **center** a layer within its superLayer by calling the center() function. Layers can also be exlusively centered horizontally or vertically.
 <pre lang="coffeescript">
+# Center
 layerA.center()
+
+# Center horizontally
+layerA.centerX()
+
+# Center vertically
+layerA.centerY()
 </pre>
 
-You can also dynamically retreive values of a layers X and Y position, as well as its **minX** and **maxX** position.
+Layer properties can also be dynamic. This is especially useful when positioning a layer relative to another layer. Besides positioning layers with X and Y values, you can also use the minX, minY, maxX and maxY values.
+
 <div class="with-illustration layer-positioning-minmax">
 <pre lang="coffeescript">
 # Properties of layerA:
@@ -73,7 +80,7 @@ layerB.x = layerA.maxX  # 120
 </div>
 
 ##### Properties
-Layers can have a range of properties. Besides being able to define an image, background, or video, you can also transform, hide layers, scale layers and much more.
+Layers can have a range of properties. Besides being able to define an image, background, or video, you can also transform, hide layers, scale layers and more.
 
 <div class="with-illustration four-lines">
 <pre lang="coffeescript">
@@ -85,7 +92,7 @@ layerB = new Layer
 <img class="code-illustration" src="/static/images/learn/layer-properties-one.png" srcset="/static/images/learn/layer-properties-one@2x.png 2x" draggable="false">
 </div>
 
-You can also define and override properties after having defined a layer. Note the different notation.
+You can also define and override properties after having created a layer.
 
 <div class="with-illustration four-lines">
 <pre lang="coffeescript">

@@ -22,14 +22,14 @@
 {% filter pygmentify %}
 {% filter markdown %}
 ### Dragging
-You can create a draggable layer by setting draggable.enabled to true. You can also specify the dragging resistance. This is especially useful if you'd like an element to be draggable only horizontally or vertically: simply set either the speedX or speedY to 0.
+To create a draggable layer, simply set draggable.enabled to true. You can also specify dragging speed. This is especially useful if you'd like a layer to be only horizontally or vertically draggable: simply set the speedX or speedY to 0. Setting it above 1 creates accelerated dragging.
 
 <div class="with-full-illustration dragging">
 <pre lang="coffeescript">
 # Make the layer draggable 
 layerA.draggable.enabled = true
 
-# Set dragging resistance
+# Set dragging speed
 layerA.draggable.speedX = 1
 
 # Prevent vertical dragging
@@ -80,7 +80,7 @@ layerA.on Events.DragEnd, ->
 <ul>
     <li>Setting draggable.enabled to true creates a draggable layer </li>
     <li>Dragging direction can be defined with speedX and speedY </li>
-    <li>Framer has three dragging events </li>
+    <li>Framer contains 3 dragging events: DragStart, DragMove and DragEnd </li>
 </ul>
 </section>
 
