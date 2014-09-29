@@ -207,16 +207,11 @@ pre {
 // Page summaries
 .summary {
 	margin: $space80 0;
-	background: #8190A6;
-	color: #fff;
-	padding: $space40;
-	border-radius: 3px;
 }
 .summary ul {
 	margin-bottom: 0;
 }
 .summary ul li {
-	color: #fff;
 	opacity: .9;
 	font-size: 18px;
 	line-height: 1.2;
@@ -230,8 +225,6 @@ pre {
 	// Todo:remove
 }
 .summary h3 {
-	color: $blue;
-	color: #fff;
 	margin-bottom: $space16;
 }
 
