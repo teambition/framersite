@@ -48,6 +48,25 @@ layerA.on Events.Click, ->
     imageLayer.states.next()
 </pre>
 
+##### Animation Chaining
+Events can also be used to chain animations, either via states or layer animations. With these events, you can start a new animation after another one ends. Note that the animation events also work if you've only defined states. The animation that occurs after switching states also fires an AnimationEnd event.
+
+<pre lang="coffeescript">
+# Animation Events
+layerA.on Events.AnimationStart, ->
+	...
+layerA.on Events.AnimationEnd, ->
+	...
+
+# States Events
+layerA.on Events.StateWillSwitch, ->
+	...
+layerA.on Events.StateDidSwitch, ->
+	...
+</pre>
+
+
+
 {% endfilter %}	
 {% endfilter %}
 {% endblock body %}	

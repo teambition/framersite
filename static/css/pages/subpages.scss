@@ -204,6 +204,19 @@ pre {
 	color: #fff;
 }
 
+// Page-to-page navigation
+.page-navigation {
+	margin-top: $space80;
+}
+.page-navigation a h5 {
+	color: $black;
+}
+.page-navigation a h6, .page-navigation a figure {
+	display: inline-block;
+}
+.page-navigation a figure {
+	margin-left: $space8;
+}
 // Inline images
 .inline-left {
 	float: left;

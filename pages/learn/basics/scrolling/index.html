@@ -40,12 +40,13 @@ layerA.scrollHorizontal = true
 layerA.scrollVertical = true
 </pre>
 
-There is one scrolling event:
+There is one scrolling event, which you can also use to retreive the scrolling positions:
 
 <pre lang="coffeescript">
 # Scroll Event
-layerA.on Events.Scroll, -> 
-    ...
+layerA.on Events.Scroll, ->
+	print layerA.scrollX
+	print layerA.scrollY
 </pre>
 
 

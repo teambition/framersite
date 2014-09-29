@@ -42,6 +42,37 @@ layerA.on Events.Click, ->
 <img class="code-illustration-states" src="/static/images/learn/states.gif">
 </div>
 
+Just like layer animations, states also take a set of curves. You can define the animationOptions of all states of a layer.
+
+<pre lang="coffeescript">
+# Set the animation options
+layerA.states.animationOptions = 
+    curve: "spring(600,30,0)"
+</pre>
+
+##### Switching states
+Besides toggling between all states, you can also switch to a specific state, even without an animation.
+
+<pre lang="coffeescript">
+# Switch to third state
+layerA.states.switch("third")
+
+# Switch to third state without animation
+layerA.states.switchInstant("third")
+</pre>
+
+##### Editing States
+You can remove and override previously defined states. To override states, simply add new state with the same name.
+
+<pre lang="coffeescript">
+# Remove second state
+layerA.states.remove("second")
+
+# Override third states
+layerA.states.add
+	third: {blur:10}
+</pre>
+
 {% endfilter %}	
 {% endfilter %}
 {% endblock body %}	

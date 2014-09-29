@@ -87,24 +87,15 @@ layerB = new Layer
 
 You can also define and override properties after having defined a layer. Note the different notation.
 
-<div class="with-illustration">
+<div class="with-illustration four-lines">
 <pre lang="coffeescript">
+layerA.backgroundColor = "#7DDC16"
 layerA.rotation = 45
-layerA.opacity = 0.5
-layerA.scale = 0.5
+layerA.opacity = 0.8
+layerA.scale = 0.8
 </pre>
 <img class="code-illustration" src="/static/images/learn/layer-properties-two.png" srcset="/static/images/learn/layer-properties-two@2x.png 2x" draggable="false">
 </div>
-
-<!-- Layers can be styled with CSS properties, too.
-
-<div class="with-illustration">
-<pre lang="coffeescript">
-layerA.style.border = “2px solid #28AFFA”
-layerA.style.boxShadow = “inset 0 0 0 2px #28AFFA”
-</pre>
-</div>
-<img class="code-illustration" src="/static/images/learn/layer-properties-three.png" srcset="/static/images/learn/layer-properties-three@2x.png 2x" draggable="false"> -->
 
 ##### Layer types
 Layers can contain images, videos and text.
@@ -143,6 +134,14 @@ layerA.html = "Label"
 </div>
 </div> <!--col-4-->
 
+<!--Link-to-next-->
+<section class="page-navigation">
+	<a class="next" href="#">
+		<h5>Next:</h5>
+		<h6>Animation</h6> 
+		<figure class="icon-learn-next-active"></figure>
+	</a> <!--next-->
+</section>
 {% endfilter %}	
 {% endfilter %}
 {% endblock body %}	
