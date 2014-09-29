@@ -31,23 +31,50 @@ layerA.draggable.enabled = true
 
 # Set dragging resistance
 layerA.draggable.speedX = 1
+
+# Prevent vertical dragging
 layerA.draggable.speedY = 0
 </pre>
 
 <img class="code-illustration-dragging" src="/static/images/learn/dragging.gif">
 </div>
 
-There are three dragging events in Framer:
+There are three dragging events in Framer: DragStart, DragMove and DragEnd.
+
+<div class="with-illustration dragging-events">
+<pre lang="coffeescript">
+# Start dragging
+layerA.on Events.DragStart, -> 
+
+    layerA.animate
+    	properties:
+    		scale: 1.1
+    	curve: "ease"
+    	time: 0.2
+</pre>
+<img class="code-illustration no-border" src="/static/images/learn/dragging-events-start.png">
+</div>
 
 <pre lang="coffeescript">
-# Drag Events
-layerA.on Events.DragStart, -> 
-    ...
+
+# When moving the draggable layer
 layerA.on Events.DragMove, -> 
     ...
-layerA.on Events.DragEnd, -> 
-    ...
 </pre>
+
+<div class="with-illustration dragging-events">
+<pre lang="coffeescript">
+# After dragging    
+layerA.on Events.DragEnd, -> 
+
+    layerA.animate
+    	properties:
+    		scale: 1
+    	curve: "ease"
+    	time: 0.2
+</pre>
+<img class="code-illustration no-border" src="/static/images/learn/dragging-events-end.png">
+</div>
 
 {% endfilter %}	
 {% endfilter %}
