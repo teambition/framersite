@@ -1,11 +1,11 @@
-﻿/* glue: 0.9.4 hash: ccf7538b16 */
+﻿/* glue: 0.9.4 hash: c0661ca46e */
 /* 1x */
-.logo-instagram,.logo-facebook,.logo-groupon,.logo-google,.logo-stripe,.logo-twitter,.logo-dropbox,.icon-learn-importing,.icon-learn-importing-active,.logo-apple,.logo-adobe,.icon-learn-mirror,.icon-learn-mirror-active,.icon-learn-coffeescript,.icon-learn-coffeescript-active,.icon-learn-basics,.icon-learn-basics-active,.logo-spotify,.icon-learn-previous,.icon-learn-previous-active,.icon-learn-next,.icon-learn-next-active,.icon-workflow,.icon-preview,.icon-more,.icon-interaction,.icon-general,.icon-features,.icon-code,.icon-animation,.icon-arrow{
-    background-image:url('/static/images/sprites/sprite1x.png?ccf7538b16');
+.logo-instagram,.logo-facebook,.logo-groupon,.logo-google,.logo-stripe,.logo-twitter,.logo-dropbox,.icon-learn-events,.icon-learn-importing,.icon-learn-importing-active,.logo-apple,.logo-adobe,.icon-learn-states,.icon-learn-mirror,.icon-learn-mirror-active,.icon-learn-dragging,.icon-learn-coffeescript,.icon-learn-coffeescript-active,.icon-learn-basics,.icon-learn-basics-active,.logo-spotify,.icon-learn-scrolling,.icon-learn-layers,.icon-learn-animation,.icon-learn-previous,.icon-learn-previous-active,.icon-learn-next,.icon-learn-next-active,.icon-workflow,.icon-preview,.icon-more,.icon-interaction,.icon-general,.icon-features,.icon-code,.icon-animation,.icon-arrow{
+    background-image:url('/static/images/sprites/sprite1x.png?c0661ca46e');
     background-repeat:no-repeat;
-    -webkit-background-size: 211px 169px;
-    -moz-background-size: 211px 169px;
-    background-size: 211px 169px;
+    -webkit-background-size: 211px 201px;
+    -moz-background-size: 211px 201px;
+    background-size: 211px 201px;
 }
 
 .logo-instagram{
@@ -50,14 +50,20 @@
     height:32px;
 }
 
-.icon-learn-importing{
+.icon-learn-events{
     background-position:0 -105px;
+    width:28px;
+    height:34px;
+}
+
+.icon-learn-importing{
+    background-position:-28px -105px;
     width:30px;
     height:33px;
 }
 
 .icon-learn-importing-active{
-    background-position:-30px -105px;
+    background-position:-58px -105px;
     width:30px;
     height:33px;
 }
@@ -69,127 +75,157 @@
 }
 
 .logo-adobe{
-    background-position:-60px -105px;
+    background-position:-88px -105px;
     width:32px;
     height:29px;
 }
 
+.icon-learn-states{
+    background-position:0 -139px;
+    width:28px;
+    height:32px;
+}
+
 .icon-learn-mirror{
-    background-position:0 -138px;
+    background-position:-28px -139px;
     width:32px;
     height:31px;
 }
 
 .icon-learn-mirror-active{
-    background-position:-32px -138px;
+    background-position:-60px -139px;
     width:32px;
     height:31px;
 }
 
+.icon-learn-dragging{
+    background-position:-120px -105px;
+    width:32px;
+    height:22px;
+}
+
 .icon-learn-coffeescript{
-    background-position:-64px -138px;
+    background-position:-92px -139px;
     width:30px;
     height:31px;
 }
 
 .icon-learn-coffeescript-active{
-    background-position:-94px -138px;
+    background-position:-122px -139px;
     width:30px;
     height:31px;
 }
 
 .icon-learn-basics{
-    background-position:-124px -138px;
-    width:31px;
-    height:31px;
-}
-
-.icon-learn-basics-active{
     background-position:-180px 0;
     width:31px;
     height:31px;
 }
 
-.logo-spotify{
+.icon-learn-basics-active{
     background-position:-180px -31px;
+    width:31px;
+    height:31px;
+}
+
+.logo-spotify{
+    background-position:-180px -62px;
+    width:30px;
+    height:30px;
+}
+
+.icon-learn-scrolling{
+    background-position:-180px -92px;
+    width:30px;
+    height:30px;
+}
+
+.icon-learn-layers{
+    background-position:-180px -122px;
+    width:30px;
+    height:30px;
+}
+
+.icon-learn-animation{
+    background-position:0 -171px;
     width:30px;
     height:30px;
 }
 
 .icon-learn-previous{
-    background-position:-180px -61px;
+    background-position:-180px -152px;
     width:19px;
     height:10px;
 }
 
 .icon-learn-previous-active{
-    background-position:-180px -71px;
+    background-position:-151px -27px;
     width:19px;
     height:10px;
 }
 
 .icon-learn-next{
-    background-position:-180px -81px;
+    background-position:-151px -37px;
     width:19px;
     height:10px;
 }
 
 .icon-learn-next-active{
-    background-position:-180px -91px;
+    background-position:-151px -47px;
     width:19px;
     height:10px;
 }
 
 .icon-workflow{
-    background-position:-180px -101px;
-    width:16px;
-    height:16px;
-}
-
-.icon-preview{
-    background-position:-180px -117px;
-    width:16px;
-    height:16px;
-}
-
-.icon-more{
-    background-position:-180px -133px;
-    width:16px;
-    height:16px;
-}
-
-.icon-interaction{
-    background-position:-180px -149px;
-    width:16px;
-    height:16px;
-}
-
-.icon-general{
-    background-position:-151px -27px;
-    width:16px;
-    height:16px;
-}
-
-.icon-features{
     background-position:-114px -89px;
     width:16px;
     height:16px;
 }
 
-.icon-code{
+.icon-preview{
     background-position:-130px -89px;
     width:16px;
     height:16px;
 }
 
-.icon-animation{
+.icon-more{
     background-position:-146px -89px;
     width:16px;
     height:16px;
 }
 
+.icon-interaction{
+    background-position:-162px -89px;
+    width:16px;
+    height:16px;
+}
+
+.icon-general{
+    background-position:-90px -73px;
+    width:16px;
+    height:16px;
+}
+
+.icon-features{
+    background-position:-90px -89px;
+    width:16px;
+    height:16px;
+}
+
+.icon-code{
+    background-position:-152px -105px;
+    width:16px;
+    height:16px;
+}
+
+.icon-animation{
+    background-position:-152px -139px;
+    width:16px;
+    height:16px;
+}
+
 .icon-arrow{
-    background-position:-199px -61px;
+    background-position:-199px -152px;
     width:6px;
     height:10px;
 }

@@ -204,6 +204,36 @@ pre {
 	color: #fff;
 }
 
+// Page summaries
+.summary {
+	margin: $space80 0;
+	background: #8190A6;
+	color: #fff;
+	padding: $space40;
+	border-radius: 3px;
+}
+.summary ul {
+	margin-bottom: 0;
+}
+.summary ul li {
+	color: #fff;
+	opacity: .9;
+	font-size: 18px;
+	line-height: 1.2;
+}
+.summary figure {
+	float:left;
+	margin-right: $space24;
+	position: relative;
+	top: 7px;
+	display: none;
+}
+.summary h3 {
+	color: $blue;
+	color: #fff;
+	margin-bottom: $space16;
+}
+
 // Page-to-page navigation
 .page-navigation {
 	margin-top: $space80;
