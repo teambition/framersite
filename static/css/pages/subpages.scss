@@ -31,7 +31,8 @@ pre {
 	margin-top: $space64;
 	position: relative;
 }
-.docs .page-header {
+.docs .page-header,
+.faq .page-header {
 	height:320px;
 }
 .learn .page-header h1 {
@@ -57,6 +58,11 @@ pre {
 	position: relative; 
 	top: -346px;
 	display: block;
+}
+.faq p,
+.faq table,
+.faq ul {
+	max-width: 750px;
 }
 .align-right {
 	max-width: 750px;
