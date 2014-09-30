@@ -1,7 +1,7 @@
-﻿/* glue: 0.9.4 hash: 442917a8f4 */
+﻿/* glue: 0.9.4 hash: 2484e250b5 */
 /* 1x */
-.logo-instagram,.logo-facebook,.logo-groupon,.logo-google,.logo-stripe,.logo-twitter,.logo-dropbox,.icon-learn-importing,.icon-learn-importing-active,.logo-apple,.logo-adobe,.icon-learn-states,.icon-learn-mirror,.icon-learn-mirror-active,.icon-learn-events,.icon-learn-dragging,.icon-learn-coffeescript,.icon-learn-coffeescript-active,.icon-learn-basics,.icon-learn-basics-active,.logo-spotify,.icon-learn-scrolling,.icon-learn-layers,.icon-learn-animation,.icon-learn-summary,.icon-learn-previous,.icon-learn-previous-active,.icon-learn-next,.icon-learn-next-active,.icon-workflow,.icon-preview,.icon-more,.icon-interaction,.icon-general,.icon-features,.icon-code,.icon-animation,.icon-arrow{
-    background-image:url('/static/images/sprites/sprite1x.png?442917a8f4');
+.logo-instagram,.logo-facebook,.logo-groupon,.logo-google,.logo-stripe,.logo-twitter,.logo-dropbox,.icon-learn-importing,.icon-learn-importing-active,.logo-apple,.logo-adobe,.icon-learn-states,.icon-learn-mirror,.icon-learn-mirror-active,.icon-learn-events,.icon-learn-dragging,.icon-learn-coffeescript,.icon-learn-coffeescript-active,.icon-learn-basics,.icon-learn-basics-active,.logo-spotify,.icon-learn-scrolling,.icon-learn-layers,.icon-learn-animation,.icon-learn-previous,.icon-learn-previous-active,.icon-learn-next,.icon-learn-next-active,.icon-learn-summary,.icon-workflow,.icon-preview,.icon-more,.icon-interaction,.icon-general,.icon-features,.icon-code,.icon-animation,.icon-arrow{
+    background-image:url('/static/images/sprites/sprite1x.png?2484e250b5');
     background-repeat:no-repeat;
     -webkit-background-size: 205px 201px;
     -moz-background-size: 205px 201px;
@@ -152,62 +152,62 @@
     height:30px;
 }
 
-.icon-learn-summary{
+.icon-learn-previous{
     background-position:-180px -32px;
+    width:9px;
+    height:22px;
+}
+
+.icon-learn-previous-active{
+    background-position:-189px -32px;
+    width:9px;
+    height:22px;
+}
+
+.icon-learn-next{
+    background-position:-180px -54px;
+    width:9px;
+    height:22px;
+}
+
+.icon-learn-next-active{
+    background-position:-189px -54px;
+    width:9px;
+    height:22px;
+}
+
+.icon-learn-summary{
+    background-position:-180px -76px;
     width:20px;
     height:14px;
 }
 
-.icon-learn-previous{
-    background-position:-180px -46px;
-    width:19px;
-    height:10px;
-}
-
-.icon-learn-previous-active{
-    background-position:-180px -56px;
-    width:19px;
-    height:10px;
-}
-
-.icon-learn-next{
-    background-position:-180px -66px;
-    width:19px;
-    height:10px;
-}
-
-.icon-learn-next-active{
-    background-position:-180px -76px;
-    width:19px;
-    height:10px;
-}
-
 .icon-workflow{
-    background-position:-180px -86px;
+    background-position:-180px -90px;
     width:16px;
     height:16px;
 }
 
 .icon-preview{
-    background-position:-180px -102px;
+    background-position:-180px -106px;
     width:16px;
     height:16px;
 }
 
 .icon-more{
-    background-position:-180px -118px;
+    background-position:-180px -122px;
     width:16px;
     height:16px;
 }
 
 .icon-interaction{
-    background-position:-180px -134px;
+    background-position:-180px -138px;
     width:16px;
     height:16px;
 }
 
 .icon-general{
-    background-position:-180px -150px;
+    background-position:-180px -154px;
     width:16px;
     height:16px;
 }
@@ -231,7 +231,7 @@
 }
 
 .icon-arrow{
-    background-position:-199px -46px;
+    background-position:-198px -32px;
     width:6px;
     height:10px;
 }

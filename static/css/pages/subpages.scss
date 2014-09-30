@@ -279,12 +279,19 @@ pre {
 	margin-bottom: 0;
 	font-size: 12px;
 }
+.page-navigation h6 {
+	font-size: 18px;
+}
 .page-navigation h5.last,
 .page-navigation h6.last {
 	color: $blue;
 }
 .page-navigation a h6, .page-navigation a figure {
 	display: inline-block;
+}
+.page-navigation figure {
+	position: relative;
+	top: 6px;
 }
 .page-navigation .next figure {
 	margin-left: $space8;
