@@ -56,6 +56,25 @@ layerA.on Events.Scroll, ->
 	print layerA.scrollY
 </pre>
 
+##### Use Case: Scroll Event 
+One use case of scrolling events that you see often today is animating content based on scroll position. On iPhone, for example, the browser chrome of Safari reacts to your scrolling position. When scrolling near the top of a page, the address bar expands and the tabbar appears. This can also be done with Framer, using the scrolling event. Below is an example.
+
+<div class="with-illustration dragging-events">
+<pre lang="coffeescript">
+# Animate header 
+layerA.on Events.Scroll, ->
+    if layerA.scrollY > 320
+    		header.animate
+    			...
+# Hide header
+layerA.on Events.Scroll, ->
+    if layerA.scrollY < 320
+    		header.animate
+    			...
+</pre>
+<img class="code-illustration no-border" src="/static/images/learn/scrolling-event.gif" srcset="/static/images/learn/scrolling-event@2x.gif 2x">
+</div>
+
 <section class="summary">
 <h5>Summary</h5>
 <ul>
