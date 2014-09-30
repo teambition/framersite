@@ -301,6 +301,10 @@ pre {
 .ss-mirror-iphone {
 	margin-bottom: $space48;
 }
+.ss-import-sheet,
+.ss-mirror-sheet {
+	max-height: 400px;
+}
 @media screen and (max-width:1080px) {
 	.page-header img {
 		right:130px;
