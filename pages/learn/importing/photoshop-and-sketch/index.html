@@ -23,13 +23,16 @@ Every layer group in Photoshop and Sketch will be imported as a layer within Fra
 
 <img class="ss-import-sketch" src="/static/images/learn/ss-import-sketch.png" srcset="/static/images/learn/ss-import-sketch@2x.png 2x">
 
+##### imported layers
 After import, the following code will be inserted above your code:
 <pre lang="coffeescript">
 # This imports all the layers for "Prototype" into prototypeLayers
 prototypeLayers = Framer.Importer.load "imported/Prototype"
 </pre>
 
-This allows you to target all of the imported layers within Framer. All of your imported layers are placed within an /imported folder, which are then included in your prototype. Note that the **default variable name** (prototypeLayers in the above example) can be changed to anything.
+This allows you to target all of the imported layers within Framer. <br> All of your imported layers are placed within an /imported folder, which are then included in your prototype. 
+
+Note that the **default variable name** (prototypeLayers in the above example) can be changed to anything.
 
 
 ---
