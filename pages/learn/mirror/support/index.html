@@ -19,19 +19,28 @@
 {% filter markdown %}
 ### Support
 
+##### Switching Networks
 If you switch networks or change your network settings while previewing prototypes, you may need to restart Framer Studio. By default, Framer Studio will use Port 8000. If Port 8000 isn't available, the next available port will be used.
 
 ---
 
-#### Troubleshooting
+##### Connect via USB
 
-##### Slow connection
-- If your network is really slow you can use this <a href="http://bjango.com/help/skalapreview/connection/" target="blank">tethering trick</a> to connect via USB instead of WiFi.
+An alternative way to preview your prototypes on iOS is via with USB, by using the **Personal Hotspot** feature. First, connect your iOS device to your Mac via USB. Next, turn on Personal Hotspot within the Settings app.
 
-##### Server not found
-- Double check if both devices are on the same network
-- Try to use you local DNS Name rather than the IP address. Look it up in System Preferences > Sharing. 
-- Check if your Network Firewall is blocking Ports 8000-9000
+To make sure your Wi-Fi or Ethernet connection is used for internet on your Mac, change the Service Order in Network under System Preferences. 
+
+<img src="/static/images/learn/ss-mirror-network.png" srcset="/static/images/learn/ss-mirror-network@2x.png 2x">
+
+Below the list of available connections, click on the settings icon. Within the dropdown that appears, select "Set Service Order". Then, place both Wi-Fi and Ethernet above iPhone USB.
+
+If your iOS device is connected via USB and has Personal Hotspot enabled, prototypes can be previewed over USB, without needing an internet connection.
+
+
+---
+
+##### No Server Access
+If you can't acces the webserver, check if you have a Firewall enabled that is blocking any ports ranging from 8000-9000. You can find your Firewall settings by going to System Preferences > Security & Privacy > Firewall.
 
 ---
 
