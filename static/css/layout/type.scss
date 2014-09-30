@@ -106,6 +106,9 @@ h5 { // Feature blocks
 h6 {
 	font-size: 1.25em; //20px
 }
+.subpage h6 {
+	margin-bottom: $space16;
+}
 p {
 	font-size: 1.125em; //18px
 	color:$text;
@@ -199,17 +202,13 @@ ul.numbered li {
     line-height: 1.6;
     list-style: none;
     color: $text;
-    padding-left: $space32;
 }
 ul.numbered li strong {
 	display: inline-block;
 }
 ul.numbered li+li {
-	border-top: 1px solid $separator;
-	padding-top: $space16;
 	margin-top: $space16;
 }
-
 ul.numbered li:before {
     content: counter(linenumbers);
     counter-increment: linenumbers;
@@ -217,7 +216,7 @@ ul.numbered li:before {
 	position: relative;
 	left: -20px;
 	margin-left: -10px;
-    color: $blue;
+    color: $black;
     -webkit-user-select: none; 
     -moz-user-select: none;  
     -ms-user-select: none; 
