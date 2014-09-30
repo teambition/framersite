@@ -25,11 +25,12 @@ Framer also supports videoLayers. You can drag and drop a video file into the pr
 
 <h5>Transparent Videos</h5>
 
-<p>With After Effects, it's possible to export fully transparant videos. This can be very useful for prototyping purposes. Note that animating transparant videos may showcase some jagged edges due to anti-aliasing. If possible, exporting with a background is recommended.   
+<p>With After Effects, it's possible to export fully transparant videos. These can be useful for prototypes, but note that animating transparant videos may create some jagged edges due to anti-aliasing. When possible, exporting with a solid background is recommended.   
 </p>
 
 <img class="ss-ae-output" src="/static/images/learn/ss-ae-output.png" srcset="/static/images/learn/ss-ae-output@2x.png 2x">
 <ul class="numbered">
+
 <li>Toggle Transparency grid on your composition</li>
 <li>Add your project to the Render Queue</li>
 <li>In the Output Module, select the RGB + Alpha channel</li>
@@ -38,13 +39,10 @@ Framer also supports videoLayers. You can drag and drop a video file into the pr
 
 ---
 
-#### Notes
+##### Web-compatible videos
 
-##### Chrome doesn't support .MOV
-Framer and Safari support Lossless .MOV straight from AE. 
-
-##### Web-compatible Prototypes 
-To create web-compatible videos, convert them to MP4 or export using AME, and use .H264 as the Codec and .MP4 as file format
+Framer and Safari support Lossless movie formats from After Effects, but the .MOV file format doesn't play well on most browsers.
+To create web-compatible videos, convert them to MP4 or export using Adobe Media Encoder, and use .H264 as the Codec and .MP4 as file format
 
 ---
 
