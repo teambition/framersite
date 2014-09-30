@@ -30,14 +30,16 @@ You'll be presented with the Import Sheet, where you can import designs directly
 
 <img class="ss-import-sheet" src="/static/images/learn/ss-import-sheet.png" srcset="/static/images/learn/ss-import-sheet@2x.png 2x" draggable="false">
 
-The import sheet also informs you about the state of the applications. When inactive, they can be in two different states:
+The import sheet informs you about the state of the applications. When they are unavailable for import, they can be in two different states:
 
-- **Not running** <br> The app isn't open.
-- **Open a saved document** <br> Either you have no document open or your opened document hasn't been saved.
+<ul class="numbered">
+<li><strong>Not running</strong><br>The app isn't open. </li>
+<li><strong>Open a saved document</strong><br>Either you have no document open or your opened document hasn't been saved. </li>
+</ul>
 
 When you've opened a saved document, the Import button will become active and you'll see the title of your active document appear below the application title.
 
-After importing, the following lines will appear above your code:
+After import, the following lines will appear above your code:
 <pre lang="coffeescript">
 # This imports all the layers for "Prototype" into prototypeLayers
 prototypeLayers = Framer.Importer.load "imported/Prototype"

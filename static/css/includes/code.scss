@@ -1,8 +1,5 @@
 pre {
     word-wrap: break-word;
-    font-size: 13px;
-    font-weight: normal;
-    border-radius: 3px;
     -webkit-font-smoothing: subpixel-antialiased;
     // Spacing
     padding: $space16;
@@ -13,6 +10,15 @@ pre {
     color: #788D9E; 
     background: #fff; 
     box-shadow: inset 0 0 0 1px #E4EBF2, inset 46px 0 0 #FBFDFE, inset 47px 0 0 #E4EBF2; // To-do: make this variables
+}
+pre ol {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+pre ol li {
+    font-size: 13px;
+    font-weight: normal;
+    -webkit-font-smoothing: subpixel-antialiased;
 }
 pre, code {
     font-family: 'Menlo', 'Monaco', Courier, monospace; 

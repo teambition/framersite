@@ -86,6 +86,10 @@ h5 { // Feature blocks
 	margin-bottom: $space8;
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
+	color: $black;
+}
+.subpage h5 + ul {
+	margin-top: $space16;
 }
 .feature-banners h5 {
 	text-shadow: 0 1px 1px rgba(0,0,0,0.1);
@@ -160,23 +164,21 @@ p.copy {
 	color: $nav-links;
 }
 // Lists
-.content-inner ul {
+.content-inner ul,  ol {
 	margin-bottom: $space32;
 }
 // Lists on Pages
-.content-inner ul li,
-.content-inner ol li,  {
-	font-size: 1em;
+.content-inner  ul li,
+ol li {
+	font-size: 1.125em;
+}
+.content-inner ul li {
 	font-weight: 400;
 	color: $text;
 	list-style-type: circle; 
 	position: relative; 
-	left: $space16;
+	left: $space24;
 	padding-left: $space8; 
-}
-.content-inner ol li {
-	list-style-type: decimal;
-	left: 20px;
 }
 // Reset for code-blocks
 .content-inner .highlight ol li {
@@ -184,14 +186,43 @@ p.copy {
 	left:0;
 	padding-left:0;
 }
-.content-inner ul li+li,
-.content-inner ol li+li {
-	margin-top: $space8;
+.content-inner ul li+li {
+	margin-top: 4px;
 }
 
-// Reset for code-blocks
-.content-inner .highlight ol li+li {
-	margin-top:0;
+// Custom Numbered lists
+ul.numbered {
+    counter-reset: linenumbers;
+    margin-top: $space32;
+}
+ul.numbered li {
+    line-height: 1.6;
+    list-style: none;
+    color: $text;
+    padding-left: $space32;
+}
+ul.numbered li strong {
+	display: inline-block;
+}
+ul.numbered li+li {
+	border-top: 1px solid $separator;
+	padding-top: $space16;
+	margin-top: $space16;
+}
+
+ul.numbered li:before {
+    content: counter(linenumbers);
+    counter-increment: linenumbers;
+	display: inline-block;
+	position: relative;
+	left: -20px;
+	margin-left: -10px;
+    color: $blue;
+    -webkit-user-select: none; 
+    -moz-user-select: none;  
+    -ms-user-select: none; 
+    font-weight: 600;
+    font-size: 16px;  
 }
 .content-inner li ul li {
 	list-style-type: none;
