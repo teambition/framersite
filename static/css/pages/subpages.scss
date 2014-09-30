@@ -1,9 +1,11 @@
 img + p,
 img + ul,
 img + h3,
-img + h4,
-img + h5 {
+img + h4 {
 	margin-top: $space24;
+}
+img + h5 {
+	margin-top: $space48;
 }
 .subpage hr {
 	margin: $space48 auto;
@@ -262,9 +264,11 @@ pre {
 .page-navigation .next h5 {
 	text-align: right;
 	margin-right:30px;
+	color: $blue
 }
 .page-navigation .previous h5 {
 	margin-left:30px;
+	color: $graphite80;
 }
 .page-navigation .previous {
 	float: left;
@@ -275,9 +279,7 @@ pre {
 	margin-bottom: 0;
 	font-size: 12px;
 }
-.page-navigation  {
-
-}
+.page-navigation h5.last,
 .page-navigation h6.last {
 	color: $blue;
 }
@@ -316,6 +318,10 @@ hr.hidden {
 .ss-import-sheet,
 .ss-mirror-sheet {
 	max-height: 400px;
+}
+.ss-import-sketch {
+	max-height: 410px;
+	height: 100%;
 }
 @media screen and (max-width:1080px) {
 	.page-header img {

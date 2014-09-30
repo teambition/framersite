@@ -2,6 +2,9 @@ if ($('body').hasClass('learn')) {
 	$('body.subpage.learn').scrollTop($('.learn-nav').offset().top);
 	$('body.subpage.learn.basics').scrollTop(0);
 }
+/* Prevents Markdown from wrapping all images in p tags */
+$('.subpage p img').unwrap();
+
 $(document).ready(function() {
 	$(".feature-banners a").hover(function() {
 			$(this).toggleClass("is-active");
@@ -20,9 +23,6 @@ $(document).ready(function() {
 			$(exampleDevices).toggleClass("shrink");
 		}
 	);
-
-	/* Prevents Markdown from wrapping all images in p tags */
-	$('.subpage p img').unwrap();
 
 	var playCarouselVideo = false
 	var videoElement = $("#carousel-video-examples").get(0)
