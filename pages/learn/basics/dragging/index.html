@@ -55,6 +55,29 @@ layerA.on Events.DragEnd, ->
 <img class="code-illustration no-border" src="/static/images/learn/dragging-events.png" srcset="/static/images/learn/dragging-events@2x.png 2x">
 </div>
 
+
+##### More on Dragging
+Many different interactions can be explored with dragging events. Below is a brief example of a dragging interaction using the DragEnd event.
+
+First, the current X and Y positions of the layer are stored in variables.
+When we release the layer after dragging, the DragEnd event fires and the layers snaps back to its original position.
+
+<div class="with-illustration dragging-events">
+<pre lang="coffeescript">
+originX = layerA.center().x
+originY = layerA.center().y
+
+layerA.on Events.DragEnd, ->
+    layerA.animate
+        properties:
+            x: originX, y: originY
+        curve: "spring(600, 30, 0)"
+
+</pre>
+<img class="code-illustration no-border" src="/static/images/learn/dragging-snap.gif" srcset="/static/images/learn/dragging-snap@2x.gif 2x">
+
+</div>
+
 <section class="summary">
 <h5>Summary</h5>
 <ul>
