@@ -177,29 +177,25 @@ pre {
 	margin-top: 0;
 	top: 32px;
 }
-.sidebar ul li {
-	list-style: none;
-	left: 0;
-	padding: $space8;
-	padding-left: 16px;
-	border-radius: 3px;
-	margin-bottom: $space8;
-}
-.sidebar a {
+.sidebar ul a li {
+	padding: 12px 8px 8px 16px;
 	color: $black;
 	text-transform: uppercase;
 	font-weight: 600;
 	font-size:12px;
 	letter-spacing: 0.5px;
-	line-height: 1.25;
+	line-height: 1.2;
+	margin-bottom: $space8;
+	border-radius: 3px;
+	list-style: none;
+	left: 0;
 }
 .sidebar a div {
 	color: $sidebar-links;
+	margin-top:4px;
 }
 .sidebar .active {
 	background: $blue;
-}
-.sidebar .active a {
 	color: #fff;
 }
 .sidebar ul li.active:before {
