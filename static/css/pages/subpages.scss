@@ -305,7 +305,9 @@ hr.hidden {
 	position: relative;
 	top:4px;
 }
-.align-right img + p {
+.align-right img + p,
+.align-right img + ol,
+.align-right img + ul {
 	max-width: 660px;
 }
 .ss-mirror-iphone {

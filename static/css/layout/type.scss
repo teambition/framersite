@@ -207,7 +207,7 @@ ul.numbered li strong {
 	display: inline-block;
 }
 ul.numbered li+li {
-	margin-top: $space16;
+	margin-top: $space8;
 }
 ul.numbered li:before {
     content: counter(linenumbers);
