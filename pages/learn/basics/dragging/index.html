@@ -22,7 +22,7 @@
 {% filter pygmentify %}
 {% filter markdown %}
 ### Dragging
-To create a draggable layer, simply set draggable.enabled to true. You can also specify dragging speed. This is especially useful if you'd like a layer to be only horizontally or vertically draggable: simply set the speedX or speedY to 0. Setting it above 1 creates accelerated dragging.
+To create a draggable layer, simply set draggable.enabled to true. You can also specify dragging speed. This is especially useful if you'd like a layer to be only horizontally or vertically draggable: simply set the speedX or speedY to 0. Setting the value higher than 1 creates accelerated dragging.
 
 <div class="with-full-illustration dragging">
 <pre lang="coffeescript">
@@ -39,18 +39,18 @@ layerA.draggable.speedY = 0
 <img class="code-illustration-dragging" src="/static/images/learn/dragging.gif" srcset="/static/images/learn/dragging@2x.gif 2x">
 </div>
 
-Framer has three dragging events: DragStart, DragMove and DragEnd.
+Framer has three dragging events that you can listen for: DragStart, DragMove and DragEnd.
 
 <div class="with-illustration dragging-events">
 <pre lang="coffeescript">
 # Start dragging
-layerA.on Events.DragStart, -> 
+layerA.on Events.DragStart, -> ...
 
 # When moving the draggable layer
-layerA.on Events.DragMove, -> 
+layerA.on Events.DragMove, -> ...
 
 # After dragging    
-layerA.on Events.DragEnd, ->
+layerA.on Events.DragEnd, -> ...
 </pre>
 <img class="code-illustration no-border" src="/static/images/learn/dragging-events.png" srcset="/static/images/learn/dragging-events@2x.png 2x">
 </div>
@@ -81,7 +81,7 @@ layerA.on Events.DragEnd, ->
 <ul>
     <li>Setting draggable.enabled to true creates a draggable layer </li>
     <li>Dragging direction can be defined with speedX and speedY </li>
-    <li>Framer contains 3 dragging events: DragStart, DragMove and DragEnd </li>
+    <li>Layers emit 3 dragging events: DragStart, DragMove and DragEnd </li>
 </ul>
 </section>
 

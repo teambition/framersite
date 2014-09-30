@@ -22,7 +22,7 @@
 {% filter pygmentify %}
 {% filter markdown %}
 ### States
-States are sets of properties. States can be named, and later interacted with. A layer can have multiple states. You can add, remove and override states, as well as animate between them. Every layer has a "default" state with its current properties, which is included when switching states.
+States are sets of properties for layers that define position and looks. States can be named, and later interacted with. A layer can have multiple states. You can add, remove and override states, as well as animate between them. Every layer has a "default" state with its current properties, which is included when rotating through states.
 
 <div class="with-full-illustration">
 <pre lang="coffeescript">
@@ -42,7 +42,7 @@ layerA.on Events.Click, ->
 <img class="code-illustration-states" src="/static/images/learn/states.gif">
 </div>
 
-Just like layer animations, states also take a set of curves. You can define the animationOptions of all states of a layer at once.
+Just like layer animations, you can also define how their animation curve and timing. You can define the animationOptions of all states of a layer at once.
 
 <pre lang="coffeescript">
 # Set the animation options

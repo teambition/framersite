@@ -29,11 +29,11 @@ A layer can be made scrollable as long as it contains a subLayer that exceeds it
 <pre lang="coffeescript">
 # The superLayer
 layerA = new Layer 
-	height: 100
+	height:100
 
 # The subLayer
 layerB = new Layer 
-	height: 200, superLayer: layerA
+	height:200, superLayer:layerA
 
 # Enable scrolling on the superLayer
 layerA.scroll = true
