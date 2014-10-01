@@ -178,7 +178,7 @@ pre {
 .learn .sidebar.sticky {
 	position: fixed;
 	margin-top: 0;
-	top: 32px;
+	top: 96px; // 32 + 64 = 96
 }
 .sidebar ul a li {
 	padding: 12px 8px 8px 16px;
@@ -380,6 +380,9 @@ hr.hidden {
 		max-width: 210px;
 		right: 50%;
 		margin-right:-105px;
+	}
+	.summary ul li {
+		font-size: 16px;
 	}
 }
 @media screen and (max-width:560px) {

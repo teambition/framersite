@@ -13,7 +13,8 @@ $(document).ready(function() {
 	var docsSidebar, learnSidebar, topNav, exampleBlock, exampleDevices;
 	docsSidebar = $('.subpage.docs .sidebar');
 	learnSidebar = $('.subpage.learn .sidebar');
-	topNav = $('.home nav.top');
+	topNavHome = $('.home nav.top');
+	topNavPages = $('.subpage nav.top');
 	exampleBlock = $('.examples');
 	exampleDevices = $('.device-left, .device-right');
 
@@ -46,13 +47,24 @@ $(document).ready(function() {
 
 		// Top Navigation ----------------
 		if ($(window).scrollTop() > 800) {
-			$(topNav).addClass('sticky').removeClass('fade-out');
+			$(topNavHome).addClass('sticky').removeClass('fade-out');
 		}
 		else if ($(topNav).hasClass('sticky') && scrollPos <= 800) {
-			$(topNav).removeClass('sticky').addClass('fade-out');
+			$(topNavHome).removeClass('sticky').addClass('fade-out');
 		}
 		if (scrollPos < 600) {
-			$(topNav).removeClass('fade-out');
+			$(topNavHome).removeClass('fade-out');
+		}
+
+		// Top Nav on Learn and Docs
+		if ($(window).scrollTop() > 440) {
+			$(topNavPages).addClass('sticky').removeClass('fade-out');
+		}
+		else if ($(topNavPages).hasClass('sticky') && scrollPos <= 440) {
+			$(topNavPages).removeClass('sticky').addClass('fade-out');
+		}
+		if (scrollPos < 439) {
+			$(topNavPages).removeClass('fade-out');
 		}
 
 		if (playCarouselVideo == false && videoElement) {
