@@ -1,37 +1,4 @@
-img + p,
-img + ul,
-img + h3,
-img + h4,
-.inline-image + p,
-.inline-image + ul,
-.inline-image + h3,
-.inline-image + h4 {
-	margin-top: $space24;
-}
-img + h5,
-.inline-image + h5 {
-	margin-top: $space48;
-}
-.subpage hr {
-	margin: $space48 auto;
-}
-// Type - Vertical spacing
-.subpage h3 {
-	margin-bottom: $space24;
-}
-.subpage h4 {
-	margin-bottom: $space16;
-}
-// Spacing Code blocks
-pre {
-	margin-bottom: $space24;
-}
-.with-illustration + h4,
-.with-illustration + h5,
-.highlight + h4,
-.highlight + h5 {
-	margin-top: $space80;
-}
+
 // Page header 
 .page-header {
 	background: $header;
@@ -451,7 +418,6 @@ hr.hidden {
 		max-width: 210px;
 		display: none;
 	}
-
 }
 @media screen and (max-width:560px) {
 	.page-header {
@@ -465,20 +431,22 @@ hr.hidden {
 	.faq .page-header {
 		height:160px;
 	}
+	.col-4 + .col-4 {
+		margin-top: $space16;
+	}
 	.learn-nav {
 		padding-top: 0;
-		padding-bottom: 20px;
-	}
-	.learn-nav a {
-		text-align: center;
-	}
-	.learn-nav figure {
-		margin: 0 auto;
+		padding-bottom: $space32;
+		margin-bottom: $space24;
 	}
 	.learn-nav .nav-title {
-		max-width: 100px;
+		max-width: 60px;
 		line-height: 1.4;
-		margin: $space16 auto $space32 auto;
+		margin: 0 0 0 8px;
+		position: relative;
+		top: -2px;
+		display: inline-block;
+		font-size: 10px;
 	}
 	.learn-nav a span {
 		display: none;
@@ -494,8 +462,9 @@ hr.hidden {
 	.learn-nav .col-4:nth-child(2n) {
 		margin-left: 0;
 	}
-	.col-4 + .col-4 {
-		margin-top: $space16;
+	.learn-nav .col-4:nth-child(3),
+	.learn-nav .col-4:nth-child(4) {
+		margin-top: $space32;
 	}
 	.animation-curves .curve-animation {
 		max-width:105px;

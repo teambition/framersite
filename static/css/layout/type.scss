@@ -248,6 +248,37 @@ ul.numbered li:before {
 	float:right;
 }
 
+// Subpage spacing
+.inline-image + p,
+.inline-image + ul,
+.inline-image + h3,
+.inline-image + h4 {
+	margin-top: $space24;
+}
+.inline-image + h5 {
+	margin-top: $space48;
+}
+.subpage hr {
+	margin: $space48 auto;
+}
+// Type - Vertical spacing
+.subpage h3 {
+	margin-bottom: $space24;
+}
+.subpage h4 {
+	margin-bottom: $space16;
+}
+// Spacing Code blocks
+.subpre {
+	margin-bottom: $space24;
+}
+.with-illustration + h4,
+.with-illustration + h5,
+.highlight + h4,
+.highlight + h5 {
+	margin-top: $space80;
+}
+
 // Subpage summary lists
 // Page summaries
 .summary {
@@ -330,6 +361,9 @@ ul.numbered li:before {
 	}
 	h2 {
 		font-size: 2.25em;
+	}
+	.subpage h3 {
+		margin-bottom: $space16;
 	}
 }
 @media screen and (max-width: 440px) {
