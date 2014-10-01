@@ -1,6 +1,15 @@
-{% extends "base.html" %}
+{% extends "docs.html" %}
 {% block title %}Framer - FAQ{% endblock %}
-{% block currentpage %}class="faq"{% endblock currentpage %}
+
+{% block sidebar %}
+<div class="sidebar">
+	<ul>	
+		<a class="layers" href="#layers"><li class="active">Compatibility <div class="small">Browsers & Platforms</div></li></a>
+		<a class="animations" href="#animations"><li>Debugging <div class="small">Debugging</div></li></a>
+		<a class="events" href="#events"><li>Questions <div class="small">Questions</div></li></a>
+	</ul>
+</div> <!--sidebar-->
+{% endblock %}
 
 {% block pageheader %}
 <header class="page-header">
@@ -11,11 +20,11 @@
 </header>
 {% endblock pageheader %}
 
-{% block content %}
-<div class="content-inner">
+{% block body %}
 {% filter markdown %}
-### Compatibility
+### FAQs
 
+##### Compatibility
 Since Framer is a prototyping toolkit, extensive browser compability is not a priority. Our main goal is achieving optimal performance, to get high framerates and smooth animations. 
 
 <table border="0" cellspacing="0" cellpadding="0" class="compatibility">
@@ -70,7 +79,7 @@ Since Framer is a prototyping toolkit, extensive browser compability is not a pr
 <!-- Debugging -->
 <a name="debugging"></a>
 
-### Debugging
+##### Debugging
 
 Because Framer runs in the browser you can use all the <a href="https://developers.google.com/chrome-developer-tools/" target="_blank">debugging tools</a>, like the console, timeline, profiler and debugger. Framer will alert you when a Javascript error occurred.
 
@@ -95,23 +104,14 @@ Because Framer runs in the browser you can use all the <a href="https://develope
 
 There is an active and helpful <a href="https://www.facebook.com/groups/framerjs/" target="_blank">Framer Community</a> on Facebook.
 
-<ul>
-	<li><strong>Framer on Windows</strong>
-		<ul>
-			<li>Yes. The core of Framer is a Javascript library that works on all platforms. We're working on Photoshop compatibility.</li>
-		</ul>
-	</li>
-	<li><strong>Framer Studio Volume Licensing</strong>
-		<ul>
-			<li>For 50 licenses or less you can go directly through our online store. If you need more than 50 copies and have special requests please <a href="mailto:koen+framervolume@madebysofa.com">contact us</a>. You can find the Framer end user license agreement <a href="/static/downloads/eula.pdf">here</a>.</li>
-		</ul>
-	</li>
-	<li><strong>Framer Studio Support</strong>
-		<ul>
-			<li>Framer comes with personal support for technical application issues (crashes, etc.). If you need help learning Framer you can ask questions in our <a href="https://www.facebook.com/groups/framerjs/">group</a>, where we and other users try to help each other out.</li>
-		</ul>
-	</li>
-</ul>
+##### Framer on Windows
+The core of Framer is a Javascript library that works on all platforms. We're working on Photoshop compatibility.</li>
+
+##### Framer Studio Volume Licensing
+For 50 licenses or less you can go directly through our online store. If you need more than 50 copies and have special requests please <a href="mailto:koen+framervolume@madebysofa.com">contact us</a>. You can find the Framer end user license agreement <a href="/static/downloads/eula.pdf">here</a>.</li>
+
+##### Framer Studio Support
+Framer comes with personal support for technical application issues (crashes, etc.). If you need help learning Framer you can ask questions in our <a href="https://www.facebook.com/groups/framerjs/">group</a>, where we and other users try to help each other out.
 
 <hr>
 
@@ -125,5 +125,4 @@ Special thanks goes out to <a href="https://twitter.com/joshpuckett" target="_bl
 If we missed you on this list, we thank you nevertheless.
 
 {% endfilter %}	
-</div> <!--content-inner-->
 {% endblock %}
