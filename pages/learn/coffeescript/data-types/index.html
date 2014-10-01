@@ -28,8 +28,8 @@ A boolean can only have two values: **false** or **true**:
 myBoolA = true
 myBoolB = false
 </pre>
-##### Number
 
+##### Numbers
 Numbers can be small, big, rounded, positive or negative:
 <pre lang="coffeescript">
 myNumberA = 2
@@ -52,13 +52,13 @@ A string is a set of characters like words or complete sentences:
 myStringA = "Hello there"
 </pre>
 
-You can combine strings like this:
+Strings can be combined:
 <pre lang="coffeescript">
 myStringB = "#{myStringA}, I am the dude"
 # Output: "Hello there, I am the dude"
 </pre>
 
-But strings can also hold complex values you cannot describe in just numbers:
+Strings can also hold more complex values:
 <pre lang="coffeescript">
 myStringC = "rgba(255,0,0,0.1)"
 myStringD = "1px solid #FFFFFF"
@@ -66,13 +66,13 @@ myStringD = "1px solid #FFFFFF"
 
 ##### Array
 
-Arrays contain an ordered set of values. The values can be any type. They can even be nested (for example an array with arrays).
+Arrays contain an ordered set of values. The values can be any type. They can even be nested (an array with arrays, for instance).
 <pre lang="coffeescript">
 myListA = [1, 2, 3, 4, 5] # Just numbers
 myListB = [1, "test", 22, [1, 2, 3]] # Mixed
 </pre>
 
-You can access any item in an array by it's number (it's called an index) which starts at 0:
+Any item in an array can be accessed by its index, which starts at 0:
 <pre lang="coffeescript">
 myListA[0] # Output: 1
 myListA[4] # Output: 5
@@ -90,37 +90,30 @@ myListB[0..2] # Output: [1, 2, 3]
 
 ##### Object
 
-Objects are a bit like lists, but instead of by number, you can access them by a string (word). Much like a dictionary from a phone book (look up a person by last name). We call the 'lookup string' a key.
+Object properties are accesssed by name, much like a dictionary from a phone book. The 'lookup string' is called a key.
 <pre lang="coffeescript">
 myObjectA = {name:"Framer", age:12}
 </pre>
 
-You can also write objects like this, it's the exact same thing as above:
+Objects can also be defined with indenting instead of parentheses. 
 <pre lang="coffeescript">
 myObjectA =
 	name: "Framer"
 	age: 12
 </pre>
 
-To find a value in an object you use the key:
+To find a property value, use the key:
 <pre lang="coffeescript">
 myObjectB["name"] # Output: "Framer"
 </pre>
 
-If you use a key that does not exist, you get the special undefined value:
+An object's properties can be added and removed:
 <pre lang="coffeescript">
-myObjectB["nothere"] # Output: undefined
-</pre>
-
-Once you have made an object, you can add more stuff in it like this:
-<pre lang="coffeescript">
+# Add a property
 myObjectB["platform"] = "Mac"
-</pre>
 
-Or remove something like this:
-<pre lang="coffeescript">
+# Remove a property
 delete myObjectB["platform"]
-myObjectB["platform"] # Output: undefined
 </pre>
 
 ---

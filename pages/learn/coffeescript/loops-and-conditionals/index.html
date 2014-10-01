@@ -20,7 +20,7 @@
 
 ### Loops
 
-Loops are used to iterate over collections, as in do something for each item. Collections can be an Array or Object. They use the **for** keyword.
+Loops are used to iterate over collections, as in do something for each item. Collections can be an Array or Object. They use the "for" keyword.
 
 <pre lang="coffeescript">
 myArray = [1, 2, 3, 4, 5]
@@ -29,6 +29,20 @@ for number in myArray
 	number + 1
 
 # Output: 2, 3, 4, 5, 6
+</pre>
+
+Objects have properties with values, and you'll likely want to use both in your loop. To loop over Objects, "of" can be used instead of "in".
+
+<pre lang="coffeescript">
+myObject =
+    name: "Koen"
+    city: "Amsterdam"
+    age: 31
+
+for key, value of myObject
+    key, ":", value 
+
+# name:Koen, city:Amsterdam, age:31
 </pre>
 
 #### Conditionals
