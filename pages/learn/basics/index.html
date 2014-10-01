@@ -30,7 +30,7 @@
 {% filter markdown %}
 ### Layers 
 <a name="basics"></a>
-A layer is a rectangle that draws elements. Layers can display images, videos or text. Every layer inherits a set of default properties like a width and height of 100 and a blue background color so you can see it.
+A layer is a rectangle that draws elements. Layers can display images, videos or text. Every layer inherits a set of default properties: a width and height of 100px and a blue background color.
 <div class="with-illustration">
 <pre lang="coffeescript">
 # Create a layer 
@@ -38,7 +38,6 @@ layerA = new Layer
 	x:0, y:0, width:100, height:100
 </pre>
 <img class="code-illustration" src="/static/images/learn/layer-new.png" srcset="/static/images/learn/layer-new@2x.png 2x" draggable="false">
-
 </div>
 
 ##### Properties
@@ -67,8 +66,7 @@ layerB.scale = 0.8
 </div>
 
 ##### Positioning
-
-You can position a layer with its x and y properties. The x and y values define the distance from the top left corner of your canvas in points. You can also use the minX, minY, midX, midY, maxX and maxY values to define any other point of your layer.
+A layer can be positioned with its X and Y properties. These values define the distance from the top left corner of your canvas. The minX, minY, midX, midY, maxX and maxY values can also be used to position a layer.
 
 <div class="with-illustration layer-positioning-minmax">
 <pre lang="coffeescript">
@@ -94,8 +92,6 @@ layerA.centerX()
 layerA.centerY()
 </pre>
 
-
-
 ##### Hierarchy
 Layers can have a parent and/or children. Parent layers are called **superLayers**, and child layers are called **subLayers**. Layers inherit properties from their superLayers.
 <div class="with-illustration">
@@ -117,20 +113,7 @@ Layers can contain images, videos and text.
 <pre lang="coffeescript">
 # Layer with image
 layerA = new Layer
-	image: "image.png"
-</pre>
-</div>
-</div> <!--col-4-->
-
-
-
-<div class="col-4">
-<img src="/static/images/learn/layer-types-label.png" srcset="/static/images/learn/layer-types-label@2x.png 2x" draggable="false">
-<div class="without-linenumbers">
-<pre lang="coffeescript">
-# Layer with HTML
-layerA = new Layer
-layerA.html = "Hello"
+	image:"image.png"
 </pre>
 </div>
 </div> <!--col-4-->
@@ -146,6 +129,16 @@ layerA = new VideoLayer
 </div>
 </div> <!--col-4-->
 
+<div class="col-4">
+<img src="/static/images/learn/layer-types-label.png" srcset="/static/images/learn/layer-types-label@2x.png 2x" draggable="false">
+<div class="without-linenumbers">
+<pre lang="coffeescript">
+# Layer with HTML
+layerA = new Layer
+layerA.html ="Hello"
+</pre>
+</div>
+</div> <!--col-4-->
 </section> <!--clearfix-->
 
 <section class="summary">

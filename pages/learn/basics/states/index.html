@@ -22,7 +22,12 @@
 {% filter pygmentify %}
 {% filter markdown %}
 ### States
-States are sets of properties for layers that define position and looks. States can be named, and later interacted with. A layer can have multiple states. You can add, remove and override states, as well as animate between them. Every layer has a "default" state with its current properties, which is included when rotating through states.
+States are sets of properties for layers that define position and looks. States can be named, and later interacted with. A layer can have multiple states. You can add, remove and override states, as well as animate between them. 
+
+---
+
+##### Default State
+Every layer has a "default" state with its current properties, which is included when switching between states.
 
 <div class="with-full-illustration">
 <pre lang="coffeescript">
