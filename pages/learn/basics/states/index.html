@@ -29,19 +29,19 @@ When creating a new layer, the set of properties you define become the default s
 ---
 
 ##### Example
-The "default" state of layerA contains the opacity property, set to 1. Next, a new state for layerA is defined, titled "fade", with an opacity set to 0.
+The default state of layerA contains the opacity property, set to 1. Next, a new state for layerA is defined, titled "fade", with an opacity set to 0.
 
 <pre lang="coffeescript">
-# The "default" state
+# The default state
 layerA = new Layer 
 	opacity:1
 
-# A new state
+# A new state titled "fade"
 layerA.states.add
 	fade: {opacity:0}
 </pre>
 
-For layerA to inherit the properties of the "fade" state, it needs to switch from the "default" state to the fade state. 
+For layerA to inherit the properties of the "fade" state, it needs to switch from the default state to the "fade" state. 
 
 <pre lang="coffeescript">
 # Switch states with animation
