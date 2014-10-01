@@ -42,6 +42,7 @@ pre, code {
 .with-illustration .highlight pre {
      border-radius: 3px 0 0 3px;
 }
+// Illustrations
 .code-illustration {
     position: absolute;
     top:0; right:0;
@@ -55,8 +56,6 @@ pre, code {
     padding:0; box-shadow: none;
 }
 // Line-specific
-.with-illustration.four-lines {
-}
 .with-illustration.four-lines div + .code-illustration {
     padding:26px;
 }
@@ -149,11 +148,32 @@ img.curve-animation {
 img.curve {
     margin-top: -5px;
 }
+@media screen and (max-width: 1080px) {
+    
+    .without-linenumbers pre {
+        box-shadow: none;
+        margin-top: 20px;
+        padding:0;
+    }
+}
+
 @media screen and (max-width: 660px) {
-    pre ol li:before {
+    .content-inner pre ol li:before {
         content:"";
     }
     pre {
         box-shadow: inset 0 0 0 1px #E4EBF2;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .code-illustration {
+        display: none;
+    }
+    pre ol li {
+        font-size: 11px;
+    }
+    .with-illustration.layer-positioning-minmax pre {
+        min-height: 40px;
     }
 }

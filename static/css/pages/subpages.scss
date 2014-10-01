@@ -312,6 +312,7 @@ hr.hidden {
 	text-align: center;
 	position: relative;
 	padding-top: 34px;
+	border-radius: 3px 3px 0 0;
 }
 
 .layer-type-illustration figure { // Icons within
@@ -329,14 +330,7 @@ hr.hidden {
 .ss-mirror-iphone {
 	margin-bottom: $space48;
 }
-.ss-import-sheet,
-.ss-mirror-sheet {
-	max-height: 400px;
-}
-.ss-import-sketch {
-	max-height: 410px;
-	height: 100%;
-}
+
 @media screen and (max-width:1080px) {
 	.page-header img {
 		right:130px;
@@ -344,6 +338,12 @@ hr.hidden {
 	.align-right {
 		max-width: 650px;
 	}
+	.col-4 {
+		margin-right: 20px;
+	}
+	.layer-type-illustration {
+        border-radius: 3px;
+    }
 }
 @media screen and (max-width:980px) {
 	.page-header img {
@@ -360,11 +360,28 @@ hr.hidden {
 		height: auto;
 		margin-bottom: 0;
 	}
+	// Custom subpage inline col-4 elements
+	.layer-types .col-4,
+	.animation-curves .col-4 {
+		max-width: 210px;
+		margin: 0;
+	}
+	.layer-types .col-4:nth-child(2n),
+	.animation-curves .col-4:nth-child(2n) {
+		margin-left:0;
+	}
+	.layer-types .col-4+.col-4,
+	.animation-curves .col-4+.col-4 {
+		margin-left:10px;
+	}
 }
 @media screen and (max-width:960px) {
 	.page-header img {
 		max-width: 300px;
 		right: 24px;
+	}
+	.learn-nav .col-4:nth-child(2n) {
+		margin-left: 20px;
 	}
 }
 @media screen and (max-width: 720px) {
@@ -426,5 +443,11 @@ hr.hidden {
 	}
 	.learn-nav .col-4+.col-4 {
 		margin-right: 0;
+	}
+	.learn-nav .col-4:nth-child(2n) {
+		margin-left: 0;
+	}
+	.col-4 + .col-4 {
+		margin-top: $space16;
 	}
 }
