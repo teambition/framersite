@@ -28,7 +28,7 @@ $(document).ready(function() {
 	var videoElement = $("#carousel-video-examples").get(0)
 
 	$(window).scroll(function() {
-
+		var scrollPos = $(window).scrollTop();
 		// Sidebar Sticky ----------------
 		if ($(window).scrollTop() > 420) {
 			$(docsSidebar).addClass('sticky');
