@@ -168,6 +168,9 @@ img.curve {
     .code-illustration {
         position: relative;
     }
+    .basics .code-illustration {
+        position: absolute;
+    }
     .code-illustration-states {
         position: relative;
         max-width: 274px; 

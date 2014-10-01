@@ -66,18 +66,31 @@ layerB.scale = 0.8
 </div>
 
 ##### Positioning
-A layer can be positioned with its x and y properties. These values define the distance from the top left corner of your canvas. The minX, minY, midX, midY, maxX and maxY values can also be used to position a layer.
+A layer can be positioned with its x and y properties. These values define the distance from the top-left corner of the canvas. The minX, minY, midX, midY, maxX and maxY values can also be used to position a layer.
 
 <div class="with-illustration layer-positioning-minmax">
 <pre lang="coffeescript">
-# Properties of layerA:
-# x:40, y:40, width:80, height:80
+# Properties of layerA
+# x:40, y:40, width:80
 
 layerB.x = layerA.x     # 40
 layerB.x = layerA.minX  # 40
 layerB.x = layerA.maxX  # 120
 </pre>
 <img class="code-illustration no-border" src="/static/images/learn/layer-positioning-minmax.png" srcset="/static/images/learn/layer-positioning-minmax@2x.png 2x" draggable="false">
+</div>
+
+The distance from the top-left corner of the canvas to the center of a layer can be calculated with midX and midY.
+
+<div class="with-illustration layer-positioning-minmax">
+<pre lang="coffeescript">
+# The center of layerA, horizontally
+layerB.x = layerA.midX  # 80
+
+# The center of layerA, vertically
+layerB.y = layerA.midY  # 80
+</pre>
+<img class="code-illustration no-border" src="/static/images/learn/layer-positioning-midx.png" srcset="/static/images/learn/layer-positioning-midx@2x.png 2x" draggable="false">
 </div>
 
 You can **center** a layer within its superLayer, or on the screen by calling the center() function. Layers can also be exlusively centered horizontally or vertically.

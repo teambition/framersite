@@ -220,13 +220,13 @@ ul.numbered li:before {
     -moz-user-select: none;  
     -ms-user-select: none; 
     font-weight: 600;
-    font-size: 12px;  
-    height:20px;
-    width:20px;
-    color: $text;
-    box-shadow: 0 0 0 1px #E6E6E6;
+    font-size: 11px;  
+    height:16px;
+    width:16px;
+    color: $black;
+    box-shadow: 0 0 0 1px #ddd;
     border-radius: 50%;
-    line-height: 22px;
+    line-height: 19px;
     text-align: center;
 }
 .content-inner li ul li {
