@@ -349,6 +349,9 @@ hr.hidden {
 	.sidebar {
 		display: none;
 	}
+	.learn-nav a {
+		padding-bottom: 0;
+	}
 	.learn-nav .active {
 		border-bottom: none;
 		height: auto;
@@ -377,6 +380,9 @@ hr.hidden {
 	}
 }
 @media screen and (max-width:560px) {
+	.page-header {
+		margin-top: 0;
+	}
 	.sidebar {
 		padding-bottom:0;
 		margin-bottom: $space40;
@@ -390,5 +396,16 @@ hr.hidden {
 	.sidebar li+li {
 		margin-top: 0;
 		margin-left: 0;
+	}
+	.learn-nav {
+		padding-top: 0;
+	}
+
+	.learn-nav .col-4 {
+		max-width:50%;
+		margin:0;
+	}
+	.learn-nav .col-4+.col-4 {
+		margin-right: 0;
 	}
 }
