@@ -16,10 +16,10 @@ img + h5,
 	margin: $space48 auto;
 }
 // Type - Vertical spacing
-h3 {
+.subpage h3 {
 	margin-bottom: $space24;
 }
-h4 {
+.subpage h4 {
 	margin-bottom: $space16;
 }
 // Spacing Code blocks
@@ -235,10 +235,10 @@ pre {
 	top: 6px;
 }
 .subpage-nav .next figure {
-	margin-left: $space16;
+	margin-left: $space8;
 }
 .subpage-nav .previous figure {
-	margin-right: $space16;
+	margin-right: $space8;
 }
 // Inline images
 .inline-left {
@@ -299,7 +299,7 @@ hr.hidden {
 	.align-right {
 		max-width: 660px;
 	}
-	.col-4 {
+	.subpage .col-4 {
 		margin-right: 20px;
 	}
 	.layer-type-illustration {

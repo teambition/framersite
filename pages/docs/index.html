@@ -5,13 +5,13 @@
 {% block sidebar %}
 <div class="sidebar">
 	<ul>	
-		<li class="active"><a class="layers" href="#layers">Layers</a></li>
-		<li><a class="animations" href="#animations">Animations</a></li>
-		<li><a class="events" href="#events">Events</a></li>
-		<li><a class="device" href="#device">Device</a></li>
-		<li><a class="print" href="#print">Print</a></li>
-		<li><a class="utilities" href="#utilities">Utilities</a></li>
-		<li><a class="defaults" href="#defaults">Defaults</a></li>
+		<a class="layers" href="#layers"><li class="active">Layers <div class="small">Properties, Hierarchy...</div></li></a>
+		<a class="animations" href="#animations"><li>Animations <div class="small">Curves & Events</div></li></a>
+		<a class="events" href="#events"><li>Events <div class="small">Interactions</div></li></a>
+		<a class="device" href="#device"><li>Device <div class="small">Custom DeviceView</div></li></a>
+		<a class="print" href="#print"><li>Print <div class="small">Inspect variables</div></li></a>
+		<a class="utilities" href="#utilities"><li>Utilities <div class="small">Framer Functions</div></li></a>
+		<a class="defaults" href="#defaults"><li>Defaults <div class="small">Framer.Defaults</div></li></a>
 	</ul>
 </div> <!--sidebar-->
 {% endblock %}
@@ -24,11 +24,8 @@
 {% block body %}
 {% filter pygmentify %}
 {% filter markdown %}
-
-<a name="layers"></a>
-
 ### Layers
-
+<a name="layers"></a>
 <table border="0" cellspacing="0" cellpadding="0" class="api">
 	<tbody>
 	<tr>
