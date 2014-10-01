@@ -68,8 +68,11 @@ myStringD = "1px solid #FFFFFF"
 
 Arrays contain an ordered set of values. The values can be any type. They can even be nested (an array with arrays, for instance).
 <pre lang="coffeescript">
-myListA = [1, 2, 3, 4, 5] # Just numbers
-myListB = [1, "test", 22, [1, 2, 3]] # Mixed
+# An array with only numbers
+myListA = [1, 2, 3, 4, 5]
+
+# An array with numbers, a string and another array
+myListB = [1, "test", 22, [1, 2, 3]] 
 </pre>
 
 Any item in an array can be accessed by its index, which starts at 0:
