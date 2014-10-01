@@ -10,6 +10,8 @@ pre {
     color: #788D9E; 
     background: #fff; 
     box-shadow: inset 0 0 0 1px #E4EBF2, inset 46px 0 0 #FBFDFE, inset 47px 0 0 #E4EBF2; // To-do: make this variables
+    z-index: 30;
+    position: relative;
 }
 pre ol {
     margin-bottom: 0;
@@ -111,6 +113,7 @@ pre, code {
 }
 .content-inner pre ol li {
     line-height: 1.6;
+    text-align: left;
 }
 .content-inner pre ol li:before {
     content: counter(linenumbers);
@@ -149,7 +152,6 @@ img.curve {
     margin-top: -5px;
 }
 @media screen and (max-width: 1080px) {
-    
     .without-linenumbers pre {
         box-shadow: none;
         margin-top: 20px;
@@ -157,6 +159,30 @@ img.curve {
     }
 }
 
+@media screen and (max-width: 720px) {
+    .with-illustration,
+    .with-full-illustration {
+        text-align: center;
+    }
+    .code-illustration {
+        position: relative;
+    }
+    .code-illustration-states {
+        position: relative;
+        max-width: 274px; 
+    }
+    .with-illustration pre,
+    .with-full-illustration pre {
+        margin-top: 0;
+    }
+    .with-illustration figure,
+    .with-full-illustration figure {
+        background: $blue;
+        margin-bottom: -1px;
+        position: relative;
+        z-index: 100;
+    }
+}
 @media screen and (max-width: 660px) {
     .content-inner pre ol li:before {
         content:"";
@@ -165,7 +191,6 @@ img.curve {
         box-shadow: inset 0 0 0 1px #E4EBF2;
     }
 }
-
 @media screen and (max-width: 440px) {
     .code-illustration {
         display: none;

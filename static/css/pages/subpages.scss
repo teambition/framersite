@@ -352,6 +352,9 @@ hr.hidden {
 	.sidebar {
 		display: none;
 	}
+	.learn-nav {
+		padding-bottom: $space48;
+	}
 	.learn-nav a {
 		padding-bottom: 0;
 	}
@@ -359,6 +362,13 @@ hr.hidden {
 		border-bottom: none;
 		height: auto;
 		margin-bottom: 0;
+	}
+	// Custom learn nav col-4
+	.learn-nav .col-4:nth-child(2n) {
+		margin-left: 20px;
+	}
+	.learn-nav .col-4 {
+		margin-bottom: 40px;
 	}
 	// Custom subpage inline col-4 elements
 	.layer-types .col-4,
@@ -379,9 +389,6 @@ hr.hidden {
 	.page-header img {
 		max-width: 300px;
 		right: 24px;
-	}
-	.learn-nav .col-4:nth-child(2n) {
-		margin-left: 20px;
 	}
 }
 @media screen and (max-width: 720px) {
@@ -422,6 +429,7 @@ hr.hidden {
 	}
 	.learn-nav {
 		padding-top: 0;
+		padding-bottom: 20px;
 	}
 	.learn-nav a {
 		text-align: center;
@@ -443,6 +451,7 @@ hr.hidden {
 	}
 	.learn-nav .col-4+.col-4 {
 		margin-right: 0;
+		margin-top: 0;
 	}
 	.learn-nav .col-4:nth-child(2n) {
 		margin-left: 0;

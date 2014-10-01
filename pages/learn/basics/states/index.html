@@ -30,6 +30,7 @@ States are sets of properties for layers that define position and looks. States 
 Every layer has a "default" state with its current properties, which is included when switching between states.
 
 <div class="with-full-illustration">
+<figure><img class="code-illustration-states" src="/static/images/learn/states.gif"></figure>
 <pre lang="coffeescript">
 # Add states
 layerA.states.add 
@@ -44,7 +45,6 @@ layerA.states.animationOptions =
 layerA.on Events.Click, -> 
     layerA.states.next()
 </pre>
-<img class="code-illustration-states" src="/static/images/learn/states.gif">
 </div>
 
 Just like layer animations, you can also define how their animation curve and timing. You can define the animationOptions of all states of a layer at once.

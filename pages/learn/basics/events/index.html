@@ -28,6 +28,8 @@ To start listening to an event, write: <code class="inline">layer.on event, → 
 To stop listening you can write: <code class="inline">layer.off event, → ...</code>
 
 <div class="with-illustration">
+<figure><img class="code-illustration no-border" src="/static/images/learn/events.png" srcset="/static/images/learn/events@2x.png 2x" draggable="false"></figure>
+
 <pre lang="coffeescript">
 # Listen to multiple events
 layerA.on Events.Click, -> 
@@ -39,7 +41,6 @@ layerA.on Events.TouchMove, ->
 layerA.on Events.TouchEnd, -> 
     ...
 </pre>
-<img class="code-illustration no-border" src="/static/images/learn/events.png" srcset="/static/images/learn/events@2x.png 2x" draggable="false">
 </div>
 
 One of the most common use cases of events is toggling between a set of states on click.
@@ -64,6 +65,8 @@ layerA.on Events.AnimationEnd, ->
 Below is a simple example of a chained animation. Every animation gets an AnimationEnd event, so they can be chained infinitely.
 
 <div class="with-illustration">
+<figure><img class="code-illustration no-border" src="/static/images/learn/animation-chaining.gif" srcset="/static/images/learn/animation-chaining@2x.gif 2x" draggable="false"></figure>
+
 <pre lang="coffeescript">
 layerA.animate 
 	properties:
@@ -76,7 +79,6 @@ layerA.on Events.AnimationEnd, ->
 			x:100
 		curve: "ease-in-out"
 </pre>
-<img class="code-illustration no-border" src="/static/images/learn/animation-chaining.gif" srcset="/static/images/learn/animation-chaining@2x.gif 2x" draggable="false">
 </div>
 
 <section class="summary">
