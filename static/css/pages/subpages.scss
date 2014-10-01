@@ -91,7 +91,6 @@ pre {
 	border-bottom: 1px solid $separator;
 	margin-bottom: $space80;
 	padding-top: $space40;
-	position: relative;
 }
 .learn-nav a {
 	color: $sidebar-links;
@@ -144,6 +143,10 @@ pre {
 }
 .learn-nav .active span {
 	opacity: 1;
+}
+.learn-nav-icons {
+	position: relative;
+	display: inline-block;
 }
 .learn-nav figure {
 	display: inline-block;
@@ -400,7 +403,20 @@ hr.hidden {
 	.learn-nav {
 		padding-top: 0;
 	}
-
+	.learn-nav a {
+		text-align: center;
+	}
+	.learn-nav figure {
+		margin: 0 auto;
+	}
+	.learn-nav .nav-title {
+		max-width: 100px;
+		line-height: 1.4;
+		margin: $space16 auto $space32 auto;
+	}
+	.learn-nav a span {
+		display: none;
+	}
 	.learn-nav .col-4 {
 		max-width:50%;
 		margin:0;
