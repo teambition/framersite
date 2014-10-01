@@ -251,48 +251,33 @@ pre {
 }
 
 // Page-to-page navigation
-.page-navigation {
+.subpage-nav {
 	// margin-top: $space80;
 }
-.page-navigation .next {
+.subpage-nav .next {
 	float: right;
 }
-.page-navigation .next h5 {
-	text-align: right;
-	margin-right:30px;
-	color: $blue
-}
-.page-navigation .previous h5 {
-	margin-left:30px;
-	color: $graphite80;
-}
-.page-navigation .previous {
+.subpage-nav .previous {
 	float: left;
 	color: $graphite80;
 }
-.page-navigation h5 {
-	color: $black;
-	margin-bottom: 0;
-	font-size: 12px;
-}
-.page-navigation h6 {
+.subpage-nav h6 {
 	font-size: 18px;
 }
-.page-navigation h5.last,
-.page-navigation h6.last {
+.subpage-nav h6.last {
 	color: $blue;
 }
-.page-navigation a h6, .page-navigation a figure {
+.subpage-nav a h6, .subpage-nav a figure {
 	display: inline-block;
 }
-.page-navigation figure {
+.subpage-nav figure {
 	position: relative;
 	top: 6px;
 }
-.page-navigation .next figure {
+.subpage-nav .next figure {
 	margin-left: $space16;
 }
-.page-navigation .previous figure {
+.subpage-nav .previous figure {
 	margin-right: $space16;
 }
 // Inline images
@@ -315,6 +300,29 @@ hr.hidden {
 .align-right img + ul {
 	max-width: 660px;
 }
+
+// Layer illustration blocks 
+.layer-type-illustration {
+	height:120px;
+	width:100%;
+	background: $blue;
+	text-align: center;
+	position: relative;
+	padding-top: 34px;
+}
+
+.layer-type-illustration figure { // Icons within
+	display: inline-block;
+}
+.layer-type-illustration.video {
+	background: $cyan;
+	padding-top: 34px;
+}
+.layer-type-illustration.html {
+	background: $green;
+	padding-top: 36px;
+}
+// Screenshots
 .ss-mirror-iphone {
 	margin-bottom: $space48;
 }
