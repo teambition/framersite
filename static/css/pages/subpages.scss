@@ -288,7 +288,7 @@ hr.hidden {
 .animation-curves .curve {
 	width:210px; height: 124px;
 	border:1px solid #E4EBF2;
-	border-radius: 0 0 4px 4px;
+	border-radius: 0 0 3px 4px;
 }
 // Screenshots
 .ss-mirror-iphone {
@@ -430,6 +430,7 @@ hr.hidden {
 	.animation-curves pre {
 		margin-top: 2px;
 		padding:20px;
+		margin-bottom: 0;
 	}
 	.animation-curves .curve-animation {
 		border-radius: 4px;
@@ -499,5 +500,16 @@ hr.hidden {
 	}
 	.col-4 + .col-4 {
 		margin-top: $space16;
+	}
+	.animation-curves .curve-animation {
+		max-width:105px;
+	}	
+	.animation-curves .col-4 {
+		height: 72px;
+		box-shadow: none;
+	}
+	.animation-curves pre {
+		padding:8px 0 8px 16px;
+		background: transparent;
 	}
 }
