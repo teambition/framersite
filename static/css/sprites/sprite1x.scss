@@ -1,7 +1,7 @@
-﻿/* glue: 0.9.4 hash: 910e6bc458 */
+﻿/* glue: 0.9.4 hash: f552ad3645 */
 /* 1x */
-.logo-instagram,.logo-facebook,.logo-groupon,.logo-google,.logo-stripe,.logo-twitter,.logo-dropbox,.icon-learn-importing,.icon-learn-importing-active,.logo-apple,.logo-adobe,.icon-learn-mirror,.icon-learn-mirror-active,.icon-learn-coffeescript,.icon-learn-coffeescript-active,.icon-learn-basics,.icon-learn-basics-active,.logo-spotify,.icon-learn-previous,.icon-learn-previous-active,.icon-learn-next,.icon-learn-next-active,.icon-workflow,.icon-preview,.icon-more,.icon-interaction,.icon-general,.icon-features,.icon-code,.icon-animation,.icon-arrow{
-    background-image:url('/static/images/sprites/sprite1x.png?910e6bc458');
+.logo-instagram,.logo-facebook,.logo-groupon,.logo-google,.logo-stripe,.logo-twitter,.logo-dropbox,.logo-pinterest,.icon-learn-importing,.icon-learn-importing-active,.logo-apple,.logo-adobe,.icon-learn-mirror,.icon-learn-mirror-active,.icon-learn-coffeescript,.icon-learn-coffeescript-active,.icon-learn-basics,.icon-learn-basics-active,.logo-spotify,.icon-learn-previous,.icon-learn-previous-active,.icon-learn-next,.icon-learn-next-active,.icon-workflow,.icon-preview,.icon-more,.icon-interaction,.icon-general,.icon-features,.icon-code,.icon-animation,.icon-arrow{
+    background-image:url('/static/images/sprites/sprite1x.png?f552ad3645');
     background-repeat:no-repeat;
     -webkit-background-size: 211px 169px;
     -moz-background-size: 211px 169px;
@@ -50,14 +50,20 @@
     height:32px;
 }
 
-.icon-learn-importing{
+.logo-pinterest{
     background-position:0 -105px;
+    width:32px;
+    height:33px;
+}
+
+.icon-learn-importing{
+    background-position:-32px -105px;
     width:30px;
     height:33px;
 }
 
 .icon-learn-importing-active{
-    background-position:-30px -105px;
+    background-position:-62px -105px;
     width:30px;
     height:33px;
 }
@@ -69,7 +75,7 @@
 }
 
 .logo-adobe{
-    background-position:-60px -105px;
+    background-position:-92px -105px;
     width:32px;
     height:29px;
 }

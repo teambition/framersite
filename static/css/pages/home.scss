@@ -87,7 +87,7 @@ h5 figure {
 	position: relative;
 }
 .logo-string figure+figure {
-	margin-left: 37px;
+	margin-left: 30px;
 }
 // Vertical centering
 .logo-google     { top:4px; }
@@ -98,6 +98,7 @@ h5 figure {
 .logo-spotify    { top:4px; }
 .logo-adobe      { top:2px; }
 .logo-groupon    { top:-2px; }
+.logo-pinterest    { top:2px; }
 
 // Examples Block
 .examples {
@@ -243,7 +244,7 @@ footer.footer img {
 // Media Queries
 @media screen and (max-width:1080px) {
 	.logo-string figure+figure {
-		margin-left: $space24;
+		margin-left: 20px;
 	}
 	.feature-banners a {
 		height:420px;
