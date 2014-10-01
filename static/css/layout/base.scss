@@ -187,6 +187,11 @@ hr {
 	}
 }
 @media screen and (max-width: 440px) {
+	.subpage .container,
+	.docs .container,
+	.faq .container {
+		padding-bottom: $space32;
+	}
 	.subpage hr {
 		margin: $space32 auto;
 	}

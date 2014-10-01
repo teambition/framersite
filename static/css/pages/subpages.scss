@@ -442,11 +442,10 @@ hr.hidden {
 	.learn-nav .nav-title {
 		max-width: 60px;
 		line-height: 1.4;
-		margin: 0 0 0 8px;
+		margin: 0 0 0 16px;
 		position: relative;
-		top: -2px;
+		top: -4px;
 		display: inline-block;
-		font-size: 10px;
 	}
 	.learn-nav a span {
 		display: none;
@@ -480,4 +479,11 @@ hr.hidden {
 	.animation-curves .curve {
 		display: none;
 	}
+}
+@media screen and (max-width: 440px) {
+	.learn-nav .nav-title {
+		margin: 0 0 0 12px;
+		top: -5px;
+		font-size: 10px;
+	}	
 }
