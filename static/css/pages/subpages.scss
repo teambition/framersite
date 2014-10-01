@@ -173,11 +173,8 @@ pre {
 	float:left;
 	position: absolute;
 	max-width: 210px;
-	margin-top: 32px;
+	margin-top: 0;
 	width: 100%;
-}
-.learn .sidebar {
-	margin-top: 310px;
 }
 .sidebar.sticky,
 .learn .sidebar.sticky {
@@ -313,8 +310,8 @@ hr.hidden {
 	.page-header img {
 		right:0px;
 	}
-	.sidebar {
-		display: none;
+	 .sidebar {
+	 	display: none;
 	}
 	.learn-nav {
 		margin-bottom: $space48;
@@ -443,6 +440,7 @@ hr.hidden {
 		border-radius: 3px;
 	}
 	.animation-curves .curve {
+		max-width: 210px;
 		display: none;
 	}
 
@@ -454,20 +452,6 @@ hr.hidden {
 	}
 	.page-header .content-inner {
 		height: 416px;
-	}
-	.sidebar {
-		padding-bottom:0;
-		margin-bottom: $space40;
-	}
-	.sidebar .title {
-		display: none;
-	}
-	.sidebar li {
-		display: block;
-	}
-	.sidebar li+li {
-		margin-top: 0;
-		margin-left: 0;
 	}
 	.learn-nav {
 		padding-top: 0;
@@ -511,5 +495,8 @@ hr.hidden {
 	.animation-curves pre {
 		padding:8px 0 8px 16px;
 		background: transparent;
+	}
+	.animation-curves .curve {
+		display: none;
 	}
 }

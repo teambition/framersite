@@ -10,8 +10,8 @@ pre {
     color: #788D9E; 
     background: #fff; 
     box-shadow: inset 0 0 0 1px #E4EBF2, inset 46px 0 0 #FBFDFE, inset 47px 0 0 #E4EBF2; // To-do: make this variables
-    overflow: hidden;
     border-radius: 3px;
+    overflow: hidden;
 }
 pre ol {
     margin-bottom: 0;
@@ -48,12 +48,12 @@ pre, code {
 // Illustrations
 .code-illustration {
     position: absolute;
-    top:0; right:0;
+    top:0; right:-1px;
     padding: 16px;
     border-radius: 0 3px 3px 0;
     display: inline-block;
     box-shadow: inset 0 0 0 1px #E4EBF2;
-    z-index: 30;
+    z-index: 100;
 }
 .code-illustration.no-border {
     padding:0; box-shadow: none;
@@ -185,9 +185,11 @@ img.curve {
         margin-bottom: -1px;
         position: relative;
         z-index: 100;
+        border-radius: 3px 3px 0 0;
+        overflow: hidden;
     }
 }
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 560px) {
     .content-inner pre ol li:before {
         content:"";
     }
