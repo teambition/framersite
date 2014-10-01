@@ -213,51 +213,6 @@ pre {
 	color: #fff;
 }
 
-// Page summaries
-.summary {
-	margin: $space80 0 0 0;
-}
-.summary ul {
-	margin-bottom: 0;
-}
-.summary ul li {
-	font-size: 18px;
-	line-height: 1.4;
-	list-style: none;
-	padding-left: 0;
-	left: 0;
-}
-.summary ul li:before {
-	content: "";
-	background: url("/static/images/learn/icon-learn-summary.png") no-repeat;
-	background-size: contain;
-	height:20px; width:14px;
-	display: inline-block;
-	margin-right: $space16;
-	position: relative;
-	top: 6px;
-	float: left;
-}
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
-	.summary ul li:before {
-		content: "";
-		background: url("/static/images/learn/icon-learn-summary@2x.png") no-repeat;
-		background-size: 100%;
-	}
-}
-.summary figure,
-.summary h3 {
-	display: inline-block;
-}
-.summary figure {
-	position: relative;
-	top: -3px;
-	margin-right: $space16;
-}
-.summary h3 {
-	margin-bottom: $space24;
-}
-
 // Page-to-page navigation
 .subpage-nav {
 	// margin-top: $space80;
@@ -341,7 +296,7 @@ hr.hidden {
 		right:130px;
 	}
 	.align-right {
-		max-width: 650px;
+		max-width: 660px;
 	}
 	.col-4 {
 		margin-right: 20px;
@@ -358,7 +313,7 @@ hr.hidden {
 		display: none;
 	}
 	.learn-nav {
-		padding-bottom: $space48;
+		margin-bottom: $space48;
 	}
 	.learn-nav a {
 		padding-bottom: 0;
@@ -415,7 +370,7 @@ hr.hidden {
 	.page-header img {
 		max-width: 210px;
 		right: 50%;
-		margin-right:-105px;
+		margin-right:-125px; // 105 + 20
 	}
 	// Custom learn nav col-4
 	.learn-nav .col-4 {
@@ -430,13 +385,14 @@ hr.hidden {
 	.learn-nav .col-4 {
 		margin-bottom: 40px;
 	}
-	.summary ul li {
-		font-size: 16px;
-	}
 }
 @media screen and (max-width:560px) {
 	.page-header {
+		height: 440px;
 		margin-top: 0;
+	}
+	.page-header .content-inner {
+		height: 416px;
 	}
 	.sidebar {
 		padding-bottom:0;

@@ -249,6 +249,53 @@ ul.numbered li:before {
 .right {
 	float:right;
 }
+
+// Subpage summary lists
+// Page summaries
+.summary {
+	margin: $space80 0 0 0;
+}
+.summary ul {
+	margin-bottom: 0;
+}
+.summary ul li {
+	font-size: 18px;
+	line-height: 1.4;
+	list-style: none;
+	padding-left: 0;
+	left: 0;
+}
+.summary ul li:before {
+	content: "";
+	background: url("/static/images/learn/icon-learn-summary.png") no-repeat;
+	background-size: contain;
+	height:20px; width:14px;
+	display: inline-block;
+	margin-right: $space16;
+	position: relative;
+	top: 6px;
+	float: left;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+	.summary ul li:before {
+		content: "";
+		background: url("/static/images/learn/icon-learn-summary@2x.png") no-repeat;
+		background-size: 100%;
+	}
+}
+.summary figure,
+.summary h3 {
+	display: inline-block;
+}
+.summary figure {
+	position: relative;
+	top: -3px;
+	margin-right: $space16;
+}
+.summary h3 {
+	margin-bottom: $space24;
+}
+
 // Media Queries
 @media screen and (max-width: 1080px) {
 	.page-header h2 {
@@ -259,10 +306,6 @@ ul.numbered li:before {
 	.page-header h1 {
 		font-size: 3em;
 	}
-	// .page-header h2 {
-	// 	font-size: 1.5em;
-	// 	letter-spacing: 0;
-	// }
 }
 @media screen and (max-width: 800px) {
 	.header h1 {
@@ -272,6 +315,9 @@ ul.numbered li:before {
 @media screen and (max-width: 720px) {
 	.page-header h2 {
 		line-height: 1.1;
+	}
+	.summary ul li {
+		font-size: 16px;
 	}
 }
 @media screen and (max-width: 600px) {
@@ -294,5 +340,12 @@ ul.numbered li:before {
 	}
 	h2 {
 		font-size: 2.25em;
+	}
+	.page-header h2 {
+		font-size: 1.625em;
+		line-height: 1.2;
+	}
+	.summary ul li {
+		font-size: 14px;
 	}
 }
