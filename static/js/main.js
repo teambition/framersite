@@ -1,9 +1,8 @@
+/* When clicking the learn navigation icons, load page from that point */
 if ($('body').hasClass('learn')) {
 	$('body.subpage.learn').scrollTop($('.learn-nav').offset().top);
 	$('body.subpage.learn.basics').scrollTop(0);
 }
-/* Prevents Markdown from wrapping all images in p tags */
-$('.subpage p img').unwrap();
 
 $(document).ready(function() {
 	$(".feature-banners a").hover(function() {
