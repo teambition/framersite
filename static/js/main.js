@@ -29,8 +29,6 @@ $(document).ready(function() {
 
 	$(window).scroll(function() {
 
-		var scrollPos = $(this).scrollTop();
-
 		// Sidebar Sticky ----------------
 		if ($(window).scrollTop() > 420) {
 			$(docsSidebar).addClass('sticky');
@@ -74,6 +72,7 @@ $(document).ready(function() {
 		}
 
 	});
+	
 });
 		
 function isMobile() {

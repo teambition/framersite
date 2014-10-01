@@ -358,6 +358,10 @@ hr.hidden {
 		max-width: 300px;
 		right: 24px;
 	}
+	.docs .page-header,
+	.faq .page-header {
+		height:280px;
+	}
 }
 @media screen and (max-width: 720px) {
 	.page-header {
@@ -372,6 +376,10 @@ hr.hidden {
 		max-width: 210px;
 		right: 50%;
 		margin-right:-125px; // 105 + 20
+	}
+	.docs .page-header,
+	.faq .page-header {
+		height:180px;
 	}
 	// Custom learn nav col-4
 	.learn-nav .col-4 {
@@ -452,6 +460,10 @@ hr.hidden {
 	}
 	.page-header .content-inner {
 		height: 416px;
+	}
+	.docs .page-header,
+	.faq .page-header {
+		height:160px;
 	}
 	.learn-nav {
 		padding-top: 0;
