@@ -173,14 +173,20 @@
 .sidebar ul li.active:before {
 	color: #fff;
 }
-.sidebar .active div {
+.sidebar .active div,
+.sidebar .active:hover {
 	color: #fff;
+}
+// Sidebar hover
+.sidebar a, 
+.sidebar a li {
+	@include transition(all, 0.1s, ease);
+}
+.sidebar a:hover li {
+	color: $blue;
 }
 
 // Page-to-page navigation
-.subpage-nav {
-	// margin-top: $space80;
-}
 .subpage-nav .next {
 	float: right;
 }
@@ -207,6 +213,18 @@
 .subpage-nav .previous figure {
 	margin-right: $space8;
 }
+// Subpage nav hover
+.subpage-nav a,
+.subpage-nav a figure {
+	@include transition(all, 0.1s, ease-in);
+}
+.subpage-nav a:hover,
+.subpage-nav a:hover figure {
+	opacity: .8;
+}
+.subpage-nav .next:hover figure { right: -3px;}
+.subpage-nav .previous:hover figure { left: -3px;}
+
 // Inline images
 .inline-left {
 	float: left;
@@ -389,7 +407,7 @@ hr.hidden {
 		padding-top: 24px;
 	}
 	.layer-type-illustration.html {
-		padding-top: 30px;
+		padding-top: 28px;
 	}
 	// Animation curves blocks
 	.animation-curves .col-4 {
