@@ -285,6 +285,11 @@ hr.hidden {
 	background: $green;
 	padding-top: 36px;
 }
+.animation-curves .curve {
+	width:210px; height: 124px;
+	border:1px solid #E4EBF2;
+	border-radius: 0 0 4px 4px;
+}
 // Screenshots
 .ss-mirror-iphone {
 	margin-bottom: $space48;
@@ -384,6 +389,62 @@ hr.hidden {
 	.learn-nav .col-4 {
 		margin-bottom: 40px;
 	}
+	// Shrink layer types into code-blocks 
+	.layer-types .col-4 {
+		max-width: 100%;
+		box-shadow: inset 0 0 0 1px #E4EBF2;
+		height: 100px;
+		border-radius: 3px;
+		float: none;
+	}
+	.layer-types .col-4+.col-4,
+	.animation-curves .col-4+.col-4 {
+		margin-left:0;
+		margin-top: $space16;
+	}
+	.layer-types pre {
+		display: inline-block;
+		padding-left: 20px;
+	}
+	.layer-type-illustration {
+		height:100px;
+		width:100px;
+		padding-top: 24px;
+		border-radius: 3px;
+		float:left;
+	}
+	.layer-type-illustration.video {
+		padding-top: 24px;
+	}
+	.layer-type-illustration.html {
+		padding-top: 30px;
+	}
+	// Animation curves blocks
+	.animation-curves .col-4 {
+		max-width:100%;
+		float:none;
+	}
+	.animation-curves .col-4 div {
+		float: left;
+	}
+	.animation-curves pre {
+		margin-top: 2px;
+		padding:20px;
+	}
+	.animation-curves .curve-animation {
+		border-radius: 4px;
+		max-width:210px;
+		float: left;
+	}	
+	.animation-curves .col-4 {
+		box-shadow: inset 0 0 0 1px #E4EBF2;
+		height: 120px;
+		border-radius: 3px;
+	}
+	.animation-curves .curve {
+		display: none;
+	}
+
 }
 @media screen and (max-width:560px) {
 	.page-header {
@@ -438,33 +499,5 @@ hr.hidden {
 	}
 	.col-4 + .col-4 {
 		margin-top: $space16;
-	}
-	// Layer illustration blocks 
-	.layer-types .col-4 {
-		max-width: 100%;
-		box-shadow: inset 0 0 0 1px #E4EBF2;
-		height: 100px;
-		border-radius: 3px;
-		float: none;
-	}
-	.layer-types .col-4+.col-4 {
-		margin-left:0;
-	}
-	.layer-types pre {
-		display: inline-block;
-		padding-left: 20px;
-	}
-	.layer-type-illustration {
-		height:100px;
-		width:100px;
-		padding-top: 24px;
-		border-radius: 3px;
-		float:left;
-	}
-	.layer-type-illustration.video {
-		padding-top: 24px;
-	}
-	.layer-type-illustration.html {
-		padding-top: 30px;
 	}
 }
