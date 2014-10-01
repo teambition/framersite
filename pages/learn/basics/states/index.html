@@ -22,12 +22,39 @@
 {% filter pygmentify %}
 {% filter markdown %}
 ### States
-States are sets of properties for layers that define position and looks. States can be named, and later interacted with. A layer can have multiple states. You can add, remove and override states, as well as animate between them. 
+
+States allow you to define different appearance options for a layer.
+When creating a new layer, the set of properties you define become the default state. A layer can have multiple states, each with a different set properties. States can then be cycled through, with or without animation.
 
 ---
 
-##### Default State
-Every layer has a "default" state with its current properties, which is included when switching between states.
+##### Example
+The "default" state of layerA contains the opacity property, set to 1. Next, a new state for layerA is defined, titled "fade", with an opacity set to 0.
+
+<pre lang="coffeescript">
+# The "default" state
+layerA = new Layer 
+	opacity:1
+
+# A new state
+layerA.states.add
+	fade: {opacity:0}
+</pre>
+
+For layerA to inherit the properties of the "fade" state, it needs to switch from the "default" state to the fade state. 
+
+<pre lang="coffeescript">
+# Switch states with animation
+layerA.states.switch("fade")
+
+# Switch states without animation
+layerA.states.switchInstant("fade")
+</pre>
+
+
+##### Toggling states
+
+States can also be toggled between, using next() instead of switch().
 
 <div class="with-full-illustration">
 <figure><img class="code-illustration-states" src="/static/images/learn/states.gif"></figure>
@@ -47,24 +74,9 @@ layerA.on Events.Click, ->
 </pre>
 </div>
 
-Just like layer animations, you can also define how their animation curve and timing. You can define the animationOptions of all states of a layer at once.
+Just like layer animations, the animation curve and timing of state animations can be defined. The animationOptions of all states of a layer can be defined at once, as seen in the example above.
 
-<pre lang="coffeescript">
-# Set the animation options
-layerA.states.animationOptions = 
-    curve: "spring(600,30,0)"
-</pre>
-
-##### Switching states
-Besides toggling between all states, you can also switch to a specific state, optionally without an animation.
-
-<pre lang="coffeescript">
-# Switch to third state
-layerA.states.switch("third")
-
-# Switch to third state without animation
-layerA.states.switchInstant("third")
-</pre>
+---
 
 ##### Editing States
 You can remove and override previously defined states. To override states, simply add a new state with the same name.

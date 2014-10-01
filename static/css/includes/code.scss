@@ -10,8 +10,8 @@ pre {
     color: #788D9E; 
     background: #fff; 
     box-shadow: inset 0 0 0 1px #E4EBF2, inset 46px 0 0 #FBFDFE, inset 47px 0 0 #E4EBF2; // To-do: make this variables
-    z-index: 30;
-    position: relative;
+    overflow: hidden;
+    border-radius: 3px;
 }
 pre ol {
     margin-bottom: 0;
@@ -28,6 +28,7 @@ pre, code {
 // Code blocks with illustrations
 .with-illustration {
     position: relative;
+    overflow: hidden;
 }
 .with-full-illustration {
     width:100%;
