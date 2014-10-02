@@ -46,9 +46,9 @@
 	margin-bottom: $space16;
 }
 // Block Spacing
-.framer-overview {
-	margin-bottom: $space64;
-}
+// .framer-overview {
+// 	margin-bottom: $space64;
+// }
 .screenshot-copy {
 	margin-top: $space48;
 }
@@ -63,7 +63,7 @@
 	margin-bottom: $space80;
 }
 // Screenshot Copy
-.screenshot-copy h3 {
+.screenshot-copy h4 {
 	margin-bottom: $space8;
 	line-height: 1.8;
 }
@@ -87,7 +87,7 @@ h5 figure {
 	position: relative;
 }
 .logo-string figure+figure {
-	margin-left: 37px;
+	margin-left: 30px;
 }
 // Vertical centering
 .logo-google     { top:4px; }
@@ -98,6 +98,7 @@ h5 figure {
 .logo-spotify    { top:4px; }
 .logo-adobe      { top:2px; }
 .logo-groupon    { top:-2px; }
+.logo-pinterest    { top:2px; }
 
 // Examples Block
 .examples {
@@ -182,7 +183,7 @@ a.device-right {
 }
 .feature-banners div {
 	display: inline-block;
-	@include transition(all, 0.2, ease);
+	@include transition(all, 0.2s, ease);
 }
 // On hover effect
 .is-active div {
@@ -234,10 +235,16 @@ footer.footer img {
 	height: 128px;
 	width: 128px;
 }
+// List fix
+.content-inner ul li {
+	list-style: none;
+	padding:0;
+	left:0;
+}
 // Media Queries
 @media screen and (max-width:1080px) {
 	.logo-string figure+figure {
-		margin-left: $space24;
+		margin-left: 20px;
 	}
 	.feature-banners a {
 		height:420px;

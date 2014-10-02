@@ -1,0 +1,14 @@
+###### layer.copySingle()
+<a id="layer.copySingle"></a>
+<p class="small">
+	<strong>Returns:</strong> Layer object<br>
+</p>
+
+This will copy a layer without its sub layers. The event listeners will not be copied.
+
+<pre lang="coffeescript">
+layerA = new Layer()
+layerB = new Layer({superLayer:layerA})
+
+layerC = layerA.copySingle()
+</pre>

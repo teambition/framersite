@@ -1,0 +1,15 @@
+###### Utils.cycle(values <span>array</span>)
+<a id="layer.pixelAlign"></a>
+<p class="small">
+	<strong>Returns:</strong> function<br>
+</p>
+Creates a function that returns the next value in a given array every time you call it.
+
+<pre lang="coffeescript">
+cycler = Utils.cycle(["a", "b", "c"])
+
+print cycler() # Output: "a"
+print cycler() # Output: "b"
+print cycler() # Output: "c"
+print cycler() # Output: "a", returns to start
+</pre>

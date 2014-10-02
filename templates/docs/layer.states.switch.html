@@ -1,0 +1,11 @@
+###### layer.states.switch(name <span>string</span>)
+<a id="layer.states.switch"></a>
+Switch to a new state. This will animate the layer to the new state. It will use the layer.states.animationOptions.
+
+<pre lang="coffeescript">
+layerA = new Layer()
+
+layerA.states.add("stateA", {x:500, opacity:0.5})
+layerA.states.switch("stateA")
+</pre>
+

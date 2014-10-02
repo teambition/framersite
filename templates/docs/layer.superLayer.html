@@ -1,0 +1,15 @@
+###### layer.superLayer <span>Layer object</span>
+<a id="layer.superLayer"></a>
+Sets the super layer (or parent) for this layer. You can set the super layer to null if you want the layer to live at the root of your document.
+
+<pre lang="coffeescript">
+layerA = new Layer()
+layerB = new Layer()
+
+layerB.superLayer = layerA
+
+print layerB.superLayer
+# Output: <Object:Layer layerA>
+
+</pre>
+

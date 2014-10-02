@@ -1,0 +1,38 @@
+<a name="defaults.defaults"></a>
+The Framer.Defaults allow you to override the default properties for Layers and Animations that you do not define. For example, all new layers get a light blue background color so you can see them. You can override that color here.
+
+<pre lang="coffeescript">
+# Override the default background color for layers
+Framer.Defaults.Layer.backgroundColor = "red"
+
+# Override the default corner radius for layers
+Framer.Defaults.Layer.borderRadius = 10
+
+layerA = new Layer()
+
+print layerA.backgroundColor
+# Output: "red"
+
+print layerA.borderRadius
+# Output: 10
+</pre>
+
+Here is an example to set the default animation curve. Note that those will also be used for layer.states switches unless otherwise defined.
+
+<pre lang="coffeescript">
+# Override the default animation options for all Animations
+
+Framer.Defaults.Animation = {
+	curve: "spring(100,10,0)"
+}
+
+# Override the default corner radius for layers
+Framer.Defaults.Layer.borderRadius = 10
+
+layerA = new Layer()
+layerA.animate({
+	properties: {x:100}
+})
+
+# The animation will now use the "spring(100,10,0)" curve
+</pre>

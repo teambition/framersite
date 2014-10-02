@@ -1,0 +1,10 @@
+###### layer.shadowSpread <span>number</span>
+<a id="layer.shadowSpread"></a>
+Makes shadows larger in all directions. The shadow is expanded by the given value. Negative values cause the shadow to contract. If shadowX, shadowY and shadowBlur are all set to 0, this will appear as a border. A visible shadow will only appear if the shadowColor property is also defined.
+
+<pre lang="coffeescript">
+layerA = new Layer()
+layerA.shadowY = 1
+layerA.shadowBlur = 4
+layerA.shadowSpread = 2
+</pre>

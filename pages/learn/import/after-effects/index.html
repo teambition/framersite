@@ -1,0 +1,55 @@
+{% extends "learnpage.html" %}
+{% block title %}Framer - After Effects{% endblock %}
+{% block islearn %}active{% endblock %}
+{% block importing %}active{% endblock %}
+{% block importing2 %}-active{% endblock %}
+
+{% block sidebar %}
+<div class="sidebar">
+	<ul>	
+		<a href="/learn/import"><li>Overview <div class="small">Introduction</div></li></a>
+		<a href="/learn/import/photoshop-and-sketch"><li>Photoshop & Sketch <div class="small">Import designs</div></li></a>
+		<a href="/learn/import/after-effects"><li class="active">After Effects <div class="small">Import videos</div></li></a>		
+	</ul>
+</div> <!--sidebar-->
+{% endblock sidebar %}
+
+{% block body %}
+{% filter pygmentify %}
+{% filter markdown %}
+### After Effects
+
+Framer also supports videoLayers. You can drag and drop a video file into the preview pane to automatically create a videoLayer. 
+
+<h5>Exporting Transparent Videos</h5>
+<p>With After Effects, it's possible to export fully transparant videos. These can be useful for prototypes, but note that animating transparant videos may create some jagged edges due to anti-aliasing. When possible, exporting with a solid background is recommended.   
+</p>
+
+<div class="inline-image"><img class="ss-ae-output" src="/static/images/learn/ss-ae-output.png" srcset="/static/images/learn/ss-ae-output@2x.png 2x"></div>
+
+<ul class="numbered">
+<li>Toggle Transparency grid on your composition</li>
+<li>Add your project to the Render Queue</li>
+<li>In the Output Module, select the RGB + Alpha channel</li>
+<li>In the Format Options, use the Animation Codec</li>
+</ul>
+
+---
+
+##### Web-compatible videos
+
+Framer and Safari support Lossless movie formats from After Effects, but the .MOV file format doesn't play well on most browsers.
+To create web-compatible videos, convert them to MP4 or export using Adobe Media Encoder, and use .H264 as the Codec and .MP4 as file format.
+
+---
+
+<section class="subpage-nav">
+	<a class="previous" href="/learn/import/photoshop-and-sketch">
+		<figure class="icon-learn-previous-active"></figure>
+		<h6 class="last">Photoshop & Sketch</h6> 
+	</a> 
+</section>
+
+{% endfilter %}	
+{% endfilter %}	
+{% endblock body %}

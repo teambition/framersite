@@ -1,0 +1,18 @@
+###### animation.stop()
+<a id="animation.stop"></a>
+
+Stop the animation.
+
+<pre lang="coffeescript">
+layerA = new Layer()
+
+animationA = new Animation({
+	layer: layerA,
+	properties: {x:100}
+})
+
+animationA.start()
+
+# Stop the animation
+animationA.stop()
+</pre>

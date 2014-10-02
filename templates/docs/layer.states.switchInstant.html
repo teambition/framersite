@@ -1,0 +1,12 @@
+###### layer.states.switchInstant(name <span>string</span>)
+<a id="layer.states.switchInstant"></a>
+
+Switch to a new state without animating.
+
+<pre lang="coffeescript">
+layerA = new Layer()
+
+layerA.states.add("stateA", {x:500, opacity:0.5})
+layerA.states.switchInstant("stateA")
+</pre>
+

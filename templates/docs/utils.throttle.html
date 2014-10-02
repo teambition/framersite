@@ -1,0 +1,19 @@
+###### Utils.throttle(interval <span>number</span>, handler <span>function</span>)
+<a id="utils.throttle"></a>
+<p class="small">
+	<strong>Returns:</strong> Function<br>
+</p>
+
+Creates a function that will call the wrapped function at most once per x seconds. Alias to <a href="http://lodash.com/docs#throttle">_.throttle</a>.
+
+<pre lang="coffeescript">
+
+handler = Utils.throttle 0.1, ->
+	print "hello"
+
+
+for i in [1..100]
+	handler()
+
+# Output: "hello" only once
+</pre>

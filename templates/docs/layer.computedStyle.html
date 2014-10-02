@@ -1,0 +1,19 @@
+###### layer.computedStyle()
+<a id="layer.computedStyle"></a>
+<p class="small">
+	<strong>Returns:</strong> Object<br>
+</p>
+
+Get all the current applied css style properties for the layer, directly and defined by css rules.
+
+Note that this is an expensive operation for the browser. For a full reference on computed style see <a href="https://developer.mozilla.org/en/docs/Web/API/window.getComputedStyle">this overview</a>.
+
+<pre lang="coffeescript">
+layerA = new Layer()
+layerA.backgroundColor = "red"
+
+print layer.computedStyle()["background-color"]
+# Output: "red"
+
+</pre>
+

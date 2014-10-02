@@ -1,0 +1,596 @@
+
+// Page header 
+.page-header {
+	background: $header;
+	color: #fff;
+	height: 376px; // 440px if nav is included
+	padding-top: 80px;
+	margin-top: $space64;
+	position: relative;
+}
+.docs .page-header,
+.faq .page-header {
+	height:320px;
+}
+.learn .page-header h1 {
+	margin-bottom: $space8;
+}
+.page-header h2 {
+	color: $graphite-blue;
+}
+.page-header .content-inner {
+	position: relative;
+	height: 296px;
+}
+.page-header img {
+	position: absolute;
+	bottom:0;
+	right:176px;
+	max-height: 420px;
+	max-width: 340px;
+	z-index: 400;
+}
+// Link jumps
+.docs a[id] {
+	position: relative; 
+	top: -166px;
+	display: block;
+	height:0;
+}
+.docs a[name] {
+	position: relative; 
+	top: -190px;
+	display: block;
+	height:0;
+}
+.faq p,
+.faq table,
+.faq ul {
+	max-width: 750px;
+}
+.align-right {
+	max-width: 750px;
+	width: 100%;
+	float: right;
+	clear:both;
+}
+.align-right p {
+	max-width: 580px;
+	width: 100%;
+	text-align: left;
+}
+// Clearfix wrapper
+.content-inner:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+// Learn nav
+.learn-nav {
+	border-bottom: 1px solid $separator;
+	margin-bottom: $space80;
+	padding-top: $space40;
+}
+.learn-nav a {
+	color: $sidebar-links;
+	position: relative;
+	padding-bottom: $space48;
+}
+.learn-nav .active {
+	border-bottom: 1px solid $blue;
+	height: 180px;
+	margin-bottom: -1px;
+	z-index: 200;
+}
+.learn-nav .active.importing {
+	border-color: $green;
+}
+.learn-nav .active.mirror {
+	border-color: $purple;
+}
+.learn-nav .active.coffeescript {
+	border-color: $cyan;
+}
+.learn-nav a * {
+	@include transition(all, 0.1s, ease);
+}
+.learn-nav .nav-title {
+	margin: $space24 0 $space16 0;
+}
+.learn-nav .active .nav-title {
+	color: #222;
+}
+.learn-nav a:hover .nav-title {
+	color: $blue;
+}
+.learn-nav .importing:hover .nav-title {
+	color: $green;
+}
+.learn-nav .mirror:hover .nav-title {
+	color: $purple;
+}
+.learn-nav .coffeescript:hover .nav-title {
+	color: $cyan;
+}
+.learn-nav span {
+	line-height: 1.5;
+	opacity: 0.8;
+}
+.learn-nav a:hover,
+.learn-nav a:hover span {
+	opacity: 1;
+}
+.learn-nav .active span {
+	opacity: 1;
+}
+.learn-nav-icons {
+	position: relative;
+	display: inline-block;
+}
+.learn-nav figure {
+	display: inline-block;
+}
+.learn-nav .hover {
+	position: absolute;
+	top:0; left:0;
+	opacity: 0;
+}
+// Fade old, bring in new
+.learn-nav a:hover figure {
+	opacity: 0;
+}
+.learn-nav a:hover .hover{
+	opacity: 1;
+}
+// Sidebar
+.sidebar {
+	float:left;
+	position: absolute;
+	max-width: 210px;
+	margin-top: 0;
+	width: 100%;
+}
+.sidebar.sticky,
+.learn .sidebar.sticky {
+	position: fixed;
+	margin-top: 0;
+	top: 96px; // 32 + 64 = 96
+}
+.sidebar ul a li {
+	padding: 12px 8px 8px 16px;
+	color: $black;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size:12px;
+	letter-spacing: 0.5px;
+	line-height: 1.2;
+	margin-bottom: $space8;
+	border-radius: 3px;
+	list-style: none;
+	left: 0;
+}
+// Docs
+.docs .sidebar {
+	overflow: auto;
+	height:calc(100% - 192px);
+	position: fixed;
+	top: 64px;
+	margin-top:64px;
+	max-width: 223px;
+	z-index: 200;
+}
+.docs .sidebar a {
+	display: inline-block;
+	float:left;
+	clear:both;
+}
+.docs .sidebar,
+.docs nav.top {
+	position: fixed;
+}
+.docs footer {
+	display: none;
+}
+// Docs section spacing
+.docs .sidebar ul {
+	margin-bottom: $space24;
+	@include clearfix;
+}
+.docs .sidebar .section li {
+	margin-bottom: $space16;
+}
+.docs .sidebar li {
+	box-shadow: none;
+	padding: 0;
+	background: transparent;
+}
+// Docs nav
+.docs .sidebar a.sub-section li {
+	box-shadow: none;
+}
+.docs a.sub-section li {
+	text-transform: none; letter-spacing: 0;
+	font-weight: 400; font-size: 14px;
+	color: $sidebar-links;
+	padding: 0;
+	line-height: 1.2;
+}
+.sidebar::-webkit-scrollbar {
+    background: #fff;
+	width: 6px;
+}
+.sidebar::-webkit-scrollbar-thumb {
+	background: #EEF2F4;
+	border-radius: 6px;
+}
+.sidebar::-webkit-scrollbar-track {
+	border-radius: 8px;
+	box-shadow: inset 0 0 0 1px $separator;
+}
+// -----------------------
+
+.sidebar a div {
+	color: $sidebar-links;
+	margin-top:4px;
+}
+.sidebar .active {
+	color: $blue;
+}
+.learn .sidebar .active {
+	background: $blue;
+	color: #fff;
+}
+.sidebar ul li.active:before {
+	color: #fff;
+}
+.sidebar .active div,
+.sidebar .active:hover {
+	color: #fff;
+}
+// Sidebar hover
+.sidebar a, 
+.sidebar a li {
+	@include transition(all, 0.1s, ease);
+}
+.sidebar a:hover li {
+	color: $blue;
+}
+
+// Page-to-page navigation
+.subpage-nav .next {
+	float: right;
+}
+.subpage-nav .previous {
+	float: left;
+	color: $graphite80;
+}
+.subpage-nav h6 {
+	font-size: 18px;
+}
+.subpage-nav h6.last {
+	color: $blue;
+}
+.subpage-nav a h6, .subpage-nav a figure {
+	display: inline-block;
+}
+.subpage-nav figure {
+	position: relative;
+	top: 6px;
+}
+.subpage-nav .next figure {
+	margin-left: $space8;
+}
+.subpage-nav .previous figure {
+	margin-right: $space8;
+}
+// Subpage nav hover
+.subpage-nav a,
+.subpage-nav a figure {
+	@include transition(all, 0.1s, ease-in);
+}
+.subpage-nav a:hover,
+.subpage-nav a:hover figure {
+	opacity: .8;
+}
+.subpage-nav .next:hover figure { right: -3px;}
+.subpage-nav .previous:hover figure { left: -3px;}
+
+// Inline images
+.inline-left {
+	float: left;
+	margin-right: 60px;
+}
+.text-with-inline-image p {
+	max-width: 660px; // Fix float bu
+}
+hr.hidden {
+	border-bottom-color: #fff;
+	margin: $space24 auto;
+}
+.icon-mirror {
+	margin-right:$space40;
+	position: relative;
+	top:4px;
+	margin-bottom: 20px;
+}
+.align-right img + p,
+.align-right img + ol,
+.align-right img + ul {
+	max-width: 660px;
+}
+// Layer illustration blocks 
+.layer-type-illustration {
+	height:120px;
+	width:100%;
+	background: $blue;
+	text-align: center;
+	position: relative;
+	padding-top: 34px;
+	border-radius: 3px 3px 0 0;
+}
+.layer-type-illustration figure { // Icons within
+	display: inline-block;
+}
+.layer-type-illustration.video {
+	background: $cyan;
+	padding-top: 34px;
+}
+.layer-type-illustration.html {
+	background: $green;
+	padding-top: 36px;
+}
+.animation-curves .curve {
+	width:210px; height: 124px;
+	border:1px solid #E4EBF2;
+}
+// Screenshots
+.ss-mirror-iphone {
+	margin-bottom: $space48;
+}
+
+@media screen and (max-width:1080px) {
+	.page-header img {
+		right:130px;
+	}
+	.align-right {
+		max-width: 660px;
+	}
+	.subpage .col-4 {
+		margin-right: 20px;
+	}
+	.layer-type-illustration {
+        border-radius: 3px;
+    }
+}
+@media screen and (max-width:980px) {
+	.page-header img {
+		right:0px;
+	}
+	 .sidebar {
+	 	display: none;
+	}
+	.learn-nav {
+		margin-bottom: $space48;
+	}
+	.learn-nav a {
+		padding-bottom: 0;
+	}
+	.learn-nav .active {
+		border-bottom: none;
+		height: auto;
+		margin-bottom: 0;
+	}
+	// Custom learn nav col-4
+	.learn-nav .col-4 {
+		max-width: 150px;
+		margin-right: 0;
+	}
+	.learn-nav .col-4:nth-child(2n) {
+		margin-left: 0px;
+	}
+	.learn-nav .col-4 + .col-4 {
+		margin-left:20px;
+	}
+	.learn-nav .col-4 {
+		margin-bottom: 40px;
+	}
+	// Custom subpage inline col-4 elements
+	.layer-types .col-4,
+	.animation-curves .col-4 {
+		max-width: 210px;
+		margin: 0;
+	}
+	.layer-types .col-4:nth-child(2n),
+	.animation-curves .col-4:nth-child(2n) {
+		margin-left:0;
+	}
+	.layer-types .col-4+.col-4,
+	.animation-curves .col-4+.col-4 {
+		margin-left:10px;
+	}
+}
+@media screen and (max-width:960px) {
+	.page-header img {
+		max-width: 300px;
+		right: 24px;
+	}
+	.docs .page-header,
+	.faq .page-header {
+		height:280px;
+	}
+}
+@media screen and (max-width: 720px) {
+	.page-header {
+		text-align: center;
+		height: 460px;
+		padding-top:24px;
+	}
+	.page-header .content-inner {
+		height: 436px;
+	}
+	.page-header img {
+		max-width: 210px;
+		right: 50%;
+		margin-right:-125px; // 105 + 20
+	}
+	.docs .page-header,
+	.faq .page-header {
+		height:180px;
+	}
+	// Custom learn nav col-4
+	.learn-nav .col-4 {
+		max-width: 210px;
+	}
+	.learn-nav .col-4 + .col-4 {
+		margin-left:0;
+	}
+	.learn-nav .col-4:nth-child(2n) {
+		margin-left: 60px;
+	}
+	.learn-nav .col-4 {
+		margin-bottom: 40px;
+	}
+	// Shrink layer types into code-blocks 
+	.layer-types .col-4 {
+		max-width: 100%;
+		box-shadow: inset 0 0 0 1px #E4EBF2;
+		height: 100px;
+		border-radius: 3px;
+		float: none;
+	}
+	.layer-types .col-4+.col-4,
+	.animation-curves .col-4+.col-4 {
+		margin-left:0;
+		margin-top: $space16;
+	}
+	.layer-types pre {
+		display: inline-block;
+		padding-left: 20px;
+	}
+	.layer-type-illustration {
+		height:100px;
+		width:100px;
+		padding-top: 24px;
+		border-radius: 3px;
+		float:left;
+	}
+	.layer-type-illustration.video {
+		padding-top: 24px;
+	}
+	.layer-type-illustration.html {
+		padding-top: 28px;
+	}
+	// Animation curves blocks
+	.animation-curves .col-4 {
+		max-width:100%;
+		float:none;
+	}
+	.animation-curves .col-4 div {
+		float: left;
+	}
+	.animation-curves pre {
+		margin-top: 2px;
+		padding:20px;
+		margin-bottom: 0;
+	}
+	.animation-curves .curve-animation {
+		border-radius: 4px;
+		max-width:210px;
+		float: left;
+	}	
+	.animation-curves .col-4 {
+		box-shadow: inset 0 0 0 1px #E4EBF2;
+		height: 120px;
+		border-radius: 3px;
+	}
+	.animation-curves .curve {
+		max-width: 210px;
+		display: none;
+	}
+}
+@media screen and (max-width:560px) {
+	.page-header {
+		height: 440px;
+		margin-top: 0;
+	}
+	.page-header .content-inner {
+		height: 416px;
+	}
+	.docs .page-header,
+	.faq .page-header {
+		height:160px;
+	}
+	.col-4 + .col-4 {
+		margin-top: $space16;
+	}
+	.learn-nav {
+		padding-top: 0;
+		padding-bottom: $space32;
+		margin-bottom: $space24;
+	}
+	.learn-nav .nav-title {
+		max-width: 60px;
+		line-height: 1.4;
+		margin: 0 0 0 16px;
+		position: relative;
+		top: -4px;
+		display: inline-block;
+	}
+	.learn-nav a span {
+		display: none;
+	}
+	.learn-nav .col-4 {
+		max-width:50%;
+		margin:0;
+	}
+	.learn-nav .col-4+.col-4 {
+		margin-right: 0;
+		margin-top: 0;
+	}
+	.learn-nav .col-4:nth-child(2n) {
+		margin-left: 0;
+	}
+	.learn-nav .col-4:nth-child(3),
+	.learn-nav .col-4:nth-child(4) {
+		margin-top: $space32;
+	}
+	.animation-curves .curve-animation {
+		max-width:105px;
+	}	
+	.animation-curves .col-4 {
+		height: 60px;
+	}
+	.animation-curves pre {
+		padding:8px 0 8px 16px;
+		background: transparent;
+	}
+	.animation-curves .curve {
+		display: none;
+	}
+	.learn .icon-mirror {
+		display: none;
+	}
+	.docs nav.top {
+		position: relative;
+	}
+}
+@media screen and (max-width: 440px) {
+	.learn-nav .nav-title {
+		margin: 0 0 0 12px;
+		top: -5px;
+		font-size: 10px;
+	}	
+}
+@media screen and (max-height: 700px) {
+	.docs .sidebar {
+		height:calc(100% - 128px);
+		top: 32px;
+		padding-bottom: 0;
+	}
+	.docs a[id] {
+		top: -126px;
+	}
+	.docs a[name] {
+		top: -166px;
+	}
+}

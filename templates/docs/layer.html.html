@@ -1,0 +1,26 @@
+###### layer.html <span>string</span>
+<a id="layer.html"></a>
+Insert arbitrary html into this layer. The html can be anything, from simple text, to form elements to canvas or svg content.
+
+If you need to target any of the created elements, remember that they are only available after Framer rendered them (just like document.ready in jQuery). To reliably get a reference to a dom element in the layer.html use layer.querySelector or layer.querySelectorAll.
+
+If the html content that gets inserted needs user interaction, it is smart to set layer.ignoreEvents to false. Framer tries to do it automatically for some elements. Note that to retain the layer structure the html will actually be inserted in a special element that gets created when you set html for the first time.
+
+<pre lang="coffeescript">
+layerA = new Layer()
+
+# Add simple text content
+layerA.html = "Hello"
+
+# Add inline styled text content
+layerA.html = "My name is <span style='color:red'>Koen</style>"
+
+# Add an input field
+layerA.html = "<input type='text' value='Hello'>"
+
+# Add a div with a canvas element and get a reference
+layerA.html = "<div><canvas id='canvas'></canvas></div>"
+canvasElement = layerA.querySelectorAll("#canvas")
+
+</pre>
+

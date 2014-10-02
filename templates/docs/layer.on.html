@@ -1,0 +1,16 @@
+###### layer.on(eventName <span>string</span>, handler <span>function</span>)
+<a id="layer.on"></a>
+Start listening for an event on this layer. For a full list of events see <a href="#events.table">this overview</a>.
+
+When an event is called the first argument is the event information. Depending on the specific event this can contain mouse positions, mouse deltas etc. The second argument is always the layer that the event occurred to.
+
+<pre lang="coffeescript">
+layerA = new Layer()
+layerA.name = "Layer A"
+
+layerA.on Events.Click, (event, layer) ->
+    print "This layer was clicked", layer.name
+
+# Output: "This layer was clicked", "Layer A"
+</pre>
+

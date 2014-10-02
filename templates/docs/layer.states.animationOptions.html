@@ -1,0 +1,19 @@
+###### layer.states.animationOptions <span>object</span>
+<a id="layer.states.animationOptions"></a>
+Set the animation options for the state machine. By default the global animation options will be used.
+
+<pre lang="coffeescript">
+layerA = new Layer()
+
+layerA.states.add({
+	stateA: {x:500, opacity:0.5},
+	stateB: {x:200, opacity:1},
+})
+
+layerA.states.animationOptions = {
+	curve: "spring(100, 10, 0)"
+}
+
+layerA.states.switch("stateB")
+</pre>
+

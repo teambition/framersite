@@ -1,0 +1,14 @@
+###### layer.states.state <span>string</span>
+<a id="layer.states.state"></a>
+The name of the current state.
+
+<pre lang="coffeescript">
+layerA = new Layer()
+
+layerA.states.add("stateA", {x:500, opacity:0.5})
+layerA.states.switchInstant("stateA")
+
+print layerA.states.current
+# Output: "stateA"
+</pre>
+

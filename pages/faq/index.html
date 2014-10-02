@@ -1,18 +1,23 @@
-{% extends "base.html" %}
-{% block title %}Framer - FAQ{% endblock %}
-{% block currentpage %}class="faq"{% endblock currentpage %}
+{% extends "docs.html" %}
+{% block title %}Framer - FAQs{% endblock %}
 
-{% block pages %}
+{% block sidebar %}
+<div class="sidebar">
+	<ul>
+		<a class="section" href="/"><li>FAQs</li></a>
+		<a class="sub-section" href="#compatibility"><li>Compatibility</li></a>
+		<a class="sub-section" href="#debugging"><li>Debugging</li></a>
+		<a class="sub-section" href="#help"><li>Help</li></a>
+	</ul>
+</div> <!--sidebar-->
+{% endblock %}
+
+
+{% block body %}
 {% filter markdown %}
+### FAQs
 
-<!-- More -->
-<a name="faq"></a>
-# FAQ
-
-<!-- Compatibility -->
-<a name="compatibility"></a>
-### Compatibility
-
+##### Compatibility
 Since Framer is a prototyping toolkit, extensive browser compability is not a priority. Our main goal is achieving optimal performance, to get high framerates and smooth animations. 
 
 <table border="0" cellspacing="0" cellpadding="0" class="compatibility">
@@ -62,13 +67,8 @@ Since Framer is a prototyping toolkit, extensive browser compability is not a pr
 </tbody>
 </table>
 
-<hr>
-
-<!-- Debugging -->
-<a name="debugging"></a>
-
 ### Debugging
-
+<a name="debugging"></a>
 Because Framer runs in the browser you can use all the <a href="https://developers.google.com/chrome-developer-tools/" target="_blank">debugging tools</a>, like the console, timeline, profiler and debugger. Framer will alert you when a Javascript error occurred.
 
 <table class="last">
@@ -80,43 +80,24 @@ Because Framer runs in the browser you can use all the <a href="https://develope
 			<td><strong>Escape</strong> (toggle)</td>
 			<td>Switch between normal &amp; debug view of all layers. Useful to inspect structure and positions.</td>
 		</tr>
-<!-- 		<tr>
-			<td><strong>Shift</strong> (hold)</td>
-			<td>While shift is pressed, Framer will delay the time by 25x. This will slow down animations and timers like utils.delay and utils.interval. Useful to inspect animations carefully.</td>
-		</tr> -->
 	</tbody>
 </table>
 
-<hr>
-
-<!-- Questions -->
-
-<a name="questions"></a>
 ### Questions
+<a name="questions"></a>
 
 There is an active and helpful <a href="https://www.facebook.com/groups/framerjs/" target="_blank">Framer Community</a> on Facebook.
 
-<ul>
-	<li><strong>Framer on Windows</strong>
-		<ul>
-			<li>Yes. The core of Framer is a Javascript library that works on all platforms. We're working on Photoshop compatibility.</li>
-		</ul>
-	</li>
-	<li><strong>Framer Studio Volume Licensing</strong>
-		<ul>
-			<li>For 50 licenses or less you can go directly through our online store. If you need more than 50 copies and have special requests please <a href="mailto:koen+framervolume@madebysofa.com">contact us</a>. You can find the Framer end user license agreement <a href="/static/downloads/eula.pdf">here</a>.</li>
-		</ul>
-	</li>
-	<li><strong>Framer Studio Support</strong>
-		<ul>
-			<li>Framer comes with personal support for technical application issues (crashes, etc.). If you need help learning Framer you can ask questions in our <a href="https://www.facebook.com/groups/framerjs/">group</a>, where we and other users try to help each other out.</li>
-		</ul>
-	</li>
-</ul>
+##### Framer on Windows
+The core of Framer is a Javascript library that works on all platforms. We're working on Photoshop compatibility.</li>
 
-<hr>
+##### Framer Studio Volume Licensing
+For 50 licenses or less you can go directly through our online store. If you need more than 50 copies and have special requests please <a href="mailto:koen+framervolume@madebysofa.com">contact us</a>. You can find the Framer end user license agreement <a href="/static/downloads/eula.pdf">here</a>.</li>
 
-<a name="credits"></a>
+##### Framer Studio Support
+Framer comes with personal support for technical application issues (crashes, etc.). If you need help learning Framer you can ask questions in our <a href="https://www.facebook.com/groups/framerjs/">group</a>, where we and other users try to help each other out.
+
+
 ### Credits
 
 Framer was built by <a href="http://twitter.com/koenbok" target="_blank">Koen Bok</a>, <a href="http://twitter.com/jornvandijk" target="_blank">Jorn van Dijk</a> and <a href="http://twitter.com/benjaminnathan" target="_blank">Benjamin den Boer</a>.
@@ -125,6 +106,5 @@ Special thanks goes out to <a href="https://twitter.com/joshpuckett" target="_bl
 
 If we missed you on this list, we thank you nevertheless.
 
-
 {% endfilter %}	
-{% endblock %}
+{% endblock body %}

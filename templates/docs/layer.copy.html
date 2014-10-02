@@ -1,0 +1,15 @@
+###### layer.copy()
+<a id="layer.copy"></a>
+<p class="small">
+	<strong>Returns:</strong> Layer object<br>
+</p>
+
+This will copy a layer and all its sub layers. The layers will have all the same properties as their copied counterparts (same position and looks). The event listeners will not be copied.
+
+<pre lang="coffeescript">
+layerA = new Layer()
+layerB = new Layer({superLayer:layerA})
+
+layerC = layerA.copy()
+</pre>
+

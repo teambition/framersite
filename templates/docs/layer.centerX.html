@@ -1,0 +1,17 @@
+###### layer.centerX(offset <span>number</span>)
+<a id="layer.centerX"></a>
+Center this layer horizontally in it's super layer. If there is no super layer it will be centered relative to the screen. The offset is a pixel offset from the center and optional.
+
+<pre lang="coffeescript">
+layerA = new Layer({width:500, height:500})
+layerB = new Layer({width:100, height:100, superLayer:layerA})
+
+layerB.centerX()
+print layerB.x, layerB.y
+# Output: 200, 0
+
+layerB.centerX(20)
+print layerB.x, layerB.y
+# Output: 220, 0
+
+</pre>

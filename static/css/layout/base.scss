@@ -7,16 +7,20 @@ html {
 body {
 	font-family: "Fakt", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: $black;
-	overflow-x:hidden;
+	overflow-x: hidden;
+}
+// Fixes overflow scrolling bugs..
+.container {
+	overflow-x: hidden;
 }
 a {
 	color: $blue;
 	font-weight: 400; 
 }
-a[name] {
-	position: relative; top: -128px;
-	display: block;
-}
+// a[name] {
+// 	position: relative; top: -128px;
+// 	display: block;
+// }
 .home p a { position:relative; z-index: 50; }
 .home p a:after {
 	content:""; display: inline-block;
@@ -24,9 +28,6 @@ a[name] {
 	width:100%; height:1px;
 	background: $blue40;
 	z-index: -1;
-}
-strong {
-	color: $black;
 }
 img {
 	max-width: 100%;
@@ -37,11 +38,16 @@ img {
   display: table;
   clear: both;
 }
-// Narrow = Learn, Importing and Mirror
-.narrow .container,
-.docs .container,
+// Subpages = Learn & Docs
+.subpage .container,
 .faq .container {
-	padding: calc(64px + 64px) 0 128px 0;
+	padding: 40px 0 128px 0;
+}
+.learn .container {
+	padding-top:0;
+}
+.docs .container {
+	padding-top: 128px;
 }
 .content-inner {
 	width: 100%;
@@ -49,9 +55,10 @@ img {
 	margin: 0 auto;
 	padding: 0 30px;
 }
-.faq .content-inner {
-	max-width: 660px;
+.faq p {
+	max-width: 750px;
 }
+
 // Select all col- elements
 [class*='col-'] { 
   float: left;
@@ -72,7 +79,7 @@ img {
 // Desk ~72px // Tablet ~48-px // Mobile ~16px
 hr {
 	border: none;  width: 100%;
-	border-bottom: 1px solid #eee;
+	border-bottom: 1px solid $separator;
 	display: block; 
 	margin: $space72 auto;
 }
@@ -84,6 +91,10 @@ hr {
 
 // Media Queries
 @media screen and (max-width:1080px) {
+	.subpage .container,
+	.faq .container {
+		padding-bottom: 48px;
+	}
 	.content-inner {
 		max-width: 980px;
 	}
@@ -142,10 +153,13 @@ hr {
 	}
 }
 @media screen and (max-width: 560px) {
-	.narrow .container,
+	.subpage .container,
 	.docs .container,
 	.faq .container {
-		padding: $space48 0 $space64 0;
+		padding: $space48 0 $space48 0;
+	}
+	.learn .container {
+		padding-top: $space32;
 	}
 	.content-inner {
 		padding:0 $space16;
@@ -173,7 +187,12 @@ hr {
 	}
 }
 @media screen and (max-width: 440px) {
-	.narrow hr {
+	.subpage .container,
+	.docs .container,
+	.faq .container {
+		padding-bottom: $space32;
+	}
+	.subpage hr {
 		margin: $space32 auto;
 	}
 }

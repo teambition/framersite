@@ -1,0 +1,13 @@
+### Device
+<a name="device"></a>
+
+The DeviceView class emulates a device like an iPhone, iPad or Android. It allows you to scale the device, scale the content and adjust the orientation. After the device is set up, everything will render within its screen. Device previews match mirrored previews, meaning that if you're previewing on iPhone and then view it on an iPhone it will appear in fullscreen.
+
+Scaling and orientation properties are also prefixed with Framer.device:
+
+<pre lang="coffeescript">
+Framer.Device.contentScale = 0.5
+Framer.Device.orientation = 90
+</pre>
+
+Please note that the scale-to-fit view can render your content off-pixel to retain your screen ratio. Your content will always snap-to-pixel when viewed at 50%, 100% etc. If your browser supports it, device images are compressed with JPEG2000 to reduce image size.

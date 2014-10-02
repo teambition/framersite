@@ -1,0 +1,24 @@
+###### animation.reverse()
+<a id="animation.reverse"></a>
+<p class="small">
+	<strong>Returns:</strong> Animation Object<br>
+</p>
+
+Create a new animation with all reverse values.
+
+<pre lang="coffeescript">
+layerA = new Layer()
+
+animationA = new Animation({
+	layer: layerA,
+	properties: {x:100}
+})
+
+animationB = animationA.reverse()
+
+# Alternate between the two animations
+animationA.on(Events.AnimationEnd, animationB.start)
+animationB.on(Events.AnimationEnd, animationA.start)
+
+animationA.start()
+</pre>

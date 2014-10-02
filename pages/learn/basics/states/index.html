@@ -1,0 +1,114 @@
+{% extends "learnpage.html" %}
+{% block title %}Framer - States{% endblock %}
+{% block currentpage %}class="subpage learn"{% endblock currentpage %}
+{% block islearn %}active{% endblock %}
+{% block basics %}active{% endblock %}
+{% block basics2 %}-active{% endblock %}
+
+{% block sidebar %}
+<div class="sidebar">
+	<ul>	
+		<a href="/learn/basics"><li>Layers <div class="small">Hierarchy and Properties</div></li></a>
+		<a href="/learn/basics/animation"><li>Animation <div class="small">Curves and Timing</div></li></a>
+		<a href="/learn/basics/states"><li class="active">States <div class="small">Sets of properties</div></li></a>
+		<a href="/learn/basics/events"><li>Events <div class="small">Layer interactions</div></li></a>
+		<a href="/learn/basics/dragging"><li>Dragging <div class="small">Draggable layers</div></li></a>
+		<a href="/learn/basics/scrolling"><li>Scrolling <div class="small">Scrollable layers</div></li></a>
+	</ul>
+</div> <!--sidebar-->
+{% endblock sidebar %}
+
+{% block body %}
+{% filter pygmentify %}
+{% filter markdown %}
+### States
+
+States allow you to define different appearance options for a layer.
+When creating a new layer, the set of properties you define become the default state. A layer can have multiple states, each with a different set properties. States can then be cycled through, with or without animation.
+
+##### Adding States
+The default state of layerA contains the opacity property, set to 1. Next, a new state for layerA is defined, titled "fade", with an opacity set to 0.
+
+<pre lang="coffeescript">
+# The default state
+layerA = new Layer 
+	opacity:1
+
+# A new state titled "fade"
+layerA.states.add
+	fade: {opacity:0}
+</pre>
+
+For layerA to inherit the properties of the "fade" state, it needs to switch from the default state to the "fade" state. 
+
+<pre lang="coffeescript">
+# Switch states with animation
+layerA.states.switch("fade")
+
+# Switch states without animation
+layerA.states.switchInstant("fade")
+</pre>
+
+
+##### Example: Switching states
+
+States can also be toggled between, using next() instead of switch().
+
+<div class="with-full-illustration">
+<figure><img class="code-illustration-states" src="/static/images/learn/states.gif"></figure>
+<pre lang="coffeescript">
+# Add states
+layerA.states.add 
+    second: {scale:0.75} 
+    third:  {rotation:90, scale:1} 
+    
+# Set the animation options
+layerA.states.animationOptions = 
+    curve: "spring(600,30,0)"
+
+# Toggle states on click
+layerA.on Events.Click, -> 
+    layerA.states.next()
+</pre>
+</div>
+
+Just like layer animations, the animation curve and timing of state animations can be defined. The animationOptions of all states of a layer can be defined at once, as seen in the example above.
+
+##### Editing States
+You can remove and override previously defined states. To override states, simply add a new state with the same name.
+
+<pre lang="coffeescript">
+# Remove second state
+layerA.states.remove("second")
+
+# Override third states
+layerA.states.add
+	third: {blur:10}
+</pre>
+
+<section class="summary">
+<h5>Summary</h5>
+<ul>
+    <li>States are sets of properties </li>
+    <li>Every layer has a default state</li>
+    <li>You can animate between states</li>
+    <li>States can be removed and overriden</li>
+</ul>
+</section>
+
+<hr>
+
+<section class="subpage-nav">
+	<a class="previous" href="/learn/basics/animation">
+		<figure class="icon-learn-previous"></figure>
+		<h6>Animation</h6> 
+	</a> 
+	<a class="next" href="/learn/basics/events">
+		<h6>Events</h6> 
+		<figure class="icon-learn-next-active"></figure>
+	</a> 
+</section>
+
+{% endfilter %}	
+{% endfilter %}
+{% endblock body %}	

@@ -1,0 +1,116 @@
+{% extends "learnpage.html" %}
+{% block title %}Framer - Animation{% endblock %}
+{% block currentpage %}class="subpage learn"{% endblock currentpage %}
+{% block islearn %}active{% endblock %}
+{% block basics %}active{% endblock %}
+{% block basics2 %}-active{% endblock %}
+
+{% block sidebar %}
+<div class="sidebar">
+    <ul>    
+        <a href="/learn/basics"><li>Layers <div class="small">Hierarchy and Properties</div></li></a>
+        <a href="/learn/basics/animation"><li class="active">Animation <div class="small">Curves and Timing</div></li></a>
+        <a href="/learn/basics/states"><li>States <div class="small">Sets of properties</div></li></a>
+        <a href="/learn/basics/events"><li>Events <div class="small">Layer interactions</div></li></a>
+        <a href="/learn/basics/dragging"><li>Dragging <div class="small">Draggable layers</div></li></a>
+        <a href="/learn/basics/scrolling"><li>Scrolling <div class="small">Scrollable layers</div></li></a>
+    </ul>
+</div> <!--sidebar-->
+{% endblock sidebar %}
+
+{% block body %}
+{% filter pygmentify %}
+{% filter markdown %}
+
+### Animation
+
+Properties of a layer can be animated, including x, y, width, height, scale, opacity, rotation and more. Multiple properties can be animated at once.
+
+<pre lang="coffeescript">
+layerA.animate
+	properties:
+		opacity: 0.5
+</pre>
+
+##### Timing
+
+You can define the duration of an animation, except when using spring curves. Animations can also be delayed and repeated. All durations in Framer are defined in seconds.
+
+<pre lang="coffeescript">
+layerA.animate
+	properties:
+		opacity: 0.5
+	curve: "ease"
+	repeat: 1
+	delay: 2
+    time: 1
+</pre>
+
+##### Curves
+
+Animations optionally take a curve that describe the type of animation. You can use pre-defined curves like 'linear' or 'ease-in', custom bezier curves and spring animations. Below is an overview of different curves.
+
+<section class="animation-curves clearfix">
+<div class="col-4">
+<img class="curve-animation" src="/static/images/learn/animation-linear.gif" srcset="/static/images/learn/animation-linear@2x.gif 2x" draggable="false">
+<img class="curve"src="/static/images/learn/animation-curve-linear.png" srcset="/static/images/learn/animation-curve-linear@2x.png 2x" draggable="false">
+
+<div class="without-linenumbers animation">
+<pre lang="coffeescript">
+# Linear curve
+curve:"linear"
+</pre>
+</div>
+</div> <!--col-4-->
+
+<div class="col-4">
+<img class="curve-animation" src="/static/images/learn/animation-easeinout.gif" srcset="/static/images/learn/animation-easeinout@2x.gif 2x" draggable="false">
+<img class="curve" src="/static/images/learn/animation-curve-easeinout.png" srcset="/static/images/learn/animation-curve-easeinout@2x.png 2x" draggable="false">
+
+<div class="without-linenumbers animation">
+<pre lang="coffeescript">
+# Easing curve
+curve:"ease-in-out"
+</pre>
+</div>
+</div> <!--col-4-->
+
+<div class="col-4">
+<img class="curve-animation" src="/static/images/learn/animation-spring.gif" srcset="/static/images/learn/animation-spring@2x.gif 2x" draggable="false">
+<img class="curve"src="/static/images/learn/animation-curve-spring.png" srcset="/static/images/learn/animation-curve-spring@2x.png 2x" draggable="false">
+
+<div class="without-linenumbers animation spring">
+<pre lang="coffeescript">
+# Spring curve
+curve:"spring(200,15,0)"
+</pre>
+</div>
+</div> <!--col-4-->
+</section> <!--clearfix-->
+
+
+<section class="summary">
+<h5>Summary</h5>
+<ul>
+    <li>Multiple properties can be animated at once</li>
+    <li>Animations can be timed, delayed and repeated</li>
+    <li>Framer contains various animation curves, including spring curves</li>
+</ul>
+</section>
+
+<hr>
+
+<section class="subpage-nav">
+	<a class="previous" href="/learn/basics/">
+		<figure class="icon-learn-previous"></figure>
+		<h6>Layers</h6> 
+	</a> 
+	<a class="next" href="/learn/basics/states">
+		<h6>States</h6> 
+		<figure class="icon-learn-next-active"></figure>
+	</a> 
+</section>
+
+{% endfilter %}	
+{% endfilter %}
+{% endblock body %}	

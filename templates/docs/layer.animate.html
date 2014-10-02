@@ -1,0 +1,82 @@
+###### layer.animate(options <span>object</span>)
+<a id="layer.animate"></a>
+<p class="small">
+	<strong>Returns:</strong> Animation object<br>
+</p>
+
+Start animating this layer. The animation options describe the properties it needs to animate to and how to animate.
+
+Running this method will create a new Animation object with the options and return it. You can use the Animation object to for example stop or reverse the animation.
+
+For a full description of the animation options see <a href="#animation.animation">this overview</a>.
+
+
+<pre lang="coffeescript">
+layerA = new Layer()
+
+# Animate the layer to the right
+layerA.animate({
+	properties: {x:100}
+})
+
+# Animate multiple properties
+layerA.animate({
+	properties: {x:100, opacity:0.5}
+})
+
+# Animate the layer to the right in 5 seconds
+layerA.animate({
+	properties: {x:100},
+	time: 5
+})
+
+# Repeat an animation 5 times
+layerA.animate({
+	properties: {x:100},
+	repeat: 5
+})
+
+# Start an animation after 5 seconds
+layerA.animate({
+	properties: {x:100},
+	delay: 5
+})
+
+# Animate the layer with a spring curve
+layerA.animate({
+	properties: {x:100}
+	curve: "spring(100, 10, 0)"
+})
+
+# Animate the layer with a bezier curve
+layerA.animate({
+	properties: {x:100}
+	curve: "ease-in-out"
+})
+
+# Animate the layer with a custom bezier curve
+# See: http://easings.net/#easeInOutQuint
+layerA.animate({
+	properties: {x:100}
+	curve: "cubic-bezier(0.86, 0, 0.07, 1)"
+})
+
+# Stop an animation immediately
+animationA = layerA.animate({
+	properties: {x:100}
+	curve: "spring(100, 10, 0)"
+})
+
+animationA.stop()
+
+# Listen for an animation to start, stop or end
+layerA.on Events.AnimationStart, -> print "Animation started"
+layerA.on Events.AnimationStop, -> print "Animation stopped"
+layerA.on Events.AnimationEnd, -> print "Animation ended"
+
+layerA.animate({
+	properties: {x:100}
+})
+
+</pre>
+

@@ -1,0 +1,137 @@
+{% extends "learnpage.html" %}
+{% block title %}Framer - Data Types{% endblock %}
+{% block islearn %}active{% endblock %}
+{% block coffeescript %}active{% endblock %}
+{% block coffeescript2 %}-active{% endblock %}
+
+{% block sidebar %}
+<div class="sidebar">
+	<ul>	
+		<a href="/learn/coffeescript"><li>Overview <div class="small">Hierarchy and Properties</div></li></a>
+		<a href="/learn/coffeescript/data-types"><li class="active">Data types <div class="small">Booleans, strings..</div></li></a>
+		<a href="/learn/coffeescript/loops-and-conditionals"><li>Loops & Conditionals <div class="small">Arrays and Logic</div></li></a>
+	</ul>
+</div> <!--sidebar-->
+{% endblock sidebar %}
+
+{% block body %}
+{% filter pygmentify %}
+{% filter markdown %}
+
+<a name="data-types"></a>
+### Data types
+
+##### Boolean
+
+A boolean can only have two values: **true** or **false**:
+<pre lang="coffeescript">
+myBoolA = true
+myBoolB = false
+</pre>
+
+##### Numbers
+Numbers can be small, big, rounded, positive or negative:
+<pre lang="coffeescript">
+myNumberA = 2
+myNumberB = 20.0
+myNumberC = -223894
+</pre>
+
+You can calculate with numbers like this (*operators*):
+<pre lang="coffeescript">
+myNumberA + myNumberB  # Add, output: 22.0
+myNumberA / myNumberB  # Divide, output: 0.10
+myNumberA * myNumberB  # Product, output: 40.0
+myNumberA ** myNumberB # Power, output: 400.0
+</pre>
+
+##### String
+
+A string is a set of characters like words or complete sentences:
+<pre lang="coffeescript">
+myStringA = "Hello there"
+</pre>
+
+Strings can be combined:
+<pre lang="coffeescript">
+myStringB = "#{myStringA}, how are you?"
+# Output: "Hello there, how are you?"
+</pre>
+
+Strings can also hold more complex values:
+<pre lang="coffeescript">
+myStringC = "rgba(255,0,0,0.1)"
+myStringD = "1px solid #FFFFFF"
+</pre>
+
+##### Array
+
+Arrays contain an ordered set of values. The values can be any type. They can be nested (an array with arrays, for instance).
+<pre lang="coffeescript">
+# An array with only numbers
+myListA = [1, 2, 3, 4, 5]
+
+# An array with numbers, a string and another array
+myListB = [1, "test", 22, [1, 2, 3]] 
+</pre>
+
+Any item in an array can be accessed by its index, which starts at 0:
+<pre lang="coffeescript">
+myListA[0] # Output: 1
+myListA[4] # Output: 5
+</pre>
+
+You can also count the items in an array:
+<pre lang="coffeescript">
+myListB.length # Output: 4
+</pre>
+
+Or grab a range from the array:
+<pre lang="coffeescript">
+myListB[0..2] # Output: [1, 2, 3]
+</pre>
+
+##### Object
+
+Object properties are accesssed by name, much like a dictionary from a phone book. The 'lookup string' is called a key.
+<pre lang="coffeescript">
+myObjectA = {name:"Framer", age:12}
+</pre>
+
+Objects can also be defined with indenting instead of parentheses. 
+<pre lang="coffeescript">
+myObjectA =
+	name: "Framer"
+	age: 12
+</pre>
+
+To find a property value, use the key:
+<pre lang="coffeescript">
+myObjectB["name"] # Output: "Framer"
+</pre>
+
+An object's properties can be added and removed:
+<pre lang="coffeescript">
+# Add a property
+myObjectB["platform"] = "Mac"
+
+# Remove a property
+delete myObjectB["platform"]
+</pre>
+
+---
+
+<section class="subpage-nav">
+	<a class="previous" href="/learn/coffeescript">
+		<figure class="icon-learn-previous"></figure>
+		<h6>Overview</h6> 
+	</a> 
+	<a class="next" href="/learn/coffeescript/loops-and-conditionals">
+		<h6>Loops & Conditionals</h6> 
+		<figure class="icon-learn-next-active"></figure>
+	</a> 
+</section>
+
+{% endfilter %}	
+{% endfilter %}	
+{% endblock body %}

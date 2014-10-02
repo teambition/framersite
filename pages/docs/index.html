@@ -1,852 +1,357 @@
-{% extends "base.html" %}
+{% extends "docs.html" %}
 {% block title %}Framer - Docs{% endblock %}
-
 {% block isdocs %}active{% endblock %}
-{% block currentpage %}class="docs"{% endblock currentpage %}
-{% block pages %}
 
-{% filter markdown %}
-# Docs
-## A complete reference for Framer
-
----
-{% endfilter %}
-
+{% block sidebar %}
 <div class="sidebar">
+	<ul>
+		<a class="section" href="#print"><li>Print</li></a>
+			<a class="sub-section" href="#print"><li>print</li></a>
+	</ul>
+	<ul>
+		<a class="section" href="#defaults.defaults"><li>Defaults</li></a>
+			<a class="sub-section" href="#defaults.defaults"><li>Defaults</li></a>
+	</ul>
 	<ul>	
-		<li class="title">Docs</li>
-		<li><a class="layers active" href="#layers">Layers</a></li>
-		<li><a class="animations" href="#animations">Animations</a></li>
-		<li><a class="events" href="#events">Events</a></li>
-		<li><a class="device" href="#device">Device</a></li>
-		<li><a class="print" href="#print">Print</a></li>
-		<li><a class="utilities" href="#utilities">Utilities</a></li>
-		<li><a class="defaults" href="#defaults">Defaults</a></li>
+		<a class="section" href="#layer.layer"><li>Layers</li></a>
+			<a class="sub-section" href="#layer.id"><li>layer.id</li></a>
+			<a class="sub-section" href="#layer.name"><li>layer.name</li></a>
+			<a class="sub-section" href="#layer.x"><li>layer.x</li></a>
+			<a class="sub-section" href="#layer.y"><li>layer.y</li></a>
+			<a class="sub-section" href="#layer.z"><li>layer.z</li></a>
+			<a class="sub-section" href="#layer.width"><li>layer.width</li></a>
+			<a class="sub-section" href="#layer.height"><li>layer.height</li></a>
+			<a class="sub-section" href="#layer.minX"><li>layer.minX</li></a>
+			<a class="sub-section" href="#layer.midX"><li>layer.midX</li></a>
+			<a class="sub-section" href="#layer.maxX"><li>layer.maxX</li></a>
+			<a class="sub-section" href="#layer.minY"><li>layer.minY</li></a>
+			<a class="sub-section" href="#layer.midY"><li>layer.midY</li></a>
+			<a class="sub-section" href="#layer.maxY"><li>layer.maxY</li></a>
+			<a class="sub-section" href="#layer.frame"><li>layer.frame</li></a>
+
+			<a class="sub-section" href="#layer.center"><li>layer.center</li></a>
+			<a class="sub-section" href="#layer.centerX"><li>layer.centerX</li></a>
+			<a class="sub-section" href="#layer.centerY"><li>layer.centerY</li></a>
+			<a class="sub-section" href="#layer.pixelAlign"><li>layer.pixelAlign</li></a>
+			<a class="sub-section" href="#layer.screenFrame"><li>layer.screenFrame</li></a>
+			<a class="sub-section" href="#layer.contentFrame"><li>layer.contentFrame</li></a>
+			<a class="sub-section" href="#layer.centerFrame"><li>layer.centerFrame</li></a>
+
+			<a class="sub-section" href="#layer.backgroundColor"><li>layer.backgroundColor</li></a>
+			<a class="sub-section" href="#layer.image"><li>layer.image</li></a>
+
+			<a class="sub-section" href="#layer.visible"><li>layer.visible</li></a>
+			<a class="sub-section" href="#layer.opacity"><li>layer.opacity</li></a>
+			<a class="sub-section" href="#layer.clip"><li>layer.clip</li></a>
+
+			<a class="sub-section" href="#layer.originX"><li>layer.originX</li></a>
+			<a class="sub-section" href="#layer.originY"><li>layer.originY</li></a>
+
+			<a class="sub-section" href="#layer.rotation"><li>layer.rotation</li></a>
+			<a class="sub-section" href="#layer.rotationX"><li>layer.rotationX</li></a>
+			<a class="sub-section" href="#layer.rotationY"><li>layer.rotationY</li></a>
+			<a class="sub-section" href="#layer.rotationZ"><li>layer.rotationZ</li></a>
+			<a class="sub-section" href="#layer.scale"><li>layer.scale</li></a>
+			<a class="sub-section" href="#layer.scaleX"><li>layer.scaleX</li></a>
+			<a class="sub-section" href="#layer.scaleY"><li>layer.scaleY</li></a>
+			
+			<a class="sub-section" href="#layer.superLayer"><li>layer.superLayer</li></a>
+			<a class="sub-section" href="#layer.subLayers"><li>layer.subLayers</li></a>
+			<a class="sub-section" href="#layer.subLayersByName"><li>layer.subLayersByName</li></a>
+			<a class="sub-section" href="#layer.addSubLayer"><li>layer.addSubLayer</li></a>
+			<a class="sub-section" href="#layer.removeSubLayer"><li>layer.removeSubLayer</li></a>
+			<a class="sub-section" href="#layer.siblingLayers"><li>layer.siblingLayers</li></a>
+
+			<a class="sub-section" href="#layer.index"><li>layer.index</li></a>
+			<a class="sub-section" href="#layer.placeBefore"><li>layer.placeBefore</li></a>
+			<a class="sub-section" href="#layer.placeBehind"><li>layer.placeBehind</li></a>
+			<a class="sub-section" href="#layer.bringToFront"><li>layer.bringToFront</li></a>
+			<a class="sub-section" href="#layer.sendToBack"><li>layer.sendToBack</li></a>
+			
+			<a class="sub-section" href="#layer.html"><li>layer.html</li></a>
+			<a class="sub-section" href="#layer.style"><li>layer.style</li></a>
+			<a class="sub-section" href="#layer.computedStyle"><li>layer.computedStyle</li></a>
+			<a class="sub-section" href="#layer.classList"><li>layer.classList</li></a>
+			<a class="sub-section" href="#layer.destroy"><li>layer.destroy</li></a>
+			<a class="sub-section" href="#layer.copy"><li>layer.copy</li></a>
+			<a class="sub-section" href="#layer.copySingle"><li>layer.copySingle</li></a>
+
+			<a class="sub-section" href="#layer.blur"><li>layer.blur</li></a>
+			<a class="sub-section" href="#layer.brightness"><li>layer.brightness</li></a>
+			<a class="sub-section" href="#layer.hueRotate"><li>layer.hueRotate</li></a>
+			<a class="sub-section" href="#layer.contrast"><li>layer.contrast</li></a>
+			<a class="sub-section" href="#layer.invert"><li>layer.invert</li></a>
+			<a class="sub-section" href="#layer.sepia"><li>layer.sepia</li></a>
+
+			<a class="sub-section" href="#layer.shadowX"><li>layer.shadowX</li></a>
+			<a class="sub-section" href="#layer.shadowY"><li>layer.shadowY</li></a>
+			<a class="sub-section" href="#layer.shadowBlur"><li>layer.shadowBlur</li></a>
+			<a class="sub-section" href="#layer.shadowSpread"><li>layer.shadowSpread</li></a>
+			<a class="sub-section" href="#layer.shadowColor"><li>layer.shadowColor</li></a>
+
+			<a class="sub-section" href="#layer.borderRadius"><li>layer.borderRadius</li></a>
+
+			<a class="sub-section" href="#layer.animate"><li>layer.animate</li></a>
+			<a class="sub-section" href="#layer.animateStop"><li>layer.animateStop</li></a>
+			<a class="sub-section" href="#layer.animations"><li>layer.animations</li></a>
+
+			<a class="sub-section" href="#layer.scroll"><li>layer.scroll</li></a>
+			<a class="sub-section" href="#layer.scrollHorizontal"><li>layer.scrollHorizontal</li></a>
+			<a class="sub-section" href="#layer.scrollVertical"><li>layer.scrollVertical</li></a>
+			<a class="sub-section" href="#layer.scrollX"><li>layer.scrollX</li></a>
+			<a class="sub-section" href="#layer.scrollY"><li>layer.scrollY</li></a>
+
+			<a class="sub-section" href="#layer.states.add"><li>layer.states.add</li></a>
+			<a class="sub-section" href="#layer.states.remove"><li>layer.states.remove</li></a>
+			<a class="sub-section" href="#layer.states.switch"><li>layer.states.switch</li></a>
+			<a class="sub-section" href="#layer.states.switchInstant"><li>layer.states.switchInstant</li></a>
+			<a class="sub-section" href="#layer.states.state"><li>layer.states.state</li></a>
+			<a class="sub-section" href="#layer.states.next"><li>layer.states.next</li></a>
+			<a class="sub-section" href="#layer.states.animationOptions"><li>layer.states.animationOptions</li></a>
+
+			<a class="sub-section" href="#layer.draggable.enabled"><li>layer.draggable.enabled</li></a>
+			<a class="sub-section" href="#layer.draggable.speedX"><li>layer.draggable.speedX</li></a>
+			<a class="sub-section" href="#layer.draggable.speedY"><li>layer.draggable.speedY</li></a>
+			<a class="sub-section" href="#layer.draggable.calculateVelocity"><li>layer.draggable.calculateVelocity</li></a>
+	</ul>
+	<ul>
+		<a class="section" href="#backgroundlayer.backgroundlayer"><li>BackgroundLayer</li></a>
+			<a class="sub-section" href="#backgroundlayer.backgroundlayer"><li>BackgroundLayer</li></a>
+	</ul>
+		<ul>
+		<a class="section" href="#videolayer.videolayer"><li>VideoLayer</li></a>
+			<a class="sub-section" href="#videolayer.video"><li>VideoLayer.video</li></a>
+			<a class="sub-section" href="#videolayer.player"><li>VideoLayer.player</li></a>
+	</ul>
+	<ul>	
+		<a class="section" href="#events.events"><li>Events</li></a>
+		<a class="sub-section" href="#events.touchEvent"><li>Events.touchEvent</li></a>
+		<a class="sub-section" href="#events.wrap"><li>Events.wrap</li></a>
+	</ul>
+	<ul>
+		<a class="section" href="#animation.animation"><li>Animation</li></a>
+			<a class="sub-section" href="#animation.start"><li>animation.start</li></a>
+			<a class="sub-section" href="#animation.stop"><li>animation.stop</li></a>
+			<a class="sub-section" href="#animation.reverse"><li>animation.reverse</li></a>
+	</ul>
+	<ul>
+		<a class="section" href="#utils.utilities"><li>Utilities</li></a>
+			<a class="sub-section" href="#utils.isWebKit"><li>Utils.isWebKit</li></a>
+			<a class="sub-section" href="#utils.isChrome"><li>Utils.isChrome</li></a>
+			<a class="sub-section" href="#utils.isSafari"><li>Utils.isSafari</li></a>
+			<a class="sub-section" href="#utils.isTouch"><li>Utils.isTouch</li></a>
+			<a class="sub-section" href="#utils.isDesktop"><li>Utils.isDesktop</li></a>
+			<a class="sub-section" href="#utils.isPhone"><li>Utils.isPhone</li></a>
+			<a class="sub-section" href="#utils.isTablet"><li>Utils.isTablet</li></a>
+			<a class="sub-section" href="#utils.isMobile"><li>Utils.isMobile</li></a>
+			<a class="sub-section" href="#utils.isLocal"><li>Utils.isLocal</li></a>
+			<a class="sub-section" href="#utils.domLoadScriptSync"><li>Utils.domLoadScriptSync</li></a>
+	</ul>
+	<ul>
+		<a class="section" href="#device"><li>Device</li></a>
+			<a class="sub-section" href="#device.deviceType"><li>device.deviceType</li></a>
+			<a class="sub-section" href="#device.fullScreen"><li>device.fullScreen</li></a>
+			<a class="sub-section" href="#device.deviceScale"><li>device.deviceScale</li></a>
+			<a class="sub-section" href="#device.setDeviceScale"><li>device.setDeviceScale</li></a>
+			<a class="sub-section" href="#device.contentScale"><li>device.contentScale</li></a>
+			<a class="sub-section" href="#device.setContentScale"><li>device.setContentScale</li></a>
+			<a class="sub-section" href="#device.orientation"><li>device.orientation</li></a>
+			<a class="sub-section" href="#device.setOrientation"><li>device.setOrientation</li></a>
+			<a class="sub-section" href="#device.orientationName"><li>device.orientationName</li></a>
+			<a class="sub-section" href="#device.rotateLeft"><li>device.rotateLeft</li></a>
+			<a class="sub-section" href="#device.rotateRight"><li>device.rotateRight</li></a>
 	</ul>
 </div> <!--sidebar-->
+{% endblock %}
 
-<div class="align-right">
-<a name="layers"></a>
+{% block body %}
 {% filter pygmentify %}
 {% filter markdown %}
-### Layers
 
-<table border="0" cellspacing="0" cellpadding="0" class="api">
-	<tbody>
-	<tr>
-		<th>Property</th>
-		<th>Description</th>
-		<th class="examples">Examples</th>
-	</tr>
+{% include 'docs/print.html' %}
 
-	<tr>
-		<td colspan="3" class="group">Basic</td>
-	</tr>
-
-	<tr>
-		<td>id</td>
-		<td>layer id (readonly)</td>
-	</tr>
-	<tr>
-		<td>name</td>
-		<td>layer name</td>
-		<td class="examples"><a target="_blank" href="http://examples.framerjs.com/#layer-properties.framer">1</a></td>
-	</tr>
-	<tr>
-		<td>properties</td>
-		<td>all current properties for this layer</td>
-		<td class="examples">
-			<a target="_blank" href="http://examples.framerjs.com/#layer-properties.framer">1</a>
-		<a target="_blank" href="http://examples.framerjs.com/#animation-basics.framer">2</a>
-		</td>
-	</tr>
-	<tr>
-		<td colspan="" class="group">Geometry</td>
-	</tr>
-	
-	<tr>
-		<td>x <span class="dim">minX, midX, maxX</span></td>
-		<td>x position</td>
-	</tr>
-	<tr>
-		<td>y <span class="dim">minY, midY, maxY</span></td>
-		<td>y position</td>
-	</tr>
-	<tr>
-		<td>z</td>
-		<td>z position</td>
-	</tr>
-	<tr>
-		<td>width</td>
-		<td>width</td>
-	</tr>
-	<tr>
-		<td>height</td>
-		<td>height</td>
-	</tr>
-	<tr>
-		<td>frame</td>
-		<td>object with x, y, width and height values</td>
-	</tr>
-	<tr>
-		<td>screenFrame</td>
-		<td>get or set this layer's absolute frame on the screen</td>
-	</tr>
-	<tr>
-		<td>contentFrame()</td>
-		<td>the frame for the total size of all the subLayers combined</td>
-	</tr>
-	<tr>
-		<td>centerFrame()</td>
-		<td>the centered frame for this layer</td>
-	</tr>
-	<tr>
-		<td>center() <span class="dim">centerX(), centerY()</span></td>
-		<td>center this layer</td>
-		<td class="examples"><a target="_blank" href="http://examples.framerjs.com/#draggable-momentum.framer">1</a></td>
-	</tr>
-	<tr>
-		<td>pixelAlign()</span></td>
-		<td>round the x and y values to whole pixels</td>
-	</tr>
-
-	<tr>
-		<td colspan="3" class="group">Visual</td>
-	</tr>
-	<tr>
-		<td>backgroundColor</td>
-		<td>set html background color</td>
-	</tr>
-	<tr>
-		<td>visible</td>
-		<td>toggles layer's visibility</td>
-	</tr>
-	<tr>
-		<td>opacity</td>
-		<td>opacity between 0 and 1</td>
-	</tr>
-	<tr>
-		<td>clip</td>
-		<td>toggles whether layer should clip subLayers</td>
-	</tr>
-	<tr>
-		<td>rotation <span class="dim">rotationX, rotationY, rotationZ</span></td>
-		<td>rotation in degrees</td>
-		<td class="examples"><a target="_blank" href="http://examples.framerjs.com/#animation-basics.framer">1</a></td>
-	</tr>
-	<tr>
-		<td>scale <span class="dim">scaleX, scaleY, scaleZ</span></td>
-		<td>scale between 0 and 1</td>
-		
-		<td class="examples">
-		<a target="_blank" href="http://examples.framerjs.com/#event-basics.framer">1</a>
-		<a target="_blank" href="http://examples.framerjs.com/#event-checkmark.framer">2</a>
-		<a target="_blank" href="http://examples.framerjs.com/#layer-properties.framer">3</a>
-		</td>
-	</tr>
-	<tr>
-		<td>originX, originY</span></td>
-		<td>origin of scale and/or rotation transformation</td>
-		<td class="examples"><a target="_blank" href="http://examples.framerjs.com/#animation-changing-animation-origin.framer">1</a></td>
-	</tr>
-
-	<tr>
-		<td colspan="3" class="group">Images</td>
-	</tr>
-
-	<tr>
-		<td>image</td>
-		<td>set the image url for this layer</td>
-		<td class="examples"><a target="_blank" href="http://examples.framerjs.com/#event-checkmark.framer">1</a></td>
-	</tr>
-	
-	<tr>
-		<td colspan="3" class="group">Hierarchy</td>
-	</tr>
-
-	<tr>
-		<td>superLayer</td>
-		<td>the layer that contains this layer</td>
-	</tr>
-	<tr>
-		<td>subLayers</td>
-		<td>the layers contained by this layer</td>
-	</tr>
-	<tr>
-		<td>subLayersByName("name")</td>
-		<td>returns array of subLayers by name</td>
-	</tr>
-	<tr>
-		<td>addSubLayer(layer)</td>
-		<td>add a subLayer to this layer</td>
-	</tr>
-	<tr>
-		<td>removeSubLayer(layer)</td>
-		<td>remove a sub layer from this layer's subLayers</td>
-	</tr>
-	<tr>
-		<td>siblingLayers</td>
-		<td>the subLayers of this layer's superLayer</td>
-	</tr>
-
-	
-	<tr>
-		<td colspan="3" class="group">Ordering</td>
-	</tr>
-	
-	<tr>
-		<td>index</td>
-		<td>this layer's layering position index</td>
-	</tr>
-	<tr>
-		<td>placeBefore(layer)</td>
-		<td>place this layer on top of another layer</td>
-	</tr>
-	<tr>
-		<td>placeBehind(layer)</td>
-		<td>place this layer behind another layer</td>
-	</tr>
-	<tr>
-		<td>bringToFront()</td>
-		<td>place this layer in front of all sibling layers</td>
-	</tr>
-	<tr>
-		<td>sendToBack()</td>
-		<td>place this layer behind all sibling layers</td>
-	</tr>
-
-	<tr>
-		<td colspan="3" class="group">HTML</td>
-	</tr>
-
-	<tr>
-		<td>style</td>
-		<td>css properties for this layer</td>
-		<td class="examples"><a target="_blank" href="http://examples.framerjs.com/#animation-chaining-animations.framer">2</a></td>
-	</tr>
-	<tr>
-		<td>html</td>
-		<td>html contents for this layer</td>
-		<td class="examples"><a target="_blank" href="http://examples.framerjs.com/#event-basics.framer">1</a></td>
-	</tr>
-	<tr>
-		<td>destroy()</td>
-		<td>destroy this layer from the DOM</td>
-		<td class="examples"><a target="_blank" href="http://examples.framerjs.com/#carousel-onboarding.framer">1</a></td>
-	</tr>
-
-	<tr>
-		<td colspan="3" class="group" id="layer.filters">Filters</td>
-	</tr>
-	
-	<tr>
-		<td>blur</td>
-		<td>gaussian blur in pixels</td>
-		<td class="examples"><a target="_blank" href="http://examples.framerjs.com/#layer-properties.framer">1</a></td>
-	</tr>
-	<tr>
-		<td>brightness</td>
-		<td>brightness in percent</td>
-	</tr>
-	<tr>
-		<td>saturate</td>
-		<td>saturation in percent</td>
-	</tr>
-	<tr>
-		<td>hueRotate</td>
-		<td>hue rotation in degrees</td>
-	</tr>
-	<tr>
-		<td>contrast</td>
-		<td>contrast in percent</td>
-	</tr>
-	<tr>
-		<td>invert</td>
-		<td>color inversion in percent</td>
-	</tr>
-	<tr>
-		<td>grayscale</td>
-		<td>grayscale in percent</td>
-	</tr>
-	<tr>
-		<td>sepia</td>
-		<td>sepia in percent</td>
-	</tr>
-	
-	<tr>
-		<td colspan="3" class="group">Animation</td>
-	</tr>
-	
-	<tr>
-		<td>animate({...})</td>
-		<td>create and start an animation on this layer, returns the animation object</td>
-	</tr>
-	<tr>
-		<td>animations()</td>
-		<td>return array of all current running animations on this layer</td>
-	</tr>
-	<tr>
-		<td>animateStop()</td>
-		<td>stop all animations on this layer</td>
-	</tr>
-
-	<tr>
-		<td colspan="3" class="group">Scrolling</td>
-	</tr>
-
-	<tr>
-		<td>scroll <span class="dim">scrollHorizontal, scrollVertical</span></td>
-		<td>enable scrolling</td>
-	</tr>
-	<tr>
-		<td>scrollX, scrollY</td>
-		<td>scroll positions</td>
-	</tr>
-<!-- 	<tr>
-		<td>scrollFrame</td>
-		<td>current scroll position for layer</td>
-	</tr> -->
-
-	<tr>
-		<td colspan="3" class="group">Draggable</td>
-	</tr>
-
-	<tr>
-		<td>draggable.enabled</td>
-		<td>toggle layer dragging</td>
-		<td class="examples"><a target="_blank" href="http://examples.framerjs.com/#draggable-momentum.framer">1</a></td>
-	</tr>
-
-	<tr>
-		<td>draggable.speedX, draggable.speedY</td>
-		<td>layer dragging speed (resistance)</td>
-	</tr>
-
-	<tr>
-		<td>draggable.calculateVelocity()</td>
-		<td>x and y velocity over the last 0.1 second</td>
-	</tr>
-
-	<tr>
-		<td colspan="3" class="group">States</td>
-	</tr>
-
-	<tr>
-		<td>states.animationOptions</td>
-		<td>set the default animation option, takes the same input as .animate()</td>
-	</tr>
-	<tr>
-		<td>states.add("name", {...})</td>
-		<td>add a state</td>
-		<td class="examples"><a target="_blank" href="http://examples.framerjs.com/#state-machine-basics.framer">1</a></td>
-	</tr>
-	<tr>
-		<td>states.remove("name")</td>
-		<td>remove a state</td>
-	</tr>
-	<tr>
-		<td>states.switch("name")</td>
-		<td>switch to a state with the default animation options</td>
-	</tr>
-	<tr>
-		<td>states.current</td>
-		<td>returns the name of the current state</td>
-	</tr>
-	<tr>
-		<td>states.switchInstant("name")</td>
-		<td>switch to a state instantly with no animation</td>
-	</tr>
-	<tr>
-		<td>states.next("nameA", "nameB", "nameC")</td>
-		<td>switch to the next state in the list</td>
-	</tr>
-
-	<tr>
-		<td colspan="3" class="group">Events</td>
-	</tr>
-	<tr>
-		<td>ignoreEvents</td>
-		<td>
-			layer will ignore user events. Is set to false once you add an event listener
-		</td>
-	</tr>
-	<tr>
-		<td>on(event, function)</td>
-		<td>listen to events: click, mouseover, change:property, etc</td>
-		<td class="examples"><a target="_blank" href="http://examples.framerjs.com/#event-basics.framer">1</a></td>
-	</tr>
-</tbody></table>
-
-<hr>
-
-<!-- Animations -->
-<a name="animations"></a>
-### Animations
-Framer supports many different types of animations, including springs and bezier curves.
-
-<table border="0" cellspacing="0" cellpadding="0" class="api">
-	<tbody>
-	<tr>
-		<th>Property</th>
-		<th>Description</th>
-		<th class="examples">Examples</th>
-	</tr>
-	<tr>
-		<td>layer</td>
-		<td>layer that is animated</td>
-	</tr>
-	<tr>
-		<td>properties</td>
-		<td>properties being animated (x, y, width, height, opacity, scale, rotation, filters)</td>
-	</tr>
-	<tr>
-		<td>curve</td>
-		<td>
-			curve used for animation:
-
-			<ul>
-				<li>"linear"</li>
-				<li>"bezier-curve"</li>
-				<li>"spring-rk4" Runge-Kutta spring</li>
-				<li>"spring-dho" Damping harmonic oscillator spring</li>
-				<li>"spring" same as "spring-rk4"</li>
-			</ul>
-
-
-			<!-- <ul>
-				<li>linear, ease-in, ease-out</li>
-				<li>bezier-curve(a, b, c, d)</li>
-				<li>spring(tension, friction, velocity)<br>
-					Tension is the stiffness of the spring, friction the amount of effort it takes to move the object and velocity the initial velocity of the object.
-				</li>
-			</ul> -->
-		</td>
-	</tr>
-	<tr>
-		<td>curveOptions</td>
-		<td>
-			options for used curve
-
-			<ul>
-				<li>bezier-curve: "ease-in", "ease-out", "ease-in-out", [0, 1, 0, 1]</li>
-				<li>spring-rk4: friction, tension, velocity, tolerance
-				<li>spring-dho: stiffness, damping, mass, velocity, tolerance</li>
-			</ul>
-		</td>
-		
-		<td class="examples"><a target="_blank" href="http://examples.framerjs.com/#animation-chaining-animations.framer">1</a></td>
-	</tr>
-
-	<tr>
-		<td>time</td>
-		<td>duration of the animation in seconds (ignored for springs)</td>
-	</tr>
-	<tr>
-		<td>delay</td>
-		<td>amount of seconds to delay the animation before start</td>
-	</tr>
-	<tr>
-		<td>repeat</td>
-		<td>number of times to repeat animation</td>
-	</tr>
-	<tr>
-		<td>start()</td>
-		<td>start the animation</td>
-	</tr>
-	<tr>
-		<td>stop()</td>
-		<td>stop the animation</td>
-	</tr>
-	<tr>
-		<td>reverse()</td>
-		<td>returns the opposite animation to this one</td>
-	</tr>
-	<tr>
-		<td>on(event, function)</td>
-		<td>
-			listen to events: "start", "stop", "end"
-		</td>
-	</tr>
-
-</tbody></table>
-
-<hr>
-
-<!-- Events -->
-<a name="events"></a>
-### Events
-Events are things that happen to objects. They can originate from the user like a touch or mouse click, or from an animation that ends.
-
-<table border="0" cellspacing="0" cellpadding="0" class="api">
-	<tbody><tr>
-		<th>Name</th>
-		<th>Description</th>
-		<th class="examples">Examples</th>
-	</tr>
-
-	<tr>
-		<td colspan="3" class="group">Basic</td>
-	</tr>
-
-	<tr>
-		<td>Events.Click </td>
-		<td>Click or touch (no delay on mobile)</td>
-		<td class="examples"><a target="_blank" href="http://examples.framerjs.com/#event-basics.framer">1</a></td>
-	</tr>
-	<tr>
-		<td>Events.TouchStart</td>
-		<td>Start a touch/click</td>
-			<td class="examples"><a target="_blank" href="http://examples.framerjs.com/#event-checkmark.framer">1</a></td>
-	</tr>
-
-	<tr>
-		<td>Events.TouchMove</td>
-		<td>Touch move or mouse drag</td>
-	</tr>
-	<tr>
-		<td>Events.TouchEnd</td>
-		<td>End touch or click</td>
-	</tr>
-
-	<tr>
-		<td colspan="3" class="group">Mouse</td>
-	</tr>
-
-	<tr>
-		<td>Events.MouseOver</td>
-		<td>Hover mouse</td>
-	</tr>
-	<tr>
-		<td>Events.MouseOut</td>
-		<td>Unhover mouse</td>
-	</tr>
-
-	<tr>
-		<td colspan="3" class="group">Animation</td>
-	</tr>
-
-	<tr>
-		<td>Events.AnimationStart</td>
-		<td>Start animation</td>
-	</tr>
-	<tr>
-		<td>Events.AnimationStop</td>
-		<td>Stop animation</td>
-	</tr>
-	<tr>
-		<td>Events.AnimationEnd</td>
-		<td>End animation (reached end point)</td>
-	</tr>
-
-	<tr>
-		<td colspan="3" class="group">Dragging</td>
-	</tr>
-
-	<tr>
-		<td>Events.DragStart</td>
-		<td>Start drag</td>
-	</tr>
-	<tr>
-		<td>Events.DragMove</td>
-		<td>Move drag</td>
-	</tr>
-	<tr>
-		<td>Events.DragEnd</td>
-		<td>End drag</td>
-	</tr>
-
-	<tr>
-		<td colspan="3" class="group">Scroll</td>
-	</tr>
-
-	<tr>
-		<td>Events.Scroll</td>
-		<td>Did scroll, does not always work on mobile</td>
-	</tr>
-
-	<tr>
-		<td colspan="3" class="group">States</td>
-	</tr>
-
-	<tr>
-		<td>Events.StateWillSwitch</td>
-		<td>About to switch to a new state</td>
-	</tr>
-	<tr>
-		<td>Events.StateDidSwitch</td>
-		<td>Just switched to new state</td>
-	</tr>
-</tbody></table>
-
-<hr>
-
-<a name="device"></a>
-### DeviceView
-
-The **DeviceView** class emulates a device like an iPhone, iPad or Android. It allows you to scale the device, scale the content and adjust the orientation. After the device is set up, everything will render within its screen. Device previews match mirrored previews, meaning that if you're previewing on iPhone and then view it on an iPhone it will appear in fullscreen.
-
-Scaling and orientation properties are also prefixed with Framer.device: 
-
-<pre lang="coffeescript">
-Framer.Device.contentScale = 0.5
-Framer.Device.orientation = 90
-</pre>
-
-Please note that the scale-to-fit view can render your content off-pixel to retain your screen ratio. Your content will always snap-to-pixel when viewed at 50%, 100% etc. If your browser supports it, device images are compressed with JPEG2000 to reduce image size.
-
-<table border="0" cellspacing="0" cellpadding="0" class="api">
-	<tbody>
-	<tr>
-		<th>Name</th>
-		<th>Description</th>
-	</tr>
-	<tr>
-		<td colspan="3" class="group">Options</td>
-	</tr>
-
-	<tr>
-		<td>deviceType = "iphone-5s-silver"</td>
-		<td>The type of device to render. Valid options are: "fullscreen", "iphone-6-spacegray", "iphone-6-spacegray-hand", "iphone-6-silver", "iphone-6-silver-hand", "iphone-6-gold", "iphone-6-gold-hand", "iphone-5s-spacegray", "iphone-5s-spacegray-hand", "iphone-5s-silver", "iphone-5s-silver-hand", "iphone-5s-gold", "iphone-5s-gold-hand", "iphone-5c-green", "iphone-5c-green-hand", "iphone-5c-blue", "iphone-5c-blue-hand", "iphone-5c-red", "iphone-5c-red-hand", "iphone-5c-white", "iphone-5c-white-hand", "iphone-5c-yellow", "iphone-5c-yellow-hand", "ipad-mini-spacegrey", "ipad-mini-spacegrey-hand", "ipad-mini-silver", "ipad-mini-silver-hand", "nexus-5-black", "nexus-5-black-hand".</td>
-		<td class="examples"></td>
-	</tr>
-
-	<tr>
-		<td>fullScreen = true|false</td>
-		<td>Set the device to render fullscreen, independent of the deviceType</td>
-		<td class="examples"></td>
-	</tr>
-
-
-	<tr>
-		<td colspan="3" class="group">Scaling</td>
-	</tr>
-
-	<tr>
-		<td>deviceScale = 0.5 | 1</td>
-		<td>Set the device scale immediately</td>
-		<td class="examples"></td>
-	</tr>
-
-	<tr>
-		<td>setDeviceScale(scale, animate)</td>
-		<td>Set the device scale and optionally animate</td>
-		<td class="examples"></td>
-	</tr>
-
-	<tr>
-		<td>contentScale = 0.5 | 1</td>
-		<td>Set the content scale immediately</td>
-		<td class="examples"></td>
-	</tr>
-
-	<tr>
-		<td>setContentScale(scale, animate)</td>
-		<td>Set the content scale and optionally animate</td>
-		<td class="examples"></td>
-	</tr>
-
-
-	<tr>
-		<td colspan="3" class="group">Orientation</td>
-	</tr>
-
-	<tr>
-		<td>orientation = 0 | 90</td>
-		<td>Set the device orientation immediately</td>
-		<td class="examples"></td>
-	</tr>
-
-	<tr>
-		<td>setOrientation(orientation, animate)</td>
-		<td>Set the device orientation and optionally animate </td>
-		<td class="examples"></td>
-	</tr>
-
-	<tr>
-		<td>orientationName = "portrait"</td>
-		<td>Set the device orientation by name. Valid options are "portrait", "landscape"</td>
-		<td class="examples"></td>
-	</tr>
-
-	<tr>
-		<td>rotateLeft()</td>
-		<td>Rotate the device clockwise to the left</td>
-		<td class="examples"></td>
-	</tr>
-
-	<tr>
-		<td>rotateRight()</td>
-		<td>Rotate the device clockwise to the right</td>
-		<td class="examples"></td>
-	</tr>
-
-</tbody></table>
-
-**Note:** if you're not using Framer Studio, you can set up a DeviceView yourself:
-
-<pre lang="coffeescript">
-customDevice = new Framer.DeviceView()
-</pre>
-
-<table border="0" cellspacing="0" cellpadding="0" class="api">
-	<tbody><tr>
-		<th>Name</th>
-		<th>Description</th>
-	</tr>
-	<tr>
-		<td>new DeviceView({...})</td>
-		<td>Create a device view</td>
-		<td class="examples"></td>
-	</tr>
-	<tr>
-		<td>setupContext()</td>
-		<td>Everything drawn after this is called will be rendered into the device screen</td>
-		<td class="examples"></td>
-	</tr>
-</tbody></table>
-
-<hr>
-
-<!-- Utilities -->
-<a name="utilities"></a>
-### Utilities
-Utilities is a collection of functions that make things easier to do. Lots of handy stuff here. Be sure to <a href="https://github.com/koenbok/Framer/blob/master/framer/Utils.coffee" target="_blank">check the source</a> to see everything.
-
-
-<table border="0" cellspacing="0" cellpadding="0" class="api">
-	<tbody><tr>
-		<th>Function</th>
-		<th>Description</th>
-		<th class="examples">Examples</th>
-	</tr>
-	<tr>
-		<td>cycle([1, 2, ...])</td>
-		<td>Returns a function that returns the next value every time you call it.</td>
-	</tr>
-	<tr>
-		<td>randomColor(alpha)</td>
-		<td>Returns a random color string.</td>
-	</tr>
-
-	<tr>
-		<td>delay(time, function)</td>
-		<td>Executes the function after time in seconds</td>
-	</tr>
-	<tr>
-		<td>interval(time, function)</td>
-		<td>Executes the function every x seconds</td>
-	</tr>
-
-	<tr>
-		<td>throttle(time, function)</td>
-		<td>Call function at most once every x seconds</td>
-	</tr>
-	<tr>
-		<td>debounce(time, function)</td>
-		<td>Call function only when being stopped calling for x seconds</td>
-	</tr>
-
-	<tr>
-		<td>convertPoint(point, layerA, layerB)</td>
-		<td>Converts a point location from one layers coordinate system to another.</td>
-	</tr>
-
-	<tr>
-		<td>labelLayer(layer, "text")</td>
-		<td>Add centered text label to a layer.</td>
-	</tr>
-
-	<tr>
-		<td>uuid()</td>
-		<td>Returns a random hex uuid string.</td>
-	</tr>
-
-	<tr>
-		<td>round(number, decimals)</td>
-		<td>Rounds a number to x decimals.</td>
-	</tr>
-
-	<tr>
-		<td>isWebKit()</td>
-		<td>Returns wether this is a webkit browser.</td>
-	</tr>
-	<tr>
-		<td>isMobile()</td>
-		<td>Returns wether this is a mobile device.</td>
-	</tr>
-	<tr>
-		<td>isTouch()</td>
-		<td>Returns wether this is a touch device.</td>
-	</tr>
-	<tr>
-		<td>isPhone()</td>
-		<td>Returns wether this is a phone device.</td>
-	</tr>
-	<tr>
-		<td>isTablet()</td>
-		<td>Returns wether this is a tablet device.</td>
-	</tr>
-	<tr>
-		<td>isDesktop()</td>
-		<td>Returns wether this is a desktop device.</td>
-	</tr>
-
-</tbody></table>
-
-<hr>
-
-<!-- Print -->
-<a name="print"></a>
-### Print
-Printing allows you to inspect variables.
-
-
-<table border="0" cellspacing="0" cellpadding="0" class="api">
-	<tbody><tr>
-		<th>Function</th>
-		<th>Description</th>
-		<th class="examples">Examples</th>
-	</tr>
-	<tr>
-		<td>print("hello")</td>
-		<td>Prints output</td>
-	</tr>
-</tbody></table>
-
-<hr>
-
-<!-- Defaults -->
-<a name="defaults"></a>
 
 ### Defaults
+{% include 'docs/defaults.defaults.html' %}
 
-The Framer.Defaults object contains all defaults for Layers and Animations.
+### Layers
 
-<table border="0" cellspacing="0" cellpadding="0" class="api">
-	<tbody><tr>
-		<th>Property</th>
-		<th>Description</th>
-		<th class="examples">Examples</th>
-	</tr>
-	<tr>
-		<td>Framer.Defaults.Layer</td>
-		<td>Layer defaults</td>
-	</tr>
-	<tr>
-		<td>Framer.Defaults.Animation</td>
-		<td>Animation defaults</td>
-	</tr>
-	<tr>
-		<td>Framer.Defaults.DeviceView</td>
-		<td>DeviceView defaults</td>
-	</tr>
-	<tr>
-		<td>Framer.resetDefaults()</td>
-		<td>Reset to original defaults</td>
-	</tr>
-	</tbody></table>
+{% include 'docs/layer.layer.html' %}
+
+{% include 'docs/layer.id.html' %}
+{% include 'docs/layer.name.html' %}
+{% include 'docs/layer.x.html' %}
+{% include 'docs/layer.y.html' %}
+{% include 'docs/layer.z.html' %}
+{% include 'docs/layer.width.html' %}
+{% include 'docs/layer.height.html' %}
+{% include 'docs/layer.minX.html' %}
+{% include 'docs/layer.midX.html' %}
+{% include 'docs/layer.maxX.html' %}
+{% include 'docs/layer.minY.html' %}
+{% include 'docs/layer.midY.html' %}
+{% include 'docs/layer.maxY.html' %}
+{% include 'docs/layer.frame.html' %}
+{% include 'docs/layer.properties.html' %}
+
+{% include 'docs/layer.center.html' %}
+{% include 'docs/layer.centerX.html' %}
+{% include 'docs/layer.centerY.html' %}
+{% include 'docs/layer.pixelAlign.html' %}
+{% include 'docs/layer.screenFrame.html' %}
+{% include 'docs/layer.contentFrame.html' %}
+{% include 'docs/layer.centerFrame.html' %}
+
+{% include 'docs/layer.backgroundColor.html' %}
+{% include 'docs/layer.image.html' %}
+{% include 'docs/layer.color.html' %} <!-- TODO -->
+
+{% include 'docs/layer.visible.html' %}
+{% include 'docs/layer.opacity.html' %}
+{% include 'docs/layer.clip.html' %}
+{% include 'docs/layer.ignoreEvents.html' %} <!-- TODO -->
+{% include 'docs/layer.force2d.html' %} <!-- TODO -->
+
+{% include 'docs/layer.originX.html' %}
+{% include 'docs/layer.originY.html' %}
+
+{% include 'docs/layer.rotation.html' %}
+{% include 'docs/layer.rotationX.html' %}
+{% include 'docs/layer.rotationY.html' %}
+{% include 'docs/layer.rotationZ.html' %}
+{% include 'docs/layer.scale.html' %}
+{% include 'docs/layer.scaleX.html' %}
+{% include 'docs/layer.scaleY.html' %}
+{% include 'docs/layer.scaleZ.html' %}
+
+{% include 'docs/layer.superLayer.html' %}
+{% include 'docs/layer.subLayers.html' %}
+{% include 'docs/layer.subLayersByName.html' %}
+{% include 'docs/layer.addSubLayer.html' %}
+{% include 'docs/layer.removeSubLayer.html' %}
+{% include 'docs/layer.siblingLayers.html' %}
+
+{% include 'docs/layer.index.html' %}
+{% include 'docs/layer.placeBefore.html' %}
+{% include 'docs/layer.placeBehind.html' %}
+{% include 'docs/layer.bringToFront.html' %}
+{% include 'docs/layer.sendToBack.html' %}
+
+{% include 'docs/layer.html.html' %}
+{% include 'docs/layer.style.html' %}
+{% include 'docs/layer.computedStyle.html' %}
+{% include 'docs/layer.classList.html' %}
+<!-- {% include 'docs/layer.querySelector.html' %} -->
+{% include 'docs/layer.querySelectorAll.html' %}
+{% include 'docs/layer.destroy.html' %}
+
+{% include 'docs/layer.copy.html' %}
+{% include 'docs/layer.copySingle.html' %}
+
+{% include 'docs/layer.blur.html' %}
+{% include 'docs/layer.brightness.html' %}
+{% include 'docs/layer.saturate.html' %}
+{% include 'docs/layer.hueRotate.html' %}
+{% include 'docs/layer.contrast.html' %}
+{% include 'docs/layer.invert.html' %}
+{% include 'docs/layer.grayscale.html' %}
+{% include 'docs/layer.sepia.html' %}
+
+{% include 'docs/layer.shadowX.html' %}
+{% include 'docs/layer.shadowY.html' %}
+{% include 'docs/layer.shadowBlur.html' %}
+{% include 'docs/layer.shadowSpread.html' %}
+{% include 'docs/layer.shadowColor.html' %}
+{% include 'docs/layer.borderRadius.html' %}
+<!-- TO-DO
+{% include 'docs/layer.borderColor.html' %}
+{% include 'docs/layer.borderWidth.html' %}
+-->
+{% include 'docs/layer.animate.html' %}
+{% include 'docs/layer.animateStop.html' %}
+{% include 'docs/layer.animations.html' %}
+
+{% include 'docs/layer.scroll.html' %} 
+{% include 'docs/layer.scrollHorizontal.html' %}
+{% include 'docs/layer.scrollVertical.html' %}
+{% include 'docs/layer.scrollX.html' %}
+{% include 'docs/layer.scrollY.html' %}
+
+{% include 'docs/layer.states.add.html' %}
+{% include 'docs/layer.states.remove.html' %}
+{% include 'docs/layer.states.switch.html' %}
+{% include 'docs/layer.states.switchInstant.html' %}
+{% include 'docs/layer.states.state.html' %}
+{% include 'docs/layer.states.next.html' %}
+{% include 'docs/layer.states.animationOptions.html' %}
+
+{% include 'docs/layer.draggable.enabled.html' %}
+{% include 'docs/layer.draggable.speedX.html' %}
+{% include 'docs/layer.draggable.speedY.html' %}
+{% include 'docs/layer.draggable.calculateVelocity.html' %}
+
+{% include 'docs/layer.on.html' %}
+{% include 'docs/layer.off.html' %}
+
+### BackgroundLayer
+{% include 'docs/backgroundlayer.backgroundlayer.html' %}
+
+### VideoLayer
+{% include 'docs/videolayer.videolayer.html' %}
+{% include 'docs/videolayer.video.html' %}
+{% include 'docs/videolayer.player.html' %}
+
+### Events
+
+{% include 'docs/events.events.html' %}
+{% include 'docs/events.touchEvent.html' %}
+{% include 'docs/events.wrap.html' %}
+
+### Animation
+
+{% include 'docs/animation.animation.html' %}
+{% include 'docs/animation.start.html' %}
+{% include 'docs/animation.stop.html' %}
+{% include 'docs/animation.reverse.html' %}
+
+<!-- 
+{% include 'docs/utils.mapRange.html' %}
+{% include 'docs/utils.average.html' %}
+{% include 'docs/utils.mean.html' %}
+{% include 'docs/utils.median.html' %}
+-->
+
+{% include 'docs/utils.utilities.html' %}
+{% include 'docs/utils.round.html' %}
+{% include 'docs/utils.isWebKit.html' %}
+{% include 'docs/utils.isChrome.html' %}
+{% include 'docs/utils.isSafari.html' %}
+{% include 'docs/utils.isTouch.html' %}
+{% include 'docs/utils.isDesktop.html' %}
+{% include 'docs/utils.isPhone.html' %}
+{% include 'docs/utils.isTablet.html' %}
+{% include 'docs/utils.isMobile.html' %}
+{% include 'docs/utils.isLocal.html' %}
+
+<!-- 
+{% include 'docs/utils.domComplete.html' %}
+{% include 'docs/utils.domLoadScript.html' %}
+-->
+{% include 'docs/utils.domLoadScriptSync.html' %}
+
+{% include 'docs/device.html' %}
+{% include 'docs/device.deviceType.html' %}
+{% include 'docs/device.fullScreen.html' %}
+{% include 'docs/device.deviceScale.html' %}
+{% include 'docs/device.setDeviceScale.html' %}
+{% include 'docs/device.contentScale.html' %}
+{% include 'docs/device.setContentScale.html' %}
+{% include 'docs/device.orientation.html' %}
+{% include 'docs/device.setOrientation.html' %}
+{% include 'docs/device.orientationName.html' %}
+{% include 'docs/device.rotateLeft.html' %}
+{% include 'docs/device.rotateRight.html' %}
 
 {% endfilter %}	
 {% endfilter %}	
-</div> <!--align-right-->
-{% endblock %}
+{% endblock body %}

@@ -21,8 +21,7 @@
 
 // Pages -----------------------
 .home { @import "pages/home.scss"; }
-.docs { @import "pages/docs.scss"; }
-.narrow { @import "pages/learn.scss"; }
+@import "pages/subpages.scss"; 
 
 
 

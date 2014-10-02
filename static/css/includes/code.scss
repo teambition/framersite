@@ -1,18 +1,94 @@
 pre {
-    background: #1d2026; 
     word-wrap: break-word;
-    color: #fff; 
-    font-size: 12px;
-    font-weight: normal;
-    border-radius: 4px;
     -webkit-font-smoothing: subpixel-antialiased;
     // Spacing
     padding: $space16;
-    margin-bottom: $space32;
+    padding-left: 21px;
     display:block;
+    // Default
+    color: #788D9E; 
+    background: #fff; 
+    box-shadow: inset 0 0 0 1px #E4EBF2, inset 49px 0 0 #FBFDFE, inset 50px 0 0 #E4EBF2; // To-do: make this variables
+    border-radius: 4px;
+    overflow: hidden;
+}
+// Docs pre space
+.docs p + h6,
+.docs p + h3,
+.docs table + h6,
+.docs table + h3,
+.docs .highlight + h3,
+.docs .highlight + h6{
+    margin-top: $space80;
+}
+pre ol {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+pre ol li {
+    font-size: 13px;
+    font-weight: normal;
+    -webkit-font-smoothing: subpixel-antialiased;
 }
 pre, code {
     font-family: 'Menlo', 'Monaco', Courier, monospace; 
+}
+// Code blocks with illustrations
+.with-illustration {
+    position: relative;
+    overflow: hidden;
+}
+.with-full-illustration {
+    width:100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 3px;
+}
+.dragging pre {
+    min-height: 200px;
+}
+.dragging-events pre {
+    min-height: 200px;
+}
+.with-illustration .highlight pre {
+     border-radius: 3px 0 0 3px;
+}
+// Illustrations
+.code-illustration {
+    position: absolute;
+    top:0; right:0;
+    padding: 16px;
+    border-radius: 0 3px 3px 0;
+    display: inline-block;
+    box-shadow: inset 0 0 0 1px #E4EBF2;
+    z-index: 100;
+}
+.code-illustration.no-border {
+    padding:0; box-shadow: none;
+}
+// Line-specific
+.with-illustration.four-lines div + .code-illustration {
+    padding:26px;
+}
+.with-illustration.layer-positioning-minmax pre {
+    min-height: 160px;
+}
+
+// Specifics
+.code-illustration-states {
+    position: absolute;
+    top:0; right:0;
+    max-width: 274px; height: auto;
+}
+.code-illustration-dragging {
+    position: absolute;
+    top:0; right:0;
+    max-width: 300px; height: auto;
+}
+.code-illustration-scrolling {
+    position: absolute;
+    top:0; right:0;
+    max-width: 232px; height: auto;
 }
 // Inline code
 .inline {
@@ -22,38 +98,129 @@ pre, code {
 	border-bottom: 1px dotted #ddd;
 	padding-bottom: 2px;
 }
-.o { color: #fff; } 
-.nf { color: #fff; } // Name.Function 
+.o,
+.nf,
+.content-inner pre ol li { 
+    color: #788D9E; // Default
+} 
 .k { color: #FF9740;} // Orange
-.c { color: #616D85; } // Comment 
-.cm { color: #616D85;} // Comment Multiline
-.cp { color: #616D85; } // Comment Prepoc
-.c1 { color: #616D85; } // Comment Single
-.cs { color: #616D85;  } // Comment Special
+.c, 
+.cm,
+.cp,
+.c1,
+.cs { color: #A4BDD1; }  // Comment 
+
 .mi, .mf { color: #5BC1F0 } // Blue
-.s { color: #8DDE19 } // Green
+.s { 
+    color: #8DDE19; // Original Green
+    color: #6ED300; // Darker Green
+} 
 
 // Custom Line Numbers
-pre ol {
+.content-inner pre ol {
     counter-reset: linenumbers;
 }
-pre ol li {
+.content-inner pre ol li {
     line-height: 1.6;
+    text-align: left;
 }
-pre ol li:before {
+.content-inner pre ol li:before {
     content: counter(linenumbers);
     counter-increment: linenumbers;
     float:left;
-    margin-right: $space16;
+    margin-right: $space40;
     font-size: 10px;
-    color: #576172;
+    color: #B7CADA;
     position: relative;
     top:1px;
+    -webkit-user-select: none; 
+    -moz-user-select: none;  
+    -ms-user-select: none;     
+    text-align: right;
 }
-
-
-@media screen and (max-width: 660px) {
-    pre ol li:before {
+.docs .content-inner pre ol li:before {
+    width:12px;
+    left:-4px;
+}
+.without-linenumbers pre {
+    box-shadow: inset 0 0 0 1px #E4EBF2;
+    border-radius: 0 0 3px 3px;
+    margin-top: -5px;
+    padding:14px;
+}
+.without-linenumbers pre ol li:before {
+    content:""; margin-right: 0;
+}
+.animation pre {
+    border-radius: 0 0 3px 3px;
+}
+.animation.spring pre {
+    white-space: nowrap;
+}
+// Curves
+.animation-curves .col-4 {
+    border-radius: 3px; 
+    overflow: hidden;
+}
+img.curve-animation {
+    position: relative;
+    z-index: 10;
+}
+img.curve {
+    margin-top: -5px;
+}
+@media screen and (max-width: 1080px) {
+    .without-linenumbers pre {
+        box-shadow: none;
+        margin-top: 20px;
+        padding:0;
+    }
+}
+@media screen and (max-width: 720px) {
+    .with-illustration,
+    .with-full-illustration {
+        text-align: center;
+    }
+    .code-illustration {
+        position: relative;
+    }
+    .basics .code-illustration {
+        position: absolute;
+    }
+    .code-illustration-states {
+        position: relative;
+        max-width: 274px; 
+    }
+    .with-illustration pre,
+    .with-full-illustration pre {
+        margin-top: 0;
+    }
+    .with-illustration figure,
+    .with-full-illustration figure {
+        background: $blue;
+        margin-bottom: -1px;
+        position: relative;
+        z-index: 100;
+        border-radius: 3px 3px 0 0;
+        overflow: hidden;
+    }
+}
+@media screen and (max-width: 560px) {
+    .content-inner pre ol li:before {
         content:"";
+    }
+    pre {
+        box-shadow: inset 0 0 0 1px #E4EBF2;
+    }
+}
+@media screen and (max-width: 440px) {
+    .code-illustration {
+        display: none;
+    }
+    pre ol li {
+        font-size: 11px;
+    }
+    .with-illustration.layer-positioning-minmax pre {
+        min-height: 40px;
     }
 }

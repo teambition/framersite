@@ -1,16 +1,22 @@
+/* When clicking the learn navigation icons, load page from that point */
+if ($('body').hasClass('learn')) {
+	$('body.subpage.learn').scrollTop($('.learn-nav').offset().top);
+	$('body.subpage.learn.basics').scrollTop(0);
+}
 
 $(document).ready(function() {
-
 	$(".feature-banners a").hover(function() {
 			$(this).toggleClass("is-active");
 	});
 
-	var docsSidebar, topNav, exampleBlock, exampleDevices;
-	docsSidebar = $('.sidebar');
-	topNav = $('.home nav.top');
+	var learnSidebar, topNav, exampleBlock, exampleDevices;
+	learnSidebar = $('.subpage.learn .sidebar');
+	topNavHome = $('.home nav.top');
+	topNavPages = $('.learn nav.top');
 	exampleBlock = $('.examples');
 	exampleDevices = $('.device-left, .device-right');
 
+	/* Hover on devices within Examples Block */
 	$(exampleBlock).hover(
 		function() {
 			$(exampleDevices).toggleClass("shrink");
@@ -21,24 +27,34 @@ $(document).ready(function() {
 	var videoElement = $("#carousel-video-examples").get(0)
 
 	$(window).scroll(function() {
-
-		var scrollPos = $(this).scrollTop();
-
-		if ($(window).scrollTop() > 330) {
-			$(docsSidebar).addClass('sticky');
+		var scrollPos = $(window).scrollTop();
+		// Sidebar Sticky ----------------
+		if ($(window).scrollTop() > 646) {
+			$(learnSidebar).addClass('sticky');
 		} else {
-			$(docsSidebar).removeClass('sticky');
+			$(learnSidebar).removeClass('sticky');
 		}
-		
+
+		// Top Navigation ----------------
 		if ($(window).scrollTop() > 800) {
-			$(topNav).addClass('sticky').removeClass('fade-out');
+			$(topNavHome).addClass('sticky').removeClass('fade-out');
 		}
 		else if ($(topNav).hasClass('sticky') && scrollPos <= 800) {
-			$(topNav).removeClass('sticky').addClass('fade-out');
+			$(topNavHome).removeClass('sticky').addClass('fade-out');
+		}
+		if (scrollPos < 600) {
+			$(topNavHome).removeClass('fade-out');
 		}
 
-		if (scrollPos < 600) {
-			$(topNav).removeClass('fade-out');
+		// Top Nav on Learn and Docs
+		if ($(window).scrollTop() > 440) {
+			$(topNavPages).addClass('sticky').removeClass('fade-out');
+		}
+		else if ($(topNavPages).hasClass('sticky') && scrollPos <= 440) {
+			$(topNavPages).removeClass('sticky').addClass('fade-out');
+		}
+		if (scrollPos < 439) {
+			$(topNavPages).removeClass('fade-out');
 		}
 
 		if (playCarouselVideo == false && videoElement) {
@@ -49,10 +65,23 @@ $(document).ready(function() {
 		}
 
 	});
+	
 });
-		
 
-// /* ========================= */
+function scrollFix() {
+	window.setTimeout(function() {
+		$(".docs .sidebar").css("padding-right", "1px")
+		window.setTimeout(function() {
+			$(".docs .sidebar").css("padding-right", "0px")
+		}, 0)
+	}, 0)
+}
+
+// Extremely nasty hack to work around browser bug. If you click a href link the scrolling stops working in the sidebar. By forcing it to redraw (set margin property) it starts working again
+$(document).ready(function() {
+	$(".sub-section").click(scrollFix)
+	$(".docs .sidebar").hover(scrollFix)
+})
 
 function isMobile() {
 	return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
@@ -87,47 +116,4 @@ function setupDownloadLink() {
 }
 
 $(document).ready(setupDownloadLink)
-
-// /* ========================= */
-	 
-// $(document).ready(function() {
-
-// 	var carouselNode = document.getElementById('carousel');
-
-// 	if (carouselNode) {
-
-// 		setTimeout(function() {
-// 			document.getElementById('carousel-inapp').play();
-// 		}, 1000);
-
-// 		$(window).scroll(function() {
-// 			if ($(window).scrollTop() > 1400){
-// 				 document.getElementById('carousel').play();
-// 			}	 
-// 		});
-		
-// 		$('.screen').click(function() {
-// 			document.getElementById('carousel').play();
-// 		});
-
-// 	}
-
-// 	$("code").each(function(i, node) {
-
-// 		// Set the default language to coffee script
-// 		if (!node.getAttribute("data-language")) {
-// 			node.setAttribute("data-language", "coffeescript");
-// 		}
-
-// 		// Strip empty lines at the beginning and end
-// 		node.innerHTML = node.innerHTML.replace(/^\s+|\s+$/g, '');
-
-// 	})
-	
-// });
-		
-
-
-
-
 

@@ -1,0 +1,26 @@
+###### layer.style <span>object</span>
+<a id="layer.style"></a>
+Set or get css style properties for the layer.
+
+Most of the style properties are managed by Framer internally so it is preferred that you use those when you can (for example layer.backgroundColor vs layer.style["background-color"]). The reason for this is that it's slow to read the values from the dom so to keep animations fast we keep a cache.
+
+Next to the standard css property names you can also camelCase naming. So layer.style["border-color"] is the same as layer.style.borderColor. For a full list see <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Properties_Reference">this overview</a>.
+
+<pre lang="coffeescript">
+layerA = new Layer()
+
+# Modify a single style property
+layerA.style["outline"] = "1px solid red"
+
+# Modify set of style properties
+layerA.style = {
+	"outline": "1px solid red",
+	"padding": "10px"
+}
+
+# Get a specific style property
+print layerA.style["outline"]
+# Output: "1px solid red"
+
+</pre>
+

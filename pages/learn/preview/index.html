@@ -1,0 +1,49 @@
+{% extends "learnpage.html" %}
+{% block title %}Framer - Preview Prototypes{% endblock %}
+{% block islearn %}active{% endblock %}
+{% block mirror %}active{% endblock %}
+{% block mirror2 %}-active{% endblock %}
+
+{% block sidebar %}
+<div class="sidebar">
+	<ul>	
+		<a href="/learn/preview"><li class="active">Overview <div class="small">Introduction</div></li></a>
+		<a href="/learn/preview/preview-on-mobile"><li>Preview on mobile <div class="small">iOS, Android and more</div></li></a>
+		<a href="/learn/preview/connecting"><li>Connecting <div class="small">WiFi and USB</div></li></a>		
+	</ul>
+</div> <!--sidebar-->
+{% endblock sidebar %}
+
+{% block body %}
+{% filter pygmentify %}
+{% filter markdown %}
+### Preview Prototypes <a name="overview"></a>
+
+Prototypes can be previewed on any mobile device connected to the same Wi-Fi network with a WebKit-based browser. Supported browsers include Safari and Chrome on iOS and Android devices.
+
+---
+
+##### Get Started
+To start previewing your prototypes, click the **"Mirror"** icon in the toolbar. 
+
+Next, open the link presented in the popover menu on your mobile device. The share button can be used to quickly send yourself or others the link via message or email.
+
+<div class="inline-image"><img class="ss-mirror-sheet" src="/static/images/learn/ss-mirror-sheet.png" srcset="/static/images/learn/ss-mirror-sheet@2x.png 2x"></div>
+
+##### How it works
+Framer Studio runs a built-in webserver containing all of your open projects. The address is your Network **IP address**. On save, Framer Studio automatically refreshes your project for live-previewing.
+
+The web server doesn't rely on Bonjour, so it works on all networks, including corporate managed networks.
+
+---
+
+<section class="subpage-nav">
+	<a class="next" href="/learn/preview/preview-on-mobile">
+		<h6>Preview on Mobile</h6> 
+		<figure class="icon-learn-next-active"></figure>
+	</a>
+</section>
+
+{% endfilter %}	
+{% endfilter %}	
+{% endblock body %}

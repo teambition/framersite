@@ -1,0 +1,14 @@
+###### layer.scrollVertical <span>boolean</span>
+<a id="layer.scrollVertical"></a>
+Makes a layer vertically scrollable.
+
+<pre lang="coffeescript">
+layerA = new Layer({height:100})
+
+# The subLayer
+layerB = new Layer({height:200, superLayer:layerA})
+
+# Enable vertical scrolling on the superLayer
+layerA.scrollVertical = true
+</pre>
+

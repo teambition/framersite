@@ -1,0 +1,16 @@
+###### layer.centerFrame()
+<a id="layer.centerFrame"></a>
+<p class="small">
+<strong>Returns:</strong> Object<br>
+</p>
+
+The calculated frame centered in it's super layer. If there is no super layer it will be centered relative to the screen.
+
+<pre lang="coffeescript">
+layerA = new Layer({width:500, height:500})
+layerB = new Layer({width:100, height:100, superLayer:layerA})
+
+print layerB.centerFrame()
+# Output: {x:200, y:200, width:100, height:100}
+
+</pre>

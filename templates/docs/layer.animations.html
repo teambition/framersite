@@ -1,0 +1,23 @@
+###### layer.animations()
+<a id="layer.animations"></a>
+<p class="small">
+	<strong>Returns:</strong> Array with Animation Objects<br>
+</p>
+
+Returns all the current running animations for this layer
+
+<pre lang="coffeescript">
+layerA = new Layer()
+
+layerA.animate({
+	properties: {x:100}
+})
+
+layerA.animate({
+	properties: {y:100}
+})
+
+print layerA.animations()
+# Output: [<Object Animation>, <Object Animation>]
+</pre>
+

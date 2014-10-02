@@ -1,0 +1,87 @@
+{% extends "learnpage.html" %}
+{% block title %}Framer - Loops and Conditionals{% endblock %}
+{% block islearn %}active{% endblock %}
+{% block coffeescript %}active{% endblock %}
+{% block coffeescript2 %}-active{% endblock %}
+
+{% block sidebar %}
+<div class="sidebar">
+	<ul>	
+		<a href="/learn/coffeescript"><li>Overview <div class="small">Hierarchy and Properties</div></li></a>
+		<a href="/learn/coffeescript/data-types"><li>Data types <div class="small">Booleans, strings..</div></li></a>
+		<a href="/learn/coffeescript/loops-and-conditionals"><li class="active">Loops & Conditionals <div class="small">Arrays and Logic</div></li></a>
+	</ul>
+</div> <!--sidebar-->
+{% endblock sidebar %}
+
+{% block body %}
+{% filter pygmentify %}
+{% filter markdown %}
+
+### Loops
+
+Loops are used to iterate over collections, to do something for each item. Collections can be an Array or Object. They use the "for" keyword.
+
+<pre lang="coffeescript">
+myArray = [1, 2, 3, 4, 5]
+
+for number in myArray
+	number + 1
+
+# Output: 2, 3, 4, 5, 6
+</pre>
+
+Objects have properties with values, and you'll likely want to use both in your loop. To loop over Objects, "of" can be used instead of "in".
+
+<pre lang="coffeescript">
+myObject =
+    name: "Koen"
+    city: "Amsterdam"
+    age: 31
+
+for key, value of myObject
+    key, ":", value 
+
+# name:Koen, city:Amsterdam, age:31
+</pre>
+
+#### Conditionals
+
+Conditionals define your logic. You use them together with comparators to make decisions. They are all based around the **if**, **else if** and **else** keywords.
+<pre lang="coffeescript">
+	if age > 21
+		console.log "Over 21!"
+</pre>
+
+A conditional that checks for multiple things:
+<pre lang="coffeescript">
+	if age < 21
+		console.log "Young"
+	else if age < 65
+		console.log "Adult"
+	else
+		console.log "Senior"
+</pre>
+
+##### Comparators
+
+Comparators are used to compare things. <br> The most common ones are equality and greater/smaller-than.
+<pre lang="coffeescript">
+4 is 4 # Output: true
+4 isnt 4 # Output: false
+4 < 5 # Output true
+4 > 5 # Output false
+</pre>
+
+---
+
+<section class="subpage-nav">
+	<a class="previous" href="/learn/coffeescript/data-types">
+		<figure class="icon-learn-previous-active"></figure>
+		<h6 class="last">Data Types</h6> 
+	</a> 
+</section>
+
+{% endfilter %}	
+{% endfilter %}	
+{% endblock body %}

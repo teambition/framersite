@@ -1,0 +1,17 @@
+###### layer.querySelectorAll(selector <span>string</span>)
+<p class="small">
+	<strong>Returns:</strong> Array with DOMElements<br>
+</p>
+
+Finds a list of elements in the layer.html matching the selector.
+
+For a full reference see <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element.querySelectorAll">this overview</a>.
+
+<pre lang="coffeescript">
+layerA = new Layer()
+layerA.html = "<canvas id='canvas'></canvas>"
+
+print layer.querySelectorAll("#canvas")
+# Output: [<DOMElement canvas>]
+</pre>
+

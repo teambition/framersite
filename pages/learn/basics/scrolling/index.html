@@ -1,0 +1,79 @@
+{% extends "learnpage.html" %}
+{% block title %}Framer - Learn Basics{% endblock %}
+{% block currentpage %}class="subpage learn"{% endblock currentpage %}
+{% block islearn %}active{% endblock %}
+{% block basics %}active{% endblock %}
+{% block basics2 %}-active{% endblock %}
+
+{% block sidebar %}
+<div class="sidebar">
+	<ul>	
+		<a href="/learn/basics"><li>Layers <div class="small">Hierarchy and Properties</div></li></a>
+		<a href="/learn/basics/animation"><li>Animation <div class="small">Curves and Timing</div></li></a>
+		<a href="/learn/basics/states"><li>States <div class="small">Sets of properties</div></li></a>
+		<a href="/learn/basics/events"><li>Events <div class="small">Layer interactions</div></li></a>
+		<a href="/learn/basics/dragging"><li>Dragging <div class="small">Draggable layers</div></li></a>
+		<a href="/learn/basics/scrolling"><li class="active">Scrolling <div class="small">Scrollable layers</div></li></a>
+	</ul>
+</div> <!--sidebar-->
+{% endblock sidebar %}
+
+{% block body %}
+{% filter pygmentify %}
+{% filter markdown %}
+### Scrolling
+
+A layer can be made scrollable as long as it contains a subLayer that exceeds its height or width. 
+
+<div class="with-illustration">
+<pre lang="coffeescript">
+# The superLayer
+layerA = new Layer 
+	height:100
+
+# The subLayer
+layerB = new Layer 
+	height:200, superLayer:layerA
+
+# Enable scrolling on the superLayer
+layerA.scroll = true
+</pre>
+<img class="code-illustration-scrolling" src="/static/images/learn/scrolling.gif" srcset="/static/images/learn/scrolling@2x.gif 2x" draggable="false">
+</div>
+
+A layer can be made only horizontally or vertically scrollable.
+<pre lang="coffeescript">
+layerA.scrollHorizontal = true
+layerA.scrollVertical = true
+</pre>
+
+Framer also contains a scrolling event. Within the scroll event, the positions of the scrollable layer can be retrieved. Layer animations can be triggered based on these positions with <a href="http://localhost:8857/learn/coffeescript/loops-and-conditionals/">comparators</a>. 
+
+<pre lang="coffeescript">
+# Scroll Event
+layerA.on Events.Scroll, ->
+	print layerA.scrollX
+	print layerA.scrollY
+</pre>
+
+<section class="summary">
+<h5>Summary</h5>
+<ul>
+	<li>Layers containing larger subLayers can be made scrollable </li>
+	<li>You can define a specific scroll direction </li>
+	<li>Layers animations can be triggered on scroll </li>
+</ul>
+</section>
+
+<hr>
+
+<section class="subpage-nav">
+    <a class="previous" href="/learn/basics/dragging">
+        <figure class="icon-learn-previous-active"></figure>
+        <h6 class="last">Dragging</h6> 
+    </a> <!--next-->
+</section>
+
+{% endfilter %}	
+{% endfilter %}
+{% endblock body %}	

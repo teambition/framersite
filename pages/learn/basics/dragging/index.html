@@ -1,0 +1,102 @@
+{% extends "learnpage.html" %}
+{% block title %}Framer - Dragging{% endblock %}
+{% block currentpage %}class="subpage learn"{% endblock currentpage %}
+{% block islearn %}active{% endblock %}
+{% block basics %}active{% endblock %}
+{% block basics2 %}-active{% endblock %}
+
+{% block sidebar %}
+<div class="sidebar">
+    <ul>    
+        <a href="/learn/basics"><li>Layers <div class="small">Hierarchy and Properties</div></li></a>
+        <a href="/learn/basics/animation"><li>Animation <div class="small">Curves and Timing</div></li></a>
+        <a href="/learn/basics/states"><li>States <div class="small">Sets of properties</div></li></a>
+        <a href="/learn/basics/events"><li>Events <div class="small">Layer interactions</div></li></a>
+        <a href="/learn/basics/dragging"><li class="active">Dragging <div class="small">Draggable layers</div></li></a>
+        <a href="/learn/basics/scrolling"><li>Scrolling <div class="small">Scrollable layers</div></li></a>
+    </ul>
+</div> <!--sidebar-->
+{% endblock sidebar %}
+
+{% block body %}
+{% filter pygmentify %}
+{% filter markdown %}
+### Dragging
+To create a draggable layer, simply set draggable.enabled to true. You can also specify dragging speed. This is especially useful if you'd like a layer to be only horizontally or vertically draggable: simply set the speedX or speedY to 0. Setting the value higher than 1 creates accelerated dragging.
+
+<div class="with-full-illustration dragging">
+<pre lang="coffeescript">
+# Make the layer draggable 
+layerA.draggable.enabled = true
+
+# Set dragging speed
+layerA.draggable.speedX = 1
+
+# Prevent vertical dragging
+layerA.draggable.speedY = 0
+</pre>
+
+<figure><img class="code-illustration-dragging" src="/static/images/learn/dragging.gif" srcset="/static/images/learn/dragging@2x.gif 2x"></figure>
+</div>
+
+Framer has three dragging events that you can listen to: DragStart, DragMove and DragEnd.
+
+<div class="with-illustration dragging-events">
+<pre lang="coffeescript">
+# Start dragging
+layerA.on Events.DragStart, -> ...
+
+# When moving the draggable layer
+layerA.on Events.DragMove, -> ...
+
+# After dragging    
+layerA.on Events.DragEnd, -> ...
+</pre>
+<figure><img class="code-illustration no-border" src="/static/images/learn/dragging-events.png" srcset="/static/images/learn/dragging-events@2x.png 2x"></figure>
+</div>
+
+##### Example: Snap To Origin
+Below, the DragEnd event is used to prototype a simple interaction.
+
+First, the current X and Y positions of the layers are stored in variables.
+When we let go of the layer, the DragEnd event fires and the layers snaps back to its original position.
+
+<div class="with-illustration dragging-events">
+<pre lang="coffeescript">
+originX = layerA.x
+originY = layerA.y
+
+layerA.on Events.DragEnd, ->
+    layerA.animate
+        properties:
+            x: originX, y: originY
+        curve: "spring(600, 30, 0)"
+
+</pre>
+<figure><img class="code-illustration no-border" src="/static/images/learn/dragging-snap.gif" srcset="/static/images/learn/dragging-snap@2x.gif 2x"></figure>
+</div>
+
+<section class="summary">
+<h5>Summary</h5>
+<ul>
+    <li>Setting draggable.enabled to true creates a draggable layer </li>
+    <li>Dragging direction can be defined with speedX and speedY </li>
+    <li>Layers have 3 dragging events: DragStart, DragMove and DragEnd </li>
+</ul>
+</section>
+
+<hr>
+
+<section class="subpage-nav">
+    <a class="previous" href="/learn/basics/events">
+        <figure class="icon-learn-previous"></figure>
+        <h6>Events</h6> 
+    </a> <!--next-->
+    <a class="next" href="/learn/basics/scrolling">
+        <h6>Scrolling</h6> 
+        <figure class="icon-learn-next-active"></figure>
+    </a> <!--next-->
+</section>
+{% endfilter %}	
+{% endfilter %}
+{% endblock body %}	

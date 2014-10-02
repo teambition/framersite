@@ -1,0 +1,12 @@
+###### Utils.domLoadScriptSync(url <span>string</span>)
+<a id="utils.domLoadScriptSync"></a>
+
+Load and evaluate a Javascript file. Execution of the rest of the code will halt until the loaded script is finished.
+
+<pre lang="coffeescript">
+Utils.domLoadScriptSync("plugin.js")
+
+# This will not get printed until hello.js is finished loading and executing
+print "hello"
+
+</pre>

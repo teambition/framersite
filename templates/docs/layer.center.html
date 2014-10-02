@@ -1,0 +1,14 @@
+###### layer.center()
+<a id="layer.center"></a>
+Center this layer in it's super layer. If there is no super layer it will be centered relative to the screen.
+
+<pre lang="coffeescript">
+layerA = new Layer({width:500, height:500})
+layerB = new Layer({width:100, height:100, superLayer:layerA})
+
+layerB.center()
+
+print layerB.x, layerB.y
+# Output: 200, 200
+
+</pre>

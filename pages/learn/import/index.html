@@ -1,0 +1,58 @@
+{% extends "learnpage.html" %}
+{% block title %}Framer - Import Designs{% endblock %}
+{% block islearn %}active{% endblock %}
+{% block importing %}active{% endblock %}
+{% block importing2 %}-active{% endblock %}
+
+{% block sidebar %}
+<div class="sidebar">
+	<ul>	
+		<a href="/learn/import"><li class="active">Overview <div class="small">Introduction</div></li></a>
+		<a href="/learn/import/photoshop-and-sketch"><li>Photoshop & Sketch <div class="small">Import designs</div></li></a>
+		<a href="/learn/import/after-effects"><li>After Effects <div class="small">Import videos</div></li></a>		
+	</ul>
+</div> <!--sidebar-->
+{% endblock sidebar %}
+
+{% block body %}
+{% filter pygmentify %}
+{% filter markdown %}
+### Import Designs <a name="overview"></a>
+
+Framer Studio lets you import Sketch or Photoshop documents. All of your layer groups will be available. Your layer hierarchy is respected and all flattened layers are exported too. 
+
+---
+
+##### Get Started
+To import layers, click the **"Import"** icon in the toolbar. 
+
+You'll be presented with the Import Sheet, where you can import designs directly out of Sketch, Sketch Beta and Photoshop. 
+
+<div class="inline-image"><img class="ss-import-sheet" src="/static/images/learn/ss-import-sheet.png" srcset="/static/images/learn/ss-import-sheet@2x.png 2x" draggable="false"></div>
+
+The import sheet informs you about the state of the applications. When they are unavailable for import, they can be in two different states:
+
+<ul class="numbered">
+<li>"Not running" - The application isn't open </li>
+<li>"Open a saved document" - There's no document open, or its unsaved</li>
+</ul>
+
+When you've opened a saved document, the Import button will become active and you'll see the title of your active document appear below the application title.
+
+----
+
+##### Re-Importing
+Subsequent imports from the same file will work as long as you don't rename layers that you've already targeted within Framer. This allows for rapid iteration, especially with the keyboard shortcut: "CMD + Shift + I"
+
+---
+
+<section class="subpage-nav">
+	<a class="next" href="/learn/import/photoshop-and-sketch">
+		<h6>Photoshop & Sketch</h6> 
+		<figure class="icon-learn-next-active"></figure>
+	</a> <!--next-->
+</section>
+
+{% endfilter %}	
+{% endfilter %}	
+{% endblock body %}
