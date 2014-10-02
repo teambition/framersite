@@ -1,0 +1,22 @@
+###### layer.classList <span>ClassList object</span>
+
+A list of class attributed for the layer. Also contains methods to add, remove, toggle and check for classes. For a full reference see this <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element.classList">this overview</a>.
+
+<pre lang="coffeescript">
+layerA = new Layer()
+
+# Add the class .red
+layerA.classList.add("red")
+
+# Remove the class .red
+layerA.classList.remove("red")
+
+# Toggle the class .red
+layerA.classList.toggle("red")
+
+# See if the layer has class .red
+print layerA.classList.contains("red")
+# Output: true
+</pre>
+
+---
