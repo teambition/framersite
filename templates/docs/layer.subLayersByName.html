@@ -1,0 +1,18 @@
+###### layer.subLayersByName(name <span>string</span>)
+<p class="small">
+	<strong>Returns:</strong> Array with Layer Objects<br>
+</p>
+
+All the sub (or child) layers for this layer filtered by name.
+
+<pre lang="coffeescript">
+layerA = new Layer()
+layerB = new Layer({name:"navigation", superLayer:layerA})
+layerC = new Layer({name:"button", superLayer:layerA})
+
+print layerA.subLayersByName("button")
+# Output: [<Object:Layer layerC>]
+
+</pre>
+
+---

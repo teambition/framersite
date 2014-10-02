@@ -1,0 +1,16 @@
+###### layer.addSubLayer(layer <span>Layer object</span>)
+
+Add this layer as a sub layer to this layer. This will change the added sub layers' superLayer.
+
+<pre lang="coffeescript">
+layerA = new Layer()
+layerB = new Layer()
+
+layerA.addSubLayer(layerB)
+
+print layerB.superLayer
+# Output: <Object:Layer layerA>
+
+</pre>
+
+---

@@ -1,0 +1,16 @@
+###### layer.removeSubLayer(layer <span>Layer object</span>)
+
+Remove the layer from this layers' sub layers.
+
+<pre lang="coffeescript">
+layerA = new Layer()
+layerB = new Layer({superLayer:layerA})
+
+layerA.removeSubLayer(layerB)
+
+print layerB.superLayer
+# Output: null
+
+</pre>
+
+---
