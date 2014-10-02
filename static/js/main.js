@@ -36,7 +36,7 @@ $(document).ready(function() {
 			$(docsSidebar).removeClass('sticky');
 		}
 
-		if ($(window).scrollTop() > 710) {
+		if ($(window).scrollTop() > 646) {
 			$(learnSidebar).addClass('sticky');
 		} else {
 			$(learnSidebar).removeClass('sticky');
