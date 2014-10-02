@@ -22,6 +22,11 @@ To listen to animation events like start, stop and end please see the <a href="#
 	</thead>
 	<tbody>
 		<tr>
+			<td>layer (required)</td>
+			<td>Layer Object</td>
+			<td>The targeted layer</td>
+		</tr>
+		<tr>
 			<td>properties (required)</td>
 			<td>Object</td>
 			<td>The target values for the animated properties</td>
@@ -30,15 +35,7 @@ To listen to animation events like start, stop and end please see the <a href="#
 			<td>curve</td>
 			<td>String</td>
 			<td>
-				Used curve for the animation. For a full list see <a href="#animation.curve-options">curve options</a>. You can also combine the curve with its options as a shorthand: "spring(100,10,0)". The default curve is linear.
-<!-- 				<ul>
-					<li>"linear"</li>
-					<li>"bezier-curve"</li>
-					<li>"spring-rk4" Runge-Kutta spring</li>
-					<li>"spring-dho" Damping harmonic oscillator spring</li>
-					<li>"spring" same as "spring-rk4"</li>
-				</ul> -->
-				
+				Used curve for the animation. For a full list see <a href="#animation.curve-types">curve types</a>. You can also combine the curve with its options as a shorthand: "spring(100,10,0)". The default curve is linear.
 			</td>
 		</tr>
 		 <tr>
@@ -46,11 +43,6 @@ To listen to animation events like start, stop and end please see the <a href="#
 			<td>Object</td>
 			<td>
 				Options for the used curve. For a full list see <a href="#animation.curve-options">curve options</a>.
-<!-- 				<ul>
-					<li>bezier-curve: "ease-in", "ease-out", "ease-in-out", [0, 1, 0, 1]</li>
-					<li>spring-rk4: friction, tension, velocity, tolerance</li>
-					<li>spring-dho: stiffness, damping, mass, velocity, tolerance</li>
-				</ul> -->
 			</td>
 		</tr>
 		<tr>
@@ -71,7 +63,9 @@ To listen to animation events like start, stop and end please see the <a href="#
 	</tbody>
 </table>
 
-###### Animation Curves
+###### Animation Curve Types
+
+<a id="animation.curve-types"></a>
 
 <table>
 	<thead>
@@ -103,3 +97,144 @@ To listen to animation events like start, stop and end please see the <a href="#
 		</tr>
 	</tbody>
 </table>
+
+<!-- 				<ul>
+					<li>bezier-curve: "ease-in", "ease-out", "ease-in-out", [0, 1, 0, 1]</li>
+					<li>spring-rk4: friction, tension, velocity, tolerance</li>
+					<li>spring-dho: stiffness, damping, mass, velocity, tolerance</li>
+				</ul> -->
+
+###### Animation Curve Options
+
+<a id="animation.curve-options"></a>
+
+<table border="0" cellspacing="0" cellpadding="0">
+	<tbody>
+	<tr>
+		<th>Curve types</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+
+	<tr>
+		<td colspan="3" class="group">bezier-curve</td>
+	</tr>
+
+	<tr>
+		<td>preset</td>
+		<td>string</td>
+		<td>"ease-in", "ease-out", "ease-in-out"</td>
+	</tr>
+	<tr>
+		<td>cuve bezier values</td>
+		<td>array</td>
+		<td>[0, 1, 0, 1]</td>
+	</tr>
+
+	<tr>
+		<td colspan="3" class="group">spring-rk4</td>
+	</tr>
+
+	<tr>
+		<td>tension</td>
+		<td>number</td>
+		<td>Strength of the spring</td>
+	</tr>
+	<tr>
+		<td>friction</td>
+		<td>number</td>
+		<td>How hard it is to move the object</td>
+	</tr>
+	<tr>
+		<td>velocity</td>
+		<td>number</td>
+		<td>Velocity at start</td>
+	</tr>
+	<tr>
+		<td>tolerance</td>
+		<td>number</td>
+		<td>Minimal movement threshold before we say the spring finished</td>
+	</tr>
+
+	<tr>
+		<td colspan="3" class="group">spring-dho</td>
+	</tr>
+
+	<tr>
+		<td>stiffness</td>
+		<td>number</td>
+		<td>Strength of the spring</td>
+	</tr>
+	<tr>
+		<td>damping</td>
+		<td>number</td>
+		<td>How quickly the spring should reduce motion/force</td>
+	</tr>
+	<tr>
+		<td>mass</td>
+		<td>number</td>
+		<td>Weight of the object</td>
+	</tr>
+	<tr>
+		<td>tolerance</td>
+		<td>number</td>
+		<td>Minimal movement threshold before we say the spring finished</td>
+	</tr>
+
+	</tbody>
+</table>
+
+Some examples. Notice that none of these animations actually start running until you call animation.start()
+
+<pre lang="coffeescript">
+layerA = new Layer()
+
+# Animate the layer to the right
+animationA = new Animation({
+	layer: layerA,
+	properties: {x:100}
+})
+
+# Animate multiple properties
+animationB = new Animation({
+	layer: layerA,
+	properties: {x:100, opacity:0.5}
+})
+
+# Animate the layer to the right in 5 seconds
+animationC = new Animation({
+	layer: layerA,
+	properties: {x:100},
+	time: 5
+})
+
+# Repeat an animation 5 times
+animationD = new Animation({
+	layer: layerA,
+	properties: {x:100},
+	repeat: 5
+})
+
+# Start an animation after 5 seconds
+animationE = new Animation({
+	layer: layerA,
+	properties: {x:100},
+	delay: 5
+})
+
+# Animate the layer with a spring curve
+animationF = new Animation({
+	layer: layerA,
+	properties: {x:100}
+	curve: "spring(100, 10, 0)"
+})
+
+# Animate the layer with a bezier curve
+animationG = new Animation({
+	layer: layerA,
+	properties: {x:100}
+	curve: "ease-in-out"
+})
+</pre>
+
+

@@ -1,0 +1,16 @@
+###### animation.start()
+<a id="animation.start"></a>
+
+Start the animation.
+
+<pre lang="coffeescript">
+layerA = new Layer()
+
+animationA = new Animation({
+	layer: layerA,
+	properties: {x:100}
+})
+
+# Nothing will move until we start
+animationA.start()
+</pre>
