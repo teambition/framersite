@@ -114,6 +114,15 @@
 			<a class="sub-section" href="#layer.draggable.speedY"><li>layer.draggable.speedY</li></a>
 			<a class="sub-section" href="#layer.draggable.calculateVelocity"><li>layer.draggable.calculateVelocity</li></a>
 	</ul>
+	<ul>
+		<a class="section" href="#backgroundlayer.backgroundlayer"><li>BackgroundLayer</li></a>
+			<a class="sub-section" href="#backgroundlayer.backgroundlayer"><li>BackgroundLayer</li></a>
+	</ul>
+		<ul>
+		<a class="section" href="#videolayer.videolayer"><li>VideoLayer</li></a>
+			<a class="sub-section" href="#videolayer.video"><li>VideoLayer.video</li></a>
+			<a class="sub-section" href="#videolayer.player"><li>VideoLayer.player</li></a>
+	</ul>
 	<ul>	
 		<a class="section" href="#events.events"><li>Events</li></a>
 		<a class="sub-section" href="#events.touchEvent"><li>Events.touchEvent</li></a>
@@ -151,15 +160,6 @@
 			<a class="sub-section" href="#device.orientationName"><li>device.orientationName</li></a>
 			<a class="sub-section" href="#device.rotateLeft"><li>device.rotateLeft</li></a>
 			<a class="sub-section" href="#device.rotateRight"><li>device.rotateRight</li></a>
-	</ul>
-	<ul>
-		<a class="section" href="#backgroundlayer.backgroundlayer"><li>BackgroundLayer</li></a>
-			<a class="sub-section" href="#backgroundlayer.backgroundlayer"><li>BackgroundLayer</li></a>
-	</ul>
-		<ul>
-		<a class="section" href="#videolayer.videolayer"><li>VideoLayer</li></a>
-			<a class="sub-section" href="#videolayer.video"><li>VideoLayer.video</li></a>
-			<a class="sub-section" href="#videolayer.player"><li>VideoLayer.player</li></a>
 	</ul>
 </div> <!--sidebar-->
 {% endblock %}
@@ -294,10 +294,12 @@
 {% include 'docs/layer.off.html' %}
 
 ### BackgroundLayer
-
+{% include 'docs/backgroundlayer.backgroundlayer.html' %}
 
 ### VideoLayer
-
+{% include 'docs/videolayer.videolayer.html' %}
+{% include 'docs/videolayer.video.html' %}
+{% include 'docs/videolayer.player.html' %}
 
 ### Events
 
