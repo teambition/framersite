@@ -166,7 +166,7 @@
 .docs .sidebar {
 	overflow: auto;
 	height:100%;
-	padding-bottom: 160px;
+	padding-bottom: 64px;
 	z-index: 30;
 	top:64px;
 	padding-top:64px;
@@ -209,7 +209,7 @@
 .sidebar::-webkit-scrollbar-thumb {
 	background: #FBFDFE;
 	box-shadow: inset 0 0 0 1px #E4EBF2;
-	//border-radius: 8px;
+	// border-radius: 8px;
 }
 .sidebar::-webkit-scrollbar-track {
 	// border-radius: 8px;
