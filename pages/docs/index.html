@@ -9,8 +9,8 @@
 			<a class="sub-section" href="#print"><li>print()</li></a>
 	</ul>
 	<ul>
-		<a class="section" href="defaults.defaults"><li>Defaults</li></a>
-			<a class="sub-section" href="defaults.defaults"><li>Defaults</li></a>
+		<a class="section" href="#defaults.defaults"><li>Defaults</li></a>
+			<a class="sub-section" href="#defaults.defaults"><li>Defaults</li></a>
 	</ul>
 	<ul>	
 		<a class="section" href="#layer.layer"><li>Layers</li></a>
@@ -152,6 +152,15 @@
 			<a class="sub-section" href="#device.rotateLeft"><li>device.rotateLeft</li></a>
 			<a class="sub-section" href="#device.rotateRight"><li>device.rotateRight</li></a>
 	</ul>
+	<ul>
+		<a class="section" href="#backgroundlayer.backgroundlayer"><li>BackgroundLayer</li></a>
+			<a class="sub-section" href="#backgroundlayer.backgroundlayer"><li>BackgroundLayer</li></a>
+	</ul>
+		<ul>
+		<a class="section" href="#videolayer.videolayer"><li>VideoLayer</li></a>
+			<a class="sub-section" href="#videolayer.video"><li>VideoLayer.video</li></a>
+			<a class="sub-section" href="#videolayer.player"><li>VideoLayer.player</li></a>
+	</ul>
 </div> <!--sidebar-->
 {% endblock %}
 
@@ -160,6 +169,10 @@
 {% filter markdown %}
 
 {% include 'docs/print.html' %}
+
+
+### Defaults
+{% include 'docs/defaults.defaults.html' %}
 
 ### Layers
 

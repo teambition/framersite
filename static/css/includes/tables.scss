@@ -9,6 +9,9 @@ table {
 	border-style: hidden;
 	box-shadow: 0 0 0 1px #E4EBF2;
 }
+table a {
+	font-weight: 400;
+}
 td {
 	padding:$space8 $space16; 
 	padding-bottom: 4px;
@@ -59,9 +62,6 @@ td.examples {
 	text-align: right;
 	white-space: nowrap;
 }
-td a {
-	font-weight: 600;
-}
 td a+a:before {
 	content: "\b7"; display: inline-block; margin-right: 4px; font-weight: 500; opacity: .5;
 }
@@ -85,7 +85,7 @@ td a+a:before {
 	table:first-child {
 		margin-top: -$space32;
 	}
-	table.api td.group, table.compatibility td.group {
+	table td.group, table.compatibility td.group {
 		position: static;
 		padding:$space8 0; 
 	}
@@ -94,8 +94,8 @@ td a+a:before {
 		position: relative;
 		padding-left: 0;
 	}
-	table.api td:first-child {
-		color: $black; font-size: 12px; 
+	table td:first-child {
+		color: $black; 
 	}
 	tr>td {
 		border-top:none;
