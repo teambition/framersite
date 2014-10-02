@@ -289,6 +289,9 @@ ul.numbered li:before {
 .docs p.small {
 	font-size: 16px;
 }
+.docs p.small span {
+	color: $blue;
+}
 .docs h6 span {
 	color: $graphite40;
 }
