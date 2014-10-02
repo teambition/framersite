@@ -9,7 +9,7 @@ pre {
     color: #788D9E; 
     background: #fff; 
     box-shadow: inset 0 0 0 1px #E4EBF2, inset 46px 0 0 #FBFDFE, inset 47px 0 0 #E4EBF2; // To-do: make this variables
-    border-radius: 3px;
+    border-radius: 4px;
     overflow: hidden;
 }
 // Docs pre space
@@ -51,7 +51,7 @@ pre, code {
 // Illustrations
 .code-illustration {
     position: absolute;
-    top:0; right:-1px;
+    top:0; right:0;
     padding: 16px;
     border-radius: 0 3px 3px 0;
     display: inline-block;
@@ -141,10 +141,11 @@ pre, code {
 .without-linenumbers pre ol li:before {
     content:""; margin-right: 0;
 }
-.without-border pre {
-    box-shadow: none;
-    padding-left:0;
-    padding-top: $space32;
+.animation pre {
+    border-radius: 0 0 3px 3px;
+}
+.animation.spring pre {
+    white-space: nowrap;
 }
 // Curves
 img.curve-animation {
@@ -162,7 +163,6 @@ img.curve {
         padding:0;
     }
 }
-
 @media screen and (max-width: 720px) {
     .with-illustration,
     .with-full-illustration {
