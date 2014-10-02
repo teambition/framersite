@@ -11,6 +11,7 @@ table {
 }
 td {
 	padding:$space8 $space16; 
+	padding-bottom: 4px;
 	color: $text;
 	position: relative;
 }
@@ -19,7 +20,7 @@ td, th {
 }
 thead th, th {
 	text-align:left;
-	padding:12px 15px 9px;
+	padding:14px 15px 9px;
 	font-size:12px; 
 	font-weight:600;
 	cursor:default; 

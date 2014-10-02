@@ -135,6 +135,8 @@ pre, code {
     -moz-user-select: none;  
     -ms-user-select: none;     
     text-align: right;
+}
+.docs .content-inner pre ol li:before {
     width:12px;
     left:-4px;
 }
