@@ -1,0 +1,15 @@
+###### layer.draggable.speedY <span>number</span>
+<a id="layer.draggable.speedY"></a>
+
+Modify the vertical dragging speed. The value is in pixels per mouse moved pixels. The default value is 1. When set lower then 1 dragging will be slower than mouse movement and vice versa. You can set the value to 0 to disable vertical dragging.
+
+<pre lang="coffeescript">
+layerA = new Layer()
+layerA.draggable.enabled = true
+
+# Make vertical dragging slow
+layerA.draggable.speedY = 0.1
+
+# Make vertical dragging fast
+layerA.draggable.speedY = 10
+</pre>
