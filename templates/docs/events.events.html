@@ -1,0 +1,30 @@
+<a id="layer.events.events"></a>
+
+Events are things that you can listen for. They can originate from the user like a touch or mouse click, or from an animation that ends. Most objects support event listening in Framer, but you will most often listen for events on layers. 
+
+When an event is called the first argument is the event information. Depending on the specific event this can contain mouse positions, mouse deltas etc. The second argument is always the layer that the event occured to.
+
+To listen for an event you can use the on function:
+
+<pre lang="coffeescript">
+layerA = new Layer()
+layerA.name = "Layer A"
+
+layerA.on Events.Click, (event, layer) ->
+	print "This layer was clicked", layer.name
+
+# Output: "This layer was clicked", "Layer A"
+</pre>
+
+To stop listening for an event you can use the off function:
+
+<pre lang="coffeescript">
+layerA = new Layer()
+layerA.name = "Layer A"
+
+clickHandler = (event, layer) ->
+	print "This layer was clicked", layer.name
+
+layerA.on(Events.Click, clickHandler)
+layerA.off(Events.Click, clickHandler)
+</pre>
