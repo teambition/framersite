@@ -287,7 +287,9 @@ ul.numbered li:before {
 .highlight + h5 {
 	margin-top: $space64; // 64 - 32
 }
-p + h5,
+p + h5 {
+	margin-top: $space32;
+}
 table + h5 {
 	margin-top: $space64;
 }
@@ -300,6 +302,9 @@ table + h5 {
 	letter-spacing: 0.5px;
 	font-weight: bold;
 	margin-top: -24px;
+}
+.docs h3 {
+	margin-top: -10px
 }
 .docs strong {
 	font-weight: bold;
