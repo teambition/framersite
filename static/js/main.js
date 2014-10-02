@@ -67,7 +67,22 @@ $(document).ready(function() {
 	});
 	
 });
-		
+
+// Extremely nasty hack to work around browser bug. If you click a href link the scrolling stops working in the sidebar. By forcing it to redraw (set margin property) it starts working again
+$(document).ready(function() {
+
+	$(".sub-section").click(function() {
+		window.setTimeout(function() {
+			$(".docs .sidebar").css("padding-right", "1px")
+			window.setTimeout(function() {
+				$(".docs .sidebar").css("padding-right", "0px")
+			}, 0)
+		}, 0)
+
+	})
+
+})
+
 function isMobile() {
 	return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
 }
