@@ -281,7 +281,6 @@ ul.numbered li:before {
 .highlight + h5 {
 	margin-top: $space80;
 }
-
 // Docs type
 .docs strong {
 	color: $black;
@@ -289,6 +288,9 @@ ul.numbered li:before {
 }
 .docs p.small {
 	font-size: 16px;
+}
+.docs h6 span {
+	color: $graphite40;
 }
 
 // Subpage summary lists
