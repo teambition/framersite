@@ -166,12 +166,10 @@
 // Docs
 .docs .sidebar {
 	overflow: auto;
-	height:100%;
-	max-height: 84%;
+	height:calc(100% - 192px);
 	position: fixed;
 	top: 64px;
 	margin-top:64px;
-	padding-bottom: 64px;
 	max-width: 223px;
 }
 .docs .sidebar a {
@@ -575,4 +573,11 @@ hr.hidden {
 		top: -5px;
 		font-size: 10px;
 	}	
+}
+@media screen and (max-height: 700px) {
+	.docs .sidebar {
+		height:calc(100% - 128px);
+		top: 32px;
+		padding-bottom: 0;
+	}
 }
