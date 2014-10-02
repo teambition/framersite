@@ -11,6 +11,9 @@ footer.global li {
 	float: left;
 	font-weight: 600;
 }
+footer.global a:hover {
+	color: #fff;
+}
 footer.global nav {
 	border-bottom: 1px solid rgba(255,255,255,0.1);
 	padding-bottom: $space16;
