@@ -1,11 +1,12 @@
-###### Utils.isLocal()
-<a id="utils.isLocal"></a>
-<p class="small">
-	<strong>Returns:</strong> boolean<br>
-</p>
+###### Utils.domLoadScriptSync(url <span>string</span>)
+<a id="utils.domLoadScriptSync"></a>
 
-Returns wether this is a local url (file is on local machine).
+Load and evaluate a Javascript file. Execution of the rest of the code will halt until the loaded script is finished.
 
 <pre lang="coffeescript">
-print Utils.isLocal() # Output true
+Utils.domLoadScriptSync("plugin.js")
+
+# This will not get printed until hello.js is finished loading and executing
+print "hello"
+
 </pre>
