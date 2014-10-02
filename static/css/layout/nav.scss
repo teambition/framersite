@@ -90,13 +90,15 @@ nav.top input {
 }
 
 // Docs nav
+.docs .sidebar a.sub-section li {
+	box-shadow: none;
+}
 .docs a.sub-section li {
 	text-transform: none; letter-spacing: 0;
-	font-weight: 400; font-size: 14px;
+	font-weight: 400; font-size: 16px;
 	color: $graphite;
 	padding: 0 0 0 12px;
-	line-height: 1.5;
-	letter-spacing: 0.1px;
+	line-height: 1.2;
 }
 @media screen and (max-width: 1000px) {
 	nav.top .content-inner {

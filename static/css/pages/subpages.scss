@@ -162,11 +162,33 @@
 	list-style: none;
 	left: 0;
 }
+// Docs
+.docs .sidebar {
+	overflow: auto;
+	height:100%;
+}
+// Docs section spacing
+.docs .sidebar ul {
+	margin-bottom: $space32;
+}
+.docs .sidebar .section li {
+	margin-bottom: $space16;
+	box-shadow: inset 0 0 0 1px $separator;
+	background: #FBFDFE;
+}
+.docs .sidebar .active {
+	box-shadow: none;
+}
+.docs::-webkit-scrollbar {
+    display: none;
+}
+
 .sidebar a div {
 	color: $sidebar-links;
 	margin-top:4px;
 }
-.sidebar .active {
+.sidebar .active,
+.docs .sidebar .active {
 	background: $blue;
 	color: #fff;
 }
