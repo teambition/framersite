@@ -8,7 +8,7 @@ pre {
     // Default
     color: #788D9E; 
     background: #fff; 
-    box-shadow: inset 0 0 0 1px #E4EBF2, inset 46px 0 0 #FBFDFE, inset 47px 0 0 #E4EBF2; // To-do: make this variables
+    box-shadow: inset 0 0 0 1px #E4EBF2, inset 49px 0 0 #FBFDFE, inset 50px 0 0 #E4EBF2; // To-do: make this variables
     border-radius: 4px;
     overflow: hidden;
 }
@@ -132,6 +132,9 @@ pre, code {
     -webkit-user-select: none; 
     -moz-user-select: none;  
     -ms-user-select: none;     
+    text-align: right;
+    width:12px;
+    left:-4px;
 }
 .without-linenumbers pre {
     box-shadow: inset 0 0 0 1px #E4EBF2;
