@@ -167,9 +167,11 @@
 .docs .sidebar {
 	overflow: auto;
 	height:100%;
-	top:64px;
+	max-height: 84%;
+	position: fixed;
+	top: 64px;
 	margin-top:64px;
-	padding-bottom: 128px;
+	padding-bottom: 64px;
 	max-width: 223px;
 }
 .docs .sidebar a {

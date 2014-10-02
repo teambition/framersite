@@ -13,8 +13,9 @@ pre {
     overflow: hidden;
 }
 // Docs pre space
-.docs pre {
-    margin-bottom: $space80;
+.docs .highlight + h3,
+.docs .highlight + h6{
+    margin-top: $space80;
 }
 pre ol {
     margin-bottom: 0;
