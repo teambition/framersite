@@ -292,6 +292,12 @@ ul.numbered li:before {
 .docs h6 span {
 	color: $graphite40;
 }
+.docs h6 span:before {
+	content:"<";
+}
+.docs h6 span:after {
+	content:">";
+}
 
 // Subpage summary lists
 // Page summaries
