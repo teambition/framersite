@@ -26,7 +26,7 @@
 States allow you to define different appearance options for a layer.
 When creating a new layer, the set of properties you define become the default state. A layer can have multiple states, each with a different set properties. States can then be cycled through, with or without animation.
 
-##### Example
+##### Adding States
 The default state of layerA contains the opacity property, set to 1. Next, a new state for layerA is defined, titled "fade", with an opacity set to 0.
 
 <pre lang="coffeescript">
@@ -50,7 +50,7 @@ layerA.states.switchInstant("fade")
 </pre>
 
 
-##### Toggling states
+##### Example: Switching states
 
 States can also be toggled between, using next() instead of switch().
 
