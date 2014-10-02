@@ -148,8 +148,11 @@ pre, code {
     white-space: nowrap;
 }
 // Curves
+.animation-curves .col-4 {
+    border-radius: 3px; 
+    overflow: hidden;
+}
 img.curve-animation {
-    border-radius: 3px 3px 0 0;
     position: relative;
     z-index: 10;
 }
