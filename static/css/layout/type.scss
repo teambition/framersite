@@ -250,7 +250,6 @@ ul.numbered li:before {
 .right {
 	float:right;
 }
-
 // Subpage spacing
 .inline-image + p,
 .inline-image + ul,
@@ -275,11 +274,18 @@ ul.numbered li:before {
 .subpre {
 	margin-bottom: $space24;
 }
+// Code blocks and code blocks with illustrations
+.with-illustration + p,
+.with-full-illustration + p,
+.highlight + p {
+    margin-top: $space32;
+}
+// Code blocks with illustrations and h5
 .with-illustration + h4,
 .with-illustration + h5,
 .highlight + h4,
 .highlight + h5 {
-	margin-top: $space64;
+	margin-top: $space64; // 64 - 32
 }
 p + h5 {
 	margin-top: $space64;
