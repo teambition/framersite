@@ -178,7 +178,6 @@
 	float:left;
 	clear:both;
 }
-
 .docs .sidebar,
 .docs nav.top {
 	position: fixed;
@@ -205,7 +204,7 @@
 }
 .docs a.sub-section li {
 	text-transform: none; letter-spacing: 0;
-	font-weight: 400; font-size: 16px;
+	font-weight: 400; font-size: 14px;
 	color: $sidebar-links;
 	padding: 0;
 	line-height: 1.2;
