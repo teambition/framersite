@@ -37,6 +37,12 @@
 	display: block;
 	height:0;
 }
+.docs a[name] {
+	position: relative; 
+	top: -186px;
+	display: block;
+	height:0;
+}
 .faq p,
 .faq table,
 .faq ul {
@@ -579,5 +585,11 @@ hr.hidden {
 		height:calc(100% - 128px);
 		top: 32px;
 		padding-bottom: 0;
+	}
+	.docs a[id] {
+		top: -126px;
+	}
+	.docs a[name] {
+		top: -166px;
 	}
 }
