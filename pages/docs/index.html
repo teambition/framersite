@@ -5,7 +5,7 @@
 {% block sidebar %}
 <div class="sidebar">
 	<ul>	
-		<a href="#"><li class="active">Layers</li></a>
+		<a href="#"><li>Layers</li></a>
 			<a class="sub-section" href="#"><li>Layer.x</li></a>
 			<a class="sub-section" href="#"><li>Layer.screenFrame</li></a>
 			<a class="sub-section" href="#"><li>Layer.addSubLayer</li></a>
@@ -54,11 +54,6 @@
 	</ul>
 </div> <!--sidebar-->
 {% endblock %}
-
-{% block pagetitle %} <!--Header Text-->
-<h1>CoffeeScript</h1>
-<h6 class="col-2">Learn the basics of CoffeeScript, a more legible and minimal way to write JavaScript.</h6>
-{% endblock pagetitle %}
 
 {% block body %}
 {% filter pygmentify %}

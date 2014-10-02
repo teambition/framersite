@@ -166,7 +166,6 @@
 .docs .sidebar {
 	overflow: auto;
 	height:100%;
-	padding-bottom: 228px;
 }
 // Docs section spacing
 .docs .sidebar ul {
@@ -174,23 +173,36 @@
 }
 .docs .sidebar .section li {
 	margin-bottom: $space16;
-	background: #B0B6C2;
-	color: #fff;
-	padding: 16px 8px 12px 16px;
 }
-.docs .sidebar .active {
+.docs .sidebar li {
 	box-shadow: none;
-	padding: 16px 8px 12px 16px;
+	padding: 0;
+	background: transparent;
+}
+// Docs nav
+.docs .sidebar a.sub-section li {
+	box-shadow: none;
+}
+.docs a.sub-section li {
+	text-transform: none; letter-spacing: 0;
+	font-weight: 400; font-size: 16px;
+	color: $graphite;
+	padding: 0;
+	line-height: 1.2;
 }
 .sidebar::-webkit-scrollbar {
     display: none;
 }
+// -----------------------
+
 .sidebar a div {
 	color: $sidebar-links;
 	margin-top:4px;
 }
-.sidebar .active,
-.docs .sidebar .active {
+.sidebar .active {
+	color: $blue;
+}
+.learn .sidebar .active {
 	background: $blue;
 	color: #fff;
 }
