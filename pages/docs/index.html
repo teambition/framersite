@@ -5,13 +5,18 @@
 {% block sidebar %}
 <div class="sidebar">
 	<ul>	
-		<a class="layers" href="#layers"><li class="active">Layers <div class="small">Properties, Hierarchy...</div></li></a>
-		<a class="animations" href="#animations"><li>Animations <div class="small">Curves & Events</div></li></a>
-		<a class="events" href="#events"><li>Events <div class="small">Interactions</div></li></a>
-		<a class="device" href="#device"><li>Device <div class="small">Custom DeviceView</div></li></a>
-		<a class="print" href="#print"><li>Print <div class="small">Inspect variables</div></li></a>
-		<a class="utilities" href="#utilities"><li>Utilities <div class="small">Framer Functions</div></li></a>
-		<a class="defaults" href="#defaults"><li>Defaults <div class="small">Framer.Defaults</div></li></a>
+		<a href="#"><li class="active">Layers</li></a>
+			<a class="sub-section" href="#"><li>Layer.x</li></a>
+			<a class="sub-section" href="#"><li>Layer.screenFrame</li></a>
+			<a class="sub-section" href="#"><li>Layer.addSubLayer</li></a>
+	</ul>
+	<ul>
+		<a class="section" href="#"><li>Animations</li></a>
+		<a class="section" href="#"><li>Events</li></a>
+		<a class="section" href="#"><li>Device</li></a>
+		<a class="section" href="#"><li>Print</li></a>
+		<a class="section" href="#"><li>Utilities</li></a>
+		<a class="section" href="#"><li>Defaults</li></a>
 	</ul>
 </div> <!--sidebar-->
 {% endblock %}

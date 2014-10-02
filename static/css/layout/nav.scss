@@ -88,6 +88,16 @@ nav.top input {
 	border: none;
 	line-height: 1;
 }
+
+// Docs nav
+.docs a.sub-section li {
+	text-transform: none; letter-spacing: 0;
+	font-weight: 400; font-size: 14px;
+	color: $graphite;
+	padding: 0 0 0 12px;
+	line-height: 1.5;
+	letter-spacing: 0.1px;
+}
 @media screen and (max-width: 1000px) {
 	nav.top .content-inner {
 		padding: 0 $space16;
