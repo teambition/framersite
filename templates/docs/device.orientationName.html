@@ -3,11 +3,7 @@
 Set the device orientation by name. Valid options are "portrait" and "landscape". The portrait and landscape values are the same setting the device orientation to 0 and 90 respectively.
 
 <pre lang="coffeescript">
-customDevice = new Framer.DeviceView()
-customDevice.setupContext()
-customDevice.deviceType = "iphone-5s-silver"
-
-customDevice.orientationName = "landscape"
+Framer.Device.orientationName = "landscape"
 </pre>
 
 

@@ -1,12 +1,9 @@
-###### device.contentScale(scale <span>number</span>, animate <span>boolean</span>)
-<a id="device.contentScale"></a>
+###### device.setContentScale(scale <span>number</span>, animate <span>boolean</span>)
+<a id="device.setContentScale"></a>
 Sets the scale of the content, and an optional animation (true or false). Supported scale values range from 0.5 to 1. 
 
 <pre lang="coffeescript">
-customDevice = new Framer.DeviceView()
-customDevice.setupContext()
-customDevice.deviceType = "iphone-5s-silver"
-customDevice.setContentScale(0.5, true)
+Framer.Device.setContentScale(0.5, true)
 </pre>
 
 
