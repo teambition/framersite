@@ -3,10 +3,8 @@
 The scale of the device and an optional animation (true or false). Supported scale values range from 0.5 to 1. 
 
 <pre lang="coffeescript">
-customDevice = new Framer.DeviceView()
-customDevice.setupContext()
-customDevice.deviceType = "iphone-5s-silver"
-customDevice.setDeviceScale(0.5, true)
+# Set device scale and animate
+Framer.Device.setDeviceScale(0.5, true)
 </pre>
 
 
