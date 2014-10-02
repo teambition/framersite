@@ -1,0 +1,22 @@
+###### layer.on(eventName <span>string</span>, handler <span>function</span>)
+<a id="layer.on"></a>
+Start listening for an event on this layer. For a full list of events see this overview.
+
+<pre lang="coffeescript">
+layerA = new Layer()
+
+# Modify a single style property
+layerA.style["outline"] = "1px solid red"
+
+# Modify set of style properties
+layerA.style = {
+	"outline": "1px solid red",
+	"padding": "10px"
+}
+
+# Get a specific style property
+print layerA.style["outline"]
+# Output: "1px solid red"
+
+</pre>
+

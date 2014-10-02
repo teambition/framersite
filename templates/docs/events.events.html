@@ -28,3 +28,103 @@ clickHandler = (event, layer) ->
 layerA.on(Events.Click, clickHandler)
 layerA.off(Events.Click, clickHandler)
 </pre>
+
+Framer has a global Events object with events that you can listen to. This is a full overview:
+
+<table border="0" cellspacing="0" cellpadding="0">
+	<tbody><tr>
+		<th>Name</th>
+		<th>Description</th>
+	</tr>
+
+	<tr>
+		<td colspan="2" class="group">Basic</td>
+	</tr>
+
+	<tr>
+		<td>Events.Click </td>
+		<td>Click or touch (no delay on mobile)</td>
+	</tr>
+	<tr>
+		<td>Events.TouchStart</td>
+		<td>Start a touch/click</td>
+	</tr>
+
+	<tr>
+		<td>Events.TouchMove</td>
+		<td>Touch move or mouse drag</td>
+	</tr>
+	<tr>
+		<td>Events.TouchEnd</td>
+		<td>End touch or click</td>
+	</tr>
+
+	<tr>
+		<td colspan="2" class="group">Mouse</td>
+	</tr>
+
+	<tr>
+		<td>Events.MouseOver</td>
+		<td>Hover mouse</td>
+	</tr>
+	<tr>
+		<td>Events.MouseOut</td>
+		<td>Unhover mouse</td>
+	</tr>
+
+	<tr>
+		<td colspan="2" class="group">Animation</td>
+	</tr>
+
+	<tr>
+		<td>Events.AnimationStart</td>
+		<td>Start animation</td>
+	</tr>
+	<tr>
+		<td>Events.AnimationStop</td>
+		<td>Stop animation</td>
+	</tr>
+	<tr>
+		<td>Events.AnimationEnd</td>
+		<td>End animation (reached end point)</td>
+	</tr>
+
+	<tr>
+		<td colspan="2" class="group">Dragging</td>
+	</tr>
+
+	<tr>
+		<td>Events.DragStart</td>
+		<td>Start drag</td>
+	</tr>
+	<tr>
+		<td>Events.DragMove</td>
+		<td>Move drag</td>
+	</tr>
+	<tr>
+		<td>Events.DragEnd</td>
+		<td>End drag</td>
+	</tr>
+
+	<tr>
+		<td colspan="2" class="group">Scroll</td>
+	</tr>
+
+	<tr>
+		<td>Events.Scroll</td>
+		<td>Did scroll, does not always work on mobile</td>
+	</tr>
+
+	<tr>
+		<td colspan="2" class="group">States</td>
+	</tr>
+
+	<tr>
+		<td>Events.StateWillSwitch</td>
+		<td>About to switch to a new state</td>
+	</tr>
+	<tr>
+		<td>Events.StateDidSwitch</td>
+		<td>Just switched to new state</td>
+	</tr>
+</tbody></table>
