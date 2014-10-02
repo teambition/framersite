@@ -287,7 +287,8 @@ ul.numbered li:before {
 .highlight + h5 {
 	margin-top: $space64; // 64 - 32
 }
-p + h5 {
+p + h5,
+table + h5 {
 	margin-top: $space64;
 }
 // Docs type
@@ -398,6 +399,10 @@ p + h5 {
 	}
 	.subpage h3 {
 		margin-bottom: $space16;
+	}
+	// Docs type
+	.docs h6 {
+		font-size: 20px;
 	}
 }
 @media screen and (max-width: 440px) {
