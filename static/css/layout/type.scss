@@ -282,15 +282,17 @@ ul.numbered li:before {
 	margin-top: $space80;
 }
 // Docs type
-.docs strong {
-	color: $black;
-	font-weight: bold;
-}
 .docs p.small {
-	font-size: 16px;
+	font-size: 12px;
+	color: $graphite60;
+	text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: 0.5px;
+	font-weight: bold;
+	margin-top: -8px;
 }
-.docs p.small span {
-	color: $blue;
+.docs strong {
+	font-weight: bold;
 }
 .docs h6 span {
 	color: $graphite40;
