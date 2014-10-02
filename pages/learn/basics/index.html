@@ -30,7 +30,7 @@
 {% filter markdown %}
 ### Layers 
 <a name="basics"></a>
-A layer is a rectangle that draws elements. Layers can display images, videos or text. Every layer inherits a set of default properties: a width and height of 100px and a blue background color.
+A layer is a rectangle that draws elements. Layers can display images, videos or text. Every layer inherits a set of default properties: width, height and a blue background.
 <div class="with-illustration">
 <pre lang="coffeescript">
 # Create a layer 
@@ -46,7 +46,7 @@ A layers position, size and looks are defined by it's properties. Besides being 
 <div class="with-illustration four-lines">
 <pre lang="coffeescript">
 layerB = new Layer
-	backgroundColor:"#28AFFA",
+	backgroundColor:"#2DD7AA",
 	width:60, height:60,
 	scale:1, borderRadius:3
 </pre>
@@ -93,7 +93,7 @@ layerB.y = layerA.midY  # 80
 <img class="code-illustration no-border" src="/static/images/learn/layer-positioning-midx.png" srcset="/static/images/learn/layer-positioning-midx@2x.png 2x" draggable="false">
 </div>
 
-You can **center** a layer within its superLayer, or on the screen by calling the center() function. Layers can also be exlusively centered horizontally or vertically.
+You can **center** a layer within its superLayer (see Hierarchy), or on the screen by calling the center() function. Layers can also be exlusively centered horizontally or vertically.
 <pre lang="coffeescript">
 # Center
 layerA.center()
@@ -166,7 +166,7 @@ layerA.html ="Hello"
 	<li>Layers are defined by properties</li>
 	<li>Layers have hierarchy and inherit properties from their parents</li>
 	<li>Layers can be transformed, scaled, masked, rotated and more </li>
-	<li>Layers can contain images, videos and html or text </li>
+	<li>Layers can contain images, videos and text</li>
 </ul>
 </section> <!--summary-->
 

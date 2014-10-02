@@ -1,0 +1,10 @@
+###### layer.invert <span>number</span>
+<a id="layer.invert"></a>
+
+Inverts the color of a layer. Invert is defined with a number between 0 and 100. The invert property inverts all colors and brightness values of a layer. Setting invert to 100 on a colored layer replaces all hues with their complementary colors. The default value is 0.
+
+<pre lang="coffeescript">
+layerA = new Layer()
+layerA.invert = 100
+</pre>
+
