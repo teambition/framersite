@@ -4,15 +4,13 @@
 
 {% block sidebar %}
 <div class="sidebar">
-	<ul>	
-		<a class="section" href="#events.events"><li>Events</li></a>
-		<a class="sub-section" href="#events.events"><li>Events Overview</li></a>
-		<a class="sub-section" href="#events.touchEvent"><li>Events.touchEvent</li></a>
-		<a class="sub-section" href="#events.wrap"><li>Events.wrap</li></a>
+	<ul>
+		<a class="section" href="#print"><li>Print</li></a>
+			<a class="sub-section" href="#print"><li>print()</li></a>
 	</ul>
 	<ul>
-		<a class="section" href="#"><li>Print</li></a>
-			<a class="sub-section" href="#events.events"><li>print()</li></a>
+		<a class="section" href="#"><li>Defaults</li></a>
+			<a class="sub-section" href="#"><li>Defaults</li></a>
 	</ul>
 	<ul>	
 		<a class="section" href="#layers"><li>Layers</li></a>
@@ -117,6 +115,12 @@
 			<a class="sub-section" href="#layer.draggable.speedY"><li>layer.draggable.speedY</li></a>
 			<a class="sub-section" href="#layer.draggable.calculateVelocity"><li>layer.draggable.calculateVelocity</li></a>
 	</ul>
+	<ul>	
+		<a class="section" href="#events.events"><li>Events</li></a>
+		<a class="sub-section" href="#events.events"><li>Events Overview</li></a>
+		<a class="sub-section" href="#events.touchEvent"><li>Events.touchEvent</li></a>
+		<a class="sub-section" href="#events.wrap"><li>Events.wrap</li></a>
+	</ul>
 	<ul>
 		<a class="section" href="#animation.animation.html"><li>Animation</li></a>
 			<a class="sub-section" href="#animation.start.html"><li>layer</li></a>
@@ -146,15 +150,14 @@
 			<a class="sub-section" href="#device.rotateLeft"><li>rotateLeft</li></a>
 			<a class="sub-section" href="#device.rotateRight"><li>rotateRight</li></a>
 	</ul>
-	<ul>
-		<a class="section" href="#"><li>Defaults</li></a>
-	</ul>
 </div> <!--sidebar-->
 {% endblock %}
 
 {% block body %}
 {% filter pygmentify %}
 {% filter markdown %}
+
+{% include 'docs/print.html' %}
 
 ### Layers
 
@@ -213,8 +216,6 @@
 {% include 'docs/layer.removeSubLayer.html' %}
 {% include 'docs/layer.siblingLayers.html' %}
 
-<!-- TODO -->
-
 {% include 'docs/layer.index.html' %}
 {% include 'docs/layer.placeBefore.html' %}
 {% include 'docs/layer.placeBehind.html' %}
@@ -247,12 +248,10 @@
 {% include 'docs/layer.shadowSpread.html' %}
 {% include 'docs/layer.shadowColor.html' %}
 {% include 'docs/layer.borderRadius.html' %}
-
 <!-- TO-DO
 {% include 'docs/layer.borderColor.html' %}
 {% include 'docs/layer.borderWidth.html' %}
 -->
-
 {% include 'docs/layer.animate.html' %}
 {% include 'docs/layer.animateStop.html' %}
 {% include 'docs/layer.animations.html' %}
@@ -300,11 +299,11 @@
 
 <!-- 
 {% include 'docs/utils.mapRange.html' %}
-
 {% include 'docs/utils.average.html' %}
 {% include 'docs/utils.mean.html' %}
 {% include 'docs/utils.median.html' %}
 -->
+
 {% include 'docs/utils.round.html' %}
 
 {% include 'docs/utils.isWebKit.html' %}
@@ -338,4 +337,4 @@
 
 {% endfilter %}	
 {% endfilter %}	
-{% endblock body%}
+{% endblock body %}
