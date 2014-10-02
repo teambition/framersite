@@ -1,19 +1,15 @@
-###### Utils.modulate(value <span>number</span>, a <span>array</span>, b <span>array</span>, limit <span>boolean</span>)
-<a id="utils.modulate"></a>
+###### Utils.round(value <span>number</span>, decimals <span>number</span>)
+<a id="utils.round"></a>
 <p class="small">
 	<strong>Returns:</strong> Number<br>
 </p>
 
-Translates a number between two ranges. The easiest way to think about is to convert from miles to kilometers or kelvin to celcius. When you enable limit it will never return a value outside of the b range. The default value for limit is false.
+Rounds a number.
+
 <pre lang="coffeescript">
 
-# Map from a number from 0, 1 -> 0, 100
-print Utils.modulate(0,   [0, 1], [0, 100]) # Output 0
-print Utils.modulate(0.5, [0, 1], [0, 100]) # Output 50
-print Utils.modulate(1,   [0, 1], [0, 100]) # Output 100
-
-# Limit the output
-print Utils.modulate(2, [0, 1], [0, 100], false) # Output 200
-print Utils.modulate(2, [0, 1], [0, 100], true)  # Output 100
+print Utils.round(100.12345, 0]) # Output 100
+print Utils.round(100.12345, 2]) # Output 100.12
+print Utils.round(100.12345, 4]) # Output 100.1234
 
 </pre>
