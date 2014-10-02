@@ -1,0 +1,19 @@
+###### Utils.interval(interval <span>number</span>, handler <span>function</span>)
+<a id="utils.interval"></a>
+<p class="small">
+	<strong>Returns:</strong> Function<br>
+</p>
+
+Creates a function that will delay the calling of handler until after x seconds have elapsed since the last time it was invoked. Alias to <a href="http://lodash.com/docs#debounce">_.debounce</a>.
+
+<pre lang="coffeescript">
+
+handler = Utils.debounce 0.1, ->
+	print "hello"
+
+
+for i in [1..100]
+	handler()
+
+# Output: "hello" only once
+</pre>
