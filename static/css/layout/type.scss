@@ -279,7 +279,7 @@ ul.numbered li:before {
 .with-illustration + h5,
 .highlight + h4,
 .highlight + h5 {
-	margin-top: $space64;
+	margin-top: $space64; // 64 - 32 
 }
 p + h5 {
 	margin-top: $space64;
