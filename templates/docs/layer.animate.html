@@ -1,0 +1,153 @@
+###### layer.animate(options <span>object</span>)
+<a id="layer.animate"></a>
+<p class="small">
+	<strong>Returns:</strong> Animation object<br>
+</p>
+
+Start animating this layer. The animation options describe the properties it needs to animate to and how to animate.
+
+Running this method will create a new Animation object with the options and return it. You can use the Animation object to for example stop or reverse the animation.
+
+The animation will tween between a start and end value with a curve. The start value will be determined the moment the animation starts and the end value will be defined in properties. Only properties pass into the options will be animated by the animation. If the end values are equal to the current value, they won't animate.
+
+You can have multiple animations target the same layer as long as they don't target the same properties. If you start two animations both targeting x for the same layer, the second one will fail.
+
+Only numeric layer properties can be animated. The full list is x, y, z, width, height, opacity, rotation, rotationX, rotationY, rotationZ, scale scaleX, scaleY, scaleZ, originX, originY, scrollX, scrollY, borderRadius, borderWidth, shadowX, shadowY, shadowBlur, shadowSpread, blur, brightness, saturate, hueRotate, contrast, invert, grayscale, sepia. You can also animate the dynamic properties minX, midX, maxX, minY, midY and maxY.
+
+Most properties can benefit from gpu accelerated drawing and you can animate many of them without hurting your frame rate. But some properties need to involve the CPU to animate and are therefore more expensive to render. The full list is width, height, scrollX, scrollY,borderRadius, borderWidth.
+
+To listen to animation events like start, stop and end please see the <a href="#animation.events">animation events</a>. Animation events will be passed onto the animated layer as well with the animation as the first argument.
+
+<!-- Animation properties can also be defined as a function and only be evaluated when the animation starts.
+ -->
+
+<table>
+	<thead>
+		<tr>
+			<th>Options</th>
+			<th>Value</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>properties (required)</td>
+			<td>Object</td>
+			<td>The target values for the animated properties</td>
+		</tr>
+		 <tr>
+			<td>curve</td>
+			<td>String</td>
+			<td>
+				Used curve for the animation. For a full list see <a href="#animation.curve-options">curve options</a>. You can also combine the curve with its options as a shorthand: "spring(100,10,0)". The default curve is linear.
+<!-- 				<ul>
+					<li>"linear"</li>
+					<li>"bezier-curve"</li>
+					<li>"spring-rk4" Runge-Kutta spring</li>
+					<li>"spring-dho" Damping harmonic oscillator spring</li>
+					<li>"spring" same as "spring-rk4"</li>
+				</ul> -->
+				
+			</td>
+		</tr>
+		 <tr>
+			<td>curveOptions</td>
+			<td>Object</td>
+			<td>
+				Options for the used curve. For a full list see <a href="#animation.curve-options">curve options</a>.
+<!-- 				<ul>
+					<li>bezier-curve: "ease-in", "ease-out", "ease-in-out", [0, 1, 0, 1]</li>
+					<li>spring-rk4: friction, tension, velocity, tolerance</li>
+					<li>spring-dho: stiffness, damping, mass, velocity, tolerance</li>
+				</ul> -->
+			</td>
+		</tr>
+		<tr>
+			<td>time</td>
+			<td>Number</td>
+			<td>The duration in seconds. Ignored for spring values. Default value is 1 second.</td>
+		</tr>
+		<tr>
+			<td>delay (optional)</td>
+			<td>Number</td>
+			<td>The delay before the animation starts in seconds.</td>
+		</tr>
+		<tr>
+			<td>repeat (optional)</td>
+			<td>Number</td>
+			<td>The number of times this animation needs to repeat.</td>
+		</tr>
+	</tbody>
+</table>
+
+
+
+<pre lang="coffeescript">
+layerA = new Layer()
+
+# Animate the layer to the right
+layerA.animate({
+	properties: {x:100}
+})
+
+# Animate multiple properties
+layerA.animate({
+	properties: {x:100, opacity:0.5}
+})
+
+# Animate the layer to the right in 5 seconds
+layerA.animate({
+	properties: {x:100},
+	time: 5
+})
+
+# Repeat an animation 5 times
+layerA.animate({
+	properties: {x:100},
+	repeat: 5
+})
+
+# Start an animation after 5 seconds
+layerA.animate({
+	properties: {x:100},
+	delay: 5
+})
+
+# Animate the layer with a spring curve
+layerA.animate({
+	properties: {x:100}
+	curve: "spring(100, 10, 0)"
+})
+
+# Animate the layer with a bezier curve
+layerA.animate({
+	properties: {x:100}
+	curve: "ease-in-out"
+})
+
+# Animate the layer with a custom bezier curve
+# See: http://easings.net/#easeInOutQuint
+layerA.animate({
+	properties: {x:100}
+	curve: "cubic-bezier(0.86, 0, 0.07, 1)"
+})
+
+# Stop an animation immediately
+animationA = layerA.animate({
+	properties: {x:100}
+	curve: "spring(100, 10, 0)"
+})
+
+animationA.stop()
+
+# Listen for an animation to start, stop or end
+layerA.on Events.AnimationStart, -> print "Animation started"
+layerA.on Events.AnimationStop, -> print "Animation stopped"
+layerA.on Events.AnimationEnd, -> print "Animation ended"
+
+layerA.animate({
+	properties: {x:100}
+})
+
+</pre>
+
