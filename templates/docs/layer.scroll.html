@@ -1,0 +1,14 @@
+###### layer.scroll <span>boolean</span>
+<a id="layer.scroll"></a>
+Makes a layer scrollable. A layer can only be scrolled if it has a subLayer that exceeds its height or width.
+
+<pre lang="coffeescript">
+layerA = new Layer({height:100})
+
+# The subLayer
+layerB = new Layer({height:200, superLayer:layerA})
+
+# Enable scrolling on the superLayer
+layerA.scroll = true
+</pre>
+

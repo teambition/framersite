@@ -1,0 +1,17 @@
+###### layer.scrollY <span>number</span>
+<a id="layer.scrollY"></a>
+The vertical scrolling distance of a scrollable Layer.
+
+<pre lang="coffeescript">
+layerA = new Layer({height:100})
+
+# The subLayer
+layerB = new Layer({height:200, superLayer:layerA})
+
+# Enable scrolling on the superLayer
+layerA.scroll = true
+
+layerA.on Events.Scroll, ->
+	print layerA.scrollY
+</pre>
+

@@ -1,0 +1,17 @@
+###### layer.scrollX <span>number</span>
+<a id="layer.scrollX"></a>
+The horizontal scrolling distance of a scrollable Layer.
+
+<pre lang="coffeescript">
+layerA = new Layer({width:100})
+
+# The subLayer
+layerB = new Layer({width:200, superLayer:layerA})
+
+# Enable scrolling on the superLayer
+layerA.scroll = true
+
+layerA.on Events.Scroll, ->
+	print layerA.scrollX
+</pre>
+

@@ -1,0 +1,14 @@
+###### layer.scrollHorizontal <span>boolean</span>
+<a id="layer.scrollHorizontal"></a>
+Makes a layer horizontally scrollable.
+
+<pre lang="coffeescript">
+layerA = new Layer({width:100})
+
+# The subLayer
+layerB = new Layer({width:200, superLayer:layerA})
+
+# Enable horizontal scrolling on the superLayer
+layerA.scrollHorizontal = true
+</pre>
+
