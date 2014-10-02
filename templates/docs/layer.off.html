@@ -1,0 +1,15 @@
+###### layer.off(eventName <span>string</span>, handler <span>function</span>)
+<a id="layer.off"></a>
+Stop listening for an event on this layer. For a full list of events see <a href="#events.table">this overview</a>.
+
+<pre lang="coffeescript">
+layerA = new Layer()
+layerA.name = "Layer A"
+
+clickHandler = (event, layer) ->
+    print "This layer was clicked", layer.name
+
+layerA.on(Events.Click, clickHandler)
+layerA.off(Events.Click, clickHandler)
+</pre>
+
