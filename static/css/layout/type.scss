@@ -281,6 +281,9 @@ ul.numbered li:before {
 .highlight + h5 {
 	margin-top: $space80;
 }
+p + h5 {
+	margin-top: $space80;
+}
 // Docs type
 .docs p.small {
 	font-size: 12px;

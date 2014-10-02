@@ -26,8 +26,6 @@
 States allow you to define different appearance options for a layer.
 When creating a new layer, the set of properties you define become the default state. A layer can have multiple states, each with a different set properties. States can then be cycled through, with or without animation.
 
----
-
 ##### Example
 The default state of layerA contains the opacity property, set to 1. Next, a new state for layerA is defined, titled "fade", with an opacity set to 0.
 
@@ -75,8 +73,6 @@ layerA.on Events.Click, ->
 </div>
 
 Just like layer animations, the animation curve and timing of state animations can be defined. The animationOptions of all states of a layer can be defined at once, as seen in the example above.
-
----
 
 ##### Editing States
 You can remove and override previously defined states. To override states, simply add a new state with the same name.
