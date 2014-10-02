@@ -71,22 +71,16 @@
 {% block body %}
 {% filter pygmentify %}
 {% filter markdown %}
-###### Layer.x
-The x property of a layer defines its x position.
 
-<pre lang="coffeescript">
-layerA = new Layer
-layer.x = 500
-</pre>
-
-<p class="small">
-<strong>Class:</strong> Layer <br>
-<strong>Type:</strong> property: number
-</p>
-
----
-
-###### layer.screenFrame
+{% include 'docs/layer.id.html' %}
+{% include 'docs/layer.name.html' %}
+{% include 'docs/layer.x.html' %}
+{% include 'docs/layer.y.html' %}
+{% include 'docs/layer.minX.html' %}
+{% include 'docs/layer.midX.html' %}
+{% include 'docs/layer.maxX.html' %}
+<!-- 
+###### layer.screenFrame:object
 
 The absolute position for this layer on the screen.
 
@@ -136,6 +130,71 @@ layerA.addSubLayer(layerB)
 
 ---
 
+###### layer.subLayersByName(name[string])
+
+Get sub layer that are named name.
+
+<pre lang="coffeescript">
+layerA = new Layer
+layerB = new Layer name:"Navigation", superLayer:layerA
+layerC = new Layer name:"Button", superLayer:layerA
+
+print layerA.subLayersByName("Navigation")
+# [<LayerB Object>]
+
+</pre>
+
+<p class="small">
+<strong>Type:</strong> function <br>
+<strong>Return:</strong> Array with Layer objects <br>
+</p>
+
+---
+
+---
+
+###### layer.animate(options:object | array)
+
+Animate this layer.
+
+<table>
+  <thead>
+    <tr>
+      <th>options</th>
+      <th>Value</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>curve (optional)</td>
+      <td>String</td>
+      <td>Options for animation</td>
+    </tr>
+    <tr>
+      <td>time (optional)</td>
+      <td>Number</td>
+      <td>Duration</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<pre lang="coffeescript">
+layerA = new Layer
+layerB = new Layer name:"Navigation", superLayer:layerA
+layerC = new Layer name:"Button", superLayer:layerA
+
+print layerA.subLayersByName("Navigation")
+# [<LayerB Object>]
+
+</pre>
+
+<p class="small">
+<strong>Type:</strong> function <br>
+<strong>Return:</strong> Array with Layer objects <br>
+</p>
+
 ###### layer.draggable.calculateVelocity()
 
 The current x and y velocity for the dragged layer. The velocity is calculated over the average 0.1 second by default and expressed in pixels per second.
@@ -157,7 +216,7 @@ print layerA.calculateVelocity()
 <table>
   <thead>
     <tr>
-      <th>Property</th>
+      <th>Return Property</th>
       <th>Value</th>
       <th>Description</th>
     </tr>
@@ -176,7 +235,7 @@ print layerA.calculateVelocity()
   </tbody>
 </table>
 
----
+--- -->
 
 
 {% endfilter %}	
