@@ -1,24 +1,17 @@
 {% extends "docs.html" %}
-{% block title %}Framer - FAQ{% endblock %}
+{% block title %}Framer - FAQs{% endblock %}
 
 {% block sidebar %}
 <div class="sidebar">
-	<ul>	
-		<a class="layers" href="#layers"><li class="active">Compatibility <div class="small">Browsers & Platforms</div></li></a>
-		<a class="animations" href="#animations"><li>Debugging <div class="small">Debugging</div></li></a>
-		<a class="events" href="#events"><li>Questions <div class="small">Questions</div></li></a>
+	<ul>
+		<a class="section" href="/"><li>FAQs</li></a>
+		<a class="sub-section" href="#compatibility"><li>Compatibility</li></a>
+		<a class="sub-section" href="#debugging"><li>Debugging</li></a>
+		<a class="sub-section" href="#help"><li>Help</li></a>
 	</ul>
 </div> <!--sidebar-->
 {% endblock %}
 
-{% block pageheader %}
-<header class="page-header">
-	<div class="content-inner">
-		<h1>FAQ</h1>
-		<h2 class="col-2">Frequently asked questions</h2>
-	</div>
-</header>
-{% endblock pageheader %}
 
 {% block body %}
 {% filter markdown %}
@@ -78,9 +71,7 @@ Since Framer is a prototyping toolkit, extensive browser compability is not a pr
 
 <!-- Debugging -->
 <a name="debugging"></a>
-
-##### Debugging
-
+### Debugging
 Because Framer runs in the browser you can use all the <a href="https://developers.google.com/chrome-developer-tools/" target="_blank">debugging tools</a>, like the console, timeline, profiler and debugger. Framer will alert you when a Javascript error occurred.
 
 <table class="last">
@@ -96,8 +87,6 @@ Because Framer runs in the browser you can use all the <a href="https://develope
 </table>
 
 <hr>
-
-<!-- Questions -->
 
 <a name="questions"></a>
 ### Questions
@@ -125,4 +114,4 @@ Special thanks goes out to <a href="https://twitter.com/joshpuckett" target="_bl
 If we missed you on this list, we thank you nevertheless.
 
 {% endfilter %}	
-{% endblock %}
+{% endblock body %}
