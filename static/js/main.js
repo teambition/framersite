@@ -9,11 +9,10 @@ $(document).ready(function() {
 			$(this).toggleClass("is-active");
 	});
 
-	var docsSidebar, learnSidebar, topNav, exampleBlock, exampleDevices;
-	docsSidebar = $('.subpage.docs .sidebar');
+	var learnSidebar, topNav, exampleBlock, exampleDevices;
 	learnSidebar = $('.subpage.learn .sidebar');
 	topNavHome = $('.home nav.top');
-	topNavPages = $('.subpage nav.top');
+	topNavPages = $('.learn nav.top');
 	exampleBlock = $('.examples');
 	exampleDevices = $('.device-left, .device-right');
 
@@ -30,12 +29,6 @@ $(document).ready(function() {
 	$(window).scroll(function() {
 		var scrollPos = $(window).scrollTop();
 		// Sidebar Sticky ----------------
-		if ($(window).scrollTop() > 420) {
-			$(docsSidebar).addClass('sticky');
-		} else {
-			$(docsSidebar).removeClass('sticky');
-		}
-
 		if ($(window).scrollTop() > 646) {
 			$(learnSidebar).addClass('sticky');
 		} else {

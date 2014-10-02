@@ -168,6 +168,10 @@
 	height:100%;
 	padding-bottom: 160px;
 }
+.docs .sidebar,
+.docs nav.top {
+	position: fixed;
+}
 .docs footer {
 	display: none;
 }
@@ -280,6 +284,9 @@
 	float: left;
 	margin-right: 60px;
 }
+.text-with-inline-image p {
+	max-width: 660px; // Fix float bu
+}
 hr.hidden {
 	border-bottom-color: #fff;
 	margin: $space24 auto;
@@ -288,6 +295,7 @@ hr.hidden {
 	margin-right:$space40;
 	position: relative;
 	top:4px;
+	margin-bottom: 20px;
 }
 .align-right img + p,
 .align-right img + ol,
@@ -543,6 +551,9 @@ hr.hidden {
 		background: transparent;
 	}
 	.animation-curves .curve {
+		display: none;
+	}
+	.learn .icon-mirror {
 		display: none;
 	}
 }

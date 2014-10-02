@@ -10,6 +10,9 @@ nav.top {
 .home nav.top {
 	position: absolute;
 }
+.docs nav.top {
+	z-index: 100;
+}
 nav.top ul {
 	max-width: 1020px;
 	margin:0 auto;

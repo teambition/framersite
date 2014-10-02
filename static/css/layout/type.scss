@@ -279,7 +279,10 @@ ul.numbered li:before {
 .with-illustration + h5,
 .highlight + h4,
 .highlight + h5 {
-	margin-top: $space80;
+	margin-top: $space64;
+}
+p + h5 {
+	margin-top: $space64;
 }
 // Docs type
 .docs p.small {
