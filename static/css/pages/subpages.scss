@@ -167,10 +167,10 @@
 .docs .sidebar {
 	overflow: auto;
 	height:100%;
-	z-index: 30;
 	top:64px;
 	margin-top:64px;
 	padding-bottom: 128px;
+	max-width: 223px;
 }
 .docs .sidebar a {
 	display: inline-block;
@@ -210,11 +210,11 @@
 }
 .sidebar::-webkit-scrollbar {
     background: #fff;
-	width: 8px;
+	width: 6px;
 }
 .sidebar::-webkit-scrollbar-thumb {
 	background: #EEF2F4;
-	border-radius: 8px;
+	border-radius: 6px;
 }
 .sidebar::-webkit-scrollbar-track {
 	border-radius: 8px;
