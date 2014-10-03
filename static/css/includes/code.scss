@@ -75,20 +75,21 @@ pre, code {
 }
 
 // Specifics
-.code-illustration-states {
-    position: absolute;
-    top:0; right:0;
-    max-width: 274px; height: auto;
-}
-.code-illustration-dragging {
-    position: absolute;
-    top:0; right:0;
-    max-width: 300px; height: auto;
-}
+.code-illustration-states,
+.code-illustration-dragging,
 .code-illustration-scrolling {
     position: absolute;
-    top:0; right:0;
-    max-width: 232px; height: auto;
+    top: 0;
+    right: 0;
+}
+.code-illustration-states {
+    max-width: 274px;
+}
+.code-illustration-dragging {
+    max-width: 300px;
+}
+.code-illustration-scrolling {
+    max-width: 232px; 
 }
 // Inline code
 .inline {
@@ -181,14 +182,16 @@ img.curve {
     .with-full-illustration {
         text-align: center;
     }
-    .code-illustration {
+    .code-illustration,
+    .code-illustration-states,
+    .code-illustration-dragging,
+    .code-illustration-scrolling {
         position: relative;
     }
     .basics .code-illustration {
         position: absolute;
     }
     .code-illustration-states {
-        position: relative;
         max-width: 274px; 
     }
     .with-illustration pre,
