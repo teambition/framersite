@@ -45,10 +45,6 @@
 .header .btn {
 	margin-bottom: $space16;
 }
-// Block Spacing
-// .framer-overview {
-// 	margin-bottom: $space64;
-// }
 .screenshot-copy {
 	margin-top: $space48;
 }
@@ -62,8 +58,9 @@
 .feature-summary {
 	margin-bottom: $space80;
 }
-// Screenshot Copy
-.screenshot-copy h4 {
+// Screenshot Copyand examples copy
+.screenshot-copy h4,
+.examples-caption h4 {
 	margin-bottom: $space8;
 	line-height: 1.8;
 }
