@@ -75,20 +75,21 @@ pre, code {
 }
 
 // Specifics
-.code-illustration-states {
-    position: absolute;
-    top:0; right:0;
-    max-width: 274px; height: auto;
-}
-.code-illustration-dragging {
-    position: absolute;
-    top:0; right:0;
-    max-width: 300px; height: auto;
-}
+.code-illustration-states,
+.code-illustration-dragging,
 .code-illustration-scrolling {
     position: absolute;
-    top:0; right:0;
-    max-width: 232px; height: auto;
+    top: 0;
+    right: 0;
+}
+.code-illustration-states {
+    max-width: 274px;
+}
+.code-illustration-dragging {
+    max-width: 300px;
+}
+.code-illustration-scrolling {
+    max-width: 232px; 
 }
 // Inline code
 .inline {
@@ -181,14 +182,16 @@ img.curve {
     .with-full-illustration {
         text-align: center;
     }
-    .code-illustration {
+    .code-illustration,
+    .code-illustration-states,
+    .code-illustration-dragging,
+    .code-illustration-scrolling {
         position: relative;
     }
     .basics .code-illustration {
         position: absolute;
     }
     .code-illustration-states {
-        position: relative;
         max-width: 274px; 
     }
     .with-illustration pre,
@@ -212,9 +215,26 @@ img.curve {
     pre {
         box-shadow: inset 0 0 0 1px #E4EBF2;
     }
+    // Remove min-width for mobile
+    .dragging pre,
+    .dragging-events pre {
+        min-height: initial;
+    }
+     // Docs pre space
+    .docs p + h6,
+    .docs p + h3,
+    .docs table + h6,
+    .docs table + h3,
+    .docs .highlight + h3,
+    .docs .highlight + h6{
+        margin-top: $space48;
+    }
+    .docs .highlight + h5 {
+        margin-top: $space48;
+    }
 }
 @media screen and (max-width: 440px) {
-    .code-illustration {
+    .basics .code-illustration {
         display: none;
     }
     pre ol li {

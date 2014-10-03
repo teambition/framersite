@@ -26,6 +26,7 @@
 A layer can be made scrollable as long as it contains a subLayer that exceeds its height or width. 
 
 <div class="with-illustration">
+<figure><img class="code-illustration no-border" src="/static/images/learn/scrolling.gif" srcset="/static/images/learn/scrolling@2x.gif 2x" draggable="false"></figure>
 <pre lang="coffeescript">
 # The superLayer
 layerA = new Layer 
@@ -38,7 +39,6 @@ layerB = new Layer
 # Enable scrolling on the superLayer
 layerA.scroll = true
 </pre>
-<img class="code-illustration-scrolling" src="/static/images/learn/scrolling.gif" srcset="/static/images/learn/scrolling@2x.gif 2x" draggable="false">
 </div>
 
 A layer can be made only horizontally or vertically scrollable.
@@ -47,7 +47,7 @@ layerA.scrollHorizontal = true
 layerA.scrollVertical = true
 </pre>
 
-Framer also contains a scrolling event. Within the scroll event, the positions of the scrollable layer can be retrieved. Layer animations can be triggered based on these positions with <a href="http://localhost:8857/learn/coffeescript/loops-and-conditionals/">comparators</a>. 
+Framer also contains a scrolling event. Within the scroll event, the positions of the scrollable layer can be retrieved. Layer animations can be triggered based on these positions with <a href="/learn/coffeescript/loops-and-conditionals/#conditionals">conditionals</a>. 
 
 <pre lang="coffeescript">
 # Scroll Event

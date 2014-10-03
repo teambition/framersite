@@ -25,6 +25,7 @@
 To create a draggable layer, simply set draggable.enabled to true. You can also specify dragging speed. This is especially useful if you'd like a layer to be only horizontally or vertically draggable: simply set the speedX or speedY to 0. Setting the value higher than 1 creates accelerated dragging.
 
 <div class="with-full-illustration dragging">
+<figure><img class="code-illustration-dragging" src="/static/images/learn/dragging.gif" srcset="/static/images/learn/dragging@2x.gif 2x"></figure>
 <pre lang="coffeescript">
 # Make the layer draggable 
 layerA.draggable.enabled = true
@@ -35,13 +36,12 @@ layerA.draggable.speedX = 1
 # Prevent vertical dragging
 layerA.draggable.speedY = 0
 </pre>
-
-<figure><img class="code-illustration-dragging" src="/static/images/learn/dragging.gif" srcset="/static/images/learn/dragging@2x.gif 2x"></figure>
 </div>
 
 Framer has three dragging events that you can listen to: DragStart, DragMove and DragEnd.
 
 <div class="with-illustration dragging-events">
+<figure><img class="code-illustration no-border" src="/static/images/learn/dragging-events.png" srcset="/static/images/learn/dragging-events@2x.png 2x"></figure>
 <pre lang="coffeescript">
 # Start dragging
 layerA.on Events.DragStart, -> ...
@@ -52,7 +52,6 @@ layerA.on Events.DragMove, -> ...
 # After dragging    
 layerA.on Events.DragEnd, -> ...
 </pre>
-<figure><img class="code-illustration no-border" src="/static/images/learn/dragging-events.png" srcset="/static/images/learn/dragging-events@2x.png 2x"></figure>
 </div>
 
 ##### Example: Snap To Origin
@@ -62,6 +61,7 @@ First, the current X and Y positions of the layers are stored in variables.
 When we let go of the layer, the DragEnd event fires and the layers snaps back to its original position.
 
 <div class="with-illustration dragging-events">
+<figure><img class="code-illustration no-border" src="/static/images/learn/dragging-snap.gif" srcset="/static/images/learn/dragging-snap@2x.gif 2x"></figure>
 <pre lang="coffeescript">
 originX = layerA.x
 originY = layerA.y
@@ -73,7 +73,6 @@ layerA.on Events.DragEnd, ->
         curve: "spring(600, 30, 0)"
 
 </pre>
-<figure><img class="code-illustration no-border" src="/static/images/learn/dragging-snap.gif" srcset="/static/images/learn/dragging-snap@2x.gif 2x"></figure>
 </div>
 
 <section class="summary">
