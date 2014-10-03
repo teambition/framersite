@@ -1,8 +1,19 @@
-###### layer.height <span>number</span>
-<a id="layer.height"></a>
-The height of the layer in pixels.
+###### layer.ignoreEvents <span>boolean</span>
+<a id="layer.ignoreEvents"></a>
+Sets wether the layer responds to any user events like click or touch. When disabled, no user events on the layer will be emitted.
+
+The default value for this is true because performance is better when layers don't have to account for events. Framer automatically disables it when you add an event listener.
 
 <pre lang="coffeescript">
 layerA = new Layer()
-layerA.height = 500
+
+layerA.on Events.Click, ->
+	print "Click!"
+
+# Now it won't respond to a click
+layerA.ignoreEvents = true
+
+# Now it will
+layerA.ignoreEvents = false
+
 </pre>
