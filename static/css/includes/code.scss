@@ -220,6 +220,18 @@ img.curve {
     .dragging-events pre {
         min-height: initial;
     }
+     // Docs pre space
+    .docs p + h6,
+    .docs p + h3,
+    .docs table + h6,
+    .docs table + h3,
+    .docs .highlight + h3,
+    .docs .highlight + h6{
+        margin-top: $space48;
+    }
+    .docs .highlight + h5 {
+        margin-top: $space48;
+    }
 }
 @media screen and (max-width: 440px) {
     .basics .code-illustration {

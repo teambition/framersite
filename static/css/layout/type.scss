@@ -424,7 +424,14 @@ table + h5 {
 		font-size: 14px;
 	}
 	.summary ul li:before {
-	margin-right: $space8;
-	top: 3px;
+		margin-right: $space8;
+		top: 3px;
+	}
+	// Docs type
+	.docs h6 {
+		font-size: 18px;
+	}
+	.docs p.small {
+		font-size: 10px;
 	}
 }
