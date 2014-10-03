@@ -1,4 +1,3 @@
-
 // Page header 
 .page-header {
 	background: $header;
@@ -228,7 +227,6 @@
 	box-shadow: inset 0 0 0 1px $separator;
 }
 // -----------------------
-
 .sidebar a div {
 	color: $sidebar-links;
 	margin-top:4px;
@@ -342,6 +340,12 @@ hr.hidden {
 .animation-curves .curve {
 	width:210px; height: 124px;
 	border:1px solid #E4EBF2;
+}
+// Temp styles for drib, dont forget to remove
+.animation-curves .col-4 {
+	margin-right:20px;
+	margin-top:200px;
+	margin-bottom: 200px;
 }
 // Screenshots
 .ss-mirror-iphone {
