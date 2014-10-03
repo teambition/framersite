@@ -423,4 +423,8 @@ table + h5 {
 	.summary ul li {
 		font-size: 14px;
 	}
+	.summary ul li:before {
+	margin-right: $space8;
+	top: 3px;
+	}
 }

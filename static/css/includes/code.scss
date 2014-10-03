@@ -212,6 +212,10 @@ img.curve {
     pre {
         box-shadow: inset 0 0 0 1px #E4EBF2;
     }
+    // Remove min-width for mobile
+    .dragging-events pre {
+        min-height: initial;
+    }
 }
 @media screen and (max-width: 440px) {
     .basics .code-illustration {
