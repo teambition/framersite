@@ -204,7 +204,7 @@ ul.numbered li {
     color: $text;
 }
 ul.numbered li strong {
-	display: inline-block;
+	color: $black;
 }
 ul.numbered li+li {
 	margin-top: 4px;
@@ -228,6 +228,7 @@ ul.numbered li:before {
     border-radius: 50%;
     line-height: 19px;
     text-align: center;
+    top:-1px;
 }
 .content-inner li ul li {
 	list-style-type: none;
