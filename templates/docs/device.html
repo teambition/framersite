@@ -10,4 +10,16 @@ Framer.Device.contentScale = 0.5
 Framer.Device.orientation = 90
 </pre>
 
+Underneath, the Device is just a collection of layers. That makes it easy to customize or add behaviour. You can find the entire source on Github. Here are some common examples:
+
+<pre lang="coffeescript">
+# Set a blurred background image
+Framer.Device.background.image = "photo.jpg"
+Framer.Device.background.blur = 10
+
+# Get the screen dimensions for the current device
+print Framer.Device.screen.width  # Output: 640
+print Framer.Device.screen.height # Output: 480
+</pre>
+
 Please note that the scale-to-fit view can render your content off-pixel to retain your screen ratio. Your content will always snap-to-pixel when viewed at 50%, 100% etc. If your browser supports it, device images are compressed with JPEG2000 to reduce image size.
