@@ -1,0 +1,18 @@
+###### layer.perspective <span>number</span>
+<a id="layer.perspective"></a>
+Sets the perspective for child layers. Perspective gives depth to 3d properties like rotationX, rotationY. The rotation is set from 1 to Infinity where 1 is a huge perspective. Setting perspective to 0 gives you an isometric effect. Perspective is disabled by default.
+
+Because of the way Safari renders, the perspective property can disable retina quality rendering. I think this is a bug and will be solved at some point. When used with rotation and/or animation you don't notice this too much though.
+
+<pre lang="coffeescript">
+layerA = new Layer()
+
+# Set the perspective for all sub layers
+layerA.perspective = 100
+
+layerB = new Layer({superLayer:layerA})
+layerB.rotationY = 30
+layerB.rotationX = 30
+
+</pre>
+

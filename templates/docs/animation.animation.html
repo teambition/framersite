@@ -5,7 +5,7 @@ An animation will tween between a start and end value with a curve. The start va
 
 You can have multiple animations target the same layer as long as they don't target the same properties. If you start two animations both targeting x for the same layer, the second one will fail.
 
-Only numeric layer properties can be animated. The full list is x, y, z, width, height, opacity, rotation, rotationX, rotationY, rotationZ, scale scaleX, scaleY, scaleZ, originX, originY, scrollX, scrollY, borderRadius, borderWidth, shadowX, shadowY, shadowBlur, shadowSpread, blur, brightness, saturate, hueRotate, contrast, invert, grayscale, sepia. You can also animate the dynamic properties minX, midX, maxX, minY, midY and maxY.
+Only numeric layer properties can be animated. The full list is x, y, z, width, height, opacity, rotation, rotationX, rotationY, rotationZ, scale scaleX, scaleY, scaleZ, originX, originY, perspective, scrollX, scrollY, borderRadius, borderWidth, shadowX, shadowY, shadowBlur, shadowSpread, blur, brightness, saturate, hueRotate, contrast, invert, grayscale, sepia. You can also animate the dynamic properties minX, midX, maxX, minY, midY and maxY.
 
 Most properties can benefit from gpu accelerated drawing and you can animate many of them without hurting your frame rate. But some properties need to involve the CPU to animate and are therefore more expensive to render. The full list is width, height, scrollX, scrollY,borderRadius, borderWidth.
 
