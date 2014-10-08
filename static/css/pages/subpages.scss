@@ -469,7 +469,7 @@ hr.hidden {
 		height:100px;
 		width:100px;
 		padding-top: 24px;
-		border-radius: 3px;
+		border-radius: 3px 0 0 3px;
 		float:left;
 	}
 	.layer-type-illustration.video {
@@ -492,7 +492,7 @@ hr.hidden {
 		margin-bottom: 0;
 	}
 	.animation-curves .curve-animation {
-		border-radius: 3px;
+		border-radius: 3px 0 0 3px;
 		max-width:210px;
 		float: left;
 	}	
