@@ -123,7 +123,6 @@ nav.top input {
 .more-dropdown {
 	opacity: 0;
 	visibility: hidden;
-	background: #fff;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 4px 12px rgba(0,0,0,.1);
 	border-radius: 3px;
 	position: absolute;
@@ -153,17 +152,16 @@ nav.top input {
 	border-right: 8px solid transparent;
 	border-bottom: 6px solid #fff;
 }
-.more-dropdown.on-hover:before {
-	border-bottom-color: $blue;
-}
 nav.top li ul a {
 	text-shadow: none;
+	color: $graphite60;
 }
 .more-dropdown a {
 	display: block;
 	float: none;
 	padding: 12px 0 8px 0;
-	box-shadow: 0 1px 0 $separator;
+	box-shadow: inset 0 -1px 0 $separator;
+	background: #fff;
 }
 .more-dropdown a:first-child {
 	border-radius: 3px 3px 0 0;
@@ -172,9 +170,12 @@ nav.top li ul a {
 	border-radius: 0 0 3px 3px
 }
 .more-dropdown a:hover {
-	background: $blue;
+	background: $graphite60;
 	color: #fff;
 	box-shadow: none;
+}
+.more-dropdown.on-hover:before {
+	border-bottom-color: $graphite60;
 }
 
 @media screen and (max-width: 1000px) {
