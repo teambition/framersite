@@ -11,7 +11,12 @@
 .faq .page-header {
 	height:320px;
 }
-.learn .page-header h1 {
+.page-header h1,
+.page-header h2 {
+	position: relative;
+	z-index: 10;
+}
+.page-header h1 {
 	margin-bottom: $space8;
 }
 .page-header h2 {
@@ -347,11 +352,20 @@ hr.hidden {
 }
 
 // Teach page
+.teach .page-header img {
+	max-width: 1482px;
+	max-height:440px;
+	z-index: 0;
+	right:-220px;
+}
+// Vertical spacing
+.teach-logo-section,
+.why-teach-framer {
+	margin-bottom: $space80;
+}
+// ------------
 .why-teach-framer figure {
 	margin-bottom: $space24;
-}
-.teach-logo-section {
-	margin-bottom: $space80;
 }
 .logo-berkeley,
 .logo-google-io-one {
@@ -368,6 +382,21 @@ hr.hidden {
 	left: 16px;
 	padding-left: 0px;
 	color: $graphite-lists;
+}
+.teach .author {
+	color: $graphite-lists;
+	margin-top: 8px;
+	font-size: 12px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.resources a {
+	display: inline-block;
+}
+.resources a {
+	margin-top: $space24;
 }
 
 @media screen and (max-width:1080px) {
