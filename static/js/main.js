@@ -12,6 +12,9 @@ $(document).ready(function() {
 	$("nav .more").click(function() { 
 		$('.more-dropdown').toggleClass("appear");
 	});
+	$(".more-dropdown a:first-child").hover(function() { 
+		$('.more-dropdown').toggleClass("on-hover");
+	});
 
 	var learnSidebar, topNav, exampleBlock, exampleDevices;
 	learnSidebar = $('.subpage.learn .sidebar');
@@ -32,7 +35,7 @@ $(document).ready(function() {
 
 	$(window).scroll(function() {
 		$('.more-dropdown').removeClass("appear");
-		
+
 		var scrollPos = $(window).scrollTop();
 		// Sidebar Sticky ----------------
 		if ($(window).scrollTop() > 646) {

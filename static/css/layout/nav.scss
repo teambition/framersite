@@ -153,23 +153,28 @@ nav.top input {
 	border-right: 8px solid transparent;
 	border-bottom: 6px solid #fff;
 }
-.more-dropdown li {
+.more-dropdown.on-hover:before {
+	border-bottom-color: $blue;
+}
+nav.top li ul a {
+	text-shadow: none;
+}
+.more-dropdown a {
 	display: block;
 	float: none;
 	padding: 12px 0 8px 0;
+	box-shadow: 0 1px 0 $separator;
 }
-.more-dropdown li a {
-	text-shadow: none;
+.more-dropdown a:first-child {
+	border-radius: 3px 3px 0 0;
 }
-.more-dropdown li:first-child,
-.more-dropdown li+li {
-	padding-left: 0;
+.more-dropdown a:last-child {
+	border-radius: 0 0 3px 3px
 }
-.more-dropdown li:hover {
+.more-dropdown a:hover {
 	background: $blue;
-}
-.more-dropdown li:hover a {
 	color: #fff;
+	box-shadow: none;
 }
 
 @media screen and (max-width: 1000px) {
