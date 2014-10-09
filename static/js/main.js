@@ -39,7 +39,7 @@ $(document).ready(function() {
 		if ($(window).scrollTop() > 800) {
 			$(topNavHome).addClass('sticky').removeClass('fade-out');
 		}
-		else if ($(topNav).hasClass('sticky') && scrollPos <= 800) {
+		else if ($(topNavHome).hasClass('sticky') && scrollPos <= 800) {
 			$(topNavHome).removeClass('sticky').addClass('fade-out');
 		}
 		if (scrollPos < 600) {

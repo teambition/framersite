@@ -31,7 +31,7 @@ nav.top.sticky {
  	100% { top: -64px; }
 }
 // Nav fade-out
-.fade-out {
+nav.top.fade-out {
 	@include animation('fade-out .2s forwards');
 	position: fixed;
 }
