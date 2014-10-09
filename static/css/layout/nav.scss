@@ -107,6 +107,7 @@ nav.top input {
 	cursor: hand;
 	position: relative;
 	display: inline-block;
+	@include transition(all, 0.2s, ease);
 }
 .more.active {
 	color: #fff;
