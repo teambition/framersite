@@ -140,11 +140,15 @@ p.title {
 	letter-spacing: 0;
 }
 .small {
-	font-size: 14px;
-}
-.teach .small {
 	font-size: 16px;
 }
+.learn .small {
+	font-size: 14px;
+}
+.about .col-4 a {
+	font-style: 16px;
+}
+
 .extra-small {
 	font-size: 12px;
 }

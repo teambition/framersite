@@ -400,12 +400,19 @@ hr.hidden {
 }
 
 // About page
+.about p {
+	margin-bottom: 0;
+}
 .about img {
 	border-radius: 3px;
-	margin-top: $space48;
+	margin: $space48 auto;
 	display: block;
 }
-
+.about .contact-links a {
+	display: inline-block;
+	line-height: 1.6;
+	margin-bottom: 0;
+}
 @media screen and (max-width:1080px) {
 	.page-header img {
 		right:130px;
