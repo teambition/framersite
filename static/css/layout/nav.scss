@@ -123,14 +123,15 @@ nav.top input {
 .more-dropdown {
 	opacity: 0;
 	visibility: hidden;
-	box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 4px 12px rgba(0,0,0,.1);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 4px 12px rgba(0,0,0,.2);
 	border-radius: 3px;
 	position: absolute;
 	width:80px;
 	text-align: center;
 	left:0;
-	top: 24px;
+	top: 26px;
 	@include scale(0.8);
+	@include transform-origin(50% 0);
 	@include transition(all, 0.1s, ease);
 }
 .more-dropdown.appear {
@@ -225,6 +226,12 @@ nav.top li ul a {
 	nav.top li {
 		display:inline-block;
 		float:none;
+	}
+	.nav-items li:first-child {
+		padding-left: 0;
+	}
+	nav li+li {
+		padding-left: $space16;
 	}
 	nav.top .download,
 	nav.top .github,
