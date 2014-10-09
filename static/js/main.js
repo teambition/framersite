@@ -9,11 +9,16 @@ $(document).ready(function() {
 			$(this).toggleClass("is-active");
 	});
 
-	$("nav .more").click(function() { 
+	$("nav .more").click(function(event) { 
+		  event.stopPropagation();
 		$('.more-dropdown').toggleClass("appear");
 	});
 	$(".more-dropdown a:first-child").hover(function() { 
 		$('.more-dropdown').toggleClass("on-hover");
+	});
+
+	$(document).click(function() { 
+		$('.more-dropdown').removeClass("appear");
 	});
 
 	var learnSidebar, topNav, exampleBlock, exampleDevices;

@@ -108,28 +108,28 @@ nav.top input {
 	position: relative;
 	display: inline-block;
 }
-.more:after {
-	content:"";
-	background: url("/static/images/icon-dropdown-arrow.png") no-repeat;
-	background-size: 11px 7px;
-	height:7px; width:11px;
-	display: inline-block;
-	margin-left:4px;
-	opacity: .75;
-}
-.more:hover:after {
-	background: url("/static/images/icon-dropdown-arrow-active.png") no-repeat;
-}
+// .more:after {
+// 	content:"";
+// 	background: url("/static/images/icon-dropdown-arrow.png") no-repeat;
+// 	background-size: 11px 7px;
+// 	height:7px; width:11px;
+// 	display: inline-block;
+// 	margin-left:4px;
+// 	opacity: .75;
+// }
+// .more:hover:after {
+// 	background: url("/static/images/icon-dropdown-arrow-active.png") no-repeat;
+// }
 .more-dropdown {
 	opacity: 0;
 	visibility: hidden;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 4px 12px rgba(0,0,0,.1);
 	border-radius: 3px;
 	position: absolute;
-	width:88px;
+	width:80px;
 	text-align: center;
 	left:0;
-	top: 30px;
+	top: 24px;
 	@include scale(0.8);
 	@include transition(all, 0.1s, ease);
 }
@@ -154,7 +154,6 @@ nav.top input {
 }
 nav.top li ul a {
 	text-shadow: none;
-	color: $graphite60;
 }
 .more-dropdown a {
 	display: block;
@@ -162,6 +161,8 @@ nav.top li ul a {
 	padding: 12px 0 8px 0;
 	box-shadow: inset 0 -1px 0 $separator;
 	background: #fff;
+	font-size: 10px;
+	letter-spacing: 0.25px;
 }
 .more-dropdown a:first-child {
 	border-radius: 3px 3px 0 0;
@@ -170,12 +171,12 @@ nav.top li ul a {
 	border-radius: 0 0 3px 3px
 }
 .more-dropdown a:hover {
-	background: $graphite60;
+	background: $blue;
 	color: #fff;
 	box-shadow: none;
 }
 .more-dropdown.on-hover:before {
-	border-bottom-color: $graphite60;
+	border-bottom-color: $blue;
 }
 
 @media screen and (max-width: 1000px) {
