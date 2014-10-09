@@ -159,7 +159,6 @@ nav.top li ul a {
 	display: block;
 	float: none;
 	padding: 12px 0 8px 0;
-	box-shadow: inset 0 -1px 0 $separator;
 	background: #fff;
 	font-size: 10px;
 	letter-spacing: 0.5px;
@@ -167,13 +166,17 @@ nav.top li ul a {
 .more-dropdown a:first-child {
 	border-radius: 3px 3px 0 0;
 }
+.more-dropdown a:first-child,
+.more-dropdown a:nth-child(2) {
+	border-bottom: 1px solid $separator;
+}
 .more-dropdown a:last-child {
 	border-radius: 0 0 3px 3px
 }
 .more-dropdown a:hover {
 	background: $blue;
 	color: #fff;
-	box-shadow: none;
+	border-bottom-color: #fff;
 }
 .more-dropdown.on-hover:before {
 	border-bottom-color: $blue;
