@@ -104,9 +104,13 @@ h5 { // Feature blocks
 	margin-bottom: $space16;
 }
 h6 {
-	font-size: 24px; 
+	font-size: 22px; 
+}
+.subpage h6 {
+	margin-bottom: $space24;
 }
 .docs h6 {
+	font-size: 24px;
 	margin-bottom: $space8;
 	color: $black;
 }

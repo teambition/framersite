@@ -1,0 +1,52 @@
+{% extends "subpage.html" %}
+{% block title %}Framer - About{% endblock %}
+{% block currentpage %}class="subpage about"{% endblock currentpage %}
+
+
+{% block pageheader %} <!--Header Text-->
+<header class="page-header">
+	<div class="content-inner">
+		<h1>About</h1>
+		<h2 class="col-2">Learn more about the origins of Framer and the team behind it.</h2>
+	</div>
+</header> 
+{% endblock pageheader %}
+
+{% block body %}
+
+<div class="about-us clearfix">
+<section class="col-2">
+	<h6>Framer began as an open source prototyping framewor, for animations and interactions.</h6>
+	<p>In June 2014, we released Framer Studio, a prototyping application for Mac, built on Framer.js, complete with its own code editor, instant visual feedback, Photoshop & Sketch integration and much more.</p>
+</section>
+
+<section class="col-2">
+	<h6>We’re creating a prototyping tool to help designers create better products.</h6>
+	<p>We’re excited about the future of interaction design tools. We believe prototyping encourages exploration, helps designers effectively communicate concepts and helps engineers implement them. </p>
+</section>
+</div>
+
+<img src="/static/images/about/about-office.png">
+
+<section class="col-4">
+<h5>Location</h5>
+<p>Brouwersgracht 130, <br> 1013 HA, Amsterdam <br> Netherlands</p>
+</section>
+
+<section class="col-4">
+<h5>Contact</h5>
+<a href="#">Community</a>
+<a href="#">Twitter</a>
+<a href="#">Email</a>
+</section>
+
+<section class="col-4">
+<h5>Presskit</h5>
+<p><a href="#">Download</a> our presskit, containing high-resolution application icons and screenshots.</p>
+</section>
+
+<section class="col-4">
+<h5>Join us</h5>
+<p>Have a look at our <a href="#">Careers page</a> to see all current openings.</p>
+</section>
+{% endblock body %}	
