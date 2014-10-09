@@ -405,19 +405,19 @@ hr.hidden {
 }
 .teach .author {
 	color: $graphite-lists;
-	margin-top: 8px;
-	font-size: 12px;
-	font-weight: 600;
-	text-transform: uppercase;
-	letter-spacing: 0.5px;
+	// font-size: 12px;
+	// font-weight: 600;
+	// text-transform: uppercase;
+	// letter-spacing: 0.5px;
+	display: inline-block;
+	margin-left: 0px;
+	margin-top: 0px;
 }
 .resources a {
 	float:left;
 	clear:both;
-	font-size: 16px;
-}
-.resources a {
-	margin-top: $space24;
+	margin-top: $space16;
+	font-size: 18px;
 }
 
 // About page
@@ -523,6 +523,9 @@ hr.hidden {
 	.logo-berkeley,
 	.logo-generalassembly {
 		margin-right: 0;
+	}
+	.resources a {
+		font-size: 16px;
 	}
 }
 @media screen and (max-width:960px) {
