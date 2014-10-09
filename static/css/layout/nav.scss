@@ -123,14 +123,14 @@ nav.top input {
 .more-dropdown {
 	opacity: 0;
 	visibility: hidden;
-	padding: 16px;
 	background: #fff;
-	box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 4px 12px rgba(0,0,0,.2);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 4px 12px rgba(0,0,0,.1);
 	border-radius: 3px;
 	position: absolute;
-	width:100px;
+	width:88px;
+	text-align: center;
 	left:0;
-	top: 36px;
+	top: 30px;
 	@include scale(0.8);
 	@include transition(all, 0.1s, ease);
 }
@@ -145,7 +145,7 @@ nav.top input {
 	position: absolute;
 	top:-6px;
 	left:50%;
-	margin-left:-16px;
+	margin-left:-8px;
 	content:"";
 	width: 0; 
 	height: 0; 
@@ -155,6 +155,8 @@ nav.top input {
 }
 .more-dropdown li {
 	display: block;
+	float: none;
+	padding: 12px 0 8px 0;
 }
 .more-dropdown li a {
 	text-shadow: none;
@@ -163,11 +165,11 @@ nav.top input {
 .more-dropdown li+li {
 	padding-left: 0;
 }
-.more-dropdown li+li {
-	margin-top: $space16;
+.more-dropdown li:hover {
+	background: $blue;
 }
-.more-dropdown li a:hover {
-	color: $black;
+.more-dropdown li:hover a {
+	color: #fff;
 }
 
 @media screen and (max-width: 1000px) {
