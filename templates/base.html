@@ -11,7 +11,6 @@
 	<link rel="stylesheet" href="{% static '/css/style.css' %}">
 
 	<title>{% block title %}Framer - Prototype Interaction and Animation{% endblock %}</title>
-
 </head>
 
 <body {% block currentpage %}{% endblock %}>
@@ -24,6 +23,14 @@
 					<li><a href="http://examples.framerjs.com" target="_blank">Examples</a></li>
 					<li class="community"><a href="https://www.facebook.com/groups/framerjs/" target="_blank">Community</a></li>
 					<li class="github"><a href="https://github.com/koenbok/Framer" target="_blank">Github</a></li>
+					<li>
+					<a class="more">More</a>
+						<ul class="more-dropdown">
+							<li><a href="/teach">Educate</a></li>
+							<li><a href="/careers">Careers</a></li>
+							<li><a href="/about">About</a></li>
+						</ul>
+					</li>
 
 				<section class="right">
 					<li class="download prepare-download"><a class="green" href="http://studio.update.framerjs.com/archive">Free Trial</a></li>
@@ -55,10 +62,7 @@
 			</section>
 			<section class="left">
 				<nav>
-					<li><a href="/teach">Teach</a></li>
-					<li><a href="/about">About</a></li>
 					<li><a href="http://framerjs.tumblr.com" target="_blank">Blog</a></li>
-					<li><a href="/careers">Careers</a></li>
 					<li><a href="/faq">FAQ</a></li>
 				</nav>
 				<p class="copy">Copyright &copy; 2014 Podium BV</p>

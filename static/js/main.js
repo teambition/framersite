@@ -9,6 +9,10 @@ $(document).ready(function() {
 			$(this).toggleClass("is-active");
 	});
 
+	$("nav .more").click(function() { 
+		$('.more-dropdown').toggleClass("appear");
+	});
+
 	var learnSidebar, topNav, exampleBlock, exampleDevices;
 	learnSidebar = $('.subpage.learn .sidebar');
 	topNavHome = $('.home nav.top');
@@ -27,6 +31,8 @@ $(document).ready(function() {
 	var videoElement = $("#carousel-video-examples").get(0)
 
 	$(window).scroll(function() {
+		$('.more-dropdown').removeClass("appear");
+		
 		var scrollPos = $(window).scrollTop();
 		// Sidebar Sticky ----------------
 		if ($(window).scrollTop() > 646) {
