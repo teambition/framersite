@@ -108,6 +108,9 @@ nav.top input {
 	position: relative;
 	display: inline-block;
 }
+.more.active {
+	color: #fff;
+}
 // .more:after {
 // 	content:"";
 // 	background: url("/static/images/icon-dropdown-arrow.png") no-repeat;
@@ -128,17 +131,18 @@ nav.top input {
 	position: absolute;
 	width:80px;
 	text-align: center;
-	left:0;
+	left:2px;
 	top: 26px;
-	@include scale(0.8);
+	// @include scale(0.8);
 	@include transform-origin(50% 0);
-	@include transition(all, 0.1s, ease);
+	// @include transition(all, 0.1s, ease);
 }
 .more-dropdown.appear {
 	opacity: 1;
 	visibility: visible;
 	z-index: 300;
-	@include scale(1);
+	// @include scale(1);
+	@include animation('bouncy .3s 1');
 }
 // Dropdown Caret
 .more-dropdown:before {

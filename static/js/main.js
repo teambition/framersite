@@ -12,6 +12,7 @@ $(document).ready(function() {
 	$("nav .more").click(function(event) { 
 		  event.stopPropagation();
 		$('.more-dropdown').toggleClass("appear");
+		$("nav .more").toggleClass("active");
 	});
 	$(".more-dropdown a:first-child").hover(function() { 
 		$('.more-dropdown').toggleClass("on-hover");
@@ -19,6 +20,7 @@ $(document).ready(function() {
 
 	$(document).click(function() { 
 		$('.more-dropdown').removeClass("appear");
+		$("nav .more").removeClass("active");
 	});
 
 	var learnSidebar, topNav, exampleBlock, exampleDevices;
