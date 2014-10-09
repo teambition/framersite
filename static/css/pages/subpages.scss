@@ -355,11 +355,7 @@ hr.hidden {
 .ss-mirror-iphone {
 	margin-bottom: $space48;
 }
-
 // Teach page
-.teach-logo-string .col-4 {
-	margin-left: 20px;
-}
 // Teach + Careers headers
 .teach .page-header img,
 .careers .page-header img {
@@ -377,16 +373,30 @@ hr.hidden {
 .why-teach-framer figure {
 	margin-bottom: $space24;
 }
+.teach-logo-string {
+	margin-left: 60px;
+	float:left;
+}
+.teach-logo-string figure {
+	display:inline-block;
+}
 .logo-berkeley,
 .logo-google-io-one {
 	margin-top: -48px;
 }
-.logo-berkeley{
-	margin-bottom:$space24;
+.logo-generalassembly, 
+.logo-google-io-two {
+	float:left; 
+	margin-top: 24px;
 }
-.logo-google-io-one {
-	margin-bottom: $space16;
+.logo-google-io-two {
+	margin-top: 4px;
 }
+.logo-berkeley,
+.logo-generalassembly {
+	margin-right: 60px;
+}
+
 .teach .content-inner ul li {
 	font-size: 16px;
 	left: 16px;
@@ -401,9 +411,10 @@ hr.hidden {
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
 }
-
 .resources a {
-	display: inline-block;
+	float:left;
+	clear:both;
+	font-size: 16px;
 }
 .resources a {
 	margin-top: $space24;
@@ -433,6 +444,10 @@ hr.hidden {
 	.layer-type-illustration {
         border-radius: 3px;
     }
+	.logo-berkeley,
+	.logo-generalassembly {
+		margin-right: 40px;
+	}
 }
 @media screen and (max-width:980px) {
 	.page-header img {
@@ -479,6 +494,35 @@ hr.hidden {
 	.layer-types .col-4+.col-4,
 	.animation-curves .col-4+.col-4 {
 		margin-left:10px;
+	}
+	.teach-logo-section .col-2 {
+		max-width: 100%;
+		float:none;
+	}
+	.teach-logo-string .col-4 {
+		max-width: auto;
+	}
+	.teach-logo-string figure {
+		float: left;
+	}
+	.logo-berkeley,
+	.logo-google-io-one {
+		margin-top: 0;
+	}
+	.logo-generalassembly, 
+	.logo-google-io-two {
+		float:left; 
+		margin-top: 0;
+	}
+	.logo-google-io-one {
+		display: none;
+	}
+	.logo-google-io-two {
+		margin-top: 0;
+	}
+	.logo-berkeley,
+	.logo-generalassembly {
+		margin-right: 0;
 	}
 }
 @media screen and (max-width:960px) {
