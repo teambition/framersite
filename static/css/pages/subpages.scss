@@ -346,6 +346,30 @@ hr.hidden {
 	margin-bottom: $space48;
 }
 
+// Teach page
+.why-teach-framer figure {
+	margin-bottom: $space24;
+}
+.teach-logo-section {
+	margin-bottom: $space80;
+}
+.logo-berkeley,
+.logo-google-io-one {
+	margin-top: -48px;
+}
+.logo-berkeley{
+	margin-bottom:$space24;
+}
+.logo-google-io-one {
+	margin-bottom: $space16;
+}
+.teach .content-inner ul li {
+	font-size: 16px;
+	left: 16px;
+	padding-left: 0px;
+	color: $graphite-lists;
+}
+
 @media screen and (max-width:1080px) {
 	.page-header img {
 		right:130px;
