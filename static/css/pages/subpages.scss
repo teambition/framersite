@@ -63,6 +63,11 @@
 	width: 100%;
 	text-align: left;
 }
+p.full-width{
+	max-width: 580px;
+	width: 100%;
+	text-align: left;
+}
 // Clearfix wrapper
 .content-inner:after {
   content: "";
@@ -352,7 +357,9 @@ hr.hidden {
 }
 
 // Teach page
-.teach .page-header img {
+// Teach + Careers headers
+.teach .page-header img,
+.careers .page-header img {
 	max-width: 1482px;
 	max-height:440px;
 	z-index: 0;
