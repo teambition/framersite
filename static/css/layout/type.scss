@@ -376,9 +376,13 @@ table + h5 {
 	margin-bottom: $space24;
 }
 
-// Careers Page
+// Subpage type treatment
+.teach p,
 .careers p {
 	margin-bottom: 0;
+}
+.teach p + ul {
+	margin-top: 24px;
 }
 
 // Media Queries
