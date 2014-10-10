@@ -407,7 +407,6 @@ hr.hidden {
 	letter-spacing: 0.5px;
 	margin-bottom: $space16;
 	font-weight: 600;
-	color: $blue;
 }
 .resources a {
 	float:left;
@@ -427,6 +426,7 @@ hr.hidden {
 }
 .resources a:hover h5 {
 	color: $black;
+	color: $blue;
 }
 .resources a:hover .author {
 }
