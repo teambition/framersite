@@ -358,7 +358,8 @@ hr.hidden {
 // Teach page
 // Teach + Careers headers
 .teach .page-header img,
-.careers .page-header img {
+.careers .page-header img,
+.about .page-header img {
 	max-width: 1482px;
 	max-height:440px;
 	z-index: 0;
@@ -418,7 +419,7 @@ hr.hidden {
 .about p {
 	margin-bottom: 0;
 }
-.about img {
+.about .content-inner img {
 	border-radius: 3px;
 	margin: $space64 auto;
 	display: block;
