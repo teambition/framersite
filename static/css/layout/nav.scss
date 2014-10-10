@@ -52,6 +52,7 @@ nav li,
 }
 nav.top a {
 	text-shadow: 0 1px 0 rgba(0,0,0,0.1);
+	@include transition(all, 0.2s, ease);
 }
 .nav-items li:first-child,
 nav li+li {
@@ -94,7 +95,6 @@ nav.top input {
 	border: none;
 	line-height: 1;
 }
-
 // More dropdown
 .more, 
 .more-dropdown {
@@ -134,15 +134,12 @@ nav.top input {
 	text-align: center;
 	left:2px;
 	top: 26px;
-	// @include scale(0.8);
 	@include transform-origin(50% 0);
-	// @include transition(all, 0.1s, ease);
 }
 .more-dropdown.appear {
 	opacity: 1;
 	visibility: visible;
 	z-index: 300;
-	// @include scale(1);
 	@include animation('bouncy .3s 1');
 }
 // Dropdown Caret
@@ -158,6 +155,7 @@ nav.top input {
 	border-right: 6px solid transparent;
 	border-bottom: 4px solid #fff;
 }
+// No shadow for dropdown items
 nav.top li ul a {
 	text-shadow: none;
 }
@@ -187,7 +185,6 @@ nav.top li ul a {
 .more-dropdown.on-hover:before {
 	border-bottom-color: $blue;
 }
-
 @media screen and (max-width: 1000px) {
 	nav.top .content-inner {
 		padding: 0 $space16;
