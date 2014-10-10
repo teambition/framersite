@@ -377,26 +377,20 @@ hr.hidden {
 	margin-left: 60px;
 	float:left;
 }
-.teach-logo-string figure {
-	display:inline-block;
-}
-.logo-berkeley,
-.logo-google-io-one {
-	margin-top: -48px;
-}
-.logo-generalassembly, 
-.logo-google-io-two {
+.teach-logo-string img {
 	float:left; 
-	margin-top: 24px;
 }
-.logo-google-io-two {
-	margin-top: 4px;
+.logo-berkeley-ga,
+.logo-google-io {
+	max-width: 210px;
 }
-.logo-berkeley,
-.logo-generalassembly {
+.logo-berkeley-ga {
+	margin-top: -48px;
 	margin-right: 60px;
 }
-
+.logo-google-io {
+	margin-top: -48px;
+}
 .teach .content-inner ul li {
 	font-size: 16px;
 	left: 16px;
@@ -444,8 +438,11 @@ hr.hidden {
 	.layer-type-illustration {
         border-radius: 3px;
     }
-	.logo-berkeley,
-	.logo-generalassembly {
+	.logo-berkeley-ga,
+	.logo-google-io {
+		max-width: 200px;
+	}
+	.logo-berkeley-ga {
 		margin-right: 40px;
 	}
 }
@@ -499,30 +496,17 @@ hr.hidden {
 		max-width: 100%;
 		float:none;
 	}
-	.teach-logo-string .col-4 {
-		max-width: auto;
+	.teach-logo-string {
+		margin-left: 0;
+		float: none;
+		margin-top:80px;
 	}
-	.teach-logo-string figure {
-		float: left;
+	.logo-berkeley-ga,
+	.logo-google-io {
+		max-width: 210px;
 	}
-	.logo-berkeley,
-	.logo-google-io-one {
-		margin-top: 0;
-	}
-	.logo-generalassembly, 
-	.logo-google-io-two {
-		float:left; 
-		margin-top: 0;
-	}
-	.logo-google-io-one {
-		display: none;
-	}
-	.logo-google-io-two {
-		margin-top: 0;
-	}
-	.logo-berkeley,
-	.logo-generalassembly {
-		margin-right: 0;
+	.logo-berkeley-ga {
+		margin-right: 60px;
 	}
 	.resources a {
 		font-size: 16px;
@@ -633,11 +617,13 @@ hr.hidden {
 		display: none;
 	}
 }
-@media screen and (max-width:560px) {
+@media screen and (max-width:600px) {
 	.page-header {
 		height: 440px;
 		margin-top: 0;
 	}
+}
+@media screen and (max-width:560px) {
 	.subpage .page-header {
 		height:180px;
 	} 
@@ -700,6 +686,23 @@ hr.hidden {
 	}
 	.docs nav.top {
 		position: relative;
+	}
+	// Teach page
+	.logo-berkeley-ga {
+		max-width: 50%;
+	}
+	.logo-google-io {
+		max-width: 40%;
+		position: relative;
+		top: 4px;
+	}
+	.logo-berkeley-ga {
+		margin-right: 5%;
+	}
+	// Vertical spacing
+	.teach-logo-section,
+	.why-teach-framer {
+		margin-bottom: $space48;
 	}
 }
 @media screen and (max-width: 440px) {
