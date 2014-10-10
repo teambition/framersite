@@ -169,8 +169,7 @@ nav.top li ul a {
 .more-dropdown a:first-child {
 	border-radius: 3px 3px 0 0;
 }
-.more-dropdown a:first-child,
-.more-dropdown a:nth-child(2) {
+.more-dropdown a:first-child {
 	border-bottom: 1px solid $separator;
 }
 .more-dropdown a:last-child {
