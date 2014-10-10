@@ -52,7 +52,6 @@ nav li,
 }
 nav.top a {
 	text-shadow: 0 1px 0 rgba(0,0,0,0.1);
-	@include transition(all, 0.2s, ease);
 }
 .nav-items li:first-child,
 nav li+li {
