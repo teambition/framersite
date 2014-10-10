@@ -383,6 +383,12 @@ hr.hidden {
 .teach-logo-string img {
 	float:left; 
 }
+.logo-berkeley {
+	margin-top: -8px;
+}
+.logo-ga {
+	margin-top: -11px;
+}
 .logo-berkeley,
 .logo-ga {
 	max-width: 210px;
@@ -520,6 +526,7 @@ hr.hidden {
 	.logo-berkeley,
 	.logo-ga {
 		max-width: 210px;
+		margin-top: 0;
 	}
 	.logo-berkeley {
 		margin-right: 40px;
