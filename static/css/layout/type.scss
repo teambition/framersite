@@ -74,6 +74,15 @@ h4 {
 .subpage h4 {
 	margin-bottom: $space24;
 }
+.subpage.teach h4 {
+	margin-bottom: $space8;
+}
+.subpage.teach h4 + .btn{
+	margin-top: $space8;
+}
+.subpage.teach .resources h4 {
+	margin-bottom: $space32;
+}
 h5 { // Feature blocks
 	font-size: 1.5em; //24px
 	line-height: 1.4;
