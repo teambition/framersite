@@ -366,9 +366,11 @@ hr.hidden {
 	right:0;
 }
 // Vertical spacing
-.teach-logo-section,
-.why-teach-framer {
+.teach-logo-section {
 	margin-bottom: $space80;
+}
+.why-teach-framer {
+	margin-bottom: $space40;
 }
 // ------------
 .why-teach-framer figure {
@@ -381,18 +383,12 @@ hr.hidden {
 .teach-logo-string img {
 	float:left; 
 }
-.logo-berkeley-ga,
-.logo-google-io {
+.logo-berkeley,
+.logo-ga {
 	max-width: 210px;
 }
-.logo-berkeley-ga {
-	margin-top: -48px;
+.logo-berkeley {
 	margin-right: 60px;
-	height: 166px;
-}
-.logo-google-io {
-	margin-top: -48px;
-	height: 174px;
 }
 .teach .content-inner ul li {
 	font-size: 16px;
@@ -400,25 +396,33 @@ hr.hidden {
 	padding-left: 0px;
 	color: $graphite-lists;
 }
+// Resources
 .teach .author {
 	color: $sidebar-links;
-	// font-size: 12px;
-	// font-weight: 600;
-	// text-transform: uppercase;
-	// letter-spacing: 0.5px;
-	display: inline-block;
+	display: block;
 	margin-left: 0px;
-	margin-top: 0px;
+	margin-top: 0spx;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	margin-bottom: $space16;
+	font-weight: 600;
 }
 .resources a {
 	float:left;
 	clear:both;
-	margin-top: $space16;
-	font-size: 18px;
+	margin-top: $space40;
 	@include transition(opacity, 0.2s, ease);
 }
-.resources a:hover {
-	opacity:0.6;
+.resources h5 {
+	color: $blue;
+	@include transition(all, 0.2s, ease);
+}
+.resources p {
+	max-width: 375px;
+}
+.resources a:hover h5 {
+	color: $black;
 }
 .resources a:hover .author {
 }

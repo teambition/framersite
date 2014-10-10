@@ -103,6 +103,9 @@ h5 { // Feature blocks
 .caption .subtitle {
 	margin-bottom: $space16;
 }
+.teach .subtitle {
+	color: $graphite-lists;
+}
 h6 {
 	font-size: 22px; 
 }
@@ -271,7 +274,7 @@ ul.numbered li:before {
 .inline-image + h5 {
 	margin-top: $space48;
 }
-.subpage hr {
+.learn hr, .docs hr {
 	margin: $space48 auto;
 }
 // Type - Vertical spacing
