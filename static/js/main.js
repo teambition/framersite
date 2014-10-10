@@ -26,7 +26,7 @@ $(document).ready(function() {
 	var learnSidebar, topNav, exampleBlock, exampleDevices;
 	learnSidebar = $('.subpage.learn .sidebar');
 	topNavHome = $('.home nav.top');
-	topNavPages = $('.learn nav.top');
+	topNavPages = $('.learn nav.top, .teach nav.top, .careers nav.top');
 	exampleBlock = $('.examples');
 	exampleDevices = $('.device-left, .device-right');
 
