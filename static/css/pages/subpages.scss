@@ -452,11 +452,11 @@ hr.hidden {
 	.layer-type-illustration {
         border-radius: 3px;
     }
-	.logo-berkeley-ga,
-	.logo-google-io {
+	.logo-berkeley,
+	.logo-ga {
 		max-width: 200px;
 	}
-	.logo-berkeley-ga {
+	.logo-berkeley {
 		margin-right: 40px;
 	}
 }
@@ -513,14 +513,14 @@ hr.hidden {
 	.teach-logo-string {
 		margin-left: 0;
 		float: none;
-		margin-top:80px;
+		margin-top:40px;
 	}
-	.logo-berkeley-ga,
-	.logo-google-io {
+	.logo-berkeley,
+	.logo-ga {
 		max-width: 210px;
 	}
-	.logo-berkeley-ga {
-		margin-right: 60px;
+	.logo-berkeley {
+		margin-right: 40px;
 	}
 	.resources a {
 		font-size: 16px;
@@ -630,6 +630,9 @@ hr.hidden {
 		max-width: 210px;
 		display: none;
 	}
+	.logo-berkeley {
+		margin-right: 60px;
+	}
 }
 @media screen and (max-width:600px) {
 	.page-header {
@@ -702,17 +705,12 @@ hr.hidden {
 		position: relative;
 	}
 	// Teach page
-	.logo-berkeley-ga {
-		max-width: 50%;
+	.logo-berkeley,
+	.logo-ga {
+		max-width: 45%;
 		height: auto;
 	}
-	.logo-google-io {
-		max-width: 40%;
-		position: relative;
-		top: 4px;
-		height: auto;
-	}
-	.logo-berkeley-ga {
+	.logo-berkeley {
 		margin-right: 5%;
 	}
 	// Vertical spacing
