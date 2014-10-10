@@ -88,6 +88,10 @@ h5 { // Feature blocks
 	letter-spacing: 0.5px;
 	color: $black;
 }
+.subpage h5.small {
+	font-size: 12px;
+	color: $blue;
+}
 .subpage h5 + ul {
 	margin-top: $space16;
 }

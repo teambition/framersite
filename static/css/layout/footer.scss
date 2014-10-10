@@ -11,7 +11,23 @@ footer.global li {
 	float: left;
 	font-weight: 600;
 }
-footer.global a:hover {
+footer.global a {
+	color: #fff;
+}
+footer.global a figure {
+	float: left;
+	margin-right:8px;
+	position: relative;
+}
+.icon-footer-twitter {
+	top:-2px;
+}
+footer.global .small {
+	color: #788D9E;
+	font-size:14px;
+	margin-top: 8px;
+}
+footer.global a:hover .small {
 	color: #fff;
 }
 footer.global nav {
