@@ -740,6 +740,10 @@ hr.hidden {
 		float: left;
 		margin-right: $space16;
 	}
+	.jobs section:first-child {
+		border-bottom: 1px solid $separator;
+		padding-bottom: $space40;
+	}
 }
 @media screen and (max-width: 440px) {
 	.learn-nav .nav-title {
