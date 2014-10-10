@@ -376,6 +376,11 @@ table + h5 {
 	margin-bottom: $space24;
 }
 
+// Careers Page
+.careers p {
+	margin-bottom: 0;
+}
+
 // Media Queries
 @media screen and (max-width: 1080px) {
 	.page-header h2 {

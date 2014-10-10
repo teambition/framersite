@@ -622,11 +622,11 @@ hr.hidden {
 		height: 440px;
 		margin-top: 0;
 	}
-}
-@media screen and (max-width:560px) {
 	.subpage .page-header {
 		height:180px;
-	} 
+	} 	
+}
+@media screen and (max-width:560px) {
 	.learn .page-header .content-inner {
 		height: 416px;
 	}
