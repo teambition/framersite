@@ -713,10 +713,20 @@ hr.hidden {
 	.logo-berkeley {
 		margin-right: 5%;
 	}
+	.teach h4 {
+		line-height: 1.4;
+	}
 	// Vertical spacing
-	.teach-logo-section,
-	.why-teach-framer {
+	.teach-logo-section {
 		margin-bottom: $space48;
+	}
+	.why-teach-framer {
+		margin-bottom: $space32;
+		border-bottom: 1px solid $separator;
+	}
+	.teach-logo-section {
+		padding-bottom: $space48;
+		border-bottom: 1px solid $separator;
 	}
 	.why-teach-framer figure {
 		margin-bottom: 0;

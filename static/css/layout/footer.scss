@@ -79,7 +79,7 @@ footer.global input:-ms-input-placeholder { color: $graphite60; padding-top:1px;
 
 @media screen and (max-width: 720px) {
 	footer.global {
-		height: 280px;
+		height: 292px;
 	}
 	footer.global .right {
 		width: 254px;
@@ -92,5 +92,18 @@ footer.global input:-ms-input-placeholder { color: $graphite60; padding-top:1px;
 	}
 	footer.global section.right {
 		margin-bottom: $space48;
+	}
+	footer.global li,
+	footer.global li a {
+		text-align: center;
+	}
+	footer.global a figure {
+		margin: 0 auto;
+		display: block;
+		margin-bottom: 16px;
+		float:none;
+	}
+	.icon-footer-twitter {
+		top:0;
 	}
 }
