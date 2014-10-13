@@ -56,6 +56,7 @@ nav.top {
 	box-shadow: 4px 0 0 #fff, 5px 0 0 #E8E8E8;
 	// Sidebar width
 	max-width: 218px;
+	padding-bottom: 40px;
 }
 .subpage.docs .sidebar::-webkit-scrollbar {
     background: #fff;
@@ -75,7 +76,7 @@ nav.top {
 	background: #fff;
 	width:6px;
 	margin-top: 8px;
-	margin-bottom: 8px;
+	margin-bottom: 52px;
 }
 .subpage.docs ul a li {
 	font-size: 12px;
@@ -102,7 +103,8 @@ nav.top {
 	padding: 0;
 }
 .docs .align-right {
-	max-width: 500px;
+	min-width: 500px;
+	max-width: 100%;
 	float: none; 
 	margin-left: 246px;
 }
