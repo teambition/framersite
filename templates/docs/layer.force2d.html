@@ -3,8 +3,11 @@
 Sets wether the layer should only render 2d properties. This bypasses the GPU accelerated rendering so can be slow to animate. When this is enables you cannot for example rotate in 3d space. The main purpose of this setting is to get advanced masking to work, like having a mask with rounded corners.
 
 <pre lang="coffeescript">
-layerA = new Layer({width:400, height:400, backgroundColor:"red"})
-layerB = new Layer({width:300, height:300, backgroundColor:"blue"})
+layerA = new Layer({width:400, height:400, 
+backgroundColor:"red"})
+
+layerB = new Layer({width:300, height:300, 
+backgroundColor:"blue"})
 
 layerB.borderRadius = layerB.width / 2
 

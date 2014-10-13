@@ -13,8 +13,11 @@ layerA.image = "images/logo.png"
 layerA.image = "http://framerjs.com/logo.png"
 
 # Listen to the loading event
-layerA.on Events.ImageLoaded, -> print "the image is loaded"
-layerA.on Events.ImageLoadError, -> print "the image could not be loaded"
+layerA.on Events.ImageLoaded, -> 
+	print "the image is loaded"
+	
+layerA.on Events.ImageLoadError, 
+	-> print "the image could not be loaded"
 
 layerA.image = "images/other-logo.png"
 </pre>
