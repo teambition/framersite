@@ -114,6 +114,7 @@ nav.top {
 	max-width: 100%;
 	width:100%;
 	padding: 0;
+	padding-right:32px;
 }
 .docs .align-right {
 	float: none; 
@@ -123,7 +124,7 @@ nav.top {
 .docs .align-right,
 .docs p,
 .docs pre {
-	max-width: calc(100% - 14px);
+	max-width: 100%;
 	min-width: 484px;
 }
 
