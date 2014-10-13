@@ -1,5 +1,6 @@
 body.docs {
 	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	min-width: 600px;
 }
 // SPACING
 .docs p {
@@ -20,7 +21,7 @@ body.docs {
 	margin-top: -16px; 
 }
 .docs h3 {
-	font-size: 28px;
+	font-size: 24px;
 	font-weight: 300;
 	letter-spacing: 0;
 }
@@ -31,19 +32,22 @@ body.docs {
 	font-size: 12px;
 }
 .docs h6 {
-	letter-spacing: 0;
+	letter-spacing: 0.2;
+	font-size: 17px;
+	font-weight: 400;
 }
 nav.top {
 	display: none;
 }
 .subpage.docs .container {
 	padding: 0;
-	padding-top: 32px;
-	padding-bottom: 32px;
+	padding-top: 24px;
+	padding-bottom: 24px;
 }
 .subpage.docs .sidebar {
 	margin-top: 0;
-	padding-top: 24px;
+	padding-top: 16px;
+	padding-left: 16px;
 	// height: calc(100% - 64px);
 	height: 100%;
 	top: 0;
@@ -51,7 +55,6 @@ nav.top {
 
 	// Match with colors below
 	box-shadow: 3px 0 0 #fff, 4px 0 0 #E8E8E8;
-	padding-left: 24px;
 	max-width: 240px;
 }
 .subpage.docs .sidebar::-webkit-scrollbar {
@@ -97,9 +100,9 @@ nav.top {
 	padding: 0;
 }
 .docs .align-right {
-	max-width: auto;
+	max-width: 500px;
 	float: none; 
-	margin-left: 274px;
+	margin-left: 266px;
 }
 
 // Sidebar spacing
@@ -113,13 +116,13 @@ nav.top {
 // Link jumps
 .docs a[id] {
 	position: relative; 
-	top: -64px;
+	top: -48px;
 	display: block;
 	height:0;
 }
 .docs a[name] {
 	position: relative; 
-	top: -72px;
+	top: -56px;
 	display: block;
 	height:0;
 }
@@ -129,28 +132,57 @@ nav.top {
 .docs table + h6,
 .docs table + h3,
 .docs .highlight + h3,
-.docs .highlight + h6{
+.docs .highlight + h6,
+.docs .highlight + h5 {
     margin-top: $space40;
 }
 // TABLES
 .docs table {
 	font-size:12px;
 	font-weight: 400;
+	box-shadow: none;
+	padding:0;
 }
-thead th, th,
-table td.group {
+.docs td:first-child {
+	padding-left:0;
+}
+.docs thead th,
+.docs th,
+.docs table td.group {
 	font-size: 10px;
 	font-weight: 600;
 	line-height: 1.2;
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
+	background: transparent;
 }
-thead th, th {
-	padding: 12px 15px 11px;
+.docs thead th, 
+.docs th,
+.docs table td.group  {
+	padding: 8px 16px;
+}
+.docs th:first-child,
+.docs thead th:first-child,
+.docs table td.group:first-child {
+	padding-left: 0;
+}
+.docs table td.group {
+	padding-bottom: 12px;
+}
+.docs th {
+	opacity: .4;
+}
+.docs pre ol li {
+	font-size: 11px;
 }
 
 @media screen and (max-width:980px) {
 	 .docs .sidebar {
 	 	display: block;
 	}
+}
+@media screen and (max-width: 560px) {
+    .content-inner pre ol li:before {
+        content: counter(linenumbers);
+    }
 }
