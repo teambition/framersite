@@ -92,7 +92,7 @@ function main() {
 		}
 
 		$("body").highlight(query)
-		var = firstNode = $(".align-right div.highlight-search:first-child").first()
+		var firstNode = $(".align-right div.highlight-search:first-child").first()
 
 		if (firstNode) {
 			firstNode.goTo()
