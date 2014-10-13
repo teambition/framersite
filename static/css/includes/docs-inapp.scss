@@ -53,9 +53,9 @@ nav.top {
 	top: 0;
 	background: #fff;
 	// Match with colors below
-	box-shadow: 3px 0 0 #fff, 4px 0 0 #E8E8E8;
+	box-shadow: 4px 0 0 #fff, 5px 0 0 #E8E8E8;
 	// Sidebar width
-	max-width: 236px;
+	max-width: 235px;
 }
 .subpage.docs .sidebar::-webkit-scrollbar {
     background: #fff;
@@ -74,8 +74,8 @@ nav.top {
 	box-shadow: none;
 	background: #fff;
 	width:6px;
-	margin-top: 4px;
-	margin-bottom: 4px;
+	margin-top: 8px;
+	margin-bottom: 8px;
 }
 .subpage.docs ul a li {
 	font-size: 13px;
@@ -184,13 +184,13 @@ nav.top {
 	z-index: 300;
 	box-shadow: 0 1px 0 #E8E8E8;
 	border-right:1px solid #E8E8E8;
-	height: 48px;
+	height: 51px;
 	padding:16px;
 	width: 240px;
 	background: #fff;
 }
 .docs .searchbar input {
-	width:210px;
+	width:207px;
 }
 .subpage.docs .sidebar {
 	margin-top:48px;
