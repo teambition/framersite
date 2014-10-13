@@ -81,6 +81,8 @@ function main() {
 
 	var searchNode = $("#docs-search");
 
+	$("#docs-search").focus()
+
 	function _updateSearch() {
 		var query = searchNode.val();
 		$("body").removeHighlight()
@@ -90,7 +92,11 @@ function main() {
 		}
 
 		$("body").highlight(query)
-		$(".align-right div.highlight-search:first-child").first().goTo()
+		var = firstNode = $(".align-right div.highlight-search:first-child").first()
+
+		if (firstNode) {
+			firstNode.goTo()
+		}
 	}
 
 	var updateSearch = debounce(_updateSearch, 300);
