@@ -8,7 +8,9 @@
 	<link rel="shortcut icon" sizes="16x16" href="{% static '/images/favicon.ico' %}">
 	<link rel="shortcut icon" sizes="32x32" href="{% static '/images/favicon@2x.png' %}">
 	{% include 'fonts.html' %}
+	{% block stylesheets %}
 	<link rel="stylesheet" href="{% static '/css/style.css' %}">
+	{% endblock stylesheets %}
 
 	<title>{% block title %}Framer - Prototype Interaction and Animation{% endblock %}</title>
 </head>

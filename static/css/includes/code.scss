@@ -4,6 +4,7 @@ pre {
     // Spacing
     padding: $space16;
     padding-left: 21px;
+    padding-bottom: 14px;
     display:block;
     // Default
     color: #788D9E; 
@@ -133,7 +134,7 @@ pre, code {
     font-size: 10px;
     color: #B7CADA;
     position: relative;
-    top:1px;
+    top:3px;
     -webkit-user-select: none; 
     -moz-user-select: none;  
     -ms-user-select: none;     
