@@ -103,10 +103,15 @@ nav.top {
 	padding: 0;
 }
 .docs .align-right {
-	min-width: 500px;
-	max-width: 100%;
 	float: none; 
-	margin-left: 246px;
+	padding-left: 246px;
+}
+
+.docs .align-right,
+.docs p,
+.docs pre {
+	max-width: calc(100% - 8px);
+	min-width: 500px;
 }
 
 // Sidebar spacing
