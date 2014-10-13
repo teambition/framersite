@@ -74,7 +74,7 @@ function main() {
 		$.fn.goTo = function() {
 			$('html, body').animate({
 				scrollTop: $(this).offset().top - 32 + 'px'
-			}, 'fast');
+			}, 100);
 			return this; // for chaining...
 		}
 	})(jQuery);
