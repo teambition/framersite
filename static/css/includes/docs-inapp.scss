@@ -55,12 +55,16 @@ nav.top {
 
 	// Match with colors below
 	box-shadow: 3px 0 0 #fff, 4px 0 0 #E8E8E8;
+
+	// SIDEBAR WIDTH
 	max-width: 240px;
 }
 .subpage.docs .sidebar::-webkit-scrollbar {
     background: #fff;
 	width: 8px;
 	box-shadow: -3px 0 0 #fff, -4px 0 0 #E8E8E8;
+	position: relative;
+	z-index: 900;
 }
 .subpage.docs .sidebar::-webkit-scrollbar-thumb {
 	background: #C1C1C1;
@@ -112,7 +116,6 @@ nav.top {
 .docs .sidebar .section li {
 	margin-bottom: $space16;
 }
-
 // Link jumps
 .docs a[id] {
 	position: relative; 
@@ -175,6 +178,30 @@ nav.top {
 .docs pre ol li {
 	font-size: 11px;
 }
+
+// SEARCH
+.docs .searchbar {
+	position: fixed;
+	top:0;
+	left:0;
+	z-index: 300;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.1);
+	border-right:1px solid #E8E8E8;
+	height: 48px;
+	padding:16px;
+	width: 100%;
+	background: #fff;
+}
+
+.docs .searchbar input {
+	width:200px;
+}
+
+.subpage.docs .sidebar,
+.subpage.docs .content-inner {
+	margin-top:48px;
+}
+
 
 @media screen and (max-width:980px) {
 	 .docs .sidebar {
