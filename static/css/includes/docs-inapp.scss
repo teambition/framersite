@@ -53,15 +53,16 @@ nav.top {
 	top: 0;
 	background: #fff;
 	// Match with colors below
-	box-shadow: 4px 0 0 #fff, 5px 0 0 #E8E8E8;
+	box-shadow: 4px 0 0 #F9FBFC, 5px 0 0 #F9FBFC;
 	// Sidebar width
 	max-width: 218px;
 	padding-bottom: 40px;
+
+	background: #F9FBFC;
 }
 .subpage.docs .sidebar::-webkit-scrollbar {
     background: #fff;
 	width: 6px;
-	box-shadow: -4px 0 0 #fff, -5px 0 0 #fff;
 	position: relative;
 	z-index: 900;
 }
@@ -73,7 +74,7 @@ nav.top {
 .subpage.docs .sidebar::-webkit-scrollbar-track {
 	border-radius: 0;
 	box-shadow: none;
-	background: #fff;
+	background: #F9FAFB;
 	width:6px;
 	margin-top: 8px;
 	margin-bottom: 52px;
@@ -110,7 +111,7 @@ nav.top {
 .docs .align-right,
 .docs p,
 .docs pre {
-	max-width: calc(100% - 8px);
+	max-width: calc(100% - 16px);
 	min-width: 500px;
 }
 
