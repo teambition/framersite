@@ -8,12 +8,20 @@ Translates a number between two ranges. The easiest way to think about is to con
 <pre lang="coffeescript">
 
 # Map from a number from 0, 1 -> 0, 100
-print Utils.modulate(0,   [0, 1], [0, 100]) # Output 0
-print Utils.modulate(0.5, [0, 1], [0, 100]) # Output 50
-print Utils.modulate(1,   [0, 1], [0, 100]) # Output 100
+print Utils.modulate(0,   [0, 1], [0, 100]) 
+# Output 0
+
+print Utils.modulate(0.5, [0, 1], [0, 100]) 
+# Output 50
+
+print Utils.modulate(1,   [0, 1], [0, 100]) 
+# Output 100
 
 # Limit the output
-print Utils.modulate(2, [0, 1], [0, 100], false) # Output 200
-print Utils.modulate(2, [0, 1], [0, 100], true)  # Output 100
+print Utils.modulate(2, [0, 1], [0, 100], false) 
+# Output 200
+
+print Utils.modulate(2, [0, 1], [0, 100], true)  
+# Output 100
 
 </pre>

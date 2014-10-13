@@ -70,9 +70,14 @@ animationA = layerA.animate({
 animationA.stop()
 
 # Listen for an animation to start, stop or end
-layerA.on Events.AnimationStart, -> print "Animation started"
-layerA.on Events.AnimationStop, -> print "Animation stopped"
-layerA.on Events.AnimationEnd, -> print "Animation ended"
+layerA.on Events.AnimationStart, -> 
+	print "Animation started"
+
+layerA.on Events.AnimationStop, -> 
+	print "Animation stopped"
+
+layerA.on Events.AnimationEnd, -> 
+	print "Animation ended"
 
 layerA.animate({
 	properties: {x:100}
