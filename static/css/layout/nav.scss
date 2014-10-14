@@ -188,7 +188,8 @@ nav.top li ul a {
 }
 @media screen and (max-width:600px) {
 	nav.top, 
-	nav.top.sticky {
+	nav.top.sticky,
+	nav.top.fade-out {
 		line-height: 1;
 		position: relative;
 		text-align: center;

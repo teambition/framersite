@@ -58,12 +58,6 @@
 .feature-summary {
 	margin-bottom: $space80;
 }
-// Screenshot Copyand examples copy
-.screenshot-copy h4,
-.examples-caption h4 {
-	margin-bottom: $space8;
-	line-height: 1.8;
-}
 // Icons infront of H5 Headlines
 h5 figure {
 	display: inline-block;
@@ -452,21 +446,29 @@ footer.footer img {
 		 @include scale(0.75);
 		 margin-bottom: $space8;
 	}
-	.logo-string figure:last-child {
-		display: none;
-	}
 	.logo-string figure+figure {
 		margin-left: 0;
 	}
 	// ****************
 	// Vertical spacing M
 	// Examples block
+	.examples-caption, 
+	.logo-string, 
+	.feature-banners,
+	.feature-summary {
+		margin-bottom: $space24;
+	}
 	.examples {
 		margin-top: $space64;
 		margin-bottom: $space72;
 	}
 	.feature-summary li+li {
 		margin-top: $space8;
+	}
+	footer.footer img {
+		margin-bottom: $space16;
+		height: 64px;
+		width: 64px;
 	}
 }
 @media screen and (max-width: 440px) {
