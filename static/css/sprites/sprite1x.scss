@@ -1,7 +1,7 @@
-﻿/* glue: 0.9.4 hash: 033f1a183c */
+﻿/* glue: 0.9.4 hash: a8c1c1c31a */
 /* 1x */
-.logo-instagram,.logo-facebook,.logo-groupon,.logo-google,.logo-stripe,.logo-twitter,.logo-dropbox,.icon-universities,.logo-pinterest,.logo-apple,.logo-adobe,.icon-learn-mirror,.icon-learn-mirror-active,.icon-conferences,.icon-companies,.icon-meetups,.icon-learn-importing,.icon-learn-importing-active,.icon-learn-coffeescript,.icon-learn-coffeescript-active,.icon-learn-basics,.icon-learn-basics-active,.logo-spotify,.icon-learn-previous,.icon-learn-previous-active,.icon-learn-next,.icon-learn-next-active,.icon-workflow,.icon-preview,.icon-more,.icon-interaction,.icon-general,.icon-footer-twitter,.icon-footer-email,.icon-features,.icon-code,.icon-animation,.icon-dropdown-arrow,.icon-arrow{
-    background-image:url('/static/images/sprites/sprite1x.png?033f1a183c');
+.logo-instagram,.logo-facebook,.logo-groupon,.logo-google,.logo-stripe,.logo-twitter,.logo-dropbox,.icon-universities,.logo-pinterest,.logo-apple,.logo-adobe,.icon-learn-mirror,.icon-learn-mirror-active,.icon-conferences,.icon-companies,.icon-volumelicenses,.icon-meetups,.icon-learn-importing,.icon-learn-importing-active,.icon-learn-coffeescript,.icon-learn-coffeescript-active,.icon-learn-basics,.icon-learn-basics-active,.icon-educationpricing,.logo-spotify,.icon-learn-previous,.icon-learn-previous-active,.icon-learn-next,.icon-learn-next-active,.icon-workflow,.icon-preview,.icon-more,.icon-interaction,.icon-general,.icon-footer-twitter,.icon-footer-email,.icon-features,.icon-code,.icon-animation,.icon-dropdown-arrow,.icon-arrow{
+    background-image:url('/static/images/sprites/sprite1x.png?a8c1c1c31a');
     background-repeat:no-repeat;
     -webkit-background-size: 211px 200px;
     -moz-background-size: 211px 200px;
@@ -98,50 +98,62 @@
     height:31px;
 }
 
-.icon-meetups{
+.icon-volumelicenses{
     background-position:-180px 0;
     width:31px;
     height:31px;
 }
 
-.icon-learn-importing{
+.icon-meetups{
     background-position:-180px -31px;
-    width:30px;
+    width:31px;
     height:31px;
 }
 
-.icon-learn-importing-active{
+.icon-learn-importing{
     background-position:-180px -62px;
     width:30px;
     height:31px;
 }
 
-.icon-learn-coffeescript{
+.icon-learn-importing-active{
     background-position:-180px -93px;
-    width:31px;
+    width:30px;
     height:31px;
 }
 
-.icon-learn-coffeescript-active{
+.icon-learn-coffeescript{
     background-position:-180px -124px;
     width:31px;
     height:31px;
 }
 
-.icon-learn-basics{
+.icon-learn-coffeescript-active{
     background-position:0 -169px;
     width:31px;
     height:31px;
 }
 
-.icon-learn-basics-active{
+.icon-learn-basics{
     background-position:-31px -169px;
     width:31px;
     height:31px;
 }
 
-.logo-spotify{
+.icon-learn-basics-active{
     background-position:-62px -169px;
+    width:31px;
+    height:31px;
+}
+
+.icon-educationpricing{
+    background-position:-93px -169px;
+    width:31px;
+    height:31px;
+}
+
+.logo-spotify{
+    background-position:-124px -169px;
     width:30px;
     height:30px;
 }
@@ -219,13 +231,13 @@
 }
 
 .icon-code{
-    background-position:-92px -169px;
+    background-position:-154px -169px;
     width:16px;
     height:16px;
 }
 
 .icon-animation{
-    background-position:-108px -169px;
+    background-position:-170px -169px;
     width:16px;
     height:16px;
 }
