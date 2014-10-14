@@ -398,6 +398,10 @@ footer.footer img {
 		margin-left: 0;
 		left:0;
 	}
+	h5 figure {
+		margin-bottom: -1px;
+		margin-right: 12px;
+	}
 }
 @media screen and (max-width: 480px) {
 	a.device-left,
@@ -444,17 +448,13 @@ footer.footer img {
 	// Logo string
 	.logo-string figure {
 		 @include scale(0.75);
-		 margin-bottom: $space8;
+		 margin-bottom: 0;
 	}
 	.logo-string figure+figure {
 		margin-left: 0;
 	}
 	// ****************
 	// Vertical spacing M
-	// Examples block
-	.examples-caption, 
-	.logo-string, 
-	.feature-banners,
 	.feature-summary {
 		margin-bottom: $space24;
 	}
@@ -463,15 +463,19 @@ footer.footer img {
 		margin-bottom: $space72;
 	}
 	.feature-summary li+li {
-		margin-top: $space8;
+		margin-top: 12px;
 	}
 	footer.footer img {
 		margin-bottom: $space16;
 		height: 64px;
 		width: 64px;
 	}
+
 }
 @media screen and (max-width: 440px) {
+	.header .cta {
+		display: none;
+	}
 	.banner-importing {
 		background-size: 100%;
 		background-position: center 168px;
