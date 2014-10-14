@@ -25,5 +25,6 @@ def run(command):
 
 def preBuild(site):
     run('scss -C --update %s' % pipes.quote(os.path.join(site.static_path, "css", "style.scss")))
+    run('scss -C --update %s' % pipes.quote(os.path.join(site.static_path, "css", "style-inapp.scss")))
     # run('find %s -name "*.sass" -not -name "_*" -exec scss -C --update {} \;' % pipes.quote(site.static_path))
     run('find %s -name "*.coffee" -exec coffee -c {} \;' % pipes.quote(site.static_path))

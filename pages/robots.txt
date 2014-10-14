@@ -1,7 +1,7 @@
 {% verbatim %}
 
 User-agent: *
-Disallow:
+Disallow: /_docs/index.html
 Sitemap: sitemap.xml
 
 {% endverbatim %}

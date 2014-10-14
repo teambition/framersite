@@ -1,0 +1,251 @@
+body.docs {
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	min-width: 600px;
+}
+// SPACING
+.docs p {
+	font-size: 14px;
+	font-weight: 400;
+	margin-bottom: 16px;
+	line-height: 1.5;
+}
+.docs .highlight + p {
+	margin-top: 24px;
+}
+.docs p.small {
+	font-size: 10px;
+	color: #a1a8b6;
+	text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: .5px;
+	font-weight: bold;
+	margin-top: -16px; 
+}
+.docs h3 {
+	font-size: 22px;
+	font-weight: 400;
+	letter-spacing: 0;
+}
+.docs.subpage h3 {
+	margin-bottom: 8px;
+}
+.docs.subpage h5 {
+	font-size: 12px;
+}
+.docs h6 {
+	letter-spacing: 0.2;
+	font-size: 19px;
+	font-weight: 400;
+	color: #000;
+}
+nav.top {
+	display: none;
+}
+.subpage.docs .container {
+	padding: 0;
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+.subpage.docs .sidebar {
+	margin-top: 0;
+	padding-top: 16px;
+	padding-left: 16px;
+	// height: calc(100% - 64px);
+	height: 100%;
+	top: 0;
+	background: #fff;
+	// Match with colors below
+	box-shadow: 4px 0 0 #FBFCFD, 5px 0 0 #EAEEF2;
+	// Sidebar width
+	max-width: 190px;
+	padding-bottom: 40px;
+
+	background: #FBFCFD;
+}
+.subpage.docs .sidebar::-webkit-scrollbar {
+    background: #F8FAFA;
+	width: 6px;
+	position: relative;
+	z-index: 900;
+}
+.subpage.docs .sidebar::-webkit-scrollbar-thumb {
+	background: #C1C1C1;
+	border-radius: 88px;
+	width: 6px;
+}
+.subpage.docs .sidebar::-webkit-scrollbar-track {
+	border-radius: 0;
+	box-shadow: none;
+	background: #FBFCFD;
+	width:6px;
+	margin-top: 8px;
+	margin-bottom: 52px;
+}
+.subpage.docs ul a li {
+	font-size: 12px;
+	letter-spacing: 0.2px;
+	font-weight: 400;
+	color: $text;
+	@include transition(all, 0.1s, ease);
+}
+.subpage.docs ul a.section li {
+	font-weight: 500;
+	font-size: 12px;
+	margin-bottom: 8px;
+	letter-spacing: 0px;
+	text-transform: none;
+	opacity: 1;
+	color: $black;
+}
+.subpage.docs ul a:hover li {
+	color: $blue;
+}
+
+// TRUNCATE
+.subpage.docs ul li span {
+	opacity: 0;
+	display: none;
+}
+.subpage.docs ul li.truncate:after {
+	content:"...";
+	display:inline-block;
+}
+.docs .content-inner {
+	max-width: 100%;
+	width:100%;
+	padding: 0;
+	padding-right:32px;
+}
+.docs .align-right {
+	float: none; 
+	padding-left: 226px;
+}
+
+.docs .align-right,
+.docs p,
+.docs pre {
+	max-width: 100%;
+	min-width: 484px;
+}
+
+// Sidebar spacing
+.docs .sidebar ul {
+	margin-bottom: $space16;
+}
+.docs .sidebar .section li {
+	margin-bottom: $space16;
+}
+// Link jumps
+.docs a[id] {
+	position: relative; 
+	top: -48px;
+	display: block;
+	height:0;
+}
+.docs a[name] {
+	position: relative; 
+	top: -56px;
+	display: block;
+	height:0;
+}
+// Docs pre space
+.docs p + h6,
+.docs p + h3,
+.docs table + h6,
+.docs table + h3,
+.docs .highlight + h3,
+.docs .highlight + h6,
+.docs .highlight + h5 {
+    margin-top: $space40;
+}
+// TABLES
+.docs table {
+	font-size:12px;
+	font-weight: 400;
+	box-shadow: none;
+	padding:0;
+}
+.docs td:first-child {
+	padding-left:0;
+}
+.docs thead th,
+.docs th,
+.docs table td.group {
+	font-size: 10px;
+	font-weight: 600;
+	line-height: 1.2;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	background: transparent;
+}
+.docs thead th, 
+.docs th,
+.docs table td.group  {
+	padding: 8px 16px;
+}
+.docs th:first-child,
+.docs thead th:first-child,
+.docs table td.group:first-child {
+	padding-left: 0;
+}
+.docs table td.group {
+	padding-bottom: 12px;
+}
+.docs th {
+	opacity: .4;
+}
+.docs pre ol li {
+	font-size: 11px;
+}
+.subpage.docs pre {
+    word-wrap: break-word;
+    -webkit-font-smoothing: subpixel-antialiased;
+    // Spacing
+    padding-left: 16px;
+    padding-bottom: 14px;
+    display:block;
+    // Default
+    color: #788D9E; 
+    background: #fff; 
+    box-shadow: inset 0 0 0 1px #E4EBF2, inset 40px 0 0 #FBFDFE, inset 41px 0 0 #E4EBF2; // To-do: make this variables
+    border-radius: 4px;
+}
+.subpage.docs .content-inner pre ol li:before {
+    margin-right: 28px;
+    font-size: 8px;
+
+}
+// SEARCH
+.docs .searchbar {
+	position: fixed;
+	top:0;
+	left:0;
+	z-index: 300;
+	box-shadow: 0 1px 0 #EAEEF2;
+	border-right:1px solid #EAEEF2;
+	height: 51px;
+	padding:16px;
+	width: 195px;
+	background: #FBFCFD;
+}
+.docs .searchbar input {
+	width:164px;
+}
+.subpage.docs .sidebar {
+	margin-top:48px;
+}
+// HIGHLIGHT
+.highlight-search { 
+	background-color:rgba(255,255,137,0.8); 
+	display: inline
+}
+@media screen and (max-width:980px) {
+	 .docs .sidebar {
+	 	display: block;
+	}
+}
+@media screen and (max-width: 560px) {
+    .content-inner pre ol li:before {
+        content: counter(linenumbers);
+    }
+}

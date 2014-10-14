@@ -71,8 +71,24 @@ h3 {
 h4 {
 	font-size: 1.625em; //26px
 }
+.home h4,
 .subpage h4 {
 	margin-bottom: $space24;
+}
+// Screenshot Copyand examples copy
+.screenshot-copy h4,
+.examples-caption h4 {
+	margin-bottom: $space8;
+	line-height: 1.8;
+}
+.subpage.teach h4 {
+	margin-bottom: $space8;
+}
+.subpage.teach h4 + .btn{
+	margin-top: $space8;
+}
+.subpage.teach .resources h4 {
+	margin-bottom: $space32;
 }
 h5 { // Feature blocks
 	font-size: 1.5em; //24px
@@ -87,6 +103,12 @@ h5 { // Feature blocks
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
 	color: $black;
+}
+
+.teach h5,
+.subpage h5.blue {
+	color: $blue;
+	font-size: 12px;
 }
 .subpage h5 + ul {
 	margin-top: $space16;
@@ -103,10 +125,14 @@ h5 { // Feature blocks
 .caption .subtitle {
 	margin-bottom: $space16;
 }
+.teach .subtitle {
+	color: $graphite-lists;
+}
 h6 {
-	font-size: 24px; 
+	font-size: 22px; 
 }
 .docs h6 {
+	font-size: 24px;
 	margin-bottom: $space8;
 	color: $black;
 }
@@ -120,7 +146,12 @@ p.title {
 	color: $black;
 }
 .feature-summary p.title {
-	font-size:18px;
+	font-size: 12px;
+	font-weight: 600;
+	margin-bottom: $space8;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	color: $black;
 }
 .feature-summary p {
 	font-size:14px;
@@ -136,8 +167,15 @@ p.title {
 	letter-spacing: 0;
 }
 .small {
+	font-size: 16px;
+}
+.learn .small {
 	font-size: 14px;
 }
+.about .col-4 a {
+	font-style: 16px;
+}
+
 .extra-small {
 	font-size: 12px;
 }
@@ -168,7 +206,7 @@ p.copy {
 	color: $nav-links;
 }
 // Lists
-.content-inner ul,  ol {
+ul,  ol {
 	margin-bottom: $space32;
 }
 // Lists on Pages
@@ -260,7 +298,7 @@ ul.numbered li:before {
 .inline-image + h5 {
 	margin-top: $space48;
 }
-.subpage hr {
+.learn hr, .docs hr {
 	margin: $space48 auto;
 }
 // Type - Vertical spacing
@@ -365,6 +403,15 @@ table + h5 {
 	margin-bottom: $space24;
 }
 
+// Subpage type treatment
+.teach p,
+.careers p {
+	margin-bottom: 0;
+}
+.teach p + ul {
+	margin-top: 16px;
+}
+
 // Media Queries
 @media screen and (max-width: 1080px) {
 	.page-header h2 {
@@ -411,14 +458,21 @@ table + h5 {
 	}
 }
 @media screen and (max-width: 440px) {
+	body {
+		font-size:12px;
+	}
 	.header h1 {
 		font-size:2.375em;
+		font-size: 24px;
+		letter-spacing: -0.5px;
+		line-height: 1.2;
 	}
 	h2 {
 		font-size: 2.25em;
 	}
 	.page-header h2 {
 		font-size: 1.625em;
+		font-size: 1.6em;
 		line-height: 1.2;
 	}
 	.summary ul li {
@@ -428,6 +482,11 @@ table + h5 {
 		margin-right: $space8;
 		top: 3px;
 	}
+	// Screenshot Copy and examples copy
+	.screenshot-copy h4,
+	.examples-caption h4 {
+		line-height: 1.5;
+	}
 	// Docs type
 	.docs h6 {
 		font-size: 18px;
@@ -435,4 +494,12 @@ table + h5 {
 	.docs p.small {
 		font-size: 10px;
 	}
+	h6 {
+		font-size: 20px;
+		line-height: 1.5;
+	}
+	.subtitle {
+		font-size: 16px;
+	}
+
 }

@@ -1,0 +1,14 @@
+{% extends "docs.html" %}
+{% block currentpage %}class="subpage docs"{% endblock currentpage %}
+
+{% block stylesheets %}
+	<link rel="stylesheet" href="{% static '/css/style-inapp.css' %}">
+{% endblock stylesheets %}
+
+{% block searchbar %}
+
+<script type="text/javascript" src="/static/js/search.js"></script>
+<div class="searchbar">
+	<input type="search" placeholder="Search" id="docs-search">
+</div>
+{% endblock searchbar %}

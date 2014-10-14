@@ -35,9 +35,11 @@ img {
   clear: both;
 }
 // Subpages = Learn & Docs
-.subpage .container,
+.subpage .container {
+	padding: 64px 0 128px 0;
+}
 .faq .container {
-	padding: 40px 0 128px 0;
+	padding-top: 40px;
 }
 .learn .container {
 	padding-top:0;
@@ -157,7 +159,7 @@ hr {
 		padding-top: $space32;
 	}
 	.content-inner {
-		padding:0 $space16;
+		padding:0 $space24;
 	}
 	.col-2,
 	.col-4 {
@@ -188,6 +190,9 @@ hr {
 		padding-bottom: $space32;
 	}
 	.subpage hr {
+		margin: $space32 auto;
+	}
+	hr {
 		margin: $space32 auto;
 	}
 }

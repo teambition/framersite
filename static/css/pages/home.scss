@@ -58,12 +58,6 @@
 .feature-summary {
 	margin-bottom: $space80;
 }
-// Screenshot Copyand examples copy
-.screenshot-copy h4,
-.examples-caption h4 {
-	margin-bottom: $space8;
-	line-height: 1.8;
-}
 // Icons infront of H5 Headlines
 h5 figure {
 	display: inline-block;
@@ -404,6 +398,10 @@ footer.footer img {
 		margin-left: 0;
 		left:0;
 	}
+	h5 figure {
+		margin-bottom: -1px;
+		margin-right: 12px;
+	}
 }
 @media screen and (max-width: 480px) {
 	a.device-left,
@@ -413,6 +411,7 @@ footer.footer img {
 	a.device-mid  {
 		top:-60px; 
 		margin-left:-150px;
+		@include scale(0.56);
 	}
 	a.device-mid img {
 		max-width: inherit;
@@ -423,12 +422,6 @@ footer.footer img {
 	}
 	a.device-right {
 		right: -72px;
-	}
-	// Extra padding @ lists on mobile
-	// Framer overview
-	.framer-overview section,
-	.feature-summary section {
-		padding: 0 $space24;
 	}
 	// Feature Banners (Mirror & Importing)
 	.feature-banners a {
@@ -455,24 +448,29 @@ footer.footer img {
 	// Logo string
 	.logo-string figure {
 		 @include scale(0.75);
-		 margin-bottom: $space8;
-	}
-	.logo-string figure:last-child {
-		display: none;
+		 margin-bottom: 0;
 	}
 	.logo-string figure+figure {
 		margin-left: 0;
 	}
 	// ****************
 	// Vertical spacing M
-	// Examples block
+	.feature-summary {
+		margin-bottom: $space24;
+	}
 	.examples {
-		margin-top: $space16;
+		margin-top: $space64;
 		margin-bottom: $space72;
 	}
 	.feature-summary li+li {
-		margin-top: $space8;
+		margin-top: 12px;
 	}
+	footer.footer img {
+		margin-bottom: $space16;
+		height: 64px;
+		width: 64px;
+	}
+
 }
 @media screen and (max-width: 440px) {
 	.banner-importing {

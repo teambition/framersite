@@ -9,10 +9,24 @@ $(document).ready(function() {
 			$(this).toggleClass("is-active");
 	});
 
+	$("nav .more").click(function(event) { 
+		  event.stopPropagation();
+		$('.more-dropdown').toggleClass("appear");
+		$("nav .more").toggleClass("active");
+	});
+	$(".more-dropdown a:first-child").hover(function() { 
+		$('.more-dropdown').toggleClass("on-hover");
+	});
+
+	$(document).click(function() { 
+		$('.more-dropdown').removeClass("appear");
+		$("nav .more").removeClass("active");
+	});
+
 	var learnSidebar, topNav, exampleBlock, exampleDevices;
 	learnSidebar = $('.subpage.learn .sidebar');
 	topNavHome = $('.home nav.top');
-	topNavPages = $('.learn nav.top');
+	topNavPages = $('.learn nav.top, .teach nav.top, .careers nav.top');
 	exampleBlock = $('.examples');
 	exampleDevices = $('.device-left, .device-right');
 
@@ -27,6 +41,8 @@ $(document).ready(function() {
 	var videoElement = $("#carousel-video-examples").get(0)
 
 	$(window).scroll(function() {
+		$('.more-dropdown').removeClass("appear");
+
 		var scrollPos = $(window).scrollTop();
 		// Sidebar Sticky ----------------
 		if ($(window).scrollTop() > 646) {

@@ -8,10 +8,11 @@
 	<link rel="shortcut icon" sizes="16x16" href="{% static '/images/favicon.ico' %}">
 	<link rel="shortcut icon" sizes="32x32" href="{% static '/images/favicon@2x.png' %}">
 	{% include 'fonts.html' %}
+	{% block stylesheets %}
 	<link rel="stylesheet" href="{% static '/css/style.css' %}">
+	{% endblock stylesheets %}
 
 	<title>{% block title %}Framer - Prototype Interaction and Animation{% endblock %}</title>
-
 </head>
 
 <body {% block currentpage %}{% endblock %}>
@@ -20,10 +21,18 @@
 			<li class="{% block ishome %}{% endblock %} framer"><a href="/">Framer</a></li>
 			<section class="nav-items">
 				<li class="{% block islearn %}{% endblock %}"><a href="/learn/basics">Learn</a></li>
-					<li class="{% block isdocs %}{% endblock %}"><a href="/docs">Docs</a></li>
-					<li><a href="http://examples.framerjs.com" target="_blank">Examples</a></li>
-					<li class="community"><a href="https://www.facebook.com/groups/framerjs/" target="_blank">Community</a></li>
-					<li class="github"><a href="https://github.com/koenbok/Framer" target="_blank">Github</a></li>
+				<li class="{% block isdocs %}{% endblock %}"><a href="/docs">Docs</a></li>
+				<li><a href="http://examples.framerjs.com" target="_blank">Examples</a></li>
+				<li class="community"><a href="https://www.facebook.com/groups/framerjs/" target="_blank">Community</a></li>
+				<li>
+					<a class="more">More</a>
+					<ul class="more-dropdown">
+						<a href="/teach">Teach</a>
+						<a href="/jobs">Jobs</a>
+						<a href="https://github.com/koenbok/Framer" target="_blank">Github</a>
+						<a href="http://framerjs.tumblr.com" target="_blank">Blog</a>
+					</ul>
+				</li>
 
 				<section class="right">
 					<li class="download prepare-download"><a class="green" href="http://studio.update.framerjs.com/archive">Free Trial</a></li>
@@ -46,21 +55,23 @@
 
 	<footer class="global">
 		<div class="content-inner">
+			<section class="left">
+				<nav>
+					<li><a href="/teach">Teach</a></li>
+					<li><a href="/jobs">Jobs</a></li>
+					<li class="github"><a href="https://github.com/koenbok/Framer" target="_blank">Github</a></li>
+					<li><a href="http://framerjs.tumblr.com" target="_blank">Blog</a></li>
+					<li class="support"><a href="mailto:support@framerjs.com">Support</a></li>
+					<li class="twitter"><a href="https://twitter.com/framerjs" target="_blank">Twitter</a></li>
+				</nav>
+				<p class="copy">Copyright &copy; 2014 Podium BV</p>
+			</section>
 			<section class="right">
 				<form action="http://podium.createsend.com/t/d/s/jujtid/" method="post">
 			        <input id="fieldEmail" name="cm-jujtid-jujtid" type="email" placeholder="Enter email for updates" required />
 			        <button type="submit"><div class="icon-arrow"></div></button>
 				</form>
 				<p class="copy">Secure and spam-free</p>
-			</section>
-			<section class="left">
-				<nav>
-					<li><a href="http://framerjs.tumblr.com" target="_blank">Blog</a></li>
-					<li><a href="https://twitter.com/framerjs" target="_blank">Twitter</a></li>
-					<li><a href="https://vimeo.com/channels/framer" target="_blank">Vimeo</a></li>
-					<li><a href="/faq">FAQ</a></li>
-				</nav>
-				<p class="copy">Copyright &copy; 2014 Podium BV</p>
 			</section>
 		</div>
 	</footer> <!--footer.global-->

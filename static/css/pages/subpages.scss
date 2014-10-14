@@ -11,7 +11,12 @@
 .faq .page-header {
 	height:320px;
 }
-.learn .page-header h1 {
+.page-header h1,
+.page-header h2 {
+	position: relative;
+	z-index: 10;
+}
+.page-header h1 {
 	margin-bottom: $space8;
 }
 .page-header h2 {
@@ -54,6 +59,11 @@
 	clear:both;
 }
 .align-right p {
+	max-width: 580px;
+	width: 100%;
+	text-align: left;
+}
+p.full-width{
 	max-width: 580px;
 	width: 100%;
 	text-align: left;
@@ -345,7 +355,99 @@ hr.hidden {
 .ss-mirror-iphone {
 	margin-bottom: $space48;
 }
+// Teach page
+// Teach + Careers headers
+.teach .page-header img,
+.careers .page-header img,
+.about .page-header img {
+	max-width: 1482px;
+	max-height:440px;
+	z-index: 0;
+	right:0;
+}
+// Vertical spacing
+.teach-logo-section {
+	margin-bottom: $space80;
+}
+.why-teach-framer {
+	margin-bottom: $space40;
+}
+// ------------
+.why-teach-framer figure {
+	margin-bottom: $space16;
+}
+.teach-logo-string {
+	margin-left: 60px;
+	float:left;
+}
+.teach-logo-string img {
+	float:left; 
+}
+.logo-berkeley {
+	margin-top: 22px;
+}
+.logo-ga {
+	margin-top: 20px;
+}
+.logo-berkeley,
+.logo-ga {
+	max-width: 210px;
+}
+.logo-berkeley {
+	margin-right: 60px;
+}
+.teach .content-inner ul li {
+	font-size: 16px;
+	left: 16px;
+	padding-left: 0px;
+	color: $graphite-lists;
+}
+// Resources
+.teach .author {
+	color: #AEBCC5;
+	display: block;
+	margin-left: 0;
+	margin-top: -4px;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	margin-bottom: $space16;
+	font-weight: 600;
+}
+.resources a {
+	float:left;
+	clear:both;
+	@include transition(opacity, 0.2s, ease);
+}
+.resources a+a {
+	margin-top: $space48;
+}
+.resources h5 {
+	color: $blue;
+	@include transition(all, 0.2s, ease);
+}
+.resources p {
+	max-width: 375px;
+}
+.resources a:hover h5 {
+	color: $black;
+}
+.resources a:hover .author {
+}
 
+// About page
+.about p {
+	margin-bottom: 0;
+}
+.about .content-inner img {
+	margin: $space64 auto;
+	display: block;
+}
+.about .contact-links a {
+	display: inline-block;
+	line-height: 1.6;
+	margin-bottom: 0;
+}
 @media screen and (max-width:1080px) {
 	.page-header img {
 		right:130px;
@@ -353,12 +455,16 @@ hr.hidden {
 	.align-right {
 		max-width: 660px;
 	}
-	.subpage .col-4 {
-		margin-right: 20px;
-	}
 	.layer-type-illustration {
         border-radius: 3px;
     }
+	.logo-berkeley,
+	.logo-ga {
+		max-width: 200px;
+	}
+	.logo-berkeley {
+		margin-right: 40px;
+	}
 }
 @media screen and (max-width:980px) {
 	.page-header img {
@@ -406,6 +512,26 @@ hr.hidden {
 	.animation-curves .col-4+.col-4 {
 		margin-left:10px;
 	}
+	.teach-logo-section .col-2 {
+		max-width: 100%;
+		float:none;
+	}
+	.teach-logo-string {
+		margin-left: 0;
+		float: none;
+		margin-top:40px;
+	}
+	.logo-berkeley,
+	.logo-ga {
+		max-width: 210px;
+		margin-top: 0;
+	}
+	.logo-berkeley {
+		margin-right: 40px;
+	}
+	.resources a {
+		font-size: 16px;
+	}
 }
 @media screen and (max-width:960px) {
 	.page-header img {
@@ -423,13 +549,19 @@ hr.hidden {
 		height: 460px;
 		padding-top:24px;
 	}
-	.page-header .content-inner {
+	.learn .page-header .content-inner {
 		height: 436px;
 	}
+	.subpage .page-header {
+		height:220px;
+	} 
 	.page-header img {
 		max-width: 210px;
 		right: 50%;
 		margin-right:-125px; // 105 + 20
+	}
+	.subpage .page-header img {
+		display: none;
 	}
 	.docs .page-header,
 	.faq .page-header {
@@ -505,13 +637,21 @@ hr.hidden {
 		max-width: 210px;
 		display: none;
 	}
+	.logo-berkeley {
+		margin-right: 60px;
+	}
 }
-@media screen and (max-width:560px) {
+@media screen and (max-width:600px) {
 	.page-header {
 		height: 440px;
 		margin-top: 0;
 	}
-	.page-header .content-inner {
+	.subpage .page-header {
+		height:180px;
+	} 	
+}
+@media screen and (max-width:560px) {
+	.learn .page-header .content-inner {
 		height: 416px;
 	}
 	.docs .page-header,
@@ -571,6 +711,41 @@ hr.hidden {
 	.docs nav.top {
 		position: relative;
 	}
+	// Teach page
+	.logo-berkeley,
+	.logo-ga {
+		max-width: 45%;
+		height: auto;
+	}
+	.logo-berkeley {
+		margin-right: 5%;
+	}
+	.teach h4 {
+		line-height: 1.4;
+	}
+	// Vertical spacing
+	.teach-logo-section {
+		margin-bottom: $space48;
+	}
+	.why-teach-framer {
+		margin-bottom: $space32;
+		border-bottom: 1px solid $separator;
+	}
+	.teach-logo-section {
+		padding-bottom: $space48;
+		border-bottom: 1px solid $separator;
+	}
+	.why-teach-framer figure {
+		margin-bottom: 0;
+		float: left;
+		margin-right: $space16;
+	}
+	.jobs section:first-child,
+	.resources section:first-child  {
+		border-bottom: 1px solid $separator;
+		padding-bottom: $space40;
+	}
+
 }
 @media screen and (max-width: 440px) {
 	.learn-nav .nav-title {

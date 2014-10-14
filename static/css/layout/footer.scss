@@ -11,6 +11,22 @@ footer.global li {
 	float: left;
 	font-weight: 600;
 }
+footer.global a {
+	color: $nav-links;
+}
+footer.global a figure {
+	float: left;
+	margin-right:8px;
+	position: relative;
+}
+.icon-footer-twitter {
+	top:-2px;
+}
+footer.global .small {
+	color: #788D9E;
+	font-size:14px;
+	margin-top: 8px;
+}
 footer.global a:hover {
 	color: #fff;
 }
@@ -60,10 +76,15 @@ footer.global input::-webkit-input-placeholder { color: $graphite60; padding-top
 footer.global input:-moz-placeholder { color: $graphite60; padding-top:1px; }
 footer.global input::-moz-placeholder { color: $graphite60; padding-top:1px; }
 footer.global input:-ms-input-placeholder { color: $graphite60; padding-top:1px; }
-
+@media screen and (max-width: 980px) {
+	footer.global .support,
+	footer.global .twitter {
+		display: none;
+	}
+}
 @media screen and (max-width: 720px) {
 	footer.global {
-		height: 280px;
+		height: 232px;
 	}
 	footer.global .right {
 		width: 254px;
@@ -74,7 +95,20 @@ footer.global input:-ms-input-placeholder { color: $graphite60; padding-top:1px;
 		float: none;
 		text-align: center;
 	}
-	footer.global section.right {
-		margin-bottom: $space48;
+	footer.global section.left {
+		margin-bottom: $space16;
+	}
+	footer.global li,
+	footer.global li a {
+		text-align: center;
+	}
+	footer.global a figure {
+		margin: 0 auto;
+		display: block;
+		margin-bottom: 16px;
+		float:none;
+	}
+	.icon-footer-twitter {
+		top:0;
 	}
 }
