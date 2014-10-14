@@ -424,12 +424,18 @@ table + h5 {
 		font-size: 3em;
 	}
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 820px) {
 	.header h1 {
-		font-size: 3.2em;
+		max-width: 100%;
+	}
+	.header .content-inner.center {
+		padding:0 16px;
 	}
 }
 @media screen and (max-width: 720px) {
+	.header h1 {
+		font-size: 44px;
+	}
 	.page-header h2 {
 		line-height: 1.1;
 	}
@@ -454,9 +460,20 @@ table + h5 {
 	.subpage h3 {
 		margin-bottom: $space16;
 	}
+	.home h4 {
+		margin-bottom: 12px;
+	}
 	// Docs type
 	.docs h6 {
 		font-size: 20px;
+	}
+	// Captions under "Innovative prototyping... Rapid Experimentation" etc
+	.caption .subtitle {
+		margin-bottom: 12px;
+	}
+	.screenshot-copy h4,
+	.examples-caption h4 {
+		margin-bottom: 4px;
 	}
 }
 @media screen and (max-width: 480px) {
@@ -506,7 +523,7 @@ table + h5 {
 		line-height: 1.5;
 	}
 	.subtitle {
-		font-size: 16px;
+		font-size: 14px;
 	}
 
 }

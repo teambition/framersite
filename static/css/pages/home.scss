@@ -11,7 +11,7 @@
 .header p.copy {
 	opacity: .75;
 	font-size: 10px;
-	margin-bottom: 0;
+	margin-bottom: 16px;
 }
 .ss-framer {
 	max-width: 1024px;
@@ -400,6 +400,29 @@ footer.footer img {
 		margin-bottom: -2px;
 		margin-right: 12px;
 	}
+	.examples {
+		margin-bottom: $space88;
+	}
+	.examples-caption {
+		margin-bottom: $space32;
+	}
+	footer.footer img {
+		margin-bottom: $space8;
+		height: 64px;
+		width: 64px;
+	}
+	// Feature list
+	.feature-summary {
+		margin-bottom: $space24;
+	}
+	// Logo string
+	.logo-string figure {
+		 @include scale(0.75);
+		 margin-bottom: 0;
+	}
+	.logo-string figure+figure {
+		margin-left: -4px;
+	}
 }
 @media screen and (max-width: 480px) {
 	.header {
@@ -459,30 +482,19 @@ footer.footer img {
 	.feature-summary h5 {
 		margin-bottom: $space16;
 	}
-	// Logo string
-	.logo-string figure {
-		 @include scale(0.75);
-		 margin-bottom: 0;
-	}
-	.logo-string figure+figure {
-		margin-left: -4px;
-	}
 	// ****************
 	// Vertical spacing M
-	.feature-summary {
-		margin-bottom: $space24;
-	}
 	.examples {
 		margin-top: $space64;
-		margin-bottom: $space72;
+		margin-bottom: $space56;
 	}
 	.feature-summary li+li {
 		margin-top: 12px;
 	}
-	footer.footer img {
-		margin-bottom: $space16;
-		height: 64px;
-		width: 64px;
+	.logo-string .logo-groupon,
+	.logo-string .logo-pinterest,
+	.logo-string .logo-adobe {
+		display: none;
 	}
 
 }
