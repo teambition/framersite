@@ -413,6 +413,7 @@ footer.footer img {
 	a.device-mid  {
 		top:-60px; 
 		margin-left:-150px;
+		@include scale(0.56);
 	}
 	a.device-mid img {
 		max-width: inherit;
@@ -423,12 +424,6 @@ footer.footer img {
 	}
 	a.device-right {
 		right: -72px;
-	}
-	// Extra padding @ lists on mobile
-	// Framer overview
-	.framer-overview section,
-	.feature-summary section {
-		padding: 0 $space24;
 	}
 	// Feature Banners (Mirror & Importing)
 	.feature-banners a {
@@ -467,7 +462,7 @@ footer.footer img {
 	// Vertical spacing M
 	// Examples block
 	.examples {
-		margin-top: $space16;
+		margin-top: $space64;
 		margin-bottom: $space72;
 	}
 	.feature-summary li+li {
