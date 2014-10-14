@@ -102,10 +102,12 @@ nav.top input {
 	-moz-user-select: none;   
 	-ms-user-select: none;    
 }
+.more-dropdown-container {
+	position: relative;
+}
 .more {
 	cursor: pointer;
 	cursor: hand;
-	position: relative;
 	display: inline-block;
 	@include transition(all, 0.2s, ease);
 }
@@ -120,12 +122,13 @@ nav.top input {
 	position: absolute;
 	width:80px;
 	text-align: center;
-	left:3px;
+	left:50%;
 	top: 26px;
 	@include transform-origin(50% 0);
 }
 .more-dropdown.appear {
 	opacity: 1;
+	margin-left: -28px;
 	visibility: visible;
 	z-index: 300;
 	@include animation('bouncy .3s 1');
