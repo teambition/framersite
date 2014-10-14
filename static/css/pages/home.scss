@@ -11,6 +11,7 @@
 .header p.copy {
 	opacity: .75;
 	font-size: 10px;
+	margin-bottom: 0;
 }
 .ss-framer {
 	max-width: 1024px;
@@ -404,6 +405,9 @@ footer.footer img {
 	}
 }
 @media screen and (max-width: 480px) {
+	.header {
+		margin-bottom: $space24;
+	}
 	a.device-left,
 	a.device-right {
 		@include scale(0.44);
@@ -429,9 +433,11 @@ footer.footer img {
 	}
 	.feature-banners section {
 		margin-top: -$space32;
+		width: 84%;
+		margin-left: -42%;
 	}
 	.feature-banners h5 {
-		font-size: 1.2em;
+		font-size: 16px;
 	}
 	.banner-importing {
 		background-size: 100%;
@@ -451,7 +457,7 @@ footer.footer img {
 		 margin-bottom: 0;
 	}
 	.logo-string figure+figure {
-		margin-left: 0;
+		margin-left: -4px;
 	}
 	// ****************
 	// Vertical spacing M
@@ -474,8 +480,12 @@ footer.footer img {
 }
 @media screen and (max-width: 440px) {
 	.banner-importing {
-		background-size: 100%;
+		background-size: 120%;
 		background-position: center 168px;
+	}
+	.banner-mirror {
+		background-size: 120%;
+		background-position: center -64px;
 	}
 	.feature-banners section {
 		margin-top: -$space40;
