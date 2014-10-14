@@ -122,9 +122,6 @@ h5 { // Feature blocks
 h6 {
 	font-size: 22px; 
 }
-// .subpage h6 {
-// 	margin-bottom: $space24;
-// }
 .docs h6 {
 	font-size: 24px;
 	margin-bottom: $space8;
@@ -476,5 +473,8 @@ table + h5 {
 	h6 {
 		font-size: 20px;
 		line-height: 1.5;
+	}
+	.subtitle {
+		font-size: 18px;
 	}
 }
