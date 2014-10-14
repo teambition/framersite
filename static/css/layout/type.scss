@@ -36,6 +36,7 @@ h1 {
 	line-height: 1.1;
 	max-width: 700px;
 	margin: 0 auto;
+	margin-bottom: $space24;
 }
 h2 {
 	font-size: 2.5em; //32px
@@ -456,6 +457,11 @@ table + h5 {
 	// Docs type
 	.docs h6 {
 		font-size: 20px;
+	}
+}
+@media screen and (max-width: 480px) {
+	.header h1 {
+		margin-bottom: 14px;
 	}
 }
 @media screen and (max-width: 440px) {

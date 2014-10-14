@@ -40,9 +40,6 @@
 .header {
 	margin-bottom: $space72;
 }
-.header h1 {
-	margin-bottom: $space24;
-}
 .header .btn {
 	margin-bottom: $space16;
 }
@@ -400,13 +397,24 @@ footer.footer img {
 		left:0;
 	}
 	h5 figure {
-		margin-bottom: -1px;
+		margin-bottom: -2px;
 		margin-right: 12px;
 	}
 }
 @media screen and (max-width: 480px) {
 	.header {
-		margin-bottom: $space24;
+		margin-bottom: 0;
+		padding-top: 110px;
+	}
+	.screenshot-copy {
+		margin-top: $space24;
+	}
+	.header .btn {
+		margin-bottom: 8px;
+	}
+	.header p.copy {
+		margin-bottom: 16px;
+		font-size: 8px;
 	}
 	a.device-left,
 	a.device-right {
