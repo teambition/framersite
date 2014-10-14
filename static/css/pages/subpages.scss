@@ -448,6 +448,11 @@ hr.hidden {
 	line-height: 1.6;
 	margin-bottom: 0;
 }
+
+// Pricing 
+.pricing .col-2 .btn {
+	margin-bottom: $space40;
+}
 @media screen and (max-width:1080px) {
 	.page-header img {
 		right:130px;
