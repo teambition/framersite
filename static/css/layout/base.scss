@@ -110,6 +110,11 @@ hr {
 	.col-2 {
 		max-width:300px;
 	}
+	// Prevent odd text overflow
+	.careers h2.col-2,
+	.pricing h2.col-2 {
+		max-width:360px;
+	}
 	.col-4 {
 		max-width:300px;
 		margin-right:0;
@@ -132,6 +137,13 @@ hr {
 	}
 	.col-2 {
 		max-width:100%;
+	}
+	.teach h2.col-2,
+	.careers h2.col-2,
+	.pricing h2.col-2 {
+		max-width:400px;
+		float: none;
+		margin: 0 auto;
 	}
 	.col-2 + .col-2 {
 		margin-top: $space48;
