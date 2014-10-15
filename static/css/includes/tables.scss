@@ -32,7 +32,7 @@ thead th, th {
 	border-radius: 3px 3px 0 0; 
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
-	background: #FBFDFE;
+	background: #fff;
 }
 table .dim {
 	color: #999;
@@ -70,6 +70,11 @@ td a+a:before {
 		display: block; 
 		border: none;
 		box-shadow: none;
+		font-size: 14px;
+		line-height: 1.4;
+	}
+	.pricing td {
+		display: inline-block;
 	}
 	th, 
 	th.examples, 
@@ -78,9 +83,19 @@ td a+a:before {
 	td:after  { 
 		display:none;
 	}
-
-	table td, td {
-		padding-left:0; 
+	.docs table td {
+		border: none;
+		position: relative;
+		padding: 0;
+		padding-left: 0;
+	}
+	.pricing table td {
+		padding-top:0;
+		padding-bottom: 0;
+	}
+	.pricing table td:first-child {
+		padding-left: 0;
+		width: 25%;
 	}
 	table:first-child {
 		margin-top: -$space32;
@@ -88,11 +103,7 @@ td a+a:before {
 	table td.group, table.compatibility td.group {
 		position: static;
 		padding:$space8 0; 
-	}
-	td { 
-		border: none;
-		position: relative;
-		padding-left: 0;
+		padding-bottom: 6px;
 	}
 	table td:first-child {
 		color: $black; 
@@ -101,14 +112,11 @@ td a+a:before {
 		border-top:none;
 	}
 	tr {
-		padding:10px 0; 
+		padding:12px 0 8px 0; 
 		border-bottom: 1px solid #eee;
 	}
 	tr:last-child {
 		border-bottom: none;
 		padding-bottom: 0;
-	}
-	table td, td {
-		padding:0; 
 	}
 }
