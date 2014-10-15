@@ -6,7 +6,6 @@ nav.top {
 	position: absolute;
 	top:0;
 	background: $header;
-	overflow: hidden;
 }
 .teach nav.top {
 	background: tran
@@ -123,13 +122,12 @@ nav.top input {
 	position: absolute;
 	width:80px;
 	text-align: center;
-	left:50%;
+	left:calc(50% - 28px);
 	top: 26px;
 	@include transform-origin(50% 0);
 }
 .more-dropdown.appear {
 	opacity: 1;
-	margin-left: -28px;
 	visibility: visible;
 	z-index: 300;
 	@include animation('bouncy .3s 1');
@@ -233,5 +231,8 @@ nav.top li ul a {
 	nav.top .community,
 	nav.top .buy {
 		display: none;
+	}
+	.more-dropdown {
+		left:calc(50% - 32px);
 	}
 }
