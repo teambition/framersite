@@ -3,7 +3,7 @@ footer.global {
 	background: $header;
 	height: 148px;
 	padding-top: $space48;
-	display: none;
+	overflow: hidden;
 }
 .faq footer.global .content-inner {
 	max-width: 1080px;
