@@ -78,7 +78,8 @@ footer.global input::-moz-placeholder { color: $graphite60; padding-top:1px; }
 footer.global input:-ms-input-placeholder { color: $graphite60; padding-top:1px; }
 @media screen and (max-width: 980px) {
 	footer.global .support,
-	footer.global .twitter {
+	footer.global .twitter,
+	footer.global .blog {
 		display: none;
 	}
 }
