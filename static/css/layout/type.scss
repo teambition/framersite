@@ -82,7 +82,8 @@ h4 {
 	margin-bottom: $space8;
 	line-height: 1.8;
 }
-.subpage.teach h4 {
+.subpage.teach h4,
+.subpage.pricing h4 {
 	margin-bottom: $space8;
 }
 .subpage.teach h4 + .btn{

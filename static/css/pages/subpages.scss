@@ -452,7 +452,14 @@ hr.hidden {
 
 // Pricing 
 .pricing .col-2 .btn {
-	margin-bottom: $space40;
+	margin-bottom: $space48;
+}
+.pricing .license {
+	border-top: 1px solid $separator;
+	padding-top: $space40;
+}
+.pricing p+table {
+	margin-top: $space40;
 }
 @media screen and (max-width:1080px) {
 	.page-header img {

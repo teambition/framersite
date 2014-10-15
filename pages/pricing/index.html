@@ -5,9 +5,9 @@
 
 {% block pageheader %} <!--Header Text-->
 <header class="page-header">
-	<div class="content-inner">
+    <div class="content-inner">
 		<h1>Pricing</h1>
-		<h2 class="col-2">We offer volume discount and educational pricing.</h2>
+		<h2 class="col-2">We offer volume pricing and educational discounts.</h2>
 	</div>
 </header> 
 {% endblock pageheader %}
@@ -17,8 +17,10 @@
 <div class="clearfix">
 <section class="col-2">
 	<figure class="icon-volumelicenses"></figure>
-	<h4>Volume Discounts</h4>
-	<p>We offer a discount per license, when you purchase Framer Studio in higher volume. The discount per license increases with the number of licenses purchased. <a href="mailto:support@framerjs.com">Contact us</a>, if you have special licensing needs.</p>
+ 
+	<figure class="icon-volumediscounts"></figure>
+	<h4>Volume Pricing</h4>
+	<p>We offer volume pricing when you purchase multiple licenses. Select the amount of copies you need in the store, and the price will reflect the tiers below. <a href="mailto:support@framerjs.com">Contact us</a>, if you have additional volume licensing needs.</p>
 	<table>
     <thead>
         <tr>
@@ -62,15 +64,16 @@
 
 <section class="col-2">
 	<figure class="icon-educationpricing"></figure>
-	<h4>Educational Pricing</h4>
-	<p>A 50% discount is available to students. Send us proof of your enrollment at a university or college and we'll review your application and send you  a coupon code.</p>
 
-	<p>If you're a teacher and you're looking for licenses for your class, see our <a href="/teach">Teach page</a> for more information.</p>
+	<figure class="educationalpricing"></figure>
+	<h4>Educational Discount</h4>
+	<p>We offer 50% discount to all students and teachers. To apply, please send us a copy of your enrollment in, or connection to, the school that you attend. <a href="mailto:support@framerjs.com">Contact us</a>, if you have additional educational licensing needs.</p>
 
-	<a class="btn blue" href="mailto:support@framerjs.com">Contact us</a>
+	<a class="btn blue" href="mailto:support@framerjs.com">Apply</a>
 
-	<h4>License</h4>
-	<p>Your license is personal, so one per user. If you have multiple machines (for example one at home and one at the office) you are free to use Framer Studio on both. If you use your license on more machines than what we consider fair use, we might disable your license.</p>
+	<h4 class="license">License</h4>
+	<p>The Framer license is on a per user base. If you have multiple machines (for example one at home and one at the office) you are free to use Framer  on both. If you use your license on more machines than what we consider fair use, your license may be disabled. See our <a href="/static/downloads/eula.pdf">End User License Agreement</a>.
+
 </section>
 </div> <!--clearfix-->
 
