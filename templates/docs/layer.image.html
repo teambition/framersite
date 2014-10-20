@@ -1,8 +1,6 @@
 ###### layer.image <span>string</span>
 <a id="layer.image"></a>
-Sets the background image url or path for this layer. You can set it as a local path or a full url. If the image is hosted online, it can take time to actually display. The image will always fit to cover the layer and never be stretched. Setting an image will remove the background color of a layer. You can unset an image by setting it to null or an empty string. Images that are served locally will not use the browser cache.
-
-Sets the background image url or path for this layer. You can set it as a local path or a full url. If the image is hosted online, it can take time to actually display. The image will always fit to cover the layer and never be stretched. Setting an image will remove the background color of a layer. You can unset an image by setting it to null or an empty string. Local images will not use the browser cache.
+Sets the background image url or path for this layer. You can set it as a local path or a full url. If the image is hosted online, it can may a little while to load. The image will always fit to cover the layer and never be stretched. Setting an image will remove the background color of a layer. You can remove an image by setting it to null or an empty string. Local images will not use the browser cache.
 
 You can be notified of when an image is loaded and ready to display with the Events.ImageLoaded event. If there is an error loading an image (like not found) it will throw an Events.ImageLoadError event.
 
