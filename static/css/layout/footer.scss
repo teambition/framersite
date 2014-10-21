@@ -112,12 +112,12 @@ footer.global input.focus:-ms-input-placeholder { color: $nav-links-50; }
 }
 @media screen and (max-width: 720px) {
 	footer.global {
-		height: 220px;
+		height: 190px;
 		padding-top: $space48;
 	}
 
 	footer.global .right {
-		margin-top: $space48;
+		margin-top: $space24;
 	}
 	footer.global form {
 		margin: 0 auto;
