@@ -243,7 +243,7 @@ a.device-right {
 	width: 70px;
 	margin-right: $space32;
 	position: relative;
-	top: -6px;
+	top: -8px;
 }
 .start-prototyping h6 {
 	color: $nav-links;
@@ -496,6 +496,7 @@ a.device-right {
 	}
 	.start-prototyping img {
 		margin-bottom: 8px;
+		top: 0;
 	}
 	.start-prototyping .col-2+.col-2 {
 		margin-top: 8px;
