@@ -1,8 +1,8 @@
 // Footer
 footer.global {
 	background: $header;
-	height: 160px;
-	padding-top: $space72;
+	height: 124px;
+	padding-top: $space48;
 	overflow: hidden;
 }
 .faq footer.global .content-inner {
@@ -39,11 +39,9 @@ footer.global .small-links li a {
 	letter-spacing: 0.9px;
 	color: $nav-links-50;
 }
-
 footer.global .small-links li a {
 	float: none;
 }
-
 footer.global .small-links li+li {
 	padding-left: $space16;
 }
@@ -54,7 +52,6 @@ footer.global form {
 	position: relative;
 	margin-top: 0px;
 	display: block;
-	margin-bottom: 12px;
 	height: 34px;
 	width:234px;
 }
