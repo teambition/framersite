@@ -569,7 +569,7 @@ a.device-right {
 		margin-top: 12px;
 	}
 	.logo-string figure {
-		 //@include scale(0.6);
+		 @include scale(0.6);
 		 margin-bottom: 4px;
 	}
 	.logo-string figure+figure {
