@@ -269,7 +269,7 @@ a.device-right {
 // Media Queries
 @media screen and (max-width:1080px) {
 	.logo-string figure+figure {
-		margin-left: 20px;
+		margin-left: 60px;
 	}
 	.feature-banners a {
 		height:420px;
@@ -348,6 +348,10 @@ a.device-right {
 		background-position: 50% 80%;
 		background-size: 100%;
 	}
+	// Logo string
+	.logo-string figure+figure {
+		margin-left: 30px;
+	}
 	// Start-prototyping
 	.start-prototyping img {
 		height: auto;
@@ -361,6 +365,7 @@ a.device-right {
 		max-width: 660px;
 		margin-left: -330px;
 	}
+
 }
 @media screen and (max-width: 720px) {
 	.header {
@@ -406,6 +411,10 @@ a.device-right {
 	}
 	.header {
 		margin-bottom: $space48;
+	}
+	// Logo string
+	.logo-string figure+figure {
+		margin-left: 34px;
 	}
 	// Start prototyping
 	.start-prototyping {
