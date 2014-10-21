@@ -115,7 +115,7 @@ footer.global input.focus:-ms-input-placeholder { color: $nav-links-50; }
 }
 @media screen and (max-width: 720px) {
 	footer.global {
-		height: 256px;
+		height: 220px;
 		padding-top: $space48;
 	}
 
@@ -152,31 +152,62 @@ footer.global input.focus:-ms-input-placeholder { color: $nav-links-50; }
 	}
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 480px) {
+	footer.global {
+		height: 320px;
+		padding-top: $space48;
+	}
 	footer.global nav,
 	footer.global .small-links {
 		// text-align:center;
-		
+		width: 100%;
 	}
 	footer.global li {
-		// float: none;
-		// display: block;
+		float: none;
+		display: block;
+	}
+	footer.global nav li+li{
+		padding-left: 0;
+		margin-top: 16px;
+	}
+	footer.global .small-links li+li {
+		padding-left: 0;
+	}
+	footer.global .right {
+		margin-bottom: 0;
+		margin-top: -48px;
+	}
+	footer.global form,
+	footer.global input {
+		width: 180px;
+		height:24px;
+	}
+	footer.global input{
+		padding: 10px 8px 8px 8px;
 		font-size: 10px;
 	}
-	// footer.global nav li+li,
-	// footer.global .small-links li+li {
-	// 	padding-left: 0;
-	// 	margin-top: 8px;
-	// }
+	footer.global button {
+		height:24px;
+		width:24px;
+		padding-left:10px;
+	}
+	// Swap with input
+	footer.global .small-links {
+		top: 48px;
+		position: relative;
+	}
 	footer.global .small-links li {
 		display: inline-block;
 		float: none;
 	}
-
 	footer.global .small-links li.copyright {
 		display: block;
 		width: 100%;
 		clear: both;
 		margin-bottom: 8px;
+		margin-top: 16px;
+	}
+	footer.global .small-links li+li {
+		margin-left:4px;
 	}
 }

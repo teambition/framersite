@@ -84,10 +84,10 @@ h5 figure {
 .logo-twitter    { top:2px; }
 .logo-facebook   { top:-2px; }
 .logo-apple      { top:2px; }
-.logo-instagram  { top:7px; }
-.logo-spotify    { top:4px; }
+.logo-instagram  { top:5px; }
+.logo-spotify    { top:2px; }
 .logo-adobe      { top:2px; }
-.logo-groupon    { top:-2px; }
+.logo-groupon    { top:-4px; }
 .logo-pinterest  { top:2px; }
 .logo-slack      { top: 5px; }
 .logo-soundcloud { top: 4px; }
@@ -448,11 +448,6 @@ a.device-right {
 	a.device-right {
 		right:-$space32;
 	}
-	// Home footer
-	footer.footer {
-		margin-top: 0;
-		margin-bottom: $space48;
-	}
 }
 @media screen and (max-width: 560px) {
 	.header {
@@ -486,10 +481,24 @@ a.device-right {
 	// Logo string
 	.logo-string figure {
 		 @include scale(0.75);
-		 margin-bottom: 0;
+		 margin-bottom: 8px;
 	}
 	.logo-string figure+figure {
 		margin-left: 0;
+	}
+	.start-prototyping {
+		padding-top: $space48;
+	}
+	.start-prototyping:after {
+		max-width: 100%;
+		margin-left: 0;
+		left: 0;
+	}
+	.start-prototyping img {
+		margin-bottom: 8px;
+	}
+	.start-prototyping .col-2+.col-2 {
+		margin-top: 8px;
 	}
 }
 @media screen and (max-width: 480px) {
@@ -559,11 +568,13 @@ a.device-right {
 	.feature-summary li+li {
 		margin-top: 12px;
 	}
-	// .logo-string .logo-groupon,
-	// .logo-string .logo-pinterest,
-	// .logo-string .logo-adobe {
-	// 	display: none;
-	// }
+	.logo-string figure {
+		 //@include scale(0.6);
+		 margin-bottom: 4px;
+	}
+	.logo-string figure+figure {
+		margin-left: -4px;
+	}
 
 }
 @media screen and (max-width: 440px) {
