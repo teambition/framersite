@@ -9,6 +9,15 @@ $(document).ready(function() {
 			$(this).toggleClass("is-active");
 	});
 
+	/* Footah */
+	$("footer").click(function() { 
+		if ($("footer input").is(':focus')) {
+			$("footer input").addClass("focus");
+		} else {
+			$("footer input").removeClass("focus");
+		}
+	});
+
 	$("nav .more").click(function(event) { 
 		  event.stopPropagation();
 		$('.more-dropdown').toggleClass("appear");

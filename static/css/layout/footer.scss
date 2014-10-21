@@ -1,8 +1,8 @@
 // Footer
 footer.global {
 	background: $header;
-	height: 148px;
-	padding-top: $space48;
+	height: 160px;
+	padding-top: $space72;
 	overflow: hidden;
 }
 .faq footer.global .content-inner {
@@ -23,79 +23,116 @@ footer.global a figure {
 .icon-footer-twitter {
 	top:-2px;
 }
-footer.global .small {
-	color: #788D9E;
-	font-size:14px;
-	margin-top: 8px;
-}
 footer.global a:hover {
 	color: #fff;
 }
 footer.global nav {
-	border-bottom: 1px solid rgba(255,255,255,0.1);
-	padding-bottom: $space16;
 	display:inline-block;
 }
-footer.global p {
+footer.global .small-links {
+	margin-top: 12px;
+	clear:both;
+}
+footer.global .small-links li,
+footer.global .small-links li a {
+	font-size: 10px;
+	letter-spacing: 0.9px;
+	color: $nav-links-50;
+}
+
+footer.global .small-links li a {
+	float: none;
+}
+
+footer.global .small-links li+li {
+	padding-left: $space16;
+}
+footer.global .small-links li a:hover {
 	color: $nav-links;
-	opacity: 0.5;
-	margin-top: $space16;
+}
+footer.global form {
+	position: relative;
+	margin-top: 0px;
+	display: block;
+	margin-bottom: 12px;
+	height: 34px;
+	width:234px;
+}
+footer.global form figure {
+	position: absolute;
+	left:10px;
+	top: 9px;
 }
 footer.global input {
 	border: none;
-	border-radius:3px 0 0 3px;
-	padding: 4px 12px 2px 12px;
+	border-radius:3px;
+	padding: 4px 14px 3px 14px;
 	font-family: "Fakt", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size:14px;
-	height: 40px;
-	width:220px;
-	color: $graphite;
+	font-size:12px; 
+	font-weight: 600;
+	height: 34px;
+	width:234px;
 	line-height: 20px;
 	vertical-align: middle;
 	float: left;
+	background: #323C4A;
+	color: #fff;
 }
 footer.global button {
 	border: none;
-	padding:8px 16px 8px 16px;
-	font-size: 10px; 
-	text-transform: uppercase;
-	font-weight: 600;
-	border-radius: 0 3px 3px 0; 
+	padding:0;
+	background: transparent;
 	display:inline-block;
 	line-height: 1;
-	background: $input-button;
-	color: #fff;
-	height: 40px;
+	height: 34px;
+	width:34px;
 	cursor: pointer;
 	cursor: hand;
-	margin-left:-4px;
+	position: absolute;
+	right:0;
+	z-index: 30;
+	padding-left:12px;
 }
 footer.global .right p {
-	text-align: right;
+	font-size: 10px;
+	margin-bottom: 0;
+	opacity: .5;
 }
-footer.global input::-webkit-input-placeholder { color: $graphite60; padding-top:1px; }
-footer.global input:-moz-placeholder { color: $graphite60; padding-top:1px; }
-footer.global input::-moz-placeholder { color: $graphite60; padding-top:1px; }
-footer.global input:-ms-input-placeholder { color: $graphite60; padding-top:1px; }
+footer.global input::-webkit-input-placeholder { color: $nav-links; padding-top:1px; }
+footer.global input:-moz-placeholder { color: $nav-links; padding-top:1px; }
+footer.global input::-moz-placeholder { color: $nav-links; padding-top:1px; }
+footer.global input:-ms-input-placeholder { color: $nav-links; padding-top:1px; }
+
+
+footer.global input.focus::-webkit-input-placeholder { color: $nav-links-50; }
+footer.global input.focus:-moz-placeholder { color: $nav-links-50; }
+footer.global input.focus::-moz-placeholder { color: $nav-links-50; }
+footer.global input.focus:-ms-input-placeholder { color: $nav-links-50; }
+
+
 @media screen and (max-width: 980px) {
-	footer.global .support,
-	footer.global .twitter,
-	footer.global .blog {
-		display: none;
-	}
+
 }
 @media screen and (max-width: 720px) {
 	footer.global {
-		height: 232px;
+		height: 256px;
+		padding-top: $space48;
 	}
+
 	footer.global .right {
-		width: 254px;
+		margin-top: $space48;
+	}
+	footer.global form {
 		margin: 0 auto;
+		margin-bottom: 8px;
 	}
 	footer.global section,
-	footer.global .right p {
+	footer.global .right p, {
 		float: none;
 		text-align: center;
+	}
+	footer.global .small-links {
+		display: inline-block;
 	}
 	footer.global section.left {
 		margin-bottom: $space16;
@@ -112,5 +149,34 @@ footer.global input:-ms-input-placeholder { color: $graphite60; padding-top:1px;
 	}
 	.icon-footer-twitter {
 		top:0;
+	}
+}
+
+@media screen and (max-width: 520px) {
+	footer.global nav,
+	footer.global .small-links {
+		// text-align:center;
+		
+	}
+	footer.global li {
+		// float: none;
+		// display: block;
+		font-size: 10px;
+	}
+	// footer.global nav li+li,
+	// footer.global .small-links li+li {
+	// 	padding-left: 0;
+	// 	margin-top: 8px;
+	// }
+	footer.global .small-links li {
+		display: inline-block;
+		float: none;
+	}
+
+	footer.global .small-links li.copyright {
+		display: block;
+		width: 100%;
+		clear: both;
+		margin-bottom: 8px;
 	}
 }

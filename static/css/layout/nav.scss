@@ -40,7 +40,9 @@ nav.top.fade-out {
 }
 // Targets all navigation items, not just top nav.
 nav li,
-.learn-nav a {
+.learn-nav a,
+.small-links li,
+.small-links li a {
 	float: left;
 	font-size: 12px;
 	font-weight: 600;

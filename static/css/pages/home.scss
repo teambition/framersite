@@ -74,9 +74,10 @@ h5 figure {
 .logo-string figure {
 	display: inline-block;
 	position: relative;
+	margin-bottom: 16px;
 }
 .logo-string figure+figure {
-	margin-left: 30px;
+	margin-left: 80px;
 }
 // Vertical centering
 .logo-google     { top:4px; }
@@ -87,7 +88,9 @@ h5 figure {
 .logo-spotify    { top:4px; }
 .logo-adobe      { top:2px; }
 .logo-groupon    { top:-2px; }
-.logo-pinterest    { top:2px; }
+.logo-pinterest  { top:2px; }
+.logo-slack      { top: 5px; }
+.logo-soundcloud { top: 4px; }
 
 // Examples Block
 .examples {
@@ -215,15 +218,48 @@ a.device-right {
 .feature-summary li+li {
 	margin-top: $space16;
 }
-// Home footer
-footer.footer {
-	margin-bottom:$space80;
+// Start prototyping block
+.start-prototyping {
+	background: $header;
+	margin: 0;
+	color: #fff;
+	padding-top: $space72;
+	padding-bottom: $space48;
+	position: relative;
 }
-footer.footer img {
-	margin-bottom: $space24;
-	height: 128px;
-	width: 128px;
+.start-prototyping:after {
+	content:"";
+	position: absolute;
+	bottom: 0; left: 50%;
+	max-width: 1020px;
+	margin-left: -510px;
+	width: 100%;
+	height:1px;
+	background: $separator-dark;
 }
+.start-prototyping img {
+	float:left;
+	height: 77px;
+	width: 70px;
+	margin-right: $space32;
+	position: relative;
+	top: -6px;
+}
+.start-prototyping h6 {
+	color: $nav-links;
+}
+.start-prototyping h4 {
+	letter-spacing: 0;
+	margin-bottom: 0;
+	line-height: 1.2;
+	font-weight: 400;
+}
+.start-prototyping .cta {
+	float: right;
+	padding-top: $space16;
+	margin-top:1px;
+}
+
 // List fix
 .content-inner ul li {
 	list-style: none;
@@ -312,6 +348,19 @@ footer.footer img {
 		background-position: 50% 80%;
 		background-size: 100%;
 	}
+	// Start-prototyping
+	.start-prototyping img {
+		height: auto;
+		width: 60px;
+		margin-right: 0;
+		position: relative;
+		top: -6px;
+		display: none;
+	}
+	.start-prototyping:after {
+		max-width: 660px;
+		margin-left: -330px;
+	}
 }
 @media screen and (max-width: 720px) {
 	.header {
@@ -357,6 +406,25 @@ footer.footer img {
 	}
 	.header {
 		margin-bottom: $space48;
+	}
+	// Start prototyping
+	.start-prototyping {
+		text-align: center;
+	}
+	.start-prototyping img {
+		display: inline-block;
+		float: none;
+		margin-bottom: 16px;
+	}
+	.start-prototyping .cta {
+		float: none;
+	}
+	.start-prototyping .col-2+.col-2 {
+		margin-top: 16px;
+	}
+	.start-prototyping:after {
+		max-width: 500px;
+		margin-left: -250px;
 	}
 }
 @media screen and (max-width:660px) {
@@ -421,7 +489,7 @@ footer.footer img {
 		 margin-bottom: 0;
 	}
 	.logo-string figure+figure {
-		margin-left: -4px;
+		margin-left: 0;
 	}
 }
 @media screen and (max-width: 480px) {
@@ -491,11 +559,11 @@ footer.footer img {
 	.feature-summary li+li {
 		margin-top: 12px;
 	}
-	.logo-string .logo-groupon,
-	.logo-string .logo-pinterest,
-	.logo-string .logo-adobe {
-		display: none;
-	}
+	// .logo-string .logo-groupon,
+	// .logo-string .logo-pinterest,
+	// .logo-string .logo-adobe {
+	// 	display: none;
+	// }
 
 }
 @media screen and (max-width: 440px) {
