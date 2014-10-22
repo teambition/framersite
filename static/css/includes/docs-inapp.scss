@@ -244,8 +244,8 @@ nav.top {
 	 	display: block;
 	}
 }
-@media screen and (max-width: 560px) {
-    .content-inner pre ol li:before {
+@media screen and (max-width:720px) {
+	 .content-inner pre ol li:before {
         content: counter(linenumbers);
     }
 }
