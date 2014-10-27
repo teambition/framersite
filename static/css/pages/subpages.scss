@@ -356,46 +356,42 @@ hr.hidden {
 	margin-bottom: $space48;
 }
 // Teach page
-// Teach + Careers headers
+// Teach + Jobs headers
 .teach .page-header img,
-.careers .page-header img,
+.jobs .page-header img,
 .about .page-header img {
 	max-width: 1482px;
 	max-height:440px;
 	z-index: 0;
 	right:0;
 }
-// Vertical spacing
-.teach-logo-section {
-	margin-bottom: $space80;
+.teach-cta {
+	max-width: 620px;
+	margin: 0 auto;
+	margin-bottom: 80px;
+}
+.teach-cta p {
+	margin-bottom: $space16;
 }
 .why-teach-framer {
-	margin-bottom: $space40;
+	margin-top: 8px;
 }
 // ------------
 .why-teach-framer figure,
 .pricing figure {
 	margin-bottom: $space16;
 }
-.teach-logo-string {
-	margin-left: 60px;
-	float:left;
+.teach-logo-string div+div {
+	margin-top: 32px;
 }
 .teach-logo-string img {
-	float:left; 
-}
-.logo-berkeley {
-	margin-top: 22px;
-}
-.logo-ga {
-	margin-top: 20px;
-}
-.logo-berkeley,
-.logo-ga {
 	max-width: 210px;
+	float: left;
+	margin-right: 32px;
 }
-.logo-berkeley {
-	margin-right: 60px;
+.teach-logo-string aside {
+	max-width: 210px;
+	display: inline-block;
 }
 .teach .content-inner ul li {
 	font-size: 16px;
@@ -448,6 +444,11 @@ hr.hidden {
 	display: inline-block;
 	line-height: 1.6;
 	margin-bottom: 0;
+}
+
+// Jobs page
+.jobs .about-us {
+	margin-top: $space24;
 }
 
 // Pricing 

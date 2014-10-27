@@ -107,7 +107,9 @@ h5 { // Feature blocks
 	color: $black;
 }
 
-.teach h5,
+.teach h5 {
+	font-size: 12px;
+}
 .subpage h5.blue {
 	color: $blue;
 	font-size: 12px;
