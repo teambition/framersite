@@ -393,6 +393,10 @@ hr.hidden {
 	border-radius: 3px;
 	box-shadow: 0 0 0 1px #EAECEF;
 	text-align: center;
+	@include transition(opacity, 0.2s, ease);
+}
+.teach-logo-string a.logo:hover {
+	opacity: .7;
 }
 .teach-logo-string img {
 	max-width: 210px;
