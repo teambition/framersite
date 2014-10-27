@@ -526,22 +526,9 @@ hr.hidden {
 	.animation-curves .col-4+.col-4 {
 		margin-left:10px;
 	}
-	.teach-logo-section .col-2 {
-		max-width: 100%;
-		float:none;
-	}
-	.teach-logo-string {
-		margin-left: 0;
-		float: none;
-		margin-top:40px;
-	}
-	.logo-berkeley,
-	.logo-ga {
-		max-width: 210px;
-		margin-top: 0;
-	}
-	.logo-berkeley {
-		margin-right: 40px;
+	// Grid of 4
+	.teach-logo-string img {
+		margin-bottom: 24px;
 	}
 	.resources a {
 		font-size: 16px;
@@ -651,13 +638,21 @@ hr.hidden {
 		max-width: 210px;
 		display: none;
 	}
-	.logo-berkeley {
-		margin-right: 60px;
-	}
 	// Pricing page
 	.pricing .col-2 .btn {
 		margin-top: 0;
 	}
+	// Teach page
+	.teach-logo-section .col-2+.col-2 {
+		margin-top: 24px;
+	}
+	.teach-logo-string div+div {
+		margin-top: 24px;
+	}
+	.teach-logo-string img {
+		margin-bottom: 0;
+	}
+
 }
 @media screen and (max-width:600px) {
 	.page-header {
@@ -730,28 +725,29 @@ hr.hidden {
 		position: relative;
 	}
 	// Teach page
-	.logo-berkeley,
-	.logo-ga {
-		max-width: 45%;
-		height: auto;
-	}
-	.logo-berkeley {
-		margin-right: 5%;
-	}
 	.teach h4 {
 		line-height: 1.4;
+	}
+	.teach-cta {
+		margin-bottom: 48px;
+	}
+	.teach-logo-string {
+		text-align: center;
+	}
+	.teach-logo-string img {
+		margin-right:0;
+		margin-bottom: 24px;
+		float:none;
+		display: inline-block;
+	}
+	.teach-logo-string aside {
+		display: block;
+		text-align: center;
+		margin: 0 auto;
 	}
 	// Vertical spacing
 	.teach-logo-section {
 		margin-bottom: $space48;
-	}
-	.why-teach-framer {
-		margin-bottom: $space32;
-		border-bottom: 1px solid $separator;
-	}
-	.teach-logo-section {
-		padding-bottom: $space48;
-		border-bottom: 1px solid $separator;
 	}
 	.jobs section:first-child,
 	.resources section:first-child  {
