@@ -384,15 +384,23 @@ hr.hidden {
 .teach-logo-string div+div {
 	margin-top: 32px;
 }
-.teach-logo-string img {
+// Container of images
+.teach-logo-string a.logo {
 	max-width: 210px;
+	height: 104px;
 	float: left;
 	margin-right: 32px;
+	border-radius: 3px;
+	box-shadow: 0 0 0 1px #EAECEF;
+	text-align: center;
+}
+.teach-logo-string img {
+	max-width: 210px;
 }
 .teach-logo-string aside {
 	max-width: 210px;
 	display: inline-block;
-	padding-top:4px;
+	padding-top:8px;
 }
 .teach .content-inner ul li {
 	font-size: 16px;
@@ -473,13 +481,19 @@ hr.hidden {
 	.layer-type-illustration {
         border-radius: 3px;
     }
-	.logo-berkeley,
-	.logo-ga {
-		max-width: 200px;
-	}
-	.logo-berkeley {
-		margin-right: 40px;
-	}
+    .teach-logo-string a.logo {
+    	max-width: 190px;
+    	overflow: hidden;
+    	margin-right: 24px;
+    }
+    .teach-logo-string img {
+    	position: relative;
+    	left:-10px;
+    }
+    .teach-logo-string aside {
+    	padding-top:2px;
+    	max-width: 200px;
+    }
 }
 @media screen and (max-width:980px) {
 	.page-header img {
@@ -528,9 +542,16 @@ hr.hidden {
 		margin-left:10px;
 	}
 	// Grid of 4
-	.teach-logo-string img {
-		margin-bottom: 24px;
-	}
+	  .teach-logo-string a.logo {
+    	max-width: 210px;
+    	margin-bottom: 24px;
+    }
+    .teach-logo-string img {
+    	position: static;
+    }
+    .teach-logo-string aside {
+    	max-width: 210px;
+    }
 	.resources a {
 		font-size: 16px;
 	}
@@ -650,7 +671,7 @@ hr.hidden {
 	.teach-logo-string div+div {
 		margin-top: 24px;
 	}
-	.teach-logo-string img {
+	.teach-logo-string a.logo {
 		margin-bottom: 0;
 	}
 
@@ -735,16 +756,17 @@ hr.hidden {
 	.teach-logo-string {
 		text-align: center;
 	}
-	.teach-logo-string img {
-		margin-right:0;
-		margin-bottom: 24px;
-		float:none;
+	.teach-logo-string a.logo {
+		float: none;
 		display: inline-block;
+		margin-right: 0;
+		margin-bottom: 24px;
 	}
 	.teach-logo-string aside {
 		display: block;
 		text-align: center;
 		margin: 0 auto;
+		clear: both;
 	}
 	// Vertical spacing
 	.teach-logo-section {
