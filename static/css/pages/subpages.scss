@@ -152,6 +152,9 @@ p.full-width{
 	opacity: 1;
 }
 // Sidebar
+.learn .container .content-inner {
+	position: relative;
+}
 .sidebar {
 	float:left;
 	position: absolute;
@@ -164,6 +167,11 @@ p.full-width{
 	position: fixed;
 	margin-top: 0;
 	top: 96px; // 32 + 64 = 96
+}
+.learn .sidebar.from-bottom {
+	position: absolute;
+	bottom: 40px;
+	top: auto;
 }
 .sidebar ul a li {
 	padding: 12px 8px 8px 16px;

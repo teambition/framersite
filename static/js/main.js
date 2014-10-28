@@ -53,11 +53,19 @@ $(document).ready(function() {
 		$('.more-dropdown').removeClass("appear");
 
 		var scrollPos = $(window).scrollTop();
+		var docHeight = $('.container .content-inner').height() - 92;
+		console.log(docHeight);
+
 		// Sidebar Sticky ----------------
 		if ($(window).scrollTop() > 646) {
 			$(learnSidebar).addClass('sticky');
 		} else {
 			$(learnSidebar).removeClass('sticky');
+		}
+		if ($(window).scrollTop() > docHeight) {
+			$(learnSidebar).addClass('from-bottom');
+		} else {
+			$(learnSidebar).removeClass('from-bottom');
 		}
 
 		// Top Navigation ----------------
