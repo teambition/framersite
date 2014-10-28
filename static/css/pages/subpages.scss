@@ -383,7 +383,7 @@ hr.hidden {
 }
 // ------------
 .teach-prototyping-classes {
-	margin-bottom: $space48;
+	margin-bottom: $space64;
 }
 .teach-prototyping-classes .col-2:last-child {
 	margin-top: 47px;
@@ -556,15 +556,6 @@ hr.hidden {
 	.animation-curves .col-4+.col-4 {
 		margin-left:10px;
 	}
-	// Teach 2col > 1col
-	.teach-prototyping-classes .col-2 {
-		max-width: 620px;
-		float: none;
-		margin: 0;
-	}
-	.teach-prototyping-classes .col-2:last-child {
-		margin-top: 24px;
-	}
 	// Grid of 4
 	  .teach-logo-string a.logo {
     	max-width: 210px;
@@ -689,6 +680,9 @@ hr.hidden {
 		margin-top: 0;
 	}
 	// Teach page
+	.teach-prototyping-classes .col-2:last-child {
+		margin-top: 24px;
+	}
 	.teach-logo-section .col-2+.col-2 {
 		margin-top: 24px;
 	}
@@ -771,13 +765,14 @@ hr.hidden {
 		position: relative;
 	}
 	// Teach page
+	.teach-prototyping-classes .col-2:last-child {
+		margin-top: 16px;
+	}
 	.teach h4 {
 		line-height: 1.4;
 	}
 	.teach-cta {
 		margin-top: $space32;
-		max-width: 200px;
-		margin: 0 auto;
 	}
 	.teach-logo-string {
 		text-align: center;
@@ -811,6 +806,10 @@ hr.hidden {
 		top: -5px;
 		font-size: 10px;
 	}	
+	.teach-cta {
+		max-width: 200px;
+		margin: 0 auto;
+	}
 }
 @media screen and (max-height: 700px) {
 	.docs .sidebar {
