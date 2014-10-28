@@ -83,9 +83,12 @@ $(document).ready(function() {
 		if ($(window).scrollTop() > 440) {
 			$(topNavPages).addClass('sticky').removeClass('fade-out');
 		}
-		else if ($(topNavPages).hasClass('sticky') && scrollPos <= 440) {
+		if ($(topNavPages).hasClass('sticky') && scrollPos <= 440) {
 			$(topNavPages).removeClass('sticky').addClass('fade-out');
 		}
+		// if ($(topNavPages).hasClass('fade-out') && $(window).scrollTop() > docHeight+96) {
+		// 	$(topNavPages).removeClass('fade-out');
+		// }
 		if (scrollPos < 439) {
 			$(topNavPages).removeClass('fade-out');
 		}

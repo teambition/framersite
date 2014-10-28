@@ -37,6 +37,7 @@ nav.top.sticky {
 nav.top.fade-out {
 	@include animation('fade-out .2s forwards');
 	position: fixed;
+	top: -64px;
 }
 // Targets all navigation items, not just top nav.
 nav li,

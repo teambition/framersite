@@ -171,7 +171,7 @@ p.full-width{
 }
 .learn .sidebar.from-bottom {
 	position: absolute;
-	bottom: 44px;
+	bottom: 4px;
 	top: auto;
 }
 .sidebar ul a li {
@@ -375,17 +375,19 @@ hr.hidden {
 	right:0;
 }
 .teach-cta {
-	max-width: 620px;
 	margin: 0 auto;
-	margin-bottom: 80px;
-}
-.teach-cta p {
-	margin-bottom: $space16;
+	margin-top: $space48;
 }
 .why-teach-framer {
 	margin-top: 8px;
 }
 // ------------
+.teach-prototyping-classes {
+	margin-bottom: $space48;
+}
+.teach-prototyping-classes .col-2:last-child {
+	margin-top: 47px;
+}
 .why-teach-framer figure,
 .pricing figure {
 	margin-bottom: $space16;
@@ -553,6 +555,15 @@ hr.hidden {
 	.layer-types .col-4+.col-4,
 	.animation-curves .col-4+.col-4 {
 		margin-left:10px;
+	}
+	// Teach 2col > 1col
+	.teach-prototyping-classes .col-2 {
+		max-width: 620px;
+		float: none;
+		margin: 0;
+	}
+	.teach-prototyping-classes .col-2:last-child {
+		margin-top: 24px;
 	}
 	// Grid of 4
 	  .teach-logo-string a.logo {
@@ -764,7 +775,9 @@ hr.hidden {
 		line-height: 1.4;
 	}
 	.teach-cta {
-		margin-bottom: 48px;
+		margin-top: $space32;
+		max-width: 200px;
+		margin: 0 auto;
 	}
 	.teach-logo-string {
 		text-align: center;
