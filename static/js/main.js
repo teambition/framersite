@@ -54,7 +54,6 @@ $(document).ready(function() {
 
 		var scrollPos = $(window).scrollTop();
 		var docHeight = $('.container .content-inner').height() - 104;
-		console.log(docHeight);
 
 		// Sidebar Sticky ----------------
 		if ($(window).scrollTop() > 646) {
