@@ -27,6 +27,11 @@ $(document).ready(function() {
 		downloadLink = sparkleHost + "/" + result;
 		setTimeout(function() { window.location = downloadLink; }, 1000)
 		ga('send', 'event', 'Download', 'Framer Studio', downloadLink)
+		mixpanel.track("page.download", {
+			"title": document.title,
+    		"url": window.location.pathname,
+    		"link": downloadLink
+		})
 	})
 })
 </script>

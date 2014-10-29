@@ -144,8 +144,14 @@ function setupDownloadLink() {
 		// If we are on desktop we replace the download links with the latest version of framer
 		$(downloadClass).click(function(event) {
 			event.preventDefault()
-			setTimeout(function() { window.location.href = downloadLink; }, 500)
+			setTimeout(function() { window.location.href = downloadLink; }, 1000)
 			ga('send', 'event', 'Download', 'Framer Studio', downloadLink)
+
+			mixpanel.track("page.download", {
+				"title": document.title,
+    			"url": window.location.pathname,
+    			"link": downloadLink
+			})
 		})
 	}
 }
