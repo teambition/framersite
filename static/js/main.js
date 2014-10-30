@@ -129,8 +129,8 @@ function setupDownloadLink() {
 
 	var downloadLink = sparkleHost + "/archive";
 
-	$.get(sparkleHost + "/latest.txt", function(result) {
-		downloadLink = sparkleHost + "/" + result;
+	$.get(sparkleHost + "/latest.txt?date=" + Date.now(), function(result) {
+		downloadLink = sparkleHost + "/" + result + "?mp_id=" + mixpanel.get_distinct_id();
 	})
 
 	if (isMobile()) {
