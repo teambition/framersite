@@ -5,6 +5,48 @@ for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElemen
 
 mixpanel.init("bd91546ef3426049deb32087461d6f9e");
 
+(function() {
+	
+	var Cookie = {
+		getItem: function (sKey) {
+			if (!sKey) { return null; }
+			return decodeURIComponent(document.cookie.replace(new RegExp("(?:(?:^|.*;)\\s*" + encodeURIComponent(sKey).replace(/[\-\.\+\*]/g, "\\$&") + "\\s*\\=\\s*([^;]*).*$)|^.*$"), "$1")) || null;
+		},
+		setItem: function (sKey, sValue, vEnd, sPath, sDomain, bSecure) {
+			if (!sKey || /^(?:expires|max\-age|path|domain|secure)$/i.test(sKey)) { return false; }
+			var sExpires = "";
+			if (vEnd) {
+				switch (vEnd.constructor) {
+					case Number:
+						sExpires = vEnd === Infinity ? "; expires=Fri, 31 Dec 9999 23:59:59 GMT" : "; max-age=" + vEnd;
+						break;
+					case String:
+						sExpires = "; expires=" + vEnd;
+						break;
+					case Date:
+						sExpires = "; expires=" + vEnd.toUTCString();
+						break;
+				}
+			}
+			document.cookie = encodeURIComponent(sKey) + "=" + encodeURIComponent(sValue) + sExpires + (sDomain ? "; domain=" + sDomain : "") + (sPath ? "; path=" + sPath : "") + (bSecure ? "; secure" : "");
+			return true;
+		},
+	};
+
+	// Track the first page visit
+
+	if (!Cookie.getItem("page.visit.first")) {
+		mixpanel.track("page.visit.first", {
+			"title": document.title,
+    		"url": window.location.pathname
+		})
+		
+		Cookie.setItem("page.visit.first", (new Date()).toString(), 
+			new Date(2099, 1, 1), "/", ".framerjs.com");
+	}
+
+})()
+
 </script>
 
 <!-- end Mixpanel -->
