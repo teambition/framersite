@@ -21,8 +21,10 @@
 
 
 // Pages -----------------------
+.thanks { @import "pages/thanks.scss"; }
 .home { @import "pages/home.scss"; }
 @import "pages/subpages.scss"; 
+
 
 
 

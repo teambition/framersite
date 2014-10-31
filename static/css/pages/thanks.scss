@@ -1,0 +1,25 @@
+.content-inner {
+	text-align: center;
+	background: red;
+}
+
+.thank-you {
+	position: absolute; 
+	top:40%; 
+	left:50%; 
+	width:600px; 
+	margin-left:-300px;
+}
+h1 {
+	margin-bottom: -8px;
+}
+h2 {
+	margin-bottom: 48px;
+}
+nav li {
+	display: inline-block;
+	float: none;
+}
+nav a {
+	color: $blue;
+}
