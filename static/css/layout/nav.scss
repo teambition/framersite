@@ -28,7 +28,15 @@ nav.top.sticky {
  	@include animation('fade-in .2s forwards');
  	position: fixed;
  	z-index: 400;
+ 	// background: #FFF;
+ 	// box-shadow: 0 1px 1px rgba(0,0,0,0.2);
 } 
+// nav.top.sticky a {
+// 	text-shadow: none;
+// }
+// nav.top.sticky li.active a {
+// 	color: black;
+// }
 @include keyframes(fade-out) {
 	0%   { top: 0; }
  	100% { top: -64px; }
