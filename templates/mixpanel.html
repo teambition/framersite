@@ -33,12 +33,17 @@ mixpanel.init("bd91546ef3426049deb32087461d6f9e");
 		},
 	};
 
+	mixpanel.track("page.visit", {
+		"title": document.title,
+		"url": window.location.pathname
+	})
+
 	// Track the first page visit
 
 	if (!Cookie.getItem("page.visit.first")) {
 		mixpanel.track("page.visit.first", {
 			"title": document.title,
-    		"url": window.location.pathname
+			"url": window.location.pathname
 		})
 		
 		Cookie.setItem("page.visit.first", (new Date()).toString(), 
