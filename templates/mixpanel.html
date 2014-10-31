@@ -5,7 +5,7 @@ for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElemen
 
 mixpanel.init("bd91546ef3426049deb32087461d6f9e");
 
-(function() {
+$(document).ready(function() {
 	
 	var Cookie = {
 		getItem: function (sKey) {
@@ -33,6 +33,11 @@ mixpanel.init("bd91546ef3426049deb32087461d6f9e");
 		},
 	};
 
+	// Don't track anything for localhost
+	if (window.location.host.indexOf("framerjs.com") == -1) {
+		return;
+	}
+
 	mixpanel.track("page.visit", {
 		"title": document.title,
 		"url": window.location.pathname
@@ -50,7 +55,7 @@ mixpanel.init("bd91546ef3426049deb32087461d6f9e");
 			new Date(2099, 1, 1), "/", ".framerjs.com");
 	}
 
-})()
+})
 
 </script>
 
