@@ -20,7 +20,7 @@
 <script type="text/javascript" charset="utf-8">
 $(document).ready(function() {
 
-	var sparkleHost = "http://studio.update.framerjs.com"
+	var sparkleHost = "//studio.update.framerjs.com"
 
 	$.get(sparkleHost + "/latest.txt?date=" + Date.now(), function(result) {
 		downloadLink = sparkleHost + "/" + result + "?mp_id=" + mixpanel.get_distinct_id();

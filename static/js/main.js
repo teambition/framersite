@@ -125,7 +125,7 @@ function isMobile() {
 function setupDownloadLink() {
 
 	var downloadClass = ".prepare-download"
-	var sparkleHost = "http://studio.update.framerjs.com"
+	var sparkleHost = "//studio.update.framerjs.com"
 
 	var downloadLink = sparkleHost + "/archive";
 
