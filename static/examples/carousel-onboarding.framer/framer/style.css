@@ -27,12 +27,3 @@ a {
 ::-webkit-scrollbar {
 	display: none;
 }
-
-iframe {
-	position: absolute;
-	top:0; left:0;
-	background: #eee;
-	height:100%;
-	width:50%;
-	z-index: 999;
-}

@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Framer Example</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/preview.css' %}">
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="{% static 'js/preview.js' %}"></script>
+
+</head>
+<body>
+	<a class="btn-code"><img src="/static/images/preview/icon-code.png"></a>
+	<a class="btn-open">Open</a>
+	<a class="btn-dl"><img src="/static/images/preview/icon-dl.png"></a>
+
+	<iframe id="code" name="code" src=""></iframe>
+	<iframe id="example" name="example" src=""></iframe>
+</body>
+</html>

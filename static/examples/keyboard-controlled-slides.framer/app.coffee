@@ -5,6 +5,9 @@ bg = new BackgroundLayer backgroundColor: "#FBA145"
 container = new Layer backgroundColor:"transparent", width: 470, height:100, clip:false
 container.center()
 
+window.onresize = ->
+	container.center()
+	
 # Container for our Array
 Layers = []
 	

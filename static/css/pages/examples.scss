@@ -26,18 +26,18 @@
 	color: $text-on-dark;
 	line-height: 1.4;
 }
+// Titles
 .examples figure strong {
 	margin-bottom: 8px;
 	font-weight: 600;
 	display: block;
 	color: white;
 }
+// Authors
 .examples figure a {
 	color: $blue80;
-	font-size: 10px;
+	font-size: 12px;
 	font-weight: 600;
-	text-transform: uppercase;
-	letter-spacing: 1px;
 }
 
 //Hover

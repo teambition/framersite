@@ -18,6 +18,10 @@
 
   container.center();
 
+  window.onresize = function() {
+    return container.center();
+  };
+
   Layers = [];
 
   getIndexByFrame = function(frame) {

@@ -1,8 +1,7 @@
 CACHE MANIFEST
-# 1415815712.974402
+# 1416404659.906259
 CACHE:
 /_server/server.js
-../.DS_Store
 ../.temp.html
 ../app.coffee
 ../framer/.bowerrc
@@ -13,6 +12,8 @@ CACHE:
 ../framer/framer.generated.js
 ../framer/framer.js
 ../framer/framer.js.map
+../framer/framer.js.map.old
+../framer/framer.js.old
 ../framer/images/background.png
 ../framer/images/cursor.png
 ../framer/images/cursor@2x.png
@@ -32,6 +33,7 @@ CACHE:
 ../framer/style.css
 ../framer/version
 ../images/framer-icon.png
+../images/Icon.png
 ../index.html
 ../offline.html
 SETTINGS:

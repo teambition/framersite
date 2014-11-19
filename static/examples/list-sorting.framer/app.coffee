@@ -7,6 +7,9 @@ bg = new BackgroundLayer backgroundColor: "#eee"
 canvas = new Layer width:listWidth, height:400, backgroundColor: "transparent", clip:false
 canvas.center()
 
+window.onresize = ->
+	canvas.center()
+
 # Container for our Array
 Layers = []
 # Retreive the y position of a layer by reading its index
