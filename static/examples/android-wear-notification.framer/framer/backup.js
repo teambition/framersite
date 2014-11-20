@@ -2,7 +2,7 @@
   var Sketch, a, bg, mask;
 
   bg = new BackgroundLayer({
-    backgroundColor: "#323D4D"
+    backgroundColor: "#504153"
   });
 
   mask = new Layer({

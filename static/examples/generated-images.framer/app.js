@@ -22,6 +22,10 @@
 
   wrapLayer.center();
 
+  window.onresize = function() {
+    return wrapLayer.center();
+  };
+
   n = 0;
 
   for (rowNumber = _i = 0, _ref = originValuesX.length - 1; 0 <= _ref ? _i <= _ref : _i >= _ref; rowNumber = 0 <= _ref ? ++_i : --_i) {

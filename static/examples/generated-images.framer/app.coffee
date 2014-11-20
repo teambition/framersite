@@ -20,6 +20,7 @@ wrapLayer = new Layer
 	backgroundColor:'null'
 	clip:false
 wrapLayer.center()
+window.onresize = -> wrapLayer.center()
 
 n = 0
 

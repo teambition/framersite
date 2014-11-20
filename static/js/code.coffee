@@ -12,7 +12,7 @@ loadCS = (exampleName) ->
 			Rainbow.color data, "coffeescript", (result) ->
 				$("code").html result.replace /\t/g, "  "
 		
-
 $(document).ready ->			
 	exampleName = getParameterByName "name"
 	loadCS exampleName
+

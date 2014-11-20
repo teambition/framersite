@@ -1,9 +1,16 @@
 (function() {
-  var button, buttonMorph, canvas, print, printer;
+  var button, buttonMorph, canvas, print, printer, wrapper;
 
   canvas = new BackgroundLayer({
     backgroundColor: "#F1F1F1"
   });
+
+  wrapper = new Layer({
+    width: 192,
+    height: 300
+  });
+
+  wrapper.center();
 
   button = new Layer({
     width: 192,
@@ -13,8 +20,6 @@
   });
 
   button.style["-webkit-mask"] = "url(images/button.png)";
-
-  button.superLayer = canvas;
 
   button.center();
 

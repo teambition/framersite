@@ -1,4 +1,11 @@
+# Made with Framer
+# by Benjamin den Boer
+# www.framerjs.com
+
 canvas = new BackgroundLayer backgroundColor:"#F1F1F1"
+
+wrapper = new Layer width:192, height:300
+wrapper.center()
 
 # Transparent Layer
 button = new Layer width:192, height:96, 
@@ -7,7 +14,6 @@ backgroundColor: "none", borderRadius: "12px"
 # Layer Mask (same dimensions)
 button.style["-webkit-mask"] = "url(images/button.png)"
 
-button.superLayer = canvas
 button.center()
 button.y = button.y + 20
 

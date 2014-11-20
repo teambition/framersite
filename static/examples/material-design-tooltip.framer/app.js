@@ -14,8 +14,6 @@
 
   button.style["-webkit-mask"] = "url(images/button.png)";
 
-  button.superLayer = canvas;
-
   button.center();
 
   button.y = button.y + 20;

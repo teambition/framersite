@@ -1,5 +1,5 @@
 # Made with Framer
-# by Josh Puckett
+# by Benjamin den Bo
 # www.framerjs.com
 
 bg = new BackgroundLayer backgroundColor: "#fff"
