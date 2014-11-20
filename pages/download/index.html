@@ -1,10 +1,10 @@
 {% extends "base.html" %}
-{% block currentpage %}class="error"{% endblock %}
+{% block currentpage %}class="download"{% endblock %}
 {% block height %}class="full-height"{% endblock %}
 {% block content %}
 
 <div class="message">
-	<img src="/static/images/home/app-icon.png" srcset="/static/images/home/app-icon@2x.png 2x">
+	<img src="/static/images/download/128.png" srcset="/static/images/home/128@2x.png 2x">
 	<h2>Thank you for downloading Framer Studio.</h2>
 	<p>If your download doesn't start automatically, please <a href="http://studio.update.framerjs.com/archive/">visit the archive.</a></p>
 	<a class="btn blue" href="/">Home</a>
@@ -16,22 +16,4 @@
 <script src="{% static '/js/main.js' %}"></script>
 <script src="{% static '/js/analytics.js' %}"></script>
 <script src="{% static '/js/srcset.min.js' %}"></script>
-
-<script type="text/javascript" charset="utf-8">
-$(document).ready(function() {
-
-	var sparkleHost = "//studio.update.framerjs.com"
-
-	$.get(sparkleHost + "/latest.txt?date=" + Date.now(), function(result) {
-		downloadLink = sparkleHost + "/" + result + "?mp_id=" + mixpanel.get_distinct_id();
-		setTimeout(function() { window.location = downloadLink; }, 1000)
-		ga('send', 'event', 'Download', 'Framer Studio', downloadLink)
-		mixpanel.track("page.download", {
-			"title": document.title,
-    		"url": window.location.pathname,
-    		"link": downloadLink
-		})
-	})
-})
-</script>
 {% endblock scripts %}
