@@ -1,3 +1,7 @@
+# Made with Framer
+# by Benjamin den Boer
+# www.framerjs.com
+
 bg = new BackgroundLayer backgroundColor: "#97E345"
 	
 layerA = new Layer 
@@ -5,6 +9,8 @@ layerA = new Layer
 	shadowY:1, shadowBlur:3, shadowColor:"rgba(0,0,0,0.15)"
 	
 layerA.center()
+window.onresze = ->
+	layerA.center()
 
 # Enable dragging
 layerA.draggable.enabled = true

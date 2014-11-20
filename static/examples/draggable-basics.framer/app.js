@@ -17,6 +17,10 @@
 
   layerA.center();
 
+  window.onresze = function() {
+    return layerA.center();
+  };
+
   layerA.draggable.enabled = true;
 
   originX = layerA.x;

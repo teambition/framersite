@@ -1,3 +1,7 @@
+# Made with Framer
+# by Josh Puckett
+# www.framerjs.com
+
 bg = new BackgroundLayer backgroundColor: "#28AFFA"
 	
 layerA = new Layer width:100, height:100, backgroundColor: "#fff", borderRadius: 3

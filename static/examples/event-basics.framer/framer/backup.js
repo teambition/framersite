@@ -2,7 +2,7 @@
   var bg, layerA, layerB;
 
   bg = new BackgroundLayer({
-    backgroundColor: "#616D85"
+    backgroundColor: "#818B9E"
   });
 
   layerA = new Layer({
@@ -40,7 +40,8 @@
   layerB.on(Events.TouchStart, function() {
     return layerB.animate({
       properties: {
-        rotation: 90
+        rotation: 90,
+        scale: 0.8
       },
       curve: "ease",
       time: 0.5
@@ -50,7 +51,8 @@
   layerB.on(Events.TouchEnd, function() {
     return layerB.animate({
       properties: {
-        rotation: 0
+        rotation: 0,
+        scale: 1
       },
       curve: "ease",
       time: 0.5

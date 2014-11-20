@@ -1,3 +1,7 @@
+# Made with Framer
+# by Benjamin den Boer
+# www.framerjs.com
+
 # Sketch file included
 list = Framer.Importer.load "imported/list"
 
@@ -8,6 +12,8 @@ container = new Layer
  	backgroundColor: "transparent", height:128, width: 128, borderRadius:4
 
 container.center()
+window.onresize = ->
+	container.center()
 
 # Make content subLayer of our container
 list.content.superLayer = container

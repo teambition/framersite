@@ -1,3 +1,8 @@
+# Made with Framer
+# by Benjamin den Boer
+# www.framerjs.com
+
+
 canvas = new BackgroundLayer backgroundColor: "#f9f9f9"
 
 # Sketch Import

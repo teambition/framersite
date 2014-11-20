@@ -1,3 +1,7 @@
+# Made with Framer
+# by Benjamin den Boer
+# www.framerjs.com
+
 canvas = new BackgroundLayer backgroundColor:"#F1F1F1"
 
 # Transparent Layer

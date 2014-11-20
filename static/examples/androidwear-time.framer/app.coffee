@@ -1,4 +1,7 @@
-# Background
+# Made with Framer
+# by Jorn van Dijk
+# www.framerjs.com
+
 bg = new BackgroundLayer backgroundColor: "#F1EEF1"
 
 # Set up mask layer

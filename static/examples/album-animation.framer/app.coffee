@@ -1,4 +1,6 @@
-# Background, Import, Position and Animation Defaults –––––––––––––––––––
+# Made with Framer
+# by Jorn van Dijk
+# www.framerjs.com
 
 bg = new BackgroundLayer backgroundColor:"#673EBA"
 

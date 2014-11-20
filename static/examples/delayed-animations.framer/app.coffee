@@ -1,3 +1,7 @@
+# Made with Framer
+# by Koen Bok
+# www.framerjs.com
+
 rows = 4
 cols = 4
 
@@ -28,7 +32,3 @@ startDelta = 200
 				opacity: 1
 			curve: ballCurve
 			delay: 0.05 * a + 0.05 * b
-
-		
-		
-

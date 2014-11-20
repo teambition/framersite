@@ -1,3 +1,7 @@
+# Made with Framer
+# by Benjamin den Boer
+# www.framerjs.com
+
 bg = new BackgroundLayer 
 	backgroundColor: "#28AFFA"
 
@@ -20,4 +24,3 @@ layerA.on Events.AnimationEnd, ->
 		properties:
 			rotation: 0
 		curve: "spring(200,10,0)"
-		

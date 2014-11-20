@@ -1,4 +1,7 @@
-# Global setup
+# Made with Framer
+# by Josh Puckett
+# www.framerjs.com
+
 PSD = Framer.Importer.load "imported/carousel-onboarding"
 
 # Make all the imported layers available on the root

@@ -20,6 +20,10 @@
 
   canvas.center();
 
+  window.onresize = function() {
+    return canvas.center();
+  };
+
   Layers = [];
 
   getFrameByIndex = function(index) {

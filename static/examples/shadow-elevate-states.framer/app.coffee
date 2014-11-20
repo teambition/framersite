@@ -1,3 +1,7 @@
+# Made with Framer
+# by Koen Bok
+# www.framerjs.com
+
 background = new BackgroundLayer 
 	backgroundColor:"rgb(77,208,225)"
 
@@ -30,4 +34,3 @@ layer.states.animationOptions =
 layer.on Events.Click, ->
 	layer.states.next()
 	layer.html = layer.states.current
-

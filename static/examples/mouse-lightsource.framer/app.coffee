@@ -1,3 +1,7 @@
+# Made with Framer
+# by Koen Bok
+# www.framerjs.com
+
 bg = new BackgroundLayer 
 	backgroundColor: "#2DD7AA"
 

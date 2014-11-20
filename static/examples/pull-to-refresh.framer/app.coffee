@@ -1,3 +1,7 @@
+# Made with Framer
+# by Benjamin den Boer
+# www.framerjs.com
+
 bg = Framer.Importer.load "imported/Pull to Refresh"
 
 bg.Content.draggable.enabled = true

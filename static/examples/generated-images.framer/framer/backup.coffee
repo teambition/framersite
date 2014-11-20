@@ -1,6 +1,5 @@
 dribble = JSON.parse Utils.domLoadDataSync "http://jsonp.jit.su/?url=http://api.dribbble.com/shots/popular"
 
-
 # Set up the grid
 WIDTH =  220
 HEIGHT = 220

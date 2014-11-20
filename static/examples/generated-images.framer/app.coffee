@@ -1,3 +1,7 @@
+# Made with Framer
+# by Jorn van Dijk
+# www.framerjs.com
+
 dribble = JSON.parse Utils.domLoadDataSync "http://jsonp.jit.su/?url=http://api.dribbble.com/shots/popular"
 
 # Set up the grid

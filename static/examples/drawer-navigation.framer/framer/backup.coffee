@@ -1,6 +1,6 @@
-# Airbnb-style Drawer Navigation Menu
-
-# To try it out, click on the prototype. The front layer should scale down and rotate slightly, and the menu options should come in from the side, similar to what happens in the Airbnb app.
+# Made with Framer
+# by Benjamin den Boer
+# www.framerjs.com
 
 # Setup
 container = new Layer width: 640, height: 1136

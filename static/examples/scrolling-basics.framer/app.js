@@ -16,6 +16,10 @@
 
   container.center();
 
+  window.onresize = function() {
+    return container.center();
+  };
+
   list.content.superLayer = container;
 
   list.content.x = 4;

@@ -1,3 +1,5 @@
+
+
 bg = new BackgroundLayer 
 	backgroundColor: "#28AFFA"
 

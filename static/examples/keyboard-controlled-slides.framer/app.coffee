@@ -1,3 +1,7 @@
+# Made with Framer
+# by Benjamin den Boer
+# www.framerjs.com
+
 screenWidth = Screen.width
 screenHeight = Screen.height
 

@@ -1,7 +1,5 @@
 (function() {
-  var bg, examplesPageFlow6Layers, initMidX, initX, initY, layerA, screenHeight, screenWidth;
-
-  examplesPageFlow6Layers = Framer.Importer.load("imported/Examples Page - Flow 6");
+  var bg, initMidX, initMidY, initX, initY, layerA, screenHeight, screenWidth;
 
   bg = new BackgroundLayer({
     backgroundColor: "#28AFFA"
@@ -24,18 +22,26 @@
 
   initY = layerA.y;
 
+  initMidY = layerA.midY;
+
   screenHeight = Framer.Device.screen.height;
 
   screenWidth = Framer.Device.screen.width;
 
   layerA.on(Events.DragMove, function(event) {
-    var deltaX, speedX, speedY;
+    var deltaX, deltaY, speedX, speedY;
     deltaX = initMidX - event.x;
-    speedY = Utils.mapRange(event.y, screenHeight, initY, 0.5, 1);
+    deltaY = initMidY - event.y;
     if (deltaX > 0) {
       speedX = Utils.mapRange(event.x, 0, initMidX, 0.5, 1);
+      print(speedX);
     } else {
       speedX = Utils.mapRange(event.x, screenWidth, initMidX, 0.5, 1);
+    }
+    if (deltaY > 0) {
+      speedY = Utils.mapRange(event.y, 0, initY, 0.5, 1);
+    } else {
+      speedY = Utils.mapRange(event.y, screenHeight, initMidY, 0.5, 1);
     }
     layerA.draggable.speedY = speedY;
     return layerA.draggable.speedX = speedX;

@@ -1,12 +1,14 @@
 CACHE MANIFEST
-# 1416231958.288565
+# 1416480563.858877
 CACHE:
 /_server/server.js
 ../.temp.html
 ../app.coffee
+../app.js
 ../framer/.bowerrc
 ../framer/app.manifest
 ../framer/backup.coffee
+../framer/backup.js
 ../framer/coffee-script.js
 ../framer/config.json
 ../framer/framer.generated.js
@@ -38,6 +40,7 @@ CACHE:
 ../imported/Scroll/layers.json
 ../imported/Scroll/layers.json.js
 ../index.html
+../list.sketch
 ../offline.html
 SETTINGS:
 prefer-online

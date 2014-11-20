@@ -1,3 +1,7 @@
+# Made with Framer
+# by Ayana Campbell
+# www.framerjs.com
+
 bg = new BackgroundLayer backgroundColor: "#00497F"
 
 # Animation

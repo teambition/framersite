@@ -1,5 +1,5 @@
 bg = new BackgroundLayer 
-	backgroundColor: "#616D85"
+	backgroundColor: "#818B9E"
 
 # Create Layers
 layerA = new Layer width:80, height:80, 
@@ -25,11 +25,13 @@ layerB.on Events.TouchStart, ->
 	layerB.animate 
 		properties:
 			rotation: 90
+			scale: 0.8
 		curve: "ease"
 		time: 0.5
 layerB.on Events.TouchEnd, -> 
 	layerB.animate 
 		properties:
 			rotation: 0
+			scale: 1
 		curve: "ease"
 		time: 0.5

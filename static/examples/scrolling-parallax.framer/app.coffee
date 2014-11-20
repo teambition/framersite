@@ -1,3 +1,7 @@
+# Made with Framer
+# by Benjamin den Boer
+# www.framerjs.com
+
 bg = new BackgroundLayer 
 	backgroundColor: "#C0C5CF"
 	

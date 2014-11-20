@@ -1,3 +1,7 @@
+# Made with Framer
+# by Wilson Miner
+# www.framerjs.com
+
 bg = new BackgroundLayer backgroundColor: "#C8C9C1"
 
 # Card

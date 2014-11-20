@@ -2,7 +2,7 @@
   var bg, layerA, leftLine, leftThreshold, rightLine, rightThreshold;
 
   bg = new BackgroundLayer({
-    backgroundColor: "#FA9630"
+    backgroundColor: "#28AFFA"
   });
 
   layerA = new Layer({
@@ -24,7 +24,7 @@
     x: leftThreshold,
     y: 80,
     height: 140,
-    backgroundColor: "#FCB66E"
+    backgroundColor: "#7ECFFC"
   });
 
   rightLine = new Layer({
@@ -32,7 +32,7 @@
     x: rightThreshold,
     y: 80,
     height: 140,
-    backgroundColor: "#FCB66E"
+    backgroundColor: "#7ECFFC"
   });
 
   layerA.states.add({
