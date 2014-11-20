@@ -1,6 +1,9 @@
 .examples {
 	background: $header;
 }
+.examples .container {
+	padding-bottom: 32px;
+}
 .examples-header {
 	background: $header;
 	color: #fff;

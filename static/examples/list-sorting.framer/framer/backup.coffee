@@ -1,3 +1,7 @@
+# Made with Framer
+# by Koen Bok & Benjamin den Boer
+# www.framerjs.com
+
 # Variables
 listWidth = 320
 listHeight = 90

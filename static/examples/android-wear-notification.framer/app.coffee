@@ -2,14 +2,18 @@
 # by Jorn van Dijk
 # www.framerjs.com
 
-bg = new BackgroundLayer backgroundColor: "#F1EEF1"
+bg = new BackgroundLayer backgroundColor: "#323D4D"
 
 # Set up mask layer
 mask = new Layer width:390, height:410, backgroundColor:"null"
 mask.center()
+
+window.onresize = ->
+	mask.center()
+	
 mask.shadowY = 3
 mask.shadowBlur = 15
-mask.shadowColor = "rgba(0, 0, 0, 0.5)"
+mask.shadowColor = "rgba(0,0,0,0.2)"
 
 # Import & Position
 Sketch = Framer.Importer.load "imported/OnTime"

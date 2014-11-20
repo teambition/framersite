@@ -2,7 +2,7 @@
   var Sketch, a, bg, mask;
 
   bg = new BackgroundLayer({
-    backgroundColor: "#F1EEF1"
+    backgroundColor: "#323D4D"
   });
 
   mask = new Layer({
@@ -13,11 +13,15 @@
 
   mask.center();
 
+  window.onresize = function() {
+    return mask.center();
+  };
+
   mask.shadowY = 3;
 
   mask.shadowBlur = 15;
 
-  mask.shadowColor = "rgba(0, 0, 0, 0.5)";
+  mask.shadowColor = "rgba(0,0,0,0.2)";
 
   Sketch = Framer.Importer.load("imported/OnTime");
 
