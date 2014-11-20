@@ -3,7 +3,7 @@
 # www.framerjs.com
 
 bg = new BackgroundLayer 
-	backgroundColor: "#28AFFA"
+	backgroundColor: "#A7CAE7"
 	
 layerA = new Layer y:100, backgroundColor:"#fff", borderRadius:4
 
@@ -13,8 +13,8 @@ layerA.draggable.speedY = 0
 # Set the thresholds to cross and show them with lines
 leftThreshold = 160
 rightThreshold = Screen.width - leftThreshold
-leftLine = new Layer width:2, x:leftThreshold, y:80, height:140, backgroundColor: "#7ECFFC"
-rightLine = new Layer width:2, x:rightThreshold, y:80, height:140, backgroundColor: "#7ECFFC"
+leftLine = new Layer width:2, x:leftThreshold, y:80, height:140, backgroundColor: "#D3E5F3"
+rightLine = new Layer width:2, x:rightThreshold, y:80, height:140, backgroundColor: "#D3E5F3"
 
 # Add states for left and right & set animation curve
 layerA.states.add

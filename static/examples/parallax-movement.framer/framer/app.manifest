@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# 1416487746.367309
+# 1416490719.675679
 CACHE:
 /_server/server.js
 ../.temp.html
@@ -32,7 +32,12 @@ CACHE:
 ../framer/mirror.css
 ../framer/style.css
 ../framer/version
+../images/background.png
 ../images/framer-icon.png
+../images/Icon.png
+../images/layer1.png
+../images/layer2.png
+../images/layer3.png
 ../index.html
 ../offline.html
 SETTINGS:
