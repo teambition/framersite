@@ -9,6 +9,9 @@ bg = Framer.Importer.load "imported/Progress Prototype"
 bg.Screen.superLayer = canvas
 bg.Screen.center()
 bg.Screen.pixelAlign()
+window.onresize = ->
+	bg.Screen.center()
+	bg.Screen.pixelAlign()
 
 # Mask
 container = new Layer width:640, height:1136, backgroundColor:"#fff"

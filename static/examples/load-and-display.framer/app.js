@@ -13,6 +13,11 @@
 
   bg.Screen.pixelAlign();
 
+  window.onresize = function() {
+    bg.Screen.center();
+    return bg.Screen.pixelAlign();
+  };
+
   container = new Layer({
     width: 640,
     height: 1136,
