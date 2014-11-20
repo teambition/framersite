@@ -11,13 +11,23 @@
     };
     exampleName = window.location.hash.slice(1);
     loadExample(exampleName);
+    $(".btn-close").hide();
     $(".btn-code").click(function() {
       $("#example").toggleClass("with-code");
-      return $("#code").toggleClass("show-code");
+      $("#code").toggleClass("show-code");
+      $(".btn-code").hide();
+      return $(".btn-close").show();
+    });
+    $(".btn-close").click(function() {
+      $("#example").toggleClass("with-code");
+      $("#code").toggleClass("show-code");
+      $(".btn-close").hide();
+      return $(".btn-code").show();
     });
     if (exampleName.indexOf("#code") > -1) {
-      $("#code").addClass("show-code");
-      return $("#example").addClass("with-code");
+      $("#code").addClass("with-code");
+      $("#example").addClass("with-code");
+      return $(".btn-code").hide();
     }
   });
 

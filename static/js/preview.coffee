@@ -12,10 +12,21 @@ $(document).ready ->
 	
 	loadExample exampleName
 
+	$(".btn-close").hide()	
+
 	$(".btn-code").click ->		
 		$("#example").toggleClass "with-code"
 		$("#code").toggleClass "show-code"
+		$(".btn-code").hide()	
+		$(".btn-close").show()	
+
+	$(".btn-close").click ->		
+		$("#example").toggleClass "with-code"
+		$("#code").toggleClass "show-code"
+		$(".btn-close").hide()	
+		$(".btn-code").show()	
 
 	if exampleName.indexOf("#code") > -1
-		$("#code").addClass "show-code"
-		$("#example").addClass "with-code"			
+		$("#code").addClass "with-code"
+		$("#example").addClass "with-code"	
+		$(".btn-code").hide()		

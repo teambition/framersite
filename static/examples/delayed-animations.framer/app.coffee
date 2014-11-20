@@ -1,8 +1,8 @@
 rows = 4
 cols = 4
 
-size = 80
-margin = 60
+size = 60
+margin = 50
 ballCurve = "spring(300,20,0)"
 startDelta = 200
 

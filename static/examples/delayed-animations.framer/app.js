@@ -5,9 +5,9 @@
 
   cols = 4;
 
-  size = 80;
+  size = 60;
 
-  margin = 60;
+  margin = 50;
 
   ballCurve = "spring(300,20,0)";
 
