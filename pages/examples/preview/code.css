@@ -6,7 +6,7 @@ pre {
     line-height: 1.55;
     font-weight: normal;
     padding:8px 16px 16px 24px;
-    letter-spacing: -0.2px;
+    /* letter-spacing: -0.2px; */
     tab-size: 3;
 }
 pre, code {
