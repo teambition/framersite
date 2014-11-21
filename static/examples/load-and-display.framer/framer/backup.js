@@ -29,13 +29,17 @@
   container.style.boxShadow = "0 3px 6px rgba(0,0,0,0.1)";
 
   spinner = new VideoLayer({
-    video: "images/spinner.mp4",
+    video: "images/spinner.mov",
     width: 200,
     height: 200,
     backgroundColor: "#fff",
     rotation: 90,
     opacity: 0
   });
+
+  if (Utils.isChrome()) {
+    spinner.video = "images/spinner.mp4";
+  }
 
   spinner.superLayer = container;
 
