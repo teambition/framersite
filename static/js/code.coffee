@@ -10,7 +10,11 @@ loadCS = (exampleName) ->
 		dataType: "text",
 		success: (data) ->
 			Rainbow.color data, "coffeescript", (result) ->
-				$("code").html result.replace(/\t/g, "	").replace("www.framerjs.com", "<a target='_blank' href='http://www.framerjs.com'>www.framerjs.com</a>")
+				$("code").html result.replace("www.framerjs.com", "<a target='_blank' href='http://www.framerjs.com'>www.framerjs.com</a>")
+
+				# Fix for chrome tab indenting issue
+				if window.chrome 
+					$("code").html result.replace(/\t/g, "  ")
 		
 $(document).ready ->			
 	exampleName = getParameterByName "name"

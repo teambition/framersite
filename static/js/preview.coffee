@@ -30,3 +30,5 @@ $(document).ready ->
 		$("#code").addClass "with-code"
 		$("#example").addClass "with-code"	
 		$(".btn-code").hide()		
+
+	$("#code").contents().find("body").addClass "test"
