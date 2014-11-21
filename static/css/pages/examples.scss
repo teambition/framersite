@@ -11,6 +11,11 @@
 	margin-top: $space64;
 	position: relative;
 }
+
+// Grid
+.examples .col-4:nth-child(4n) {
+	margin-right: 0;
+}
 // Title
 .examples-header section {
 	float: left;
@@ -57,8 +62,8 @@
 	opacity: .8;
 }
 // Spacing
-.examples .gallery div+div {
-	margin-top: $space48;
+.examples .col-4 {
+	margin-bottom: $space48;
 }
 
 // Submit icon
@@ -81,3 +86,63 @@
 .submit:active {
 	background: rgba(255,255,255,0.2);
 }
+
+// Examples Media Queries
+@media screen and (max-width:980px) {
+	.examples .content-inner {
+		max-width: 810px;
+	}
+	.examples .col-4 {
+		max-width:210px;
+		margin-right: 60px;
+	}
+	// Reset
+	.examples .col-4:nth-child(2n) {
+		margin-left:0;
+	}
+	.examples .col-4:nth-child(2) {
+		margin-bottom:0;
+	}
+	.examples .col-4:nth-child(4n) {
+		margin-right: 60px;
+	}
+	// 3 Rows
+	.examples .col-4:nth-child(3n) {
+		margin-right: 0;
+	}
+}
+@media screen and (max-width:880px) {
+	.examples .content-inner {
+		max-width: 750px;
+	}
+	.examples .col-4 {
+		margin-right: 30px;
+	}
+	.examples .col-4:nth-child(4n) {
+		margin-right: 30px;
+	}
+}
+@media screen and (max-width:760px) {
+	.examples .content-inner {
+		max-width: 520px;
+	}
+	// Added specificity to avoid clash with 3n
+	.examples .gallery .col-4 {
+		margin-right: 40px;
+		// margin-bottom: 20px;
+	}
+	.examples .gallery.col-4:nth-child(4n) {
+		margin-right: 0;
+	}
+	.examples .col-4:nth-child(2n) {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.examples .col-4:nth-child(3) {
+		margin-right: 40px;
+	}
+
+}
+
+
+
