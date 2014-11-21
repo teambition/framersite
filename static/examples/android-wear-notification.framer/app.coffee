@@ -2,7 +2,7 @@
 # by Jorn van Dijk
 # www.framerjs.com
 
-bg = new BackgroundLayer backgroundColor: "#504153"
+bg = new BackgroundLayer backgroundColor: "#313D4D"
 
 # Set up mask layer
 mask = new Layer width:390, height:410, backgroundColor:"null"

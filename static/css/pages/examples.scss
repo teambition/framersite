@@ -30,9 +30,14 @@
 .examples-header p {
 	opacity: .8;
 }
+.examples figure {
+	// border-radius: 3px;
+	// overflow: hidden;
+}
 .examples figure img {
 	width: 210px;
 	height: 210px;
+	border-radius: 3px;
 }
 .examples figure p {
 	margin-top: $space16;

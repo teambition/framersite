@@ -30,9 +30,8 @@
     if (exampleName.indexOf("#code") > -1) {
       $("#code").addClass("with-code");
       $("#example").addClass("with-code");
-      $(".btn-code").hide();
+      return $(".btn-code").hide();
     }
-    return $("#code").contents().find("body").addClass("test");
   });
 
 }).call(this);
