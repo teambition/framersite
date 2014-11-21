@@ -13,6 +13,11 @@
 
   bg.Screen.pixelAlign();
 
+  window.onresize = function() {
+    bg.Screen.center();
+    return bg.Screen.pixelAlign();
+  };
+
   container = new Layer({
     width: 640,
     height: 1136,
@@ -24,7 +29,7 @@
   container.style.boxShadow = "0 3px 6px rgba(0,0,0,0.1)";
 
   spinner = new VideoLayer({
-    video: "images/spinner.mov",
+    video: "images/spinner.mp4",
     width: 200,
     height: 200,
     backgroundColor: "#fff",
@@ -101,6 +106,10 @@
     };
     items.states.animationOptions.delay = 4.5 + 1 + (0.08 * count);
     items.states["switch"]('fadein');
+  }
+
+  if (window.devicePixelRatio > 1.5) {
+    bg.Screen.scale = 0.5;
   }
 
 }).call(this);

@@ -1,5 +1,5 @@
 # Made with Framer
-# by John Doe
+# by Tisho Georgiev
 # www.framerjs.com
 
 # Setup

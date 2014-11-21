@@ -1,15 +1,15 @@
+loadExample = (exampleName) ->
+	if ga?
+		ga("send", "pageview", "/examples/#{exampleName}")
+
+	$("#code").attr "src", "code.html?name=#{exampleName}"
+	$("#example").attr "src", "/static/examples/#{exampleName}"
+	$("a.download").attr "href", "/static/examples/#{exampleName}.zip"
+
+
 $(document).ready ->
 
-	loadExample = (exampleName) ->
-		if ga?
-			ga("send", "pageview", "/examples/#{exampleName}")
-
-		$("#code").attr "src", "code.html?name=#{exampleName}"
-		$("#example").attr "src", "/static/examples/#{exampleName}"
-		$("a.download").attr "href", "/static/examples/#{exampleName}.zip"
-
 	exampleName = window.location.hash[1..]
-	
 	loadExample exampleName
 
 	$(".btn-close").hide()	

@@ -6,13 +6,18 @@
 {% block pageheader %} 
 <header class="examples-header">
 	<div class="content-inner">
-		<h3>Examples</h3>
-		<h6>Made with Framer</h6>
+		<section>
+			<h3>Examples</h3>
+			<h6>Made with Framer</h6>
+		</section>
+
+		<a class="submit btn" href="#"><img src="/static/images/preview/icon-submit.png" srcset="/static/images/preview/icon-submit@2x.png 2x">Submit</a>
 	</div>
 </header> 
 {% endblock pageheader %}
 
 {% block body %}
+
 <section class="gallery clearfix">
 	<div class="clearfix">
 		<figure class="col-4">
@@ -79,13 +84,6 @@
 
 	<div class="clearfix">
 		<figure class="col-4">
-			<a href="/examples/preview/#airbnb-navigation.framer">
-				<img src="/static/images/examples/airbnb-navigation.png" srcset="/static/images/examples/airbnb-navigation@2x.png 2x" draggable="false">
-			</a>
-			<p class="small"><strong>AirBNB Navigation</strong>Prototype of the drawer navigation as seen in the iOS app.</p>
-			<a href="#">by Jorn van Dijk</a>
-		</figure>
-		<figure class="col-4">
 			<a href="/examples/preview/#list-sorting.framer#code">
 				<img src="/static/images/examples/sortable-list.png" srcset="/static/images/examples/sortable-list@2x.png 2x" draggable="false">
 			</a>
@@ -106,6 +104,13 @@
 			<p class="small"><strong>Generated Images</strong>Example of layer images loaded with JSON via Dribbble.</p>
 			<a href="#">by Jorn van Dijk</a>
 		</figure>
+		<figure class="col-4">
+			<a href="/examples/preview/#airbnb-navigation.framer">
+				<img src="/static/images/examples/airbnb-navigation.png" srcset="/static/images/examples/airbnb-navigation@2x.png 2x" draggable="false">
+			</a>
+			<p class="small"><strong>AirBNB Navigation</strong>Prototype of the drawer navigation as seen in the iOS app.</p>
+			<a href="#">by Tisho Georgiev</a>
+		</figure>	
 	</div>
 
 
