@@ -843,7 +843,7 @@ window.__imported__["carousel-onboarding/layers.json.js"] = [
 	}
 ]
 window.Framer.Defaults.DeviceView = {
-  "deviceScale" : 0.5,
+  "deviceScale" : -1,
   "orientation" : 0,
   "contentScale" : 1,
   "deviceType" : "iphone-5s-gold-hand"
