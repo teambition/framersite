@@ -10,9 +10,7 @@ layerGroup.View.shadowBlur = 15
 layerGroup.View.shadowColor = "rgba(0, 0, 0, 0.6)"
 layerGroup.View.clip = true
 layerGroup.View.center()
-
-window.onresize = ->
-	layerGroup.View.center()
+window.onresize = -> layerGroup.View.center()
 	
 Framer.Defaults.Animation =
 	curve: "spring"

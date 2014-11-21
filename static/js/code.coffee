@@ -14,9 +14,8 @@ loadCS = (exampleName) ->
 
 				# Fix for chrome tab indenting issue
 				if window.chrome 
-					$("code").html result.replace(/\t/g, "  ")
+					$("code").html result.replace(/\t/g, "  ").replace("www.framerjs.com", "<a target='_blank' href='http://www.framerjs.com'>www.framerjs.com</a>")
 		
 $(document).ready ->			
 	exampleName = getParameterByName "name"
 	loadCS exampleName
-

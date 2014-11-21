@@ -21,7 +21,7 @@
         return Rainbow.color(data, "coffeescript", function(result) {
           $("code").html(result.replace("www.framerjs.com", "<a target='_blank' href='http://www.framerjs.com'>www.framerjs.com</a>"));
           if (window.chrome) {
-            return $("code").html(result.replace(/\t/g, "  "));
+            return $("code").html(result.replace(/\t/g, "  ").replace("www.framerjs.com", "<a target='_blank' href='http://www.framerjs.com'>www.framerjs.com</a>"));
           }
         });
       }

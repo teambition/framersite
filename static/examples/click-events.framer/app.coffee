@@ -3,7 +3,7 @@
 # www.framerjs.com
 
 bg = new BackgroundLayer 
-	backgroundColor: "#818B9E"
+	backgroundColor: "#535F71"
 
 # Create Layers
 layerA = new Layer width:80, height:80, 

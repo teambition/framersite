@@ -2,7 +2,7 @@
   var bg, layerA, layerB;
 
   bg = new BackgroundLayer({
-    backgroundColor: "#818B9E"
+    backgroundColor: "#535F71"
   });
 
   layerA = new Layer({
