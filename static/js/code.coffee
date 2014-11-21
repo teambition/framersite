@@ -10,7 +10,7 @@ loadCS = (exampleName) ->
 		dataType: "text",
 		success: (data) ->
 			Rainbow.color data, "coffeescript", (result) ->
-				$("code").html result.replace(/\t/g, "  ").replace("www.framerjs.com", "<a target='_blank' href='http://www.framerjs.com'>www.framerjs.com</a>")
+				$("code").html result.replace(/\t/g, "	").replace("www.framerjs.com", "<a target='_blank' href='http://www.framerjs.com'>www.framerjs.com</a>")
 		
 $(document).ready ->			
 	exampleName = getParameterByName "name"

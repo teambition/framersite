@@ -19,7 +19,7 @@
       dataType: "text",
       success: function(data) {
         return Rainbow.color(data, "coffeescript", function(result) {
-          return $("code").html(result.replace(/\t/g, "  ").replace("www.framerjs.com", "<a target='_blank' href='http://www.framerjs.com'>www.framerjs.com</a>"));
+          return $("code").html(result.replace(/\t/g, "	").replace("www.framerjs.com", "<a target='_blank' href='http://www.framerjs.com'>www.framerjs.com</a>"));
         });
       }
     });
