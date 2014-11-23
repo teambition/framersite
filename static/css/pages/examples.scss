@@ -103,9 +103,6 @@
 	.examples .col-4:nth-child(2n) {
 		margin-left:0;
 	}
-	.examples .col-4:nth-child(2) {
-		margin-bottom:0;
-	}
 	.examples .col-4:nth-child(4n) {
 		margin-right: 60px;
 	}
@@ -125,9 +122,6 @@
 	.examples .col-4:nth-child(2n) {
 		margin-left:0;
 	}
-	.examples .col-4:nth-child(2) {
-		margin-bottom:0;
-	}
 	.examples .col-4:nth-child(4n) {
 		margin-right: 30px;
 	}
@@ -136,13 +130,13 @@
 		margin-right: 0;
 	}
 }
-@media screen and (max-width:760px) {
+@media screen and (max-width:750px) {
 	.examples .content-inner {
-		max-width: 520px;
+		max-width: 540px;
 	}
 	// Added specificity to avoid clash with 3n
 	.examples .gallery .col-4 {
-		margin-right: 40px;
+		margin-right: 60px;
 	}
 	.examples .gallery.col-4:nth-child(4n) {
 		margin-right: 0;
@@ -152,10 +146,55 @@
 		margin-right: 0;
 	}
 	.examples .col-4:nth-child(3) {
-		margin-right: 40px;
+		margin-right: 60px;
 	}
 
 }
 
+@media screen and (max-width:600px) {
+	.examples-header {
+		margin-top: 0;
+		display: none;
+	}
+	.examples-container {
+		padding-bottom: 0;
+		margin-bottom: -64px;
+	}
+}
 
+@media screen and (max-width:560px) {
+	.examples .col-4 + .col-4 {
+		// Reset
+		margin-top: 0;
+	}
+	
+	// 30px Gutters
+	.examples .content-inner {
+		max-width: 500px;
+	}
+	// Added specificity to avoid clash with 3n
+	.examples .gallery .col-4 {
+		margin-right: 30px;
+	}
+	.examples .gallery.col-4:nth-child(4n) {
+		margin-right: 0;
+	}
+	.examples .col-4:nth-child(2n) {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.examples .col-4:nth-child(3) {
+		margin-right: 30px;
+	}
+}
+
+// One-column
+@media screen and (max-width:500px) {
+	.examples .gallery .col-4,
+	.examples .col-4:nth-child(3) {
+		margin: 0 auto;
+		margin-bottom: 24px;
+		float: none;
+	}
+}
 
