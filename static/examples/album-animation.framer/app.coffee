@@ -49,3 +49,7 @@ Utils.delay 1, ->
 	Utils.delay 6 * timeFactor, -> layerGroup.Color2.states.next()
 	Utils.delay 9 * timeFactor, -> layerGroup.Color3.states.next()
 	Utils.delay 8 * timeFactor, -> layerGroup.Color4.states.next()
+	
+# Retina scaling
+if window.devicePixelRatio > 1.5
+	layerGroup.View.scale = 0.75

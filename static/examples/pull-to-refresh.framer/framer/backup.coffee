@@ -1,5 +1,5 @@
 # Made with Framer
-# by Koen Bok
+# by Benjamin den Boer
 # www.framerjs.com
 
 bg = Framer.Importer.load "imported/Pull to Refresh"

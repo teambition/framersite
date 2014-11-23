@@ -121,8 +121,19 @@
 	.examples .col-4 {
 		margin-right: 30px;
 	}
+	// Reset
+	.examples .col-4:nth-child(2n) {
+		margin-left:0;
+	}
+	.examples .col-4:nth-child(2) {
+		margin-bottom:0;
+	}
 	.examples .col-4:nth-child(4n) {
 		margin-right: 30px;
+	}
+	// 3 Rows
+	.examples .col-4:nth-child(3n) {
+		margin-right: 0;
 	}
 }
 @media screen and (max-width:760px) {
@@ -132,7 +143,6 @@
 	// Added specificity to avoid clash with 3n
 	.examples .gallery .col-4 {
 		margin-right: 40px;
-		// margin-bottom: 20px;
 	}
 	.examples .gallery.col-4:nth-child(4n) {
 		margin-right: 0;
