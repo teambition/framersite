@@ -128,6 +128,10 @@
 	#code {
 		display: none;
 	}
+	#example,
+	#example.with-code {
+		width:100%;
+	}
 }
 /* Retina iPads */
 @media only screen and (min-device-width:768px) and (max-device-width:1024px) and (-webkit-min-device-pixel-ratio:2) { 
@@ -137,6 +141,10 @@
 	.badge,
 	#code {
 		display: none;
+	}
+	#example,
+	#example.with-code {
+		width:100%;
 	}
 }
 /* iPhone 5 */
@@ -148,6 +156,10 @@
 	#code {
 		display: none;
 	}
+	#example,
+	#example.with-code {
+		width:100%;
+	}
 }
 /* iPhone 6 */
 @media only screen and (min-device-width:375px) and (max-device-width:667px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio:2) {
@@ -158,6 +170,10 @@
 	#code {
 		display: none;
 	}
+	#example,
+	#example.with-code {
+		width:100%;
+	}
 }
 /* Nexus 5 */
 @media only screen and (min-width: 360px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 3.0) {
@@ -167,5 +183,9 @@
 	.badge,
 	#code {
 		display: none;
+	}
+	#example,
+	#example.with-code {
+		width:100%;
 	}
 }
