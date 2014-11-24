@@ -13,6 +13,7 @@
   $(document).ready(function() {
     var exampleName;
     exampleName = window.location.hash.slice(1);
+    document.title = exampleName;
     loadExample(exampleName);
     $(".btn-close").hide();
     $(".btn-code").click(function() {
