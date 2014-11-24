@@ -60,7 +60,7 @@
 .examples figure a {
 	@include transition(all, 0.2s, ease);
 }
-//Hover
+// Hover
 .examples figure a:hover {
 	opacity: .8;
 }
@@ -157,9 +157,12 @@
 	.examples .col-4:nth-child(3) {
 		margin-right: 60px;
 	}
+	.examples .container {
+		padding-bottom: 0;
+		margin-bottom: -48px;
+	}
 
 }
-
 @media screen and (max-width:600px) {
 	.examples-header {
 		margin-top: 0;
@@ -167,10 +170,9 @@
 	}
 	.examples .container {
 		padding-bottom: 0;
-		margin-bottom: -80px;
+		margin-bottom: -48px;
 	}
 }
-
 @media screen and (max-width:560px) {
 	.examples .col-4 + .col-4 {
 		// Reset
