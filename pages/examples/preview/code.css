@@ -47,7 +47,7 @@ pre .comment a {
 }
 
 /* Retina Displays */
-@media screen and (-webkt-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     pre {
         font-size: 12px;
     }
