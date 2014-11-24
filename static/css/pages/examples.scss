@@ -2,7 +2,7 @@
 	background: $header;
 }
 .examples .container {
-	padding-bottom: 64px;
+	padding-bottom: 40px;
 }
 .examples-header {
 	background: $header;
@@ -91,6 +91,15 @@
 }
 
 // Examples Media Queries
+@media screen and (max-width:1080px) {
+	.examples .col-4 {
+		max-width:210px;
+		margin-right: 26px;
+	}
+	.examples .col-4:nth-child(4n) {
+		margin-right: 0;
+	}
+}
 @media screen and (max-width:980px) {
 	.examples .content-inner {
 		max-width: 810px;
@@ -156,9 +165,9 @@
 		margin-top: 0;
 		display: none;
 	}
-	.examples-container {
+	.examples .container {
 		padding-bottom: 0;
-		margin-bottom: -64px;
+		margin-bottom: -80px;
 	}
 }
 

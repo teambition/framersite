@@ -2,12 +2,13 @@
 pre {
     color: #fff;
     word-wrap: break-word;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 1.55;
     font-weight: normal;
     padding:8px 16px 16px 24px;
     /* letter-spacing: -0.2px; */
     tab-size: 3;
+    -webkit-font-smoothing: subpixel-antialiased;
 }
 pre, code {
     font-family: 'Menlo', 'Monaco', Courier, monospace;
@@ -43,4 +44,11 @@ pre .comment a {
 
 ::selection {
     background:rgba(158, 204, 255, 0.12);
+}
+
+/* Retina Displays */
+@media screen and (-webkt-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    pre {
+        font-size: 12px;
+    }
 }
