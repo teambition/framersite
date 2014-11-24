@@ -44,11 +44,15 @@
 
   frame.center();
 
+  window.onresize = function() {
+    return frame.center();
+  };
+
   frame.shadowY = 1;
 
   frame.shadowBlur = 6;
 
-  frame.shadowColor = "rgba(0,0,0,0.2)";
+  frame.shadowColor = "rgba(0,0,0,0.5)";
 
   playcontrol.style.pointerEvents = "none";
 

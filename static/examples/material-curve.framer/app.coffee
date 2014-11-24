@@ -26,9 +26,10 @@ playcontrol.opacity = 0
 frame = new Layer x:0, y:0, width:360, height:640
 frame.addSubLayer(playerLayers.View)
 frame.center()
+window.onresize = -> frame.center()
 frame.shadowY = 1
 frame.shadowBlur = 6
-frame.shadowColor = "rgba(0,0,0,0.2)"
+frame.shadowColor = "rgba(0,0,0,0.5)"
 
 playcontrol.style.pointerEvents = "none"
 playercontainer.style.pointerEvents = "none"
