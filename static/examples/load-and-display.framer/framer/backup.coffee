@@ -19,7 +19,6 @@ container.superLayer = bg.Background
 container.style.boxShadow = "0 3px 6px rgba(0,0,0,0.1)"
 
 # Spinner made in After Effects
-# Change .mp4 to .mov when viewing in Framer Studio
 spinner = new VideoLayer video: "images/spinner.mov", width:200, height:200, backgroundColor: "#fff", rotation: 90, opacity:0
 
 if Utils.isChrome()

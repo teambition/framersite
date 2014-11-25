@@ -2,7 +2,7 @@
   var animate, appbar, bg, btn_play, btnplaceholder, button, content, frame, goback, materialanimation, metadata, navbar, playcontrol, playerLayers, playercontainer, statusbar, stopall, timer;
 
   bg = new BackgroundLayer({
-    backgroundColor: "#DCE5C9"
+    backgroundColor: "#eee"
   });
 
   playerLayers = Framer.Importer.load("imported/player");
@@ -44,11 +44,15 @@
 
   frame.center();
 
+  window.onresize = function() {
+    return frame.center();
+  };
+
   frame.shadowY = 1;
 
   frame.shadowBlur = 6;
 
-  frame.shadowColor = "rgba(0,0,0,0.2)";
+  frame.shadowColor = "rgba(0,0,0,0.5)";
 
   playcontrol.style.pointerEvents = "none";
 

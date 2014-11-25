@@ -3,7 +3,7 @@
 # www.framerjs.com
 
 # Basic Setup
-bg = new BackgroundLayer backgroundColor:"#DCE5C9"
+bg = new BackgroundLayer backgroundColor:"#eee"
 playerLayers = Framer.Importer.load "imported/player"
 
 # Setting Up the Layers

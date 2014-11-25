@@ -2,7 +2,7 @@
   var animate, appbar, bg, btn_play, btnplaceholder, button, content, frame, goback, materialanimation, metadata, navbar, playcontrol, playerLayers, playercontainer, statusbar, stopall, timer;
 
   bg = new BackgroundLayer({
-    backgroundColor: "#DCE5C9"
+    backgroundColor: "#eee"
   });
 
   playerLayers = Framer.Importer.load("imported/player");
