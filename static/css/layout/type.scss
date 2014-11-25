@@ -420,12 +420,12 @@ table + h5 {
 }
 
 // Media Queries
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1096px) {
 	.page-header h2 {
 		font-size: 2em;
 	}
 }
-@media screen and (max-width:980px) {
+@media screen and (max-width:995px) {
 	.page-header h1 {
 		font-size: 3em;
 	}
@@ -438,7 +438,7 @@ table + h5 {
 		padding:0 16px;
 	}
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 736px) {
 	.header h1 {
 		font-size: 44px;
 	}

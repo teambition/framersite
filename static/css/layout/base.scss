@@ -87,7 +87,7 @@ hr {
 }
 
 // Media Queries
-@media screen and (max-width:1080px) {
+@media screen and (max-width:1096px) {
 	.subpage .container,
 	.faq .container {
 		padding-bottom: 48px;
@@ -106,7 +106,7 @@ hr {
 		margin-right:20px;
 	}
 }
-@media screen and (max-width:980px) {
+@media screen and (max-width:996px) {
 	.content-inner {
 		max-width: 720px;
 	}
@@ -134,7 +134,7 @@ hr {
 		margin: $space56 auto;
 	}
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 736px) {
 	.content-inner {
 		max-width: 560px;
 	}
