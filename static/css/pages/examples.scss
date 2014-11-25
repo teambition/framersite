@@ -74,7 +74,7 @@
 	color: #fff;
 	float: right;
 	box-shadow: inset 0 0 0 1px rgba(255,255,255,.1);
-	margin-top: 28px;
+	margin-top: 26px;
 }
 .submit img {
 	margin-right: 8px;
@@ -91,7 +91,10 @@
 }
 
 // Examples Media Queries
-@media screen and (max-width:1080px) {
+@media screen and (max-width:1096px) {
+	.examples .content-inner {
+		max-width: 980px; 
+	}
 	.examples .col-4 {
 		max-width:210px;
 		margin-right: 26px;
