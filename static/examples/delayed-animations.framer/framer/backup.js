@@ -14,7 +14,11 @@
 
   container.center();
 
-  window.onresize = rows = 4;
+  window.onresize = function() {
+    return container.center();
+  };
+
+  rows = 4;
 
   cols = 4;
 

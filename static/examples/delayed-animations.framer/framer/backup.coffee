@@ -5,7 +5,8 @@
 bg = new BackgroundLayer backgroundColor: "#A793E8"
 container = new Layer backgroundColor: "transparent", clip:false, width:600, height: 600
 container.center()
-window.onresize = 
+window.onresize = -> container.center()
+	
 rows = 4
 cols = 4
 
