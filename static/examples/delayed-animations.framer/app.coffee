@@ -3,7 +3,10 @@
 # www.framerjs.com
 
 bg = new BackgroundLayer backgroundColor: "#A793E8"
-
+container = new Layer backgroundColor: "transparent", clip:false, width:600, height: 600
+container.center()
+window.onresize = -> container.center()
+	
 rows = 4
 cols = 4
 
@@ -22,12 +25,12 @@ startDelta = 200
 			height: size
 			opacity: 0
 			borderRadius: 100
+			superLayer: container
 
 		R1 = 200 / cols * a 
 		G1 = 200 / rows * b 
 		B1 = 255 
 		
-
 		ball.animate 
 			properties:
 				y: a * (size + margin)

@@ -1,11 +1,20 @@
 (function() {
-  var ballCurve, bg, cols, margin, rows, size, startDelta, _i, _results;
+  var ballCurve, bg, cols, container, margin, rows, size, startDelta, _i, _results;
 
   bg = new BackgroundLayer({
     backgroundColor: "#A793E8"
   });
 
-  rows = 4;
+  container = new Layer({
+    backgroundColor: "transparent",
+    clip: false,
+    width: 600,
+    height: 600
+  });
+
+  container.center();
+
+  window.onresize = rows = 4;
 
   cols = 4;
 
@@ -36,7 +45,8 @@
         width: size,
         height: size,
         opacity: 0,
-        borderRadius: 100
+        borderRadius: 100,
+        superLayer: container
       });
       R1 = 200 / cols * a;
       G1 = 200 / rows * b;

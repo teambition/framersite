@@ -33,14 +33,6 @@
     backgroundColor: "#D3E5F3"
   });
 
-  layerA.centerY();
-
-  leftLine.centerY();
-
-  rightLine.centerY();
-
-  window.onresize = function() {};
-
   layerA.states.add({
     left: {
       x: 80
@@ -67,5 +59,17 @@
       return layerA.states["switch"](layerA.states.current);
     }
   });
+
+  layerA.centerY();
+
+  leftLine.centerY();
+
+  rightLine.centerY();
+
+  window.onresize = function() {
+    layerA.centerY();
+    leftLine.centerY();
+    return rightLine.centerY();
+  };
 
 }).call(this);
