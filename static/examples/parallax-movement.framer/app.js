@@ -35,13 +35,13 @@
   lastYPosition = 0;
 
   bg.on(Events.TouchStart, function(event) {
-    return lastYPosition = event.y;
+    return lastYPosition = Events.touchEvent(event).clientY;
   });
 
   bg.on(Events.TouchMove, function(event) {
     var yDelta;
-    yDelta = lastYPosition - event.y;
-    lastYPosition = event.y;
+    yDelta = lastYPosition - Events.touchEvent(event).clientY;
+    lastYPosition = Events.touchEvent(event).clientY;
     layer1.y += yDelta;
     layer2.y -= yDelta * 0.3;
     return layer3.y -= yDelta * 2;

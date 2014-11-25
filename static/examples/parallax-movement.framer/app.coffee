@@ -14,12 +14,12 @@ lastYPosition = 0
 
 # Record y position
 bg.on Events.TouchStart, (event) ->
-	lastYPosition = event.y
+	lastYPosition = Events.touchEvent(event).clientY
 
 # As we slide, we update the lastYPosition and calculate the distance
 bg.on Events.TouchMove, (event) ->
-	yDelta = lastYPosition - event.y
-	lastYPosition = event.y
+	yDelta = lastYPosition - Events.touchEvent(event).clientY
+	lastYPosition = Events.touchEvent(event).clientY
 
 	# On every movement, we update the y property
 	# Move in opposite direction

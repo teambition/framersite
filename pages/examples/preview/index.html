@@ -5,13 +5,21 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, maximum-scale=0.5, user-scalable=no">
+	<meta id="viewport" name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, maximum-scale=0.5, user-scalable=no">
 
 	<title>Framer Example</title>
 	<link rel="stylesheet" type="text/css" href="preview.css">
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="{% static 'js/preview.js' %}"></script>
+
+	<script type="text/javascript">
+		$(function(){
+			if( /Android/i.test(navigator.userAgent) ) {
+			   $('#viewport').attr('content', 'width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=no,');
+			}
+		});
+	</script>
 
 </head>
 <body>

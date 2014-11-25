@@ -134,7 +134,7 @@
 	}
 }
 /* Retina iPads */
-@media only screen and (min-device-width:768px) and (max-device-width:1024px) and (-webkit-min-device-pixel-ratio:2) { 
+/*@media only screen and (min-device-width:768px) and (max-device-width:1024px) and (-webkit-min-device-pixel-ratio:2) { 
 	.btn-code,
 	.btn-open,
 	.btn-dl,
@@ -146,7 +146,7 @@
 	#example.with-code {
 		width:100%;
 	}
-}
+}*/
 /* iPhone 5 */
 @media only screen and (min-device-width:320px) and (max-device-width:568px) { 
 	.btn-code,
@@ -176,7 +176,7 @@
 	}
 }
 /* Nexus 5 */
-@media only screen and (min-width: 360px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 3.0) {
+@media only screen and (min-device-width: 360px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 3.0) {
 	.btn-code,
 	.btn-open,
 	.btn-dl,
