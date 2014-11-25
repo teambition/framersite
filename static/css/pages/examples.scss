@@ -104,6 +104,9 @@
 	.examples .content-inner {
 		max-width: 810px;
 	}
+	// .examples nav.top ul {
+	// 	max-width: 750px;
+	// }
 	.examples .col-4 {
 		max-width:210px;
 		margin-right: 60px;
@@ -124,6 +127,9 @@
 	.examples .content-inner {
 		max-width: 750px;
 	}
+	// .examples nav.top ul {
+	// 	max-width: 690px;
+	// }
 	.examples .col-4 {
 		margin-right: 30px;
 	}
@@ -140,7 +146,8 @@
 	}
 }
 @media screen and (max-width:750px) {
-	.examples .content-inner {
+	.examples .content-inner,
+	.examples nav.top .content-inner {
 		max-width: 540px;
 	}
 	// Added specificity to avoid clash with 3n
