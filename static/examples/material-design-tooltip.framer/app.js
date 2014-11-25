@@ -2,7 +2,7 @@
   var button, buttonMorph, canvas, print, printer;
 
   canvas = new BackgroundLayer({
-    backgroundColor: "#F1F1F1"
+    backgroundColor: "#fff"
   });
 
   button = new Layer({

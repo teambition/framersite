@@ -1,5 +1,9 @@
 (function() {
-  var ballCurve, cols, margin, rows, size, startDelta, _i, _results;
+  var ballCurve, bg, cols, margin, rows, size, startDelta, _i, _results;
+
+  bg = new BackgroundLayer({
+    backgroundColor: "#A793E8"
+  });
 
   rows = 4;
 
@@ -28,6 +32,7 @@
       ball = new Layer({
         x: b * (size + margin),
         y: a * (size + margin) + startDelta,
+        backgroundColor: "white",
         width: size,
         height: size,
         opacity: 0,
@@ -36,9 +41,6 @@
       R1 = 200 / cols * a;
       G1 = 200 / rows * b;
       B1 = 255;
-      ball.style = {
-        backgroundColor: "rgba(" + R1 + "," + G1 + "," + B1 + ",1)"
-      };
       return ball.animate({
         properties: {
           y: a * (size + margin),

@@ -2,6 +2,8 @@
 # by Koen Bok
 # www.framerjs.com
 
+bg = new BackgroundLayer backgroundColor: "#A793E8"
+
 rows = 4
 cols = 4
 
@@ -15,6 +17,7 @@ startDelta = 200
 		ball = new Layer
 			x: b * (size + margin)
 			y: a * (size + margin) + startDelta
+			backgroundColor: "white"
 			width:  size 
 			height: size
 			opacity: 0
@@ -24,7 +27,6 @@ startDelta = 200
 		G1 = 200 / rows * b 
 		B1 = 255 
 		
-		ball.style = backgroundColor: "rgba(#{R1},#{G1},#{B1},1)"
 
 		ball.animate 
 			properties:
