@@ -22,7 +22,6 @@
   leftLine = new Layer({
     width: 2,
     x: leftThreshold,
-    y: 80,
     height: 140,
     backgroundColor: "#D3E5F3"
   });
@@ -30,10 +29,17 @@
   rightLine = new Layer({
     width: 2,
     x: rightThreshold,
-    y: 80,
     height: 140,
     backgroundColor: "#D3E5F3"
   });
+
+  layerA.centerY();
+
+  leftLine.centerY();
+
+  rightLine.centerY();
+
+  window.onresize = function() {};
 
   layerA.states.add({
     left: {

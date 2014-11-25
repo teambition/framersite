@@ -22,7 +22,6 @@
   leftLine = new Layer({
     width: 2,
     x: leftThreshold,
-    y: 80,
     height: 140,
     backgroundColor: "#D3E5F3"
   });
@@ -30,7 +29,6 @@
   rightLine = new Layer({
     width: 2,
     x: rightThreshold,
-    y: 80,
     height: 140,
     backgroundColor: "#D3E5F3"
   });
@@ -61,5 +59,17 @@
       return layerA.states["switch"](layerA.states.current);
     }
   });
+
+  layerA.centerY();
+
+  leftLine.centerY();
+
+  rightLine.centerY();
+
+  window.onresize = function() {
+    layerA.centerY();
+    leftLine.centerY();
+    return rightLine.centerY();
+  };
 
 }).call(this);

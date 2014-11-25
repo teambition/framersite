@@ -10,11 +10,19 @@ layerA = new Layer y:100, backgroundColor:"#fff", borderRadius:4
 layerA.draggable.enabled = true
 layerA.draggable.speedY = 0
 
+
 # Set the thresholds to cross and show them with lines
 leftThreshold = 160
 rightThreshold = Screen.width - leftThreshold
-leftLine = new Layer width:2, x:leftThreshold, y:80, height:140, backgroundColor: "#D3E5F3"
-rightLine = new Layer width:2, x:rightThreshold, y:80, height:140, backgroundColor: "#D3E5F3"
+leftLine = new Layer width:2, x:leftThreshold, height:140, backgroundColor: "#D3E5F3"
+rightLine = new Layer width:2, x:rightThreshold, height:140, backgroundColor: "#D3E5F3"
+
+layerA.centerY()
+leftLine.centerY()
+rightLine.centerY()
+
+window.onresize = ->
+		
 
 # Add states for left and right & set animation curve
 layerA.states.add
