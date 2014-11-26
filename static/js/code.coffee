@@ -6,7 +6,7 @@ getParameterByName = (name) ->
 
 loadCS = (exampleName) ->
 	$.ajax
-		url: "/static/examples/#{exampleName}/app.coffee"
+		url: "http://projects.framerjs.com/static/examples/#{exampleName}/app.coffee"
 		dataType: "text",
 		success: (data) ->
 			Rainbow.color data, "coffeescript", (result) ->

@@ -9,10 +9,9 @@ loadExample = (exampleName) ->
 
 $(document).ready ->
 
-
 	exampleName = window.location.hash[1..]
-	document.title =
 	loadExample exampleName
+	document.title = exampleName
 
 	$(".btn-close").hide()	
 

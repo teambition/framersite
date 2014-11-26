@@ -15,7 +15,7 @@
 
   loadCS = function(exampleName) {
     return $.ajax({
-      url: "/static/examples/" + exampleName + "/app.coffee",
+      url: "http://projects.framerjs.com/static/examples/" + exampleName + "/app.coffee",
       dataType: "text",
       success: function(data) {
         return Rainbow.color(data, "coffeescript", function(result) {
