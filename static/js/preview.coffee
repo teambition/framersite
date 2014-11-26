@@ -5,21 +5,21 @@ loadExample = (exampleName, exampleNameNoHash) ->
 	$("#code").attr "src", "code.html?name=#{exampleName}"
 	$("#example").attr "src", "http://projects.framerjs.com/static/examples/#{exampleName}"
 	$(".btn-dl").attr "href", "http://projects.framerjs.com/static/examples/#{exampleNameNoHash}.zip"
-
+	$(".btn-open").attr "href", "framer://projects.framerjs.com/static/examples/#{exampleNameNoHash}.zip"
 
 $(document).ready ->
 
 	exampleName = window.location.hash[1..]
-	# For download link
-	exampleNameNoHash = window.location.hash[1..-6]
-
-	loadExample exampleName, exampleNameNoHash
-	document.title = exampleName
+	exampleNameNoHash = window.location.hash[1..]
 
 	# For document title
 	if exampleName.indexOf("#code") > -1
 		document.title = window.location.hash[1..-6]
+		# For download link
+		exampleNameNoHash = window.location.hash[1..-6]
 
+	loadExample exampleName, exampleNameNoHash
+	document.title = exampleName
 
 	$(".btn-close").hide()	
 

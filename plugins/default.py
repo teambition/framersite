@@ -7,9 +7,9 @@ def run(command):
     
     logger = logging.getLogger(__name__)
     
-    logger.debug(command)
+    logger.info(command)
     
-    # logger.info(os.environ['PATH'])
+    logger.info(os.environ['PATH'])
 
     process = subprocess.Popen([command], 
         shell=True, 
