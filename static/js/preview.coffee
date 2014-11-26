@@ -1,17 +1,17 @@
 loadExample = (exampleName) ->
 	if ga?
-		ga("send", "pageview", "/examples/#{exampleName}")
+		ga("send", "pageview", "http://projects.framerjs.com/examples/#{exampleName}")
 
 	$("#code").attr "src", "code.html?name=#{exampleName}"
-	$("#example").attr "src", "/static/examples/#{exampleName}"
-	$("a.download").attr "href", "/static/examples/#{exampleName}.zip"
+	$("#example").attr "src", "http://projects.framerjs.com/static/examples/#{exampleName}"
+	$("a.download").attr "href", "http://projects.framerjs.com/static/examples/#{exampleName}.zip"
 
 
 $(document).ready ->
 
 
 	exampleName = window.location.hash[1..]
-	document.title = exampleName
+	document.title =
 	loadExample exampleName
 
 	$(".btn-close").hide()	
