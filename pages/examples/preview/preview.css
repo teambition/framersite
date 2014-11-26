@@ -2,7 +2,7 @@
 #example {
 	position: absolute; top: 0; 
 	height: 100%; border: none;
-	overflow-y:hidden;
+	overflow-x: hidden;
 }
 #example {
 	width:100%;
