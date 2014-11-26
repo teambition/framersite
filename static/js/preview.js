@@ -1,20 +1,21 @@
 (function() {
   var loadExample;
 
-  loadExample = function(exampleName) {
+  loadExample = function(exampleName, exampleNameNoHash) {
     if (typeof ga !== "undefined" && ga !== null) {
       ga("send", "pageview", "http://projects.framerjs.com/examples/" + exampleName);
     }
     $("#code").attr("src", "code.html?name=" + exampleName);
     $("#example").attr("src", "http://projects.framerjs.com/static/examples/" + exampleName);
-    return $(".btn-dl").attr("href", "http://projects.framerjs.com/static/examples/" + exampleName + ".zip");
+    return $(".btn-dl").attr("href", "http://projects.framerjs.com/static/examples/" + exampleNameNoHash + ".zip");
   };
 
   $(document).ready(function() {
-    var exampleName;
+    var exampleName, exampleNameNoHash;
     exampleName = window.location.hash.slice(1);
-    loadExample(exampleName);
-    document.title = exampleName;
+    exampleNameNoHash = window.location.hash.slice(1, -5);
+    loadExample(exampleName, exampleNameNoHash);
+    document.title = exampleNameNoHash;
     $(".btn-close").hide();
     $(".btn-code").click(function() {
       $("#example").toggleClass("with-code");
