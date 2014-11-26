@@ -13,12 +13,12 @@ $(document).ready ->
 	# For download link
 	exampleNameNoHash = window.location.hash[1..-6]
 
-	# For document title
-	if exampleName.indexOf("#code") > -1
-		exampleName = window.location.hash[1..-6]
-
 	loadExample exampleName, exampleNameNoHash
 	document.title = exampleName
+
+	# For document title
+	if exampleName.indexOf("#code") > -1
+		document.title = window.location.hash[1..-6]
 
 
 	$(".btn-close").hide()	

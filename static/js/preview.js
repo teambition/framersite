@@ -14,11 +14,11 @@
     var exampleName, exampleNameNoHash;
     exampleName = window.location.hash.slice(1);
     exampleNameNoHash = window.location.hash.slice(1, -5);
-    if (exampleName.indexOf("#code") > -1) {
-      exampleName = window.location.hash.slice(1, -5);
-    }
     loadExample(exampleName, exampleNameNoHash);
     document.title = exampleName;
+    if (exampleName.indexOf("#code") > -1) {
+      document.title = window.location.hash.slice(1, -5);
+    }
     $(".btn-close").hide();
     $(".btn-code").click(function() {
       $("#example").toggleClass("with-code");
