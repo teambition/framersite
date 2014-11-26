@@ -43,18 +43,18 @@ card.on Events.DragStart, ->
 	
 card.on Events.DragMove, (event) ->
 	velocity = card.draggable.calculateVelocity()
-	cardRotationY = Utils.modulate(velocity.x, [-5,5], [-15,15], true)
+	cardRotationY = Utils.modulate(velocity.x, [-5,5], [-15,25], true)
 	cardRotationX = Utils.modulate(velocity.y, [-5,5], [-15,15], true)
 	card.states.switch("drag")	
 	card.shadowX = (card.x - card.dragStartX) * -0.125
 	card.shadowY = (card.y - card.dragStartY) * -0.125
+		
 	card.animate
 		properties:
 			rotationX: -cardRotationX
 			rotationY: cardRotationY
 		curve: "spring(900,80,0)"
 			
-
 card.on Events.DragEnd, ->
 	card.animate
 		properties:

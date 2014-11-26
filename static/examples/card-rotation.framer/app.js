@@ -69,7 +69,7 @@
   card.on(Events.DragMove, function(event) {
     var cardRotationX, cardRotationY, velocity;
     velocity = card.draggable.calculateVelocity();
-    cardRotationY = Utils.modulate(velocity.x, [-5, 5], [-15, 15], true);
+    cardRotationY = Utils.modulate(velocity.x, [-5, 5], [-15, 25], true);
     cardRotationX = Utils.modulate(velocity.y, [-5, 5], [-15, 15], true);
     card.states["switch"]("drag");
     card.shadowX = (card.x - card.dragStartX) * -0.125;
