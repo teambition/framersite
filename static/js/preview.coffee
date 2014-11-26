@@ -4,7 +4,7 @@ loadExample = (exampleName) ->
 
 	$("#code").attr "src", "code.html?name=#{exampleName}"
 	$("#example").attr "src", "http://projects.framerjs.com/static/examples/#{exampleName}"
-	$("a.download").attr "href", "http://projects.framerjs.com/static/examples/#{exampleName}.zip"
+	$(".btn-dl").attr "href", "http://projects.framerjs.com/static/examples/#{exampleName}.zip"
 
 
 $(document).ready ->

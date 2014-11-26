@@ -7,7 +7,7 @@
     }
     $("#code").attr("src", "code.html?name=" + exampleName);
     $("#example").attr("src", "http://projects.framerjs.com/static/examples/" + exampleName);
-    return $("a.download").attr("href", "http://projects.framerjs.com/static/examples/" + exampleName + ".zip");
+    return $(".btn-dl").attr("href", "http://projects.framerjs.com/static/examples/" + exampleName + ".zip");
   };
 
   $(document).ready(function() {
