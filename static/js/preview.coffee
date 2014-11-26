@@ -10,10 +10,16 @@ loadExample = (exampleName, exampleNameNoHash) ->
 $(document).ready ->
 
 	exampleName = window.location.hash[1..]
+	# For download link
 	exampleNameNoHash = window.location.hash[1..-6]
 
+	# For document title
+	if exampleName.indexOf("#code") > -1
+		exampleName = window.location.hash[1..-6]
+
 	loadExample exampleName, exampleNameNoHash
-	document.title = exampleNameNoHash
+	document.title = exampleName
+
 
 	$(".btn-close").hide()	
 
