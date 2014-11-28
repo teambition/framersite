@@ -8,7 +8,7 @@
     $("#code").attr("src", "code.html?name=" + exampleName);
     $("#example").attr("src", "http://projects.framerjs.com/static/examples/" + exampleName);
     $(".btn-dl").attr("href", "http://projects.framerjs.com/static/examples/" + exampleNameNoHash + ".zip");
-    return $(".btn-open").attr("href", "framer://projects.framerjs.com/static/examples/" + exampleNameNoHash + ".zip");
+    return $(".btn-open").attr("href", "http://framer.link/projects.framerjs.com/static/examples/" + exampleNameNoHash + ".zip");
   };
 
   $(document).ready(function() {
