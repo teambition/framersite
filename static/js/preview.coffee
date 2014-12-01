@@ -1,6 +1,5 @@
 loadExample = (exampleName, exampleNameNoHash) ->
-	if ga?
-		ga("send", "pageview", "http://projects.framerjs.com/examples/#{exampleName}")
+	ga("send", "pageview", "http://framerjs.com/examples/#{exampleName}") if ga?
 
 	$("#code").attr "src", "code.html?name=#{exampleName}"
 	$("#example").attr "src", "http://projects.framerjs.com/static/examples/#{exampleName}"
