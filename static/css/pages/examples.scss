@@ -102,6 +102,11 @@
 	.examples .col-4:nth-child(4n) {
 		margin-right: 0;
 	}
+	// Fix border-width
+	.examples .start-prototyping:after {
+		max-width: 920px;
+		margin-left: -460px;
+	}
 }
 @media screen and (max-width:996px) {
 	.examples .content-inner {
@@ -125,6 +130,11 @@
 	.examples .col-4:nth-child(3n) {
 		margin-right: 0;
 	}
+	// Fix border-width
+	.examples .start-prototyping:after {
+		max-width: 750px;
+		margin-left: -375px;
+	}
 }
 @media screen and (max-width:880px) {
 	.examples .content-inner {
@@ -146,6 +156,11 @@
 	// 3 Rows
 	.examples .col-4:nth-child(3n) {
 		margin-right: 0;
+	}
+	// Fix border-width
+	.examples .start-prototyping:after {
+		max-width: 690px;
+		margin-left: -345px;
 	}
 }
 @media screen and (max-width:750px) {
@@ -171,7 +186,11 @@
 		padding-bottom: 0;
 		margin-bottom: -48px;
 	}
-
+	// Fix border-width
+	.examples .start-prototyping:after {
+		max-width: 540px;
+		margin-left: -270px;
+	}
 }
 @media screen and (max-width:600px) {
 	.examples-header {
@@ -180,7 +199,7 @@
 	}
 	.examples .container {
 		padding-bottom: 0;
-		margin-bottom: -48px;
+		margin-bottom: -40px;
 	}
 }
 @media screen and (max-width:560px) {
@@ -206,6 +225,11 @@
 	}
 	.examples .col-4:nth-child(3) {
 		margin-right: 30px;
+	}
+	// Fix border-width
+	.examples .start-prototyping:after {
+		max-width: 100%;
+		margin-left: 0;
 	}
 }
 
