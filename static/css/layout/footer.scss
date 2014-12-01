@@ -169,67 +169,7 @@ footer.global input.focus:-ms-input-placeholder { color: $nav-links-50; }
 	}
 }
 
-/* Examples Page Footer goes mobile 1 breakpoint earlier */
 @media screen and (max-width: 750px) {
-	.examples footer.global {
-		height: 190px;
-		padding-top: $space48;
-	}
-	.examples footer.global .right {
-		margin-top: $space24;
-	}
-	.examples footer.global form {
-		margin: 0 auto;
-		margin-bottom: 8px;
-	}
-	.examples footer.global section,
-	.examples footer.global .right p, {
-		float: none;
-		text-align: center;
-	}
-	.examples footer.global .small-links {
-		display: inline-block;
-	}
-	.examples footer.global section.left {
-		margin-bottom: $space16;
-	}
-	.examples footer.global li,
-	.examples footer.global li a {
-		text-align: center;
-	}
-	.examples footer.global a figure {
-		margin: 0 auto;
-		display: block;
-		margin-bottom: 16px;
-		float:none;
-	}
-	// Start prototyping
-	.examples .start-prototyping {
-		text-align: center;
-	}
-	.examples .start-prototyping img {
-		display: inline-block;
-		float: none;
-		margin-bottom: 16px;
-	}
-	.examples .start-prototyping .cta {
-		float: none;
-	}
-	.examples .start-prototyping .left {
-		max-width: 100%;
-		float: none;
-	}
-	.examples .start-prototyping .right {
-		margin-top: 16px;
-		float: none;
-	}
-	.examples .start-prototyping:after {
-		max-width: 500px;
-		margin-left: -250px;
-	}
-}
-
-@media screen and (max-width: 720px) {
 	footer.global {
 		height: 190px;
 		padding-top: $space48;
