@@ -71,11 +71,27 @@ FramerSite.verifyEmailAddress = function(email, callback) {
 
 }
 
-// FramerSite.verifyEmailAddress("koen@gmaiil.om", function(result) {
-// 	if (result.is_valid) {
-// 		...
-// 	}
-// })
+// Bind enter to button click 
+$("input").keyup(function(event) {
+	if(event.keyCode == 13) {
+		$("button").click();
+	}
+});
+
+$("button").click(function() {
+
+	var address = $("#email").val();
+
+	FramerSite.verifyEmailAddress(address, function(result) {
+		if (result.is_valid) {
+			window.location.href = "/download";
+			$(".submit-error").html("").removeClass("show");
+			
+		} else {
+			$(".submit-error").html("Not a valid email address").addClass("show");
+		}
+	})
+});
 
 window.FramerSite = FramerSite;
 
