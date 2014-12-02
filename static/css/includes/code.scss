@@ -69,9 +69,22 @@ pre, code {
     padding:0; box-shadow: none;
 }
 // Line-specific
+// Line-specific
+.three-lines .code-illustration {
+	max-width: 92px;
+}
 .four-lines .code-illustration {
     padding:26px;
     max-width: 112px;
+}
+.eight-lines .code-illustration {
+	max-width: 300px;
+}
+.nine-lines .code-illustration {
+	max-width: 212px;
+}
+.ten-lines .code-illustration {
+	max-width: 232px;
 }
 .layer-positioning-minmax img {
 	 max-width: 160px;
@@ -134,7 +147,7 @@ pre, code {
 }
 // Line-height bug in FF
 .is-firefox .content-inner pre ol li {
-	line-height: 1.5;
+	line-height: 1.55;
 }
 .content-inner pre ol li:before {
     content: counter(linenumbers);
