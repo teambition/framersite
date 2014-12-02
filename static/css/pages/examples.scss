@@ -81,6 +81,8 @@
 	float: left;
 	position: relative;
 	top: 1px;
+	max-height: 8px;
+	max-width: 8px;
 }
 .submit:hover {
 	box-shadow: none;
