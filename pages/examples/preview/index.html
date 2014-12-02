@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta id="viewport" name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, maximum-scale=0.5, user-scalable=no">
+
+	<title>Framer Example</title>
+	<link rel="stylesheet" type="text/css" href="preview.css">
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="{% static 'js/preview.js' %}"></script>
+	<script src="{% static '/js/srcset.min.js' %}"></script>
+
+
+
+	<script type="text/javascript">
+		$(function(){
+			if( /Android/i.test(navigator.userAgent) ) {
+			   $('#viewport').attr('content', 'width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=no,');
+			}
+		});
+	</script>
+
+</head>
+<body>
+	<header>
+		<a class="btn-code"><img src="/static/images/preview/icon-code.png" srcset="/static/images/preview/icon-code@2x.png 2x"></a>
+		<a class="btn-open">Open</a>
+		<a class="btn-dl"><img src="/static/images/preview/icon-dl.png" srcset="/static/images/preview/icon-dl@2x.png 2x"></a>
+	</header>
+		<a class="btn-close"><img src="/static/images/preview/icon-close.png" srcset="/static/images/preview/icon-close@2x.png 2x"></a>
+
+	<a class="badge" href="http://www.framerjs.com" target="_blank"><img src="/static/images/preview/badge.png" srcset="/static/images/preview/badge@2x.png 2x"></a>
+
+	<iframe id="code" name="code" src="" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0"></iframe>
+	<iframe id="example" name="example" src="" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0"></iframe>
+</body>
+
+</html>

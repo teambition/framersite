@@ -348,13 +348,25 @@ hr.hidden {
 .layer-type-illustration figure { // Icons within
 	display: inline-block;
 }
+.layer-type-illustration img {
+	width: 60px;
+	height: 48px;
+}
 .layer-type-illustration.video {
 	background: $cyan;
 	padding-top: 34px;
 }
+.layer-type-illustration.video img {
+	width: 54px;
+	height: 54px;
+}
 .layer-type-illustration.html {
 	background: $green;
 	padding-top: 36px;
+}
+.layer-type-illustration.html img {
+	width: 60px;
+	height: 43px;
 }
 .animation-curves .curve {
 	width:210px; height: 124px;
@@ -486,7 +498,7 @@ hr.hidden {
 .pricing p+table {
 	margin-top: $space24;
 }
-@media screen and (max-width:1080px) {
+@media screen and (max-width:1096px) {
 	.page-header img {
 		right:130px;
 	}
@@ -510,7 +522,7 @@ hr.hidden {
     	max-width: 200px;
     }
 }
-@media screen and (max-width:980px) {
+@media screen and (max-width:995px) {
 	.page-header img {
 		right:0px;
 	}
@@ -581,7 +593,7 @@ hr.hidden {
 		height:280px;
 	}
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 736px) {
 	.page-header {
 		text-align: center;
 		height: 460px;

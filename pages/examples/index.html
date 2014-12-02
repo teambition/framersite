@@ -1,0 +1,281 @@
+{% extends "subpage.html" %}
+{% block title %}Framer - Examples{% endblock %}
+{% block currentpage %}class="subpage examples"{% endblock currentpage %}
+{% block isexamples %}active{% endblock %}
+
+{% block pageheader %} 
+<header class="examples-header">
+	<div class="content-inner">
+		<section>
+			<h3>Examples</h3>
+			<p>Made with Framer</p>
+		</section>
+
+		<a class="submit btn" href="mailto:support@framerjs.com?subject=Submission: Framer Example&body=Please attach a zipped .framer file.">
+			<img src="/static/images/preview/icon-submit.png" srcset="/static/images/preview/icon-submit@2x.png 2x">Submit
+		</a>
+	</div>
+</header> 
+{% endblock pageheader %}
+
+{% block body %}
+<section class="gallery clearfix">
+		<figure class="col-4">
+			<a href="/examples/preview/#carousel-onboarding.framer" target="_blank">
+				<img src="/static/images/examples/carousel.png" srcset="/static/images/examples/carousel@2x.png 2x" draggable="false">
+			</a>
+			<p class="small"><strong>Carousel Onboarding</strong>Prototype taking users through the onboarding flow of the app.</p>
+			<span class="author">by <a href="https://twitter.com/joshpuckett" target="_blank">Josh Puckett</a></span>
+		</figure>
+		<figure class="col-4">
+			<a href="/examples/preview/#google-now-overview.framer" target="_blank">
+				<img src="/static/images/examples/google-now.png" srcset="/static/images/examples/google-now@2x.png 2x" draggable="false">
+			</a>
+			<p class="small"><strong>Google Now</strong>Prototype of the transition from the overview to the cards.</p>
+			<span class="author">by <a href="https://twitter.com/nlevin" target="_blank">Noah Levin</a></span>
+		</figure>
+		<figure class="col-4">
+			<a href="/examples/preview/#pull-to-refresh.framer" target="_blank">
+				<img src="/static/images/examples/pull-to-refresh.png" srcset="/static/images/examples/pull-to-refresh@2x.png 2x" draggable="false">
+			</a>
+			<p class="small"><strong>Pull-To-Refresh</strong> Prototype of the iOS gesture within the YouTube app.</p>
+			<span class="author">by <a href="https://twitter.com/benjaminnathan" target="_blank">Benjamin den Boer</a></span>
+		</figure>
+		<figure class="col-4">
+			<a href="/examples/preview/#album-animation.framer" target="_blank">
+				<img src="/static/images/examples/album-view.png" srcset="/static/images/examples/album-view@2x.png 2x" draggable="false">
+			</a>
+			<p class="small"><strong>Album Animation</strong>Prototype of an album loading transition seen in Android.</p>
+			<span class="author">by <a href="https://twitter.com/jornvandijk" target="_blank">Jorn van Dijk</a></span>
+		</figure>
+
+		<figure class="col-4">
+			<a href="/examples/preview/#potluck-onboarding.framer" target="_blank">
+				<img src="/static/images/examples/potluck-onboarding.png" srcset="/static/images/examples/potluck-onboarding@2x.png 2x" draggable="false">
+			</a>
+			<p class="small"><strong>Potluck Onboarding</strong>Prototype taking users through the onboarding flow of the app.</p>
+			<span class="author">by <a href="https://twitter.com/gem_ray" target="_blank">Cemre Güngör</a></span>
+		</figure>
+
+		<figure class="col-4">
+			<a href="/examples/preview/#card-feed.framer" target="_blank">
+				<img src="/static/images/examples/card-feed.png" srcset="/static/images/examples/card-feed@2x.png 2x" draggable="false">
+			</a>
+			<p class="small"><strong>Card Feed</strong>Prototype of a vertically swipable feed of cards with a parallax effect.</p>
+			<span class="author">by <a href="https://twitter.com/edchao" target="_blank">Ed Chao</a></span>
+		</figure>
+
+		<figure class="col-4">
+			<a href="/examples/preview/#guidebook-search.framer" target="_blank">
+				<img src="/static/images/examples/guidebook-search.png" srcset="/static/images/examples/guidebook-search@2x.png 2x" draggable="false">
+			</a>
+			<p class="small"><strong>Guidebook Search</strong>Prototype of a Guide Discovery flow for Guidebook.</p>
+			<span class="author">by <a href="https://twitter.com/pklada" target="_blank">Pete Lada</a></span>
+		</figure>
+
+		<figure class="col-4">
+			<a href="/examples/preview/#material-maps.framer" target="_blank">
+				<img src="/static/images/examples/material-maps.png" srcset="/static/images/examples/material-maps@2x.png 2x" draggable="false">
+			</a>
+			<p class="small"><strong>Material Maps</strong>Prototype of a Maps app, with Google Maps integration.</p>
+			<span class="author">by <a href="https://twitter.com/radiofun8" target="_blank">Min-Sang Choi</a></span>
+		</figure>
+
+		<figure class="col-4">
+			<a href="/examples/preview/#load-and-display.framer" target="_blank">
+				<img src="/static/images/examples/load-and-display.png" srcset="/static/images/examples/load-and-display@2x.png 2x" draggable="false">
+			</a>
+			<p class="small"><strong>Load and Display</strong>Prototype of a file loading transition seen in Android.</p>
+			<span class="author">by <a href="https://twitter.com/benjaminnathan" target="_blank">Benjamin den Boer</a></span>
+		</figure>
+
+		<figure class="col-4">
+			<a href="/examples/preview/#list-sorting.framer#code" target="_blank">
+				<img src="/static/images/examples/list-sorting.png" srcset="/static/images/examples/list-sorting@2x.png 2x" draggable="false">
+			</a>
+			<p class="small"><strong>List Sorting</strong>A list of layers that can be picked up, dragged and re-ordered.</p>
+			<span class="author">by <a href="https://twitter.com/benjaminnathan" target="_blank">Benjamin den Boer</a></span>
+		</figure>
+
+		<figure class="col-4">
+			<a href="/examples/preview/#snap-scroll.framer" target="_blank">
+				<img src="/static/images/examples/snap-scroll.png" srcset="/static/images/examples/snap-scroll@2x.png 2x" draggable="false">
+			</a>
+			<p class="small"><strong>Snap Scroll</strong>Prototype of a Dribbble feed with snappy scroll behaviour.</p>
+			<span class="author">by <a href="https://twitter.com/fverloop" target="_blank">Floris Verloop</a></span>
+		</figure>
+
+		<figure class="col-4">
+			<a href="/examples/preview/#detail-view-transition.framer" target="_blank">
+				<img src="/static/images/examples/detail-view-transition.png" srcset="/static/images/examples/detail-view-transition@2x.png 2x" draggable="false">
+			</a>
+			<p class="small"><strong>Detail View Transition</strong>Prototype of a feed of videos, each with a three-part transition.</p>
+			<span class="author">by <a href="https://twitter.com/stakelon" target="_blank">Jay Stakelon</a></span>
+		</figure>
+
+		<figure class="col-4">
+			<a href="/examples/preview/#android-music-player.framer" target="_blank">
+				<img src="/static/images/examples/android-music-player.png" srcset="/static/images/examples/android-music-player@2x.png 2x" draggable="false">
+			</a>
+			<p class="small"><strong>Album Player</strong>Prototype of a music player with a circular-path animation.</p>
+			<span class="author">by <a href="https://twitter.com/radiofun8" target="_blank">Min-Sang Choi</a></span>
+		</figure>
+
+		<figure class="col-4">
+			<a href="/examples/preview/#circular-masking.framer" target="_blank">
+				<img src="/static/images/examples/circular-masking.png" srcset="/static/images/examples/circular-masking@2x.png 2x" draggable="false">
+			</a>
+			<p class="small"><strong>Circular Masking</strong>An animated circular mask transition with subLayers.</p>
+			<span class="author">by <a href="https://twitter.com/radiofun8" target="_blank">Min-Sang Choi</a></span>
+		</figure>
+
+		<figure class="col-4">
+			<a href="/examples/preview/#airbnb-navigation.framer" target="_blank">
+				<img src="/static/images/examples/airbnb-navigation.png" srcset="/static/images/examples/airbnb-navigation@2x.png 2x" draggable="false">
+			</a>
+			<p class="small"><strong>AirBNB Navigation</strong>Prototype of the drawer navigation as seen in the iOS app.</p>
+			<span class="author">by <a href="https://twitter.com/tisho" target="_blank">Tisho Georgiev</a></span>
+		</figure>	
+
+		<figure class="col-4">
+			<a href="/examples/preview/#card-rotation.framer" target="_blank">
+				<img src="/static/images/examples/card-rotation.png" srcset="/static/images/examples/card-rotation@2x.png 2x" draggable="false">
+			</a>
+			<p class="small"><strong>Card Rotation</strong>Prototype of a card that rotates based on dragging velocity.</p>
+			<span class="author">by <a href="https://twitter.com/wilsonminer" target="_blank">Wilson Miner</a></span>
+		</figure>
+
+		<figure class="col-4">
+			<a href="/examples/preview/#android-wear-notification.framer#code" target="_blank">
+				<img src="/static/images/examples/android-wear-notification.png" srcset="/static/images/examples/android-wear-notification@2x.png 2x" draggable="false">
+			</a>
+			<p class="small"><strong>Android Wear Notification</strong>Prototype of a notification animation seen in Android Wear.</p>
+			<span class="author">by <a href="https://twitter.com/jornvandijk" target="_blank">Jorn van Dijk</a></span>
+		</figure>
+
+		<figure class="col-4">
+			<a href="/examples/preview/#generated-images.framer" target="_blank">
+				<img src="/static/images/examples/generated-images.png" srcset="/static/images/examples/generated-images@2x.png 2x" draggable="false">
+			</a>
+			<p class="small"><strong>Generated Images</strong>An array of layers with images loaded with JSON via Dribbble.</p>
+			<span class="author">by <a href="https://twitter.com/jornvandijk" target="_blank">Jorn van Dijk</a></span>
+		</figure>
+
+		<figure class="col-4">
+			<a href="/examples/preview/#keyboard-controlled-slides.framer#code" target="_blank">
+				<img src="/static/images/examples/keyboard-controlled-slides.png" srcset="/static/images/examples/keyboard-controlled-slides@2x.png 2x" draggable="false">
+			</a>
+			<p class="small"><strong>Keyboard-Controlled Slides</strong>A list of layers that can be selected using keyboard shortcuts.</p>
+			<span class="author">by <a href="https://twitter.com/benjaminnathan" target="_blank">Benjamin den Boer</a></span>
+		</figure>
+
+		<figure class="col-4">
+			<a href="/examples/preview/#material-design-tooltip.framer#code" target="_blank">
+				<img src="/static/images/examples/material-design-tooltip.png" srcset="/static/images/examples/material-design-tooltip@2x.png 2x" draggable="false">
+			</a>
+			<p class="small"><strong>Material Design Tooltip</strong>Fade-in animation with circular image masking seen in Android.</p>
+			<span class="author">by <a href="https://twitter.com/benjaminnathan" target="_blank">Benjamin den Boer</a></span>
+		</figure>
+
+		<!-- Examples -->
+
+		<figure class="col-4">
+			<a href="/examples/preview/#animation-basics.framer#code" target="_blank">
+				<img src="/static/images/examples/animation-basics.png" srcset="/static/images/examples/animation-basics@2x.png 2x" draggable="false">
+			</a>
+			<p class="small"><strong>Animation Basics</strong>Highlighting animation curves, timing, repeat and delays</p>
+			<span class="author">by <a href="https://twitter.com/koenbok" target="_blank">Koen Bok</a></span>
+		</figure>
+
+		<figure class="col-4">
+			<a href="/examples/preview/#animation-origin.framer#code" target="_blank">
+				<img src="/static/images/examples/animation-origin.png" srcset="/static/images/examples/animation-origin@2x.png 2x" draggable="false">
+			</a>
+			<p class="small"><strong>Animation Origin</strong>Animate a layer with a defined animation origin.</p>
+			<span class="author">by <a href="https://twitter.com/benjaminnathan" target="_blank">Benjamin den Boer</a></span>
+		</figure>
+
+		<figure class="col-4">
+			<a href="/examples/preview/#animation-chaining.framer#code" target="_blank">
+				<img src="/static/images/examples/animation-chaining.png" srcset="/static/images/examples/animation-chaining@2x.png 2x" draggable="false">
+			</a>
+			<p class="small"><strong>Animation Chaining</strong>Start an animation after one ends with AnimationEnd events.</p>
+			<span class="author">by <a href="https://twitter.com/benjaminnathan" target="_blank">Benjamin den Boer</a></span>
+		</figure>
+
+		<figure class="col-4">
+			<a href="/examples/preview/#delayed-animations.framer#code" target="_blank">
+				<img src="/static/images/examples/delayed-animations.png" srcset="/static/images/examples/delayed-animations@2x.png 2x" draggable="false">
+			</a>
+			<p class="small"><strong>Delayed Animations</strong>A staggered animation of mapped layers, dynamically colored.</p>
+			<span class="author">by <a href="https://twitter.com/koenbok" target="_blank">Koen Bok</a></span>
+		</figure>
+
+		<figure class="col-4">
+			<a href="/examples/preview/#scrollable-basics.framer#code" target="_blank">
+				<img src="/static/images/examples/scrollable-basics.png" srcset="/static/images/examples/scrollable-basics@2x.png 2x" draggable="false">
+			</a>
+			<p class="small"><strong>Scrollable Basics</strong>A scrollable layer containing content imported from Sketch.</p>
+			<span class="author">by <a href="https://twitter.com/benjaminnathan" target="_blank">Benjamin den Boer</a></span>
+		</figure>
+
+
+		<figure class="col-4">
+			<a href="/examples/preview/#draggable-basics.framer#code" target="_blank">
+				<img src="/static/images/examples/draggable-basics.png" srcset="/static/images/examples/draggable-basics@2x.png 2x" draggable="false">
+			</a>
+			<p class="small"><strong>Draggable Basics</strong>A draggable layer that snaps back to its origin using dragging events.</p>
+			<span class="author">by <a href="https://twitter.com/benjaminnathan" target="_blank">Benjamin den Boer</a></span>
+		</figure>
+
+		<figure class="col-4">
+			<a href="/examples/preview/#draggable-resistance.framer#code" target="_blank">
+				<img src="/static/images/examples/draggable-resistance.png" srcset="/static/images/examples/draggable-resistance@2x.png 2x" draggable="false">
+			</a>
+			<p class="small"><strong>Draggable - Resistance</strong>A draggable layer with dragging resistance and acceleration.</p>
+			<span class="author">by <a href="https://twitter.com/benjaminnathan" target="_blank">Benjamin den Boer</a></span>
+		</figure>
+
+		<figure class="col-4">
+			<a href="/examples/preview/#draggable-range.framer#code" target="_blank">
+				<img src="/static/images/examples/draggable-range.png" srcset="/static/images/examples/draggable-range@2x.png 2x" draggable="false">
+			</a>
+			<p class="small"><strong>Draggable - Range</strong>A draggable layer that responds to the dragging direction.</p>
+			<span class="author">by <a href="https://twitter.com/carambula" target="_blank">Aaron Carámbula</a></span>
+		</figure>
+
+		<figure class="col-4">
+			<a href="/examples/preview/#states-layer-array.framer#code" target="_blank">
+				<img src="/static/images/examples/states-layer-array.png" srcset="/static/images/examples/states-layer-array@2x.png 2x" draggable="false">
+			</a>
+			<p class="small"><strong>States - Layer Array</strong>Add a set of states to multiple layers by pushing them in an array.</p>
+			<span class="author">by <a href="https://twitter.com/benjaminnathan" target="_blank">Benjamin den Boer</a></span>
+		</figure>
+
+		<figure class="col-4">
+			<a href="/examples/preview/#shadow-lightsource.framer#code" target="_blank">
+				<img src="/static/images/examples/shadow-lightsource.png" srcset="/static/images/examples/shadow-lightsource@2x.png 2x" draggable="false">
+			</a>
+			<p class="small"><strong>Shadow - Lightsource</strong>A layer with a dynamic shadow, based on your mouse movements.</p>
+			<span class="author">by <a href="https://twitter.com/koenbok" target="_blank">Koen Bok</a></span>
+		</figure>
+
+		<figure class="col-4">
+			<a href="/examples/preview/#click-events.framer#code" target="_blank">
+				<img src="/static/images/examples/click-events.png" srcset="/static/images/examples/click-events@2x.png 2x" draggable="false">
+			</a>
+			<p class="small"><strong>Click Events</strong>Animating layers on Click, TouchStart and TouchEnd events.</p>
+			<span class="author">by <a href="https://twitter.com/koenbok" target="_blank">Koen Bok</a></span>
+		</figure>
+
+		<figure class="col-4">
+			<a href="/examples/preview/#parallax-movement.framer#code" target="_blank">
+				<img src="/static/images/examples/scrollable-parallax.png" srcset="/static/images/examples/scrollable-parallax@2x.png 2x" draggable="false">
+			</a>
+			<p class="small"><strong>Parallax Movement</strong>How to create a parallax scrolling effect using different images.</p>
+			<span class="author">by <a href="https://twitter.com/tisho" target="_blank">Tisho Georgiev</a></span>
+		</figure>
+
+
+</section> <!--gallery-->
+{% endblock body %}	

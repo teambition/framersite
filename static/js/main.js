@@ -9,6 +9,11 @@ $(document).ready(function() {
 			$(this).toggleClass("is-active");
 	});
 
+	/* FF Fix */
+	if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+    	$("body").addClass("is-firefox");
+	}
+
 	/* Footah */
 	$("footer").click(function() { 
 		if ($("footer input").is(':focus')) {

@@ -1,6 +1,7 @@
 pre {
     word-wrap: break-word;
     -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
     // Spacing
     padding: $space16;
     padding-left: 21px;
@@ -56,20 +57,37 @@ pre, code {
 }
 // Illustrations
 .code-illustration {
-    position: absolute;
-    top:0; right:0;
-    padding: 16px;
-    border-radius: 0 3px 3px 0;
-    display: inline-block;
-    box-shadow: inset 0 0 0 1px #E4EBF2;
-    z-index: 100;
+	position: absolute;
+	top:0; right:0;
+	padding: 16px;
+	border-radius: 0 3px 3px 0;
+	display: inline-block;
+	box-shadow: inset 0 0 0 1px #E4EBF2;
+	z-index: 100;
 }
 .code-illustration.no-border {
     padding:0; box-shadow: none;
 }
 // Line-specific
-.with-illustration.four-lines div + .code-illustration {
+// Line-specific
+.three-lines .code-illustration {
+	max-width: 92px;
+}
+.four-lines .code-illustration {
     padding:26px;
+    max-width: 112px;
+}
+.eight-lines .code-illustration {
+	max-width: 300px;
+}
+.nine-lines .code-illustration {
+	max-width: 212px;
+}
+.ten-lines .code-illustration {
+	max-width: 232px;
+}
+.layer-positioning-minmax img {
+	 max-width: 160px;
 }
 .with-illustration.layer-positioning-minmax pre {
     min-height: 160px;
@@ -85,6 +103,7 @@ pre, code {
 }
 .code-illustration-states {
     max-width: 274px;
+    max-height: 274px;
 }
 .code-illustration-dragging {
     max-width: 300px;
@@ -125,6 +144,10 @@ pre, code {
 .content-inner pre ol li {
     line-height: 1.6;
     text-align: left;
+}
+// Line-height bug in FF
+.is-firefox .content-inner pre ol li {
+	line-height: 1.55;
 }
 .content-inner pre ol li:before {
     content: counter(linenumbers);

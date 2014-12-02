@@ -59,7 +59,7 @@ input.btn-line {
 .btn.cyan { background: $cyan; }
 .btn.purple { background: $purple; }
 input.blue { background: $blue; }
-.header .btn.green { background: $header-green; }
+.header .btn.green, .start-prototyping .btn.green { background: $header-green; }
 
 .btn-line.green {
 	color: $green;
