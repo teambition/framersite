@@ -348,13 +348,25 @@ hr.hidden {
 .layer-type-illustration figure { // Icons within
 	display: inline-block;
 }
+.layer-type-illustration img {
+	width: 60px;
+	height: 48px;
+}
 .layer-type-illustration.video {
 	background: $cyan;
 	padding-top: 34px;
 }
+.layer-type-illustration.video img {
+	width: 54px;
+	height: 54px;
+}
 .layer-type-illustration.html {
 	background: $green;
 	padding-top: 36px;
+}
+.layer-type-illustration.html img {
+	width: 60px;
+	height: 43px;
 }
 .animation-curves .curve {
 	width:210px; height: 124px;

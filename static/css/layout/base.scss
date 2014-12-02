@@ -34,6 +34,10 @@ img {
   display: table;
   clear: both;
 }
+// Firefox
+input {
+  line-height: normal;
+}
 // Subpages = Learn & Docs
 .subpage .container {
 	padding: 64px 0 128px 0;

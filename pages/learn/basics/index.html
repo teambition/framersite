@@ -31,7 +31,7 @@
 ### Layers 
 <a name="basics"></a>
 A layer is a rectangle that draws elements. Layers can display images, videos or text. Every layer inherits a set of default properties: width, height and a blue background.
-<div class="with-illustration">
+<div class="with-illustration three-lines">
 <pre lang="coffeescript">
 # Create a layer 
 layerA = new Layer
@@ -107,7 +107,7 @@ layerA.centerY()
 
 ##### Hierarchy
 Layers can have a parent and/or children. Parent layers are called **superLayers**, and child layers are called **subLayers**. Layers inherit properties from their superLayers.
-<div class="with-illustration">
+<div class="with-illustration three-lines">
 <pre lang="coffeescript">
 # Two ways to define hierarchy
 layerB.superLayer = layerA
