@@ -41,28 +41,15 @@ body.download {
 
 .download h5 {
 	color: #fff;
-	margin-bottom: 0;
+	margin-bottom: 4px;
 }
 .download p {
 	color: $text-on-dark;
 	opacity: .8;
-}
-.download p.title {
 	max-width: 400px;
-	font-size: 20px;
-	color: #fff;
-	line-height: 1.3;
 	margin: 0 auto;
-	opacity: 1;
+	line-height: 1.4;
 }
-.download p.small {
-	font-size: 10px;
-	letter-spacing: 1px;
-	font-weight: 600;
-	text-transform: uppercase;
-	margin-top: 8px;
-}
-
 .download input {
 	outline: none;
 	-webkit-appearance: none;
@@ -114,14 +101,23 @@ body.download {
 	box-sizing: border-box;
 	margin-top: 40px;
 }
-.download button.active {
-	background: #28AFFA;
-}
+// Blue button
 .download button:hover {
 	background: #3EB7FB;
 }
 .download button:active {
 	background: #28AFFA;
+}
+// Green button
+.download button.green {
+	background: #6FC90D;
+	width:160px;
+}
+.download button.green:hover {
+	background: #7DDC16;
+}
+.download button.green:active {
+	background: #6FC90D;
 }
 /* Error States */
 .submit-error {
