@@ -78,17 +78,28 @@ $("input").keyup(function(event) {
 	}
 });
 
+
 $("button").click(function() {
 
+	var name = $("#name").val();
+	var trimmedName = $.trim(name);
 	var address = $("#email").val();
 
+	// Check name first
+	if (trimmedName == "") {
+		$(".submit-error").html("Please fill in your name").addClass("show");
+		return;
+	}
+
 	FramerSite.verifyEmailAddress(address, function(result) {
+		// If result isn't valid
+		if (!result.is_valid) {
+			$(".submit-error").html("Please enter a valid email address").addClass("show");
+		}
+		// If result is valid
 		if (result.is_valid) {
 			window.location.href = "/download";
 			$(".submit-error").html("").removeClass("show");
-			
-		} else {
-			$(".submit-error").html("Not a valid email address").addClass("show");
 		}
 	})
 });

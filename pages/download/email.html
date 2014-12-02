@@ -1,0 +1,27 @@
+{% extends "download.html" %}
+{% block currentpage %}class="download"{% endblock %}
+{% block height %}class="full-height"{% endblock %}
+{% block content %}
+
+<section class="message register">
+	<img src="/static/images/download/icon-framer.png" srcset="/static/images/home/icon-framer@2x.png 2x">
+	<h5>Please Register to Download</h5>
+	<p class="small">Stay up to date with the latest on Framer. No spam.</p>
+
+	<div class="form">
+		<input type="text" name="name" id="name" placeholder="Name"/> <br>
+		<input type="email" name="email" id="email" placeholder="Email Address" required/> 
+		<div class="submit-error"></div>
+		<button id="register">Download</button>
+	</div>
+
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="{% static '/js/main.js' %}"></script>
+<script src="{% static '/js/analytics.js' %}"></script>
+<script src="{% static '/js/srcset.min.js' %}"></script>
+<script src="{% static '/js/download.js' %}"></script>
+{% endblock scripts %}
