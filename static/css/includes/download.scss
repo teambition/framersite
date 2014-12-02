@@ -13,20 +13,15 @@ body.download {
 } 
 .download .message {
 	text-align: center;
-	height: 120px;
 	position: relative;
   	top: 50%;
-  	@include transform(translateY(-50%));
   	margin: 0 auto;
-}
-.download h2 {
-	color: #fff;
-	margin-bottom: $space24;
+  	height: 400px;
+  	margin-top: -200px;
 }
 .download p {
 	color: $graphite80;
 	margin-bottom: $space40;
-	margin-top: -20px;
 }
 .download p a {
 	color: #fff;
@@ -35,14 +30,73 @@ body.download {
 	display: none;
 }
 .download img {
-	margin-top: -72px;
 	margin-bottom: $space24;
-	height: 128px;
-	width: 128px;
 }
 
-@media screen and (min-height: 1000px) {
-	.download img {
-		margin-top: -100px;
-	}
+.download h5 {
+	color: #fff;
+	margin-bottom: 0;
+}
+.download p {
+	color: $text-on-dark;
+	opacity: .8;
+}
+
+.download input {
+	outline: none;
+	-webkit-appearance: none;
+}
+.form {
+	position: relative;
+	margin-top: 40px;
+}
+
+.download input {
+	border: none;
+	width: 380px;
+	height: 40px;
+	margin: 0 auto;
+	border-radius: 3px;
+	box-sizing: border-box;
+	padding-left: 16px;
+	padding-right: 16px;
+	padding-top: 8px;
+	font:14px/1.5 "Fakt", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	display: inline-block;
+	color: #616367;
+	position: relative;
+	z-index: 50;
+	margin-bottom: 8px;
+}
+::-webkit-input-placeholder {
+   padding-top: 0px;
+}
+.download input::selection {
+    background: #28AFFA;
+    color: #fff;
+}
+.download button {
+	background: #28AFFA;
+	font: 600 12px/1 "Fakt", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	border: none;
+	height: 40px;
+	width: 120px;
+	padding-top:7px;
+	border-radius: 3px;
+	cursor: pointer;
+	-webkit-font-smoothing: antialiased;
+	box-sizing: border-box;
+	margin-top: 40px;
+}
+.download button.active {
+	background: #28AFFA;
+}
+.download button:hover {
+	background: #3EB7FB;
+}
+.download button:active {
+	background: #28AFFA;
 }

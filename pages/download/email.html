@@ -1,0 +1,48 @@
+{% extends "download.html" %}
+{% block currentpage %}class="download"{% endblock %}
+{% block height %}class="full-height"{% endblock %}
+{% block content %}
+
+<section class="message">
+	<img src="/static/images/download/icon-framer.png" srcset="/static/images/home/icon-framer@2x.png 2x">
+	<h5>Register to Download</h5>
+	<p class="small">Get notified of Framer updates. Secure and spam-free.</p>
+
+	<form>
+			<input type="text" placeholder="Name" required /> <br>
+		<!-- 	<div class="success-message"></div>
+			<div class="submit-error"></div> -->
+
+			<input type="email" name="email" placeholder="Email Address" required /> <br>
+
+
+			<button type="submit">Download</button>
+	</form>
+
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="{% static '/js/main.js' %}"></script>
+<script src="{% static '/js/analytics.js' %}"></script>
+<script src="{% static '/js/srcset.min.js' %}"></script>
+
+<script type="text/javascript" charset="utf-8">
+// $(document).ready(function() {
+
+// 	var sparkleHost = "//studio.update.framerjs.com"
+
+// 	$.get(sparkleHost + "/latest.txt?date=" + Date.now(), function(result) {
+// 		downloadLink = sparkleHost + "/" + result + "?mp_id=" + mixpanel.get_distinct_id();
+// 		setTimeout(function() { window.location = downloadLink; }, 1000)
+// 		ga('send', 'event', 'Download', 'Framer Studio', downloadLink)
+// 		mixpanel.track("page.download", {
+// 			"title": document.title,
+//     		"url": window.location.pathname,
+//     		"link": downloadLink
+// 		})
+// 	})
+// })
+</script>
+{% endblock scripts %}
