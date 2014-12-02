@@ -71,39 +71,6 @@ FramerSite.verifyEmailAddress = function(email, callback) {
 
 }
 
-// Bind enter to button click 
-$("input").keyup(function(event) {
-	if(event.keyCode == 13) {
-		$("button").click();
-	}
-});
-
-
-$("button").click(function() {
-
-	var name = $("#name").val();
-	var trimmedName = $.trim(name);
-	var address = $("#email").val();
-
-	// Check name first
-	if (trimmedName == "") {
-		$(".submit-error").html("Please fill in your name").addClass("show");
-		return;
-	}
-
-	FramerSite.verifyEmailAddress(address, function(result) {
-		// If result isn't valid
-		if (!result.is_valid) {
-			$(".submit-error").html("Please enter a valid email address").addClass("show");
-		}
-		// If result is valid
-		if (result.is_valid) {
-			window.location.href = "/download";
-			$(".submit-error").html("").removeClass("show");
-		}
-	})
-});
-
 window.FramerSite = FramerSite;
 
 })()
