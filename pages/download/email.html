@@ -3,12 +3,23 @@
 {% block height %}class="full-height"{% endblock %}
 {% block content %}
 
-<div class="message">
-	<img src="/static/images/download/128.png" srcset="/static/images/home/128@2x.png 2x">
-	<h2>Thank you for downloading Framer Studio.</h2>
-	<p>If your download doesn't start automatically, please <a href="http://studio.update.framerjs.com/archive/">visit the archive.</a></p>
-	<a class="btn blue" href="/">Home</a>
-</div>
+<section class="message">
+	<img src="/static/images/download/icon-framer.png" srcset="/static/images/home/icon-framer@2x.png 2x">
+	<h5>Register to Download</h5>
+	<p class="small">Get notified of Framer updates. Secure and spam-free.</p>
+
+	<form>
+			<input type="text" placeholder="Name" required /> <br>
+		<!-- 	<div class="success-message"></div>
+			<div class="submit-error"></div> -->
+
+			<input type="email" name="email" placeholder="Email Address" required /> <br>
+
+
+			<button type="submit">Download</button>
+	</form>
+
+</section>
 {% endblock %}
 
 {% block scripts %}
