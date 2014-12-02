@@ -74,6 +74,15 @@
 .btn-close {
 	background: transparent;
 }
+.btn-code img {
+	width:14px; height:10px;
+}
+.btn-dl img {
+	width:10px; height:11px;
+}
+.btn-close img {
+	width: 10px; height:10px;
+}
 [class*='btn-']:hover {
 	background: rgba(0,0,0,0.4);
 }
@@ -110,6 +119,9 @@
 	position: absolute;
 	z-index: 900;
 	bottom:4px; left:8px;
+}
+.badge img {
+	width: 106px; height:34px;
 }
 
 /* Devices */
