@@ -127,39 +127,39 @@ function isMobile() {
 	return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
 }
 
-function setupDownloadLink() {
+// function setupDownloadLink() {
 
-	var downloadClass = ".prepare-download"
-	var sparkleHost = "//studio.update.framerjs.com"
+// 	var downloadClass = ".prepare-download"
+// 	var sparkleHost = "//studio.update.framerjs.com"
 
-	var downloadLink = sparkleHost + "/archive";
+// 	var downloadLink = sparkleHost + "/archive";
 
-	$.get(sparkleHost + "/latest.txt?date=" + Date.now(), function(result) {
-		downloadLink = sparkleHost + "/" + result + "?mp_id=" + mixpanel.get_distinct_id();
-	})
+// 	$.get(sparkleHost + "/latest.txt?date=" + Date.now(), function(result) {
+// 		downloadLink = sparkleHost + "/" + result + "?mp_id=" + mixpanel.get_distinct_id();
+// 	})
 
-	if (isMobile()) {
+// 	if (isMobile()) {
 
-		// If we are on mobile we pop up an email to not forget to check out the download
-		$(downloadClass).attr("href", 
-			"mailto:?subject=Check Out Framer Studio&body=Don't forget to check out Framer: http://framerjs.com");
+// 		// If we are on mobile we pop up an email to not forget to check out the download
+// 		$(downloadClass).attr("href", 
+// 			"mailto:?subject=Check Out Framer Studio&body=Don't forget to check out Framer: http://framerjs.com");
 
-	} else {
+// 	} else {
 
-		// If we are on desktop we replace the download links with the latest version of framer
-		$(downloadClass).click(function(event) {
-			event.preventDefault()
-			setTimeout(function() { window.location.href = downloadLink; }, 1000)
-			ga('send', 'event', 'Download', 'Framer Studio', downloadLink)
+// 		// If we are on desktop we replace the download links with the latest version of framer
+// 		$(downloadClass).click(function(event) {
+// 			event.preventDefault()
+// 			setTimeout(function() { window.location.href = downloadLink; }, 1000)
+// 			ga('send', 'event', 'Download', 'Framer Studio', downloadLink)
 
-			mixpanel.track("page.download", {
-				"title": document.title,
-    			"url": window.location.pathname,
-    			"link": downloadLink
-			})
-		})
-	}
-}
+// 			mixpanel.track("page.download", {
+// 				"title": document.title,
+//     			"url": window.location.pathname,
+//     			"link": downloadLink
+// 			})
+// 		})
+// 	}
+// }
 
-$(document).ready(setupDownloadLink)
+// $(document).ready(setupDownloadLink)
 

@@ -3,12 +3,19 @@
 {% block height %}class="full-height"{% endblock %}
 {% block content %}
 
-<div class="message thank-you">
+<section class="message register">
 	<img src="/static/images/download/icon-framer.png" srcset="/static/images/home/icon-framer@2x.png 2x">
-	<h5>Thank you for downloading Framer Studio.</h5>
-	<p>If your download doesn't start automatically, please <a href="http://studio.update.framerjs.com/archive/">visit the archive.</a></p>
-	<a class="btn blue" href="/">Return Home</a>
-</div>
+	<h5>Try Framer Studio for Free</h5>
+	<p class="small">Unlimited access for 24 active hours. Please fill in your name and email address to start the trial.</p>
+
+	<div class="form">
+		<input type="text" name="name" id="name" placeholder="Name"/>
+		<input type="email" name="email" id="email" placeholder="Email Address" required/> 
+		<div class="submit-error"></div>
+		<button id="register" class="green">Free Trial</button>
+	</div>
+
+</section>
 {% endblock %}
 
 {% block scripts %}
@@ -18,4 +25,36 @@
 <script src="{% static '/js/srcset.min.js' %}"></script>
 <script src="{% static '/js/download.js' %}"></script>
 
+<script type="text/javascript">
+// Bind enter to button click 
+$("input").keyup(function(event) {
+	if(event.keyCode == 13) {
+		$("button").click();
+	}
+});
+
+
+$("button").click(function() {
+
+	var name = $("#name").val();
+	var trimmedName = $.trim(name);
+	var address = $("#email").val();
+
+	// Check name first
+	if (trimmedName == "") {
+		$(".submit-error").html("Please fill in your name").addClass("show");
+		return;
+	}
+
+	FramerSite.verifyEmailAddress(address, function(result) {
+		// If result isn't valid
+		if (!result.is_valid) {
+			$(".submit-error").html("Please enter a valid email address").addClass("show");
+		} else {
+			window.location.href = "/download/thanks.html";
+			$(".submit-error").html("").removeClass("show");
+		}
+	})
+});
+</script>
 {% endblock scripts %}
