@@ -82,6 +82,13 @@ FramerSite.registerNameAndEmailNewsletter = function(name, email, callback) {
 			callback(data);
 		}
 	});
+
+	mixpanel.track("page.register", {
+		"title": document.title,
+		"url": window.location.pathname,
+		"name": name,
+		"email": email,
+	})
 }
 
 FramerSite.registerNameAndEmailMixpanel = function(name, email, callback) {
