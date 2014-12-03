@@ -20,7 +20,9 @@
 
 <script type="text/javascript">
 $(document).ready(function() {
-	FramerSite.doDownload();
+	if (window.location.host.indexOf("framerjs.com") != -1) {
+		FramerSite.doDownload();
+	}
 })
 </script>
 
