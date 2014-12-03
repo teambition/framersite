@@ -62,13 +62,38 @@ FramerSite.verifyEmailAddress = function(email, callback) {
 	});
 
 	// Set a timeout function so we always get some result
-    setTimeout(function() {
-        if (success) {
-        	return;
-        }
-        callback("timeout")
-    }, 5000);
+	setTimeout(function() {
+		if (success) {
+			return;
+		}
+		callback("timeout")
+	}, 5000);
 
+}
+
+FramerSite.registerNameAndEmailNewsletter = function(name, email, callback) {
+	// Sign up this person for our email news letter
+	$.ajax({
+		url: "http://podium.createsend.com/t/d/s/jujtid/",
+		method: "POST",
+		dataType: "jsonp",
+		data: {"cm-name": name, "cm-jujtid-jujtid": email},
+		success: function(data) {
+			callback(data);
+		}
+	});
+}
+
+FramerSite.registerNameAndEmailMixpanel = function(name, email, callback) {
+	mixpanel.people.set({
+		"$name": name,
+		"$email": email
+	});
+}
+
+FramerSite.registerNameAndEmail = function(name, email, callback) {
+	FramerSite.registerNameAndEmailNewsletter(name, email, function() {})
+	FramerSite.registerNameAndEmailMixpanel(name, email, function() {})
 }
 
 window.FramerSite = FramerSite;
