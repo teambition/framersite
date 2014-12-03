@@ -46,11 +46,16 @@ $("button").click(function() {
 		return;
 	}
 
+	$(".form").fadeTo(100, 0.35)
+
 	FramerSite.verifyEmailAddress(address, function(result) {
 		// If result isn't valid
 		if (!result.is_valid) {
 			$(".submit-error").html("Please enter a valid email address").addClass("show");
+			$(".form").fadeTo(100, 1)
 		} else {
+
+			FramerSite.registerNameAndEmail(name, address);
 
 			mixpanel.track("page.register", {
 				"title": document.title,
@@ -63,7 +68,7 @@ $("button").click(function() {
 
 			setTimeout(function() {
 				window.location.href = "/download/thanks.html";
-			}, 1000)
+			}, 2000)
 
 		}
 	})
