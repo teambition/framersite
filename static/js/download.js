@@ -27,6 +27,9 @@ FramerSite.doDownload = function() {
 		// Record the event in google analytics
 		ga('send', 'event', 'Download', 'Framer Studio', downloadLink)
 
+		// Record the event in gosquared
+		_gs('event', 'Download', {'Name': 'Framer Studio', 'Link': downloadLink});
+
 		// Record the event in mixpanel
 		mixpanel.track("page.download", {
 			"title": document.title,
