@@ -93,6 +93,7 @@ FramerSite.registerNameAndEmailMixpanel = function(name, email, callback) {
 		"$name": name,
 		"$email": email
 	});
+	mixpanel.people.set_once(MixpanelExperiments.listExperiments("experiments."));
 }
 
 FramerSite.registerNameAndEmail = function(name, email, callback) {

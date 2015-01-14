@@ -33,6 +33,7 @@
 	<title>{% block title %}Framer - Prototype Interaction and Animation{% endblock %}</title>
 
 	{% include 'gosquared.html' %}
+
 </head>
 
 <body {% block currentpage %}{% endblock %}>
@@ -47,7 +48,7 @@
 	<script src="{% static '/js/main.js' %}?expire=1414619692181"></script>
 	<script src="{% static '/js/analytics.js' %}"></script>
 	<script src="{% static '/js/srcset.min.js' %}"></script>
+	<script src="{% static '/js/mixpanel.js' %}"></script>
 	{% endblock scripts %}
-	{% include 'mixpanel.html' %}
 </body>
 </html>

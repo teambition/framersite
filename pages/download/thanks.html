@@ -22,6 +22,8 @@
 $(document).ready(function() {
 	if (window.location.host.indexOf("framerjs.com") != -1) {
 		FramerSite.doDownload();
+	} else {
+		console.log("Download disabled on localhost");
 	}
 })
 </script>

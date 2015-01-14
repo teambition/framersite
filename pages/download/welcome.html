@@ -1,0 +1,77 @@
+{% extends "download.html" %}
+{% block currentpage %}class="download"{% endblock %}
+{% block height %}class="full-height"{% endblock %}
+{% block content %}
+
+<section class="message register">
+	<img src="/static/images/download/icon-framer.png" srcset="/static/images/download/icon-framer@2x.png 2x">
+	<h5>Try Framer Studio for Free</h5>
+	<p class="small">You can try Framer without limitations for 14 days.<br>Please fill in your name and email to start.</p>
+
+	<div class="form">
+		<input type="text" name="name" id="name" placeholder="Name"/>
+		<input type="email" name="email" id="email" placeholder="Email Address" required/> 
+		<div class="submit-error"></div>
+		<button id="register" class="green">Download</button>
+	</div>
+
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="{% static '/js/main.js' %}"></script>
+<script src="{% static '/js/analytics.js' %}"></script>
+<script src="{% static '/js/srcset.min.js' %}"></script>
+<script src="{% static '/js/download.js' %}"></script>
+
+<script type="text/javascript">
+// Bind enter to button click 
+$("input").keyup(function(event) {
+	if(event.keyCode == 13) {
+		$("button").click();
+	}
+});
+
+
+$("button").click(function() {
+
+	var name = $("#name").val();
+	var trimmedName = $.trim(name);
+	var address = $("#email").val();
+
+	// Check name first
+	if (trimmedName == "") {
+		$(".submit-error").html("Please fill in your name").addClass("show");
+		return;
+	}
+
+	$(".form").fadeTo(100, 0.35)
+
+	FramerSite.verifyEmailAddress(address, function(result) {
+		// If result isn't valid
+		if (!result.is_valid) {
+			$(".submit-error").html("Please enter a valid email address").addClass("show");
+			$(".form").fadeTo(100, 1)
+		} else {
+
+			FramerSite.registerNameAndEmail(name, address);
+
+			mixpanel.track("page.register", {
+				"title": document.title,
+				"url": window.location.pathname,
+				"name": name,
+				"email": address,
+			})
+
+			$(".submit-error").html("").removeClass("show");
+
+			setTimeout(function() {
+				window.location.href = "/download/thanks.html";
+			}, 2000)
+
+		}
+	})
+});
+</script>
+{% endblock scripts %}
