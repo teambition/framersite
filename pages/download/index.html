@@ -15,22 +15,23 @@
 
 <script type="text/javascript">
 
+window.location.href = "/download/welcome.html";
 
-var interval = window.setInterval(function() {
-	if (mixpanel.get_distinct_id) {
+// var interval = window.setInterval(function() {
+// 	if (mixpanel.get_distinct_id) {
 
-		window.clearInterval(interval);
+// 		window.clearInterval(interval);
 
-		if (MixpanelExperiments.getExperimentValue("download-flow") === "direct") {
-			mixpanel.identify(mixpanel.get_distinct_id())
-			mixpanel.people.set_once(MixpanelExperiments.listExperiments("experiments."));
+// 		if (MixpanelExperiments.getExperimentValue("download-flow") === "direct") {
+// 			mixpanel.identify(mixpanel.get_distinct_id())
+// 			mixpanel.people.set_once(MixpanelExperiments.listExperiments("experiments."));
 
-			window.location.href = "/download/thanks.html";
-		} else {
-			window.location.href = "/download/welcome.html";
-		}
-	}
-}, 100)
+// 			window.location.href = "/download/thanks.html";
+// 		} else {
+// 			window.location.href = "/download/welcome.html";
+// 		}
+// 	}
+// }, 100)
 
 
 // $(document).ready(function() {
