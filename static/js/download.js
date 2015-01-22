@@ -30,6 +30,9 @@ FramerSite.doDownload = function() {
 		// Record the event in gosquared
 		_gs('event', 'Download', {'Name': 'Framer Studio', 'Link': downloadLink});
 
+		// Record the download event in Twitter
+		twttr.conversion.trackPid('l5elj');
+
 		// Record the event in mixpanel
 		mixpanel.track("page.download", {
 			"title": document.title,
