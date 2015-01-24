@@ -10,10 +10,17 @@ FramerSite.getDownloadLink = function(callback) {
 		return callback(_downloadLink);
 	}
 
-	var sparkleHost = "//studio.update.framerjs.com"
+	var sparkleHost = "//s3.amazonaws.com/studio.update.framerjs.com"
+	var downloadHost = "http://studio.update.framerjs.com"
 
 	$.get(sparkleHost + "/latest.txt?date=" + Date.now(), function(result) {
-		_downloadLink = sparkleHost + "/" + result + "?mp_id=" + mixpanel.get_distinct_id();
+		
+		_downloadLink = downloadHost + "/" + result;
+
+		if (mixpanel && mixpanel.get_distinct_id) {
+			_downloadLink += "?mp_id=" + mixpanel.get_distinct_id();
+		}
+
 		callback(_downloadLink)
 	})
 }
