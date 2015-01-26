@@ -50,6 +50,9 @@
 	margin-bottom: calc(#{$space80} * 2);
 	margin-top: calc(#{$space80} + #{$space80});
 }
+.video-banner {
+	margin-bottom: $space64;
+}
 .examples-caption, 
 .logo-string, 
 .feature-banners,
@@ -61,11 +64,7 @@ h5 figure {
 	display: inline-block;
 	margin-right: $space16;
 }
-// High Fidelity prototypes block
-.examples-caption {
-	max-width:480px;
-	margin-left: auto; margin-right: auto;
-}
+
 // Logo string
 .logo-string {
 	text-align: center;
@@ -95,7 +94,7 @@ h5 figure {
 // Examples Block
 .examples {
 	background: $examples-block;
-	height: 480px;
+	height: 560px;
 	position:relative;
 	padding: 0;
 }
@@ -103,43 +102,24 @@ h5 figure {
 	opacity: 1;
 }
 .examples .devices {
-	max-width:755px; 
-	width:100%; 
-	height:480px;
 	margin: 0 auto;
+	margin-left: -1000px;
+	width:2000px; 
+	height:560px;
+	left: 50%;
 	position: relative;
 }
 .examples .devices a {
 	position: absolute; 
 	@include transition(all, .16s, ease);
 }
-@media screen and (min-width: 980px) {
-	.examples .devices a:hover {
-		@include scale(0.975);
-	}
-}
-a.device-left,
-a.device-mid,
-a.device-right {
+a.device-macbook,
+a.device-htc,
+a.device-iphone6,
+a.device-iphone5c,
+a.device-nexus9 {
 	height: auto;
-}
-a.device-left img { 
-	width: 266px; 
-}
-a.device-mid img  { 
-	width: 326px;
-}
-a.device-right img  { 
-	width: 274px; 
-}
-a.device-left{ 
-	left: 0; 
-	top:-40px;
-}
-a.device-mid {
-	left: 50%; margin-left: -163px;
-	z-index: 50; 
-	top:-80px;
+	top: 40px;
 }
 // Device video
 .device-video {
@@ -147,9 +127,109 @@ a.device-mid {
 	top:110px; left:50%;
 	width:253px; margin-left:-125px;
 }
-a.device-right { 
+// Sizes
+a.device-macbook img { 
+	width: 500px; 
+}
+a.device-htc img { 
+	width: 238px; 
+}
+a.device-iphone6 img  { 
+	width: 369px;
+}
+a.device-iphone5c img  { 
+	width: 239px; 
+}
+a.device-nexus9 img {
+	width: 501px;
+}
+// Positioning
+a.device-macbook{ 
+	top: 160px;
+	left: 0px; 
+}
+a.device-htc{ 
+	left: 530px; 
+}
+a.device-iphone6 {
+	left: 50%; margin-left: -184px;
+	z-index: 50; 
+	top:-94px;
+}
+a.device-iphone5c { 
+	right: 530px;
+}
+a.device-nexus9 {
+	top: 120px;
 	right: 0;
-	top:-40px;
+}
+// Video Banner
+.video-banner {
+	background: $header url("/static/images/home/video-bg.png") no-repeat;
+	height: 440px;
+	width: 100%;
+	display: block;
+	border-radius: 3px;
+	text-align: center;
+	cursor: pointer;
+}
+.video-banner section {
+	max-width: 440px;
+	margin: 0 auto;
+	padding-top:100px;
+}
+.video-banner img {
+	margin-bottom: 24px;
+}
+.video-banner h4 {
+	color: #fff;
+	line-height: 1.4;
+}
+// Video Overlay
+.video-overlay {
+	position: fixed;
+	top:0; 
+	left:0; 
+	width:100%;
+	height:100%;
+	background: rgba(255,255,255,0.95);
+	z-index: 900;
+	text-align: center;
+	display: none;
+}
+// Video Wrapper
+.video-position {
+	max-width: 880px;
+	margin: 0 auto;
+	position: relative;
+	top: 50%;
+	display: block;
+	margin-top: -220px;
+}
+.video-wrapper {
+	position: relative;
+	padding-bottom: 56.25%; 
+	height: 0;
+}
+// Video iFrame
+.video-overlay iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+// Close Icon
+.video-overlay img {
+	cursor: pointer;
+	position: absolute;
+	top: 32px;
+	left: 32px;
+	height: 30px;
+	width: 30px;
+}
+.video-overlay.show {
+	display: block;
 }
 // Feature Banners
 .feature-banners {
@@ -177,43 +257,17 @@ a.device-right {
 	display: inline-block;
 	@include transition(all, 0.2s, ease);
 }
-// On hover effect
-.is-active div {
-	background: rgba(255,255,255,0.3);
-}
-.banner-importing {
-	background: $banner-importing url("/static/images/home/banner-importing.jpg") no-repeat;
-	background-size: 518px 184px;
-	background-position: center 340px;
-}
-.banner-mirror {
-	background: $banner-importing url("/static/images/home/banner-mirror.jpg") no-repeat;
-	background-size: 100%;
-	background-position: bottom center;
-}
-// Retina
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
-	.banner-importing {
-		background: $banner-importing url("/static/images/home/banner-importing@2x.jpg") no-repeat;
-		background-size: 518px 184px;
-		background-position: center 340px;
-	}
-	.banner-mirror {
-		background: $banner-importing url("/static/images/home/banner-mirror@2x.jpg") no-repeat;
-		background-size: 100%;
-		background-position: bottom center;
-	}
-}
+
 // Hover
-.feature-banners a:after {
-	content:""; position: absolute; top:0; left:0;
-	background: rgba(0,0,0,0);
-	width:100%; height:100%;
-	@include transition(background, .2s, ease);
-}
-.feature-banners a:hover:after {
-	background: rgba(0,0,0,0.2);
-}
+// .feature-banners a:after {
+// 	content:""; position: absolute; top:0; left:0;
+// 	background: rgba(0,0,0,0);
+// 	width:100%; height:100%;
+// 	@include transition(background, .2s, ease);
+// }
+// .feature-banners a:hover:after {
+// 	background: rgba(0,0,0,0.2);
+// }
 // Feature Summary
 .feature-summary li+li {
 	margin-top: $space16;

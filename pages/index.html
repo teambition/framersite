@@ -4,6 +4,15 @@
 {% block hide %}hide{% endblock hide %}
 
 {% block content %}
+	<section class="video-overlay">
+		<img src="/static/images/home/icon-video-close.png" srcset="/static/images/home/icon-video-close@2x.png 2x">
+		<section class="video-position">
+			<div class="video-wrapper">
+				<iframe width="853" height="480" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</section>
+	</section>
+
 	<header class="block header">
 		<div class="content-inner center">
 			<h1>Invent, design and experiment with interaction</h1>
@@ -63,50 +72,64 @@
 	</div> <!--content-inner-->
 	
 	<section class="block examples">
-		<div class="content-inner">
 			<section class="devices">
-				<a class="device-left" target="_blank" href="http://framerjs.com/examples/preview/#google-now-overview.framer">
-					<img src="/static/images/home/device-left.png" srcset="/static/images/home/device-left@2x.png 2x" draggable="false">
+				<a class="device-macbook" target="_blank" href="http://framerjs.com/examples/preview/#google-now-overview.framer">
+					<img src="/static/images/home/device-macbook.png" srcset="/static/images/home/device-macbook@2x.png 2x" draggable="false">
 				</a>
-				<a class="device-mid" target="_blank" href="http://framerjs.com/examples/preview/#carousel-onboarding.framer">
-					<img src="/static/images/home/device-mid.png" srcset="/static/images/home/device-mid@2x.png 2x" draggable="false">
-					<section class="device-video">
+				<a class="device-htc" target="_blank" href="http://framerjs.com/examples/preview/#google-now-overview.framer">
+					<img src="/static/images/home/device-htc.png" srcset="/static/images/home/device-htc@2x.png 2x" draggable="false">
+				</a>
+				<a class="device-iphone6" target="_blank" href="http://framerjs.com/examples/preview/#carousel-onboarding.framer">
+					<img src="/static/images/home/device-iphone6.png" srcset="/static/images/home/device-iphone6@2x.png 2x" draggable="false">
+			<!-- 		<section class="device-video">
 						<video width="100%" id="carousel-video-examples">
 							<source src="/static/images/home/carousel.mp4" type="video/mp4">
 							<source src="/static/images/home/carousel.ogv" type="video/ogg">
 						</video>
-					</section> <!--device-video-->
+					</section> <!-device-video-> -->
 				</a>
-				<a class="device-right" target="_blank" href="http://framerjs.com/examples/preview/#potluck-onboarding.framer">
-					<img src="/static/images/home/device-right.png" srcset="/static/images/home/device-right@2x.png 2x" draggable="false">
+				<a class="device-iphone5c" target="_blank" href="http://framerjs.com/examples/preview/#potluck-onboarding.framer">
+					<img src="/static/images/home/device-iphone5c.png" srcset="/static/images/home/device-iphone5c@2x.png 2x" draggable="false">
+				</a>
+				<a class="device-nexus9" target="_blank" href="http://framerjs.com/examples/preview/#potluck-onboarding.framer">
+					<img src="/static/images/home/device-nexus9.png" srcset="/static/images/home/device-nexus9@2x.png 2x" draggable="false">
 				</a>
 			</section>
-		</div> <!--content-inner-->
 	</section> <!--example-block-->
 
 <div class="content-inner">
-	<section class="examples-caption caption center">
-		<h4>High Fidelity Prototypes</h4>
-		<p class="subtitle">Prototyping encourages exploration and helps designers at <a href="http://framerjs.com/examples/preview/#google-now-overview.framer" target="_blank">Google</a>, <a href="http://framerjs.com/examples/preview/#carousel-onboarding.framer" target="_blank">Dropbox</a> & <a href="https://dribbble.com/tags/framer" target="_blank">many others</a> effectively communicate concepts.</p>
-		<a class="btn btn-line blue" href="http://framerjs.com/examples/">View examples</a>
+	<section class="examples-caption caption clearfix">
+		<section class="col-2">
+			<h4>High Fidelity Prototypes</h4>
+			<p class="subtitle">Prototyping encourages exploration and helps designers at <a href="http://framerjs.com/examples/preview/#google-now-overview.framer" target="_blank">Google</a>, <a href="http://framerjs.com/examples/preview/#carousel-onboarding.framer" target="_blank">Dropbox</a> & <a href="https://dribbble.com/tags/framer" target="_blank">many others</a> effectively communicate concepts.</p>
+			<a class="btn btn-line blue" href="http://framerjs.com/examples/">View examples</a>
+		</section>
+		<section class="col-2">
+			<h4>Multi-Platform</h4>
+			<p class="subtitle">Prototyping encourages exploration and helps designers at <a href="http://framerjs.com/examples/preview/#google-now-overview.framer" target="_blank">Google</a>, <a href="http://framerjs.com/examples/preview/#carousel-onboarding.framer" target="_blank">Dropbox</a> & <a href="https://dribbble.com/tags/framer" target="_blank">many others</a> effectively communicate concepts.</p>
+			<a class="btn btn-line blue" href="http://framerjs.com/examples/">View examples</a>
+		</section>
 	</section>
+
+	<a class="video-banner">
+		<section>
+			<img src="/static/images/home/icon-play.png" srcset="/static/images/home/icon-play@2x.png 2x">
+			<h4>“What we consider prototyping today, will simply be called design tomorrow.”</h4>
+			<div class="btn blue">Watch Video</div>
+		</section>
+	</a>
 
 	<section class="feature-banners clearfix">
-		<a href="/learn/import" class="banner-importing col-2">
-			<section>
-				<h5>Import files from Photoshop, Sketch or After Effects and turn them into interactive prototypes.</h5>
-				<div class="btn btn-line white">Learn more</div>
-			</section>
+		<a href="/learn/import" class=" col-2">
+			<img src="/static/images/home/banner-importing.png" srcset="/static/images/home/banner-importing@2x.png 2x">
 		</a>
 		<a href="/learn/preview" class="banner-mirror col-2">
-			<section>
-				<h5>Preview your prototype in realtime on any iOS or Android device with a WebKit browser.</h5>
-				<div class="btn btn-line white">Learn more</div>
-			</section>
+			<img src="/static/images/home/banner-mirror.png" srcset="/static/images/home/banner-mirror@2x.png 2x">
+			
 		</a>
 	</section>
 
-	<section class="feature-summary clearfix">
+<!-- 	<section class="feature-summary clearfix">
 			<section class="col-4">
 				<ul>
 					<li><h5 class="blue"><figure class="icon-general"></figure>General</h5></li>
@@ -191,7 +214,7 @@
 					</li>
 				</ul>
 			</section>
-		</section> <!--framer-overview-->
+		</section> <!-framer-overview-> -->
 
 		<section class="logo-string clearfix">
 			<section>
