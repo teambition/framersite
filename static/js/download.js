@@ -98,6 +98,9 @@ FramerSite.registerNameAndEmailNewsletter = function(name, email, callback) {
 }
 
 FramerSite.registerNameAndEmailMixpanel = function(name, email, callback) {
+	if (!mixpanel) {
+		return;
+	}
 	mixpanel.identify(mixpanel.get_distinct_id())
 	mixpanel.people.set_once({
 		"$name": name,
