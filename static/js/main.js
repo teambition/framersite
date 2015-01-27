@@ -16,8 +16,6 @@ $(document).ready(function() {
 		$(".video-overlay iframe").attr("src", "");
 	});
 
-
-
 	$(".feature-banners a").hover(function() {
 			$(this).toggleClass("is-active");
 	});
@@ -65,7 +63,9 @@ $(document).ready(function() {
 	);
 
 	var playCarouselVideo = false
-	var videoElement = $("#carousel-video-examples").get(0)
+	var videoOne = $(".video-example").get(0)
+	var videoTwo = $(".video-example").get(1)
+	var videoThree = $(".video-example").get(2)
 
 	$(window).scroll(function() {
 		$('.more-dropdown').removeClass("appear");
@@ -110,9 +110,11 @@ $(document).ready(function() {
 			$(topNavPages).removeClass('fade-out');
 		}
 
-		if (playCarouselVideo == false && videoElement) {
+		if (playCarouselVideo == false) {
 			if (scrollPos > 1100) {
-				videoElement.play()
+				videoOne.play();
+				videoTwo.play();
+				videoThree.play();
 				playCarouselVideo = true
 			}
 		}

@@ -47,7 +47,7 @@
 	margin-top: $space48;
 }
 .examples {
-	margin-bottom: calc(#{$space80} * 2);
+	margin-bottom: $space80;
 	margin-top: calc(#{$space80} + #{$space80});
 }
 .video-banner {
@@ -124,8 +124,18 @@ a.device-nexus9 {
 // Device video
 .device-video {
 	position: absolute;
-	top:110px; left:50%;
-	width:253px; margin-left:-125px;
+	top:84px; left:50%;
+	width:320px; margin-left:-159px;
+}
+.device-video.left {
+	top: 72px;
+	width: 213px;
+	margin-left: -106px;
+}
+.device-video.right {
+	top: 74px;
+	width: 199px;
+	margin-left: -99px;
 }
 // Sizes
 a.device-macbook img { 
@@ -179,11 +189,12 @@ a.device-nexus9 {
 	padding-top:100px;
 }
 .video-banner img {
-	margin-bottom: 24px;
+	margin-bottom: 32px;
 }
-.video-banner h4 {
+.video-banner h5 {
 	color: #fff;
 	line-height: 1.4;
+	margin-bottom: 24px;
 }
 // Video Overlay
 .video-overlay {
@@ -204,7 +215,7 @@ a.device-nexus9 {
 	position: relative;
 	top: 50%;
 	display: block;
-	margin-top: -220px;
+	margin-top: -240px;
 }
 .video-wrapper {
 	position: relative;
@@ -232,23 +243,8 @@ a.device-nexus9 {
 	display: block;
 }
 // Feature Banners
-.feature-banners {
-	text-align: center;
-}
-.feature-banners a {
-	position: relative;
-	height: 480px;
-	color: #fff;
-	border-radius: 3px;
-	overflow: hidden;
-}
-.feature-banners section {
-	position: absolute;
-	top: 30%;
-	left: 50%;
-	width: 80%;
-	margin-left: -40%;
-	z-index: 100;
+.feature-banners img {
+	margin-bottom: $space32;
 }
 .feature-banners h5 {
 	margin-bottom: $space24;
@@ -283,19 +279,6 @@ a.device-nexus9 {
 @media screen and (max-width:1080px) {
 	.logo-string figure+figure {
 		margin-left: 60px;
-	}
-	.feature-banners a {
-		height:420px;
-	}
-	.feature-banners section {
-		top: 30%;
-		left: 50%;
-		width: 90%;
-		margin-left: -45%;
-	}
-	.banner-importing {
-		background-size: 100%;
-		background-position: center 320px;
 	}
 }
 @media screen and (max-width:1030px) {
