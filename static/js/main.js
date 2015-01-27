@@ -67,6 +67,13 @@ $(document).ready(function() {
 	var videoTwo = $(".video-example").get(1)
 	var videoThree = $(".video-example").get(2)
 
+	$(".device-htc").hover(function() {
+		videoOne.play();
+	});
+	$(".device-iphone5c").hover(function() {
+		videoThree.play();
+	});
+
 	$(window).scroll(function() {
 		$('.more-dropdown').removeClass("appear");
 
@@ -112,9 +119,7 @@ $(document).ready(function() {
 
 		if (playCarouselVideo == false) {
 			if (scrollPos > 1100) {
-				videoOne.play();
 				videoTwo.play();
-				videoThree.play();
 				playCarouselVideo = true
 			}
 		}
