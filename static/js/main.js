@@ -118,7 +118,7 @@ $(document).ready(function() {
 		}
 
 		if (playCarouselVideo == false) {
-			if (scrollPos > 1100) {
+			if (scrollPos > 900) {
 				videoTwo.play();
 				playCarouselVideo = true
 			}

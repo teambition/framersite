@@ -72,13 +72,13 @@ h3 {
 h4 {
 	font-size: 1.625em; //26px
 }
-.home h4,
 .subpage h4 {
 	margin-bottom: $space24;
 }
-// Screenshot Copyand examples copy
+// Screenshot Copy and Examples copy
 .screenshot-copy h4,
-.examples-caption h4 {
+.examples-caption h4,
+.feature-banners h4 {
 	margin-bottom: $space8;
 	line-height: 1.8;
 }
@@ -125,8 +125,6 @@ h5.small,
 	font-size: 1.375em; //22px - Home
 	line-height: 1.5;
 	color: $black60;
-}
-.caption .subtitle {
 	margin-bottom: $space16;
 }
 .teach .subtitle {
@@ -429,6 +427,13 @@ table + h5 {
 	.page-header h1 {
 		font-size: 3em;
 	}
+	.home h4 {
+		font-size: 1.5em;
+	}
+	.subtitle {
+		font-size: 1.225em; 
+
+	}
 }
 @media screen and (max-width: 820px) {
 	.header h1 {
@@ -450,9 +455,9 @@ table + h5 {
 	}
 }
 @media screen and (max-width: 600px) {
-	body {
-		font-size:14px;
-	}
+	// body {
+	// 	font-size:14px;
+	// }
 	.footer-features li {
 		font-size:1em;
 	}
@@ -475,25 +480,24 @@ table + h5 {
 	}
 	// Captions under "Innovative prototyping... Rapid Experimentation" etc
 	.caption .subtitle {
-		margin-bottom: 12px;
+		margin-bottom: 16px;
 	}
 	.screenshot-copy h4,
 	.examples-caption h4 {
-		margin-bottom: 4px;
+		margin-bottom: 8px;
 	}
 }
 @media screen and (max-width: 480px) {
+	body {
+		font-size:14px;
+	}
 	.header h1 {
 		margin-bottom: 14px;
 	}
 }
 @media screen and (max-width: 440px) {
-	body {
-		font-size:12px;
-	}
 	.header h1 {
-		font-size:2.375em;
-		font-size: 24px;
+		font-size: 30px;
 		letter-spacing: -0.5px;
 		line-height: 1.2;
 	}
@@ -529,7 +533,7 @@ table + h5 {
 		line-height: 1.5;
 	}
 	.subtitle {
-		font-size: 14px;
+		font-size: 1.225em;
 	}
 
 }

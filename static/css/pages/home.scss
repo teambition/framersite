@@ -94,7 +94,7 @@ h5 figure {
 // Examples Block
 .examples {
 	background: $examples-block;
-	height: 560px;
+	height: 540px;
 	position:relative;
 	padding: 0;
 }
@@ -119,13 +119,39 @@ a.device-iphone6,
 a.device-iphone5c,
 a.device-nexus9 {
 	height: auto;
-	top: 40px;
+	top: 32px;
+}
+// Positioning
+a.device-macbook{ 
+	top: 132px;
+	left: 0px; 
+}
+a.device-htc { 
+	left: 540px; 
+}
+a.device-iphone6 {
+	left: 50%; margin-left: -184px;
+	z-index: 100; 
+	top:-72px;
+}
+a.device-iphone5c { 
+	top: 16px;
+	right: 540px;
+	z-index: 50;
+}
+a.device-nexus9 {
+	top: 100px;
+	right: 0;
 }
 // Device video
 .device-video {
 	position: absolute;
-	top:85px; left:50%;
-	width:320px; margin-left:-160px;
+	left:50%;
+}
+.device-video.mid {
+	top: 86px;
+	width:321px; 
+	margin-left:-160px;
 }
 .device-video.left {
 	top: 44px;
@@ -153,26 +179,6 @@ a.device-iphone5c img  {
 a.device-nexus9 img {
 	width: 501px;
 }
-// Positioning
-a.device-macbook{ 
-	top: 160px;
-	left: 0px; 
-}
-a.device-htc{ 
-	left: 530px; 
-}
-a.device-iphone6 {
-	left: 50%; margin-left: -184px;
-	z-index: 50; 
-	top:-94px;
-}
-a.device-iphone5c { 
-	right: 530px;
-}
-a.device-nexus9 {
-	top: 120px;
-	right: 0;
-}
 // Video Banner
 .video-banner {
 	background: $header url("/static/images/home/video-bg.png") no-repeat;
@@ -182,6 +188,7 @@ a.device-nexus9 {
 	border-radius: 3px;
 	text-align: center;
 	cursor: pointer;
+	padding: 0 40px;
 }
 .video-banner section {
 	max-width: 440px;
@@ -213,9 +220,8 @@ a.device-nexus9 {
 	max-width: 880px;
 	margin: 0 auto;
 	position: relative;
-	top: 50%;
+	top: 30%;
 	display: block;
-	margin-top: -240px;
 }
 .video-wrapper {
 	position: relative;
@@ -246,24 +252,6 @@ a.device-nexus9 {
 .feature-banners img {
 	margin-bottom: $space32;
 }
-.feature-banners h5 {
-	margin-bottom: $space24;
-}
-.feature-banners div {
-	display: inline-block;
-	@include transition(all, 0.2s, ease);
-}
-
-// Hover
-// .feature-banners a:after {
-// 	content:""; position: absolute; top:0; left:0;
-// 	background: rgba(0,0,0,0);
-// 	width:100%; height:100%;
-// 	@include transition(background, .2s, ease);
-// }
-// .feature-banners a:hover:after {
-// 	background: rgba(0,0,0,0.2);
-// }
 // Feature Summary
 .feature-summary li+li {
 	margin-top: $space16;
@@ -312,6 +300,29 @@ a.device-nexus9 {
 	.ss-video {
 		display: none;
 	}
+
+	// Device Positioning
+	a.device-htc { 
+		left: 640px; 
+	}
+	a.device-iphone5c { 
+		right: 640px;
+	}
+	a.device-nexus9 {
+		right: 540px;
+	}
+	a.device-macbook{ 
+		left: 500px; 
+	}
+	// Video Banner
+	.video-banner {
+		background-position: 50% 50%;
+		background-size:cover;
+		height: 400px;
+	}
+	.video-banner section {
+		padding-top: 80px;
+	}
 	// ****************
 	// Vertical spacing
 	.examples-caption, 
@@ -323,27 +334,6 @@ a.device-nexus9 {
 	.logo-string figure {
 		margin-bottom: $space24;
 	}
-	.feature-banners .col-2 {
-		max-width: 100%;
-	}
-	.feature-banners .col-2 + .col-2 {
-		margin-top: $space16;
-	}
-	.feature-banners a {
-		height:360px;
-	}
-	.feature-banners section {
-		margin-top: -$space64;
-		width: 64%; margin-left: -32%;
-	}
-	.banner-importing {
-		background-size: 518px 184px;
-		background-position: center 220px;
-	}
-	.banner-mirror {
-		background-position: 50% 80%;
-		background-size: 100%;
-	}
 	// Logo string
 	.logo-string figure+figure {
 		margin-left: 30px;
@@ -353,6 +343,7 @@ a.device-nexus9 {
 	.header {
 		padding-bottom:45%;
 		height:auto;
+		margin-bottom: $space48;
 	}
 	.ss-framer {
 		max-width: 100%;
@@ -361,61 +352,86 @@ a.device-nexus9 {
 	.ss-video {
 		display: none;
 	}
+	// Examples block
 	.examples {
-		height: calc(480px * 0.8);
+		height: 420px; 
+		margin-bottom: 80px;
+		margin-top: 80px;
 	}
-	.devices {
-		top: -49px;
+	.examples .devices {
+		top: -44px;
 	}
-	a.device-left,
-	a.device-mid,
-	a.device-right { 
-		@include scale(0.8)
+	a.device-htc,
+	a.device-iphone6,
+	a.device-iphone5c,
+	a.device-macbook,
+	a.device-nexus9 { 
+		@include scale(0.75)
 	}
-	a.device-left {
-		left:-64px;
+	// Device Positioning
+	a.device-htc { 
+		left: 720px; 
 	}
-	a.device-right {
-		right:-64px;
+	a.device-iphone5c { 
+		right: 720px;
+	}
+	a.device-nexus9 {
+		right: 620px;
+	}
+	a.device-macbook{ 
+		left: 580px; 
 	}
 	.device-video {
 		display: none;
 	}
-	.feature-banners section {
-		margin-top: -$space64;
-		width: 80%; margin-left: -40%;
+	// Video Banner
+	.video-banner {
+		max-width: 480px;
+		height: 320px;
+		margin: 0 auto;
+		margin-bottom: 48px;
+		padding: 0 16px;
 	}
-	// ****************
-	// Vertical spacing T ~ 48px
-	.examples {
-		margin-bottom: calc(#{$space80} + #{$space40});
-		margin-top: calc(#{$space80} + #{$space40});
+	.video-banner section {
+		padding-top: 80px;
 	}
-	.header {
-		margin-bottom: $space48;
+	.video-banner img {
+		width: 40px; 
+		height: 40px;
+		margin-bottom: 16px;
+	}
+	.video-banner h5 {
+		font-size: 1.225em;
+		margin-bottom: 16px;
+	}
+	// Feature Banners
+	.feature-banners {
+		margin: 0 auto;
+		text-align: center;
 	}
 }
 @media screen and (max-width:660px) {
 	// ****************
 	// Vertical spacing
 	.examples {
-		height: calc(480px * 0.6);
-		margin-bottom: 100px;
+		height: 320px;
+		margin-bottom: 64px;
 	}
-	.devices {
-		top: -99px;
+	.examples-caption {
+		text-align: center;
 	}
-	a.device-left,
-	a.device-mid,
-	a.device-right { 
-		@include scale(0.6);
+	a.device-htc,
+	a.device-iphone6,
+	a.device-iphone5c,
+	a.device-macbook,
+	a.device-nexus9 { 
+		@include scale(0.5)
 	}
-	a.device-left {
-		left:-$space32;
+	a.device-macbook,
+	a.device-nexus9 {
+		display: none;
 	}
-	a.device-right {
-		right:-$space32;
-	}
+
 }
 @media screen and (max-width: 560px) {
 	.header {
@@ -436,6 +452,16 @@ a.device-nexus9 {
 	}
 	.examples-caption {
 		margin-bottom: $space32;
+	}
+	// Video Banner
+	.video-banner {
+		height: auto;
+		padding: 0 16px;
+		margin-bottom: 24px;
+	}
+	.video-banner section {
+		padding-top: 48px;
+		padding-bottom: 48px;
 	}
 	footer.footer img {
 		margin-bottom: $space8;
@@ -470,45 +496,12 @@ a.device-nexus9 {
 		margin-bottom: 16px;
 		font-size: 8px;
 	}
-	a.device-left,
-	a.device-right {
-		@include scale(0.44);
-	}
-	a.device-mid  {
-		top:-60px; 
-		margin-left:-150px;
-		@include scale(0.56);
-	}
-	a.device-mid img {
-		max-width: inherit;
-		width: 300px;
-	}
-	a.device-left {
-		left: -72px;
-	}
-	a.device-right {
-		right: -72px;
-	}
+
 	// Feature Banners (Mirror & Importing)
-	.feature-banners a {
-		height:256px;
-	}
-	.feature-banners section {
-		margin-top: -$space32;
-		width: 84%;
-		margin-left: -42%;
-	}
 	.feature-banners h5 {
 		font-size: 16px;
 	}
-	.banner-importing {
-		background-size: 100%;
-		background-position: center 160px;
-	}
-	.banner-mirror {
-		background-position: 50% 80%;
-		background-size: 100%;
-	}
+	
 	// Feature summary titles
 	.feature-summary h5 {
 		margin-bottom: $space16;
@@ -530,20 +523,4 @@ a.device-nexus9 {
 		margin-left: -4px;
 	}
 
-}
-@media screen and (max-width: 440px) {
-	.banner-importing {
-		background-size: 120%;
-		background-position: center 168px;
-	}
-	.banner-mirror {
-		background-size: 120%;
-		background-position: center -64px;
-	}
-	.feature-banners section {
-		margin-top: -$space40;
-	}
-	.feature-banners h5 {
-		margin-bottom: $space16;
-	}
 }
