@@ -66,13 +66,30 @@ $(document).ready(function() {
 	var videoOne = $(".video-example").get(0)
 	var videoTwo = $(".video-example").get(1)
 	var videoThree = $(".video-example").get(2)
+	var isAndroid = navigator.userAgent.indexOf('Android') >= 0;
+
+	if (isAndroid) {
+		videoOne.remove();
+		videoTwo.remove();
+		videoThree.remove();
+	}
 
 	$(".device-htc").hover(function() {
 		videoOne.play();
+		videoTwo.pause();
+		videoThree.pause();
 	});
 	$(".device-iphone5c").hover(function() {
 		videoThree.play();
+		videoOne.pause();
+		videoTwo.pause();
 	});
+	$(".device-iphone6").hover(function() {
+		videoTwo.play();
+		videoOne.pause();
+		videoThree.pause();
+	});
+
 
 	$(window).scroll(function() {
 		$('.more-dropdown').removeClass("appear");

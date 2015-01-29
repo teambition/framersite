@@ -119,11 +119,11 @@ a.device-iphone6,
 a.device-iphone5c,
 a.device-nexus9 {
 	height: auto;
-	top: 32px;
+	top: 34px;
 }
 // Positioning
 a.device-macbook{ 
-	top: 132px;
+	top: 120px;
 	left: 0px; 
 }
 a.device-htc { 
@@ -135,8 +135,8 @@ a.device-iphone6 {
 	top:-72px;
 }
 a.device-iphone5c { 
-	top: 16px;
-	right: 540px;
+	top: 28px;
+	right: 546px;
 	z-index: 50;
 }
 a.device-nexus9 {
@@ -154,14 +154,14 @@ a.device-nexus9 {
 	margin-left:-160px;
 }
 .device-video.left {
-	top: 44px;
+	top: 45px;
 	width: 212px;
 	margin-left: -106px;
 }
 .device-video.right {
-	top: 74px;
-	width: 199px;
-	margin-left: -99px;
+	top: 70px;
+	width: 192px;
+	margin-left: -95px;
 }
 // Sizes
 a.device-macbook img { 
@@ -174,7 +174,7 @@ a.device-iphone6 img  {
 	width: 369px;
 }
 a.device-iphone5c img  { 
-	width: 239px; 
+	width: 228px; 
 }
 a.device-nexus9 img {
 	width: 501px;
@@ -189,6 +189,10 @@ a.device-nexus9 img {
 	text-align: center;
 	cursor: pointer;
 	padding: 0 40px;
+}
+.video-banner:hover .btn {
+	box-shadow: none;
+	background: $blue;
 }
 .video-banner section {
 	max-width: 440px;
@@ -401,7 +405,7 @@ a.device-nexus9 img {
 		margin-bottom: 16px;
 	}
 	.video-banner h5 {
-		font-size: 1.225em;
+		font-size: 1.125em;
 		margin-bottom: 16px;
 	}
 	// Feature Banners
@@ -414,8 +418,11 @@ a.device-nexus9 img {
 	// ****************
 	// Vertical spacing
 	.examples {
-		height: 320px;
+		height: 280px;
 		margin-bottom: 64px;
+	}
+	.examples .devices {
+		top: -108px;
 	}
 	.examples-caption {
 		text-align: center;
@@ -427,9 +434,21 @@ a.device-nexus9 img {
 	a.device-nexus9 { 
 		@include scale(0.5)
 	}
-	a.device-macbook,
+	a.device-htc {
+		top: 12px;
+		left: 694px;
+	}
+	a.device-iphone5c {
+		top: 8px;
+		right: 700px;
+	}
+	a.device-macbook {
+		left: 350px;
+		top: 110px;
+	}
 	a.device-nexus9 {
-		display: none;
+		right: 350px;
+		top: 110px;
 	}
 
 }
@@ -456,18 +475,31 @@ a.device-nexus9 img {
 	// Video Banner
 	.video-banner {
 		height: auto;
-		padding: 0 16px;
 		margin-bottom: 24px;
 	}
 	.video-banner section {
-		padding-top: 48px;
-		padding-bottom: 48px;
+		padding: 80px 0;
 	}
 	footer.footer img {
 		margin-bottom: $space8;
 		height: 64px;
 		width: 64px;
 	}
+	// Devices
+	.examples {
+		margin-bottom: 40px;
+	}
+	a.device-macbook,
+	a.device-nexus9 {
+		display: none;
+	}
+	a.device-htc {
+		left:780px;
+	}
+	a.device-iphone5c {
+		right:780px;
+	}
+
 	// Feature list
 	.feature-summary {
 		margin-bottom: $space24;
@@ -495,6 +527,11 @@ a.device-nexus9 img {
 	.header p.copy {
 		margin-bottom: 16px;
 		font-size: 8px;
+	}
+
+	// Video Banner
+	.video-banner section {
+		padding: 40px 0;
 	}
 
 	// Feature Banners (Mirror & Importing)
