@@ -305,18 +305,37 @@ a.device-nexus9 img {
 		display: none;
 	}
 
+	// Examples block
+	.examples {
+		height: 420px; 
+		margin-bottom: 80px;
+		margin-top: 80px;
+	}
+	.examples-caption {
+		text-align: center;
+	}
+	.examples .devices {
+		top: -44px;
+	}
+	a.device-htc,
+	a.device-iphone6,
+	a.device-iphone5c,
+	a.device-macbook,
+	a.device-nexus9 { 
+		@include scale(0.75)
+	}
 	// Device Positioning
 	a.device-htc { 
-		left: 640px; 
+		left: 700px; 
 	}
 	a.device-iphone5c { 
-		right: 640px;
+		right: 700px;
 	}
 	a.device-nexus9 {
-		right: 540px;
+		right: 580px;
 	}
 	a.device-macbook{ 
-		left: 500px; 
+		left: 560px; 
 	}
 	// Video Banner
 	.video-banner {
@@ -355,38 +374,7 @@ a.device-nexus9 img {
 	.ss-video {
 		display: none;
 	}
-	// Examples block
-	.examples {
-		height: 420px; 
-		margin-bottom: 80px;
-		margin-top: 80px;
-	}
-	.examples-caption {
-		text-align: center;
-	}
-	.examples .devices {
-		top: -44px;
-	}
-	a.device-htc,
-	a.device-iphone6,
-	a.device-iphone5c,
-	a.device-macbook,
-	a.device-nexus9 { 
-		@include scale(0.75)
-	}
-	// Device Positioning
-	a.device-htc { 
-		left: 720px; 
-	}
-	a.device-iphone5c { 
-		right: 720px;
-	}
-	a.device-nexus9 {
-		right: 620px;
-	}
-	a.device-macbook{ 
-		left: 580px; 
-	}
+	// Devices
 	.device-video {
 		display: none;
 	}
