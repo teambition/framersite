@@ -329,7 +329,6 @@ a.device-nexus9 img {
 	}
 	// ****************
 	// Vertical spacing
-	.examples-caption, 
 	.logo-string, 
 	.feature-banners,
 	.feature-summary {
@@ -361,6 +360,9 @@ a.device-nexus9 img {
 		height: 420px; 
 		margin-bottom: 80px;
 		margin-top: 80px;
+	}
+	.examples-caption {
+		text-align: center;
 	}
 	.examples .devices {
 		top: -44px;
@@ -423,9 +425,6 @@ a.device-nexus9 img {
 	}
 	.examples .devices {
 		top: -108px;
-	}
-	.examples-caption {
-		text-align: center;
 	}
 	a.device-htc,
 	a.device-iphone6,
