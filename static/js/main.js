@@ -8,7 +8,7 @@ $(document).ready(function() {
 	/* Overlay Video */
 	$(".video-banner").click(function() { 
 		$(".video-overlay").addClass("show");
-		$(".video-overlay iframe").attr("src", "//www.youtube.com/embed/mqk9Fw8FKLY?autoplay=1&amp;rel=0&amp;controls=0&amp;showinfo=0");
+		$(".video-overlay iframe").attr("src", "//www.youtube.com/embed/mqk9Fw8FKLY?autoplay=1&amp;rel=0&amp;&amp;showinfo=0");
 	});
 
 	$(".video-overlay img").click(function() { 
