@@ -98,7 +98,7 @@ FramerSite.registerNameAndEmailNewsletter = function(name, email, callback) {
 }
 
 FramerSite.registerNameAndEmailMixpanel = function(name, email, callback) {
-	if (!mixpanel) {
+	if (typeof mixpanel === "undefined") {
 		return;
 	}
 	mixpanel.identify(mixpanel.get_distinct_id())
