@@ -52,18 +52,20 @@ $("button").click(function() {
 
 			FramerSite.registerNameAndEmail(name, address);
 
-			mixpanel.track("page.register", {
-				"title": document.title,
-				"url": window.location.pathname,
-				"name": name,
-				"email": address,
-			})
-
 			$(".submit-error").html("").removeClass("show");
 
 			setTimeout(function() {
 				window.location.href = "/download/thanks.html";
 			}, 2000)
+
+			if (typeof mixpanel !== "undefined") {
+				mixpanel.track("page.register", {
+					"title": document.title,
+					"url": window.location.pathname,
+					"name": name,
+					"email": address,
+				})
+			}
 
 		}
 	})
