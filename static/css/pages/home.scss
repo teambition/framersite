@@ -58,7 +58,7 @@
 	margin-top: $space48;
 }
 .examples {
-	margin-bottom: 200px;
+	margin-bottom: 160px;
 	margin-top: 160px;
 }
 .video-banner {
@@ -105,7 +105,7 @@ h5 figure {
 // Examples Block
 .examples {
 	background: $examples-block;
-	height: 540px;
+	height: 570px;
 	position:relative;
 	padding: 0;
 }
@@ -130,7 +130,6 @@ a.device-iphone6,
 a.device-iphone5c,
 a.device-nexus9 {
 	height: auto;
-	top: 34px;
 }
 // Positioning
 a.device-macbook{ 
@@ -138,20 +137,21 @@ a.device-macbook{
 	left: 0; 
 }
 a.device-htc { 
-	left: 180px; 
+	top: 47px;
+	left: 170px; 
 }
 a.device-iphone6 {
 	left: 50%; margin-left: -184px;
 	z-index: 100; 
-	top:-100px;
+	top:-92px;
 }
 a.device-iphone5c { 
-	top: 28px;
-	right: 180px;
+	top: 46px;
+	right: 168px;
 	z-index: 50;
 }
 a.device-nexus9 {
-	top: 100px;
+	top: 132px;
 	right: 0;
 }
 // Device video
@@ -176,7 +176,7 @@ a.device-nexus9 {
 }
 // Sizes
 a.device-macbook img { 
-	width: 500px; 
+	width: 581px; 
 }
 a.device-htc img { 
 	width: 232px; 
@@ -188,7 +188,7 @@ a.device-iphone5c img  {
 	width: 228px; 
 }
 a.device-nexus9 img {
-	width: 501px;
+	width: 470px;
 }
 // Video Banner
 .video-banner {
