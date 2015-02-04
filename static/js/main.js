@@ -62,33 +62,33 @@ $(document).ready(function() {
 		}
 	);
 
-	var playCarouselVideo = false
-	var videoOne = $(".video-example").get(0)
-	var videoTwo = $(".video-example").get(1)
-	var videoThree = $(".video-example").get(2)
+	var playMiddleVideo = false
+	// var videoOne = $(".video-example").get(0)
+	var videoMid = $(".video-example.mid").get(0)
+	// var videoThree = $(".video-example").get(2)
 	var isAndroid = navigator.userAgent.indexOf('Android') >= 0;
 
 	if (isAndroid) {
-		videoOne.remove();
-		videoTwo.remove();
-		videoThree.remove();
+		// videoOne.remove();
+		videoMid.remove();
+		// videoThree.remove();
 	}
 
-	$(".device-htc").hover(function() {
-		videoOne.play();
-		videoTwo.pause();
-		videoThree.pause();
-	});
-	$(".device-iphone5c").hover(function() {
-		videoThree.play();
-		videoOne.pause();
-		videoTwo.pause();
-	});
-	$(".device-iphone6").hover(function() {
-		videoTwo.play();
-		videoOne.pause();
-		videoThree.pause();
-	});
+	// $(".device-htc").hover(function() {
+	// 	videoOne.play();
+	// 	videoTwo.pause();
+	// 	videoThree.pause();
+	// });
+	// $(".device-iphone5c").hover(function() {
+	// 	videoThree.play();
+	// 	videoOne.pause();
+	// 	videoTwo.pause();
+	// });
+	// $(".device-iphone6").hover(function() {
+	// 	videoTwo.play();
+	// 	videoOne.pause();
+	// 	videoThree.pause();
+	// });
 
 
 	$(window).scroll(function() {
@@ -134,10 +134,10 @@ $(document).ready(function() {
 			$(topNavPages).removeClass('fade-out');
 		}
 
-		if (playCarouselVideo == false) {
+		if (playMiddleVideo == false) {
 			if (scrollPos > 900) {
-				videoTwo.play();
-				playCarouselVideo = true
+				videoMid.play();
+				playMiddleVideo = true
 			}
 		}
 

@@ -30,6 +30,13 @@
  	left:calc(75% - 70px);
 	width:140px; height: auto;
 }
+.framer-overview figure {
+	display: block;
+	margin-bottom: 24px;
+}
+.framer-overview h5 {
+	margin-bottom: 16px;
+}
 .col-4 p {
 	margin-bottom: 0;
 }
@@ -47,8 +54,8 @@
 	margin-top: $space48;
 }
 .examples {
-	margin-bottom: $space80;
-	margin-top: calc(#{$space80} + #{$space80});
+	margin-bottom: 200px;
+	margin-top: 160px;
 }
 .video-banner {
 	margin-bottom: $space64;
@@ -103,8 +110,8 @@ h5 figure {
 }
 .examples .devices {
 	margin: 0 auto;
-	margin-left: -1000px;
-	width:2000px; 
+	margin-left: -550px;
+	width:1100px; 
 	height:560px;
 	left: 50%;
 	position: relative;
@@ -124,19 +131,19 @@ a.device-nexus9 {
 // Positioning
 a.device-macbook{ 
 	top: 120px;
-	left: 0px; 
+	left: 0; 
 }
 a.device-htc { 
-	left: 540px; 
+	left: 180px; 
 }
 a.device-iphone6 {
 	left: 50%; margin-left: -184px;
 	z-index: 100; 
-	top:-72px;
+	top:-100px;
 }
 a.device-iphone5c { 
 	top: 28px;
-	right: 546px;
+	right: 180px;
 	z-index: 50;
 }
 a.device-nexus9 {
@@ -195,17 +202,17 @@ a.device-nexus9 img {
 	background: $blue;
 }
 .video-banner section {
-	max-width: 440px;
+	max-width: 480px;
 	margin: 0 auto;
 	padding-top:100px;
 }
-.video-banner img {
-	margin-bottom: 32px;
-}
-.video-banner h5 {
+.video-banner h4 {
 	color: #fff;
 	line-height: 1.4;
 	margin-bottom: 24px;
+}
+.video-banner p {
+	color: #A6B5CB;
 }
 // Video Overlay
 .video-overlay {
