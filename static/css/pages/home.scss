@@ -30,6 +30,7 @@
  	left:calc(75% - 70px);
 	width:140px; height: auto;
 }
+// Framer Feature Overview
 .framer-overview figure {
 	display: block;
 	margin-bottom: 24px;
@@ -37,6 +38,9 @@
 .framer-overview h5 {
 	margin-bottom: 16px;
 }
+// .framer-overview p {
+// 	font-size: 16px;
+// }
 .col-4 p {
 	margin-bottom: 0;
 }
@@ -196,15 +200,31 @@ a.device-nexus9 img {
 	text-align: center;
 	cursor: pointer;
 	padding: 0 40px;
+	position: relative;
+	overflow: hidden;
 }
-.video-banner:hover .btn {
-	box-shadow: none;
-	background: $blue;
+// Blur on hover
+.video-banner:after {
+	content: "";
+	width: 100%;
+	height:100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: $header url("/static/images/home/video-bg-blurred.png") no-repeat;
+	z-index: 20;
+	opacity: 0;
+	@include transition(all, 0.5s, ease);
+}
+.video-banner:hover:after  {
+	opacity: 1;
 }
 .video-banner section {
 	max-width: 480px;
 	margin: 0 auto;
 	padding-top:100px;
+	position: relative;
+	z-index: 50;
 }
 .video-banner h4 {
 	color: #fff;
@@ -213,6 +233,13 @@ a.device-nexus9 img {
 }
 .video-banner p {
 	color: #A6B5CB;
+}
+.video-banner .stripe-badge {
+	position: absolute;
+	bottom: 24px;
+	left: 50%;
+	margin-left: -50px;
+	z-index: 50;
 }
 // Video Overlay
 .video-overlay {

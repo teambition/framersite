@@ -135,7 +135,7 @@ $(document).ready(function() {
 		}
 
 		if (playMiddleVideo == false) {
-			if (scrollPos > 900) {
+			if (scrollPos > 1020) {
 				videoMid.play();
 				playMiddleVideo = true
 			}
