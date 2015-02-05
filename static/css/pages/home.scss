@@ -191,7 +191,7 @@ a.device-nexus9 img {
 // 	@include scale(0.98);
 // }
 a.device-iphone6:hover {
-	@include scale(0.99);
+	@include transform(translateY(-6px));
 }
 a.device-macbook:hover,
 a.device-htc:hover {
@@ -213,6 +213,11 @@ a.device-nexus9:hover {
 	padding: 0 40px;
 	position: relative;
 	overflow: hidden;
+}
+.video-banner p {
+	padding-left: 24px;
+	padding-right: 24px;
+	-webkit-font-smoothing: antialiased;
 }
 // Blur on hover
 .video-banner:after {
@@ -471,6 +476,16 @@ a.device-nexus9:hover {
 		margin-left: 0;
 		left:0;
 	}
+	// Framer Feature Overview
+	.framer-overview section+section {
+		margin-top: 24px;
+	}
+	.framer-overview figure {
+		margin-bottom: 16px;
+	}
+	.framer-overview h5 {
+		margin-bottom: 8px;
+	}
 	h5 figure {
 		margin-bottom: -2px;
 		margin-right: 12px;
@@ -528,15 +543,6 @@ a.device-nexus9:hover {
 	.header p.copy {
 		margin-bottom: 16px;
 		font-size: 8px;
-	}
-	.framer-overview section+section {
-		margin-top: 24px;
-	}
-	.framer-overview figure {
-		margin-bottom: 16px;
-	}
-	.framer-overview h5 {
-		margin-bottom: 8px;
 	}
 
 	// Video Banner
