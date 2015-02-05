@@ -455,6 +455,9 @@ table + h5 {
 	.page-header h2 {
 		line-height: 1.1;
 	}
+	.home h4 {
+		font-size: 1.5em;
+	}
 	.summary ul li {
 		font-size: 16px;
 	}
@@ -480,7 +483,6 @@ table + h5 {
 		margin-bottom: $space16;
 	}
 	.home h4 {
-		font-size: 1.5em;
 		margin-bottom: 12px;
 	}
 	// Docs type

@@ -38,9 +38,6 @@
 .framer-overview h5 {
 	margin-bottom: 16px;
 }
-// .framer-overview p {
-// 	font-size: 16px;
-// }
 .framer-overview p,
 .feature-summary p {
 	margin-bottom: 0;
@@ -482,11 +479,11 @@ a.device-nexus9:hover {
 	}
 	.examples {
 		height: 280px;
-		margin-top: 108px;
+		margin-top: 116px;
 		margin-bottom: 108px;
 	}
 	.examples-caption {
-		margin-bottom: $space32;
+		margin-bottom: $space48;
 	}
 	.examples .devices {
 		top: -140px;
@@ -534,6 +531,15 @@ a.device-nexus9:hover {
 		margin-bottom: 16px;
 		font-size: 8px;
 	}
+	.framer-overview section+section {
+		margin-top: 24px;
+	}
+	.framer-overview figure {
+		margin-bottom: 16px;
+	}
+	.framer-overview h5 {
+		margin-bottom: 8px;
+	}
 
 	// Video Banner
 	.video-banner section {
@@ -544,7 +550,6 @@ a.device-nexus9:hover {
 	.feature-banners h5 {
 		font-size: 16px;
 	}
-	
 	// Feature summary titles
 	.feature-summary h5 {
 		margin-bottom: $space16;
@@ -553,7 +558,18 @@ a.device-nexus9:hover {
 	// Vertical spacing M
 	.examples {
 		margin-top: 80px;
-		margin-bottom: 80px;
+		margin-bottom: 96px;
+	}
+	.examples .devices {
+		width:100%;
+		margin-left: 0;
+		left: 0;
+	}
+	a.device-htc {
+		left: -132px;
+	}
+	a.device-iphone5c {
+		right: -132px;
 	}
 	.feature-summary li+li {
 		margin-top: 12px;

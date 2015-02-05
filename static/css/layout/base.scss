@@ -52,7 +52,6 @@ input {
 	padding-top: 128px;
 }
 .content-inner {
-	
 	width: 100%;
 	max-width: 1080px;
 	margin: 0 auto;
@@ -204,6 +203,9 @@ hr {
 	}
 }
 @media screen and (max-width: 440px) {
+	.content-inner {
+		padding:0 $space16;
+	}
 	.subpage .container,
 	.docs .container,
 	.faq .container {
