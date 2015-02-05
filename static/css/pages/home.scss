@@ -125,6 +125,12 @@ h5 figure {
 }
 .examples .devices a {
 	position: absolute; 
+}
+
+a.device-macbook,
+a.device-htc,
+a.device-iphone5c,
+a.device-nexus9 {
 	@include transition(all, 0.25s, ease);
 }
 a.device-macbook,
@@ -147,7 +153,7 @@ a.device-htc {
 a.device-iphone6 {
 	left: 50%; margin-left: -184px;
 	z-index: 100; 
-	top:-92px;
+	top:-88px;
 }
 a.device-iphone5c { 
 	top: 46px;
@@ -192,7 +198,7 @@ a.device-nexus9 img {
 // 	@include scale(0.98);
 // }
 a.device-iphone6:hover {
-	top: -96px;
+	top: -94px;
 }
 a.device-macbook:hover,
 a.device-htc:hover {
