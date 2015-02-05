@@ -192,7 +192,7 @@ a.device-nexus9 img {
 // 	@include scale(0.98);
 // }
 a.device-iphone6:hover {
-	@include transform(translateY(-6px));
+	top: -96px;
 }
 a.device-macbook:hover,
 a.device-htc:hover {
@@ -438,10 +438,9 @@ a.device-nexus9:hover {
 		padding: 0 32px;
 	}
 	.video-banner section {
-		padding-top: 80px;
+		padding-top: 56px;
 	}
 	.video-banner .stripe-badge {
-		display: none;
 	}
 	.video-banner h5 {
 		font-size: 1.125em;
@@ -517,7 +516,8 @@ a.device-nexus9:hover {
 		padding: 0 16px;
 	}
 	.video-banner section {
-		padding: 80px 0;
+		padding-top: 48px;
+		padding-bottom: 104px;
 	}
 	.video-banner p {
 		padding-left: 16px;
@@ -568,9 +568,9 @@ a.device-nexus9:hover {
 
 	// Video Banner
 	.video-banner section {
-		padding: 40px 0;
+		padding-top: 32px;
+		padding-bottom: 80px;
 	}
-
 	// Feature Banners (Mirror & Importing)
 	.feature-banners h5 {
 		font-size: 16px;
