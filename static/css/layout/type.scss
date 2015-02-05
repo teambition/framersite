@@ -433,7 +433,7 @@ table + h5 {
 		font-size: 3em;
 	}
 	.home h4 {
-		font-size: 1.5em;
+		font-size: 20px;
 	}
 	.subtitle {
 		font-size: 1.225em; 
@@ -458,6 +458,9 @@ table + h5 {
 	.summary ul li {
 		font-size: 16px;
 	}
+	.video-banner p {
+		font-size: 1em;
+	}
 }
 @media screen and (max-width: 600px) {
 	// body {
@@ -477,6 +480,7 @@ table + h5 {
 		margin-bottom: $space16;
 	}
 	.home h4 {
+		font-size: 1.5em;
 		margin-bottom: 12px;
 	}
 	// Docs type
