@@ -68,6 +68,9 @@
 .feature-summary {
 	margin-bottom: $space80;
 }
+.feature-banners {
+	margin-bottom: 96px;
+}
 // Icons infront of H5 Headlines
 h5 figure {
 	display: inline-block;
@@ -120,7 +123,7 @@ h5 figure {
 }
 .examples .devices a {
 	position: absolute; 
-	@include transition(all, 0.2s, ease);
+	@include transition(all, 0.25s, ease);
 }
 a.device-macbook,
 a.device-htc,
@@ -197,15 +200,15 @@ a.device-nexus9 img {
 // 	@include scale(0.98);
 // }
 a.device-iphone6:hover {
-	@include scale(0.9825);
+	@include scale(0.985);
 }
 a.device-macbook:hover,
 a.device-htc:hover {
-	@include transform(translateX(-8px));
+	@include transform(translateX(-6px));
 }
 a.device-iphone5c:hover,
 a.device-nexus9:hover {
-	@include transform(translateX(8px));
+	@include transform(translateX(6px));
 }
 // Video Banner
 .video-banner {
@@ -245,8 +248,6 @@ a.device-nexus9:hover {
 }
 .video-banner h4 {
 	color: #fff;
-	line-height: 1.4;
-	margin-bottom: 24px;
 }
 .video-banner p {
 	color: #A6B5CB;
@@ -485,7 +486,7 @@ a.device-nexus9:hover {
 	}
 	.examples {
 		height: 280px;
-		margin-top: 116px;
+		margin-top: 108px;
 		margin-bottom: 108px;
 	}
 	.examples-caption {

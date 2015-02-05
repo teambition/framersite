@@ -78,7 +78,8 @@ h4 {
 // Screenshot Copy and Examples copy
 .screenshot-copy h4,
 .examples-caption h4,
-.feature-banners h4 {
+.feature-banners h4,
+.video-banner h4 {
 	margin-bottom: $space8;
 	line-height: 1.8;
 }
@@ -506,7 +507,8 @@ table + h5 {
 	}
 	.home h4,
 	.screenshot-copy h4,
-	.examples-caption h4 {
+	.examples-caption h4,
+	.video-banner h4 {
 		margin-bottom: 8px;
 	}
 	.feature-summary p.title + p {
@@ -545,7 +547,8 @@ table + h5 {
 	// Screenshot Copy and examples copy
 	.home h4,
 	.screenshot-copy h4,
-	.examples-caption h4 {
+	.examples-caption h4,
+	.video-banner h4 {
 		line-height: 1.5;
 	}
 	// Docs type
