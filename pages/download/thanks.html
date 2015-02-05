@@ -11,14 +11,7 @@
 </div>
 {% endblock %}
 
-{% block scripts %}
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="{% static '/js/main.js' %}"></script>
-<script src="{% static '/js/analytics.js' %}"></script>
-<script src="{% static '/js/srcset.min.js' %}"></script>
-<script src="{% static '/js/mixpanel.js' %}"></script>
-<script src="{% static '/js/download.js' %}"></script>
-
+{% block extrascripts %}
 <script type="text/javascript">
 $(document).ready(function() {
 	if (window.location.host.indexOf("framerjs.com") != -1) {
@@ -28,5 +21,4 @@ $(document).ready(function() {
 	}
 })
 </script>
-
-{% endblock scripts %}
+{% endblock extrascripts %}

@@ -123,10 +123,12 @@
 	{% block scripts %}
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="{% static '/js/main.js' %}?expire=1414619692181"></script>
+	<script src="{% static '/js/download.js' %}"></script>
 	<script src="{% static '/js/analytics.js' %}"></script>
 	<script src="{% static '/js/srcset.min.js' %}"></script>
 	<script src="{% static '/js/mixpanel.js' %}"></script>
-	{% endblock scripts %}
 	{% include 'twitter.html' %}
+	{% endblock scripts %}
+
 </body>
 </html>

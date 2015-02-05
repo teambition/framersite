@@ -10,10 +10,17 @@ FramerSite.getDownloadLink = function(callback) {
 		return callback(_downloadLink);
 	}
 
-	var sparkleHost = "//studio.update.framerjs.com"
+	var sparkleHost = "//s3.amazonaws.com/studio.update.framerjs.com"
+	var downloadHost = "http://studio.update.framerjs.com"
 
 	$.get(sparkleHost + "/latest.txt?date=" + Date.now(), function(result) {
-		_downloadLink = sparkleHost + "/" + result + "?mp_id=" + mixpanel.get_distinct_id();
+		
+		_downloadLink = downloadHost + "/" + result;
+
+		if (mixpanel && mixpanel.get_distinct_id) {
+			_downloadLink += "?mp_id=" + mixpanel.get_distinct_id();
+		}
+
 		callback(_downloadLink)
 	})
 }
@@ -22,13 +29,10 @@ FramerSite.doDownload = function() {
 	FramerSite.getDownloadLink(function(downloadLink) {
 
 		// Resirect to the download link in one second
-		setTimeout(function() { window.location = downloadLink; }, 1000)
+		setTimeout(function() { window.location = downloadLink; }, 3000)
 
 		// Record the event in google analytics
 		ga('send', 'event', 'Download', 'Framer Studio', downloadLink)
-
-		// Record the event in gosquared
-		_gs('event', 'Download', {'Name': 'Framer Studio', 'Link': downloadLink});
 
 		// Record the event in mixpanel
 		mixpanel.track("page.download", {
@@ -36,6 +40,12 @@ FramerSite.doDownload = function() {
 			"url": window.location.pathname,
 			"link": downloadLink
 		})
+
+		// Record the event in gosquared
+		_gs('event', 'Download', {'Name': 'Framer Studio', 'Link': downloadLink});
+		
+		// Record the download event in Twitter
+		twttr.conversion.trackPid('l5elj');
 	})
 }
 
@@ -88,6 +98,9 @@ FramerSite.registerNameAndEmailNewsletter = function(name, email, callback) {
 }
 
 FramerSite.registerNameAndEmailMixpanel = function(name, email, callback) {
+	if (typeof mixpanel === "undefined") {
+		return;
+	}
 	mixpanel.identify(mixpanel.get_distinct_id())
 	mixpanel.people.set_once({
 		"$name": name,

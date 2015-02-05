@@ -18,13 +18,7 @@
 </section>
 {% endblock %}
 
-{% block scripts %}
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="{% static '/js/main.js' %}"></script>
-<script src="{% static '/js/analytics.js' %}"></script>
-<script src="{% static '/js/srcset.min.js' %}"></script>
-<script src="{% static '/js/download.js' %}"></script>
-<script src="{% static '/js/mixpanel.js' %}"></script>
+{% block extrascripts %}
 
 <script type="text/javascript">
 // Bind enter to button click 
@@ -58,21 +52,23 @@ $("button").click(function() {
 
 			FramerSite.registerNameAndEmail(name, address);
 
-			mixpanel.track("page.register", {
-				"title": document.title,
-				"url": window.location.pathname,
-				"name": name,
-				"email": address,
-			})
-
 			$(".submit-error").html("").removeClass("show");
 
 			setTimeout(function() {
 				window.location.href = "/download/thanks.html";
 			}, 2000)
 
+			if (typeof mixpanel !== "undefined") {
+				mixpanel.track("page.register", {
+					"title": document.title,
+					"url": window.location.pathname,
+					"name": name,
+					"email": address,
+				})
+			}
+
 		}
 	})
 });
 </script>
-{% endblock scripts %}
+{% endblock extrascripts %}
