@@ -70,7 +70,6 @@ $(document).ready(function() {
 		videoMid.remove();
 	}
 
-
 	$(window).scroll(function() {
 		$('.more-dropdown').removeClass("appear");
 
