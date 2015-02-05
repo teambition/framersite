@@ -68,6 +68,7 @@
 .feature-summary {
 	margin-bottom: $space80;
 }
+.screenshot-copy,
 .feature-banners {
 	margin-bottom: 96px;
 }
@@ -214,11 +215,6 @@ a.device-nexus9:hover {
 	position: relative;
 	overflow: hidden;
 }
-.video-banner p {
-	padding-left: 24px;
-	padding-right: 24px;
-	-webkit-font-smoothing: antialiased;
-}
 // Blur on hover
 .video-banner:after {
 	content: "";
@@ -247,6 +243,9 @@ a.device-nexus9:hover {
 }
 .video-banner p {
 	color: #A6B5CB;
+	padding-left: 32px;
+	padding-right: 32px;
+	-webkit-font-smoothing: antialiased;
 }
 .video-banner .stripe-badge {
 	position: absolute;
@@ -308,6 +307,9 @@ a.device-nexus9:hover {
 	max-width: 460px;
 }
 // Feature Summary
+.feature-summary ul {
+	margin-bottom: 0;
+}
 .feature-summary li+li {
 	margin-top: $space16;
 }
@@ -451,6 +453,9 @@ a.device-nexus9:hover {
 		margin-bottom: 64px;
 		text-align: center;
 	}
+	.screenshot-copy {
+		margin-bottom: 80px;
+	}
 }
 @media screen and (max-width:660px) {
 	// ****************
@@ -463,6 +468,9 @@ a.device-nexus9:hover {
 	.examples .devices {
 		top: -140px;
 		@include scale(0.6);
+	}
+	.feature-summary section+section {
+		margin-bottom: 8px;
 	}
 
 }
@@ -511,6 +519,10 @@ a.device-nexus9:hover {
 	.video-banner section {
 		padding: 80px 0;
 	}
+	.video-banner p {
+		padding-left: 16px;
+		padding-right: 16px;
+	}
 	footer.footer img {
 		margin-bottom: $space8;
 		height: 64px;
@@ -528,6 +540,15 @@ a.device-nexus9:hover {
 	.logo-string figure+figure {
 		margin-left: 0;
 	}
+
+	// Vertical Spacing
+	.feature-banners,
+	.screenshot-copy {
+		border-bottom: 1px solid $separator;
+		margin-bottom: 32px;
+		padding-bottom: 32px;
+	}
+
 }
 @media screen and (max-width: 480px) {
 	.header {
@@ -575,8 +596,11 @@ a.device-nexus9:hover {
 	a.device-iphone5c {
 		right: -132px;
 	}
+	.feature-summary section+section {
+		margin-top: 0;
+	}
 	.feature-summary li+li {
-		margin-top: 12px;
+		margin-top: 8px;
 	}
 	.logo-string figure {
 		 @include scale(0.6);
@@ -585,5 +609,4 @@ a.device-nexus9:hover {
 	.logo-string figure+figure {
 		margin-left: -4px;
 	}
-
 }
