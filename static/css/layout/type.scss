@@ -498,6 +498,9 @@ table + h5 {
 	.examples-caption h4 {
 		margin-bottom: 8px;
 	}
+	.feature-summary p.title + p {
+		margin-top: 0px;
+	}
 }
 @media screen and (max-width: 480px) {
 	body {
