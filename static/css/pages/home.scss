@@ -190,9 +190,9 @@ a.device-nexus9 img {
 // a.device-nexus9:hover {
 // 	@include scale(0.98);
 // }
-// a.device-iphone6:hover {
-// 	@include scale(0.9925);
-// }
+a.device-iphone6:hover {
+	@include scale(0.99);
+}
 a.device-macbook:hover,
 a.device-htc:hover {
 	@include transform(translateX(-6px));
