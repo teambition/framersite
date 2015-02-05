@@ -196,6 +196,9 @@ a.device-nexus9 img {
 // a.device-nexus9:hover {
 // 	@include scale(0.98);
 // }
+a.device-iphone6:hover {
+	@include scale(0.9825);
+}
 a.device-macbook:hover,
 a.device-htc:hover {
 	@include transform(translateX(-8px));
@@ -304,6 +307,9 @@ a.device-nexus9:hover {
 .feature-banners img {
 	margin-bottom: $space32;
 }
+.feature-banners p {
+	max-width: 460px;
+}
 // Feature Summary
 .feature-summary li+li {
 	margin-top: $space16;
@@ -360,7 +366,7 @@ a.device-nexus9:hover {
 	// Examples block
 	.examples {
 		height: 428px; 
-		margin-bottom: 160px;
+		margin-bottom: 124px;
 		margin-top: 104px;
 	}
 	.examples .devices {

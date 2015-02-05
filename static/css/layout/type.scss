@@ -432,8 +432,13 @@ table + h5 {
 	.page-header h1 {
 		font-size: 3em;
 	}
+	// Temp resize for smallest Desktop viewports
 	.home h4 {
 		font-size: 20px;
+	}
+	.home .examples-caption p,
+	.home .feature-banners p {
+		font-size: 16px;
 	}
 	.subtitle {
 		font-size: 1.225em; 
@@ -455,9 +460,15 @@ table + h5 {
 	.page-header h2 {
 		line-height: 1.1;
 	}
+	// Reset of resizing for smallest Desktop viewports
 	.home h4 {
 		font-size: 1.5em;
 	}
+	.home .examples-caption p,
+	.home .feature-banners p {
+		font-size: 1.125em;
+	}
+
 	.summary ul li {
 		font-size: 16px;
 	}
