@@ -1,11 +1,11 @@
-﻿/* glue: 0.9.4 hash: 24ae73ef4a */
+﻿/* glue: 0.9.4 hash: 96f072b5dd */
 /* 1x */
-.logo-instagram,.logo-facebook,.logo-groupon,.stripe-badge,.logo-google,.logo-soundcloud,.logo-stripe,.logo-slack,.logo-twitter,.logo-dropbox,.icon-universities,.logo-pinterest,.logo-apple,.logo-adobe,.icon-workflow,.icon-viewer,.icon-preview,.icon-learn-mirror,.icon-learn-mirror-active,.icon-effects,.icon-conferences,.icon-companies,.icon-animation,.icon-volumelicenses,.icon-meetups,.icon-learn-importing,.icon-learn-importing-active,.icon-learn-coffeescript,.icon-learn-coffeescript-active,.icon-learn-basics,.icon-learn-basics-active,.icon-educationpricing,.icon-editor,.logo-spotify,.icon-interaction,.icon-code,.icon-learn-previous,.icon-learn-previous-active,.icon-learn-next,.icon-learn-next-active,.icon-more,.icon-general,.icon-footer-twitter,.icon-footer-email,.icon-features,.icon-dropdown-arrow,.icon-arrow{
-    background-image:url('/static/images/sprites/sprite1x.png?24ae73ef4a');
+.logo-instagram,.logo-facebook,.logo-groupon,.stripe-badge,.logo-google,.logo-soundcloud,.logo-stripe,.logo-slack,.logo-twitter,.logo-dropbox,.icon-universities,.logo-pinterest,.logo-uber,.logo-apple,.logo-adobe,.icon-workflow,.icon-viewer,.icon-preview,.icon-learn-mirror,.icon-learn-mirror-active,.icon-effects,.icon-conferences,.icon-companies,.icon-animation,.icon-volumelicenses,.icon-meetups,.icon-learn-importing,.icon-learn-importing-active,.icon-learn-coffeescript,.icon-learn-coffeescript-active,.icon-learn-basics,.icon-learn-basics-active,.icon-educationpricing,.icon-editor,.logo-spotify,.icon-interaction,.icon-code,.icon-learn-previous,.icon-learn-previous-active,.icon-learn-next,.icon-learn-next-active,.icon-more,.icon-general,.icon-footer-twitter,.icon-footer-email,.icon-features,.icon-dropdown-arrow,.icon-arrow{
+    background-image:url('/static/images/sprites/sprite1x.png?96f072b5dd');
     background-repeat:no-repeat;
-    -webkit-background-size: 267px 215px;
-    -moz-background-size: 267px 215px;
-    background-size: 267px 215px;
+    -webkit-background-size: 266px 246px;
+    -moz-background-size: 266px 246px;
+    background-size: 266px 246px;
 }
 
 .logo-instagram{
@@ -80,32 +80,38 @@
     height:33px;
 }
 
-.logo-apple{
+.logo-uber{
     background-position:-204px -33px;
+    width:32px;
+    height:32px;
+}
+
+.logo-apple{
+    background-position:-204px -65px;
     width:27px;
     height:32px;
 }
 
 .logo-adobe{
-    background-position:-204px -65px;
+    background-position:-204px -97px;
     width:32px;
     height:29px;
 }
 
 .icon-workflow{
-    background-position:-204px -94px;
-    width:32px;
-    height:32px;
-}
-
-.icon-viewer{
     background-position:-204px -126px;
     width:32px;
     height:32px;
 }
 
-.icon-preview{
+.icon-viewer{
     background-position:0 -183px;
+    width:32px;
+    height:32px;
+}
+
+.icon-preview{
+    background-position:-32px -183px;
     width:32px;
     height:32px;
 }
@@ -123,7 +129,7 @@
 }
 
 .icon-effects{
-    background-position:-32px -183px;
+    background-position:-64px -183px;
     width:32px;
     height:32px;
 }
@@ -141,151 +147,151 @@
 }
 
 .icon-animation{
-    background-position:-64px -183px;
+    background-position:-96px -183px;
     width:32px;
     height:32px;
 }
 
 .icon-volumelicenses{
-    background-position:-96px -183px;
+    background-position:-128px -183px;
     width:31px;
     height:31px;
 }
 
 .icon-meetups{
-    background-position:-127px -183px;
+    background-position:-159px -183px;
     width:31px;
     height:31px;
 }
 
 .icon-learn-importing{
-    background-position:-158px -183px;
+    background-position:-190px -183px;
     width:30px;
     height:31px;
 }
 
 .icon-learn-importing-active{
-    background-position:-188px -183px;
+    background-position:-236px 0;
     width:30px;
     height:31px;
 }
 
 .icon-learn-coffeescript{
-    background-position:-236px 0;
+    background-position:0 -215px;
     width:31px;
     height:31px;
 }
 
 .icon-learn-coffeescript-active{
-    background-position:-236px -31px;
+    background-position:-31px -215px;
     width:31px;
     height:31px;
 }
 
 .icon-learn-basics{
-    background-position:-236px -62px;
+    background-position:-62px -215px;
     width:31px;
     height:31px;
 }
 
 .icon-learn-basics-active{
-    background-position:-236px -93px;
+    background-position:-93px -215px;
     width:31px;
     height:31px;
 }
 
 .icon-educationpricing{
-    background-position:-236px -124px;
+    background-position:-124px -215px;
     width:31px;
     height:31px;
 }
 
 .icon-editor{
-    background-position:-236px -155px;
+    background-position:-236px -31px;
     width:28px;
     height:31px;
 }
 
 .logo-spotify{
-    background-position:-77px -112px;
+    background-position:-236px -62px;
     width:30px;
     height:30px;
 }
 
 .icon-interaction{
-    background-position:-236px -186px;
+    background-position:-236px -92px;
     width:28px;
     height:28px;
 }
 
 .icon-code{
-    background-position:-107px -112px;
+    background-position:-236px -120px;
     width:28px;
     height:28px;
 }
 
 .icon-learn-previous{
-    background-position:-204px -158px;
+    background-position:-236px -148px;
     width:10px;
     height:23px;
 }
 
 .icon-learn-previous-active{
-    background-position:-214px -158px;
+    background-position:-246px -148px;
     width:10px;
     height:23px;
 }
 
 .icon-learn-next{
-    background-position:-224px -158px;
+    background-position:-256px -148px;
     width:10px;
     height:23px;
 }
 
 .icon-learn-next-active{
-    background-position:-184px -32px;
+    background-position:-236px -171px;
     width:10px;
     height:23px;
 }
 
 .icon-more{
-    background-position:-180px -65px;
+    background-position:-246px -171px;
     width:16px;
     height:16px;
 }
 
 .icon-general{
-    background-position:-114px -92px;
+    background-position:-236px -194px;
     width:16px;
     height:16px;
 }
 
 .icon-footer-twitter{
-    background-position:-130px -92px;
+    background-position:-204px -158px;
     width:16px;
     height:14px;
 }
 
 .icon-footer-email{
-    background-position:-180px -81px;
+    background-position:-220px -158px;
     width:16px;
     height:11px;
 }
 
 .icon-features{
-    background-position:-135px -112px;
+    background-position:-184px -32px;
     width:16px;
     height:16px;
 }
 
 .icon-dropdown-arrow{
-    background-position:-184px -55px;
+    background-position:-246px -187px;
     width:11px;
     height:7px;
 }
 
 .icon-arrow{
-    background-position:-194px -32px;
+    background-position:-252px -194px;
     width:6px;
     height:10px;
 }

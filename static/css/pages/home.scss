@@ -102,6 +102,7 @@ h5 figure {
 .logo-pinterest  { top:2px; }
 .logo-slack      { top: 5px; }
 .logo-soundcloud { top: 4px; }
+.logo-uber       { top: 2px; }
 
 // Examples Block
 .examples {
@@ -200,7 +201,7 @@ a.device-nexus9 img {
 // 	@include scale(0.98);
 // }
 a.device-iphone6:hover {
-	@include scale(0.985);
+	@include scale(0.9925);
 }
 a.device-macbook:hover,
 a.device-htc:hover {
