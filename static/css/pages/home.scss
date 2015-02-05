@@ -123,7 +123,7 @@ h5 figure {
 }
 .examples .devices a {
 	position: absolute; 
-	@include transition(all, .16s, ease);
+	@include transition(all, 0.3s, ease);
 }
 a.device-macbook,
 a.device-htc,
@@ -161,9 +161,9 @@ a.device-nexus9 {
 	left:50%;
 }
 .device-video.mid {
-	top: 86px;
-	width:321px; 
-	margin-left:-160px;
+	top: 85px;
+	width:322px; 
+	margin-left:-161px;
 }
 .device-video.left {
 	top: 45px;
@@ -190,6 +190,21 @@ a.device-iphone5c img  {
 }
 a.device-nexus9 img {
 	width: 470px;
+}
+// Hover States
+// a.device-macbook:hover,
+// a.device-htc:hover,
+// a.device-iphone5c:hover,
+// a.device-nexus9:hover {
+// 	@include scale(0.98);
+// }
+a.device-macbook:hover,
+a.device-htc:hover {
+	@include transform(translateX(-8px));
+}
+a.device-iphone5c:hover,
+a.device-nexus9:hover {
+	@include transform(translateX(8px));
 }
 // Video Banner
 .video-banner {
