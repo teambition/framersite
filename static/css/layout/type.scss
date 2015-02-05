@@ -155,13 +155,16 @@ p.title {
 .feature-summary p.title {
 	font-size: 12px;
 	font-weight: 600;
-	margin-bottom: $space8;
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
 	color: $black;
 }
 .feature-summary p {
 	font-size:14px;
+	opacity: .8;
+}
+.feature-summary p.title + p {
+	margin-top: 8px;
 }
 .footer-features li {
 	font-size:0.8888em; //16px

@@ -41,7 +41,8 @@
 // .framer-overview p {
 // 	font-size: 16px;
 // }
-.col-4 p {
+.framer-overview p,
+.feature-summary p {
 	margin-bottom: 0;
 }
 // Vertical Spacing ------------------------------------
@@ -293,6 +294,10 @@ a.device-nexus9 img {
 // Feature Summary
 .feature-summary li+li {
 	margin-top: $space16;
+}
+.feature-summary figure {
+	display: block;
+	margin-bottom: $space24;
 }
 
 // List fix
