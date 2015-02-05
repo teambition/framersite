@@ -102,7 +102,7 @@ h5 figure {
 .logo-pinterest  { top:2px; }
 .logo-slack      { top: 5px; }
 .logo-soundcloud { top: 4px; }
-.logo-uber       { top: 2px; }
+.logo-uber       { top: 3px; }
 
 // Examples Block
 .examples {
@@ -164,18 +164,8 @@ a.device-nexus9 {
 }
 .device-video.mid {
 	top: 85px;
-	width:322px; 
-	margin-left:-161px;
-}
-.device-video.left {
-	top: 45px;
-	width: 212px;
-	margin-left: -106px;
-}
-.device-video.right {
-	top: 70px;
-	width: 192px;
-	margin-left: -95px;
+	width:320px; 
+	margin-left:-159px;
 }
 // Sizes
 a.device-macbook img { 
@@ -200,9 +190,9 @@ a.device-nexus9 img {
 // a.device-nexus9:hover {
 // 	@include scale(0.98);
 // }
-a.device-iphone6:hover {
-	@include scale(0.9925);
-}
+// a.device-iphone6:hover {
+// 	@include scale(0.9925);
+// }
 a.device-macbook:hover,
 a.device-htc:hover {
 	@include transform(translateX(-6px));
