@@ -154,6 +154,7 @@ a.device-iphone6 {
 	left: 50%; margin-left: -184px;
 	z-index: 100; 
 	top:-88px;
+	@include transition(all, 0.2s, ease);
 }
 a.device-iphone5c { 
 	top: 46px;
