@@ -53,7 +53,6 @@
 
   if (mq.matches) {
     window.location.hash = '#' + window.location.hash.split('#')[1];
-    console.log("MATCH");
   }
 
 }).call(this);
