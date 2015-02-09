@@ -63,4 +63,3 @@ mq = window.matchMedia("(max-width:800px)")
 
 if (mq.matches)
 	window.location.hash = '#' + window.location.hash.split('#')[1]
-	console.log("MATCH")
