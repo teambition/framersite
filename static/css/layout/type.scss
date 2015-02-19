@@ -413,6 +413,16 @@ table + h5 {
 	content:">";
 }
 
+// Learn - Apps
+.align-right p.left-to-btn {
+	float: left;
+	max-width: 540px;
+}
+.right .btn {
+	position: relative;
+	top: 8px;
+}
+
 // Subpage summary lists
 // Page summaries
 .summary {
@@ -529,12 +539,14 @@ table + h5 {
 	.content-inner ul.icon-list .small {
 		font-size: 14px;
 	}
-	// 3 col learn
-	.three-feature-list .col-4 h5 {
-		margin-bottom: 4px;	
+	// Learn - Apps
+	.align-right p.left-to-btn {
+		float: none;
+		max-width: 540px;
 	}
-	.three-feature-list .col-4 .small {
-		font-size: 14px;
+	.right .btn {
+		top: 0;
+		float: none;
 	}
 
 	.summary ul li {

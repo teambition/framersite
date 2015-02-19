@@ -322,8 +322,9 @@ p.full-width{
 .text-with-inline-image  {
 	margin-bottom: 32px;
 }
-// Store buttons, in Apps
-.store-btn {
+// Store buttons, in Learn/Apps
+.right-btn {
+	float: right;
 	margin-top: 8px;
 }
 .text-with-inline-image p {
@@ -719,6 +720,11 @@ hr.hidden {
 		margin-right: 24px;
 		margin-top: 0px;
 	}
+	.right-btn {
+		float: none;
+		margin-top: -16px;
+		margin-bottom: 40px;
+	}
 
 }
 @media screen and (max-width:600px) {
@@ -840,9 +846,6 @@ hr.hidden {
 	}
 	.inline-image + h5 {
 		margin-top: 24px;
-	}
-	.store-btn {
-		width: 160px;
 	}
 }
 @media screen and (max-width: 440px) {
