@@ -428,21 +428,33 @@ table + h5 {
 	padding-left: 0;
 	left: 0;
 }
+// Apps
+.summary.small {
+	margin: 40px 0 24px 0;
+}
+.summary.small ul li {
+	font-size: 16px;
+	line-height: 1.6;
+}
 .summary ul li:before {
 	content: "";
-	background: url("/static/images/learn/icon-learn-summary.png") no-repeat;
+	background: url("/static/images/learn/icon-learn-checklist.png") no-repeat;
 	background-size: contain;
-	height:20px; width:14px;
+	height:16px; width:16px;
 	display: inline-block;
 	margin-right: $space16;
 	position: relative;
-	top: 6px;
+	top: 4px;
 	float: left;
+}
+// Apps
+.summary.small ul li:before {
+	top: 3px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
 	.summary ul li:before {
 		content: "";
-		background: url("/static/images/learn/icon-learn-summary@2x.png") no-repeat;
+		background: url("/static/images/learn/icon-learn-checklist@2x.png") no-repeat;
 		background-size: 100%;
 	}
 }
