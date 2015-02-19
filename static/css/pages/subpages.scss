@@ -315,11 +315,20 @@ p.full-width{
 // Inline images
 .inline-left {
 	float: left;
-	margin-right: 60px;
+	margin-right: 40px;
+	margin-top: -8px;
+}
+.text-with-inline-image  {
+	margin-bottom: 32px;
+}
+// Store buttons, in Apps
+.store-btn {
+	margin-top: 8px;
 }
 .text-with-inline-image p {
-	max-width: 660px; // Fix float bu
+	max-width: 660px; // Fix float bug
 }
+
 hr.hidden {
 	border-bottom-color: #fff;
 	margin: $space24 auto;
