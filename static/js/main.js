@@ -62,14 +62,15 @@ $(document).ready(function() {
 		}
 	);
 
-	var playMiddleVideo = false
-	var videoMid = $(".video-example").get(0)
-	var isAndroid = navigator.userAgent.indexOf('Android') >= 0;
+	if ($('body').hasClass('home')) {
+		var playMiddleVideo = false
+		var videoMid = $(".video-example").get(0)
+		var isAndroid = navigator.userAgent.indexOf('Android') >= 0;
 
-	if (isAndroid) {
-		videoMid.remove();
+		if (isAndroid) {
+			videoMid.remove();
+		}
 	}
-
 	$(window).scroll(function() {
 		$('.more-dropdown').removeClass("appear");
 
@@ -113,7 +114,7 @@ $(document).ready(function() {
 			$(topNavPages).removeClass('fade-out');
 		}
 
-		if (playMiddleVideo == false) {
+		if ($('body').hasClass('home') && playMiddleVideo == false) {
 			if (scrollPos > 1020) {
 				videoMid.play();
 				playMiddleVideo = true
