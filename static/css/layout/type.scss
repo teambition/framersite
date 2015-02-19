@@ -456,6 +456,7 @@ table + h5 {
 	position: relative;
 	top: 4px;
 	float: left;
+	margin-bottom: 8px;
 }
 // Apps
 .summary.small ul li:before {
@@ -551,6 +552,12 @@ table + h5 {
 
 	.summary ul li {
 		font-size: 16px;
+	}
+	.summary.small ul li {
+		font-size: 14px;
+	}
+	.summary.small ul li+li {
+		margin-top: 8px;
 	}
 	.video-banner p {
 		font-size: 1em;
