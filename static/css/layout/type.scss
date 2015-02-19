@@ -557,7 +557,7 @@ table + h5 {
 		font-size: 14px;
 	}
 	.summary.small ul li+li {
-		margin-top: 8px;
+		margin-top: 16px;
 	}
 	.video-banner p {
 		font-size: 1em;
@@ -631,6 +631,10 @@ table + h5 {
 	}
 	.summary ul li:before {
 		margin-right: $space8;
+		top: 3px;
+	}
+	.summary.small ul li:before {
+		margin-right: 24px;
 		top: 3px;
 	}
 	// Screenshot Copy and examples copy
