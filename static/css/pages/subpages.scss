@@ -834,12 +834,15 @@ hr.hidden {
 	// Learn - Apps
 	.inline-left {
 		float: none; 
-		width: 44px;
-		height:44px;
+		width: 66px;
+		height: 66px;
 		margin: 0;
 	}
 	.inline-image + h5 {
 		margin-top: 24px;
+	}
+	.store-btn {
+		width: 160px;
 	}
 }
 @media screen and (max-width: 440px) {
