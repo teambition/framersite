@@ -1,14 +1,15 @@
 {% extends "learn.html" %}
-{% block title %}Framer - Preview on Mobile{% endblock %}
+{% block title %}Framer - Apps{% endblock %}
 {% block islearn %}active{% endblock %}
 {% block mirror %}active{% endblock %}
 {% block mirror2 %}-active{% endblock %}
 
+
 {% block sidebar %}
 <div class="sidebar">
 	<ul>	
-		<a href="/learn/preview"><li>Overview <div class="small">What is Mirror</div></li></a>
-		<a href="/learn/preview/preview-on-mobile"><li class="active">Preview on mobile <div class="small">iOS, Android and more</div></li></a>
+		<a href="/learn/preview"><li>Mirror <div class="small">Overview</div></li></a>
+		<a href="/learn/preview/apps"><li class="active">Apps <div class="small">iOS, Android and Browser</div></li></a>
 		<a href="/learn/preview/connecting"><li>Connecting <div class="small">WiFi and USB</div></li></a>		
 	</ul>
 </div> <!--sidebar-->
@@ -17,7 +18,7 @@
 {% block body %}
 {% filter pygmentify %}
 {% filter markdown %}
-### Preview on Mobile
+### Previewing Apps
 
 To view your prototype on mobile, make sure your mobile device is on the same WiFi network as your Mac.
 
