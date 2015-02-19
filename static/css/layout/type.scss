@@ -519,7 +519,6 @@ table + h5 {
 		font-size: 14px;
 	}
 
-
 	.summary ul li {
 		font-size: 16px;
 	}
@@ -617,6 +616,10 @@ table + h5 {
 	}
 	.subtitle {
 		font-size: 1.225em;
+	}
+	// Learn 3col
+	.three-feature-list .col-4 p {
+		max-width: 300px;
 	}
 
 }
