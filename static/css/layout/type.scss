@@ -6,8 +6,11 @@ body {
 	font-size:16px; // Base
 	font-weight: 300;
 }
+p a {
+	@include transition(opacity, 0.2s, ease);
+}
 p a:hover {
-	opacity:0.75
+	opacity:0.8
 }
 p a:active {
 	opacity:1;
@@ -278,6 +281,9 @@ ol li {
 }
 .content-inner .three-feature-list h5 {
 	font-size: 12px;
+	margin-bottom: 8px;
+}
+.content-inner .three-feature-list p {
 	margin-bottom: 16px;
 }
 

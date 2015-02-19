@@ -19,8 +19,8 @@
 {% filter markdown %}
 ### Connecting
 
-##### Switching Networks
-If you switch networks or change your network settings while previewing prototypes, you may need to restart Framer Studio. By default, Framer Studio will use Port 8000. If Port 8000 isn't available, the next available port will be used.
+##### How it works
+Framer Studio runs a built-in webserver containing all of your open projects. The address is your Network **IP address**. On save, Framer Studio automatically refreshes your project for live-previewing. The web server doesn't rely on Bonjour, so it works on all networks, including corporate managed networks.
 
 ---
 
@@ -35,6 +35,11 @@ To make sure your Wi-Fi or Ethernet connection is used for internet on your Mac,
 Below the list of available connections, click on the settings icon. Within the dropdown that appears, select "Set Service Order". Then, place both Wi-Fi and Ethernet above iPhone USB.
 
 If your iOS device is connected via USB and has Personal Hotspot enabled, prototypes can be previewed over USB, without needing an internet connection.
+
+---
+
+##### Switching Networks
+If you switch networks or change your network settings while previewing prototypes, you may need to restart Framer Studio. By default, Framer Studio will use Port 8000. If Port 8000 isn't available, the next available port will be used.
 
 ---
 
