@@ -242,6 +242,31 @@ ol li {
 	margin-top: 4px;
 }
 
+// Icon-lists
+.content-inner ul.icon-list {
+	margin-top: 40px;
+}
+.content-inner ul.icon-list li {
+	list-style: none;
+	padding-left: 0;
+	left: 0;
+}
+.content-inner ul.icon-list li+li {
+	margin-top: 32px;
+}
+.content-inner ul.icon-list .small {
+	font-size: 16px;
+}
+.content-inner ul.icon-list figure {
+	float: left;
+	margin-bottom: 8px;
+	margin-right: 24px;
+}
+.content-inner ul.icon-list h5 {
+	font-size: 12px;
+	margin-bottom: 0;
+}
+
 // Custom Numbered lists
 ul.numbered {
     counter-reset: linenumbers;

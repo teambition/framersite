@@ -1,11 +1,11 @@
-﻿/* glue: 0.9.4 hash: 3b0485c663 */
+﻿/* glue: 0.9.4 hash: d2a6a6f70d */
 /* 1x */
-.logo-instagram,.logo-facebook,.logo-groupon,.stripe-badge,.logo-google,.logo-soundcloud,.logo-stripe,.logo-slack,.logo-twitter,.logo-dropbox,.icon-universities,.logo-pinterest,.logo-apple,.logo-adobe,.icon-workflow,.icon-viewer,.icon-preview,.icon-learn-mirror,.icon-learn-mirror-active,.icon-interaction,.icon-effects,.icon-editor,.icon-conferences,.icon-companies,.icon-code,.icon-animation,.icon-volumelicenses,.icon-meetups,.icon-learn-importing,.icon-learn-importing-active,.icon-learn-coffeescript,.icon-learn-coffeescript-active,.icon-learn-basics,.icon-learn-basics-active,.icon-educationpricing,.logo-uber,.logo-spotify,.icon-learn-previous,.icon-learn-previous-active,.icon-learn-next,.icon-learn-next-active,.icon-footer-twitter,.icon-footer-email,.icon-dropdown-arrow,.icon-arrow{
-    background-image:url('/static/images/sprites/sprite1x.png?3b0485c663');
+.logo-instagram,.logo-facebook,.logo-groupon,.stripe-badge,.logo-google,.logo-soundcloud,.logo-stripe,.logo-slack,.logo-twitter,.logo-dropbox,.icon-universities,.logo-pinterest,.logo-apple,.logo-adobe,.icon-workflow,.icon-viewer,.icon-preview,.icon-learn-wifi,.icon-learn-mirror,.icon-learn-mirror-active,.icon-learn-browser,.icon-learn-apps,.icon-interaction,.icon-effects,.icon-editor,.icon-conferences,.icon-companies,.icon-code,.icon-animation,.icon-volumelicenses,.icon-meetups,.icon-learn-importing,.icon-learn-importing-active,.icon-learn-coffeescript,.icon-learn-coffeescript-active,.icon-learn-basics,.icon-learn-basics-active,.icon-educationpricing,.logo-uber,.logo-spotify,.icon-learn-previous,.icon-learn-previous-active,.icon-learn-next,.icon-learn-next-active,.icon-footer-twitter,.icon-footer-email,.icon-dropdown-arrow,.icon-arrow{
+    background-image:url('/static/images/sprites/sprite1x.png?d2a6a6f70d');
     background-repeat:no-repeat;
-    -webkit-background-size: 267px 248px;
-    -moz-background-size: 267px 248px;
-    background-size: 267px 248px;
+    -webkit-background-size: 268px 248px;
+    -moz-background-size: 268px 248px;
+    background-size: 268px 248px;
 }
 
 .logo-instagram{
@@ -110,6 +110,12 @@
     height:32px;
 }
 
+.icon-learn-wifi{
+    background-position:-32px -185px;
+    width:32px;
+    height:32px;
+}
+
 .icon-learn-mirror{
     background-position:-68px -153px;
     width:32px;
@@ -122,20 +128,32 @@
     height:31px;
 }
 
-.icon-interaction{
-    background-position:-32px -185px;
-    width:32px;
-    height:32px;
-}
-
-.icon-effects{
+.icon-learn-browser{
     background-position:-64px -185px;
     width:32px;
     height:32px;
 }
 
-.icon-editor{
+.icon-learn-apps{
     background-position:-96px -185px;
+    width:32px;
+    height:32px;
+}
+
+.icon-interaction{
+    background-position:-128px -185px;
+    width:32px;
+    height:32px;
+}
+
+.icon-effects{
+    background-position:-160px -185px;
+    width:32px;
+    height:32px;
+}
+
+.icon-editor{
+    background-position:-192px -185px;
     width:32px;
     height:32px;
 }
@@ -153,67 +171,67 @@
 }
 
 .icon-code{
-    background-position:-128px -185px;
+    background-position:-236px 0;
     width:32px;
     height:32px;
 }
 
 .icon-animation{
-    background-position:-160px -185px;
+    background-position:-236px -32px;
     width:32px;
     height:32px;
 }
 
 .icon-volumelicenses{
-    background-position:-192px -185px;
+    background-position:-236px -64px;
     width:31px;
     height:31px;
 }
 
 .icon-meetups{
-    background-position:-236px 0;
+    background-position:-236px -95px;
     width:31px;
     height:31px;
 }
 
 .icon-learn-importing{
-    background-position:-236px -31px;
+    background-position:-236px -126px;
     width:30px;
     height:31px;
 }
 
 .icon-learn-importing-active{
-    background-position:-236px -62px;
+    background-position:-236px -157px;
     width:30px;
     height:31px;
 }
 
 .icon-learn-coffeescript{
-    background-position:-236px -93px;
+    background-position:0 -217px;
     width:31px;
     height:31px;
 }
 
 .icon-learn-coffeescript-active{
-    background-position:-236px -124px;
+    background-position:-31px -217px;
     width:31px;
     height:31px;
 }
 
 .icon-learn-basics{
-    background-position:-236px -155px;
+    background-position:-62px -217px;
     width:31px;
     height:31px;
 }
 
 .icon-learn-basics-active{
-    background-position:-236px -186px;
+    background-position:-93px -217px;
     width:31px;
     height:31px;
 }
 
 .icon-educationpricing{
-    background-position:0 -217px;
+    background-position:-124px -217px;
     width:31px;
     height:31px;
 }
@@ -231,49 +249,49 @@
 }
 
 .icon-learn-previous{
-    background-position:-204px -158px;
+    background-position:-236px -188px;
     width:10px;
     height:23px;
 }
 
 .icon-learn-previous-active{
-    background-position:-214px -158px;
+    background-position:-246px -188px;
     width:10px;
     height:23px;
 }
 
 .icon-learn-next{
-    background-position:-224px -158px;
+    background-position:-256px -188px;
     width:10px;
     height:23px;
 }
 
 .icon-learn-next-active{
-    background-position:-184px -32px;
+    background-position:-204px -158px;
     width:10px;
     height:23px;
 }
 
 .icon-footer-twitter{
-    background-position:-180px -65px;
+    background-position:-214px -158px;
     width:16px;
     height:14px;
 }
 
 .icon-footer-email{
-    background-position:-180px -79px;
+    background-position:-184px -32px;
     width:16px;
     height:11px;
 }
 
 .icon-dropdown-arrow{
-    background-position:-184px -55px;
+    background-position:-214px -172px;
     width:11px;
     height:7px;
 }
 
 .icon-arrow{
-    background-position:-194px -32px;
+    background-position:-230px -158px;
     width:6px;
     height:10px;
 }
