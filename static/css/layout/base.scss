@@ -109,6 +109,12 @@ hr {
 	.layer-types .col-4 {
 		margin-right:20px;
 	}
+	.three-feature-list .col-4 {
+		margin-right: 30px;
+	}
+	.three-feature-list .col-4:last-of-type {
+		margin-right: 0;
+	}
 }
 @media screen and (max-width:996px) {
 	.content-inner {
@@ -131,6 +137,17 @@ hr {
 	}
 	.col-4:nth-child(2) {
 		margin-bottom: $space40;
+	}
+	// 3 COL, Learn
+	.three-feature-list .col-4 {
+		max-width: 200px;
+		margin-right: 30px;
+	}
+	.three-feature-list .col-4:nth-child(2n) {
+		margin-left: 0; // reset
+	}
+	.three-feature-list .col-4:nth-child(2) {
+		margin-bottom: 0; // reset 
 	}
 	// ****************
 	// Vertical spacing D2: ~56px
@@ -162,6 +179,16 @@ hr {
 	.col-4:nth-child(2n) {
 		margin-left:60px;
 	}
+	// 3 COL, Learn
+	.three-feature-list .col-4 {
+		max-width: 100%;
+		margin-right: 0;
+		float: none;
+	}
+	.three-feature-list .col-4:nth-child(2n) {
+		margin-left: 0; // reset
+	}
+
 	// ****************
 	// Vertical spacing T: ~48px
 	hr {

@@ -254,7 +254,8 @@ ol li {
 .content-inner ul.icon-list li+li {
 	margin-top: 32px;
 }
-.content-inner ul.icon-list .small {
+.content-inner ul.icon-list .small,
+.content-inner .three-feature-list .small {
 	font-size: 16px;
 }
 .content-inner ul.icon-list figure {
@@ -265,6 +266,19 @@ ol li {
 .content-inner ul.icon-list h5 {
 	font-size: 12px;
 	margin-bottom: 0;
+}
+// 3 COL Lists - Learn
+.content-inner .three-feature-list {
+	margin-top: 32px;
+}
+.content-inner .three-feature-list figure{
+	float:left;
+	margin-right: 8px;
+	margin-top: -2px; 
+}
+.content-inner .three-feature-list h5 {
+	font-size: 12px;
+	margin-bottom: 16px;
 }
 
 // Custom Numbered lists
@@ -497,6 +511,14 @@ table + h5 {
 	.content-inner ul.icon-list .small {
 		font-size: 14px;
 	}
+	// 3 col learn
+	.three-feature-list .col-4 h5 {
+		margin-bottom: 4px;	
+	}
+	.three-feature-list .col-4 .small {
+		font-size: 14px;
+	}
+
 
 	.summary ul li {
 		font-size: 16px;
