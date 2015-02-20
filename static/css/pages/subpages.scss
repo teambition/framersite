@@ -325,7 +325,8 @@ p.full-width{
 // Store buttons, in Learn/Apps
 .right-btn {
 	float: right;
-	margin-top: 8px;
+	position: relative;
+	top: 6px;
 }
 .text-with-inline-image p {
 	max-width: 660px; // Fix float bug
@@ -725,6 +726,7 @@ hr.hidden {
 	}
 	.right-btn {
 		float: none;
+		top: 0;
 		margin-bottom: 32px;
 		margin-left: 72px;
 	}
