@@ -257,8 +257,7 @@ ol li {
 .content-inner ul.icon-list li+li {
 	margin-top: 32px;
 }
-.content-inner ul.icon-list .small,
-.content-inner .three-feature-list .small {
+.content-inner ul.icon-list .small {
 	font-size: 16px;
 }
 .content-inner ul.icon-list figure {
@@ -269,22 +268,6 @@ ol li {
 .content-inner ul.icon-list h5 {
 	font-size: 12px;
 	margin-bottom: 0;
-}
-// 3 COL Lists - Learn
-.content-inner .three-feature-list {
-	margin-top: 32px;
-}
-.content-inner .three-feature-list figure{
-	float:left;
-	margin-right: 8px;
-	margin-top: -2px; 
-}
-.content-inner .three-feature-list h5 {
-	font-size: 12px;
-	margin-bottom: 8px;
-}
-.content-inner .three-feature-list p {
-	margin-bottom: 16px;
 }
 
 // Custom Numbered lists
@@ -657,10 +640,6 @@ table + h5 {
 	}
 	.subtitle {
 		font-size: 1.225em;
-	}
-	// Learn 3col
-	.three-feature-list .col-4 p {
-		max-width: 300px;
 	}
 
 }
