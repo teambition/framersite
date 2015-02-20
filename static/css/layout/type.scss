@@ -541,6 +541,9 @@ table + h5 {
 		font-size: 14px;
 	}
 	// Learn - Apps
+	.learn .app-title h5 {
+		margin-bottom: 4px; 
+	}
 	.inline-image ~ .app-title,
 	.inline-image ~ .right-btn {
 		margin-top: 64px; // spacing
