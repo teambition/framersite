@@ -415,8 +415,8 @@ table + h5 {
 	margin-bottom: 0;
 }
 .summary ul li {
-	font-size: 18px;
-	line-height: 1.4;
+	font-size: 16px;
+	line-height: 1.6;
 	list-style: none;
 	padding-left: 0;
 	left: 0;
@@ -614,6 +614,7 @@ table + h5 {
 	}
 	.summary ul li:before {
 		margin-right: $space8;
+		margin-right: 16px;
 		top: 3px;
 	}
 	.summary.small ul li:before {
