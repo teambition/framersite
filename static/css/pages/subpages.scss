@@ -720,10 +720,13 @@ hr.hidden {
 		margin-right: 24px;
 		margin-top: 0px;
 	}
+	.app-title p {
+		margin-bottom: 8px;
+	}
 	.right-btn {
 		float: none;
-		margin-top: -8px;
-		margin-bottom: 40px;
+		margin-bottom: 32px;
+		margin-left: 68px;
 	}
 
 }
@@ -735,6 +738,10 @@ hr.hidden {
 	.subpage .page-header {
 		height:180px;
 	} 	
+	// Learn - Apps
+	.right-btn {
+		margin-left: 64px;
+	}
 }
 @media screen and (max-width:560px) {
 	.learn .page-header .content-inner {
@@ -847,6 +854,9 @@ hr.hidden {
 	.inline-image + h5 {
 		margin-top: 24px;
 	}
+	.app-title p {
+		margin-bottom: 8px;
+	}
 }
 @media screen and (max-width: 440px) {
 	.learn-nav .nav-title {
@@ -867,6 +877,10 @@ hr.hidden {
 	.teach-logo-string aside {
 		text-align: left;
 		margin: 0;
+	}
+	// Learn - Apps
+	.app-title p {
+		margin-bottom: 0;
 	}
 }
 @media screen and (max-height: 700px) {

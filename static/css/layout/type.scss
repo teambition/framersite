@@ -397,9 +397,26 @@ table + h5 {
 }
 
 // Learn - Apps
-.align-right p.left-to-btn {
+.inline-image ~ .app-title,
+.inline-image ~ .right-btn {
+	margin-top: 80px; // spacing
+}
+.learn-app-icon {
 	float: left;
-	max-width: 540px;
+	margin-right: 24px;
+	margin-top: -4px;
+}
+.learn .app-title {
+	float: left;
+	max-width: 440px;
+	width: 100%;
+}
+.learn .app-title p {
+	font-size: 1em;
+}
+.learn .app-title h5 {
+	margin-bottom: 0; 
+	font-size: 0.875em; //14px
 }
 .right .btn {
 	position: relative;
@@ -524,6 +541,10 @@ table + h5 {
 		font-size: 14px;
 	}
 	// Learn - Apps
+	.inline-image ~ .app-title,
+	.inline-image ~ .right-btn {
+		margin-top: 64px; // spacing
+	}
 	.align-right p.left-to-btn {
 		float: none;
 		max-width: 540px;
@@ -585,6 +606,11 @@ table + h5 {
 	}
 	.home p {
 		margin-bottom: 16px;
+	}
+	// Learn - Apps
+	.learn-app-icon {
+		margin-right: 16px;
+		margin-top: 0;
 	}
 }
 @media screen and (max-width: 480px) {
