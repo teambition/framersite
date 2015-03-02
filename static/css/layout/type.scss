@@ -330,9 +330,11 @@ ul.numbered li:before {
 // Subpage spacing
 .inline-image + p,
 .inline-image + ul,
-.inline-image + h3,
 .inline-image + h4 {
 	margin-top: $space24;
+}
+.inline-image + h3 {
+	margin-top: $space40;
 }
 .inline-image + h5 {
 	margin-top: $space48;
@@ -397,7 +399,7 @@ table + h5 {
 }
 
 // Learn - Apps
-.inline-image ~ .app-title,
+.inline-image ~ .ss-title,
 .inline-image ~ .right-btn {
 	margin-top: 80px; // spacing
 }
@@ -406,15 +408,15 @@ table + h5 {
 	margin-right: 24px;
 	margin-top: -4px;
 }
-.learn .app-title {
+.learn .ss-title {
 	float: left;
 	max-width: 440px;
 	width: 100%;
 }
-.learn .app-title p {
+.learn .ss-title p {
 	font-size: 1em;
 }
-.learn .app-title h5 {
+.learn .ss-title h5 {
 	margin-bottom: 0; 
 	font-size: 0.875em; //14px
 }
@@ -436,7 +438,7 @@ table + h5 {
 }
 // Apps
 .summary.small {
-	margin: 40px 0 24px 0;
+	margin: 24px 0 24px 0;
 }
 .summary.small ul li {
 	font-size: 16px;
@@ -537,10 +539,10 @@ table + h5 {
 		font-size: 14px;
 	}
 	// Learn - Apps
-	.learn .app-title h5 {
+	.learn .ss-title h5 {
 		margin-bottom: 4px; 
 	}
-	.inline-image ~ .app-title,
+	.inline-image ~ .ss-title,
 	.inline-image ~ .right-btn {
 		margin-top: 64px; // spacing
 	}

@@ -7,8 +7,9 @@
 {% block sidebar %}
 <div class="sidebar">
 	<ul>	
-		<a href="/learn/import"><li class="active">Overview <div class="small">Introduction</div></li></a>
-		<a href="/learn/import/photoshop-and-sketch"><li>Photoshop & Sketch <div class="small">Import designs</div></li></a>
+		<a href="/learn/import"><li class="active">Overview <div class="small">Importing</div></li></a>
+		<a href="/learn/import/sketch-tips"><li>Sketch Tips <div class="small">Canvas, Artboards</div></li></a>
+		<a href="/learn/import/templates"><li>Templates <div class="small">Example files</div></li></a>		
 		<a href="/learn/import/after-effects"><li>After Effects <div class="small">Import videos</div></li></a>		
 	</ul>
 </div> <!--sidebar-->
@@ -19,36 +20,51 @@
 {% filter markdown %}
 ### Import Designs <a name="overview"></a>
 
-Framer Studio lets you import Sketch or Photoshop documents. All of your layer groups will be available. Your layer hierarchy is respected and all flattened layers are exported too. 
+Framer Studio lets you import your static mockups from Photoshop or Sketch with a single click. All of your layers are available and you can continuously update your designs while bringing them to life. 
+
 
 ---
 
 ##### Get Started
 To import layers, click the **"Import"** icon in the toolbar. 
 
-You'll be presented with the Import Sheet, where you can import designs directly out of Sketch, Sketch Beta and Photoshop. 
+ You'll be presented with the Import sheet, which informs you about the state of the applications. Note that you can only import from documents that you’ve opened and previously saved.
+
 
 <div class="inline-image"><img class="ss-import-sheet" src="/static/images/learn/ss-import-sheet.png" srcset="/static/images/learn/ss-import-sheet@2x.png 2x" draggable="false"></div>
 
-The import sheet informs you about the state of the applications. When they are unavailable for import, they can be in two different states:
+### Set-up
 
-<ul class="numbered">
-<li><strong>"Not running"</strong> - The application isn't open </li>
-<li><strong>"Open a saved document"</strong> - There's no document open, or its unsaved</li>
-</ul>
+Let’s have a look at how to set-up your documents before importing. First, make sure that your layers are placed in groups and have unique names. Ungrouped layers also get imported, but flattened. 
 
-When you've opened a saved document, the Import button will become active and you'll see the title of your active document appear below the application title.
+<div class="inline-image"><img src="/static/images/learn/ss-layergroup.png" srcset="/static/images/learn/ss-layergroup@2x.png 2x" draggable="false"></div>
+
+##### Targeting layers
+After import, the Importer Object gets inserted. By referencing it, you're able to target all of the imported layers within Framer. 
+
+<pre lang="coffeescript">
+# This imports all the layers of "design" into designLayers
+designLayers = Framer.Importer.load "imported/design"
+</pre>
+
+Note that the default variable name can be changed to anything. <br> Let’s simply rename it to “import”. Now, if you'd like to target a layer group named “layerA” in Photoshop or Sketch, you can simply write:
+
+<pre lang="coffeescript">
+import = Framer.Importer.load "imported/design"
+import.layerA.opacity = 0.5
+</pre>
+
+
+##### Targeting multiple layers
+You can use a <a href="http://framerjs.com/learn/coffeescript/loops-and-conditionals/" target="_blank">for-loop</a> to target multiple layers. You can either loop over all of your imported layers, or target the layers of a specific layer group.
+
+<div class="inline-image"><img src="/static/images/learn/ss-target-multiple.png" srcset="/static/images/learn/ss-target-multiple@2x.png 2x" draggable="false"></div>
 
 ----
 
-##### Re-Importing
-Subsequent imports from the same file will work as long as you don't rename layers that you've already targeted within Framer. This allows for rapid iteration, especially with the keyboard shortcut: "CMD + Shift + I"
-
----
-
 <section class="subpage-nav">
-	<a class="next" href="/learn/import/photoshop-and-sketch">
-		<h6>Photoshop & Sketch</h6> 
+	<a class="next" href="/learn/import/sketch-tips">
+		<h6>Sketch Tips</h6> 
 		<figure class="icon-learn-next-active"></figure>
 	</a> <!--next-->
 </section>
