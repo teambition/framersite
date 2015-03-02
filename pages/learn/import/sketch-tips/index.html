@@ -22,16 +22,19 @@
 
 
 ##### Position on Canvas
-The x and y positions of your layers on the canvas are respected. This causes layers with negative coordinates to appear off-canvas in Framer. Unless if you're designing within artboards, make sure that the x and y position of your parent layer group are both set to 0.
+The x and y positions of your layers on the canvas are respected. This causes layers with negative coordinates to appear off-canvas in Framer. Make sure that the x and y position of your parent layer group are both set to 0. Note that this this doesn’t apply when designing within Artboards.
 
 <div class="inline-image"><img src="/static/images/learn/ss-xandy.png" srcset="/static/images/learn/ss-xandy@2x.png 2x" draggable="false"></div>
 
 ##### Hidden Layers
-Hidden layers are also imported, but with visibility set to false by default. The opacity property is left unchanged. Only in <a href="http://www.bohemiancoding.com/sketch/beta/" target="_blank">Sketch Beta</a> for now.
+
+Hidden layers are also imported, but with visibility set to false by default. The opacity property is left unchanged. Only in Sketch Beta for now.
+
+Only in <a href="http://www.bohemiancoding.com/sketch/beta/" target="_blank">Sketch Beta</a> for now.
 <div class="inline-image"><img src="/static/images/learn/ss-visibility.png" srcset="/static/images/learn/ss-visibility@2x.png 2x" draggable="false"></div>
 
 ##### Artboards
-Only the first artboard will be visible by default, and every other artboard will be imported with the x and y positions set to 0 by default.
+Only the first artboard will be visible by default. All other artboards will be hidden, and their x and y positions are set to 0 by default.
 <div class="inline-image"><img src="/static/images/learn/ss-artboards.png" srcset="/static/images/learn/ss-artboards@2x.png 2x" draggable="false"></div>
 
 ---

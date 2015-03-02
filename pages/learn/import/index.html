@@ -20,7 +20,7 @@
 {% filter markdown %}
 ### Import Designs <a name="overview"></a>
 
-Framer Studio lets you import your static mockups from Photoshop or Sketch with a single click. All of your layers are available and you can continuously update your designs while bringing them to life. 
+Framer lets you import entire designs from Photoshop or Sketch with a single click. It fits right into your current design workflow. Continuously update your designs while bringing them to life. 
 
 
 ---
@@ -28,26 +28,29 @@ Framer Studio lets you import your static mockups from Photoshop or Sketch with 
 ##### Get Started
 Start by clicking the **"Import"** icon in the toolbar. 
 
- You'll be presented with the Import sheet, which informs you about the state of the applications. Note that you can only import from documents that you’ve opened and previously saved.
+You’ll be presented with the Import sheet. It tells you whether or not you have any file opened that’s ready to be imported. Note that you can only import files that you’ve previously saved.
 
 
 <div class="inline-image"><img class="ss-import-sheet" src="/static/images/learn/ss-import-sheet.png" srcset="/static/images/learn/ss-import-sheet@2x.png 2x" draggable="false"></div>
 
 ### Set-up
 
-Let’s have a look at how to set-up your documents before importing. Make sure that your layers are placed in groups and have unique names. Grouped layers can be targeted by name in Framer. Ungrouped layers are either flattened into a group or become part of the background of their parent group. 
+Let’s have a look at how to set-up your files before importing. 
+First, make sure that your layers are grouped and have unique names. This is to ensure that you can select them later.
+Ungrouped layers are flattened. They either become part of the background or that of their parent group.
+
 
 <div class="inline-image"><img src="/static/images/learn/ss-layergroup.png" srcset="/static/images/learn/ss-layergroup@2x.png 2x" draggable="false"></div>
 
-##### Targeting layers
-After import, an import statemt gets inserted in the code. By referencing it, you're able to target all of the imported layers within Framer. 
+##### Selecting layers
+After you’ve succesfully imported a file, the following line of code gets inserted on top of your code: 
 
 <pre lang="coffeescript">
 # This imports all the layers of "design" into designLayers
 designLayers = Framer.Importer.load "imported/design"
 </pre>
 
-Note that the default variable name can be changed to anything. <br> Let’s simply rename it to “import”. Now, if you'd like to target a layer group named “layerA” in Photoshop or Sketch, you can simply write:
+This loads and contains all of of the importer layers. We can assign it any name, and use that name to select layers. Let’s simply rename it to “import”. Now, to select a layer group that you’ve named “layerA” in Photoshop or Sketch, you can simply write:
 
 <pre lang="coffeescript">
 import = Framer.Importer.load "imported/design"
@@ -55,8 +58,11 @@ import.layerA.opacity = 0.5
 </pre>
 
 
-##### Targeting multiple layers
-You can use a <a href="http://framerjs.com/learn/coffeescript/loops-and-conditionals/" target="_blank">for-loop</a> to target multiple layers. You can either loop over all of your imported layers, or target the layers of a specific layer group.
+##### Selecting multiple layers
+
+You can also select multiple layers at once. This can be really useful if you’d like to animate or re-position multiple layers, for example.
+
+This can be done with a <a href="http://framerjs.com/learn/coffeescript/loops-and-conditionals/" target="_blank">for-loop</a>. This allows you to either select all of your imported layers, or just the layers within a specific group.
 
 <div class="inline-image"><img src="/static/images/learn/ss-target-multiple.png" srcset="/static/images/learn/ss-target-multiple@2x.png 2x" draggable="false"></div>
 
