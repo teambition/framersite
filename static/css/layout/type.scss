@@ -105,7 +105,7 @@ h5 { // Feature blocks
 	margin-bottom: $space8;
 }
 .subpage h5 {
-	font-size: 14px;
+	font-size: 0.875em; //14px
 	font-weight: 600;
 	margin-bottom: $space8;
 	text-transform: uppercase;
@@ -554,24 +554,21 @@ table + h5 {
 		top: 0;
 		float: none;
 	}
-
+	// Summaries / Lists
 	.summary ul li {
 		font-size: 16px;
 	}
 	.summary.small ul li {
 		font-size: 14px;
 	}
-	.summary.small ul li+li {
-		margin-top: 16px;
+	.summary.small ul li:before {
+		top: 2px;
 	}
 	.video-banner p {
 		font-size: 1em;
 	}
 }
 @media screen and (max-width: 600px) {
-	// body {
-	// 	font-size:14px;
-	// }
 	.footer-features li {
 		font-size:1em;
 	}
