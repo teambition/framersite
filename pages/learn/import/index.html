@@ -35,12 +35,12 @@ Start by clicking the **"Import"** icon in the toolbar.
 
 ### Set-up
 
-Let’s have a look at how to set-up your documents before importing. Make sure that your layers are placed in groups and have unique names. Grouped layers can be targeted by name. Ungrouped layers are flattened, and either become part of the background or their parent group. 
+Let’s have a look at how to set-up your documents before importing. Make sure that your layers are placed in groups and have unique names. Grouped layers can be targeted by name in Framer. Ungrouped layers are either flattened into a group or become part of the background of their parent group. 
 
 <div class="inline-image"><img src="/static/images/learn/ss-layergroup.png" srcset="/static/images/learn/ss-layergroup@2x.png 2x" draggable="false"></div>
 
 ##### Targeting layers
-After import, the Importer Object gets inserted. By referencing it, you're able to target all of the imported layers within Framer. 
+After import, an import statemt gets inserted in the code. By referencing it, you're able to target all of the imported layers within Framer. 
 
 <pre lang="coffeescript">
 # This imports all the layers of "design" into designLayers
