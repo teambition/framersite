@@ -124,7 +124,7 @@ pre, code {
 .content-inner pre ol li { 
     color: #788D9E; // Default
 } 
-.k { color: #FF9740;} // Orange
+.k, .kc { color: #FF9740;} // Orange
 .c, 
 .cm,
 .cp,
@@ -136,6 +136,16 @@ pre, code {
     color: #8DDE19; // Original Green
     color: #6ED300; // Darker Green
 } 
+
+// String escaping in Framer
+// " # { myString }, ... "
+// 
+.s + .si,
+.si + .nx,
+.si + .s,
+.nx + .si {
+    color: #6ED300; // Darker Green
+}
 
 // Custom Line Numbers
 .content-inner pre ol {
