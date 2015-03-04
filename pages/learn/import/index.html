@@ -60,6 +60,10 @@ import = Framer.Importer.load "imported/design"
 import.layerA.opacity = 0.5
 </pre>
 
+Layer groups placed within other groups are called <a href="/docs/#layer.subLayers" target="_blank">subLayers</a>. In the example below, "groupA" has two subLayers. They can also be selected directly. There's no need for you to take the layer hierarchy into account.
+
+<div class="inline-image"><img src="/static/images/learn/ss-target-hierarchy.png" srcset="/static/images/learn/ss-target-hierarchy@2x.png 2x" draggable="false"></div>
+
 
 ##### Selecting multiple layers
 
@@ -68,6 +72,18 @@ You can also select multiple layers. Perhaps you’d like to animate a bunch of 
 This can be done with a <a href="http://framerjs.com/learn/coffeescript/loops-and-conditionals/" target="_blank">for-loop</a>. You can choose to select all of your imported layers, or just the layers of a specific group.
 
 <div class="inline-image"><img src="/static/images/learn/ss-target-multiple.png" srcset="/static/images/learn/ss-target-multiple@2x.png 2x" draggable="false"></div>
+
+<!-- <pre lang="coffeescript">
+sketch = Framer.Importer.load "imported/design"
+
+# Select all layers
+for name, layer of sketch
+	layer.opacity = 0.5
+
+# Select subLayers of a group
+for layer, index in sketch.groupB.subLayers
+	layer.scale = 0.5
+</pre> -->
 
 ----
 
