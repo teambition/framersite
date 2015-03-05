@@ -16,12 +16,15 @@ p a:active {
 	opacity:1;
 }
 p strong {
-	color: #222;
-	border-bottom: 1px dotted rgba(0,0,0,0.2);
 	overflow: hidden;
+	font-weight: 600;
 }
 p em {
 	font-style: italic;
+}
+p .emphasize {
+	border-bottom: 1px dotted rgba(0,0,0,0.2);
+	font-weight: 600;
 }
 h1,
 h2,
