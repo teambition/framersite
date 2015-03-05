@@ -21,9 +21,9 @@
 ### Sketch Tips
 
 ##### Position on Canvas
-The x and y position of your layers are turned into <a href="/docs/#layer.x" target="_blank">x and y properties</a> in Framer. This means that layers with negative coordinates are positioned off-canvas in Framer. 
+The x and y position of your layers are turned into <a href="/docs/#layer.x" target="_blank">x and y properties</a>.  
 
-If your layers are contained within a parent group, ensure that its x and y position is set to zero. This doesn’t apply when designing within Artboards.
+In the example below, the layer group <span class="emphasize">Screen</span> is correctly positioned to 0, and will show at the very top left of your Framer prototype. This means, that layers with *negative* coordinates are positioned outside the canvas. This doesn’t apply when you use Artboards (more below).
 
 <div class="inline-image"><img src="/static/images/learn/ss-xandy.png" srcset="/static/images/learn/ss-xandy@2x.png 2x" draggable="false"></div>
 
@@ -33,7 +33,7 @@ Layers that you’ve hidden are also imported, but with <a href="/docs/#layer.vi
 <div class="inline-image"><img src="/static/images/learn/ss-visibility.png" srcset="/static/images/learn/ss-visibility@2x.png 2x" draggable="false"></div>
 
 ##### Artboards
-Only the first artboard will be visible by default. All other artboards are hidden, and positioned on top of eachother. The x and y properties of imported artboards are always set to zero.
+Only the first artboard will be visible by default. All other artboards are hidden, and positioned on top of eachother. The x and y properties of imported artboards are always set to 0.
 
 <div class="inline-image"><img src="/static/images/learn/ss-artboards.png" srcset="/static/images/learn/ss-artboards@2x.png 2x" draggable="false"></div>
 
