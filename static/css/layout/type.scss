@@ -15,6 +15,11 @@ p a:hover {
 p a:active {
 	opacity:1;
 }
+p strong {
+	color: #222;
+	border-bottom: 1px dotted rgba(0,0,0,0.2);
+	overflow: hidden;
+}
 h1,
 h2,
 h3,
