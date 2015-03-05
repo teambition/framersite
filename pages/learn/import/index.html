@@ -20,16 +20,14 @@
 {% filter markdown %}
 ### Import Designs <a name="overview"></a>
 
-With Framer, you can bring your static designs to life, using tools you’re already comfortable with. Import visual mockups from Photoshop or Sketch with a single click. Go back-and-forth and start exploring interactions, while further refining your visuals. 
+With Framer, you can bring your static designs to life, using tools you’re already comfortable with. Import visual mockups from Photoshop or Sketch with a single click. Go back-and-forth and start exploring interactions, while further refining your visuals along the way. 
 
-After importing, all of your layers are selectable and have their position, hierarchy and masking already set. You don’t have to start from scratch when you want to quickly validate an idea.
+After importing, all your layers are selectable and have their position, hierarchy and masking set. With Framer, you don’t have to start from scratch, when you quickly want to validate an idea.
 
 ---
 
 ##### Get Started
-Launch Framer Studio and open a saved .psd or .sketch file. <br> Then, click the **Import** icon in the toolbar. 
-
-You’ll be presented with the Import sheet. It tells you if there's a file open and ready to be imported. You can only import files that are saved.
+Launch Framer Studio and open a saved .psd or .sketch file. Then, click the **Import** icon in the toolbar. You’ll be presented with a sheet. It tells you if there's a file open and ready to be imported. You can only import files that are saved.
 
 
 <div class="inline-image"><img class="ss-import-sheet" src="/static/images/learn/ss-import-sheet.png" srcset="/static/images/learn/ss-import-sheet@2x.png 2x" draggable="false"></div>
@@ -37,20 +35,20 @@ You’ll be presented with the Import sheet. It tells you if there's a file open
 ### Set-up
 There are a few things you need to keep in mind when importing your Photoshop or Sketch files.
 
-First, make sure that your layers are grouped and have unique names. This allows you to select them later. Next, if you're using spaces in your layer names, they'll be converted to underscores. Finally, all of your un-grouped layers get flattened. If they're part of a parent layer group, they become part of its background. 
+First, select a layer and group it (cmd + g). Every group, with a single layer or more, gets flattened and imported into Framer. Next, try to avoid spaces in the name of your group. If you do use spaces, keep in mind that Framer converts a space to underscore. Finally, Framer ignores layers that are not in a group.
 
 
 <div class="inline-image"><img src="/static/images/learn/ss-layergroup.png" srcset="/static/images/learn/ss-layergroup@2x.png 2x" draggable="false"></div>
 
 ##### Selecting layers
-After you’ve successfully imported a file, the following line of code gets inserted at the top of your code: 
+After you’ve successfully imported a file, the following line of code gets inserted at the very top of your Framer prototype: 
 
 <pre lang="coffeescript">
-# This imports all the layers of "design" into designLayers
+# This imports all the layers of design into designLayers
 designLayers = Framer.Importer.load "imported/design"
 </pre>
 
-This loads and contains all of of the importer layers. We can give it any name, and use that to select layers. Let’s simply rename it to **import**. Now, to select a layer group that you’ve named “layerA”, you can write:
+This loads and contains all of of the importer layers. We can give it any name, and use that to select layers. Let’s simply rename it to **import**. Now, to select a layer group that you’ve named **layerA**, you can write:
 
 <pre lang="coffeescript">
 # This imports all the layers of "design" into import
