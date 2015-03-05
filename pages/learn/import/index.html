@@ -20,24 +20,24 @@
 {% filter markdown %}
 ### Import Designs <a name="overview"></a>
 
-With Framer, you can bring your designs to life using tools you’re already comfortable with. Import files from Photoshop or Sketch with a single click. Go back-and-forth and start exploring interactions while further refining your visuals. 
+With Framer, you can bring your static designs to life, using tools you’re already comfortable with. Import visual mockups from Photoshop or Sketch with a single click. Go back-and-forth and start exploring interactions, while further refining your visuals. 
 
-After importing, all of your layers are selectable and have their position, hierarchy and masking already set. You don’t have to start from scratch when looking to quickly validate an idea.
+After importing, all of your layers are selectable and have their position, hierarchy and masking already set. You don’t have to start from scratch when you want to quickly validate an idea.
 
 ---
 
 ##### Get Started
-Start by clicking the **"Import"** icon in the toolbar. 
+Launch Framer Studio and open a saved .psd or .sketch file. Then click the **Import** icon in the toolbar. 
 
-You’ll be presented with the Import sheet. It tells you whether or not you have any file opened that’s ready to be imported. You can only import files that have already been saved once before.
+You’ll be presented with the Import sheet. It tells you if there's a file open and ready to be imported. You can only import files that are saved.
 
 
 <div class="inline-image"><img class="ss-import-sheet" src="/static/images/learn/ss-import-sheet.png" srcset="/static/images/learn/ss-import-sheet@2x.png 2x" draggable="false"></div>
 
 ### Set-up
-There are only a few things you need to keep in mind when looking to import your Photoshop or Sketch files. First, make sure that your layers are grouped and have unique names. This allows you to select them later. 
+There are a few things you need to keep in mind when importing your Photoshop or Sketch files.
 
-Next, if you're using spaces in your layer names, they'll be converted to underscores. Finally, all of your un-grouped layers get flattened. If they're part of a parent layer group, they become part its background. 
+First, make sure that your layers are grouped and have unique names. This allows you to select them later. Next, if you're using spaces in your layer names, they'll be converted to underscores. Finally, all of your un-grouped layers get flattened. If they're part of a parent layer group, they become part of its background. 
 
 
 <div class="inline-image"><img src="/static/images/learn/ss-layergroup.png" srcset="/static/images/learn/ss-layergroup@2x.png 2x" draggable="false"></div>
@@ -50,10 +50,10 @@ After you’ve successfully imported a file, the following line of code gets ins
 designLayers = Framer.Importer.load "imported/design"
 </pre>
 
-This loads and contains all of of the importer layers. We can assign it any name, and use that to select layers. Let’s simply rename it to “import”. Now, to select a layer group that you’ve named “layerA”, you can write:
+This loads and contains all of of the importer layers. We can give it any name, and use that to select layers. Let’s simply rename it to **import**. Now, to select a layer group that you’ve named “layerA”, you can write:
 
 <pre lang="coffeescript">
-# This imports all the layers of "design" into designLayers
+# This imports all the layers of "design" into import
 import = Framer.Importer.load "imported/design"
 
 # Set the opacity of layerA 
@@ -67,7 +67,7 @@ Layer groups placed within other groups are called <a href="/docs/#layer.subLaye
 
 ##### Selecting multiple layers
 
-You can also select multiple layers. Perhaps you’d like to animate a bunch of layers, or hide one of your layer groups.
+You can also select multiple layers. Perhaps you’d like to animate a couple of layers, or hide one of your layer groups.
 
 This can be done with a <a href="http://framerjs.com/learn/coffeescript/loops-and-conditionals/" target="_blank">for-loop</a>. You can choose to select all of your imported layers, or just the layers of a specific group.
 
